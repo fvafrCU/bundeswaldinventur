@@ -1,15 +1,3 @@
-#!/usr/bin/Rscript --vanilla
-#' abbreviations_and_labels.R
-#'
-#' helper functions converting abbreviations into labels and vice versa.
-#' Operating on strings, character vectors, factors and character or factor
-#' columns of data.frames.
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>, Franziska Berg
-#' @section Version: $Id: 7ecc2f88b34bff6fb25034fcd80f30997dc7cf44 $
-#' @docType data  
-#' @name A Header for
-NULL 
 
 #' get abbreviation for a given label or name.
 #'

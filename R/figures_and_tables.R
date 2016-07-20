@@ -1,14 +1,3 @@
-#!/usr/bin/Rscript --vanilla
-#' figures_and_tables.R
-#'
-#' standard tables and plots mimicing those in 
-#' Landesspezifische_Auswertung_Bundeswaldinventur_3_Ba_Wue_2014_v1.docx
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 22544fb3bcb7b45092a7ff3d90f50b06dccb3668 $
-#' @docType data  
-#' @name Header
-NULL 
 
 # @NULL 
 theme_bold_axes <- function() {

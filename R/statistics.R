@@ -1,13 +1,3 @@
-#!/usr/bin/Rscript --vanilla
-#' statistics.R
-#'
-#' add little statistical helpers.
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 7c6d9e45f1674fa810ca20d87a9016e584540653 $
-#' @docType data  
-#' @name A Header for
-NULL 
 
 #' compute the mode/modal value from a set of discrete values
 #'

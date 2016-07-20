@@ -1,14 +1,3 @@
-#!/usr/bin/Rscript --vanilla
-#' tree_species_shares.R
-#'
-#' reproduce tables 6 through 10 of
-#' Landesspezifische_Auswertung_Bundeswaldinventur_3_Ba_Wue_2014_v1.docx
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 87d823bd31fb291cd461a188b15bdc009d9edcf0 $
-#' @docType data  
-#' @name Header
-NULL 
 # @NULL 
 
 tree_species_labels <- factor(bagr.bwi$bagr.lab,

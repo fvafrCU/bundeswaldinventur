@@ -1,13 +1,3 @@
-#!/usr/bin/Rscript --vanilla
-#' batch.R
-#'
-#' check for batch runs, get code file names.
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: f50930dd5d59e0a9c4d73f82fe21aaa9d00c96c1 $
-#' @docType data
-#' @name Header
-NULL
 
 
 #' get the path of the R code file in case of an R CMD BATCH run.

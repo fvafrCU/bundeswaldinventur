@@ -1,13 +1,3 @@
-#!/usr/bin/Rscript --vanilla
-#' german_things.R
-#'
-#' There's a lot of things to be adjusted for german readers.
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 9be1ec3c316c4c9ca5af009959e89607c154f14c $
-#' @docType data  
-#' @name Header
-NULL 
 
 
 #' apply prettyNum to a data.frame, preserve its row.names

@@ -1,15 +1,3 @@
-#!/usr/bin/Rscript --vanilla
-#' getter functions for settings.
-#'
-#' most settings were stored in (global) variables, lists an the like which are 
-#' hard to document.
-#' They should be converted to functions.
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 277e66439c05cd12cd6e0d050c667e47a9d7fa91 $
-#' @docType data  
-#' @name Header
-NULL 
 
 #' get the species group list
 #'

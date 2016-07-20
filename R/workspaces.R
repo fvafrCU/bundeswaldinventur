@@ -1,16 +1,3 @@
-#!/usr/bin/Rscript --vanilla
-#' provide, load or delete workspaces.
-#'
-#' Querying the data source is time consuming. I add two local workspaces: one
-#' containing the data loaded from the database, the other containing the
-#' statistics. Both are provided, loaded or deleted using the functions in this
-#' file.
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 1f51f17d5fbfb0fd3fcd9f739eb148a6d279b585 $
-#' @docType data  
-#' @name Header
-NULL 
 
 #' provide workspaces
 #'

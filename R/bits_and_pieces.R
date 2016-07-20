@@ -1,13 +1,3 @@
-#!/usr/bin/Rscript --vanilla
-#' bits_and_pieces.R
-#'
-#' Functions I haven't found proper places for yet.
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 8bb9bd5c3d0ac9d48580e4497df4a9433d3ab412 $
-#' @docType data  
-#' @name A Header for
-NULL 
 
 #' add colSums to a data.frame, preserve its row.names
 #'
