@@ -5,26 +5,6 @@
 ##
 ## Author: Dominik Cullmann, <dominik.cullmann@forst.bwl.de>
 ## Version: $Id: 227df1eb6407be22b6e08805af4874bd292734c3 $
-HR_FUNCTIONS_DIRECTORY <- file.path(PROJECT_ROOT, 'HR_Funktionen')
-FUNCTIONS_DIRECTORY <- file.path(PROJECT_ROOT, 'functions')
-DATA_DIRECTORY <- file.path(PROJECT_ROOT, 'data')
-DATA_WORKSPACE  <-  file.path(DATA_DIRECTORY, 'mdb_output.Rdata')
-STATISTICS_WORKSPACE  <-  file.path(DATA_DIRECTORY, 'statistics_output.Rdata')
-
-MOUNT_POINT <- switch(.Platform$OS.type,
-        'windows' = "H:",
-        'unix' = "/trans/h",
-        stop(paste('unkown operation system', .Platform$OS.type))
-       )
-PROJECT_ROOT_SERVER <- file.path(MOUNT_POINT,
-				 'BuI', 'Projekte', 'BWI3_P932', 
-				 'BWI_3_Inventur_P932', '07_Auswertungen', 
-				 'LandBW', 'Hochrechnungen'
-				 )
-
-OUTPUT_DIRECTORY  <- file.path(PROJECT_ROOT_SERVER, 'Ergebnisse')
-GRAPHICS_DIRECTORY  <- file.path(OUTPUT_DIRECTORY, 'Grafiken')
-TABLES_DIRECTORY  <- file.path(OUTPUT_DIRECTORY, 'Tabellen')
 COLORS_BWI <- c(
 		rgb(117, 112, 179, maxColorValue = 255),
 		rgb(217,  95,   2,    maxColorValue = 255),
