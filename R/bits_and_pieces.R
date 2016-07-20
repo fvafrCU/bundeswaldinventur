@@ -57,7 +57,7 @@ as_percent_and_round <- function(x, digits = 1){
 #' @param data_frame Give the data.frame.
 #' @param condition See Details
 #' @return  the modified data.frame
-#' @section Details
+#' @section Details:
 #' \code{condition} of form \emph{variable operator limit} and will set all 
 #' values of \emph{variable} to \emph{limit} where the condition is TRUE.
 #' lower than Zero to Zero.
