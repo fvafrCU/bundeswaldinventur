@@ -59,10 +59,8 @@ set_to_limit <- function(data_frame, condition) {
     variable <- strsplit(s, " ")[[1]][1]
     operator <- strsplit(s, " ")[[1]][2]
     limit <- strsplit(s, " ")[[1]][3]
-    print(limit)
     to_eval <- paste0("data_frame[data_frame[,'", variable, "']", " ", operator, 
                        " ",limit, ", '", variable, "'] <- ", limit)
-    print(to_eval)
     eval(parse(text = to_eval))
     return(data_frame)
 }
