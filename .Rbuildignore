@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^.*\.sh$
 ^testing.r$
+^sedscr$
