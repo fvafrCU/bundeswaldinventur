@@ -17,7 +17,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2a", {
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
     list(Wa = c(3,5), Begehbar = 1))
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
@@ -58,7 +58,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2b", {
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
     list(Wa = c(3, 5), Begehbar = 1, raumkat_id = 10))
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
       Stratum = structure(list(Wa = c(3, 5), Begehbar = 1, raumkat_id = 10), 
@@ -99,7 +99,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2c", {
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500 ,D.b = 500, Ndh = F),
     list(Wa=c(3,5), Begehbar = 1, RBez = 2))
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1, RBez = 2), 
@@ -141,7 +141,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2d", {
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
     list(Wa = c(3, 5), Begehbar = 1, Kreis=317))
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1, Kreis = 317), 
@@ -185,7 +185,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
     list(Wa =c (3, 5), Begehbar = 1, BTyp = c(110, 117, 170, 171, 410, 417, 470, 
                                               471)))
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1, BTyp = c(110, 117, 170, 
@@ -605,7 +605,7 @@ test_that("VB.A.bagrupp.akl.dkl.stratum.fun.2", {
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
     list(Wa = c(3,5), Begehbar = 1), T, A)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
@@ -658,7 +658,7 @@ test_that("VB.A.bagrupp.akl.dkl.stratum.fun.3", {
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, d.B = 500, Ndh = F),
     list(Wa = c(1:3), Begehbar = 1), F, A)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
@@ -715,7 +715,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2", {
    list(A.ob = 160, A.b = 20), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
    list(Wa = c(3,5), Begehbar = 1), A)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
@@ -1659,7 +1659,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12", {
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
     list(Wa = c(1:3), Begehbar = c(1)), A.12)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = 1:3, Begehbar = 1), 
@@ -1701,7 +1701,7 @@ test_that("verbiss.bagr.fun", {
   result <- verbiss.bagr.fun(verj.3, ecken.3, trakte.3,
       list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"), 2, A)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"), 
@@ -1745,7 +1745,7 @@ test_that("verbiss.bagrupp.fun", {
                            c(200:299))),
             list(Wa = c(3, 5), Begehbar = 1), 2, A)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
@@ -1786,7 +1786,7 @@ test_that("verjg.bagr.fun", {
   result <- verjg.bagr.fun(verj.3, ecken.3, trakte.3,
              list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"), 2, A)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"), 
@@ -1821,7 +1821,7 @@ test_that("verjg.bagrupp.fun", {
                    c(200:299))), 
     list(Wa=c(3,5),Begehbar=1), 2, A)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
@@ -1857,7 +1857,7 @@ test_that("verjg.kl4.bagrupp.fun", {
   result <- verjg.kl4.bagrupp.fun(verj.kl4m.3, ecken.3, trakte.3,
              bagr.vj, list(Wa = c(3, 5), Begehbar = 1), A)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
@@ -1913,7 +1913,7 @@ test_that("ntns.stratum.fun", {
     ntns.te, ecken.3, trakte.3, A, list(Wa = c(3, 5), Begehbar = 1, 
                                         WLT = c(9410)), 3, 3)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     HBF = 5303.03781030478, se.HBF = 973.67411677321, 
@@ -2087,7 +2087,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2g", {
    list(A.ob = 160, A.b = 20), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
    list(Wa = c(3,5), Begehbar = 1), A)
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <-structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
@@ -2601,7 +2601,7 @@ test_that("biotop.baeume.fun", {
   result <- biotop.baeume.fun(wzp4.merkmale.3, baeume.3, ecken.3, trakte.3, A,
                               list(Wa = c(5), Begehbar = 1))
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(Stratum = structure(list(Wa = 5, Begehbar = 1), .Names = c("Wa", 
     "Begehbar")), nTE = 13220L, HBF = 1322757.73306093, se.HBF = 15749.6881095356, 
@@ -2637,7 +2637,7 @@ test_that("stamm.merkmale.bagr.fun", {
                  ba.grupp =list(c(10:19,30:39,90:99), c(20:29,40,50,51), c(100), 
                                 c(110,111), c(112:199),c(200:299))))
   
-  result[[Log]] <- NULL
+  result[["Log"]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
