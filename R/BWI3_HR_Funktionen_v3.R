@@ -2469,7 +2469,6 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   Log <- list(Datum=Sys.time(),
     Version.baeume.b=substr(as.character(baeume$bemerk[baeume$stp==0][1]),a,b))
 
-  if(N.art){nart <- c("geerntet","ungenutzt")}else {nart <- "insgesamt"}
   return(list(Log=Log, Stratum=auswahl, nTE=n.te.s, HBF=T.hbf, se.HBF=se.T.hbf,
               Attribute=c("V_DhmR", "V_EoR", "oiB", "N_Dh",
                       "V_DhmR/J", "V_EoR/J", "oiB/J", "N_Dh/J",
