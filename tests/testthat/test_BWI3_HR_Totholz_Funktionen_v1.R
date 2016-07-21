@@ -15,7 +15,7 @@ test_that("Totholz.bagr.art.zg.stratum.fun", {
   result <- Totholz.bagr.art.zg.stratum.fun(totholz.3, ecken.3, trakte.3, 3, A, 
             list(D.unt=0, D.ob=70, D.b=10, Ndh=T), list(Wa=c(3,5), Begehbar=1))
   
-  result <- result[-1]
+  result[[Log]] <- NULL
   
   reference <- structure(list(Stratum = structure(list(Wa = c(3, 5), 
              Begehbar = 1), .Names = c("Wa", "Begehbar"))), .Names = "Stratum")
@@ -995,7 +995,7 @@ test_that("Totholz.Tart.stratum.fun", {
             list(g1=c(11,12,13),g2=c(2,3),g3=c(4,5)), A, 
             list(Wa=c(3,5), Begehbar=1))
   
-  result <- result[-1]
+  result[[Log]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
@@ -1025,7 +1025,7 @@ test_that("Totholz.klass.stratum.fun", {
             list(attr = "tart", kat = list(c(11, 12, 13), c(2,3),c(4,5))), A, 
             list(Wa=c(3,5), Begehbar=1))
   
-  result <- result[-1]
+  result[[Log]] <- NULL
   
   reference <- structure(list(
     Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), 
