@@ -10,3 +10,9 @@ do
     rm tmp.R
     fromdos $file
 done
+for file in $(ls tests/testthat/*.r)
+do
+    output=${file%.r}.R
+    git mv $file $output
+done
+
