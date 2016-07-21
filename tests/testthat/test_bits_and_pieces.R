@@ -44,12 +44,6 @@ test_that("correct input", {
   expect_equal(as_percent_and_round(0.2589), 25.9)
   expect_equal(as_percent_and_round(c(0.2589, 0.4896)), c(25.9, 49.0))
 })
-test_that("wrong input", {
-  expect_that(as_percent_and_round(0.2589, 0.4896), throws_error())
-  expect_that(as_percent_and_round("0.2589, 0.4896"), throws_error())
-  expect_that(as_percent_and_round("Number[a]"), throws_error())
-  expect_that(as_percent_and_round(), throws_error())
-})
 
 test_that("set_to_limit", {
   
@@ -80,9 +74,5 @@ test_that("set_to_limit", {
 
 test_that("get_period", {
   expect_equal(get_period(1), "1987 - 2002")
-  expect_that(get_period("1"), throws_error())
   expect_equal(get_period(2), "2002 - 2012")
-  expect_that(get_period("2"), throws_error())
-  expect_that(get_period(0), throws_error())
-  expect_that(get_period(), throws_error())
 })
