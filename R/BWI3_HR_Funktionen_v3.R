@@ -2474,7 +2474,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
                       "V_DhmR/J", "V_EoR/J", "oiB/J", "N_Dh/J",
                       "V_DhmR/ha/J", "V_EoR/ha/J", "oiB/ha/J", "N_Dh/ha/J"),
               Größen = c("Wert","Standardfehler"),
-              Nutzungsart = nart,
+              Nutzungsart = n.nart,
               BAGR=bagr.list, AKL = akl.lab[1:A.k], DKL = dkl.lab,
               T.VBN.A.NArt.Bagr.Akl.Dkl=Y.na.bagr.akl.dkl,
               BAF.bagr.akl.dkl=BAF.bagr.akl.dkl,
