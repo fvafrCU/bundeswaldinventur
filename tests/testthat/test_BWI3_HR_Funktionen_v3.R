@@ -1913,7 +1913,7 @@ test_that("ntns.stratum.fun", {
     ntns.te, ecken.3, trakte.3, A, list(Wa = c(3, 5), Begehbar = 1, 
                                         WLT = c(9410)), 3, 3)
   
-  result[["Log"]] <- NULL
+  result[["Datum"]] <- NULL
   
   reference <- structure(list(
     HBF = 5303.03781030478, se.HBF = 973.67411677321, 
