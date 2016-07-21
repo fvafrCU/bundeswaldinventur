@@ -17,7 +17,7 @@ test_that("flaechen.kreis.fun.1", {
   reference <- structure(list(
     Kreis = "Ortenaukreis", 
     KreisCode = 317, 
-    Kreisfläche_gesamt_ha = 185073.999, 
+    KreisflÃ¤che_gesamt_ha = 185073.999, 
     Waldanteil = structure(list(BWI = c(1987, 2002, 2012), 
       Waldanteil = c(45.3, 45.6, 45.5)), 
       .Names = c("BWI", "Waldanteil"), 
@@ -55,7 +55,7 @@ test_that("flaechen.kreis.fun.1", {
       SE_begehb_Holzbfl = c(5174, 1773, 3164, 3659, 3434, 714, 3179, 721)), 
       .Names = c("Eigentum", "b_HBF", "SE_begehb_Holzbfl"), 
       row.names = c(NA, -8L), class = "data.frame")), 
-    .Names = c("Kreis", "KreisCode", "Kreisfläche_gesamt_ha", "Waldanteil", 
+    .Names = c("Kreis", "KreisCode", "KreisflÃ¤che_gesamt_ha", "Waldanteil", 
                "Waldflaeche", "Waldfl_Proz", "begehb_Holzbfl"))
   
   expect_equal(result, reference)

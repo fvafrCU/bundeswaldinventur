@@ -22,12 +22,12 @@ context("get_abbreviation_for_label")
 
 test_that("abbreviation is character", {
   expect_is(get_abbreviation_for_label("Stammzahl"), "character")
-  expect_is(get_abbreviation_for_label("Baumartenfl‰che"), "character")
+  expect_is(get_abbreviation_for_label("Baumartenfl√§che"), "character")
 })
 
 test_that("abbreviation is longer than 0", {
   expect_more_than(nchar(get_abbreviation_for_label("Stammzahl")), 0)
-  expect_more_than(nchar(get_abbreviation_for_label("Baumartenfl‰che")), 0)
+  expect_more_than(nchar(get_abbreviation_for_label("Baumartenfl√§che")), 0)
 })
 
 test_that("output is error", {
@@ -114,18 +114,18 @@ test_that("label is character", {
   expect_is(get_label_for_abbreviation("N"), "character")
   expect_is(get_label_for_abbreviation("N", "text_label"), "character")
   expect_is(get_label_for_abbreviation("N", "axis_label"), "character")
-  expect_is(get_label_for_abbreviation("Baumartenfl‰che"), "character")
-  expect_is(get_label_for_abbreviation("Baumartenfl‰che", "text_label"), "character")
-  expect_is(get_label_for_abbreviation("Baumartenfl‰che", "axis_label"), "character")
+  expect_is(get_label_for_abbreviation("Baumartenfl√§che"), "character")
+  expect_is(get_label_for_abbreviation("Baumartenfl√§che", "text_label"), "character")
+  expect_is(get_label_for_abbreviation("Baumartenfl√§che", "axis_label"), "character")
 })
 
 test_that("label is longer than 0", {
   expect_more_than(nchar(get_label_for_abbreviation("N")), 0)
   expect_more_than(nchar(get_label_for_abbreviation("N", "text_label")), 0)
   expect_more_than(nchar(get_label_for_abbreviation("N", "axis_label")), 0)
-  expect_more_than(nchar(get_label_for_abbreviation("Baumartenfl‰che")), 0)
-  expect_more_than(nchar(get_label_for_abbreviation("Baumartenfl‰che", "text_label")), 0)
-  expect_more_than(nchar(get_label_for_abbreviation("Baumartenfl‰che", "axis_label")), 0)
+  expect_more_than(nchar(get_label_for_abbreviation("Baumartenfl√§che")), 0)
+  expect_more_than(nchar(get_label_for_abbreviation("Baumartenfl√§che", "text_label")), 0)
+  expect_more_than(nchar(get_label_for_abbreviation("Baumartenfl√§che", "axis_label")), 0)
 })
 
 test_that("unknown output given back when label_type='text_label'", {
@@ -161,7 +161,7 @@ context("map_abbreviations_to_label")
 
 test_that("correct assignment", {
   input_vector <- c("N", "BAF")
-  output_vector <- c("Stammzahl", "Baumartengruppenfl‰che")
+  output_vector <- c("Stammzahl", "Baumartengruppenfl√§che")
   input_factor <- factor(input_vector)
   output_factor <-factor(output_vector)
   names(output_vector) = input_vector
@@ -205,7 +205,7 @@ test_that("unknown output is given back", {
 context("map_labels_to_abbreviations")
 
 test_that("correct assignment", {
-  input_vector <- c("Stammzahl", "Baumartengruppenfl‰che")
+  input_vector <- c("Stammzahl", "Baumartengruppenfl√§che")
   output_vector <- c("N", "BAF")
   input_factor <- factor(input_vector)
   output_factor <-factor(output_vector)
@@ -215,7 +215,7 @@ test_that("correct assignment", {
 })
 
 test_that("label is longer than 0", {
-  input_vector <- c("Stammzahl", "Baumartengruppenfl‰che")
+  input_vector <- c("Stammzahl", "Baumartengruppenfl√§che")
   output_vector <- map_labels_to_abbreviations(input_vector)
   for (i in 1:length(output_vector)){
     expect_more_than(nchar(output_vector), 0)
@@ -254,11 +254,11 @@ test_that("unknown output is given back", {
 context("revalue_data")
 
 test_that("correct assignment", {
-  label <- c("Stammzahl", "N", "Baumartenfl√§che") 
+  label <- c("Stammzahl", "N", "Baumartenfl√É‚Ç¨che") 
       #BAF because of Encoding removed
   df_input = data.frame(label)
-  label <- c("Stammzahl", "Stammzahl", "Baumartenfl√§che")
-      # Baumartengruppenfl√§che because of Encoding problems removed
+  label <- c("Stammzahl", "Stammzahl", "Baumartenfl√É‚Ç¨che")
+      # Baumartengruppenfl√É‚Ç¨che because of Encoding problems removed
   df_output = data.frame(label)
   revalue_data(df_input[,"label"])
   expect_identical(df_input, df_output)

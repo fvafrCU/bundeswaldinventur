@@ -14,8 +14,8 @@ test_that("get_species_groups", {
   output <- get_species_groups("*")
   
   reference <- 
-    structure(list(bagr.lab = c("Fichte", "Weißtanne", "Douglasie", 
-    "Kiefer", "Lärchen", "sonst. Nadelholz", "Buche", "Eichen", "Roteiche", 
+    structure(list(bagr.lab = c("Fichte", "WeiÃŸtanne", "Douglasie", 
+    "Kiefer", "LÃ¤rchen", "sonst. Nadelholz", "Buche", "Eichen", "Roteiche", 
     "Esche", "Bergahorn", "Hainbuche", "sonst. Hartholz", "Birken", 
     "Erlen", "Pappeln", "sonst. Weichholz"), ba.grupp = list(10, 
     30, 40, 20, c(50, 51), c(11L, 12L, 13L, 14L, 15L, 16L, 17L, 

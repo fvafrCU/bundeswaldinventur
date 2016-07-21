@@ -29,7 +29,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2a", {
     LK = 1.01667306953515, se.LK = 0.00115571516765233, 
     Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh"), 
     Attribute2 = c("V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha"), 
-    Größen = c("Wert", "Standardfehler"), 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
     BAGR = "Alle Baumarten", 
     AKL = "0-500", DKL = "0-500", 
     T.FVBN.Bagr.Akl.Dkl = structure(c(1323958.42086703, 
@@ -43,7 +43,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2a", {
        6.50390734584874), .Dim = c(5L, 2L, 1L, 1L, 1L)), 
     nT.Bagr.Akl.Dkl = structure(4572L, .Dim = c(1L, 1L, 1L))), 
       .Names = c("Stratum", "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", 
-                 "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "Größen", 
+                 "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "GrÃ¶ÃŸen", 
                  "BAGR", "AKL", "DKL", "T.FVBN.Bagr.Akl.Dkl", 
                  "FVBN.ha.Bagr.Akl.Dkl", "nT.Bagr.Akl.Dkl"))
   
@@ -71,7 +71,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2b", {
       Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh"), 
       Attribute2 = c("BA_Proz", "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", 
                      "N_Dh/ha"), 
-      Größen = c("Wert", "Standardfehler"), 
+      GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
       BAGR = "Alle Baumarten", 
       AKL = "0-500", DKL = "0-500", 
       T.FVBN.Bagr.Akl.Dkl = structure(c(161292.395287006, 56304165.047784, 
@@ -84,7 +84,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2b", {
        937.938541645009, 16.5766025730701), .Dim = c(6L, 2L, 1L, 1L, 1L)), 
       nT.Bagr.Akl.Dkl = structure(579L, .Dim = c(1L, 1L, 1L))), 
         .Names = c("Stratum", "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", 
-        "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "Größen", "BAGR", 
+        "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "GrÃ¶ÃŸen", "BAGR", 
         "AKL", "DKL", "T.FVBN.Bagr.Akl.Dkl", "FVBN.ha.Bagr.Akl.Dkl", 
         "nT.Bagr.Akl.Dkl"))
   
@@ -111,7 +111,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2c", {
     Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), 
     Attribute2 = c("BA_Proz", "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", 
                    "N_Dh/ha", "N_Dh_HB/ha"), 
-    Größen = c("Wert", "Standardfehler"), 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
     BAGR = "Alle Baumarten", 
     AKL = "0-500", DKL = "0-500", 
     T.FVBN.Bagr.Akl.Dkl = structure(c(296469.83079119, 
@@ -126,7 +126,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2c", {
       12.4347248772871), .Dim = c(7L, 2L, 1L, 1L, 1L)), 
     nT.Bagr.Akl.Dkl = structure(960L, .Dim = c(1L, 1L, 1L))), 
     .Names = c("Stratum", "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", 
-               "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "Größen", 
+               "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "GrÃ¶ÃŸen", 
                "BAGR", "AKL", "DKL", "T.FVBN.Bagr.Akl.Dkl", 
                "FVBN.ha.Bagr.Akl.Dkl", "nT.Bagr.Akl.Dkl"))
 
@@ -154,7 +154,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2d", {
     Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), 
     Attribute2 = c("BA_Proz", "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", 
                    "N_Dh/ha", "N_Dh_HB/ha"), 
-    Größen = c("Wert", "Standardfehler"), 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
     BAGR = "Alle Baumarten", 
     AKL = "0-500", DKL = "0-500", 
     T.FVBN.Bagr.Akl.Dkl = structure(c(81246.5415465562, 
@@ -169,7 +169,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2d", {
       22.8167382608645), .Dim = c(7L, 2L, 1L, 1L, 1L)), 
     nT.Bagr.Akl.Dkl = structure(271L, .Dim = c(1L, 1L, 1L))),
       .Names = c("Stratum", "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", 
-      "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "Größen", "BAGR", 
+      "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "GrÃ¶ÃŸen", "BAGR", 
       "AKL", "DKL", "T.FVBN.Bagr.Akl.Dkl", "FVBN.ha.Bagr.Akl.Dkl", 
       "nT.Bagr.Akl.Dkl"))
   
@@ -198,7 +198,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
     Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), 
     Attribute2 = c("BA_Proz", "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", 
                    "N_Dh/ha", "N_Dh_HB/ha"), 
-    Größen = c("Wert", "Standardfehler"), 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
     BAGR = "Alle Baumarten", 
     AKL = "0-500", DKL = c("0-6.9", "7-24.9", "25-49.9", ">=50", "Alle DKl"), 
     T.FVBN.Bagr.Akl.Dkl = structure(c(37304.9012718131, 
@@ -240,7 +240,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
     nT.Bagr.Akl.Dkl = structure(c(1753L, 1507L, 1896L, 1328L, 2104L), 
       .Dim = c(1L, 1L, 5L))), .Names = c("Stratum", 
       "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", "se.iBL", "LK", 
-      "se.LK", "Attribute1", "Attribute2", "Größen", "BAGR", "AKL", 
+      "se.LK", "Attribute1", "Attribute2", "GrÃ¶ÃŸen", "BAGR", "AKL", 
       "DKL", "T.FVBN.Bagr.Akl.Dkl", "FVBN.ha.Bagr.Akl.Dkl", "nT.Bagr.Akl.Dkl"))
   
   expect_equal(result, reference)
@@ -249,7 +249,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
 test_that("fvbn.kreis.fun.1", {
   
   bagr.xx <- list(
-    bagr.lab = c("Fichte", "Weißtanne", "Douglasie", "Kiefer/Lärche/sNB",
+    bagr.lab = c("Fichte", "WeiÃŸtanne", "Douglasie", "Kiefer/LÃ¤rche/sNB",
                  "Buche", "Eichen", "Esche", "Bergahorn", "sonst.Laubb."),
     ba.grupp =list(c(10), c(30), c(40), c(11:19,20:29,50,51,31:39,90:99),
                    c(100), c(110,111), c(120), c(140),
@@ -271,8 +271,8 @@ test_that("fvbn.kreis.fun.1", {
     Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), 
     Attribute2 = c("BA_Proz", "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", 
                "N_Dh/ha", "N_Dh_HB/ha"), 
-    Größen = c("Wert", "Standardfehler"), 
-    BAGR = c("Fichte", "Weißtanne", "Douglasie", "Kiefer/Lärche/sNB", "Buche", 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
+    BAGR = c("Fichte", "WeiÃŸtanne", "Douglasie", "Kiefer/LÃ¤rche/sNB", "Buche", 
          "Eichen", "Esche", "Bergahorn", "sonst.Laubb.", "Alle BA"), 
     AKL = "0-500", DKL = "0-500", 
     T.FVBN.Bagr.Akl.Dkl = structure(c(9251.38118065413, 
@@ -355,7 +355,7 @@ test_that("fvbn.kreis.fun.1", {
       Kreis = "Emmendingen", 
       Eigentumsart = "GW", BWI = 3), 
       .Names = c("Stratum", "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", 
-                 "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "Größen", 
+                 "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "GrÃ¶ÃŸen", 
                  "BAGR", "AKL", "DKL", "T.FVBN.Bagr.Akl.Dkl", 
                  "FVBN.ha.Bagr.Akl.Dkl", "nT.Bagr.Akl.Dkl", "Kreis", 
                  "Eigentumsart", "BWI")))
@@ -366,7 +366,7 @@ test_that("fvbn.kreis.fun.1", {
 test_that("fvbn.stratum.fun.1", {
   
   bagr.xx <- list(
-    bagr.lab = c("Fichte", "Weißtanne", "Douglasie", "Kiefer/Lärche/sNB",
+    bagr.lab = c("Fichte", "WeiÃŸtanne", "Douglasie", "Kiefer/LÃ¤rche/sNB",
                  "Buche", "Eichen", "Esche", "Bergahorn", "sonst.Laubb."),
     ba.grupp =list(c(10), c(30), c(40), c(11:19,20:29,50,51,31:39,90:99),
                    c(100), c(110,111), c(120), c(140),
@@ -390,8 +390,8 @@ test_that("fvbn.stratum.fun.1", {
     Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), 
     Attribute2 = c("BA_Proz", "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", 
                    "N_Dh/ha", "N_Dh_HB/ha"), 
-    Größen = c("Wert", "Standardfehler"), 
-    BAGR = c("Fichte", "Weißtanne", "Douglasie", "Kiefer/Lärche/sNB", "Buche", 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
+    BAGR = c("Fichte", "WeiÃŸtanne", "Douglasie", "Kiefer/LÃ¤rche/sNB", "Buche", 
              "Eichen", "Esche", "Bergahorn", "sonst.Laubb.", "Alle BA"), 
     AKL = "0-500", DKL = "0-500", 
     T.FVBN.Bagr.Akl.Dkl = structure(c(311.628514343287, 
@@ -471,7 +471,7 @@ test_that("fvbn.stratum.fun.1", {
       .Dim = c(10L, 1L, 1L)), 
     Eigentumsart = "GW", BWI = 3), 
     .Names = c("Stratum", "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", 
-      "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "Größen", "BAGR", 
+      "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "GrÃ¶ÃŸen", "BAGR", 
       "AKL", "DKL", "T.FVBN.Bagr.Akl.Dkl", "FVBN.ha.Bagr.Akl.Dkl", 
       "nT.Bagr.Akl.Dkl", "Eigentumsart", "BWI")))
   
@@ -481,7 +481,7 @@ test_that("fvbn.stratum.fun.1", {
 test_that("fvbn.stratum.fun.2", {
   
   bagr.xx <- list(
-    bagr.lab = c("Fichte", "Weißtanne", "Douglasie", "Kiefer/Lärche/sNB",
+    bagr.lab = c("Fichte", "WeiÃŸtanne", "Douglasie", "Kiefer/LÃ¤rche/sNB",
                  "Buche", "Eichen", "Esche", "Bergahorn", "sonst.Laubb."),
     ba.grupp =list(c(10), c(30), c(40), c(11:19,20:29,50,51,31:39,90:99),
                    c(100), c(110,111), c(120), c(140),
@@ -507,8 +507,8 @@ test_that("fvbn.stratum.fun.2", {
     Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), 
     Attribute2 = c("BA_Proz", "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", 
                    "N_Dh/ha", "N_Dh_HB/ha"), 
-    Größen = c("Wert", "Standardfehler"), 
-    BAGR = c("Fichte", "Weißtanne", "Douglasie", "Kiefer/Lärche/sNB", "Buche", 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
+    BAGR = c("Fichte", "WeiÃŸtanne", "Douglasie", "Kiefer/LÃ¤rche/sNB", "Buche", 
              "Eichen", "Esche", "Bergahorn", "sonst.Laubb.", "Alle BA"), 
     AKL = "0-500", DKL = "0-500", 
     T.FVBN.Bagr.Akl.Dkl = structure(c(61373.7188155302, 
@@ -590,7 +590,7 @@ test_that("fvbn.stratum.fun.2", {
       .Dim = c(10L, 1L, 1L)), 
       Eigentumsart = "GW", BWI = 3), 
       .Names = c("Stratum", "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", 
-                 "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "Größen", 
+                 "se.iBL", "LK", "se.LK", "Attribute1", "Attribute2", "GrÃ¶ÃŸen", 
                  "BAGR", "AKL", "DKL", "T.FVBN.Bagr.Akl.Dkl", 
                  "FVBN.ha.Bagr.Akl.Dkl", "nT.Bagr.Akl.Dkl", "Eigentumsart", 
                  "BWI")))
@@ -615,7 +615,7 @@ test_that("VB.A.bagrupp.akl.dkl.stratum.fun.2", {
     se.HBF = 15708.5123749046, 
     Attribute = c("V_DhmR", "V_EoR", "oiB", "N_Dh", "V_DhmR/J", "V_EoR/J", 
       "oiB/J", "N_Dh/J", "V_DhmR/ha/J", "V_EoR/ha/J", "oiB/ha/J", "N_Dh/ha/J"), 
-    Größen = c("Wert", "Standardfehler"), 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
     Nutzungsart = 2, 
     BAGR = "Alle Baumarten", 
     AKL = "0-500", 
@@ -643,7 +643,7 @@ test_that("VB.A.bagrupp.akl.dkl.stratum.fun.2", {
     SE.mPL.Stratum = 0.00883984636898767, 
     nT.NArt.Bagr.Akl.Dkl = structure(c(8970L, 8970L), 
       .Dim = c(2L, 1L, 1L, 1L))), 
-      .Names = c("Stratum", "nTE", "HBF", "se.HBF", "Attribute", "Größen", 
+      .Names = c("Stratum", "nTE", "HBF", "se.HBF", "Attribute", "GrÃ¶ÃŸen", 
       "Nutzungsart", "BAGR", "AKL", "DKL", "T.VBN.A.NArt.Bagr.Akl.Dkl", 
       "BAF.bagr.akl.dkl", "mPL.NArt.Bagr.Akl.Dkl", "mPL.Stratum", 
       "SE.mPL.Stratum", "nT.NArt.Bagr.Akl.Dkl"))
@@ -669,7 +669,7 @@ test_that("VB.A.bagrupp.akl.dkl.stratum.fun.3", {
     Attribute = c("V_DhmR", "V_EoR", "oiB", "V_EoR_HB", "V_DhmR/J", "V_EoR/J", 
                   "oiB/J", "V_EoR_HB/J", "V_DhmR/ha/J", "V_EoR/ha/J", 
                   "oiB/ha/J", "V_EoR_HB/ha/J"), 
-    Größen = c("Wert", "Standardfehler"), 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
     Nutzungsart = "insgesamt", 
     BAGR = c("Alle Baumarten", "Alle BA"), 
     AKL = "0-500", 
@@ -698,7 +698,7 @@ test_that("VB.A.bagrupp.akl.dkl.stratum.fun.3", {
     SE.mPL.Stratum = 0.00883984636898767, 
     nT.NArt.Bagr.Akl.Dkl = structure(c(8970L, 8970L), 
         .Dim = c(1L, 2L, 1L, 1L))), 
-        .Names = c("Stratum", "nTE", "HBF", "se.HBF", "Attribute", "Größen", 
+        .Names = c("Stratum", "nTE", "HBF", "se.HBF", "Attribute", "GrÃ¶ÃŸen", 
                    "Nutzungsart", "BAGR", "AKL", "DKL", 
                    "T.VBN.A.NArt.Bagr.Akl.Dkl", "BAF.bagr.akl.dkl", 
                    "mPL.NArt.Bagr.Akl.Dkl", "mPL.Stratum", "SE.mPL.Stratum", 
@@ -725,7 +725,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2", {
     Attribute = c("V_DhmR", "V_DhmR_HB", "V_EoR", "oiB", "V_DhmR/J", 
       "V_DhmR_HB/J", "V_EoR/J", "oiB/J", "V_DhmR/ha/J", "V_DhmR_HB/ha/J", 
       "V_EoR/ha/J", "oiB/ha/J", "mBAF_mLK", "mBAFoLK", "mPL", "nT"), 
-    Größen = c("Wert", "Standardfehler"), 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
     BAGR = c("Fichte", "Tanne", "Douglasie", "Kiefer", "Buche", "Eiche", 
              "Alle BA"), 
     AKL = c("1-20", "21-40", "41-60", "61-80", "81-100", "101-120", "121-140", 
@@ -1645,7 +1645,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2", {
       33437.7672705181, 23009.4722114438, 0.874065453419145, 0.837673852007197, 
       0.734362883032103, 0.505867221464956, 0.021447403005249), 
       .Dim = c(13L, 2L, 7L, 9L, 1L))), 
-      .Names = c("Stratum", "HBF", "se_HBF", "Attribute", "Größen", "BAGR", 
+      .Names = c("Stratum", "HBF", "se_HBF", "Attribute", "GrÃ¶ÃŸen", "BAGR", 
                  "AKL", "DKL", "iVB.bagr.akl.dkl", "VB.A.bagr.akl.dkl"))
   
   expect_equal(result, reference)
@@ -1668,7 +1668,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12", {
     Attribute = c("V_DhmR", "V_DhmR_HB", "V_EoR", "oiB", "V_DhmR/J", 
       "V_DhmR_HB/J", "V_EoR/J", "oiB/J", "V_DhmR/ha/J", "V_DhmR_HB/ha/J", 
       "V_EoR/ha/J", "oiB/ha/J"), 
-    Größen = c("Wert", "Standardfehler"), 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
     BAGR = "alle Baumarten", 
     AKL = "0-500", DKL = "0-400", 
     iVB.bagr.akl.dkl = structure(c(255277557.930226, 243683752.11536, 
@@ -1690,7 +1690,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12", {
      0.170716299197767, 0.170998259265493, 0.137179365161479, 
      0.0805525690779948, 0.0137565136931801), 
      .Dim = c(13L, 2L, 1L, 1L, 1L))), 
-      .Names = c("Stratum", "HBF", "se_HBF", "Attribute", "Größen", "BAGR", 
+      .Names = c("Stratum", "HBF", "se_HBF", "Attribute", "GrÃ¶ÃŸen", "BAGR", 
                  "AKL", "DKL", "iVB.bagr.akl.dkl", "VB.A.bagr.akl.dkl"))
 
   expect_equal(result, reference)
@@ -1865,7 +1865,7 @@ test_that("verjg.kl4.bagrupp.fun", {
     HBF = 1323958.42086703, se.HBF = 15760.6334334331, 
     BAGR = c("Fi", "Ta", "Dgl/Ki/La/sNB", "Bu", "Ei", "Es", "Ah", "sBLb", "Bi", 
              "Er/Pa/Wei", "sWLb"), 
-    VjgArt = c("Naturverjüngung", "Pflanzung", "Saat", "Stockausschlag", 
+    VjgArt = c("NaturverjÃ¼ngung", "Pflanzung", "Saat", "Stockausschlag", 
                "nicht zuzuordnen"), 
     Verjg.kl4m.BAF.VArt.BAGR = structure(c(0, 0, 12150.9605978002, 
       937.912294000381, 119.068207438919, 53.5258108419167, 67.0384025076264, 
@@ -1965,11 +1965,11 @@ test_that("fba.stratum.fun", {
       .Names = c("Wa", "Begehbar")), 
     HBF = 1323958.42086703, se.HBF = 15760.6334334331, 
     FBA = c("Adlerfarn", "Brennessel", "Riedgras", "Honiggras", "Reitgras", 
-      "Heidekraut", "Heidelbeere", "Brombeere", "Riesenbärenklau", 
-      "Riesenknöterich", "Drüsiges Springkraut", "Kleinblütiges Springkraut", 
+      "Heidekraut", "Heidelbeere", "Brombeere", "RiesenbÃ¤renklau", 
+      "RiesenknÃ¶terich", "DrÃ¼siges Springkraut", "KleinblÃ¼tiges Springkraut", 
       "Kermesbeere"), 
     Dichtestufen = c("nicht vorhanden", "selten, bis 10%", 
-      "häufig, > 10 bis 50%", "flächig, > 50%"), 
+      "hÃ¤ufig, > 10 bis 50%", "flÃ¤chig, > 50%"), 
     FBA.Dichtevertlg = structure(c(0.9556, 
       0.00235, 0.0273, 0.00165, 0.0124, 0.00105, 0.0048, 0.00066, 
       0.774, 0.0045, 0.1564, 0.00368, 0.0487, 0.002, 0.0209, 0.00141, 
@@ -1986,7 +1986,7 @@ test_that("fba.stratum.fun", {
       0.045, 0.00218, 0.0178, 0.0013, 0.0062, 0.00076, 0.9972, 
       6e-04, 0.0024, 0.00053, 3e-04, 0.00015, 1e-04, 8e-05), 
       .Dim = c(2L, 4L, 13L)), 
-    FBA.Fläche = structure(c(10419.1, 771.71, 46768.9, 
+    FBA.FlÃ¤che = structure(c(10419.1, 771.71, 46768.9, 
       1580.88, 31766.1, 1905.58, 715.6, 142.92, 7684.7, 663.43, 
       3606.6, 410.72, 77213.3, 3209.15, 146601.4, 3389.55, 336.2, 
       101.97, 333.4, 104.38, 6842.9, 601.35, 14712.1, 897.62, 348.8, 
@@ -1995,7 +1995,7 @@ test_that("fba.stratum.fun", {
       0.0022, 3e-04, 1e-04, 3e-04, 1e-04, 0.0052, 5e-04, 0.0111, 
       7e-04, 3e-04, 1e-04), .Dim = c(2L, 13L, 2L))), 
       .Names = c("Stratum", "HBF", "se.HBF", "FBA", "Dichtestufen", 
-                 "FBA.Dichtevertlg", "FBA.Fläche"))
+                 "FBA.Dichtevertlg", "FBA.FlÃ¤che"))
   
   expect_equal(result, reference)
 })
@@ -2096,7 +2096,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2g", {
     Attribute = c("V_DhmR", "V_DhmR_HB", "V_EoR", "oiB", "G", "V_DhmR/J", 
       "V_DhmR_HB/J", "V_EoR/J", "oiB/J", "G/J", "V_DhmR/ha/J", "V_DhmR_HB/ha/J", 
       "V_EoR/ha/J", "oiB/ha/J", "G/ha/J", "mBAF_mLK", "mBAFoLK", "mPL", "nT"), 
-    Größen = c("Wert", "Standardfehler"), 
+    GrÃ¶ÃŸen = c("Wert", "Standardfehler"), 
     BAGR = c("Fichte", "Tanne", "Alle BA"), 
     AKL = c("1-20", "21-40", "41-60", "61-80", "81-100", "101-120", "121-140", 
       "141-160", ">160"), DKL = "0-400", 
@@ -2590,7 +2590,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2g", {
      33437.7672705181, 23009.4722114438, 2590.64400447797, 0.874065453419145, 
      0.837673852007197, 0.734362883032103, 0.505867221464956, 
      0.056109316364756, 0.021447403005249), .Dim = c(16L, 2L, 3L, 9L, 1L))), 
-      .Names = c("Stratum", "HBF", "se_HBF", "Attribute", "Größen", "BAGR", 
+      .Names = c("Stratum", "HBF", "se_HBF", "Attribute", "GrÃ¶ÃŸen", "BAGR", 
                  "AKL", "DKL", "iVB.bagr.akl.dkl", "VB.A.bagr.akl.dkl"))
   
   expect_equal(result, reference)
@@ -2775,12 +2775,12 @@ test_that("verjg.tab.fun", {
   reference <- structure(list(BAGR = structure(c(6L, 4L, 3L, 5L, 2L, 7L, 1L), 
       .Label = c("Alle", 
     "BLb", "Bu", "DglKiLae", "Ei", "FiTa", "WLb"), class = "factor"), 
-    Stückzahl_Verj_Mio = c(5163.795, 190.618, 5601.324, 429.646, 
-    6839.543, 917.337, 19142.264), SE_Stückzahl_Verj_Mio = c(215.931, 
+    StÃ¼ckzahl_Verj_Mio = c(5163.795, 190.618, 5601.324, 429.646, 
+    6839.543, 917.337, 19142.264), SE_StÃ¼ckzahl_Verj_Mio = c(215.931, 
     30.584, 197.399, 55.582, 248.897, 54.089, 443.47), Anteil_Proz = c(27, 
     1, 29.3, 2.2, 35.7, 4.8, 100), SE_Anteil_Proz = c(0.98, 0.16, 
-    0.78, 0.28, 0.89, 0.28, 0)), .Names = c("BAGR", "Stückzahl_Verj_Mio", 
-    "SE_Stückzahl_Verj_Mio", "Anteil_Proz", "SE_Anteil_Proz"), row.names = c(NA, 
+    0.78, 0.28, 0.89, 0.28, 0)), .Names = c("BAGR", "StÃ¼ckzahl_Verj_Mio", 
+    "SE_StÃ¼ckzahl_Verj_Mio", "Anteil_Proz", "SE_Anteil_Proz"), row.names = c(NA, 
     -7L), class = "data.frame")
 
   expect_equal(result, reference)
