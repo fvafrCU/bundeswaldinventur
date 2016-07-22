@@ -14,10 +14,12 @@
 #' @return  the modal value(s) of x.
 modal_value <- function(x, multiple = FALSE) {
     if (! is.logical(multiple)) stop("multiple must be TRUE or FALSE")
+    if (! is.vector(x) || ! is.atomic(x)) stop("x must be an atomic vector")
     if (multiple) {
-    table_of_frequencies <- table(as.vector(x))
-    modal_value <- names(table_of_frequencies)[table_of_frequencies ==
-                                         max(table_of_frequencies)]
+        table_of_frequencies <- table(x)
+        modals <- names(table_of_frequencies)[table_of_frequencies 
+                                              == max(table_of_frequencies)]
+        modal_value <- as.numeric(modals)
     } else {
         unique_values <- unique(x)
         values_indices <- match(x, unique_values) 
