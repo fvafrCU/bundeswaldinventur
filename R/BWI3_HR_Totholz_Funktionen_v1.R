@@ -181,11 +181,12 @@ Totholz.bagr.art.zg.stratum.fun <-
 
               #Ratio-Schätzer (Th-Vol/ha, Th-N/ha)
               #Bezugsfläche ist die HBF des Stratums (also keine BA-Fläche!)
-              Yha.bagr.dkl[m,1,i,j,k,l] <-
-                              Y.bagr.dkl[m,1,i,j,k,l]/T.hbf
-              Yha.bagr.dkl[m,2,i,j,k,l] <- Yha.bagr.dkl[m,1,i,j,k,l]*sqrt(
-              nT/(nT-1)*(sum(xy[,(1+m)]^2)/sum(xy[,(1+m)])^2+sum(xy$x^2)/sum(xy$x)^2
-                                -2*sum(xy[,(1+m)]*xy$x)/sum(xy[,(1+m)])/sum(xy$x)))
+              Yha.bagr.dkl[m,1,i,j,k,l] <- Y.bagr.dkl[m,1,i,j,k,l]/T.hbf
+              tmp <- (sum(xy[,(1+m)]^2)/sum(xy[,(1+m)])^2+sum(xy$x^2)/sum(xy$x)^2
+                      -2*sum(xy[,(1+m)]*xy$x)/sum(xy[,(1+m)])/sum(xy$x))
+              if (isTRUE(all.equal(tmp, 0))) tmp <- 0
+              Yha.bagr.dkl[m,2,i,j,k,l] <- Yha.bagr.dkl[m,1,i,j,k,l] * 
+                  sqrt( nT/(nT-1)* tmp)
 
             }#End for l (Zielgrößen)
           }#End if ... else
