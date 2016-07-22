@@ -2,6 +2,7 @@
 ^\.Rproj\.user$
 ^.*\.sh$
 ^.*\.Rout$
+^tmp.*$
 ^testing.r$
-^check.r$
+^create.R$
 ^sedscr$

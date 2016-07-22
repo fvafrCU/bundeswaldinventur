@@ -1,2 +1,3 @@
-echo "devtools::check()" > check.R
-R CMD BATCH --vanilla check.R
+file=tmp_check.R
+echo "devtools::check()" > $file
+R CMD BATCH --vanilla $file
