@@ -1,5 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^.*\.sh$
+^.*\.Rout$
 ^testing.r$
+^check.r$
 ^sedscr$
