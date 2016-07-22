@@ -2690,7 +2690,7 @@ test_that("stamm.merkmale.bagr.fun", {
       0.013592518478361, 1460884.60733739, 0.775711380087284, 0.329028469218415, 
       0.292977792491541), .Dim = c(9L, 2L, 7L))), 
     .Names = c("Stratum", "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", "se.iBL", 
-               "LK", "se.LK", "Merkmal", "BAGR", "Kennwerte", 
+               "LK", "se.LK", "Merkmale", "BAGR", "Kennwerte", 
                "Kennwert_Tabelle_BAGR"))
     
   expect_equal(result, reference)
