@@ -18,6 +18,9 @@ harmonize_deadwood <- function(deadwood, to_bwi_2 = TRUE) {
     return(deadwood)
 }
 purge_deadwood_to_2 <- function(totholz) {
+    # trick subset() through R CMD check 
+    # TODO: get rid of subset.
+    totholz <- tart <- tbd <- lge <- NULL 
     t <- subset(totholz, 
                 (tart != 4 & tbd >= 20) | 
                 (tart == 4 & (tbd >= 60 | lge >= 0.5))
@@ -30,7 +33,7 @@ drop_variables <- function(totholz) {
     totholz <- totholz[, needed] 
     return(totholz)
 }
-deadwood <- function(totholz = t3, v = c("tnr", "enr"), 
+deadwood <- function(totholz, v = c("tnr", "enr"), 
                      bwi = 3) {
     totholz <- harmonize_deadwood(totholz, to_bwi_2 = bwi == 3)
     # Auswahl nach Aufnahme-Kriterium:
