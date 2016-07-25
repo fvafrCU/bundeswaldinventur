@@ -18,13 +18,10 @@ harmonize_deadwood <- function(deadwood, to_bwi_2 = TRUE) {
     return(deadwood)
 }
 purge_deadwood_to_2 <- function(totholz) {
-    # trick subset() through R CMD check 
-    # TODO: get rid of subset.
-    totholz <- tart <- tbd <- lge <- NULL 
-    t <- subset(totholz, 
-                (tart != 4 & tbd >= 20) | 
-                (tart == 4 & (tbd >= 60 | lge >= 0.5))
-                )
+    index <-totholz[["tart"]] != 4 & totholz[["tbd"]] >= 20 | 
+                totholz[["tart"]] == 4 & (totholz[["tbd"]] >= 60 | 
+                                           totholz[["lge"]] >= 0.5) 
+    t <- totholz[index, ]
     return(t)
 
 }
