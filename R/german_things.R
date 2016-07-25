@@ -6,12 +6,11 @@
 #' @section Version: $Id: 9be1ec3c316c4c9ca5af009959e89607c154f14c $
 #' @param data_frame The data which to prettyNum().
 #' @return  the modified data.frame. 
+#' @export
 #' @examples
-#' \dontrun{
 #' prettify_data_frame(utils::head(airquality * 10^4))
-#' }
 prettify_data_frame <- function(data_frame, digits = 0) {
-    tmp_data <- prettyNum(round(data_frame, digits), big.mark =',')
+    tmp_data <- sapply(round(data_frame, digits), prettyNum, big.mark = ",")
     row.names(tmp_data) <- row.names(data_frame)
     return(tmp_data)
 }
@@ -28,10 +27,9 @@ prettify_data_frame <- function(data_frame, digits = 0) {
 #' should avoid data_frame specifications that are not valid LaTeX names, like
 #' in the examples.
 #' @return TRUE on success, FALSE otherwise.
+#' @export
 #' @examples
-#' \dontrun{
 #' add_colSums_prettify_and_print_xtable(utils::head(airquality * 10^4))
-#' }
 add_colSums_prettify_and_print_xtable <- function(data_frame, 
 						  caption = 'XXX') {
     status <- FALSE
@@ -66,10 +64,9 @@ add_colSums_prettify_and_print_xtable <- function(data_frame,
 #' @param digits The digits passed to round().
 #' @param big_mark the big.mark passed to \code{prettyNum}.
 #' @return  the modified numbers. 
+#' @export
 #' @examples
-#' \dontrun{
-#' round_and_prettify(utils::head(airquality * 10^4))
-#' }
+#' round_and_prettify(airquality[1:10, "Ozone"]*10^4+0.1)
 round_and_prettify <- function(x, digits = 0, big_mark = ',', decimal_mark = '.') {
     return(prettyNum(round(x, digits), big.mark = big_mark, decimal.mark =
                      decimal_mark))
@@ -77,8 +74,8 @@ round_and_prettify <- function(x, digits = 0, big_mark = ',', decimal_mark = '.'
 
 #' round() and prettyNum() numbers
 #'
-#' The majority of \emph{german} readers can't cope with numbers like 12000.01. So we
-#' change it to 12.000.
+#' The majority of \emph{german} readers can't cope with numbers like 12000.01. 
+#' So we change it to 12.000.
 #'
 #' @note This is just an alias for 
 #' \code{\link{round_and_prettify}}(\ldots, big_mark = '.') 
@@ -87,10 +84,9 @@ round_and_prettify <- function(x, digits = 0, big_mark = ',', decimal_mark = '.'
 #' @param x the numbers to be modified.
 #' @param digits The digits passed to round().
 #' @return  the modified numbers. 
+#' @export
 #' @examples
-#' \dontrun{
-#' round_and_prettify(utils::head(airquality * 10^4))
-#' }
+#' round_and_prettify_german(airquality[1:10, "Ozone"]*10^4+0.1)
 round_and_prettify_german <- function(x, digits = 0) {
     return(round_and_prettify(x, digits, big_mark = '.', decimal_mark = ","))
 }
@@ -105,10 +101,9 @@ round_and_prettify_german <- function(x, digits = 0) {
 #' @param x the numbers to be modified.
 #' @param digits The digits passed to round().
 #' @return  the modified numbers. 
+#' @export
 #' @examples
-#' \dontrun{
-#' round_and_prettify(utils::head(airquality * 10^4))
-#' }
+#' as_percent_and_round(utils::head(airquality * 10^4))
 as_percent_and_round <- function(x, digits = 1){
     return(round(x * 100, digits))
 }

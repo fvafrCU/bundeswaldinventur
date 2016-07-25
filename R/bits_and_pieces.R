@@ -32,7 +32,7 @@ add_colSums_to_data_frame <- function(data_frame, german = TRUE) {
 #' @return  the modified numbers. 
 #' @examples
 #' \dontrun{
-#' round_and_prettify(utils::head(airquality * 10^4))
+#' as_percent_and_round(utils::head(airquality * 10^4))
 #' }
 as_percent_and_round <- function(x, digits = 1){
     return(round(x * 100, digits))
@@ -51,6 +51,7 @@ as_percent_and_round <- function(x, digits = 1){
 #' \code{condition} of form \emph{variable operator limit} and will set all 
 #' values of \emph{variable} to \emph{limit} where the condition is TRUE.
 #' lower than Zero to Zero.
+#' @export
 #' @examples
 #' set_to_limit(mtcars, mpg < 20)
 #' set_to_limit(set_to_limit(mtcars, mpg < 20), mpg > 23)

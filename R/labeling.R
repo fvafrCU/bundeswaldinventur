@@ -6,9 +6,10 @@
 #' @param label The label which shall be replaced.
 #' @return The abbreviation as character. If \code{label} is not known, the
 #'   function will return 'unknown label'.
+#' @export
 #' @examples
 #' label <- "Baumartenflaeche"
-#' print(get_abbreviation_for_label(label))
+#' print(bundeswaldinventur::get_abbreviation_for_label(label))
 get_abbreviation_for_label <- function(label) {
     return(switch(as.character(label),
                   # Attribute1 
@@ -95,12 +96,13 @@ get_abbreviation_for_label <- function(label) {
 #'  axis label.
 #' @return An expression holding a label and an approriate unit or a label as
 #'  charater. If \code{abbreviation} is not known, it will be returned.
+#' @export
 #' @examples
 #' abbreviation <- "V_DhmR"
 #' label <- get_axis_label_for_abbreviation(abbreviation)
 get_axis_label_for_abbreviation <- function(abbreviation) {
     return(
-           switch(get_abbreviation_for_label(abbreviation),
+           switch(bundeswaldinventur::get_abbreviation_for_label(abbreviation),
                   # Attribute1 
                   'Baumartengruppenfläche' = ,
                   'BAF' = 'Fläche [ha]',
@@ -138,6 +140,7 @@ get_axis_label_for_abbreviation <- function(abbreviation) {
 #' @param abbreviation The abbreviation which shall be replaced.
 #' @return The label as character. If \code{label} is not known, the
 #'   abbreviation will be returned.
+#' @export
 #' @examples
 #' abbreviation <- "V_DhmR"
 #' print(get_text_label_for_abbreviation(abbreviation))
@@ -221,6 +224,7 @@ get_text_label_for_abbreviation <- function(abbreviation) {
 #'   charater depending on the \code{label_type}. If \code{label_type} is not 
 #'   known, 'unknown name' and the unknown label type are returned as character
 #'   vector.
+#' @export
 #' @examples
 #' abbreviation <- "V_DhmR"
 #' label <- get_label_for_abbreviation(abbreviation)
@@ -244,16 +248,17 @@ get_label_for_abbreviation <- function(abbreviation,
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param x A factor or vector containing labels.
 #' @return A factor or vector containing abbreviations.
+#' @export
 #' @examples
 #' x <- c("Derbholzvorrat", "Durchmesserklasse", "Mittlerer Privatwald")
 #' abbreviations <- map_labels_to_abbreviations(x)
 map_labels_to_abbreviations <- function(x) {
     if (is.factor(x)) {
-        levels(x) <- vapply(levels(x), get_abbreviation_for_label,
+        levels(x) <- vapply(levels(x), bundeswaldinventur::get_abbreviation_for_label,
                             character(length = 1)
                             )
     } else {
-        x <- vapply(as.character(x), get_abbreviation_for_label,
+        x <- vapply(as.character(x), bundeswaldinventur::get_abbreviation_for_label,
                     character(length = 1)
                     )
     }
@@ -267,6 +272,7 @@ map_labels_to_abbreviations <- function(x) {
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param x A factor or vector containing abbreviations.
 #' @return A factor or vector containing labels.
+#' @export
 #' @examples
 #' x <- c("V_DhmR", "DKL", "MPW")
 #' labels <- map_abbreviations_to_labels(x)
@@ -306,6 +312,7 @@ revalue_data <- function(datacolumn) {
 #' @param ownership The label describing the ownership.
 #' @return ownership_colors[index] Which holds the information about the color
 #'   for the wanted ownership (\code{index}).
+#' @export
 #' @examples
 #' ownership <- "Mittlerer Privatwald"
 #' color <- get_color_for_ownership(ownership)
@@ -318,7 +325,7 @@ get_color_for_ownership <- function (ownership) {
                           "gpw" = "royalblue",
                           "mpw" = "darkblue", 
                           "kpw" = "lightblue")
-    index <- which(names(ownership_colors) == get_abbreviation_for_label(ownership))
+    index <- which(names(ownership_colors) == bundeswaldinventur::get_abbreviation_for_label(ownership))
     return(ownership_colors[index])
 }
 
@@ -330,6 +337,7 @@ get_color_for_ownership <- function (ownership) {
 #' @param ownership A vector containing one or more ownerships.
 #' @return A vector containing the colors for the ownerships, indexed by the
 #'   abbreviations for the ownerships.
+#' @export
 #' @examples
 #' ownership <- c("Kleinprivatwald", "Mittlerer Privatwald")
 #' colors <- get_colors_for_ownership(ownership)
