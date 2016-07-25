@@ -334,7 +334,7 @@ get_color_for_ownership <- function (ownership) {
 #' Get the color for certain ownerships to use in graphics.
 #' 
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @param ownership A vector containing one or more ownerships.
+#' @param x A vector containing one or more ownerships.
 #' @return A vector containing the colors for the ownerships, indexed by the
 #'   abbreviations for the ownerships.
 #' @export

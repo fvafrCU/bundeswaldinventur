@@ -5,6 +5,7 @@
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @section Version: $Id: 9be1ec3c316c4c9ca5af009959e89607c154f14c $
 #' @param data_frame The data which to prettyNum().
+#' @param digits The number of digits to be rounded to.
 #' @return  the modified data.frame. 
 #' @export
 #' @examples
@@ -63,7 +64,8 @@ add_colSums_prettify_and_print_xtable <- function(data_frame,
 #' @param x the numbers to be modified.
 #' @param digits The digits passed to round().
 #' @param big_mark the big.mark passed to \code{prettyNum}.
-#' @return  the modified numbers. 
+#' @param decimal_mark the decimal.mark passed to \code{prettyNum}.
+#' @return the modified numbers. 
 #' @export
 #' @examples
 #' round_and_prettify(airquality[1:10, "Ozone"]*10^4+0.1)
@@ -91,22 +93,6 @@ round_and_prettify_german <- function(x, digits = 0) {
     return(round_and_prettify(x, digits, big_mark = '.', decimal_mark = ","))
 }
 
-#' round() numbers and multiply  them with 100
-#'
-#' The majority of readers can't cope with 0.1212. So we
-#' change it to 12.1.
-#'
-#' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 9be1ec3c316c4c9ca5af009959e89607c154f14c $
-#' @param x the numbers to be modified.
-#' @param digits The digits passed to round().
-#' @return  the modified numbers. 
-#' @export
-#' @examples
-#' as_percent_and_round(utils::head(airquality * 10^4))
-as_percent_and_round <- function(x, digits = 1){
-    return(round(x * 100, digits))
-}
 
 # @NULL 
 #FIXME:

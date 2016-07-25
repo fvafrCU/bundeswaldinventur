@@ -1,93 +1,83 @@
-#' BWI 3 Hochrechnung
-#'
-#' Funktionen fuer die BWI-Auswertung, bestehend aus Berechnungen zur 
-#' Zustandserhebung, des Zuwachses, des ausgeschiedener Vorrat, Verjuengung, 
-#' Verbiss und weitere. 
-#'
-#' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}, Dominik Cullmann
-#'  \email{dominik.cullmann@@forst.bwl.de}, Franziska Berg
-#' @section Version: Version 3 vom 19.08.2014 basierend auf Version 2 vom 
-#'  15.04.2014
-#' @section Aktualisierungen: 
-#'  22.07.2015 (Berg) Aenderungen der Kommentare zu Roxygen Format \cr
-#'  09.04.2015 (Cullmann) Ergaenzung \code{tryCatch} in 
-#'    \code{\link{verjg.kl4.bagrupp.fun}} \cr
-#'  09.04.2015 Einfuegung von \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2e}}
-#'   \cr
-#'  09.02.2015 Funtion \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2}} bzw. 
-#'    \code{\link{iVB.bilanz.bagr.akl.dkl.fun.2}} korrigiert entsprechend
-#'    Fassung \cr
-#'  09.02.2015 \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2g}} bzw. 
-#'		\code{\link{iVB.bilanz.bagr.akl.dkl.fun.2g}} aus 
-#'		"BWI3/Programme/HR/BWI3_HR_Funktionen_v3_xxx.r"
-#'		betreffend (1) Aggregation auf alle Baumarten durch eigene sepearte
-#'		Aggregation auf BAGR "AlleBA" sowie (2) bei Biomasse-Zuwachs Beschraenkung
-#'		auf Derbholz-Kollektiv \cr
-#'	09.02.2015 Variante \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2g}} bzw.
-#'		\code{\link{iVB.bilanz.bagr.akl.dkl.fun.2g}} eingefuegt, berechnet 
-#'		zusaetzlich Grundzuwachs \cr
-#'	07.02.2015 Korrektur in \code{\link{dkl.lab.fun}} sowie in diversen Funktionen:
-#'		\code{D.k <- length(dkl.lab[!is.na(dkl.lab)])} statt 
-#'		\code{D.k <- length(dkl.lab)} \cr
-#'	23.01.2015 Korrektur in \code{\link{stratum.fun}} exaktes \code{matching} mit
-#'		\code{which} \cr
-#'	15.12.2014 Erweiterung um "alle BA" in 
-#'    \code{\link{VB.A.bagrupp.akl.dkl.stratum.fun.3}}
-#'		und \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2}} \cr
-#'	14.12.2014 neu Funktion \code{\link{stamm.merkmale.bagr.fun}} \cr
-#'	11.12.2014 Korrektur in \code{\link{fvbn.stratum.fun.1}} \cr
-#'	03.12.2014 neue Funktionen: \code{\link{fvbn.kreis.fun.1}}, 
-#'		\code{\link{fvbn.stratum.fun.1}}, \code{\link{fvbn.stratum.fun.2}} \cr
-#'	02.12.2014 neue Version \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2d}}
-#'		enthaelt auch die Summenwerte fuer alle Baumarten, wenn nach 
-#'		Baumartengruppen differenziert ausgewertet wird. \cr
-#'	01.12.2014 Verbesserung \code{\link{stratum.fun}}: "leere Menge" \cr
-#'	19.11.2014 neue Funktion \code{\link{fl.proz.stratum.fun}} \cr
-#'	01.11.2014 Erweiterung um Funktion \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2c}}
-#'		mit Derbholzstammzahlen im Hauptbestand \cr
-#'	27.10.2014 Funktion \code{\link{ntns.stratum.fun.2}} berechnet NTNS fuer die 
-#'		Schicht "kl 4m" oder "gr 4m" \cr
-#'	21.10.2014 \code{\link{verjg.tab.fun}} eingefuegt \cr
-#'	14.10.2014 \code{\link{fl.stratum.fun}} vom 30.07. am eingefuegt \cr
-#'	11.10.2014 \code{\link{biotop.baeume.fun}} \cr
-#'	11.10.2014 \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2b}} (Erweiterung 
-#'		um BA-Proz. mit Fehler) \cr
-#'	10.10.2014 Funktion zur Auswertung der Biotop-Baeume 
-#'		\code{\link{biotop.baeume.fun}} \cr
-#'	05.10.2014 Fehler bei Bestimmung der Anzahl Altersklassen <A.k>  korriegiert.
-#'		Abfangen des Falls, dass \code{<A.k> = 0: if (A.k == 0) A.k <- 1} \cr
-#'	24.08.2014 Korrektur bei den Funktionen fuer Periodenauswertungen:
-#'		\code{\link{VB.A.bagrupp.akl.dkl.stratum.fun.2}}, 
-#'		\code{\link{VB.A.bagrupp.akl.dkl.stratum.fun.3}} und
-#'		\code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2}} Wurde festgelegt, 
-#'		dass die Eckenmerkmale der aktuellen Inventur (=BWI 3) fuer die 
-#'		Stratifikation (Argument \code{auswahl}) gilt, z.B. die Eigentumsklasse
-#'		\cr
-#'	19.08.2014 Zuwachs-Abgang fuer die Periode 1987 bis 2002 (BWI 1 zu 2)
-#'		\code{\link{ntns.stratum.fun}} zur Naturnaeheauswertung \cr
-#'	18.08.2014 Ergaenzt um \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12}}
-#'		\cr
-#'	13.08.2014 ergaenzungen von Funktionen zur Verjuengungsauswertung:
-#'		\code{\link{verjg.bagr.fun}} mit Standard BWI-Baumartengruppen,
-#'		\code{\link{verjg.bagrupp.fun}} mit frei definierbaren Baumartengruppen,
-#'		\code{\link{verjg.kl4.bagr.fun}} Verjuengung aus Bestockungsansprache 
-#'		<= 4m Hoehe nach BWI-Baumartengruppen und Verjuengungsart,
-#'		\code{\link{verjg.kl4.bagrupp.fun}} mit frei definierbaren Baumartengruppen
-#'		\cr
-#'	12.08.2014 Ergaenzung um Funktionen zur Verbissauswertung: 
-#'		\code{\link{verbiss.bagr.fun}} mit Szandard BWI-Baumartengruppen, 
-#'		\code{\link{verbiss.bagrupp.fun}} mit frei definierbaren Baumartengruppen
-#'		 \cr
-#'	30.07.2014 Ergaenzung fehlender Funktion 
-#'		\code{\link{iVB.bilanz.bagr.akl.dkl.fun}} \cr
-#'	30.07.2014 Kleinere Korrekturen in 
-#'		\code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2}}
-#' @section TODO:
-#'	27.10.2014 Attributname "BW" fuer Bannwald in "Bannw" aendern wegen 
-#'		Verwechslung in \code{\link{stratum.fun}} mit "WGNr_BW" Pruefen, ob 
-#'		Korrektur moeglich
-#'@name A header for
-NULL
+# @section Version: Version 3 vom 19.08.2014 basierend auf Version 2 vom 
+#  15.04.2014
+# @section Aktualisierungen: 
+#  22.07.2015 (Berg) Aenderungen der Kommentare zu Roxygen Format \cr
+#  09.04.2015 (Cullmann) Ergaenzung \code{tryCatch} in 
+#    \code{\link{verjg.kl4.bagrupp.fun}} \cr
+#  09.04.2015 Einfuegung von \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2e}}
+#   \cr
+#  09.02.2015 Funtion \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2}} bzw. 
+#    \code{\link{iVB.bilanz.bagr.akl.dkl.fun.2g}} korrigiert entsprechend
+#    Fassung \cr
+#  09.02.2015 \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2g}} bzw. 
+#		\code{\link{iVB.bilanz.bagr.akl.dkl.fun.2g}} aus 
+#		"BWI3/Programme/HR/BWI3_HR_Funktionen_v3_xxx.r"
+#		betreffend (1) Aggregation auf alle Baumarten durch eigene sepearte
+#		Aggregation auf BAGR "AlleBA" sowie (2) bei Biomasse-Zuwachs Beschraenkung
+#		auf Derbholz-Kollektiv \cr
+#	09.02.2015 Variante \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2g}} bzw.
+#		\code{\link{iVB.bilanz.bagr.akl.dkl.fun.2g}} eingefuegt, berechnet 
+#		zusaetzlich Grundzuwachs \cr
+#	07.02.2015 Korrektur in \code{\link{dkl.lab.fun}} sowie in diversen Funktionen:
+#		\code{D.k <- length(dkl.lab[!is.na(dkl.lab)])} statt 
+#		\code{D.k <- length(dkl.lab)} \cr
+#	23.01.2015 Korrektur in \code{\link{stratum.fun}} exaktes \code{matching} mit
+#		\code{which} \cr
+#	15.12.2014 Erweiterung um "alle BA" in 
+#    \code{\link{VB.A.bagrupp.akl.dkl.stratum.fun.3}}
+#		und \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2}} \cr
+#	14.12.2014 neu Funktion \code{\link{stamm.merkmale.bagr.fun}} \cr
+#	11.12.2014 Korrektur in \code{\link{fvbn.stratum.fun.1}} \cr
+#	03.12.2014 neue Funktionen: \code{\link{fvbn.kreis.fun.1}}, 
+#		\code{\link{fvbn.stratum.fun.1}}, \code{\link{fvbn.stratum.fun.2}} \cr
+#	02.12.2014 neue Version \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2d}}
+#		enthaelt auch die Summenwerte fuer alle Baumarten, wenn nach 
+#		Baumartengruppen differenziert ausgewertet wird. \cr
+#	01.12.2014 Verbesserung \code{\link{stratum.fun}}: "leere Menge" \cr
+#	19.11.2014 neue Funktion \code{\link{fl.proz.stratum.fun}} \cr
+#	01.11.2014 Erweiterung um Funktion \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2c}}
+#		mit Derbholzstammzahlen im Hauptbestand \cr
+#	27.10.2014 Funktion \code{\link{ntns.stratum.fun.2}} berechnet NTNS fuer die 
+#		Schicht "kl 4m" oder "gr 4m" \cr
+#	21.10.2014 \code{\link{verjg.tab.fun}} eingefuegt \cr
+#	14.10.2014 \code{\link{fl.stratum.fun}} vom 30.07. am eingefuegt \cr
+#	11.10.2014 \code{\link{biotop.baeume.fun}} \cr
+#	11.10.2014 \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2b}} (Erweiterung 
+#		um BA-Proz. mit Fehler) \cr
+#	10.10.2014 Funktion zur Auswertung der Biotop-Baeume 
+#		\code{\link{biotop.baeume.fun}} \cr
+#	05.10.2014 Fehler bei Bestimmung der Anzahl Altersklassen <A.k>  korriegiert.
+#		Abfangen des Falls, dass \code{<A.k> = 0: if (A.k == 0) A.k <- 1} \cr
+#	24.08.2014 Korrektur bei den Funktionen fuer Periodenauswertungen:
+#		\code{\link{VB.A.bagrupp.akl.dkl.stratum.fun.2}}, 
+#		\code{\link{VB.A.bagrupp.akl.dkl.stratum.fun.3}} und
+#		\code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2}} Wurde festgelegt, 
+#		dass die Eckenmerkmale der aktuellen Inventur (=BWI 3) fuer die 
+#		Stratifikation (Argument \code{auswahl}) gilt, z.B. die Eigentumsklasse
+#		\cr
+#	19.08.2014 Zuwachs-Abgang fuer die Periode 1987 bis 2002 (BWI 1 zu 2)
+#		\code{\link{ntns.stratum.fun}} zur Naturnaeheauswertung \cr
+#	18.08.2014 Ergaenzt um \code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12}}
+#		\cr
+#	13.08.2014 ergaenzungen von Funktionen zur Verjuengungsauswertung:
+#		\code{\link{verjg.bagr.fun}} mit Standard BWI-Baumartengruppen,
+#		\code{\link{verjg.bagrupp.fun}} mit frei definierbaren Baumartengruppen,
+#		\code{\link{verjg.kl4.bagr.fun}} Verjuengung aus Bestockungsansprache 
+#		<= 4m Hoehe nach BWI-Baumartengruppen und Verjuengungsart,
+#		\code{\link{verjg.kl4.bagrupp.fun}} mit frei definierbaren Baumartengruppen
+#		\cr
+#	12.08.2014 Ergaenzung um Funktionen zur Verbissauswertung: 
+#		\code{\link{verbiss.bagr.fun}} mit Szandard BWI-Baumartengruppen, 
+#		\code{\link{verbiss.bagrupp.fun}} mit frei definierbaren Baumartengruppen
+#		 \cr
+#	30.07.2014 Ergaenzung fehlender Funktion 
+#		\code{\link{iVB.bilanz.bagr.akl.dkl.fun}} \cr
+#	30.07.2014 Kleinere Korrekturen in 
+#		\code{\link{iVB.ew.bagrupp.akl.dkl.stratum.fun.2}}
+# @section TODO:
+#	27.10.2014 Attributname "BW" fuer Bannwald in "Bannw" aendern wegen 
+#		Verwechslung in \code{\link{stratum.fun}} mit "WGNr_BW" Pruefen, ob 
+#		Korrektur moeglich
 
 #-------------------------------------------------------------------------------
 #(1) FUNKTIONEN zur ZUSTANDSHOCHRECHNUNG
@@ -2119,9 +2109,9 @@ fvbn.stratum.fun.2 <- function(auswahl,eig.list,bwi.list,bagr,a.klass,d.klass){
 #'  Ratio-Schaetzer-Varianz ueber \code{r.variance.fun} (Matrizen-Notation) 
 #'  berechnet! \cr
 #'  Version für Periode BWI 2 zu 3! \cr
-#'  Auswertung erfolgt auf dem gemeinsamen Netz im Unterschied zur Version 
-#'  \code{\link{VB.A.BAGR.akl.dkl.stratum.fun}}, welche das Nutzungsgeschehen 
-#'  auf der bei der BWI 2 erfassten Flaeche abdeckt! \cr
+#'  Auswertung erfolgt auf dem gemeinsamen Netz im Unterschied zu
+#'  der historischen Version VB.A.BAGR.akl.dkl.stratum.fun, welche das Nutzungsgeschehen 
+#'  auf der bei der BWI 2 erfassten Flaeche abdeckte! \cr
 #'  Fuer die Berechnung der flaechenbezogenen Nutzungen muss die mittlere 
 #'  Baumartenflaeche der Periode berechnet werden, d.h. es werden auch die 
 #'  Standflaechen der Folgeaufnahme benoetigt! \cr 
@@ -2513,8 +2503,8 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
 #'  berechnet! \cr 
 #'  Version fuer Periode BWI 2 zu 3! \cr
 #'  Auswertung erfolgt auf dem gemeinsamen Netz im Unterschied zur Version 
-#'  \code{\link{VB.A.BAGR.akl.dkl.stratum.fun}}, welche das Nutzungsgeschehen 
-#'  auf der bei der BWI 2 erfassten Flaeche abdeckt!
+#'  historischen VB.A.BAGR.akl.dkl.stratum.fun, welche das Nutzungsgeschehen 
+#'  auf der bei der BWI 2 erfassten Flaeche abdeckte!
 #'  Voraussetzung ist, dass die Tabellen \code{baeume.23}, \code{baeume.3}, 
 #'  \code{ecken.2}, \code{ecken.3}, \code{trakte.3} sowie \code{bacode} 
 #'  eingelesen sind! \cr
@@ -6573,7 +6563,7 @@ ba.klass.lab.tab.fun <- function(ba.lab.klass){
 #' @section Note: Anzahl der Durchmesserklassen wird vom rufenden Programm 
 #'  errechnet.
 #' @param D.klass vorgegebene Klassifizierungsregel.
-#' @param D.K Anzahl der Durchmesserklassen.
+#' @param D.k Anzahl der Durchmesserklassen.
 #' @return Label fuer Durchmesserklassen-Beschriftung.
 dkl.lab.fun <- function(D.klass,D.k){
   dkl.lab <- rep(0,D.k)

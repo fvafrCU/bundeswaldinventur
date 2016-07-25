@@ -20,7 +20,7 @@ add_colSums_to_data_frame <- function(data_frame, german = TRUE) {
     return(tmp_data)
 }
 
-#' round() numbers and multiply  them with 100
+#' round() numbers and multiply them with 100
 #'
 #' The majority of readers can't cope with 0.1212. So we
 #' change it to 12.1.
@@ -30,10 +30,10 @@ add_colSums_to_data_frame <- function(data_frame, german = TRUE) {
 #' @param x the numbers to be modified.
 #' @param digits The digits passed to round().
 #' @return  the modified numbers. 
+#' @export
 #' @examples
-#' \dontrun{
-#' as_percent_and_round(utils::head(airquality * 10^4))
-#' }
+#' as_percent_and_round(airquality[1:10, "Ozone"] / max(airquality[["Ozone"]],
+#'                      na.rm = TRUE))
 as_percent_and_round <- function(x, digits = 1){
     return(round(x * 100, digits))
 }
