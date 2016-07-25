@@ -58,7 +58,7 @@ Totholz.bagr.art.zg.stratum.fun <-
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   n.te.s <- length(stratum[,1])
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   n.t.s <- length(y[,1])
   #Teilmenge der Trakte im Auswertungsstratum
@@ -151,11 +151,11 @@ Totholz.bagr.art.zg.stratum.fun <-
           {
             #Nach Trakt aggregieren
             #Vol der BA-Gruppe [m²] als "v"
-            xy <- aggregate(totholz.ba$tvol*totholz.ba$thf*totholz.ba$anz,
+            xy <- stats::aggregate(totholz.ba$tvol*totholz.ba$thf*totholz.ba$anz,
                           by=list(totholz.ba$tnr),sum)
             names(xy) <- c("tnr","v")
             #Anzahl Totholzstücke als "n"
-            xy <- cbind(xy,aggregate(totholz.ba$thf*totholz.ba$anz,
+            xy <- cbind(xy,stats::aggregate(totholz.ba$thf*totholz.ba$anz,
                                       by=list(totholz.ba$tnr),sum)$x)
             names(xy)[3] <- "n"
 
@@ -271,7 +271,7 @@ Totholz.Tart.stratum.fun <-
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   n.te.s <- length(stratum[,1])
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   n.t.s <- length(y[,1])
   #Teilmenge der Trakte im Auswertungsstratum
@@ -357,11 +357,11 @@ Totholz.Tart.stratum.fun <-
     {
       #Nach Trakt aggregieren
       #Vol der BA-Gruppe [m²] als "v"
-      xy <- aggregate(totholz.tart$tvol*totholz.tart$thf*totholz.tart$anz,
+      xy <- stats::aggregate(totholz.tart$tvol*totholz.tart$thf*totholz.tart$anz,
               by=list(totholz.tart$tnr),sum)
       names(xy) <- c("tnr","v")
       #Anzahl Totholzstücke als "n"
-      xy <- cbind(xy,aggregate(totholz.tart$thf*totholz.tart$anz,
+      xy <- cbind(xy,stats::aggregate(totholz.tart$thf*totholz.tart$anz,
                                       by=list(totholz.tart$tnr),sum)$x)
       names(xy)[3] <- "n"
       #Hbf-Ecken (Bezugsfläche ha HB) und Anzahl Ecken je Trakt
@@ -472,7 +472,7 @@ Totholz.klass.stratum.fun <-
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   n.te.s <- length(stratum[,1])
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   n.t.s <- length(y[,1])
   #Teilmenge der Trakte im Auswertungsstratum
@@ -588,11 +588,11 @@ Totholz.klass.stratum.fun <-
     {
       #Nach Trakt aggregieren
       #Vol der BA-Gruppe [m²] als "v"
-      xy <- aggregate(totholz.klass$tvol*totholz.klass$thf*totholz.klass$anz,
+      xy <- stats::aggregate(totholz.klass$tvol*totholz.klass$thf*totholz.klass$anz,
               by=list(totholz.klass$tnr),sum,na.rm=T)
       names(xy) <- c("tnr","v")
       #Anzahl Totholzstücke als "n"
-      xy <- cbind(xy,aggregate(totholz.klass$thf*totholz.klass$anz,
+      xy <- cbind(xy,stats::aggregate(totholz.klass$thf*totholz.klass$anz,
                                       by=list(totholz.klass$tnr),sum,na.rm=T)$x)
       names(xy)[3] <- "n"
       #Hbf-Ecken (Bezugsfläche ha HB) und Anzahl Ecken je Trakt
@@ -739,7 +739,7 @@ if(F)
   #entsprechend TI: Berechnung als Zylinder mit gemittelten Enddurchmessern
   totholz.3$Tvol.ti <- ifelse(totholz.3$Tart==13,
     pi*((totholz.3$Tbd+totholz.3$Tsd)/400)^2*totholz.3$Tl,totholz.3$Tvol)
-  head(totholz.3)
+  utils::head(totholz.3)
   #Volumen austauschen
   totholz.3$Tvol.fva <- totholz.3$Tvol
   totholz.3$Tvol <- totholz.3$Tvol.ti 

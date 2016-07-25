@@ -56,12 +56,12 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,auswahl)
   n.te.s <- length(stratum[,1])
   #------
   #HBF nach Trakt im Stratum
-  xy <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   #Blößen (BL): BA=999, Lücken (iBL): BA=998
-  xy <- cbind(xy,aggregate(ifelse(
+  xy <- cbind(xy,stats::aggregate(ifelse(
                   wzp4.merkmale.s$ba==999,wzp4.merkmale.s$stfl/10000,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x)
-  xy <- cbind(xy,aggregate(ifelse(wzp4.merkmale.s$ba==998,wzp4.merkmale.s$stfl,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(wzp4.merkmale.s$ba==998,wzp4.merkmale.s$stfl,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
@@ -88,36 +88,36 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,auswahl)
   se.lk <- sqrt(r.list$V.R.xy)
 
   #(4) Biotopbaum-Attribute auf Trakt aggregieren
-  biotop.t <- aggregate(ifelse(wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$pk<=1,
+  biotop.t <- stats::aggregate(ifelse(wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$pk<=1,
                         wzp4.merkmale.s$nha,0),by=list(wzp4.merkmale.s$tnr),sum)
   #Vorrat
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(wzp4.merkmale.s$biotopb>0
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(wzp4.merkmale.s$biotopb>0
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
               by=list(wzp4.merkmale.s$tnr),sum)$x)
               
   #Oberirdische Biomasse
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(wzp4.merkmale.s$biotopb>0
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(wzp4.merkmale.s$biotopb>0
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$oib,0),
               by=list(wzp4.merkmale.s$tnr),sum)$x)
 
   #Starkholzvorrat
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(
               wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$bhd>=50
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
               by=list(wzp4.merkmale.s$tnr),sum)$x)
 
   #LB-Vorrat
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(
               wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$ba%in%c(100:299)
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
               by=list(wzp4.merkmale.s$tnr),sum)$x)
 
   #NB-Vorrat
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(
               wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$ba%in%c(10:99)
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
@@ -127,7 +127,7 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,auswahl)
 
   names(biotop.t) <- c("tnr","N.BB","V.BB","oiB.BB","SthV.BB","V.BB.LB",
                         "V.BB.NB")
-  head(biotop.t)
+  utils::head(biotop.t)
 
   biotop.t <- merge(subset(xy,select=c(tnr,m,hbf)),biotop.t,by="tnr",
                     all.x=T)

@@ -9,7 +9,7 @@
 #' @return  the modified data.frame. 
 #' @examples
 #' \dontrun{
-#' add_colSums_to_data_frame(head(airquality), german = F)
+#' add_colSums_to_data_frame(utils::head(airquality), german = F)
 #' }
 add_colSums_to_data_frame <- function(data_frame, german = TRUE) {
     if (german) sum_label <- 'Summe' else sum_label  <- 'Sum'
@@ -32,7 +32,7 @@ add_colSums_to_data_frame <- function(data_frame, german = TRUE) {
 #' @return  the modified numbers. 
 #' @examples
 #' \dontrun{
-#' round_and_prettify(head(airquality * 10^4))
+#' round_and_prettify(utils::head(airquality * 10^4))
 #' }
 as_percent_and_round <- function(x, digits = 1){
     return(round(x * 100, digits))

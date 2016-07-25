@@ -8,7 +8,7 @@
 #' @return  the modified data.frame. 
 #' @examples
 #' \dontrun{
-#' prettify_data_frame(head(airquality * 10^4))
+#' prettify_data_frame(utils::head(airquality * 10^4))
 #' }
 prettify_data_frame <- function(data_frame, digits = 0) {
     tmp_data <- prettyNum(round(data_frame, digits), big.mark =',')
@@ -30,7 +30,7 @@ prettify_data_frame <- function(data_frame, digits = 0) {
 #' @return TRUE on success, FALSE otherwise.
 #' @examples
 #' \dontrun{
-#' add_colSums_prettify_and_print_xtable(head(airquality * 10^4))
+#' add_colSums_prettify_and_print_xtable(utils::head(airquality * 10^4))
 #' }
 add_colSums_prettify_and_print_xtable <- function(data_frame, 
 						  caption = 'XXX') {
@@ -68,7 +68,7 @@ add_colSums_prettify_and_print_xtable <- function(data_frame,
 #' @return  the modified numbers. 
 #' @examples
 #' \dontrun{
-#' round_and_prettify(head(airquality * 10^4))
+#' round_and_prettify(utils::head(airquality * 10^4))
 #' }
 round_and_prettify <- function(x, digits = 0, big_mark = ',', decimal_mark = '.') {
     return(prettyNum(round(x, digits), big.mark = big_mark, decimal.mark =
@@ -89,7 +89,7 @@ round_and_prettify <- function(x, digits = 0, big_mark = ',', decimal_mark = '.'
 #' @return  the modified numbers. 
 #' @examples
 #' \dontrun{
-#' round_and_prettify(head(airquality * 10^4))
+#' round_and_prettify(utils::head(airquality * 10^4))
 #' }
 round_and_prettify_german <- function(x, digits = 0) {
     return(round_and_prettify(x, digits, big_mark = '.', decimal_mark = ","))
@@ -107,7 +107,7 @@ round_and_prettify_german <- function(x, digits = 0) {
 #' @return  the modified numbers. 
 #' @examples
 #' \dontrun{
-#' round_and_prettify(head(airquality * 10^4))
+#' round_and_prettify(utils::head(airquality * 10^4))
 #' }
 as_percent_and_round <- function(x, digits = 1){
     return(round(x * 100, digits))

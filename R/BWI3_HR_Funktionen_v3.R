@@ -199,11 +199,11 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
   #---------------------
   #Flächen
   #HBF nach Trakt im Stratum
-  xy <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   #Blößen (BL): BA=999, Lücken (iBL): BA=998
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
                   by=list(baeume.s$tnr),sum)$x)
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
                   by=list(baeume.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
@@ -301,28 +301,28 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
         {
           #Nach Trakt aggregieren
           #BAF der BA-Gruppe [ha] als "x"
-          xy <- aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
+          xy <- stats::aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
           names(xy) <- c("tnr","x")
           xy$x <- xy$x/10000*lk  #Umrechnung in ha  und Lückenkorrektur
           #Derbholz-Vorrat [m³ mR] als "v"
-          xy <- cbind(xy,aggregate(baeume.ba$volv*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$volv*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x )
           names(xy)[3] <- "v"
           #Derbholz-Vorrat [m³ mR] im Hauptbestand als "v.hb"
           xy <- cbind(xy,
-            aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
+            stats::aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
                                             by=list(baeume.ba$tnr),sum)$x )
           names(xy)[4] <- "v.hb"
           #oberird. Biomasse [t] als "b"
-          xy <- cbind(xy,aggregate(baeume.ba$oib*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$oib*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x/1000)
           names(xy)[5] <- "b"
           #Anzahl Bäume als "n"
-          xy <- cbind(xy,aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
+          xy <- cbind(xy,stats::aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
           names(xy)[6] <- "n"
           #Anzahl nur Derbholz-Bäume (bhd>=7)  als "ndh"
           #sofern in der Klassifizierung solche vorkommen!
-          x.ndh <- try(aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
+          x.ndh <- try(stats::aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
               by=list(baeume.ba$tnr),sum)$x, silent=T )
           if (length(grep("7)",dkl.lab[k]))>0)
           {
@@ -507,11 +507,11 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2b <-
   #---------------------
   #Flächen
   #HBF nach Trakt im Stratum
-  xy <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   #Blößen (BL): BA=999, Lücken (iBL): BA=998
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
                   by=list(baeume.s$tnr),sum)$x)
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
                   by=list(baeume.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
@@ -616,28 +616,28 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2b <-
         {
           #Nach Trakt aggregieren
           #BAF der BA-Gruppe [ha] als "x"
-          xy <- aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
+          xy <- stats::aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
           names(xy) <- c("tnr","x")
           xy$x <- xy$x/10000*lk  #Umrechnung in ha  und Lückenkorrektur
           #Derbholz-Vorrat [m³ mR] als "v"
-          xy <- cbind(xy,aggregate(baeume.ba$volv*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$volv*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x )
           names(xy)[3] <- "v"
           #Derbholz-Vorrat [m³ mR] im Hauptbestand als "v.hb"
           xy <- cbind(xy,
-            aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
+            stats::aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
                                             by=list(baeume.ba$tnr),sum)$x )
           names(xy)[4] <- "v.hb"
           #oberird. Biomasse [t] als "b"
-          xy <- cbind(xy,aggregate(baeume.ba$oib*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$oib*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x/1000)
           names(xy)[5] <- "b"
           #Anzahl Bäume als "n"
-          xy <- cbind(xy,aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
+          xy <- cbind(xy,stats::aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
           names(xy)[6] <- "n"
           #Anzahl nur Derbholz-Bäume (bhd>=7)  als "ndh"
           #sofern in der Klassifizierung solche vorkommen!
-          x.ndh <- try(aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
+          x.ndh <- try(stats::aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
               by=list(baeume.ba$tnr),sum)$x, silent=T )
           if (length(grep("7)",dkl.lab[k]))>0)
           {
@@ -845,11 +845,11 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2c <-
   #---------------------
   #Flächen
   #HBF nach Trakt im Stratum
-  xy <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   #Blößen (BL): BA=999, Lücken (iBL): BA=998
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
                   by=list(baeume.s$tnr),sum)$x)
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
                   by=list(baeume.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
@@ -956,28 +956,28 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2c <-
         {
           #Nach Trakt aggregieren
           #BAF der BA-Gruppe [ha] als "x"
-          xy <- aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
+          xy <- stats::aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
           names(xy) <- c("tnr","x")
           xy$x <- xy$x/10000*lk  #Umrechnung in ha  und Lückenkorrektur
           #Derbholz-Vorrat [m³ mR] als "v"
-          xy <- cbind(xy,aggregate(baeume.ba$volv*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$volv*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x )
           names(xy)[3] <- "v"
           #Derbholz-Vorrat [m³ mR] im Hauptbestand als "v.hb"
           xy <- cbind(xy,
-            aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
+            stats::aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
                                             by=list(baeume.ba$tnr),sum)$x )
           names(xy)[4] <- "v.hb"
           #oberird. Biomasse [t] als "b"
-          xy <- cbind(xy,aggregate(baeume.ba$oib*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$oib*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x/1000)
           names(xy)[5] <- "b"
           #Anzahl Bäume als "n"
-          xy <- cbind(xy,aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
+          xy <- cbind(xy,stats::aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
           names(xy)[6] <- "n"
           #Anzahl nur Derbholz-Bäume (bhd>=7)  als "ndh"
           #sofern in der Klassifizierung solche vorkommen!
-          x.ndh <- try(aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
+          x.ndh <- try(stats::aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
               by=list(baeume.ba$tnr),sum)$x, silent=T )
           if (length(grep("7)",dkl.lab[k]))>0)
           {
@@ -985,7 +985,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2c <-
           }
           xy <- cbind(xy,x.ndh)
           names(xy)[7] <- "ndh"
-          x.ndh.hb <- try(aggregate(baeume.ba$nha*ifelse(
+          x.ndh.hb <- try(stats::aggregate(baeume.ba$nha*ifelse(
               baeume.ba$bhd>=7 & baeume.ba$stfl>0,1,0),
               by=list(baeume.ba$tnr),sum)$x, silent=T )
           if (length(grep("7)",dkl.lab[k]))>0)
@@ -1198,11 +1198,11 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
   #---------------------
   #Flächen
   #HBF nach Trakt im Stratum
-  xy <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   #Blößen (BL): BA=999, Lücken (iBL): BA=998
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
                   by=list(baeume.s$tnr),sum)$x)
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
                   by=list(baeume.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
@@ -1309,28 +1309,28 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
         {
           #Nach Trakt aggregieren
           #BAF der BA-Gruppe [ha] als "x"
-          xy <- aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
+          xy <- stats::aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
           names(xy) <- c("tnr","x")
           xy$x <- xy$x/10000*lk  #Umrechnung in ha  und Lückenkorrektur
           #Derbholz-Vorrat [m³ mR] als "v"
-          xy <- cbind(xy,aggregate(baeume.ba$volv*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$volv*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x )
           names(xy)[3] <- "v"
           #Derbholz-Vorrat [m³ mR] im Hauptbestand als "v.hb"
           xy <- cbind(xy,
-            aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
+            stats::aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
                                             by=list(baeume.ba$tnr),sum)$x )
           names(xy)[4] <- "v.hb"
           #oberird. Biomasse [t] als "b"
-          xy <- cbind(xy,aggregate(baeume.ba$oib*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$oib*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x/1000)
           names(xy)[5] <- "b"
           #Anzahl Bäume als "n"
-          xy <- cbind(xy,aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
+          xy <- cbind(xy,stats::aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
           names(xy)[6] <- "n"
           #Anzahl nur Derbholz-Bäume (bhd>=7)  als "ndh"
           #sofern in der Klassifizierung solche vorkommen!
-          x.ndh <- try(aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
+          x.ndh <- try(stats::aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
               by=list(baeume.ba$tnr),sum)$x, silent=T )
           if (length(grep("7)",dkl.lab[k]))>0)
           {
@@ -1338,7 +1338,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
           }
           xy <- cbind(xy,x.ndh)
           names(xy)[7] <- "ndh"
-          x.ndh.hb <- try(aggregate(baeume.ba$nha*ifelse(
+          x.ndh.hb <- try(stats::aggregate(baeume.ba$nha*ifelse(
               baeume.ba$bhd>=7 & baeume.ba$stfl>0,1,0),
               by=list(baeume.ba$tnr),sum)$x, silent=T )
           if (length(grep("7)",dkl.lab[k]))>0)
@@ -1572,11 +1572,11 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2e <-
   #---------------------
   #Flächen
   #HBF nach Trakt im Stratum
-  xy <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   #Blößen (BL): BA=999, Lücken (iBL): BA=998
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
                            by=list(baeume.s$tnr),sum)$x)
-  xy <- cbind(xy,aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
                            by=list(baeume.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
@@ -1712,28 +1712,28 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2e <-
         {
           #Nach Trakt aggregieren
           #BAF der BA-Gruppe [ha] als "x"
-          xy <- aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
+          xy <- stats::aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
           names(xy) <- c("tnr","x")
           xy$x <- xy$x/10000*lk  #Umrechnung in ha  und Lückenkorrektur
           #Derbholz-Vorrat [m³ mR] als "v"
-          xy <- cbind(xy,aggregate(baeume.ba$volv*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$volv*baeume.ba$nha,
                                    by=list(baeume.ba$tnr),sum)$x )
           names(xy)[3] <- "v"
           #Derbholz-Vorrat [m³ mR] im Hauptbestand als "v.hb"
           xy <- cbind(xy,
-                      aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
+                      stats::aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
                                 by=list(baeume.ba$tnr),sum)$x )
           names(xy)[4] <- "v.hb"
           #oberird. Biomasse [t] als "b"
-          xy <- cbind(xy,aggregate(baeume.ba$oib*baeume.ba$nha,
+          xy <- cbind(xy,stats::aggregate(baeume.ba$oib*baeume.ba$nha,
                                    by=list(baeume.ba$tnr),sum)$x/1000)
           names(xy)[5] <- "b"
           #Anzahl Bäume als "n"
-          xy <- cbind(xy,aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
+          xy <- cbind(xy,stats::aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
           names(xy)[6] <- "n"
           #Anzahl nur Derbholz-Bäume (bhd>=7)  als "ndh"
           #sofern in der Klassifizierung solche vorkommen!
-          x.ndh <- try(aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
+          x.ndh <- try(stats::aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
                                  by=list(baeume.ba$tnr),sum)$x, silent=T )
           if (length(grep("7)",dkl.lab[k]))>0)
           {
@@ -1741,7 +1741,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2e <-
           }
           xy <- cbind(xy,x.ndh)
           names(xy)[7] <- "ndh"
-          x.ndh.hb <- try(aggregate(baeume.ba$nha*ifelse(
+          x.ndh.hb <- try(stats::aggregate(baeume.ba$nha*ifelse(
             baeume.ba$bhd>=7 & baeume.ba$stfl>0,1,0),
             by=list(baeume.ba$tnr),sum)$x, silent=T )
           if (length(grep("7)",dkl.lab[k]))>0)
@@ -2199,7 +2199,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   names(trakte)  <- tolower(names(trakte))
   n.te.s <- length(stratum[,1])
   #<y> steht hier für die Anzahl der Traktecken auf begehbarem HB im Stratum
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Anzahl der Trakte im Stratum
   n.t.s <- length(y[,1])
@@ -2316,11 +2316,11 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   #Anzahl Trakte (PSU) je NArt, BAGR, Akl, Dkl
   nT.na.bagr.akl.dkl   <- array(dim=c(n.nart,n.bagr,A.k,D.k))
   #Mittlere Straten-PL mit SE
-  ne.T <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  ne.T <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
             names(ne.T) <- c("tnr","n.te")
   #"Periodensumme" je Trakt (mit n Ecken gewogen)
   #Bei Nutzung wird kalendarische Periodenlänge <plkal> verwendet!
-  y.pl <- aggregate(stratum$plkal,by=list(stratum$tnr),mean,na.rm=T)$x*ne.T$n.te
+  y.pl <- stats::aggregate(stratum$plkal,by=list(stratum$tnr),mean,na.rm=T)$x*ne.T$n.te
   #mittl. PL als gewogenes Mittel
   mpl.stratum <- sum(y.pl)/sum(ne.T$n.te)
   #Berechnung des Standardfehlers
@@ -2370,24 +2370,24 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
             #Nach Trakt aggregieren
             #fortgeschrieben: volv2, vole2, oib2!!!!
             #Ausgeschiedener Derbholz-Vorrat [m³ mR] als "v"
-            xy <- aggregate(baeume.ba$volv2*baeume.ba$nha1,by=list(baeume.ba$tnr),
+            xy <- stats::aggregate(baeume.ba$volv2*baeume.ba$nha1,by=list(baeume.ba$tnr),
                   sum)
             names(xy) <- c("tnr","v")
             #Ausgeschiedener Vorrat Erntevolumen [m³ oR] als "v.eor"
             xy <- cbind(xy,
-              aggregate(baeume.ba$vole2*baeume.ba$nha1,
+              stats::aggregate(baeume.ba$vole2*baeume.ba$nha1,
                                               by=list(baeume.ba$tnr),sum)$x )
             names(xy)[3] <- "v.eor"
             #Ausgeschiedener Vorrat in oberird. Biomasse [t] als "b"
-            xy <- cbind(xy,aggregate(baeume.ba$oib2*baeume.ba$nha1,
+            xy <- cbind(xy,stats::aggregate(baeume.ba$oib2*baeume.ba$nha1,
                                             by=list(baeume.ba$tnr),sum)$x/1000)
             names(xy)[4] <- "b"
             #Anzahl Bäume als "n"
-            xy <- cbind(xy,aggregate(baeume.ba$nha1,by=list(baeume.ba$tnr),
+            xy <- cbind(xy,stats::aggregate(baeume.ba$nha1,by=list(baeume.ba$tnr),
                         sum)$x)
             names(xy)[5] <- "n"
             #Mittlere kal. Periodenlänge je Trakt
-            mpl <- aggregate(baeume.ba$plkal,by=list(baeume.ba$tnr),mean)$x
+            mpl <- stats::aggregate(baeume.ba$plkal,by=list(baeume.ba$tnr),mean)$x
 
             #Jährlicher ausgeschiedener Derbholzvorrat
             xy$j.v <- xy$v/mpl
@@ -2410,9 +2410,9 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
 
             #mittlere kal. Periodenlänge mit Standard-Fehler
             #Anzahl Ecken je Trakt bestimmen
-            nb.TE <- aggregate(rep(1,length(baeume.ba[,1])),
+            nb.TE <- stats::aggregate(rep(1,length(baeume.ba[,1])),
                                     by=list(baeume.ba$tnr,baeume.ba$enr),sum)
-            ne.T <- aggregate(rep(1,length(nb.TE[,1])),by=list(nb.TE$Group.1),
+            ne.T <- stats::aggregate(rep(1,length(nb.TE[,1])),by=list(nb.TE$Group.1),
                               sum)
             names(ne.T) <- c("tnr","n.te")
             #"Periodensumme" je Trakt (mit n Ecken gewogen)
@@ -2591,7 +2591,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   names(trakte)  <- tolower(names(trakte))
   n.te.s <- length(stratum[,1])
   #<y> steht hier für die Anzahl der Traktecken auf begehbarem HB im Stratum
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Anzahl der Trakte im Stratum
   n.t.s <- length(y[,1])
@@ -2710,11 +2710,11 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   #Anzahl Trakte (PSU) je NArt, BAGR, Akl, Dkl
   nT.na.bagr.akl.dkl   <- array(dim=c(n.nart,n.bagr,A.k,D.k))
   #Mittlere Straten-PL mit SE
-  ne.T <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  ne.T <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
             names(ne.T) <- c("tnr","n.te")
   #"Periodensumme" je Trakt (mit n Ecken gewogen)
   #Bei Nutzung wird kalendarische Periodenlänge <plkal> verwendet!
-  y.pl <- aggregate(stratum$plkal,by=list(stratum$tnr),mean,na.rm=T)$x*ne.T$n.te
+  y.pl <- stats::aggregate(stratum$plkal,by=list(stratum$tnr),mean,na.rm=T)$x*ne.T$n.te
   #mittl. PL als gewogenes Mittel
   mpl.stratum <- sum(y.pl)/sum(ne.T$n.te)
   #Berechnung des Standardfehlers
@@ -2744,8 +2744,8 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
           baf.ba <- subset(mbaf.bagr.akl.dkl.tnr,
                         akl.pm==akl.lab[j]&dkl.pm==dkl.lab[k],
                         select=c(tnr,mbaf,mbaf.hb))
-          baf.t <- aggregate(baf.ba$mbaf,by=list(baf.ba$tnr),sum)
-          baf.t <- cbind(baf.t,aggregate(baf.ba$mbaf.hb,by=list(baf.ba$tnr),sum)$x)
+          baf.t <- stats::aggregate(baf.ba$mbaf,by=list(baf.ba$tnr),sum)
+          baf.t <- cbind(baf.t,stats::aggregate(baf.ba$mbaf.hb,by=list(baf.ba$tnr),sum)$x)
           names(baf.t) <- names(baf.ba)
           baf.ba <- baf.t
         }#*
@@ -2789,25 +2789,25 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
             #Nach Trakt aggregieren
             #fortgeschrieben: volv2, vole2, oib2!!!!
             #Ausgeschiedener Derbholz-Vorrat [m³ mR] als "v"
-            xy <- aggregate(baeume.ba$volv2*baeume.ba$nha1,
+            xy <- stats::aggregate(baeume.ba$volv2*baeume.ba$nha1,
                             by=list(baeume.ba$tnr),sum)
             names(xy) <- c("tnr","v")
             #Ausgeschiedener Vorrat Erntevolumen [m³ oR] als "v.eor"
             xy <- cbind(xy,
-              aggregate(baeume.ba$vole2*baeume.ba$nha1,
+              stats::aggregate(baeume.ba$vole2*baeume.ba$nha1,
                                               by=list(baeume.ba$tnr),sum)$x )
             names(xy)[3] <- "v.eor"
             #Ausgeschiedener Vorrat in oberird. Biomasse [t] als "b"
-            xy <- cbind(xy,aggregate(baeume.ba$oib2*baeume.ba$nha1,
+            xy <- cbind(xy,stats::aggregate(baeume.ba$oib2*baeume.ba$nha1,
                                             by=list(baeume.ba$tnr),sum)$x/1000)
             names(xy)[4] <- "b"
             #Ausgeschiedener Vorrat Erntevolumen im Hauptbestand (01.05.14)
-            xy <- cbind(xy,aggregate(baeume.ba$vole2*baeume.ba$nha1*
+            xy <- cbind(xy,stats::aggregate(baeume.ba$vole2*baeume.ba$nha1*
                                       ifelse(baeume.ba$stfl1>0,1,0),
                         by=list(baeume.ba$tnr),sum)$x)
             names(xy)[5] <- "v.eor.hb"
             #Mittlere kal. Periodenlänge je Trakt
-            mpl <- aggregate(baeume.ba$plkal,by=list(baeume.ba$tnr),mean)$x
+            mpl <- stats::aggregate(baeume.ba$plkal,by=list(baeume.ba$tnr),mean)$x
 
             #Jährlicher ausgeschiedener Derbholzvorrat
             xy$j.v <- xy$v/mpl
@@ -2829,9 +2829,9 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
 
             #mittlere kal. Periodenlänge mit Standard-Fehler
             #Anzahl Ecken je Trakt bestimmen
-            nb.TE <- aggregate(rep(1,length(baeume.ba[,1])),
+            nb.TE <- stats::aggregate(rep(1,length(baeume.ba[,1])),
                                     by=list(baeume.ba$tnr,baeume.ba$enr),sum)
-            ne.T <- aggregate(rep(1,length(nb.TE[,1])),by=list(nb.TE$Group.1),
+            ne.T <- stats::aggregate(rep(1,length(nb.TE[,1])),by=list(nb.TE$Group.1),
                               sum)
             names(ne.T) <- c("tnr","n.te")
             #"Periodensumme" je Trakt (mit n Ecken gewogen)
@@ -3026,13 +3026,13 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
 
   #Holzbodenfläche des Stratums
   #Nach TE
-  hb.te <- aggregate(baeume.3.s$StFl2/10000,
+  hb.te <- stats::aggregate(baeume.3.s$StFl2/10000,
                         by=list(baeume.3.s$TNr,baeume.3.s$ENr),sum)
   names(hb.te) <- c("TNr","ENr","m_HB_s")
   ecken <- merge(hb.te,subset(ecken.23.hb,select=c(TNr,ENr,PL,PLkal)),
                     by=c("TNr","ENr") )
   #Nach T
-  hb.t <- aggregate(baeume.3.s$StFl2/10000,by=list(baeume.3.s$TNr),sum)
+  hb.t <- stats::aggregate(baeume.3.s$StFl2/10000,by=list(baeume.3.s$TNr),sum)
   names(hb.t) <- c("TNr","m_HB_s")
   hb.t.s <- merge(trakte,hb.t,by=c("TNr"),all.x=T)
   hb.t.s[is.na(hb.t.s)] <- 0
@@ -3164,7 +3164,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
         #NA eliminieren
         iv.bil.t[is.na(iv.bil.t)] <- 0
 
-        #head(iv.bil.t)
+        #utils::head(iv.bil.t)
         #1,   2, 3,   4,   5,       6,  7,     8,      9,         10,    11,
         #TNr, m, m_HB,mBAF,mBAF.oLK,mPL,mPLkal,iV.DhmR,iV.DhmR.HB,iV.EoR,iB,
         #12,      13,         14,     15
@@ -3378,13 +3378,13 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
 
   #Holzbodenfläche des Stratums
   #Nach TE
-  hb.te <- aggregate(baeume.3.s$StFl2/10000,
+  hb.te <- stats::aggregate(baeume.3.s$StFl2/10000,
                         by=list(baeume.3.s$TNr,baeume.3.s$ENr),sum)
   names(hb.te) <- c("TNr","ENr","m_HB_s")
   ecken <- merge(hb.te,subset(ecken.23.hb,select=c(TNr,ENr,PL,PLkal)),
                     by=c("TNr","ENr") )
   #Nach T
-  hb.t <- aggregate(baeume.3.s$StFl2/10000,by=list(baeume.3.s$TNr),sum)
+  hb.t <- stats::aggregate(baeume.3.s$StFl2/10000,by=list(baeume.3.s$TNr),sum)
   names(hb.t) <- c("TNr","m_HB_s")
   hb.t.s <- merge(trakte,hb.t,by=c("TNr"),all.x=T)
   hb.t.s[is.na(hb.t.s)] <- 0
@@ -3499,7 +3499,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
         #NA eliminieren
         iv.bil.t[is.na(iv.bil.t)] <- 0
 
-        #head(iv.bil.t)
+        #utils::head(iv.bil.t)
         #1,   2, 3,   4,   5,       6,  7,     8,      9,         10,    11,
         #TNr, m, m_HB,mBAF,mBAF.oLK,mPL,mPLkal,iV.DhmR,iV.DhmR.HB,iV.EoR,iB,
         #12,      13,         14,     15
@@ -3715,13 +3715,13 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
 
   #Holzbodenfläche des Stratums
   #Nach TE
-  hb.te <- aggregate(baeume.3.s$StFl2/10000,
+  hb.te <- stats::aggregate(baeume.3.s$StFl2/10000,
                         by=list(baeume.3.s$TNr,baeume.3.s$ENr),sum)
   names(hb.te) <- c("TNr","ENr","m_HB_s")
   ecken <- merge(hb.te,subset(ecken.23.hb,select=c(TNr,ENr,PL,PLkal)),
                     by=c("TNr","ENr") )
   #Nach T
-  hb.t <- aggregate(baeume.3.s$StFl2/10000,by=list(baeume.3.s$TNr),sum)
+  hb.t <- stats::aggregate(baeume.3.s$StFl2/10000,by=list(baeume.3.s$TNr),sum)
   names(hb.t) <- c("TNr","m_HB_s")
   hb.t.s <- merge(trakte,hb.t,by=c("TNr"),all.x=T)
   hb.t.s[is.na(hb.t.s)] <- 0
@@ -3853,7 +3853,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
         #NA eliminieren
         iv.bil.t[is.na(iv.bil.t)] <- 0
 
-        #head(iv.bil.t)
+        #utils::head(iv.bil.t)
         #1,   2, 3,   4,   5,       6,  7,     8,      9,         10,    11,
         #TNr, m, m_HB,mBAF,mBAF.oLK,mPL,mPLkal,iV.DhmR,iV.DhmR.HB,iV.EoR,iB,
         #12, 13,      14,         15      16   17
@@ -4002,7 +4002,7 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   #Holzbodenfläche des Stratums
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
   y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
@@ -4027,13 +4027,13 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
                               by.x="ba",by.y="ICode",all.x=T)
                               
   #Verbiss auf Traktecke aggregieren, differenziert nach <Biss> 1 oder 2
-  verbiss.a <- aggregate(verj.s.bis130$nha,
+  verbiss.a <- stats::aggregate(verj.s.bis130$nha,
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr,verj.s.bis130$BaGr),sum)
-  verbiss.0 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==0,1,0),
+  verbiss.0 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==0,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr,verj.s.bis130$BaGr),sum)
-  verbiss.1 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==1,1,0),
+  verbiss.1 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==1,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr,verj.s.bis130$BaGr),sum)
-  verbiss.2 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==2,1,0),
+  verbiss.2 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==2,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr,verj.s.bis130$BaGr),sum)
 
   names(verbiss.a) <- c("TNr","ENr","BaGr","n.ges")
@@ -4057,18 +4057,18 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   #Nach Baumartengruppen
   #Vorkommen der BA-Gruppe je Trakt
   verbiss.t.a <-
-    aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr,verbiss$BaGr),sum)
+    stats::aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.a) <- c("TNr","BaGr","t")
-  verbiss.t. <- aggregate(verbiss$vb0.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb0.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.) <- c("TNr","BaGr","s.vb0")
   verbiss.t <- merge(verbiss.t.a,verbiss.t.,by=c("TNr","BaGr"))
-  verbiss.t. <- aggregate(verbiss$vb1.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb1.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.) <- c("TNr","BaGr","s.vb1")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr","BaGr"))
-  verbiss.t. <- aggregate(verbiss$vb2.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb2.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.) <- c("TNr","BaGr","s.vb2")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr","BaGr"))
-  verbiss.t. <- aggregate(verbiss$vb12.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb12.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.) <- c("TNr","BaGr","s.vb12")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr","BaGr"))
 
@@ -4092,13 +4092,13 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   #Über alle Baumarten
   
   #Verbiss auf Traktecke aggregieren, differenziert nach <Biss> 1 oder 2
-  verbiss.a <- aggregate(verj.s.bis130$nha,
+  verbiss.a <- stats::aggregate(verj.s.bis130$nha,
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr),sum)
-  verbiss.0 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==0,1,0),
+  verbiss.0 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==0,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr),sum)
-  verbiss.1 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==1,1,0),
+  verbiss.1 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==1,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr),sum)
-  verbiss.2 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==2,1,0),
+  verbiss.2 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==2,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr),sum)
 
   names(verbiss.a) <- c("TNr","ENr","n.ges")
@@ -4116,22 +4116,22 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   verbiss[is.na(verbiss)] <- 0
 
   #Vorkommen Verjüngung je Trakt
-  verbiss.t.a <- aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr),sum)
+  verbiss.t.a <- stats::aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr),sum)
   names(verbiss.t.a) <- c("TNr","t")
   #Verbiss-Kategorie 0
-  verbiss.t. <- aggregate(verbiss$vb0.prz,by=list(verbiss$TNr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb0.prz,by=list(verbiss$TNr),sum)
   names(verbiss.t.) <- c("TNr","s.vb0")
   verbiss.t <- merge(verbiss.t.a,verbiss.t.,by=c("TNr"))
   #Verbiss-Kategorie 1
-  verbiss.t. <- aggregate(verbiss$vb1.prz,by=list(verbiss$TNr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb1.prz,by=list(verbiss$TNr),sum)
   names(verbiss.t.) <- c("TNr","s.vb1")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr"))
   #Verbiss-Kategorie 2
-  verbiss.t. <- aggregate(verbiss$vb2.prz,by=list(verbiss$TNr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb2.prz,by=list(verbiss$TNr),sum)
   names(verbiss.t.) <- c("TNr","s.vb2")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr"))
   #Verbiss-Kategorie 1|2
-  verbiss.t. <- aggregate(verbiss$vb12.prz,by=list(verbiss$TNr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb12.prz,by=list(verbiss$TNr),sum)
   names(verbiss.t.) <- c("TNr","s.vb12")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr"))
 
@@ -4195,7 +4195,7 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   #Holzbodenfläche des Stratums
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
   y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
@@ -4227,13 +4227,13 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   bagr.list <- ba.grupp[[1]]
 
   #Verbiss auf Traktecke aggregieren, differenziert nach <Biss> 1 oder 2
-  verbiss.a <- aggregate(verj.s.bis130$nha,
+  verbiss.a <- stats::aggregate(verj.s.bis130$nha,
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr,verj.s.bis130$BaGr),sum)
-  verbiss.0 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==0,1,0),
+  verbiss.0 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==0,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr,verj.s.bis130$BaGr),sum)
-  verbiss.1 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==1,1,0),
+  verbiss.1 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==1,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr,verj.s.bis130$BaGr),sum)
-  verbiss.2 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==2,1,0),
+  verbiss.2 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==2,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr,verj.s.bis130$BaGr),sum)
 
   names(verbiss.a) <- c("TNr","ENr","BaGr","n.ges")
@@ -4257,18 +4257,18 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   #Nach Baumartengruppen
   #Vorkommen der BA-Gruppe je Trakt
   verbiss.t.a <-
-    aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr,verbiss$BaGr),sum)
+    stats::aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.a) <- c("TNr","BaGr","t")
-  verbiss.t. <- aggregate(verbiss$vb0.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb0.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.) <- c("TNr","BaGr","s.vb0")
   verbiss.t <- merge(verbiss.t.a,verbiss.t.,by=c("TNr","BaGr"))
-  verbiss.t. <- aggregate(verbiss$vb1.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb1.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.) <- c("TNr","BaGr","s.vb1")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr","BaGr"))
-  verbiss.t. <- aggregate(verbiss$vb2.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb2.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.) <- c("TNr","BaGr","s.vb2")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr","BaGr"))
-  verbiss.t. <- aggregate(verbiss$vb12.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb12.prz,by=list(verbiss$TNr,verbiss$BaGr),sum)
   names(verbiss.t.) <- c("TNr","BaGr","s.vb12")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr","BaGr"))
 
@@ -4292,13 +4292,13 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   #Über alle Baumarten
 
   #Verbiss auf Traktecke aggregieren, differenziert nach <Biss> 1 oder 2
-  verbiss.a <- aggregate(verj.s.bis130$nha,
+  verbiss.a <- stats::aggregate(verj.s.bis130$nha,
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr),sum)
-  verbiss.0 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==0,1,0),
+  verbiss.0 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==0,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr),sum)
-  verbiss.1 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==1,1,0),
+  verbiss.1 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==1,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr),sum)
-  verbiss.2 <-aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==2,1,0),
+  verbiss.2 <-stats::aggregate(verj.s.bis130$nha*ifelse(verj.s.bis130$biss==2,1,0),
             by=list(verj.s.bis130$tnr,verj.s.bis130$enr),sum)
 
   names(verbiss.a) <- c("TNr","ENr","n.ges")
@@ -4316,22 +4316,22 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   verbiss[is.na(verbiss)] <- 0
 
   #Vorkommen Verjüngung je Trakt
-  verbiss.t.a <- aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr),sum)
+  verbiss.t.a <- stats::aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr),sum)
   names(verbiss.t.a) <- c("TNr","t")
   #Verbiss-Kategorie 0
-  verbiss.t. <- aggregate(verbiss$vb0.prz,by=list(verbiss$TNr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb0.prz,by=list(verbiss$TNr),sum)
   names(verbiss.t.) <- c("TNr","s.vb0")
   verbiss.t <- merge(verbiss.t.a,verbiss.t.,by=c("TNr"))
   #Verbiss-Kategorie 1
-  verbiss.t. <- aggregate(verbiss$vb1.prz,by=list(verbiss$TNr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb1.prz,by=list(verbiss$TNr),sum)
   names(verbiss.t.) <- c("TNr","s.vb1")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr"))
   #Verbiss-Kategorie 2
-  verbiss.t. <- aggregate(verbiss$vb2.prz,by=list(verbiss$TNr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb2.prz,by=list(verbiss$TNr),sum)
   names(verbiss.t.) <- c("TNr","s.vb2")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr"))
   #Verbiss-Kategorie 1|2
-  verbiss.t. <- aggregate(verbiss$vb12.prz,by=list(verbiss$TNr),sum)
+  verbiss.t. <- stats::aggregate(verbiss$vb12.prz,by=list(verbiss$TNr),sum)
   names(verbiss.t.) <- c("TNr","s.vb12")
   verbiss.t <- merge(verbiss.t,verbiss.t.,by=c("TNr"))
 
@@ -4386,7 +4386,7 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   #Holzbodenfläche des Stratums
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
   y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
@@ -4417,11 +4417,11 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   #Verjüngung auf Trakt aggregieren
   #Nach Baumartengruppen  
   verj.t <-
-    aggregate(verj.s$nha,by=list(verj.s$tnr,verj.s$bagr),sum)
+    stats::aggregate(verj.s$nha,by=list(verj.s$tnr,verj.s$bagr),sum)
   names(verj.t) <- c("tnr","bagr","n")
   #Alle Baumarten zusammen
   verj.t.a <-
-    aggregate(verj.s$nha,by=list(verj.s$tnr),sum)
+    stats::aggregate(verj.s$nha,by=list(verj.s$tnr),sum)
   names(verj.t.a) <- c("tnr","n.ges")
   
   #Array-Tabelle definieren:
@@ -4505,7 +4505,7 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   #Holzbodenfläche des Stratums
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
   y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
@@ -4540,11 +4540,11 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   #Verjüngung auf Trakt aggregieren
   #Nach Baumartengruppen  
   verj.t <-
-    aggregate(verj.s$nha,by=list(verj.s$tnr,verj.s$bagr),sum)
+    stats::aggregate(verj.s$nha,by=list(verj.s$tnr,verj.s$bagr),sum)
   names(verj.t) <- c("tnr","bagr","n")
   #Alle Baumarten zusammen
   verj.t.a <-
-    aggregate(verj.s$nha,by=list(verj.s$tnr),sum)
+    stats::aggregate(verj.s$nha,by=list(verj.s$tnr),sum)
   names(verj.t.a) <- c("tnr","n.ges")
   
   #Array-Tabelle definieren:
@@ -4623,7 +4623,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   #Holzbodenfläche des Stratums
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
   y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
@@ -4648,7 +4648,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
                       by.y="ICode",all.x=T)
   names(verj.kl4.s)[11] <- "bagr"
   #Nach Trakt, BAGR und Verjüngungsart aggregieren
-  vj.kl4.t <- aggregate(verj.kl4.s$baf,
+  vj.kl4.t <- stats::aggregate(verj.kl4.s$baf,
                     by=list(verj.kl4.s$tnr,verj.kl4.s$bagr,verj.kl4.s$vjgart),
                     sum)
   names(vj.kl4.t) <- c("tnr","bagr","vart","baf")
@@ -4679,7 +4679,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
       vj.kl4.baf.bagr.vart[2,j,i] <- sqrt(r.list$V.R.xy) * A
       
       #Über alle Baumartengruppen einer Verjüngungsart
-      vj.kl4.t.a <- aggregate(vj.kl4.t$baf[vj.kl4.t$vart==vart.list[j]],
+      vj.kl4.t.a <- stats::aggregate(vj.kl4.t$baf[vj.kl4.t$vart==vart.list[j]],
                       by=list(vj.kl4.t$tnr[vj.kl4.t$vart==vart.list[j]]),sum)
       names(vj.kl4.t.a) <- c("tnr","baf")
       xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.a,by="tnr",all.x=T)
@@ -4689,7 +4689,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
       vj.kl4.baf.bagr.vart[2,j,(n.bagr+1)] <- sqrt(r.list$V.R.xy) * A
     }
     #Alle Verjüngungsarten zusammen nach BA-Gruppe
-    vj.kl4.t.a <- aggregate(vj.kl4.t.bagr$baf,by=list(vj.kl4.t.bagr$tnr),sum)
+    vj.kl4.t.a <- stats::aggregate(vj.kl4.t.bagr$baf,by=list(vj.kl4.t.bagr$tnr),sum)
     names(vj.kl4.t.a) <- c("tnr","baf")
     xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.a,by="tnr",all.x=T)
     xy[is.na(xy)] <- 0
@@ -4700,7 +4700,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   
   
   #Alle Verjüngungsarten und alle Baumartengruppen
-  vj.kl4.t.a <- aggregate(vj.kl4.t$baf,by=list(vj.kl4.t$tnr),sum)
+  vj.kl4.t.a <- stats::aggregate(vj.kl4.t$baf,by=list(vj.kl4.t$tnr),sum)
   names(vj.kl4.t.a) <- c("tnr","baf")
   xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.a,by="tnr",all.x=T)
   xy[is.na(xy)] <- 0
@@ -4753,7 +4753,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   #Holzbodenfläche des Stratums
-  y <- tryCatch(aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum),
+  y <- tryCatch(stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum),
                 error = function(e) return(data.frame(NA, 0))
                 )
   names(y) <- c("tnr","y")
@@ -4794,7 +4794,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   n.vart <- length(vart.list)
   
   #Nach Trakt, BAGR und Verjüngungsart aggregieren
-  vj.kl4.t <- tryCatch(aggregate(verj.kl4.s$baf,
+  vj.kl4.t <- tryCatch(stats::aggregate(verj.kl4.s$baf,
                                  by=list(verj.kl4.s$tnr, verj.kl4.s$bagr,
                                          verj.kl4.s$vjgart),
                                  sum),
@@ -4821,9 +4821,9 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
       
       #Über alle Baumartengruppen einer Verjüngungsart
       vj.kl4.t.a <- 
-          tryCatch(aggregate(na.fail(vj.kl4.t$baf[vj.kl4.t$vart ==
+          tryCatch(stats::aggregate(stats::na.fail(vj.kl4.t$baf[vj.kl4.t$vart ==
                                      vart.list[j]]) ,
-                             by = list(na.fail(vj.kl4.t$tnr[vj.kl4.t$vart == 
+                             by = list(stats::na.fail(vj.kl4.t$tnr[vj.kl4.t$vart == 
                                        vart.list[j]])), 
                              sum), 
                    error = function(e) return(data.frame(NA, 0))
@@ -4837,7 +4837,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
     }
     #Alle Verjüngungsarten zusammen nach BA-Gruppe
     vj.kl4.t.a <-
-        tryCatch(aggregate(vj.kl4.t.bagr$baf,by=list(vj.kl4.t.bagr$tnr),sum),
+        tryCatch(stats::aggregate(vj.kl4.t.bagr$baf,by=list(vj.kl4.t.bagr$tnr),sum),
                    error = function(e) return(data.frame(NA, 0))
                    )
     names(vj.kl4.t.a) <- c("tnr","baf")
@@ -4850,7 +4850,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   
   #Alle Verjüngungsarten und alle Baumartengruppen
   vj.kl4.t.a <-
-      tryCatch(aggregate(na.fail(vj.kl4.t$baf),by=list(na.fail(vj.kl4.t$tnr)),sum),
+      tryCatch(stats::aggregate(stats::na.fail(vj.kl4.t$baf),by=list(stats::na.fail(vj.kl4.t$tnr)),sum),
                 error = function(e) return(data.frame(NA, 0))
                 )
   names(vj.kl4.t.a) <- c("tnr","baf")
@@ -4916,11 +4916,11 @@ ntns.stratum.fun <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg){
   }
   names(stratum)[length(stratum)] <- "ntns"
   #Anzahl TE nach Trakt und NTNS aggregieren
-  xy.ntns.t <- aggregate(rep(1,length(stratum[,1])),
+  xy.ntns.t <- stats::aggregate(rep(1,length(stratum[,1])),
                     by=list(stratum$TNr,stratum$ntns),sum)
   names(xy.ntns.t) <- c("TNr","ntns","n.ntns")
   #Anzahl TE nach Trakt aggregieren
-  xy.t <- aggregate(rep(1,length(stratum[,1])),
+  xy.t <- stats::aggregate(rep(1,length(stratum[,1])),
                     by=list(stratum$TNr),sum)
   names(xy.t) <- c("TNr","n")
 
@@ -5041,11 +5041,11 @@ ntns.stratum.fun.2 <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg,schicht)
   }
   names(stratum)[length(stratum)] <- "ntns"
   #Anzahl TE nach Trakt und NTNS aggregieren
-  xy.ntns.t <- aggregate(rep(1,length(stratum[,1])),
+  xy.ntns.t <- stats::aggregate(rep(1,length(stratum[,1])),
                     by=list(stratum$TNr,stratum$ntns),sum)
   names(xy.ntns.t) <- c("TNr","ntns","n.ntns")
   #Anzahl TE nach Trakt aggregieren
-  xy.t <- aggregate(rep(1,length(stratum[,1])),
+  xy.t <- stats::aggregate(rep(1,length(stratum[,1])),
                     by=list(stratum$TNr),sum)
   names(xy.t) <- c("TNr","n")
 
@@ -5161,12 +5161,12 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
   n.te.s <- length(stratum[,1])
   #------
   #HBF nach Trakt im Stratum
-  xy <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   #Blößen (BL): BA=999, Lücken (iBL): BA=998
-  xy <- cbind(xy,aggregate(ifelse(
+  xy <- cbind(xy,stats::aggregate(ifelse(
                   wzp4.merkmale.s$ba==999,wzp4.merkmale.s$stfl/10000,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x)
-  xy <- cbind(xy,aggregate(ifelse(wzp4.merkmale.s$ba==998,wzp4.merkmale.s$stfl,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(wzp4.merkmale.s$ba==998,wzp4.merkmale.s$stfl,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
@@ -5193,36 +5193,36 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
   se.lk <- sqrt(r.list$V.R.xy)
 
   #(4) Biotopbaum-Attribute auf Trakt aggregieren
-  biotop.t <- aggregate(ifelse(wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$pk<=1,
+  biotop.t <- stats::aggregate(ifelse(wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$pk<=1,
                         wzp4.merkmale.s$nha,0),by=list(wzp4.merkmale.s$tnr),sum)
   #Vorrat
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(wzp4.merkmale.s$biotopb>0
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(wzp4.merkmale.s$biotopb>0
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
               by=list(wzp4.merkmale.s$tnr),sum)$x)
               
   #Oberirdische Biomasse
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(wzp4.merkmale.s$biotopb>0
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(wzp4.merkmale.s$biotopb>0
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$oib,0),
               by=list(wzp4.merkmale.s$tnr),sum)$x)
 
   #Starkholzvorrat
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(
               wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$bhd>=50
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
               by=list(wzp4.merkmale.s$tnr),sum)$x)
 
   #LB-Vorrat
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(
               wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$ba%in%c(100:299)
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
               by=list(wzp4.merkmale.s$tnr),sum)$x)
 
   #NB-Vorrat
-  biotop.t <- cbind(biotop.t,aggregate(ifelse(
+  biotop.t <- cbind(biotop.t,stats::aggregate(ifelse(
               wzp4.merkmale.s$biotopb>0&wzp4.merkmale.s$ba%in%c(10:99)
               &wzp4.merkmale.s$pk<=1,
               wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
@@ -5232,7 +5232,7 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
 
   names(biotop.t) <- c("tnr","N.BB","V.BB","oiB.BB","SthV.BB","V.BB.LB",
                         "V.BB.NB")
-  head(biotop.t)
+  utils::head(biotop.t)
 
   biotop.t <- merge(subset(xy,select=c(tnr,m,hbf)),biotop.t,by="tnr",
                     all.x=T)
@@ -5417,12 +5417,12 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   n.te.s <- length(stratum[,1])
   #------
   #HBF nach Trakt im Stratum
-  xy <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   #Blößen (BL): BA=999, Lücken (iBL): BA=998
-  xy <- cbind(xy,aggregate(ifelse(
+  xy <- cbind(xy,stats::aggregate(ifelse(
                   wzp4.merkmale.s$ba==999,wzp4.merkmale.s$stfl/10000,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x)
-  xy <- cbind(xy,aggregate(ifelse(wzp4.merkmale.s$ba==998,wzp4.merkmale.s$stfl,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(wzp4.merkmale.s$ba==998,wzp4.merkmale.s$stfl,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
@@ -5468,35 +5468,35 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   
   for (i in 1:n.bagr)
   {
-    merkmal.t <- aggregate(ifelse(
+    merkmal.t <- stats::aggregate(ifelse(
       wzp4.merkmale.s$merkmal.s>0&wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba 
       %in% ba.grupp$ba.grupp[[i]],wzp4.merkmale.s$nha,0),
       by=list(wzp4.merkmale.s$tnr),sum)
     #Vorrat
-    merkmal.t <- cbind(merkmal.t,aggregate(ifelse(wzp4.merkmale.s$merkmal.s>0
+    merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(wzp4.merkmale.s$merkmal.s>0
       &wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]],
       wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
       by=list(wzp4.merkmale.s$tnr),sum)$x)
                 
     #Oberirdische Biomasse
-    merkmal.t <- cbind(merkmal.t,aggregate(ifelse(wzp4.merkmale.s$merkmal.s>0
+    merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(wzp4.merkmale.s$merkmal.s>0
       &wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]],
       wzp4.merkmale.s$nha*wzp4.merkmale.s$oib,0),
       by=list(wzp4.merkmale.s$tnr),sum)$x)
   
     #Starkholzvorrat
-    merkmal.t <- cbind(merkmal.t,aggregate(ifelse(
+    merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(
       wzp4.merkmale.s$merkmal.s>0&wzp4.merkmale.s$bhd>=50
       &wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]],
       wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
       by=list(wzp4.merkmale.s$tnr),sum)$x)
     
     #Gesamtzahl 
-    merkmal.t <- cbind(merkmal.t,aggregate(ifelse(
+    merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(
       wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]],
       wzp4.merkmale.s$nha,0), by=list(wzp4.merkmale.s$tnr),sum)$x)
     #Gesamtvorrat 
-    merkmal.t <- cbind(merkmal.t,aggregate(ifelse(
+    merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(
       wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]],
       wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
       by=list(wzp4.merkmale.s$tnr),sum)$x)
@@ -5504,7 +5504,7 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   
   
     names(merkmal.t) <- c("tnr","N.MM","V.MM","oiB.MM","SthV.MM","N.ges","V.ges")
-    head(merkmal.t)
+    utils::head(merkmal.t)
   
     merkmal.t <- merge(subset(xy,select=c(tnr,m,hbf)),merkmal.t,by="tnr",
                       all.x=T)
@@ -5625,7 +5625,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   #Holzbodenfläche des Stratums
-  y <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
   y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
@@ -5634,7 +5634,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   T.hbf <- r.list$R.xy*A
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
   #-------------------
-  nte.t <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  nte.t <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(nte.t) <- c("tnr","nte")   
   #--------------------
   #FBA
@@ -5664,7 +5664,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   fba.tab <- merge(fba.tab,d.fl.ant,by="dichte",all.x=T)
   fba.tab <- subset(fba.tab,select=c(2:4,1,5))
   #Auf überschießende Fläche prüfen
-  n.fba.te <- aggregate(cbind(ifelse(fba.tab$dichte<=0,0,1),fba.tab$fl.ant),
+  n.fba.te <- stats::aggregate(cbind(ifelse(fba.tab$dichte<=0,0,1),fba.tab$fl.ant),
                         by=list(fba.tab$tnr,fba.tab$enr),sum)
   names(n.fba.te) <- c("tnr","enr","n.fba","sum.fl.ant")
   #Überschießende Fläche auf eins korrigieren
@@ -5693,7 +5693,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
     
     for (j in 0:3)
     {
-      nte.d.j.t <- aggregate(ifelse(fba.i$dichte==j,1,0),by=list(fba.i$tnr),sum)
+      nte.d.j.t <- stats::aggregate(ifelse(fba.i$dichte==j,1,0),by=list(fba.i$tnr),sum)
       names(nte.d.j.t) <- c("tnr","nd")
       nte.d.j.t <- merge(nte.t,nte.d.j.t,by=c("tnr"),all.x=T)
       nte.d.j.t[is.na(nte.d.j.t)] <- 0
@@ -5702,7 +5702,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
       fba.d[2,(j+1),ii] <- round(sqrt(r.list$V.R.xy),5)      
     }
     #Fläche schätzen als Total
-    fl.i.t <- aggregate(fba.i$fl.ant,by=list(fba.i$tnr),sum)
+    fl.i.t <- stats::aggregate(fba.i$fl.ant,by=list(fba.i$tnr),sum)
     names(fl.i.t) <- c("tnr","fl")
     #daher Verknüpfung mit <y>
     fl.i.t <- merge(y[,1:2],fl.i.t,by="tnr",all.x=T)
@@ -5712,7 +5712,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
     fba.fl[2,ii,1] <- round(sqrt(r.list$V.R.xy)*A,2)
     
     #Fläche schätzen als Anteil
-    fl.i.t <- aggregate(fba.i$fl.ant,by=list(fba.i$tnr),sum)
+    fl.i.t <- stats::aggregate(fba.i$fl.ant,by=list(fba.i$tnr),sum)
     names(fl.i.t) <- c("tnr","fl")
     #Verknüpfung mit <nte.t>
     fl.i.t <- merge(nte.t,fl.i.t,by="tnr",all.x=T)
@@ -5747,9 +5747,9 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
 #' @return Liste mit der Flaeche und dem Standardfehler.
 fl.stratum.fun <- function(auswahl,ecken,trakte,A){
   te <- stratum.fun(auswahl,ecken)
-  nte.t <- aggregate(rep(1,length(te[,1])),by=list(te$TNr),sum)
+  nte.t <- stats::aggregate(rep(1,length(te[,1])),by=list(te$TNr),sum)
   names(nte.t) <- c("TNr","nte")
-  head(nte.t)
+  utils::head(nte.t)
   nte.t <- merge(subset(trakte,select=c(TNr,m)),nte.t,by="TNr",all.x=T)
   nte.t[is.na(nte.t)] <- 0
   r.list <- r.variance.fun(nte.t[,2:3],length(trakte.3[,1]))
@@ -5773,7 +5773,7 @@ fl.stratum.fun <- function(auswahl,ecken,trakte,A){
 #'  Standardfehler.
 fl.proz.stratum.fun <- function(stratum,substratum,ecken){
   te <- stratum.fun(stratum,ecken)
-  nte.t <- aggregate(rep(1,length(te[,1])),by=list(te$TNr),sum)
+  nte.t <- stats::aggregate(rep(1,length(te[,1])),by=list(te$TNr),sum)
   names(nte.t) <- c("TNr","nte")
   substratum.1 <- stratum
   k <- length(names(substratum))
@@ -5781,9 +5781,9 @@ fl.proz.stratum.fun <- function(stratum,substratum,ecken){
     substratum.1[[names(substratum)[i]]] <- substratum[[i]]
   }
   te.s <- stratum.fun(substratum.1,ecken)
-  nte.s.t <- aggregate(rep(1,length(te.s[,1])),by=list(te.s$TNr),sum)
+  nte.s.t <- stats::aggregate(rep(1,length(te.s[,1])),by=list(te.s$TNr),sum)
   names(nte.s.t) <- c("TNr","nte.s")
-  head(nte.s.t)
+  utils::head(nte.s.t)
     nte.s.t <- merge(nte.t,nte.s.t,by="TNr",all.x=T)
   nte.s.t[is.na(nte.s.t)] <- 0
   r.list <- r.variance.fun(nte.s.t[,2:3],length(trakte.3[,1]))
@@ -5913,11 +5913,11 @@ mbaf.bagr.alt.bhd.pm.fun <- function(baeume.vor,baeume.folg,A.klass,D.klass){
   baeume.vor  <- subset(baeume.vor, ba < 998)
   baeume.folg <- subset(baeume.folg,ba < 998)
   #Umrechnen in ha
-  baf1.tnr <- aggregate(baeume.vor$stfl1*lk.v/10000,
+  baf1.tnr <- stats::aggregate(baeume.vor$stfl1*lk.v/10000,
     by=list(baeume.vor$tnr,baeume.vor$bagr,baeume.vor$akl.pm,baeume.vor$dkl.pm),
     sum)
   names(baf1.tnr) <- c("tnr","bagr","akl.pm","dkl.pm","baf1")
-  baf2.tnr <- aggregate(baeume.folg$stfl2*lk.f/10000,
+  baf2.tnr <- stats::aggregate(baeume.folg$stfl2*lk.f/10000,
     by=list(baeume.folg$tnr,baeume.folg$bagr,baeume.folg$akl.pm,baeume.folg$dkl.pm),
     sum)
   names(baf2.tnr) <- c("tnr","bagr","akl.pm","dkl.pm","baf2")
@@ -6053,80 +6053,80 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
 
   #(1.1) S-Baeume
   #(1.111) Derbholz m.R.
-  iv.es.t <- aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
+  iv.es.t <- stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)
   #(1.112) Derbholz m.R. im Hauptbestand (kä/11.04.2014)
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0)* ifelse(baeume.ba$StFl2>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.12) Erntevolumen o.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.13) oberird. Biomasse
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.2) Es-Baeume (Kriterium: modellierter BHD1 >= 7 cm)
   #(1.211) Derbholz m.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.212) Derbholz m.R. im Hauptbestand
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0)*ifelse(baeume.ba$StFl2>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.22) Erntevolumen o.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.23) oberird. Biomasse
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.3) Ew-Baeume (echter Einwuchs)
   #(1.311) Derbholz m.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa2
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.312) Derbholz m.R. im Hauptbestand
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa2
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7,1,0)*ifelse(baeume.ba$StFl2>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.32) Erntevolumen o.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$VolE2*baeume.ba$NHa2
+          stats::aggregate(baeume.ba$VolE2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.33) oberird. Biomasse (nur Derbholzkollektiv kä/09.02.2015)
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #BA-Fläche (über alle PB der BAGr)
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$StFl2,
+          stats::aggregate(baeume.ba$StFl2,
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x/10000)
   #Endvorrat (S2,Es)
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa2
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk<=1 & baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
   names(iv.es.t) <- c("TNr","BaGr","Akl","Dkl","iV.DhmR.S","iV.DhmR.HB.S",
           "iV.EoR.S","iB.S","iV.DhmR.Es","iV.DhmR.HB.Es","iV.EoR.Es",
           "iB.Es","V.DhmR.E","V.DhmR.HB.E","V.EoR.E","B.E","BAF2","V.DhmR.S2.Es")
-  head(iv.es.t)
+  utils::head(iv.es.t)
 
   #(2) Berechnung der Bilanzkomponenten iV.A aus baeume.vor
   baeume.ba <- subset(baeume.vor,
@@ -6134,56 +6134,56 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
                     VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,NHa1,StFl1))
   #(2.1) A-Baeume
   #(2.111) Derbholz m.R. Zuwachs des ausgeschiedenen Vorrats
-  iv.a.t <- aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
+  iv.a.t <- stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)
   #(2.112) Derbholz m.R. im Hauptbestand Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- cbind(iv.a.t,
-          aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
+          stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0)*ifelse(baeume.ba$StFl1>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.113) Derbholz m.R. ausgeschiedener Vorrat (insgesamt zur PM)
   iv.a.t <- cbind(iv.a.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa1
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.114) Derbholz m.R. im Hauptbestand ausgeschiedener Vorrat (insgesamt zur PM) 
   iv.a.t <- cbind(iv.a.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa1
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0)*ifelse(baeume.ba$StFl1>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
   #(2.121) Erntevolumen o.R. Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- cbind(iv.a.t,
-          aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa1
+          stats::aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.122) Erntevolumen o.R. ausgeschiedene Vorrat
   iv.a.t <- cbind(iv.a.t,
-          aggregate(baeume.ba$VolE2*baeume.ba$NHa1
+          stats::aggregate(baeume.ba$VolE2*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.131) oberird. Biomasse  Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- cbind(iv.a.t,
-          aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa1
+          stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.132) oberird. Biomasse  ausgeschiedener Vorrat
   iv.a.t <- cbind(iv.a.t,
-      aggregate(baeume.ba$oiB2*baeume.ba$NHa1
+      stats::aggregate(baeume.ba$oiB2*baeume.ba$NHa1
       *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.14) BA-Fläche (über alle PB der BAGr)
   iv.a.t <- cbind(iv.a.t,
-      aggregate(baeume.ba$StFl1,
+      stats::aggregate(baeume.ba$StFl1,
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x/10000)
 
   #Anfangsvorrat (S1
   iv.a.t <- cbind(iv.a.t,
-      aggregate(baeume.ba$VolV1*baeume.ba$NHa1*ifelse(baeume.ba$Pk==1,1,0),
+      stats::aggregate(baeume.ba$VolV1*baeume.ba$NHa1*ifelse(baeume.ba$Pk==1,1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   iv.a.t <- cbind(iv.a.t,
-      aggregate(baeume.ba$VolV1*baeume.ba$NHa1
+      stats::aggregate(baeume.ba$VolV1*baeume.ba$NHa1
       *ifelse(baeume.ba$Pk%in%c(2:5,9),1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
@@ -6191,7 +6191,7 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
   names(iv.a.t) <- c("TNr","BaGr","Akl","Dkl","iV.DhmR.A","iV.DhmR.HB.A",
     "V.DhmR.A","V.DhmR.HB.A","iV.EoR.A","V.EoR.A", "iB.A","B.A","BAF1",
     "V.DhmR.S1","V.DhmR.A1")
-  head(iv.a.t)
+  utils::head(iv.a.t)
 
   iv.es.a.t <- merge(iv.es.t,iv.a.t, by=c("TNr","BaGr","Akl","Dkl"),all.x=T,all.y=T)
   #NA-Werte auf 0 setzen, um traktweise zu bilanzieren
@@ -6199,10 +6199,10 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
   length(iv.es.a.t[,1])
  
   #Periodenlänge je Trakt hinzufügen
-  nte.pl.t <- aggregate(rep(1,length(ecken[,1])),by=list(ecken$TNr),sum)
+  nte.pl.t <- stats::aggregate(rep(1,length(ecken[,1])),by=list(ecken$TNr),sum)
   nte.pl.t <- cbind(nte.pl.t,
-                     aggregate(ecken$PL,by=list(ecken$TNr),mean)$x,
-                     aggregate(ecken$PLkal,by=list(ecken$TNr),mean)$x)
+                     stats::aggregate(ecken$PL,by=list(ecken$TNr),mean)$x,
+                     stats::aggregate(ecken$PLkal,by=list(ecken$TNr),mean)$x)
   names(nte.pl.t) <- c("TNr","nTE","mPL","mPLkal")
   iv.es.a.t <- merge(iv.es.a.t,nte.pl.t,by=c("TNr"),all.x=T)
 
@@ -6211,7 +6211,7 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
 
   #  iv.es.a.t[is.na(iv.es.a.t)] <- 0
   
-  head(iv.es.a.t)
+  utils::head(iv.es.a.t)
 
   #Zuwachsbilanzen
   iv.es.a.t$iV.DhmR <-
@@ -6283,56 +6283,56 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
 
   #(1.1) S-Baeume
   #(1.111) Derbholz m.R.
-  iv.es.t <- aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
+  iv.es.t <- stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)
   #(1.112) Derbholz m.R. im Hauptbestand (kä/11.04.2014)
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0)* ifelse(baeume.ba$StFl2>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.12) Erntevolumen o.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.13) oberird. Biomasse
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #+++
   #(1.14) Grundfläche (Derbholz)
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$BHD2^2-baeume.ba$BHD1^2)*pi/40000*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$BHD2^2-baeume.ba$BHD1^2)*pi/40000*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
   #(1.2) Es-Baeume (Kriterium: modellierter BHD1 >= 7 cm)
   #(1.211) Derbholz m.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.212) Derbholz m.R. im Hauptbestand
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0)*ifelse(baeume.ba$StFl2>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.22) Erntevolumen o.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.23) oberird. Biomasse
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #+++
   #(1.24) Grundfläche (Derbholz)
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$BHD2^2-baeume.ba$BHD1^2)*pi/40000*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$BHD2^2-baeume.ba$BHD1^2)*pi/40000*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
@@ -6340,18 +6340,18 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   
   #(1.311) Derbholz m.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa2
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2 >=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.312) Derbholz m.R. im Hauptbestand
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa2
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2 >=7,1,0)
           *ifelse(baeume.ba$StFl2>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.32) Erntevolumen o.R.
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$VolE2*baeume.ba$NHa2
+          stats::aggregate(baeume.ba$VolE2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2 >=7 ,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(1.33) oberird. Biomasse: nur Derbholzkollektiv kä/26.01.2015
@@ -6359,23 +6359,23 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   #BHD < 7 cm eine Biomasse hat (im Unterschied zum Derbholzvolumen!)
   #Das Erreichen der Derbholzschwelle wird ebenfalls berücksichtigt!
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #+++
   #(1.34) Grundfläche (Derbholz) +kä/09.02.2015: Derbholz-Zuwachs: 7[cm]²abziehen!!  
   iv.es.t <- cbind(iv.es.t,
-          aggregate((baeume.ba$BHD2^2-7^2)*pi/40000*baeume.ba$NHa2
+          stats::aggregate((baeume.ba$BHD2^2-7^2)*pi/40000*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
           
   #BA-Fläche (über alle PB der BAGr)
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$StFl2,
+          stats::aggregate(baeume.ba$StFl2,
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x/10000)
   #Endvorrat (S2,Es)
   iv.es.t <- cbind(iv.es.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa2
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk<=1 & baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
@@ -6383,7 +6383,7 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
           "iV.EoR.S","iB.S","iG.S","iV.DhmR.Es","iV.DhmR.HB.Es","iV.EoR.Es",
           "iB.Es","iG.Es","V.DhmR.E","V.DhmR.HB.E","V.EoR.E","B.E","G.E","BAF2",
           "V.DhmR.S2.Es")
-  head(iv.es.t)
+  utils::head(iv.es.t)
 
   #(2) Berechnung der Bilanzkomponenten iV.A aus baeume.vor
   baeume.ba <- subset(baeume.vor,
@@ -6391,68 +6391,68 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
                     VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,NHa1,StFl1))
   #(2.1) A-Baeume
   #(2.111) Derbholz m.R. Zuwachs des ausgeschiedenen Vorrats
-  iv.a.t <- aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
+  iv.a.t <- stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)
   #(2.112) Derbholz m.R. im Hauptbestand Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- cbind(iv.a.t,
-          aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
+          stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0)*ifelse(baeume.ba$StFl1>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.113) Derbholz m.R. ausgeschiedener Vorrat (insgesamt zur PM)
   iv.a.t <- cbind(iv.a.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa1
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.114) Derbholz m.R. im Hauptbestand ausgeschiedener Vorrat (insgesamt zur PM)
   iv.a.t <- cbind(iv.a.t,
-          aggregate(baeume.ba$VolV2*baeume.ba$NHa1
+          stats::aggregate(baeume.ba$VolV2*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0)*ifelse(baeume.ba$StFl1>0,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
   #(2.121) Erntevolumen o.R. Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- cbind(iv.a.t,
-          aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa1
+          stats::aggregate((baeume.ba$VolE2-baeume.ba$VolE1)*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.122) Erntevolumen o.R. ausgeschiedene Vorrat
   iv.a.t <- cbind(iv.a.t,
-          aggregate(baeume.ba$VolE2*baeume.ba$NHa1
+          stats::aggregate(baeume.ba$VolE2*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.131) oberird. Biomasse  Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- cbind(iv.a.t,
-          aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa1
+          stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.132) oberird. Biomasse  ausgeschiedener Vorrat
   iv.a.t <- cbind(iv.a.t,
-      aggregate(baeume.ba$oiB2*baeume.ba$NHa1
+      stats::aggregate(baeume.ba$oiB2*baeume.ba$NHa1
       *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #+++
   #(2.141) Grundfläche Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- cbind(iv.a.t,
-          aggregate((baeume.ba$BHD2^2-baeume.ba$BHD1^2)*pi/40000*baeume.ba$NHa1
+          stats::aggregate((baeume.ba$BHD2^2-baeume.ba$BHD1^2)*pi/40000*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #(2.142) Grundfläche  ausgeschiedener Vorrat
   iv.a.t <- cbind(iv.a.t,
-      aggregate(baeume.ba$BHD2^2*pi/40000*baeume.ba$NHa1
+      stats::aggregate(baeume.ba$BHD2^2*pi/40000*baeume.ba$NHa1
       *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
   #(2.14) BA-Fläche (über alle PB der BAGr)
   iv.a.t <- cbind(iv.a.t,
-      aggregate(baeume.ba$StFl1,
+      stats::aggregate(baeume.ba$StFl1,
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x/10000)
 
   #Anfangsvorrat (S1
   iv.a.t <- cbind(iv.a.t,
-      aggregate(baeume.ba$VolV1*baeume.ba$NHa1*ifelse(baeume.ba$Pk==1,1,0),
+      stats::aggregate(baeume.ba$VolV1*baeume.ba$NHa1*ifelse(baeume.ba$Pk==1,1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   iv.a.t <- cbind(iv.a.t,
-      aggregate(baeume.ba$VolV1*baeume.ba$NHa1
+      stats::aggregate(baeume.ba$VolV1*baeume.ba$NHa1
       *ifelse(baeume.ba$Pk%in%c(2:5,9),1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
@@ -6460,7 +6460,7 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   names(iv.a.t) <- c("TNr","BaGr","Akl","Dkl","iV.DhmR.A","iV.DhmR.HB.A",
     "V.DhmR.A","V.DhmR.HB.A","iV.EoR.A","V.EoR.A", "iB.A","B.A","iG.A","G.A",
     "BAF1","V.DhmR.S1","V.DhmR.A1")
-  head(iv.a.t)
+  utils::head(iv.a.t)
 
   iv.es.a.t <- merge(iv.es.t,iv.a.t, by=c("TNr","BaGr","Akl","Dkl"),all.x=T,all.y=T)
   #NA-Werte auf 0 setzen, um traktweise zu bilanzieren
@@ -6468,10 +6468,10 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   length(iv.es.a.t[,1])
 
   #Periodenlänge je Trakt hinzufügen
-  nte.pl.t <- aggregate(rep(1,length(ecken[,1])),by=list(ecken$TNr),sum)
+  nte.pl.t <- stats::aggregate(rep(1,length(ecken[,1])),by=list(ecken$TNr),sum)
   nte.pl.t <- cbind(nte.pl.t,
-                     aggregate(ecken$PL,by=list(ecken$TNr),mean)$x,
-                     aggregate(ecken$PLkal,by=list(ecken$TNr),mean)$x)
+                     stats::aggregate(ecken$PL,by=list(ecken$TNr),mean)$x,
+                     stats::aggregate(ecken$PLkal,by=list(ecken$TNr),mean)$x)
   names(nte.pl.t) <- c("TNr","nTE","mPL","mPLkal")
   iv.es.a.t <- merge(iv.es.a.t,nte.pl.t,by=c("TNr"),all.x=T)
 
@@ -6480,7 +6480,7 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
 
   #  iv.es.a.t[is.na(iv.es.a.t)] <- 0
 
-  head(iv.es.a.t)
+  utils::head(iv.es.a.t)
 
   #Zuwachsbilanzen
   iv.es.a.t$iV.DhmR <-
@@ -6735,12 +6735,12 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   n.te.s <- length(stratum[,1])
   #------
   #HBF nach Trakt im Stratum
-  xy <- aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
+  xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   #Blößen (BL): BA=999, Lücken (iBL): BA=998
-  xy <- cbind(xy,aggregate(ifelse(
+  xy <- cbind(xy,stats::aggregate(ifelse(
     wzp4.merkmale.s$ba==999,wzp4.merkmale.s$stfl/10000,0),
     by=list(wzp4.merkmale.s$tnr),sum)$x)
-  xy <- cbind(xy,aggregate(ifelse(wzp4.merkmale.s$ba==998,wzp4.merkmale.s$stfl,0),
+  xy <- cbind(xy,stats::aggregate(ifelse(wzp4.merkmale.s$ba==998,wzp4.merkmale.s$stfl,0),
                            by=list(wzp4.merkmale.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
@@ -6806,38 +6806,38 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   {
     for (i in 1:n.bagr)
     {
-      merkmal.t <- aggregate(ifelse(
+      merkmal.t <- stats::aggregate(ifelse(
         wzp4.merkmale.s$merkmal.s>0&wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba 
         %in% ba.grupp$ba.grupp[[i]]&wzp4.merkmale.s$akl==j,wzp4.merkmale.s$nha,0),
         by=list(wzp4.merkmale.s$tnr),sum)
       #Vorrat
-      merkmal.t <- cbind(merkmal.t,aggregate(ifelse(
+      merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(
                   wzp4.merkmale.s$merkmal.s>0
                   &wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]]&wzp4.merkmale.s$akl==j,
                   wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x)
       
       #Oberirdische Biomasse
-      merkmal.t <- cbind(merkmal.t,aggregate(ifelse(
+      merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(
                   wzp4.merkmale.s$merkmal.s>0
                   &wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]]&wzp4.merkmale.s$akl==j,
                   wzp4.merkmale.s$nha*wzp4.merkmale.s$oib,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x)
       
       #Starkholzvorrat
-      merkmal.t <- cbind(merkmal.t,aggregate(ifelse(
+      merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(
         wzp4.merkmale.s$merkmal.s>0&wzp4.merkmale.s$bhd>=50
         &wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]]&wzp4.merkmale.s$akl==j,
         wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
         by=list(wzp4.merkmale.s$tnr),sum)$x)
       
       #Gesamtzahl 
-      merkmal.t <- cbind(merkmal.t,aggregate(ifelse(
+      merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(
         wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]]&wzp4.merkmale.s$akl==j,
         wzp4.merkmale.s$nha,0), by=list(wzp4.merkmale.s$tnr),sum)$x)
       
       #Gesamtvorrat 
-      merkmal.t <- cbind(merkmal.t,aggregate(ifelse(
+      merkmal.t <- cbind(merkmal.t,stats::aggregate(ifelse(
         wzp4.merkmale.s$pk<=1&wzp4.merkmale.s$ba %in% ba.grupp$ba.grupp[[i]]&wzp4.merkmale.s$akl==j,
         wzp4.merkmale.s$nha*wzp4.merkmale.s$volv,0),
         by=list(wzp4.merkmale.s$tnr),sum)$x)
@@ -6845,7 +6845,7 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
       
       
       names(merkmal.t) <- c("tnr","N.MM","V.MM","oiB.MM","SthV.MM","N.ges","V.ges")
-      head(merkmal.t)
+      utils::head(merkmal.t)
       
       merkmal.t <- merge(subset(xy,select=c(tnr,m,hbf)),merkmal.t,by="tnr",
                          all.x=T)

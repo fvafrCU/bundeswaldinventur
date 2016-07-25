@@ -22,7 +22,7 @@ theme_bold_title <- function() {
 }
 
 tplot <- function(obj) {
-    plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
+    graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
 	 theme(strip.text.y = element_text(size=12))
 	 )
 }

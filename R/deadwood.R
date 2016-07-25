@@ -42,7 +42,7 @@ deadwood <- function(totholz = t3, v = c("tnr", "enr"),
     l <- eval(parse(text=paste0("list(", 
                                 paste0(v, " = totholz$", v, collapse = ", "),
                                 ")")))
-    t <- aggregate(totholz$tvol * totholz$thf * totholz$anz, 
+    t <- stats::aggregate(totholz$tvol * totholz$thf * totholz$anz, 
                    by=l,
                    FUN=sum)
     n <- paste0(v, collapse = ", ")
