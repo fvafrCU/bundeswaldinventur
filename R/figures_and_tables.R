@@ -2,28 +2,28 @@
 # @NULL 
 theme_bold_axes <- function() {
     return(
-	   theme(axis.title =  element_text(colour = "black", size = 20),
-		 axis.text =  element_text(colour = "black", size = 20))
+	   ggplot2::theme(axis.title =  ggplot2::element_text(colour = "black", size = 20),
+		 axis.text =  ggplot2::element_text(colour = "black", size = 20))
 	   )
 }
 
 theme_bold_legend <- function() {
     return(
-	   theme(legend.title = element_text(colour = "black", size = 16),
-		 legend.text = element_text(colour = "black", size = 16)
+	   ggplot2::theme(legend.title = ggplot2::element_text(colour = "black", size = 16),
+		 legend.text = ggplot2::element_text(colour = "black", size = 16)
 		 )
 	   )
 }
 
 theme_bold_title <- function() {
     return(
-	   theme(plot.title = element_text(colour = "black", size = 20))
+	   ggplot2::theme(plot.title = ggplot2::element_text(colour = "black", size = 20))
 	   )
 }
 
 tplot <- function(obj) {
     graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
-	 theme(strip.text.y = element_text(size=12))
+	 ggplot2::theme(strip.text.y = ggplot2::element_text(size=12))
 	 )
 }
 
@@ -91,27 +91,27 @@ melt_species_attribute_group <- function(list, species, abbreviation, group) {
 
 plot_species_attribute_group <- function(data) {
     return(
-	   ggplot(data = data,
-		  aes(y = prediction,
+	   ggplot2::ggplot(data = data,
+		  ggplot2::aes(y = prediction,
 		      x = group,
 		      fill = factor(bwi)
 		      ), 
 		  group = group) +
-	   geom_bar(stat = 'identity', position =  position_dodge()) +
-	   geom_errorbar(aes(ymin = prediction - standard_error,
+	   ggplot2::geom_bar(stat = 'identity', position =  ggplot2::position_dodge()) +
+	   ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
 			     ymax = prediction + standard_error
 			     ),
 			 width = .3,
-			 position = position_dodge(width=0.9)
+			 position = ggplot2::position_dodge(width=0.9)
 			 ) +
-	   scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
-	   theme(axis.text.x  = element_text(size = 8)) +
-	   xlab(get_label_for_abbreviation(as.character(unique(data$grouping_variable)),
+	   ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+	   ggplot2::theme(axis.text.x  = ggplot2::element_text(size = 8)) +
+	   ggplot2::xlab(get_label_for_abbreviation(as.character(unique(data$grouping_variable)),
 					  'text_label')) + 
-	   scale_y_continuous(labels = comma) +
-	   ylab(get_label_for_abbreviation(as.character(unique(data$abbreviation)),
+	   ggplot2::scale_y_continuous(labels = comma) +
+	   ggplot2::ylab(get_label_for_abbreviation(as.character(unique(data$abbreviation)),
 					  'axis_label')) + 
-	   ggtitle(paste('Baumartengruppe', unique(data$species), 'im' ,
+	   ggplot2::ggtitle(paste('Baumartengruppe', unique(data$species), 'im' ,
 			 unique(data$ownership)))
 	   )
 }
@@ -174,24 +174,24 @@ all_data_by_group <- function(abbreviation) {
 
 plot_by_group <- function(data, subs, x = "Baumartengruppe") {
     return(
-	   ggplot(subset(data, eval(parse(text = subs))),
-		  aes_string(y = "prediction",
+	   ggplot2::ggplot(subset(data, eval(parse(text = subs))),
+		  ggplot2::aes_string(y = "prediction",
 			     x = x, #deparse(substitute(g)),
 			     fill = "factor(bwi)"
 			     ), 
 		  group = deparse(substitute(x))) +
-	   geom_bar(stat = 'identity', position = position_dodge()) +
-	   geom_errorbar(aes(ymin = prediction - standard_error,
+	   ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()) +
+	   ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
 			     ymax = prediction + standard_error
 			     ),
 			 width = .3,
-			 position = position_dodge(width=0.9)
+			 position = ggplot2::position_dodge(width=0.9)
 			 ) +
-	   scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
-	   scale_y_continuous(labels = comma) +
-	   xlab(x) +
-	   ylab(get_label_for_abbreviation(unique(data$abbreviation), 'axis_label')) +
-	   ggtitle(gsub('[^A-z ]','', subs))
+	   ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+	   ggplot2::scale_y_continuous(labels = comma) +
+	   ggplot2::xlab(x) +
+	   ggplot2::ylab(get_label_for_abbreviation(unique(data$abbreviation), 'axis_label')) +
+	   ggplot2::ggtitle(gsub('[^A-z ]','', subs))
 	   )
 }
 

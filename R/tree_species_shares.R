@@ -56,7 +56,7 @@ melt_tree_species_percent <- function(statistics_list) {
 
 cast_tree_species_percent <- function(statistics_list) {
     molten_data <- melt_tree_species_percent(statistics_list) 
-	    casted_data <- reshape2::reshape2::dcast(molten_data, value.var = 'value',  group ~ bwi )
+	    casted_data <- reshape2::dcast(molten_data, value.var = 'value',  group ~ bwi )
     names(casted_data)[1] <- 'Baumartengruppe'
     return(casted_data)
 }

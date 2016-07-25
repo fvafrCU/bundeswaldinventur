@@ -7,5 +7,4 @@
 #' @aliases bundeswaldinventur-package 
 #' @docType package
 #' @keywords package
-#' @import ggplot2
 NULL
