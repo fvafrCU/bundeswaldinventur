@@ -1,11 +1,14 @@
 Package: bundeswaldinventur
-Title: What the Package Does (one line, title case)
+Title: Analysing the Bundeswaldinventur in the state of Baden-Wuerttemberg
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person(given = c("Andreas", "Dominik"), family = "Cullmann",
+    email = "dominik.cullmann@forst.bwl.de", role = c("aut","cre"))
+Description: Collection of design-based estimators and reporting functions for
+substrata of the area of interest.
 Depends:
     R (>= 3.3.1)
-License: What license is it under?
+License: file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: graphics, stats, utils
 RoxygenNote: 5.0.1
