@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person(given = c("Andreas", "Dominik"), family = "Cullmann",
     email = "dominik.cullmann@forst.bwl.de", role = c("aut","cre"))
 Description: Collection of design-based estimators and reporting functions for
-substrata of the area of interest.
+    substrata of the area of interest.
 Depends:
     R (>= 3.3.1)
 License: file LICENSE
