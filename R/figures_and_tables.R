@@ -206,14 +206,14 @@ xtable_by_group <- function(data, subs, group = "Baumartengruppe",
 						   )
 				  )
 
-    data_casted <- dcast(subset(data_molten, variable == 'prediction'), value.var = 'value',
+    data_casted <- reshape2::dcast(subset(data_molten, variable == 'prediction'), value.var = 'value',
 			 grouping ~ bwi )
 
     data_casted <- rbind(data_casted, c(NA, colSums(data_casted[ , -1])))
     data_casted$'1987 - 2002' <- (data_casted[, 3]-data_casted[, 2]) / data_casted[, 2] * 100
     data_casted$'2002 - 2012' <-(data_casted[, 4]-data_casted[, 3]) / data_casted[, 3] * 100
     data_casted$'1987 - 2012' <-(data_casted[, 4]-data_casted[, 2]) / data_casted[, 2] * 100
-    latex_table <- xtable(prettyNum(data_casted, big.mark = ","),
+    latex_table <- xtable::xtable(prettyNum(data_casted, big.mark = ","),
 			  label = paste('tab', label_prefix,
 					unique(data_received$abbreviation), sep = ':'), 
 			  caption = get_text_label_for_abbreviation(unique(data_received$abbreviation)),

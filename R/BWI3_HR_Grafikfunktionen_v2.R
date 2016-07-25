@@ -475,7 +475,7 @@ plot.mult.stacked.bar <- function(y.mat,bar.lab,kat.lab,titel,x.lab,y.lab,kat.co
 #<kat.col>: Farben für die Kategorien innerhalb der gestapelten Säulen
 {
  x.max <- length(y.mat[1,])*1.4
- p <- barplot2(y.mat,names.arg=bar.lab,legend.text=kat.lab,xlab=x.lab,ylab=y.lab,
+ p <- gplots::barplot2(y.mat,names.arg=bar.lab,legend.text=kat.lab,xlab=x.lab,ylab=y.lab,
     main=titel,axes=T,col=kat.col, xlim=c(0,x.max),width=0.9)
 
  for (j in 1:length(y.mat[1,]))
@@ -513,7 +513,7 @@ if(F)
  #---------
  x.max <- length(y.mat[1,])+1
  
- p <- barplot2(y.mat,names.arg=bar.lab,legend.text=kat.lab,xlab=x.lab,ylab=y.lab,
+ p <- gplots::barplot2(y.mat,names.arg=bar.lab,legend.text=kat.lab,xlab=x.lab,ylab=y.lab,
     main=titel,axes=T,col=kat.col, xlim=c(0,x.max),width=0.9)
 
  for (j in 1:length(y.mat[1,]))

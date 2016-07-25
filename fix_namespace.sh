@@ -10,4 +10,11 @@ s/\<aggregate\>(/stats::aggregate(/g
 s/\<na.fail\>(/stats::na.fail(/g
 s/\<head\>(/utils::head(/g
 EOF
+cat > sedscr << EOF
+s/\<xtable\>(/xtable::xtable(/g
+s/\<dcast\>(/reshape2::dcast(/g
+s/\<barplot2\>(/gplots::barplot2(/g
+EOF
+
+
 runsed R/*

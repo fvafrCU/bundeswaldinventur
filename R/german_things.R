@@ -22,7 +22,7 @@ prettify_data_frame <- function(data_frame, digits = 0) {
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @section Version: $Id: 9be1ec3c316c4c9ca5af009959e89607c154f14c $
-#' @param data_frame The data which to xtable().
+#' @param data_frame The data which to xtable::xtable().
 #' @param caption A caption for the LaTeX table.
 #' @note The LaTeX table will have a latex label tab:data_frame. So you really
 #' should avoid data_frame specifications that are not valid LaTeX names, like
@@ -42,7 +42,7 @@ add_colSums_prettify_and_print_xtable <- function(data_frame,
 	paste('\\multicolumn{1}{>{\\centering}p{', line_portion, 
 	      '\\textwidth}}{', dimnames(tmp_data)[[2]], '}')
     print(
-	  xtable(tmp_data,
+	  xtable::xtable(tmp_data,
 		 label = paste('tab', deparse(substitute(data_frame)), sep = ':'), 
 		 caption = caption,
 		 align = c('l', rep('r', length(colnames(data_frame))))
