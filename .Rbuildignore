@@ -6,3 +6,5 @@
 ^testing.r$
 ^create.R$
 ^sedscr$
+^Makefile$
+^configure$

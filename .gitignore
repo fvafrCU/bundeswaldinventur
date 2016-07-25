@@ -3,6 +3,5 @@
 .RData
 man/*
 sedscr
-*Rout
 tmp*
 Makefile
