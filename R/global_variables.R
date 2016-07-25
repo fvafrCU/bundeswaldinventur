@@ -1,4 +1,3 @@
-#!/usr/bin/Rscript --vanilla
 ## global_variables.R
 ##
 ## define global variables used by most scripts.
