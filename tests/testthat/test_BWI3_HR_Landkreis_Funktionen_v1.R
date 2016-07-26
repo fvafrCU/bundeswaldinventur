@@ -8,7 +8,7 @@
 #' @name A Header for
 NULL
 
-krs.list <- unique(kreise$codeKreis)
+krs.list <<- unique(kreise$codeKreis)
 
 context("BWI3_HR_Landkreis_Funktionen_v1.R")
 
