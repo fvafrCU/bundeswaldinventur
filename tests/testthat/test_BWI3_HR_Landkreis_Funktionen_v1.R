@@ -8,7 +8,9 @@
 #' @name A Header for
 NULL
 
-krs.list <<- unique(kreise$codeKreis)
+# FIXME: flaechen.kreis.fun.1 assumes krs.list to be in the parent environment.
+# We should fix that function.
+krs.list <<- unique(kreise$codeKreis) 
 
 context("BWI3_HR_Landkreis_Funktionen_v1.R")
 
