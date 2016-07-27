@@ -3,13 +3,15 @@
 # And it's just a little helper script, it's not part of the package.
 # I can't keep the R CMD stuff, and I'm used  to 'make', so I wrap R CMDs into
 # make.
-temp_file=$(tempfile)
+temp_file1=$(tempfile)
+temp_file2=$(tempfile)
 TAB="$(printf '\t')"
 cat > Makefile <<EOF
 dev_all: dev_test dev_test
 dev_test:
-${TAB}Rscript --vanilla -e 'devtools::test()' > dev_test.Rout 2>&1
+${TAB}Rscript --vanilla -e 'devtools::test()' >  $temp_file1 2>&1 && \\
+${TAB}sed -e '/^DONE.*/\$,d' < $temp_file1 > dev_test.Rout 
 dev_check:
-${TAB}Rscript --vanilla -e 'devtools::check()' > $temp_file 2>&1 && \\
-${TAB}grep -v ".*'/" $temp_file > dev_check.Rout 
+${TAB}Rscript --vanilla -e 'devtools::check()' > $temp_file2 2>&1 && \\
+${TAB}grep -v ".*'/" $temp_file2 > dev_check.Rout 
 EOF
