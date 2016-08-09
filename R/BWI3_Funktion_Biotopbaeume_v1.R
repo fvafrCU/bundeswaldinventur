@@ -32,8 +32,8 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,auswahl)
   names(baeume) <- sub(2,names(baeume),replacement="")
 
   #(2) Biotop-Bäume definieren
-  wzp4.merkmale <- merge(subset(baeume,stp==0,
-                        select=c(tnr,enr,bnr,ba,alt,bhd,h,volv,oib,nha,stfl)),
+  wzp4.merkmale <- merge(baeume[baeume[["stp"]] == 0, 
+                        c("tnr", "enr", "bnr", "ba", "alt", "bhd", "h", "volv", "oib", "nha", "stfl")],
                         wzp4.merkmale, by=c("tnr","enr","bnr"),all.x=T)
   wzp4.merkmale[is.na(wzp4.merkmale)] <- 0
   #Biotop-Bäume
@@ -43,9 +43,10 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,auswahl)
       wzp4.merkmale$faulkon + wzp4.merkmale$hoehle + wzp4.merkmale$bizarr + wzp4.merkmale$uralt + wzp4.merkmale$horst + wzp4.merkmale$mbiotop
 
   #Probebäume im Stratum auswählen
-  wzp4.merkmale.s <- merge(subset(wzp4.merkmale,select=c(tnr,enr,bnr,pk,biotopb,
-                    ba,alt,bhd,volv,oib,nha,stfl)),
-                    subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"),all.y=T)
+  wzp4.merkmale.s <- merge(wzp4.merkmale[TRUE, 
+                           c("tnr", "enr", "bnr", "pk", "biotopb", " ba", "alt", "bhd", "volv", "oib", "nha", "stfl")], 
+                           stratum[TRUE, c("tnr", "enr")],
+                           by=c("tnr","enr"),all.y=T)
   wzp4.merkmale.s[is.na(wzp4.merkmale.s)] <- 0
   
   #---------------------
@@ -65,25 +66,27 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,auswahl)
                   by=list(wzp4.merkmale.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
-  xy <- merge(subset(trakte,select=c(tnr,m)),xy,by=c("tnr"),all.x=T)
+  xy <- merge(
+              trakte[TRUE, c("tnr", "m")],
+              xy,by=c("tnr"),all.x=T)
   xy[is.na(xy)] <- 0
   #Nur die HBF der realen Baumarten (d,h. OHNE BL bzw. iBL)
   xy$hbf.ba <- xy$hbf-xy$bl-xy$ibl
 
   #HBFl. [ha]
-  r.list= r.variance.fun(subset(xy,select=c(m,hbf)),nT)
+  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")], nT)
   T.hbf <- r.list$R.xy*A
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
   #Blößen [ha]
-  r.list <- r.variance.fun(subset(xy,select=c(m,bl)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")], nT)
   T.bl <- r.list$R.xy*A
   se.T.bl <- sqrt(r.list$V.R.xy)*A
   #Ideelle Blößen ("Lücken") [ha]
-  r.list <- r.variance.fun(subset(xy,select=c(m,ibl)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")], nT)
   T.ibl <- r.list$R.xy*A
   se.T.ibl <- sqrt(r.list$V.R.xy)*A
   #Lückenkorrekturfaktor
-  r.list <- r.variance.fun(subset(xy,select=c(hbf.ba,hbf)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")], nT)
   lk <- r.list$R.xy
   se.lk <- sqrt(r.list$V.R.xy)
 
@@ -129,8 +132,8 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,auswahl)
                         "V.BB.NB")
   utils::head(biotop.t)
 
-  biotop.t <- merge(subset(xy,select=c(tnr,m,hbf)),biotop.t,by="tnr",
-                    all.x=T)
+  biotop.t <- merge(xy[TRUE, c("tnr", "m", "hbf")],
+                    biotop.t, by="tnr", all.x=T)
   biotop.t[is.na(biotop.t)] <- 0
 
   n <- length(trakte.3[,1])
