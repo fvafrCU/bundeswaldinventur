@@ -1096,7 +1096,6 @@ verjg.kl4.bagrupp.fun: no visible binding for global variable ‘BaGr’
 verjg.kl4.bagrupp.fun: no visible binding for global variable ‘bagr’
 verjg.kl4.bagrupp.fun: no visible binding for global variable ‘vart’
 verjg.kl4.bagrupp.fun: no visible binding for global variable ‘baf’
-xtable_by_group: no visible binding for global variable ‘variable’
 Undefined global functions or variables:
   akl Akl akl.pm alt alt1 Alt1 alt2 Alt2 anz ba BA B.A bacode baeume.1
   baeume.2 baeume.23 baeume.3 baf bagr BaGr bhd bhd1 BHD1 bhd2 BHD2
@@ -1111,8 +1110,8 @@ Undefined global functions or variables:
   NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 oib
   oiB1 oib2 oiB2 pk Pk pl PL plkal PLkal prediction standard_error stfl
   stfl1 StFl1 StFl2 stp STP tart tbagr tbd thf tnr Tnr TNr trakte.1
-  trakte.2 trakte.3 tvol tzg variable vart V.DhmR.A V.DhmR.HB.A V.EoR.A
-  VolE1 vole2 VolE2 volv VolV1 volv2 VolV2
+  trakte.2 trakte.3 tvol tzg vart V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1
+  vole2 VolE2 volv VolV1 volv2 VolV2
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -5177,7 +5176,7 @@ biotop.baeume.fun: no visible binding for global variable ‘ba’
 biotop.baeume.fun: no visible binding for global variable ‘alt’
 biotop.baeume.fun: no visible binding for global variable ‘bhd’
 biotop.baeume.fun: no visible binding for global variable ‘h’
-... 1015 lines ...
+... 1014 lines ...
   H1 H2 hbf hbf.ba iB ibl ICode iG iV.DhmR iV.DhmR.HB iV.EoR kreise
   krs.list lge m mbaf mBAF mbaf.hb mBAF.oLK m_HB mPL mPLkal n name nha
   nha1 NHa1 NHa2 n.ntns nr ntns NTNS_F_BaWue_BWI2
@@ -5187,5 +5186,5 @@ biotop.baeume.fun: no visible binding for global variable ‘h’
   NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 oib
   oiB1 oib2 oiB2 pk Pk pl PL plkal PLkal prediction standard_error stfl
   stfl1 StFl1 StFl2 stp STP tart tbagr tbd thf tnr Tnr TNr trakte.1
-  trakte.2 trakte.3 tvol tzg variable vart V.DhmR.A V.DhmR.HB.A V.EoR.A
-  VolE1 vole2 VolE2 volv VolV1 volv2 VolV2
+  trakte.2 trakte.3 tvol tzg vart V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1
+  vole2 VolE2 volv VolV1 volv2 VolV2
