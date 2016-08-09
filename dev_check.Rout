@@ -80,26 +80,6 @@ Use \uxxxx escapes for other characters.
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
 ba.klass.lab.tab.fun: no visible binding for global variable ‘bacode’
-biotop.baeume.fun: no visible binding for global variable ‘stp’
-biotop.baeume.fun: no visible binding for global variable ‘tnr’
-biotop.baeume.fun: no visible binding for global variable ‘enr’
-biotop.baeume.fun: no visible binding for global variable ‘bnr’
-biotop.baeume.fun: no visible binding for global variable ‘ba’
-biotop.baeume.fun: no visible binding for global variable ‘alt’
-biotop.baeume.fun: no visible binding for global variable ‘bhd’
-biotop.baeume.fun: no visible binding for global variable ‘h’
-biotop.baeume.fun: no visible binding for global variable ‘volv’
-biotop.baeume.fun: no visible binding for global variable ‘oib’
-biotop.baeume.fun: no visible binding for global variable ‘nha’
-biotop.baeume.fun: no visible binding for global variable ‘stfl’
-biotop.baeume.fun: no visible binding for global variable ‘pk’
-biotop.baeume.fun: no visible binding for global variable ‘biotopb’
-biotop.baeume.fun: no visible binding for global variable ‘m’
-biotop.baeume.fun: no visible binding for global variable ‘hbf’
-biotop.baeume.fun: no visible binding for global variable ‘bl’
-biotop.baeume.fun: no visible binding for global variable ‘ibl’
-biotop.baeume.fun: no visible binding for global variable ‘hbf.ba’
-biotop.baeume.fun: no visible binding for global variable ‘trakte.3’
 fba.stratum.fun: no visible binding for global variable ‘tnr’
 fba.stratum.fun: no visible binding for global variable ‘m’
 fba.stratum.fun: no visible binding for global variable ‘enr’
@@ -1099,19 +1079,18 @@ verjg.kl4.bagrupp.fun: no visible binding for global variable ‘baf’
 Undefined global functions or variables:
   akl Akl akl.pm alt alt1 Alt1 alt2 Alt2 anz ba BA B.A bacode baeume.1
   baeume.2 baeume.23 baeume.3 baf bagr BaGr bhd bhd1 BHD1 bhd2 BHD2
-  bhd.pm biotopb biss bl bnr BNr bwi comma D031 D032 dichte dkl Dkl
-  dkl.pm dm ecken.1 ecken.2 ecken.3 enr Enr ENr Entf fl.ant G.A group h
-  H1 H2 hbf hbf.ba iB ibl ICode iG iV.DhmR iV.DhmR.HB iV.EoR kreise
-  krs.list lge m mbaf mBAF mbaf.hb mBAF.oLK m_HB mPL mPLkal n name nha
-  nha1 NHa1 NHa2 n.ntns nr ntns NTNS_F_BaWue_BWI2
-  NTNS_F_BaWue_BWI2_natwgBWI3 NTNS_F_BaWue_BWI3
-  NTNS_F_gr4m_alleBaeume_BWI2 NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3
-  NTNS_F_gr4m_alleBaeume_BWI3 NTNS_F_kl4m_BA_Anteile_BWI2
-  NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 oib
-  oiB1 oib2 oiB2 pk Pk pl PL plkal PLkal prediction standard_error stfl
-  stfl1 StFl1 StFl2 stp STP tart tbagr tbd thf tnr Tnr TNr trakte.1
-  trakte.2 trakte.3 tvol tzg vart V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1
-  vole2 VolE2 volv VolV1 volv2 VolV2
+  bhd.pm biss bl bnr BNr bwi comma D031 D032 dichte dkl Dkl dkl.pm dm
+  ecken.1 ecken.2 ecken.3 enr Enr ENr Entf fl.ant G.A group h H1 H2 hbf
+  hbf.ba iB ibl ICode iG iV.DhmR iV.DhmR.HB iV.EoR kreise krs.list lge
+  m mbaf mBAF mbaf.hb mBAF.oLK m_HB mPL mPLkal n name nha nha1 NHa1
+  NHa2 n.ntns nr ntns NTNS_F_BaWue_BWI2 NTNS_F_BaWue_BWI2_natwgBWI3
+  NTNS_F_BaWue_BWI3 NTNS_F_gr4m_alleBaeume_BWI2
+  NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3 NTNS_F_gr4m_alleBaeume_BWI3
+  NTNS_F_kl4m_BA_Anteile_BWI2 NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3
+  NTNS_F_kl4m_BA_Anteile_BWI3 oib oiB1 oib2 oiB2 pk Pk pl PL plkal
+  PLkal prediction standard_error stfl stfl1 StFl1 StFl2 stp STP tart
+  tbagr tbd thf tnr Tnr TNr trakte.1 trakte.2 trakte.3 tvol tzg vart
+  V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1 vole2 VolE2 volv VolV1 volv2 VolV2
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -5168,23 +5147,23 @@ checking installed package size ... NOTE
 
 checking R code for possible problems ... NOTE
 ba.klass.lab.tab.fun: no visible binding for global variable ‘bacode’
-biotop.baeume.fun: no visible binding for global variable ‘stp’
-biotop.baeume.fun: no visible binding for global variable ‘tnr’
-biotop.baeume.fun: no visible binding for global variable ‘enr’
-biotop.baeume.fun: no visible binding for global variable ‘bnr’
-biotop.baeume.fun: no visible binding for global variable ‘ba’
-biotop.baeume.fun: no visible binding for global variable ‘alt’
-biotop.baeume.fun: no visible binding for global variable ‘bhd’
-biotop.baeume.fun: no visible binding for global variable ‘h’
-... 1014 lines ...
-  H1 H2 hbf hbf.ba iB ibl ICode iG iV.DhmR iV.DhmR.HB iV.EoR kreise
-  krs.list lge m mbaf mBAF mbaf.hb mBAF.oLK m_HB mPL mPLkal n name nha
-  nha1 NHa1 NHa2 n.ntns nr ntns NTNS_F_BaWue_BWI2
-  NTNS_F_BaWue_BWI2_natwgBWI3 NTNS_F_BaWue_BWI3
-  NTNS_F_gr4m_alleBaeume_BWI2 NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3
-  NTNS_F_gr4m_alleBaeume_BWI3 NTNS_F_kl4m_BA_Anteile_BWI2
-  NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 oib
-  oiB1 oib2 oiB2 pk Pk pl PL plkal PLkal prediction standard_error stfl
-  stfl1 StFl1 StFl2 stp STP tart tbagr tbd thf tnr Tnr TNr trakte.1
-  trakte.2 trakte.3 tvol tzg vart V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1
-  vole2 VolE2 volv VolV1 volv2 VolV2
+fba.stratum.fun: no visible binding for global variable ‘tnr’
+fba.stratum.fun: no visible binding for global variable ‘m’
+fba.stratum.fun: no visible binding for global variable ‘enr’
+fba.stratum.fun: no visible binding for global variable ‘dichte’
+fba.stratum.fun: no visible binding for global variable ‘fl.ant’
+flaechen.kreis.fun.1: no visible binding for global variable ‘kreise’
+flaechen.kreis.fun.1: no visible binding for global variable ‘krs.list’
+flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.3’
+... 993 lines ...
+  ecken.1 ecken.2 ecken.3 enr Enr ENr Entf fl.ant G.A group h H1 H2 hbf
+  hbf.ba iB ibl ICode iG iV.DhmR iV.DhmR.HB iV.EoR kreise krs.list lge
+  m mbaf mBAF mbaf.hb mBAF.oLK m_HB mPL mPLkal n name nha nha1 NHa1
+  NHa2 n.ntns nr ntns NTNS_F_BaWue_BWI2 NTNS_F_BaWue_BWI2_natwgBWI3
+  NTNS_F_BaWue_BWI3 NTNS_F_gr4m_alleBaeume_BWI2
+  NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3 NTNS_F_gr4m_alleBaeume_BWI3
+  NTNS_F_kl4m_BA_Anteile_BWI2 NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3
+  NTNS_F_kl4m_BA_Anteile_BWI3 oib oiB1 oib2 oiB2 pk Pk pl PL plkal
+  PLkal prediction standard_error stfl stfl1 StFl1 StFl2 stp STP tart
+  tbagr tbd thf tnr Tnr TNr trakte.1 trakte.2 trakte.3 tvol tzg vart
+  V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1 vole2 VolE2 volv VolV1 volv2 VolV2

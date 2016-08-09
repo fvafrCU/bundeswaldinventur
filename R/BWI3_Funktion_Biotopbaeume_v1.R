@@ -136,7 +136,7 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,auswahl)
                     biotop.t, by="tnr", all.x=T)
   biotop.t[is.na(biotop.t)] <- 0
 
-  n <- length(trakte.3[,1])
+  n <- length(trakte[,1])
   #Stückzahl
   R.xy <- r.variance.fun(cbind(biotop.t$m,biotop.t$N.BB),n)
   (T.N.BB <- R.xy$R.xy*A)
