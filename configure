@@ -7,7 +7,7 @@ temp_file1=$(tempfile)
 temp_file2=$(tempfile)
 TAB="$(printf '\t')"
 cat > Makefile <<EOF
-dev_all: dev_test dev_test
+dev_all: dev_test dev_check
 dev_test:
 ${TAB}Rscript --vanilla -e 'devtools::test()' >  $temp_file1 2>&1; \\
 ${TAB}sed -e '/^DONE.*/\$,d' < $temp_file1 > dev_test.Rout 
