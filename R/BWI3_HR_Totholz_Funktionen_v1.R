@@ -62,7 +62,7 @@ Totholz.bagr.art.zg.stratum.fun <-
   names(y) <- c("tnr","y")
   n.t.s <- length(y[,1])
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(y,subset(trakte,select=c(tnr,m),by=c(tnr)))
+  y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
   #Alle Tratecken im Inventurgebiet
   x <- trakte$m
   #n Trakte im Inventurgebiet ist konstant
@@ -91,9 +91,9 @@ Totholz.bagr.art.zg.stratum.fun <-
     totholz$anz <- rep(1,length(totholz[,1]))
   }
   #Attribute und Untermenge des Stratums aus <baeume> auswählen
-  totholz.s <- merge(subset(totholz,select=c(tnr,enr,nr,tbagr,tart,tzg,tvol,
-                    dm,lge,anz,thf)),subset(stratum,select=c(tnr,enr)),
-                    by=c("tnr","enr"),all.y=T)
+  totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tvol", "dm", "lge", "anz", "thf")],
+                     stratum[TRUE, c("tnr", "enr")],
+                     by=c("tnr","enr"),all.y=T)
 
   #BA-Gruppen-Bezeichner
   tbagr.list <- c("NB","LB","EI")
@@ -137,9 +137,16 @@ Totholz.bagr.art.zg.stratum.fun <-
       {
           for (l in 1:D.k)  #Durchmesserklassen
           {
-          totholz.ba <- subset(totholz.s,
-                        tbagr==i&tart==tart.code[j]&tzg==k&dkl==dkl.lab[l],
-                        select=c(tnr,enr,tbagr,tart,tzg,dm,lge,tvol,anz,thf))
+              ## Gerald's original was:
+              #    totholz.ba <- subset(totholz.s,
+              #                         tbagr==i&tart==tart.code[j]&tzg==k&dkl==dkl.lab[l],
+              #                         select=c(tnr,enr,tbagr,tart,tzg,dm,lge,tvol,anz,thf))
+              ## this returns an empty data.frame if the subset is not found.
+              totholz.ba <- totholz.s[
+                                      totholz.s$tbagr==i&totholz.s$tart==tart.code[j]&totholz.s$tzg==k&totholz.s$dkl==dkl.lab[l],
+                                      c("tnr", "enr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")]
+              ## So I empty all rows if there's only NA in it.
+              if(all(is.na(totholz.ba))) totholz.ba <- totholz.ba[FALSE, TRUE] 
           if (length(totholz.ba[,1])== 0)
           {
              Y.bagr.dkl[1:2,1,i,j,k,l]   <- rep(0,2)  #Zielgröße Total
@@ -165,7 +172,7 @@ Totholz.bagr.art.zg.stratum.fun <-
             #Umbennen von xy$y in xy$x (Symbol für Bezugsfläche Holzboden)
             names(xy)[4] <- "x"
             #Anzahl Traktecken je Trakt (Wald- und Nichtwald) hinzufügen
-            #xy <- merge(xy,subset(trakte,select=c(tnr,m),by=c(tnr)))
+            #xy <- merge(xy,trakte[TRUE, c("tnr", "m"),by=c("tnr")]
             #Anzahl Trakte (i.S. von PSU) im Teilkollektiv ijk
             nT.bagr.dkl[i,j,k,l] <- length(xy[,1])
 
@@ -275,7 +282,7 @@ Totholz.Tart.stratum.fun <-
   names(y) <- c("tnr","y")
   n.t.s <- length(y[,1])
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(y,subset(trakte,select=c(tnr,m),by=c(tnr)))
+  y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
   #Alle Tratecken im Inventurgebiet
   x <- trakte$m
   #n Trakte im Inventurgebiet ist konstant
@@ -311,12 +318,12 @@ Totholz.Tart.stratum.fun <-
   if(krit.bwi2)
   #Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
   {
-     totholz <- subset(totholz,(tart!=4&tbd>=20)|(tart==4&(tbd>=60|lge>=0.5)))
+     totholz <- totholz[(totholz$tart!=4&totholz$tbd>=20)|(totholz$tart==4&(totholz$tbd>=60|totholz$lge>=0.5)), TRUE]
   }
 
   #Attribute und Untermenge des Stratums aus <totholz> auswählen
-  totholz.s <- merge(subset(totholz,select=c(tnr,enr,nr,tart,tvol,dm,lge,anz,thf)),
-                    subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"),all.y=T)
+  totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tart", "tvol", "dm", "lge", "anz", "thf")],
+                    stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"),all.y=T)
   if(is.na(tart.grupp[[1]][1]))
   {
     tart.lab <- unique(totholz$tart)
@@ -344,8 +351,8 @@ Totholz.Tart.stratum.fun <-
 
   for (i in 1:tart.k)  #Totholzart
   {
-    totholz.tart <- subset(totholz.s,tart%in%tart.grupp[[i]],
-                        select=c(tnr,enr,tart,dm,lge,tvol,anz,thf))
+    totholz.tart <- totholz.s[totholz.s$tart%in%tart.grupp[[i]],
+                        c("tnr", "enr", "tart", "dm", "lge", "tvol", "anz", "thf")]
     if (length(totholz.tart[,1])== 0)
     {
       Y.tart[1:2,1,i]   <- rep(0,2)  #Zielgröße Total
@@ -476,7 +483,7 @@ Totholz.klass.stratum.fun <-
   names(y) <- c("tnr","y")
   n.t.s <- length(y[,1])
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(y,subset(trakte,select=c(tnr,m),by=c(tnr)))
+  y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
   #Alle Tratecken im Inventurgebiet
   x <- trakte$m
   #n Trakte im Inventurgebiet ist konstant
@@ -512,12 +519,12 @@ Totholz.klass.stratum.fun <-
   if(krit.bwi2)
   #Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
   {
-     totholz <- subset(totholz,(tart!=4&tbd>=20)|(tart==4&(tbd>=60|lge>=0.5)))
+     totholz <- totholz[(totholz$tart!=4&totholz$tbd>=20)|(totholz$tart==4&(totholz$tbd>=60|totholz$lge>=0.5))]
   }
 
   #Attribute und Untermenge des Stratums aus <totholz> auswählen
-  totholz.s <- merge(subset(totholz,select=c(tnr,enr,nr,tbagr,tart,tzg,dm,lge,
-    tvol,anz,thf)),subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"),all.y=T)
+  totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")],
+                     stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"),all.y=T)
 
   if(is.na(klass[[1]][1]))
   {
@@ -572,10 +579,10 @@ Totholz.klass.stratum.fun <-
     if (klass.k>1)
     {
       totholz.klass <- subset(totholz.s,totholz.s[,pos]%in%klass$kat[[i]],
-                        select=c(1,2,9,10,11))
+                        select=c(1,2,9,10,11)) #TODO: WTF?
     }else
     {
-      totholz.klass <- subset(totholz.s, select=c(1,2,9,10,11))
+      totholz.klass <- subset(totholz.s, select=c(1,2,9,10,11)) #TODO: WTF?
     }
     if (length(totholz.klass[,1])== 0)
     {
@@ -729,10 +736,10 @@ if(F)
         list(attr="dm",kat=c(0,50,10)),A, auswahl)
         
   #nur stehende ganze oder abgebrochene Totholzbäume (Tart 2 oder 3)
-  th.gw.dkl.stth.3 <-  Totholz.klass.stratum.fun(subset(totholz.3,Tart%in%c(2,3)),
+  th.gw.dkl.stth.3 <-  Totholz.klass.stratum.fun(totholz.3[totholz.3$Tart%in%c(2,3), TRUE],
         ecken.3,trakte.3,3,3, list(attr="dm",kat=c(10,50,10)),A, auswahl)
   #nur liegendes Totholz (BWI 3: Tart 11,12,13)
-  th.gw.dkl.lgth.3 <-  Totholz.klass.stratum.fun(subset(totholz.3,Tart%in%c(11:13)),
+  th.gw.dkl.lgth.3 <-  Totholz.klass.stratum.fun(totholz.3[totholz.3$Tart%in%c(11:13), TRUE],
         ecken.3,trakte.3,3,3, list(attr="dm",kat=c(0,50,10)),A, auswahl)
         
   #Alternative Berechnung des Volumens bei liegnedem Tothol (Tart = 13)

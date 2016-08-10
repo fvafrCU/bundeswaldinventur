@@ -84,57 +84,6 @@ Use \uxxxx escapes for other characters.
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘tnr’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘m’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘tart’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘tbd’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘lge’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘enr’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘nr’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘tvol’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘dm’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘anz’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘thf’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘tnr’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘enr’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘nr’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘tbagr’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘tart’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘tzg’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘tvol’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘dm’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘lge’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘anz’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘thf’
-Totholz.bagr.art.zg.stratum.fun: no visible binding for global variable
-  ‘dkl’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘tnr’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘m’
-Totholz.klass.stratum.fun: no visible binding for global variable
-  ‘tart’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘tbd’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘lge’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘enr’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘nr’
-Totholz.klass.stratum.fun: no visible binding for global variable
-  ‘tbagr’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘tzg’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘dm’
-Totholz.klass.stratum.fun: no visible binding for global variable
-  ‘tvol’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘anz’
-Totholz.klass.stratum.fun: no visible binding for global variable ‘thf’
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
   variable ‘ecken.2’
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
@@ -904,14 +853,13 @@ Undefined global functions or variables:
   NTNS_F_gr4m_alleBaeume_BWI3 NTNS_F_kl4m_BA_Anteile_BWI2
   NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 PL
   PLkal Pk STP StFl1 StFl2 TNr Tnr V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1
-  VolE2 VolV1 VolV2 akl akl.pm alt alt1 alt2 anz ba bacode baeume.1
+  VolE2 VolV1 VolV2 akl akl.pm alt alt1 alt2 ba bacode baeume.1
   baeume.2 baeume.23 baeume.3 baf bagr bhd bhd.pm bhd1 bhd2 biss bl bnr
-  bwi comma dkl dkl.pm dm ecken.1 ecken.2 ecken.3 enr group h hbf
-  hbf.ba iB iG iV.DhmR iV.DhmR.HB iV.EoR ibl kreise krs.list lge m mBAF
-  mBAF.oLK mPL mPLkal m_HB mbaf mbaf.hb n n.ntns name nha nha1 nr ntns
-  oiB1 oiB2 oib oib2 pk pl plkal prediction standard_error stfl stfl1
-  stp tart tbagr tbd thf tnr trakte.1 trakte.2 trakte.3 tvol tzg vart
-  vole2 volv volv2
+  bwi comma dkl dkl.pm ecken.1 ecken.2 ecken.3 enr group h hbf hbf.ba
+  iB iG iV.DhmR iV.DhmR.HB iV.EoR ibl kreise krs.list m mBAF mBAF.oLK
+  mPL mPLkal m_HB mbaf mbaf.hb n n.ntns name nha nha1 ntns oiB1 oiB2
+  oib oib2 pk pl plkal prediction standard_error stfl stfl1 stp tnr
+  trakte.1 trakte.2 trakte.3 vart vole2 volv volv2
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -4994,24 +4942,24 @@ checking installed package size ... NOTE
     data  32.8Mb
 
 checking R code for possible problems ... NOTE
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘tnr’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘m’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘tart’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘tbd’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘lge’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘enr’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘nr’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘tvol’
-Totholz.Tart.stratum.fun: no visible binding for global variable ‘dm’
-... 809 lines ...
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+  variable ‘ecken.2’
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+  variable ‘ecken.3’
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+  variable ‘TNr’
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+  variable ‘ENr’
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+... 757 lines ...
+  NTNS_F_gr4m_alleBaeume_BWI2 NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3
   NTNS_F_gr4m_alleBaeume_BWI3 NTNS_F_kl4m_BA_Anteile_BWI2
   NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 PL
   PLkal Pk STP StFl1 StFl2 TNr Tnr V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1
-  VolE2 VolV1 VolV2 akl akl.pm alt alt1 alt2 anz ba bacode baeume.1
+  VolE2 VolV1 VolV2 akl akl.pm alt alt1 alt2 ba bacode baeume.1
   baeume.2 baeume.23 baeume.3 baf bagr bhd bhd.pm bhd1 bhd2 biss bl bnr
-  bwi comma dkl dkl.pm dm ecken.1 ecken.2 ecken.3 enr group h hbf
-  hbf.ba iB iG iV.DhmR iV.DhmR.HB iV.EoR ibl kreise krs.list lge m mBAF
-  mBAF.oLK mPL mPLkal m_HB mbaf mbaf.hb n n.ntns name nha nha1 nr ntns
-  oiB1 oiB2 oib oib2 pk pl plkal prediction standard_error stfl stfl1
-  stp tart tbagr tbd thf tnr trakte.1 trakte.2 trakte.3 tvol tzg vart
-  vole2 volv volv2
+  bwi comma dkl dkl.pm ecken.1 ecken.2 ecken.3 enr group h hbf hbf.ba
+  iB iG iV.DhmR iV.DhmR.HB iV.EoR ibl kreise krs.list m mBAF mBAF.oLK
+  mPL mPLkal m_HB mbaf mbaf.hb n n.ntns name nha nha1 ntns oiB1 oiB2
+  oib oib2 pk pl plkal prediction standard_error stfl stfl1 stp tnr
+  trakte.1 trakte.2 trakte.3 vart vole2 volv volv2

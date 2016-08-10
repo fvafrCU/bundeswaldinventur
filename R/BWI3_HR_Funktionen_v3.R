@@ -394,9 +394,9 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   auswahl$Wa=c(3,5)
   ecken.3.s <- stratum.fun(auswahl,ecken.3)
   #gemeinsames Netz Land BW BWI 2 und 3 auf begehbarem Holzboden
-  ecken.23.hb <- merge(subset(ecken.3.s, select=c(TNr,ENr)),
-      subset(ecken.2.s,select=c(TNr,ENr)),by=c("TNr","ENr"))
-  ecken.23.hb <- merge(ecken.23.hb,subset(ecken.3,select=c(TNr,ENr,PL,PLkal)),
+  ecken.23.hb <- merge(ecken.3.s[TRUE,  c("TNr", "ENr")],
+      ecken.2.s[TRUE, c("TNr", "ENr")],by=c("TNr","ENr"))
+  ecken.23.hb <- merge(ecken.23.hb,ecken.3[TRUE, c("TNr", "ENr", "PL", "PLkal")],
       by=c("TNr","ENr"))
   stratum <- ecken.23.hb
   trakte <- trakte.3
@@ -415,7 +415,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   #Anzahl der Trakte im Stratum
   n.t.s <- length(y[,1])
   #Anfügen der Anzahl Traktecken (Wald und Nicht-Wald)
-  y <- merge(y,subset(trakte,select=c(tnr,m),by=c(tnr)))
+  y <- merge(y,trakte[TRUE, c("tnr", "m"),by=c("tnr")]
   #Alle Traktecken im Inventurgebiet
   x <- trakte$m
   #n Trakte im Inventurgebiet ist konstant
@@ -438,9 +438,8 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   #HINWEIS: beim ausgeschiedenen Vorrat wird der zur Periodenmitte
   #fortgeschriebene Vorrat verwendet! volv2,vole2,oib2
   baeume.s <- merge(
-          subset(baeume,select=c(tnr,enr,stp,bnr,ba,pk,alt1,alt2,bhd1,bhd2,volv2,
-                                  vole2,oib2,nha1,stfl1)),
-          subset(stratum,select=c(tnr,enr,pl,plkal)),by=c("tnr","enr"))
+          baeume[TRUE, c("tnr", "enr", "stp", "bnr", "ba", "pk", "alt1", "alt2", "bhd1", "bhd2", "volv2", "vole2", "oib2", "nha1", "stfl1")],
+          stratum[TRUE, c("tnr", "enr", "pl", "plkal")],by=c("tnr","enr"))
 
   #BA-Gruppe dazu spielen
   #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
@@ -451,16 +450,16 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   bagr.list <- BA.grupp[[1]]
   n.bagr <- length(bagr.list)
 
-  baeume.s <- merge(baeume.s, subset(bagr.tab,select=c(ICode,bagr)),
+  baeume.s <- merge(baeume.s, bagr.tab[TRUE, c("ICode", "bagr")],
                     by.x="ba",by.y="ICode",all.x=T)
   names(baeume.s) <- tolower(names(baeume.s))
 
   #Folgeinventur: BA-Gruppen hinzufügen
-  baeume.3.s <- merge(subset(baeume.3,select=c(TNr,ENr,STP,BNr,Pk,BA,Alt1,Alt2,
-                  BHD1,BHD2,StFl2)),subset(bagr.tab,select=c(ICode,bagr)),
+  baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Pk", "BA", "Alt1", "Alt2", "BHD1", "BHD2", "StFl2")],
+                      bagr.tab[TRUE, c("ICode", "bagr")],
                     by.x="BA",by.y="ICode",all.x=T)
   names(baeume.3.s) <- tolower(names(baeume.3.s))
-  baeume.3.s <- merge(baeume.3.s,subset(stratum,select=c(tnr,enr,pl,plkal)),
+  baeume.3.s <- merge(baeume.3.s,stratum[TRUE, c("tnr", "enr", "pl", "plkal")],
           by=c("tnr","enr"))
 
   #--------------------------------------------------
