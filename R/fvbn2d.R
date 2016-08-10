@@ -1,4 +1,4 @@
-#' @describeIn FVBN.bagrupp.akl.dkl.stratum.fun (version 2d)
+#' @describeIn FVBN.bagrupp.akl.dkl.stratum.fun.2e (version 2d)
 FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
           function(baeume,ecken,trakte,A,inv,BA.grupp,A.klass,D.klass,auswahl){
   stratum <- stratum.fun(auswahl,ecken)
@@ -10,15 +10,15 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
   #"Neutralisierung" der benötigten Attributnamen
   names(baeume) <- sub(inv,names(baeume),replacement="")
   #Attribute und Untermenge des Stratums aus <baeume> auswählen
-  baeume.s <- merge(subset(baeume,select=c(tnr,enr,ba,alt,bhd,volv,oib,nha,stfl)),
-                    subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"),all.y=T)
+  baeume.s <- merge(baeume[TRUE, c("tnr", "enr", "ba", "alt", "bhd", "volv", "oib", "nha", "stfl")],
+                    stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"),all.y=T)
 
   #Klassifizierung durchführen
   #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   bagr.tab <- ba.klass.lab.tab.fun(BA.grupp)
   #BA-Gruppe dazu spielen
-  baeume.s <- merge(baeume.s, subset(bagr.tab,select=c(ICode,bagr)),
+  baeume.s <- merge(baeume.s,bagr.tab[TRUE, c("ICode", "bagr")],
                                   by.x="ba",by.y="ICode",all.x=T)
   baeume.s[is.na(baeume.s)] <- 0
   n.bagr <- length(BA.grupp[[1]])
@@ -41,7 +41,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
                   by=list(baeume.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
-  xy <- merge(subset(trakte,select=c(tnr,m)),xy,by=c("tnr"),all.x=T)
+  xy <- merge(trakte[TRUE, c("tnr", "m")],xy,by=c("tnr"),all.x=T)
   xy[is.na(xy)] <- 0
   #Nur die HBF der realen Baumarten (d,h. OHNE BL bzw. iBL)
   xy$hbf.ba <- xy$hbf-xy$bl-xy$ibl
@@ -49,19 +49,19 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
   xy.s <- xy
   #----
   #HBFl. [ha]
-  r.list= r.variance.fun(subset(xy,select=c(m,hbf)),nT)
+  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
   T.hbf <- r.list$R.xy*A
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
   #Blößen [ha]
-  r.list <- r.variance.fun(subset(xy,select=c(m,bl)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
   T.bl <- r.list$R.xy*A
   se.T.bl <- sqrt(r.list$V.R.xy)*A
   #Ideelle Blößen ("Lücken") [ha]
-  r.list <- r.variance.fun(subset(xy,select=c(m,ibl)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
   T.ibl <- r.list$R.xy*A
   se.T.ibl <- sqrt(r.list$V.R.xy)*A
   #Lückenkorrekturfaktor
-  r.list <- r.variance.fun(subset(xy,select=c(hbf.ba,hbf)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
   lk <- r.list$R.xy
   se.lk <- sqrt(r.list$V.R.xy)
   #---------------------------------------
@@ -130,9 +130,9 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
     {
       for (k in 1:D.k)  #Durchmesserklassen
       {
-        baeume.ba <- subset(baeume.s,
-                      bagr==bagr.list[i]&akl==akl.lab[j]&dkl==dkl.lab[k],
-                      select=c(tnr,enr,bhd,dkl,volv,oib,nha,stfl))
+        baeume.ba <- baeume.s[
+                      baeume.s[["bagr"]]==bagr.list[i]&baeume.s[["akl"]]==akl.lab[j]&baeume.s[["dkl"]]==dkl.lab[k],
+                      c("tnr", "enr", "bhd", "dkl", "volv", "oib", "nha", "stfl")]
         if (length(baeume.ba[,1])== 0)
         {
            Y.bagr.akl.dkl[1:6,1,i,j,k]    <- rep(0,6)  #Zielgröße Total
@@ -184,15 +184,15 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
           names(xy)[8] <- "ndh.hb"
 
           #Anzahl Traktecken je Trakt (Wald- und Nichtwald) hinzufügen
-          #xy <- merge(xy,subset(trakte,select=c(tnr,m),by=c(tnr)))
+          #xy <- merge(xy,trakte[TRUE, c("tnr", "m"),by=c("tnr")]
           #Anzahl Trakte (i.S. von PSU) im Teilkollektiv ijk
           nT.bagr.akl.dkl[i,j,k] <- length(xy[,1])
           #---  Ergänzug 11.10. <m_bhb>    Hinweis: Offset für Indizierung ange-
           #passt!!
           #des Weiteren merge mit <xy.s> wegen <hbf> (begehbare HBF) für
           #Berechnung der BA-Anteile
-          xy <- merge(subset(xy.s,select=c(tnr,m,hbf)),xy,by=c("tnr"),all.x=T)
-          #xy <- merge(subset(trakte,select=c(tnr,m,m_bhb)),xy,by=c("tnr"),all.x=T)
+          xy <- merge(xy.s[TRUE, c("tnr", "m,hbf")],xy,by=c("tnr"),all.x=T)
+          #xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
           xy[is.na(xy)] <- 0
 
           for (l in 1:7)

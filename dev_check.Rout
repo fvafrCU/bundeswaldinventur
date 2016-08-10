@@ -8,14 +8,8 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
-Writing fvbn.kreis.fun.1.Rd
-Writing fvbn.stratum.fun.1.Rd
-Writing fvbn.stratum.fun.2.Rd
-Writing VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd
-Writing VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd
-Writing iVB.ew.bagrupp.akl.dkl.stratum.fun.2.Rd
-Writing iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12.Rd
-Writing FVBN.bagrupp.akl.dkl.stratum.fun.Rd
+Writing FVBN.bagrupp.akl.dkl.stratum.fun.2e.Rd
+Deleting FVBN.bagrupp.akl.dkl.stratum.fun.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -45,7 +39,15 @@ Checking bundeswaldinventur ----------------------------------------------------
 * this is package ‘bundeswaldinventur’ version ‘0.1.0’
 * package encoding: UTF-8
 * checking package namespace information ... OK
-* checking package dependencies ... OK
+* checking package dependencies ...Warning: unable to access index for repository http://CRAN.R-project.org/src/contrib:
+  cannot open URL 'http://CRAN.R-project.org/src/contrib/PACKAGES'
+Warning: unable to access index for repository https://bioconductor.org/packages/3.3/bioc/src/contrib:
+  cannot download all files
+Warning: unable to access index for repository https://bioconductor.org/packages/3.3/data/annotation/src/contrib:
+  cannot download all files
+Warning: unable to access index for repository https://bioconductor.org/packages/3.3/data/experiment/src/contrib:
+  cannot download all files
+ OK
 * checking if this is a source package ... OK
 * checking if there is a namespace ... OK
 * checking for executable files ... OK
@@ -68,7 +70,6 @@ Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
   BWI3_HR_Grafikfunktionen_v2.R
   BWI3_HR_Landkreis_Funktionen_v1.R
-  fvbn.R
   fvbn2a.R
   fvbn2b.R
   fvbn2c.R
@@ -93,222 +94,6 @@ Use \uxxxx escapes for other characters.
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘tnr’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘enr’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘ba’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘alt’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘bhd’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘volv’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘oib’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘nha’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘stfl’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘ICode’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘bagr’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘m’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘hbf’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘bl’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘ibl’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘hbf.ba’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘dkl’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘akl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘tnr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘enr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘alt’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘bhd’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘volv’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘oib’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘nha’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘stfl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘ICode’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘bagr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘m’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘hbf’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘bl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘ibl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘hbf.ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘akl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2a: no visible binding for global
-  variable ‘dkl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘tnr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘enr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘alt’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘bhd’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘volv’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘oib’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘nha’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘stfl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘ICode’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘bagr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘m’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘hbf’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘bl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘ibl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘hbf.ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘akl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2b: no visible binding for global
-  variable ‘dkl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘tnr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘enr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘alt’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘bhd’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘volv’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘oib’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘nha’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘stfl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘ICode’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘bagr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘m’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘hbf’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘bl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘ibl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘hbf.ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘akl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2c: no visible binding for global
-  variable ‘dkl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘tnr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘enr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘alt’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘bhd’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘volv’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘oib’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘nha’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘stfl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘ICode’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘bagr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘m’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘hbf’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘bl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘ibl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘hbf.ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘akl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2d: no visible binding for global
-  variable ‘dkl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘tnr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘enr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘alt’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘bhd’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘volv’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘oib’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘nha’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘stfl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘ICode’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘bagr’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘m’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘hbf’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘bl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘ibl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘hbf.ba’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘dkl’
-FVBN.bagrupp.akl.dkl.stratum.fun.2e: no visible binding for global
-  variable ‘akl’
 Totholz.Tart.stratum.fun: no visible binding for global variable ‘tnr’
 Totholz.Tart.stratum.fun: no visible binding for global variable ‘m’
 Totholz.Tart.stratum.fun: no visible binding for global variable ‘tart’
@@ -5135,7 +4920,6 @@ Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
   BWI3_HR_Grafikfunktionen_v2.R
   BWI3_HR_Landkreis_Funktionen_v1.R
-  fvbn.R
   fvbn2a.R
   fvbn2b.R
   fvbn2c.R
@@ -5220,16 +5004,16 @@ checking installed package size ... NOTE
     data  32.8Mb
 
 checking R code for possible problems ... NOTE
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘tnr’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘enr’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘ba’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-  variable ‘alt’
-FVBN.bagrupp.akl.dkl.stratum.fun: no visible binding for global
-... 1025 lines ...
+Totholz.Tart.stratum.fun: no visible binding for global variable ‘tnr’
+Totholz.Tart.stratum.fun: no visible binding for global variable ‘m’
+Totholz.Tart.stratum.fun: no visible binding for global variable ‘tart’
+Totholz.Tart.stratum.fun: no visible binding for global variable ‘tbd’
+Totholz.Tart.stratum.fun: no visible binding for global variable ‘lge’
+Totholz.Tart.stratum.fun: no visible binding for global variable ‘enr’
+Totholz.Tart.stratum.fun: no visible binding for global variable ‘nr’
+Totholz.Tart.stratum.fun: no visible binding for global variable ‘tvol’
+Totholz.Tart.stratum.fun: no visible binding for global variable ‘dm’
+... 809 lines ...
   NTNS_F_gr4m_alleBaeume_BWI3 NTNS_F_kl4m_BA_Anteile_BWI2
   NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 PL
   PLkal Pk STP StFl1 StFl2 TNr Tnr V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1

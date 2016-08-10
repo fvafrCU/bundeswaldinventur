@@ -1,4 +1,83 @@
-#' @describeIn FVBN.bagrupp.akl.dkl.stratum.fun (version 2e)
+#' Zustandshochrechnung 
+#' 
+#' Funktion wertet nach frei definierbaren BA-Gruppen, Alters- und Durchmesser-
+#' Klassen im Stratum aus. Die berechneten Zielgroessen sind Flaeche, Vorrat, 
+#' Biomasse und Stammzahl (N). Variante mit Varianzschaetzung ueber 
+#' Fehlerfortpflanzung.
+#' 
+#' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
+#' @section Erstellungsdatum: 13.03.2014
+#' @section Aktualisierungen: 
+#'  13.03.2015 Korrektur \code{akl.lab} bzw. \code{dkl.lab} \cr
+#'  22.02.2015 Erweiterung um "alle DKL" und "alle AKL" \cr
+#'  02.12.2014 Erweiterung um alle Baumarten: wenn nach BAGR differenziert wird, 
+#'    wird zusatzlich die "Summen"- Auswertung fuer alle Baumarten aufgerufen 
+#'    und das Ergebnis in die Tabelle eingebaut \cr
+#'  01.11.2014 Neue Version mit Stammzahlen im Hauptbestand \cr
+#'  11.10.2014 Erweiterung um Baumartenanteile mit Fehler \cr
+#'  19.04.2014 bei Ha-Bezug fuer Hauptbestands(HB)-Vorrat wird Luecken-Korrektur 
+#'    rueckgaengig gemacht, um Bezug nur zur HB-Flaeche zu erzielen 
+#'    (\code{T.bl}, \code{T.ibl}). 
+#' @section Hinweis: Verallgemeinerte Version fuer die Auswertung 
+#'  unterschiedlicher Inventurzeit-punkte, also BWI 1, BWI 2, BWI 3. \cr
+#'  Die Funktion \code{\link{stratum.fun}} benoetigt desweiteren die Tabelle 
+#'  \code{bacode}. \cr
+#'  Um Konflikte mit unterschiedlicher Gross- und Kleinschreibung bei den 
+#'  Attributnamen zu vermeiden, werden innerhalb dieser Funktion alle 
+#'  Attributnamen auf Kleinschreibung umgestellt.
+#' @param baeume Datentabelle mit Bauminformationen. Die Tabelle muss mindestens 
+#'  die Attribute TNr, ENr, BA, Alt., BHD., VolV., oiB., NHa., StFl. enthalten 
+#'  (. steht fuer 1 oder 2, je nachdem welcher Zustand ausgewertet werden soll), 
+#'  man kann auch die selektierten Attribute mit Namen ohne Kennziffer 
+#'  uebergeben, wenn bereits eine eindeutige Auswahl der Attribute in 
+#'  \code{baeume} uebergeben wird.
+#' @param ecken Eckenmerkmale.
+#' @param trakte Traktmerkmale.
+#' @param A Gesamtflaeche in ha des Inventurgebiets zum jeweiligen 
+#'  Inventurzeitpunkt (sollte eigentlich konstant sein).
+#' @param inv Inventur 1:= Vorinventur, 2:= Folgeinventur, wenn eine 
+#'  \code{baeume}-Tablle mit Attributen aus zwei Aufnahmezeitpunkten uebergeben 
+#'  wird. Wenn dies der Fall ist, dann entsprechen die jeweils fuer die 
+#'  auszuwertende Inventur relevanten Attribute der Konvention: Aktuelle 
+#'  ("Folge") Inventur hat im Attributnamen eine 2 am Ende, also "Alt2", "BHD2", 
+#'  "D032", "H2", "HSt2", "VolV2", "VolE2", "oiB2", "StFl2", "NHa2", die 
+#'  Vorinventur eine 1; d.h. im Falle der BWI 3 haben die Attributbezeichner die 
+#'  2 im Namen, die Daten der Vorinventur BWI 2 die 1. Um mit denselben 
+#'  Algorithmen fuer beide Zustaende arbeiten zu koennen, werden fuer den 
+#'  jeweiligen Auswertungsfall \code{inv} (Vorinventur = 1 bzw. Folge-(aktuelle) 
+#'  Inventur =2 die Attibutnamen "neutralisiert", also die Kennung 1 oder 2 im 
+#'  Attributnamen entfernt.
+#' @param BA.grupp Liste mit Baumarten-Zusammenfassungen zu Baumgruppen mit 
+#'  Bezeichner der Baumarten-Gruppen ("lab") z.B. list(bagr.lab = c("FiTa", 
+#'  "DglKiLae", "Bu", "Ei", "BLb", "WLb"), ba.grupp =list(c(10:19,30:39,90:99), 
+#'  c(20:29,40,50,51), c(100), c(110,111), c(112:199),c(200:299))).
+#' @param A.klass Liste mit den Klassifizierungsparametern fuers Alter: z.B. 
+#'  list(A.ob=160, A.b=20).
+#' @param D.klass Liste mit den Klassifizierungsparametern fuer Durchmesser z.B. 
+#'  list(D.unt=0, D.ob=70, D.b=10, Ndh=T), Ndh (Nicht-Derbholz) = T bedeutet, 
+#'  dass zusaetzlich Nicht-Dh (unter 7 cm) ausgewiesen wird, sonst gilt 
+#'  \code{D.unt} als unterste Schwelle.
+#' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten 
+#'  enthaelt, anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: 
+#'  list(Wa=c(3,5), Begehbar=1).
+#' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit 
+#'  Erstellungsdatum und Version.baeume.b, \strong{Stratum} 
+#'  (\code{auswahl}), \strong{nTE} (Anzahl Ecken im Stratum), \strong{HBF} 
+#'  (Holzbodenflaeche in ha), \strong{se.HBF} (Standardfehler HBF), \strong{BL} 
+#'  (Flaeche der Bloessen in ha), \strong{se.BL} (Standardfehler BL), 
+#'  \strong{iBL} (Flaeche der idellen Bloessen ("Luecken") in ha), 
+#'  \strong{se.iBL} (Standardfehler iBL), \strong{LK} (relative 
+#'  Lueckenkorrektur), \strong{se.LK}  (Standardfehler LK), \strong{Attribute1} 
+#'  (Vektor mit berechneten absoluten Attributnamen), \strong{Attribute2} 
+#'  (vektor mit berechneten pro ha Attributname), \strong{Größen} (Vektor mit 
+#'  berechneten Groessen), \strong{BAGR} (Labels fuer Baumartengruppen aus 
+#'  \code{ba.grupp}), \strong{AKL} (Labels der Altersklassen), \strong{DKL} 
+#'  (Labels der Durchmesserklassen), \strong{T.FVBN.Bagr.Akl.Dkl} (Array 
+#'  mit berechneten Groessen (Wert und Standardfehler) fuer Gesamtwerte jeweils 
+#'  fuer 9 Baumartengruppen, Alters- und Durchmesserklassen), 
+#'  \strong{FVBN.ha.Bagr.Akl.Dkl} (Array mit berechneten Groessen (Wert und 
+#'  Standardfehler) fuer hektabezogene Kenngroessen), \strong{nT.bagr.Akl.Dkl} 
+#'  (Anzahl Traktecken (?)).
 FVBN.bagrupp.akl.dkl.stratum.fun.2e <-
   function(baeume,ecken,trakte,A,inv,BA.grupp,A.klass,D.klass,auswahl){
   stratum <- stratum.fun(auswahl,ecken)
@@ -10,15 +89,15 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2e <-
   #"Neutralisierung" der benötigten Attributnamen
   names(baeume) <- sub(inv,names(baeume),replacement="")
   #Attribute und Untermenge des Stratums aus <baeume> auswählen
-  baeume.s <- merge(subset(baeume,select=c(tnr,enr,ba,alt,bhd,volv,oib,nha,stfl)),
-                    subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"),all.y=T)
+  baeume.s <- merge(baeume[TRUE, c("tnr", "enr", "ba", "alt", "bhd", "volv", "oib", "nha", "stfl")],
+                    stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"),all.y=T)
   
   #Klassifizierung durchführen
   #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   bagr.tab <- ba.klass.lab.tab.fun(BA.grupp)
   #BA-Gruppe dazu spielen
-  baeume.s <- merge(baeume.s, subset(bagr.tab,select=c(ICode,bagr)),
+  baeume.s <- merge(baeume.s, bagr.tab[TRUE, c("ICode", "bagr")],
                     by.x="ba",by.y="ICode",all.x=T)
   baeume.s[is.na(baeume.s)] <- 0
   n.bagr <- length(BA.grupp[[1]])
@@ -41,7 +120,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2e <-
                            by=list(baeume.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
-  xy <- merge(subset(trakte,select=c(tnr,m)),xy,by=c("tnr"),all.x=T)
+  xy <- merge(trakte[TRUE, c("tnr", "m")],xy,by=c("tnr"),all.x=T)
   xy[is.na(xy)] <- 0
   #Nur die HBF der realen Baumarten (d,h. OHNE BL bzw. iBL)
   xy$hbf.ba <- xy$hbf-xy$bl-xy$ibl
@@ -49,19 +128,19 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2e <-
   xy.s <- xy
   #----
   #HBFl. [ha]
-  r.list= r.variance.fun(subset(xy,select=c(m,hbf)),nT)
+  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
   T.hbf <- r.list$R.xy*A
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
   #Blößen [ha]
-  r.list <- r.variance.fun(subset(xy,select=c(m,bl)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
   T.bl <- r.list$R.xy*A
   se.T.bl <- sqrt(r.list$V.R.xy)*A
   #Ideelle Blößen ("Lücken") [ha]
-  r.list <- r.variance.fun(subset(xy,select=c(m,ibl)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
   T.ibl <- r.list$R.xy*A
   se.T.ibl <- sqrt(r.list$V.R.xy)*A
   #Lückenkorrekturfaktor
-  r.list <- r.variance.fun(subset(xy,select=c(hbf.ba,hbf)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
   lk <- r.list$R.xy
   se.lk <- sqrt(r.list$V.R.xy)
   #---------------------------------------
@@ -140,26 +219,23 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2e <-
         {
           if (k == D.k)
           {
-            baeume.ba <- subset(baeume.s,
-                                bagr==bagr.list[i],select=c(tnr,enr,bhd,dkl,volv,oib,nha,stfl))
+            baeume.ba <- baeume.s[baeume.s[["bagr"]] == bagr.list[i],
+                                  c("tnr", "enr", "bhd", "dkl", "volv", "oib", "nha", "stfl")]
           } else
           {
-            baeume.ba <- subset(baeume.s,
-                                bagr==bagr.list[i]&dkl==dkl.lab[k],
-                                select=c(tnr,enr,bhd,dkl,volv,oib,nha,stfl))
+            baeume.ba <- baeume.s[baeume.s[["bagr"]] == bagr.list[i] & baeume.s[["dkl"]] == dkl.lab[k],
+                                  c("tnr", "enr", "bhd", "dkl", "volv", "oib", "nha", "stfl")]
           }
         }else
         {
           if (k == D.k)
           {
-            baeume.ba <- subset(baeume.s,
-                                bagr==bagr.list[i]&akl==akl.lab[j],
-                                select=c(tnr,enr,bhd,dkl,volv,oib,nha,stfl))
+            baeume.ba <- baeume.s[baeume.s[["bagr"]] == bagr.list[i] & baeume.s[["akl"]] == akl.lab[j],
+                                  c("tnr", "enr", "bhd", "dkl", "volv", "oib", "nha", "stfl")]
           }else
           {
-            baeume.ba <- subset(baeume.s,
-                                bagr==bagr.list[i]&akl==akl.lab[j]&dkl==dkl.lab[k],
-                                select=c(tnr,enr,bhd,dkl,volv,oib,nha,stfl))
+            baeume.ba <- baeume.s[baeume.s[["bagr"]] == bagr.list[i] & baeume.s[["akl"]] == akl.lab[j] & baeume.s[["dkl"]] == dkl.lab[k],
+                                  c("tnr", "enr", "bhd", "dkl", "volv", "oib", "nha", "stfl")]
           }
         }
         if (length(baeume.ba[,1])== 0)
@@ -213,15 +289,15 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2e <-
           names(xy)[8] <- "ndh.hb"
           
           #Anzahl Traktecken je Trakt (Wald- und Nichtwald) hinzufügen
-          #xy <- merge(xy,subset(trakte,select=c(tnr,m),by=c(tnr)))
+          #xy <- merge(xy,trakte[TRUE, c("tnr", "m"),by=c("tnr")]
           #Anzahl Trakte (i.S. von PSU) im Teilkollektiv ijk
           nT.bagr.akl.dkl[i,j,k] <- length(xy[,1])
           #---  Ergänzug 11.10. <m_bhb>    Hinweis: Offset für Indizierung ange-
           #passt!!
           #des Weiteren merge mit <xy.s> wegen <hbf> (begehbare HBF) für
           #Berechnung der BA-Anteile
-          xy <- merge(subset(xy.s,select=c(tnr,m,hbf)),xy,by=c("tnr"),all.x=T)
-          #xy <- merge(subset(trakte,select=c(tnr,m,m_bhb)),xy,by=c("tnr"),all.x=T)
+          xy <- merge(xy.s[TRUE, c("tnr", "m,hbf")],xy,by=c("tnr"),all.x=T)
+          #xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
           xy[is.na(xy)] <- 0
           
           for (l in 1:7)
