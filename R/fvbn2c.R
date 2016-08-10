@@ -191,7 +191,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2c <-
           #passt!!
           #des Weiteren merge mit <xy.s> wegen <hbf> (begehbare HBF) für
           #Berechnung der BA-Anteile
-          xy <- merge(xy.s[TRUE, c("tnr", "m,hbf")],xy,by=c("tnr"),all.x=T)
+          xy <- merge(xy.s[TRUE, c("tnr", "m", "hbf")],xy,by=c("tnr"),all.x=T)
           #xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
           xy[is.na(xy)] <- 0
 

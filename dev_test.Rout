@@ -20,7 +20,7 @@ get_color_for_ownership: ........
 get_colors_for_ownership: ..........
 bits_and_pieces.R: .
 as_percent_and_round: .....
-Examples of existing scripts: .12345678................
+Examples of existing scripts: ........................
 made up examples: ........
 BWI3_HR_Landkreis_Funktionen_v1.R: ..
 BWI3_HR_Totholz_Funktionen_v1.R: ...
@@ -29,94 +29,4 @@ figures_and_tables: .
 statistics.R: ......
 tree_species_shares.R: ...
 variable_getters.R: ..
-
-Failed -------------------------------------------------------------------------
-1. Error: FVBN.bagrupp.akl.dkl.stratum.fun.2b (@test_BWI3_HR_Funktionen_v3.R#55) 
-undefined columns selected
-1: FVBN.bagrupp.akl.dkl.stratum.fun.2b(baeume.3, ecken.3, trakte.3, A, 2, list(bagr.lab = c("Alle Baumarten"), 
-       ba.grupp = list(c(10:299))), list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, 
-       D.b = 500, Ndh = F), list(Wa = c(3, 5), Begehbar = 1, raumkat_id = 10)) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/tests/testthat/test_BWI3_HR_Funktionen_v3.R:55
-2: merge(xy.s[TRUE, c("tnr", "m,hbf")], xy, by = c("tnr"), all.x = T) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/fvbn2b.R:183
-3: xy.s[TRUE, c("tnr", "m,hbf")]
-4: `[.data.frame`(xy.s, TRUE, c("tnr", "m,hbf"))
-5: stop("undefined columns selected")
-
-2. Error: FVBN.bagrupp.akl.dkl.stratum.fun.2c (@test_BWI3_HR_Funktionen_v3.R#96) 
-undefined columns selected
-1: FVBN.bagrupp.akl.dkl.stratum.fun.2c(baeume.3, ecken.3, trakte.3, A, 2, list(bagr.lab = c("Alle Baumarten"), 
-       ba.grupp = list(c(10:299))), list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, 
-       D.b = 500, Ndh = F), list(Wa = c(3, 5), Begehbar = 1, RBez = 2)) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/tests/testthat/test_BWI3_HR_Funktionen_v3.R:96
-2: merge(xy.s[TRUE, c("tnr", "m,hbf")], xy, by = c("tnr"), all.x = T) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/fvbn2c.R:194
-3: xy.s[TRUE, c("tnr", "m,hbf")]
-4: `[.data.frame`(xy.s, TRUE, c("tnr", "m,hbf"))
-5: stop("undefined columns selected")
-
-3. Error: FVBN.bagrupp.akl.dkl.stratum.fun.2d (@test_BWI3_HR_Funktionen_v3.R#138) 
-undefined columns selected
-1: FVBN.bagrupp.akl.dkl.stratum.fun.2d(baeume.3, ecken.3, trakte.3, A, 2, list(bagr.lab = c("Alle Baumarten"), 
-       ba.grupp = list(c(10:299))), list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, 
-       D.b = 500, Ndh = F), list(Wa = c(3, 5), Begehbar = 1, Kreis = 317)) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/tests/testthat/test_BWI3_HR_Funktionen_v3.R:138
-2: merge(xy.s[TRUE, c("tnr", "m,hbf")], xy, by = c("tnr"), all.x = T) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/fvbn2d.R:194
-3: xy.s[TRUE, c("tnr", "m,hbf")]
-4: `[.data.frame`(xy.s, TRUE, c("tnr", "m,hbf"))
-5: stop("undefined columns selected")
-
-4. Error: FVBN.bagrupp.akl.dkl.stratum.fun.2e (@test_BWI3_HR_Funktionen_v3.R#181) 
-undefined columns selected
-1: FVBN.bagrupp.akl.dkl.stratum.fun.2e(baeume.3, ecken.3, trakte.3, A, 2, list(bagr.lab = c("Alle Baumarten"), 
-       ba.grupp = list(c(10:299))), list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 50, 
-       D.b = 25, Ndh = T), list(Wa = c(3, 5), Begehbar = 1, BTyp = c(110, 117, 170, 
-       171, 410, 417, 470, 471))) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/tests/testthat/test_BWI3_HR_Funktionen_v3.R:181
-2: merge(xy.s[TRUE, c("tnr", "m,hbf")], xy, by = c("tnr"), all.x = T) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/fvbn2e.R:299
-3: xy.s[TRUE, c("tnr", "m,hbf")]
-4: `[.data.frame`(xy.s, TRUE, c("tnr", "m,hbf"))
-5: stop("undefined columns selected")
-
-5. Error: FVBN.bagrupp.akl.dkl.stratum.fun (@test_BWI3_HR_Funktionen_v3.R#250) -
-could not find function "FVBN.bagrupp.akl.dkl.stratum.fun"
-1: .handleSimpleError(function (e) 
-   {
-       test_error <<- e
-       options(expressions = expressions_opt_new)
-       on.exit(options(expressions = expressions_opt), add = TRUE)
-       e$expectation_calls <- frame_calls(11, 2)
-       test_error <<- e
-       register_expectation(e)
-       e$handled <- TRUE
-       test_error <<- e
-   }, "could not find function \"FVBN.bagrupp.akl.dkl.stratum.fun\"", quote(eval(expr, 
-       envir, enclos))) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/tests/testthat/test_BWI3_HR_Funktionen_v3.R:250
-2: eval(expr, envir, enclos)
-
-6. Error: fvbn.kreis.fun.1 (@test_BWI3_HR_Funktionen_v3.R#328) -----------------
-undefined columns selected
-1: fvbn.kreis.fun.1(316, c("GW"), c(3), bagr.xx) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/tests/testthat/test_BWI3_HR_Funktionen_v3.R:328
-2: FVBN.bagrupp.akl.dkl.stratum.fun.2d(baeume, ecken, trakte, A.i, inv, bagr, list(A.ob = 500, 
-       A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F), auswahl.i) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/BWI3_HR_Landkreis_Funktionen_v1.R:43
-3: merge(xy.s[TRUE, c("tnr", "m,hbf")], xy, by = c("tnr"), all.x = T) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/fvbn2d.R:194
-4: xy.s[TRUE, c("tnr", "m,hbf")]
-5: `[.data.frame`(xy.s, TRUE, c("tnr", "m,hbf"))
-6: stop("undefined columns selected")
-
-7. Error: fvbn.stratum.fun.1 (@test_BWI3_HR_Funktionen_v3.R#445) ---------------
-undefined columns selected
-1: fvbn.stratum.fun.1(list(Begehbar = 1, Kreis = 316, WGNr_BW = 1), c("GW"), c(3), bagr.xx) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/tests/testthat/test_BWI3_HR_Funktionen_v3.R:445
-2: FVBN.bagrupp.akl.dkl.stratum.fun.2d(baeume, ecken, trakte, A.i, inv, bagr, list(A.ob = 500, 
-       A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F), auswahl.i) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/BWI3_HR_Funktionen_v3.R:209
-3: merge(xy.s[TRUE, c("tnr", "m,hbf")], xy, by = c("tnr"), all.x = T) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/fvbn2d.R:194
-4: xy.s[TRUE, c("tnr", "m,hbf")]
-5: `[.data.frame`(xy.s, TRUE, c("tnr", "m,hbf"))
-6: stop("undefined columns selected")
-
-8. Error: fvbn.stratum.fun.2 (@test_BWI3_HR_Funktionen_v3.R#560) ---------------
-undefined columns selected
-1: fvbn.stratum.fun.2(list(Begehbar = 1, Kreis = c(316, 317, 237), WGNr_BW = 3), c("GW"), 
-       c(3), bagr.xx, list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, 
-           Ndh = F)) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/tests/testthat/test_BWI3_HR_Funktionen_v3.R:560
-2: FVBN.bagrupp.akl.dkl.stratum.fun.2d(baeume, ecken, trakte, A.i, inv, bagr, a.klass, 
-       d.klass, auswahl.i) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/BWI3_HR_Funktionen_v3.R:286
-3: merge(xy.s[TRUE, c("tnr", "m,hbf")], xy, by = c("tnr"), all.x = T) at /adc_mnt/data/git/oudeis/fva/bundeswaldinventur/R/fvbn2d.R:194
-4: xy.s[TRUE, c("tnr", "m,hbf")]
-5: `[.data.frame`(xy.s, TRUE, c("tnr", "m,hbf"))
-6: stop("undefined columns selected")
 

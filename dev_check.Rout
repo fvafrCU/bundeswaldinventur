@@ -8,8 +8,6 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
-Writing FVBN.bagrupp.akl.dkl.stratum.fun.2e.Rd
-Deleting FVBN.bagrupp.akl.dkl.stratum.fun.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -39,15 +37,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * this is package ‘bundeswaldinventur’ version ‘0.1.0’
 * package encoding: UTF-8
 * checking package namespace information ... OK
-* checking package dependencies ...Warning: unable to access index for repository http://CRAN.R-project.org/src/contrib:
-  cannot open URL 'http://CRAN.R-project.org/src/contrib/PACKAGES'
-Warning: unable to access index for repository https://bioconductor.org/packages/3.3/bioc/src/contrib:
-  cannot download all files
-Warning: unable to access index for repository https://bioconductor.org/packages/3.3/data/annotation/src/contrib:
-  cannot download all files
-Warning: unable to access index for repository https://bioconductor.org/packages/3.3/data/experiment/src/contrib:
-  cannot download all files
- OK
+* checking package dependencies ... OK
 * checking if this is a source package ... OK
 * checking if there is a namespace ... OK
 * checking for executable files ... OK
