@@ -415,7 +415,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   #Anzahl der Trakte im Stratum
   n.t.s <- length(y[,1])
   #Anfügen der Anzahl Traktecken (Wald und Nicht-Wald)
-  y <- merge(y,trakte[TRUE, c("tnr", "m"),by=c("tnr")]
+  y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
   #Alle Traktecken im Inventurgebiet
   x <- trakte$m
   #n Trakte im Inventurgebiet ist konstant
@@ -548,9 +548,9 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
       for (k in 1:D.k)  #Durchmesserklassen
       {
         #Baumartenfläche zur Periodenmitte aggregieren
-        baf.ba <- subset(mbaf.bagr.akl.dkl.tnr,
-                      bagr==bagr.list[i]&akl.pm==akl.lab[j]&dkl.pm==dkl.lab[k],
-                      select=c(tnr,mbaf))
+        baf.ba <- mbaf.bagr.akl.dkl.tnr[
+                      mbaf.bagr.akl.dkl.tnr[["bagr"]]==bagr.list[i]&mbaf.bagr.akl.dkl.tnr[["akl.pm"]]==akl.lab[j]&mbaf.bagr.akl.dkl.tnr[["dkl.pm"]]==dkl.lab[k],
+                      c("tnr", "mbaf")]
         #Mit allen Trakten im Inventurgebiet vereinen
         xy.baf <- merge(trakte,baf.ba,by=c("tnr"),all.x=T)
         #NA eliminieren!
@@ -565,9 +565,9 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
         for (i.n in 1:n.nart)  #Nutzungsart (geerntet, ungenutzt), wenn gesetzt!
         {
 
-          baeume.ba <- subset(baeume.s,
-              pk%in%pk.list[[i.n]]&bagr==bagr.list[i]&akl==akl.lab[j]
-              &dkl==dkl.lab[k],select=c(tnr,enr,pk,volv2,vole2,oib2,nha1,plkal))
+          baeume.ba <- baeume.s[
+              baeume.s[["pk"]]%in%pk.list[[i.n]]&baeume.s[["bagr"]]==bagr.list[i]&baeume.s[["akl"]]==akl.lab[j]&baeume.s[["dkl"]]==dkl.lab[k],
+              c("tnr", "enr", "pk", "volv2", "vole2", "oib2", "nha1", "plkal")]
           if (length(baeume.ba[,1])== 0)
           {
              Y.na.bagr.akl.dkl[,1,i.n,i,j,k] <- rep(0,12) #Zielgröße
@@ -785,9 +785,9 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   auswahl$Wa=c(3,5)
   ecken.3.s <- stratum.fun(auswahl,ecken.3)
   #gemeinsames Netz Land BW BWI 2 und 3 auf begehbarem Holzboden
-  ecken.23.hb <- merge(subset(ecken.3.s, select=c(TNr,ENr)),
-      subset(ecken.2.s,select=c(TNr,ENr)),by=c("TNr","ENr"))
-  ecken.23.hb <- merge(ecken.23.hb,subset(ecken.3,select=c(TNr,ENr,PL,PLkal)),
+  ecken.23.hb <- merge(ecken.3.s[TRUE,  c("TNr", "ENr")],
+      ecken.2.s[TRUE, c("TNr", "ENr")],by=c("TNr","ENr"))
+  ecken.23.hb <- merge(ecken.23.hb,ecken.3[TRUE, c("TNr", "ENr", "PL", "PLkal")],
       by=c("TNr","ENr"))
   stratum <- ecken.23.hb
   trakte <- trakte.3
@@ -806,7 +806,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   #Anzahl der Trakte im Stratum
   n.t.s <- length(y[,1])
   #Anfügen der Anzahl Traktecken (Wald und Nicht-Wald)
-  y <- merge(y,subset(trakte,select=c(tnr,m),by=c(tnr)))
+  y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
   #Alle Traktecken im Inventurgebiet
   x <- trakte$m
   #n Trakte im Inventurgebiet ist konstant
@@ -829,9 +829,8 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   #HINWEIS: beim ausgeschiedenen Vorrat wird der zur Periodenmitte
   #fortgeschriebene Vorrat verwendet! volv2,vole2,oib2
   baeume.s <- merge(
-          subset(baeume,select=c(tnr,enr,stp,bnr,ba,pk,alt1,alt2,bhd1,bhd2,volv2,
-                                  vole2,oib2,nha1,stfl1)),
-          subset(stratum,select=c(tnr,enr,pl,plkal)),by=c("tnr","enr"))
+          baeume[TRUE, c("tnr", "enr", "stp", "bnr", "ba", "pk", "alt1", "alt2", "bhd1", "bhd2", "volv2", "vole2", "oib2", "nha1", "stfl1")],
+          stratum[TRUE, c("tnr", "enr", "pl", "plkal")],by=c("tnr","enr"))
 
   #BA-Gruppe dazu spielen
   #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
@@ -842,16 +841,16 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   bagr.list <- c(BA.grupp[[1]],"Alle BA")
   #n.bagr <- length(bagr.list)
 
-  baeume.s <- merge(baeume.s, subset(bagr.tab,select=c(ICode,bagr)),
+  baeume.s <- merge(baeume.s, bagr.tab[TRUE, c("ICode", "bagr")],
                     by.x="ba",by.y="ICode",all.x=T)
   names(baeume.s) <- tolower(names(baeume.s))
 
   #Folgeinventur: BA-Gruppen hinzufügen
-  baeume.3.s <- merge(subset(baeume.3,select=c(TNr,ENr,STP,BNr,Pk,BA,Alt1,Alt2,
-                  BHD1,BHD2,StFl2)),subset(bagr.tab,select=c(ICode,bagr)),
+  baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Pk", "BA", "Alt1", "Alt2", "BHD1", "BHD2", "StFl2")],
+                      bagr.tab[TRUE, c("ICode", "bagr")],
                     by.x="BA",by.y="ICode",all.x=T)
   names(baeume.3.s) <- tolower(names(baeume.3.s))
-  baeume.3.s <- merge(baeume.3.s,subset(stratum,select=c(tnr,enr,pl,plkal)),
+  baeume.3.s <- merge(baeume.3.s,stratum[TRUE, c("tnr", "enr", "pl", "plkal")],
           by=c("tnr","enr"))
 
   #--------------------------------------------------
@@ -945,15 +944,18 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
         #kä/15.12.14
         if (i < n.bagr)
         {
-          baf.ba <- subset(mbaf.bagr.akl.dkl.tnr,
-                        bagr==bagr.list[i]&akl.pm==akl.lab[j]&dkl.pm==dkl.lab[k],
-                        select=c(tnr,mbaf,mbaf.hb))
+          baf.ba <- mbaf.bagr.akl.dkl.tnr[
+                        mbaf.bagr.akl.dkl.tnr[["bagr"]]==bagr.list[i]&
+                        mbaf.bagr.akl.dkl.tnr[["akl.pm"]]==akl.lab[j]&
+                        mbaf.bagr.akl.dkl.tnr[["dkl.pm"]]==dkl.lab[k],
+                        c("tnr", "mbaf", "mbaf.hb")]
                 
         } else
         {
-          baf.ba <- subset(mbaf.bagr.akl.dkl.tnr,
-                        akl.pm==akl.lab[j]&dkl.pm==dkl.lab[k],
-                        select=c(tnr,mbaf,mbaf.hb))
+          baf.ba <- mbaf.bagr.akl.dkl.tnr[
+                        mbaf.bagr.akl.dkl.tnr[["akl.pm"]]==akl.lab[j]&
+                        mbaf.bagr.akl.dkl.tnr[["dkl.pm"]]==dkl.lab[k],
+                        c("tnr", "mbaf", "mbaf.hb")]
           baf.t <- stats::aggregate(baf.ba$mbaf,by=list(baf.ba$tnr),sum)
           baf.t <- cbind(baf.t,stats::aggregate(baf.ba$mbaf.hb,by=list(baf.ba$tnr),sum)$x)
           names(baf.t) <- names(baf.ba)
@@ -976,16 +978,21 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
           #Kä 15.12.14
           if (i < n.bagr)
           {
-            baeume.ba <- subset(baeume.s,
-                pk%in%pk.list[[i.n]]&bagr==bagr.list[i]&akl==akl.lab[j]
-                &dkl==dkl.lab[k],select=c(tnr,enr,pk,volv2,vole2,oib2,nha1,stfl1,
-                plkal))
+            baeume.ba <- baeume.s[
+                baeume.s[["pk"]]%in%pk.list[[i.n]] &
+                baeume.s[["bagr"]]==bagr.list[i] &
+                baeume.s[["akl"]]==akl.lab[j] &
+                baeume.s[["dkl"]]==dkl.lab[k],
+                c("tnr", "enr", "pk", "volv2", "vole2", "oib2", "nha1", "stfl1",
+                  "plkal")]
           } else
           {
-            baeume.ba <- subset(baeume.s,
-                pk%in%pk.list[[i.n]]&akl==akl.lab[j]
-                &dkl==dkl.lab[k],select=c(tnr,enr,pk,volv2,vole2,oib2,nha1,stfl1,
-                plkal))
+            baeume.ba <- baeume.s[
+                baeume.s[["pk"]]%in%pk.list[[i.n]] & 
+                baeume.s[["akl"]]==akl.lab[j] & 
+                baeume.s[["dkl"]]==dkl.lab[k],
+                c("tnr", "enr", "pk", "volv2", "vole2", "oib2", "nha1", "stfl1",
+                  "plkal")]
           } #*
           if (length(baeume.ba[,1])== 0)
           {

@@ -37,7 +37,15 @@ Checking bundeswaldinventur ----------------------------------------------------
 * this is package ‘bundeswaldinventur’ version ‘0.1.0’
 * package encoding: UTF-8
 * checking package namespace information ... OK
-* checking package dependencies ... OK
+* checking package dependencies ...Warning: unable to access index for repository http://CRAN.R-project.org/src/contrib:
+  cannot open URL 'http://CRAN.R-project.org/src/contrib/PACKAGES'
+Warning: unable to access index for repository https://bioconductor.org/packages/3.3/bioc/src/contrib:
+  cannot download all files
+Warning: unable to access index for repository https://bioconductor.org/packages/3.3/data/annotation/src/contrib:
+  cannot download all files
+Warning: unable to access index for repository https://bioconductor.org/packages/3.3/data/experiment/src/contrib:
+  cannot download all files
+ OK
 * checking if this is a source package ... OK
 * checking if there is a namespace ... OK
 * checking for executable files ... OK
@@ -89,175 +97,21 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
   variable ‘ecken.3’
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘TNr’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ENr’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘PL’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘PLkal’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
   variable ‘trakte.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘tnr’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘m’
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
   variable ‘baeume.23’
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘enr’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘stp’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘bnr’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ba’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘pk’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘alt1’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘alt2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘bhd1’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘bhd2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘volv2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘vole2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘oib2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘nha1’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘stfl1’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘pl’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘plkal’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ICode’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘bagr’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
   variable ‘baeume.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘STP’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘BNr’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘Pk’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘BA’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘Alt1’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘Alt2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘BHD1’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘BHD2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘StFl2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘akl.pm’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘dkl.pm’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘mbaf’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘akl’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘dkl’
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
   variable ‘ecken.2’
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
   variable ‘ecken.3’
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘TNr’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘ENr’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘PL’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘PLkal’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
   variable ‘trakte.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘tnr’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘m’
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
   variable ‘baeume.23’
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘enr’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘stp’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘bnr’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘ba’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘pk’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘alt1’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘alt2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘bhd1’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘bhd2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘volv2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘vole2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘oib2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘nha1’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘stfl1’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘pl’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘plkal’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘ICode’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘bagr’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
   variable ‘baeume.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘STP’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘BNr’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘Pk’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘BA’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘Alt1’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘Alt2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘BHD1’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘BHD2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘StFl2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘akl.pm’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘dkl.pm’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘mbaf’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘mbaf.hb’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘akl’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘dkl’
 ba.klass.lab.tab.fun: no visible binding for global variable ‘bacode’
 fl.proz.stratum.fun: no visible binding for global variable ‘trakte.3’
 fl.stratum.fun: no visible binding for global variable ‘TNr’
@@ -853,13 +707,12 @@ Undefined global functions or variables:
   NTNS_F_gr4m_alleBaeume_BWI3 NTNS_F_kl4m_BA_Anteile_BWI2
   NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 PL
   PLkal Pk STP StFl1 StFl2 TNr Tnr V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1
-  VolE2 VolV1 VolV2 akl akl.pm alt alt1 alt2 ba bacode baeume.1
-  baeume.2 baeume.23 baeume.3 baf bagr bhd bhd.pm bhd1 bhd2 biss bl bnr
-  bwi comma dkl dkl.pm ecken.1 ecken.2 ecken.3 enr group h hbf hbf.ba
-  iB iG iV.DhmR iV.DhmR.HB iV.EoR ibl kreise krs.list m mBAF mBAF.oLK
-  mPL mPLkal m_HB mbaf mbaf.hb n n.ntns name nha nha1 ntns oiB1 oiB2
-  oib oib2 pk pl plkal prediction standard_error stfl stfl1 stp tnr
-  trakte.1 trakte.2 trakte.3 vart vole2 volv volv2
+  VolE2 VolV1 VolV2 akl alt ba bacode baeume.1 baeume.2 baeume.23
+  baeume.3 baf bagr bhd bhd.pm biss bl bnr bwi comma dkl ecken.1
+  ecken.2 ecken.3 enr group h hbf hbf.ba iB iG iV.DhmR iV.DhmR.HB
+  iV.EoR ibl kreise krs.list m mBAF mBAF.oLK mPL mPLkal m_HB n n.ntns
+  name nha ntns oiB1 oiB2 oib prediction standard_error stfl stp tnr
+  trakte.1 trakte.2 trakte.3 vart volv
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -4947,19 +4800,19 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
   variable ‘ecken.3’
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘TNr’
+  variable ‘trakte.3’
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ENr’
+  variable ‘baeume.23’
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-... 757 lines ...
+... 602 lines ...
+  NTNS_F_BaWue_BWI2_natwgBWI3 NTNS_F_BaWue_BWI3
   NTNS_F_gr4m_alleBaeume_BWI2 NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3
   NTNS_F_gr4m_alleBaeume_BWI3 NTNS_F_kl4m_BA_Anteile_BWI2
   NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 PL
   PLkal Pk STP StFl1 StFl2 TNr Tnr V.DhmR.A V.DhmR.HB.A V.EoR.A VolE1
-  VolE2 VolV1 VolV2 akl akl.pm alt alt1 alt2 ba bacode baeume.1
-  baeume.2 baeume.23 baeume.3 baf bagr bhd bhd.pm bhd1 bhd2 biss bl bnr
-  bwi comma dkl dkl.pm ecken.1 ecken.2 ecken.3 enr group h hbf hbf.ba
-  iB iG iV.DhmR iV.DhmR.HB iV.EoR ibl kreise krs.list m mBAF mBAF.oLK
-  mPL mPLkal m_HB mbaf mbaf.hb n n.ntns name nha nha1 ntns oiB1 oiB2
-  oib oib2 pk pl plkal prediction standard_error stfl stfl1 stp tnr
-  trakte.1 trakte.2 trakte.3 vart vole2 volv volv2
+  VolE2 VolV1 VolV2 akl alt ba bacode baeume.1 baeume.2 baeume.23
+  baeume.3 baf bagr bhd bhd.pm biss bl bnr bwi comma dkl ecken.1
+  ecken.2 ecken.3 enr group h hbf hbf.ba iB iG iV.DhmR iV.DhmR.HB
+  iV.EoR ibl kreise krs.list m mBAF mBAF.oLK mPL mPLkal m_HB n n.ntns
+  name nha ntns oiB1 oiB2 oib prediction standard_error stfl stp tnr
+  trakte.1 trakte.2 trakte.3 vart volv
