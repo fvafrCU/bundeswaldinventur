@@ -5622,7 +5622,8 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
+  y <- merge(trakte[TRUE, c("tnr", "m")],
+             y, by = c("tnr"), all.x = T)
   y[is.na(y)] <- 0
   r.list <- r.variance.fun(y[,2:3],length(trakte[,1]))
   T.hbf <- r.list$R.xy*A
@@ -5633,8 +5634,9 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   #--------------------
   #FBA
   names(fba.tab) <- tolower(names(fba.tab))
-  fba.tab <- merge(subset(stratum,select=c(tnr,enr)),
-                   subset(fba.tab,select=c(tnr,enr,fba,dichte)),by=c("tnr","enr"),all.x=T)
+  fba.tab <- merge(stratum[TRUE, c("tnr", "enr")],
+                   fba.tab[TRUE, c("tnr", "enr", "fba", "dichte")],
+                   by = c("tnr", "enr"), all.x = T)
   #fehlende Angaben werden als Nicht-Vorkommen interpretiert
   fba.tab$dichte[is.na(fba.tab$dichte)] <- 0
   #Falls aus Originaldaten Code -1 für fehlende Angabe vorkommt
@@ -5656,7 +5658,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   #entsprechende Flächenanteile für 0,1,2,3
   d.fl.ant <- data.frame(dichte=0:3,fl.ant=c(0,0.05,0.3,0.7))
   fba.tab <- merge(fba.tab,d.fl.ant,by="dichte",all.x=T)
-  fba.tab <- subset(fba.tab,select=c(2:4,1,5))
+  fba.tab <- subset(fba.tab,select=c(2:4,1,5)) #TODO: What the hell, this is just a reodering of columns!
   #Auf überschießende Fläche prüfen
   n.fba.te <- stats::aggregate(cbind(ifelse(fba.tab$dichte<=0,0,1),fba.tab$fl.ant),
                         by=list(fba.tab$tnr,fba.tab$enr),sum)
@@ -5680,8 +5682,11 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   {
     
     ii <- ii+1
-    fba.i <- merge(stratum,subset(fba.tab,fba==i,select=c(tnr,enr,fba,dichte,fl.ant)),by=c("tnr","enr"),
-                   all.x=T)
+    fba.i <- merge(stratum,
+                   fba.tab[fba.tab[["fba"]] == i, 
+                           c("tnr", "enr", "fba", "dichte", "fl.ant")],
+                   by=c("tnr", "enr"),
+                   all.x = T)
     fba.i$dichte[is.na(fba.i$dichte)] <- 0
     fba.i$fl.ant[is.na(fba.i$fl.ant)] <- 0
     
@@ -6537,16 +6542,16 @@ ba.klass.fun <- function(ba,ba.klass){
 #' zu ermoeglichen.
 #'
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
-#' @section Note: benoetigt Tabelle \code{bacode}.
+#' @param bacodes: Basistabelle mit Baumartencodes.
 #' @param ba.lab.klass Liste mit Angaben zu Baumartenlabel und Baumartencode \cr
 #'  Beispiel: ba.lab.klass <- list(ba.lab = c("FiTa","DglKiLae","Bu","Ei","BLb",
 #'  "WLb"), ba.code = list(c(10:19,30:39,90:99), c(20:29,40,50,51), c(100),
 #'  c(110,111), c(112:199), c(200:299))).
 #' @return Dataframe-Tabelle mit Baumartengruppen-Nummer und dem entspechenden 
 #'  Baumartengruppen-Label.
-ba.klass.lab.tab.fun <- function(ba.lab.klass){
-   n <-  length(bacode[,1])
-   ba.klass.tab <- data.frame(ICode=bacode$ICode,bagr.nr=rep(0,n))
+ba.klass.lab.tab.fun <- function(ba.lab.klass, bacodes = bacode){
+   n <-  length(bacodes[,1])
+   ba.klass.tab <- data.frame(ICode=bacodes$ICode,bagr.nr=rep(0,n))
    for (i in 1:n){
       ba.klass.tab$bagr.nr[i] <- ba.klass.fun(ba.klass.tab$ICode[i],ba.lab.klass[[2]])
       ba.klass.tab$bagr[i] <- as.character(ba.lab.klass[[1]][ba.klass.tab$bagr.nr[i]])
