@@ -37,7 +37,15 @@ Checking bundeswaldinventur ----------------------------------------------------
 * this is package ‘bundeswaldinventur’ version ‘0.1.0’
 * package encoding: UTF-8
 * checking package namespace information ... OK
-* checking package dependencies ... OK
+* checking package dependencies ...Warning: unable to access index for repository http://CRAN.R-project.org/src/contrib:
+  cannot open URL 'http://CRAN.R-project.org/src/contrib/PACKAGES'
+Warning: unable to access index for repository https://bioconductor.org/packages/3.3/bioc/src/contrib:
+  cannot download all files
+Warning: unable to access index for repository https://bioconductor.org/packages/3.3/data/annotation/src/contrib:
+  cannot download all files
+Warning: unable to access index for repository https://bioconductor.org/packages/3.3/data/experiment/src/contrib:
+  cannot download all files
+ OK
 * checking if this is a source package ... OK
 * checking if there is a namespace ... OK
 * checking for executable files ... OK
@@ -260,14 +268,6 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12: no visible binding for global
 iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12: no visible binding for global
   variable ‘trakte.2’
 mbaf.bagr.alt.bhd.pm.fun: no visible binding for global variable ‘ba’
-ntns.stratum.fun: no visible binding for global variable ‘Tnr’
-ntns.stratum.fun: no visible binding for global variable ‘Enr’
-ntns.stratum.fun: no visible binding for global variable
-  ‘NTNS_F_BaWue_BWI3’
-ntns.stratum.fun: no visible binding for global variable
-  ‘NTNS_F_BaWue_BWI2_natwgBWI3’
-ntns.stratum.fun: no visible binding for global variable
-  ‘NTNS_F_BaWue_BWI2’
 ntns.stratum.fun: no visible binding for global variable ‘ntns’
 ntns.stratum.fun: no visible binding for global variable ‘TNr’
 ntns.stratum.fun: no visible binding for global variable ‘n.ntns’
@@ -361,47 +361,17 @@ stamm.merkmale.bagr.fun: no visible binding for global variable
   ‘trakte.3’
 verbiss.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.bagr.fun: no visible binding for global variable ‘bacode’
-verjg.bagr.fun: no visible binding for global variable ‘tnr’
-verjg.bagr.fun: no visible binding for global variable ‘m’
-verjg.bagr.fun: no visible binding for global variable ‘n’
-verjg.bagrupp.fun: no visible binding for global variable ‘tnr’
-verjg.bagrupp.fun: no visible binding for global variable ‘m’
-verjg.bagrupp.fun: no visible binding for global variable ‘enr’
-verjg.bagrupp.fun: no visible binding for global variable ‘ba’
-verjg.bagrupp.fun: no visible binding for global variable ‘h’
-verjg.bagrupp.fun: no visible binding for global variable ‘oib’
-verjg.bagrupp.fun: no visible binding for global variable ‘nha’
-verjg.bagrupp.fun: no visible binding for global variable ‘ICode’
-verjg.bagrupp.fun: no visible binding for global variable ‘bagr’
-verjg.bagrupp.fun: no visible binding for global variable ‘n’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘tnr’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘m’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘enr’
 verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘ICode’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘BaGr’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘bagr’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘vart’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘baf’
-verjg.kl4.bagrupp.fun: no visible binding for global variable ‘tnr’
-verjg.kl4.bagrupp.fun: no visible binding for global variable ‘m’
-verjg.kl4.bagrupp.fun: no visible binding for global variable ‘enr’
-verjg.kl4.bagrupp.fun: no visible binding for global variable ‘ICode’
-verjg.kl4.bagrupp.fun: no visible binding for global variable ‘BaGr’
-verjg.kl4.bagrupp.fun: no visible binding for global variable ‘bagr’
-verjg.kl4.bagrupp.fun: no visible binding for global variable ‘vart’
-verjg.kl4.bagrupp.fun: no visible binding for global variable ‘baf’
 Undefined global functions or variables:
-  BHD1 BHD2 BNr BaGr ENr Enr ICode NHa1 NHa2 NTNS_F_BaWue_BWI2
-  NTNS_F_BaWue_BWI2_natwgBWI3 NTNS_F_BaWue_BWI3
-  NTNS_F_gr4m_alleBaeume_BWI2 NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3
-  NTNS_F_gr4m_alleBaeume_BWI3 NTNS_F_kl4m_BA_Anteile_BWI2
-  NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 Pk
-  STP StFl1 StFl2 TNr Tnr VolE1 VolE2 VolV1 VolV2 akl alt ba bacode
-  baeume.1 baeume.2 baeume.23 baeume.3 baf bagr bhd bhd.pm bl bnr bwi
-  comma dkl ecken.1 ecken.2 ecken.3 enr group h hbf hbf.ba ibl kreise
-  krs.list m n n.ntns name nha ntns oiB1 oiB2 oib prediction
-  standard_error stfl stp tnr trakte.1 trakte.2 trakte.3 vart volv
+  BHD1 BHD2 BNr BaGr ENr Enr NHa1 NHa2 NTNS_F_gr4m_alleBaeume_BWI2
+  NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3 NTNS_F_gr4m_alleBaeume_BWI3
+  NTNS_F_kl4m_BA_Anteile_BWI2 NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3
+  NTNS_F_kl4m_BA_Anteile_BWI3 Pk STP StFl1 StFl2 TNr Tnr VolE1 VolE2
+  VolV1 VolV2 akl alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3
+  bhd bhd.pm bl bnr bwi comma dkl ecken.1 ecken.2 ecken.3 enr group h
+  hbf hbf.ba ibl kreise krs.list m n n.ntns name nha ntns oiB1 oiB2 oib
+  prediction standard_error stfl stp tnr trakte.1 trakte.2 trakte.3
+  volv
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -4493,15 +4463,15 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
   variable ‘baeume.23’
 VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-... 299 lines ...
+... 261 lines ...
+verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
 Undefined global functions or variables:
-  BHD1 BHD2 BNr BaGr ENr Enr ICode NHa1 NHa2 NTNS_F_BaWue_BWI2
-  NTNS_F_BaWue_BWI2_natwgBWI3 NTNS_F_BaWue_BWI3
-  NTNS_F_gr4m_alleBaeume_BWI2 NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3
-  NTNS_F_gr4m_alleBaeume_BWI3 NTNS_F_kl4m_BA_Anteile_BWI2
-  NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3 NTNS_F_kl4m_BA_Anteile_BWI3 Pk
-  STP StFl1 StFl2 TNr Tnr VolE1 VolE2 VolV1 VolV2 akl alt ba bacode
-  baeume.1 baeume.2 baeume.23 baeume.3 baf bagr bhd bhd.pm bl bnr bwi
-  comma dkl ecken.1 ecken.2 ecken.3 enr group h hbf hbf.ba ibl kreise
-  krs.list m n n.ntns name nha ntns oiB1 oiB2 oib prediction
-  standard_error stfl stp tnr trakte.1 trakte.2 trakte.3 vart volv
+  BHD1 BHD2 BNr BaGr ENr Enr NHa1 NHa2 NTNS_F_gr4m_alleBaeume_BWI2
+  NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3 NTNS_F_gr4m_alleBaeume_BWI3
+  NTNS_F_kl4m_BA_Anteile_BWI2 NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3
+  NTNS_F_kl4m_BA_Anteile_BWI3 Pk STP StFl1 StFl2 TNr Tnr VolE1 VolE2
+  VolV1 VolV2 akl alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3
+  bhd bhd.pm bl bnr bwi comma dkl ecken.1 ecken.2 ecken.3 enr group h
+  hbf hbf.ba ibl kreise krs.list m n n.ntns name nha ntns oiB1 oiB2 oib
+  prediction standard_error stfl stp tnr trakte.1 trakte.2 trakte.3
+  volv

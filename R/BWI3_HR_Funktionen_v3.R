@@ -2692,14 +2692,14 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   {
     verj.t.bagr <- verj.t[verj.t[["bagr"]] == bagr.list[i], TRUE]
     #Gesamtzahlen nach BAGR
-    xy <- merge(subset(trakte,select=c(tnr,m)),
-                subset(verj.t.bagr, select=c(tnr,n)),by="tnr",all.x=T)
+    xy <- merge(trakte[TRUE, c("tnr", "m")],
+                verj.t.bagr[TRUE,  c("tnr", "n")],by="tnr",all.x=T)
     xy[is.na(xy)] <- 0
     vj.bagr <- r.variance.fun(xy[,2:3],length(trakte[,1]))
     n.verj.bagr[1,1,i] <- vj.bagr$R.xy * A        
     n.verj.bagr[1,2,i] <- sqrt(vj.bagr$V.R.xy)* A 
     #Baumartenanteile in Prozent (Stückzahl BAGR/Gesamtstückzahl)
-    xy <- merge(verj.t.a,subset(xy,select=c(tnr,n)),by="tnr",all.y=T)
+    xy <- merge(verj.t.a,xy[TRUE, c("tnr", "n")],by="tnr",all.y=T)
     xy[is.na(xy)] <- 0
     vj.proz.bagr <- r.variance.fun(xy[,2:3],length(trakte[,1])) 
     n.verj.bagr[2,1,i] <- vj.proz.bagr$R.xy * 100        #Prozent        
@@ -2709,7 +2709,7 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   #-------------------------------------------
   #Über alle Baumarten
   
-  verj.t.a <- merge(subset(trakte,select=c(tnr,m)),verj.t.a,by="tnr",all.x=T) 
+  verj.t.a <- merge(trakte[TRUE, c("tnr", "m")],verj.t.a,by="tnr",all.x=T) 
   verj.t.a[is.na(verj.t.a)] <- 0 
   r.list <- r.variance.fun(cbind(verj.t.a$m,verj.t.a$n.ges),length(trakte[,1]))
   n.verj.bagr[1,1,(n.bagr+1)] <- r.list$R.xy*A
@@ -2766,7 +2766,7 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
+  y <- merge(trakte[TRUE, c("tnr", "m")],y,by=c("tnr"),all.x=T)
   y[is.na(y)] <- 0
   r.list <- r.variance.fun(y[,2:3],length(trakte[,1]))
   T.hbf <- r.list$R.xy*A
@@ -2778,8 +2778,8 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   inv <- ifelse(inv>1,2,inv)
   names(verj) <- sub(inv,names(verj),replacement="")
   #Attribute und Untermenge des Stratums aus <verj> auswählen
-  verj.s <- merge(subset(verj,select=c(tnr,enr,ba,h,oib,nha)),
-                    subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"))
+  verj.s <- merge(verj[TRUE, c("tnr", "enr", "ba", "h", "oib", "nha")],
+                    stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
                     
   #Klassifizierung durchführen
   #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
@@ -2788,7 +2788,7 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   n.bagr <- length(ba.grupp[[1]])
   bagr.list <- ba.grupp[[1]]
   #BA-Gruppe dazu spielen
-  verj.s <- merge(verj.s, subset(bagr.tab,select=c(ICode,bagr)),
+  verj.s <- merge(verj.s, bagr.tab[TRUE, c("ICode", "bagr")],
                                   by.x="ba",by.y="ICode",all.x=T)
   verj.s[is.na(verj.s)] <- 0
   names(verj.s)[7]<- "bagr"                            
@@ -2813,16 +2813,16 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   
   for (i in 1:n.bagr)
   {
-    verj.t.bagr <- subset(verj.t,bagr==bagr.list[i])
+    verj.t.bagr <- verj.t[verj.t[["bagr"]] == bagr.list[i], TRUE]
     #Gesamtzahlen nach BAGR
-    xy <- merge(subset(trakte,select=c(tnr,m)),
-                subset(verj.t.bagr, select=c(tnr,n)),by="tnr",all.x=T)
+    xy <- merge(trakte[TRUE, c("tnr", "m")],
+                verj.t.bagr[TRUE,  c("tnr", "n")],by="tnr",all.x=T)
     xy[is.na(xy)] <- 0
     vj.bagr <- r.variance.fun(xy[,2:3],length(trakte[,1]))
     n.verj.bagr[1,1,i] <- vj.bagr$R.xy * A        
     n.verj.bagr[1,2,i] <- sqrt(vj.bagr$V.R.xy)* A 
     #Baumartenanteile in Prozent (Stückzahl BAGR/Gesamtstückzahl)
-    xy <- merge(verj.t.a,subset(xy,select=c(tnr,n)),by="tnr",all.y=T)
+    xy <- merge(verj.t.a,xy[TRUE, c("tnr", "n")],by="tnr",all.y=T)
     xy[is.na(xy)] <- 0
     vj.proz.bagr <- r.variance.fun(xy[,2:3],length(trakte[,1])) 
     n.verj.bagr[2,1,i] <- vj.proz.bagr$R.xy * 100        #Prozent        
@@ -2832,7 +2832,7 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   #-------------------------------------------
   #Über alle Baumarten
   
-  verj.t.a <- merge(subset(trakte,select=c(tnr,m)),verj.t.a,by="tnr",all.x=T) 
+  verj.t.a <- merge(trakte[TRUE, c("tnr", "m")],verj.t.a,by="tnr",all.x=T) 
   verj.t.a[is.na(verj.t.a)] <- 0 
   r.list <- r.variance.fun(cbind(verj.t.a$m,verj.t.a$n.ges),length(trakte[,1]))
   n.verj.bagr[1,1,(n.bagr+1)] <- r.list$R.xy*A
@@ -2884,7 +2884,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
+  y <- merge(trakte[TRUE, c("tnr", "m")],y,by=c("tnr"),all.x=T)
   y[is.na(y)] <- 0
   r.list <- r.variance.fun(y[,2:3],length(trakte[,1]))
   T.hbf <- r.list$R.xy*A
@@ -2899,10 +2899,10 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   
   #Attribute und Untermenge des Stratums aus <verj.kl4> auswählen
   verj.kl4.s <- 
-          merge(verj.kl4, subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"))
+          merge(verj.kl4, stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
    
   #Baumartengruppe hinzufügen
-  verj.kl4.s <- merge(verj.kl4.s,subset(bacode,select=c(ICode,BaGr)),by.x="ba",
+  verj.kl4.s <- merge(verj.kl4.s,bacode[TRUE, c("ICode", "BaGr")],by.x="ba",
                       by.y="ICode",all.x=T)
   names(verj.kl4.s)[11] <- "bagr"
   #Nach Trakt, BAGR und Verjüngungsart aggregieren
@@ -2925,12 +2925,13 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   for (i in 1:n.bagr)
   {
     #BAGR
-    vj.kl4.t.bagr <- subset(vj.kl4.t,bagr==bagr.list[i])
+    vj.kl4.t.bagr <- vj.kl4.t[vj.kl4.t[["bagr"]]==bagr.list[i], TRUE]
     #Nach Verjüngungsarten
     for (j in 1:n.vart)
     {
-      vj.kl4.t.vart <- subset(vj.kl4.t.bagr,vart==vart.list[j],select=c(tnr,baf))
-      xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.vart,by="tnr",all.x=T)
+      vj.kl4.t.vart <- vj.kl4.t.bagr[vj.kl4.t.bagr[["vart"]] == vart.list[j], 
+                                     c("tnr", "baf")]
+      xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.vart,by="tnr",all.x=T)
       xy[is.na(xy)] <- 0
       r.list <- r.variance.fun(xy[,2:3],length(trakte[,1]))
       vj.kl4.baf.bagr.vart[1,j,i] <- r.list$R.xy * A
@@ -2940,7 +2941,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
       vj.kl4.t.a <- stats::aggregate(vj.kl4.t$baf[vj.kl4.t$vart==vart.list[j]],
                       by=list(vj.kl4.t$tnr[vj.kl4.t$vart==vart.list[j]]),sum)
       names(vj.kl4.t.a) <- c("tnr","baf")
-      xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.a,by="tnr",all.x=T)
+      xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.a,by="tnr",all.x=T)
       xy[is.na(xy)] <- 0
       r.list <- r.variance.fun(xy[,2:3],length(trakte[,1]))
       vj.kl4.baf.bagr.vart[1,j,(n.bagr+1)] <- r.list$R.xy * A
@@ -2949,7 +2950,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
     #Alle Verjüngungsarten zusammen nach BA-Gruppe
     vj.kl4.t.a <- stats::aggregate(vj.kl4.t.bagr$baf,by=list(vj.kl4.t.bagr$tnr),sum)
     names(vj.kl4.t.a) <- c("tnr","baf")
-    xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.a,by="tnr",all.x=T)
+    xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.a,by="tnr",all.x=T)
     xy[is.na(xy)] <- 0
     r.list <- r.variance.fun(xy[,2:3],length(trakte[,1]))
     vj.kl4.baf.bagr.vart[1,(n.vart+1),i] <- r.list$R.xy * A
@@ -2960,7 +2961,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   #Alle Verjüngungsarten und alle Baumartengruppen
   vj.kl4.t.a <- stats::aggregate(vj.kl4.t$baf,by=list(vj.kl4.t$tnr),sum)
   names(vj.kl4.t.a) <- c("tnr","baf")
-  xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.a,by="tnr",all.x=T)
+  xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.a,by="tnr",all.x=T)
   xy[is.na(xy)] <- 0
   r.list <- r.variance.fun(xy[,2:3],length(trakte[,1]))
   vj.kl4.baf.bagr.vart[1,(n.vart+1),(n.bagr+1)] <- r.list$R.xy * A
@@ -3016,7 +3017,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
                 )
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
+  y <- merge(trakte[TRUE, c("tnr", "m")],y,by=c("tnr"),all.x=T)
   y[is.na(y)] <- 0
   r.list <- r.variance.fun(y[,2:3],length(trakte[,1]))
   T.hbf <- r.list$R.xy*A
@@ -3031,7 +3032,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   
   #Attribute und Untermenge des Stratums aus <verj.kl4> auswählen
   verj.kl4.s <- 
-          merge(verj.kl4, subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"))
+          merge(verj.kl4, stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
    
   #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
@@ -3039,7 +3040,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   #Attribut <bagr> in <BaGr>
   names(bagr.tab)[3] <- "BaGr"
   #BA-Gruppe dazu spielen
-  verj.kl4.s <- merge(verj.kl4.s, subset(bagr.tab,select=c(ICode,BaGr)),
+  verj.kl4.s <- merge(verj.kl4.s, bagr.tab[TRUE, c("ICode", "BaGr")],
                                   by.x="ba",by.y="ICode",all.x=T)
   verj.kl4.s[is.na(verj.kl4.s)] <- 0
   n.bagr <- length(ba.grupp[[1]])
@@ -3066,12 +3067,13 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   for (i in 1:n.bagr)
   {
     #BAGR
-    vj.kl4.t.bagr <- subset(vj.kl4.t,bagr==bagr.list[i])
+    vj.kl4.t.bagr <- vj.kl4.t[vj.kl4.t[["bagr"]] == bagr.list[i], TRUE]
     #Nach Verjüngungsarten
     for (j in 1:n.vart)
     {
-      vj.kl4.t.vart <- subset(vj.kl4.t.bagr,vart==vart.list[j],select=c(tnr,baf))
-      xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.vart,by="tnr",all.x=T)
+      vj.kl4.t.vart <- vj.kl4.t.bagr[vj.kl4.t.bagr[["vart"]] == vart.list[j],
+                                     c("tnr", "baf")]
+      xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.vart,by="tnr",all.x=T)
       xy[is.na(xy)] <- 0
       r.list <- r.variance.fun(xy[,2:3],length(trakte[,1]))
       vj.kl4.baf.bagr.vart[1,j,i] <- r.list$R.xy * A
@@ -3087,7 +3089,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
                    error = function(e) return(data.frame(NA, 0))
                    )
       names(vj.kl4.t.a) <- c("tnr","baf")
-      xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.a,by="tnr",all.x=T)
+      xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.a,by="tnr",all.x=T)
       xy[is.na(xy)] <- 0
       r.list <- r.variance.fun(xy[,2:3],length(trakte[,1]))
       vj.kl4.baf.bagr.vart[1,j,(n.bagr+1)] <- r.list$R.xy * A
@@ -3099,7 +3101,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
                    error = function(e) return(data.frame(NA, 0))
                    )
     names(vj.kl4.t.a) <- c("tnr","baf")
-    xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.a,by="tnr",all.x=T)
+    xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.a,by="tnr",all.x=T)
     xy[is.na(xy)] <- 0
     r.list <- r.variance.fun(xy[,2:3],length(trakte[,1]))
     vj.kl4.baf.bagr.vart[1,(n.vart+1),i] <- r.list$R.xy * A
@@ -3112,7 +3114,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
                 error = function(e) return(data.frame(NA, 0))
                 )
   names(vj.kl4.t.a) <- c("tnr","baf")
-  xy <- merge(subset(trakte,select=c(tnr,m)),vj.kl4.t.a,by="tnr",all.x=T)
+  xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.a,by="tnr",all.x=T)
   xy[is.na(xy)] <- 0
   r.list <- r.variance.fun(xy[,2:3],length(trakte[,1]))
   vj.kl4.baf.bagr.vart[1,(n.vart+1),(n.bagr+1)] <- r.list$R.xy * A
@@ -3156,18 +3158,19 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
 ntns.stratum.fun <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg){
   stratum <- stratum.fun(auswahl,ecken)
   if (bwi==3){
-    stratum <- merge(stratum,subset(ntns.te,select=c(Tnr,Enr,NTNS_F_BaWue_BWI3)),
+    stratum <- merge(stratum,ntns.te[TRUE, c("Tnr", "Enr", "NTNS_F_BaWue_BWI3")],
             by.x=c("TNr","ENr"),by.y=c("Tnr","Enr"),all.x=T)
     NTNS <- "BWI 3"
   } else{ #BWI 2: Fallunterscheidung nach verwendeten nat. WG
     if (natwg==3){
-        stratum <- merge(stratum,subset(ntns.te,
-              select=c(Tnr,Enr,NTNS_F_BaWue_BWI2_natwgBWI3)),
+        stratum <- merge(stratum,
+                         ntns.te[TRUE, 
+                                 c("Tnr", "Enr", "NTNS_F_BaWue_BWI2_natwgBWI3")],
               by.x=c("TNr","ENr"),by.y=c("Tnr","Enr"),all.x=T)
         NTNS <- "BWI 2 mit nat. WG der BWI 3"
       } else{ #Nat. WG der BWI 2
-        stratum <- merge(stratum,subset(ntns.te,
-              select=c(Tnr,Enr,NTNS_F_BaWue_BWI2)),
+        stratum <- merge(stratum,
+                         ntns.te[TRUE, c("Tnr", "Enr", "NTNS_F_BaWue_BWI2")],
               by.x=c("TNr","ENr"),by.y=c("Tnr","Enr"),all.x=T)
         NTNS <- "BWI 2 mit nat. WG der BWI 2"
       }
@@ -3191,7 +3194,7 @@ ntns.stratum.fun <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg){
   
   for (i in 1:6){
     if (i < 6){
-      xy.ntns.i.t <- subset(xy.ntns.t,ntns==i,select=c(TNr,n.ntns))
+      xy.ntns.i.t <- xy.ntns.t[xy.ntns.t[["ntns"]] == i,c("TNr", "n.ntns")]
     } else{  #OHNE NTNS-Angabe
       xy.ntns.i.t <- subset(xy.ntns.t,!ntns %in% c(1:5),select=c(TNr,n.ntns))
     }
