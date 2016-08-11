@@ -415,7 +415,12 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   #Anzahl der Trakte im Stratum
   n.t.s <- length(y[,1])
   #Anfügen der Anzahl Traktecken (Wald und Nicht-Wald)
-  y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
+  y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr")) 
+  # this was:  
+  #  y <- merge(y,subset(trakte,select=c(tnr,m),by=c(tnr)))
+  # where the ellipsis of subset() swallows up the misplaces by argument (meant 
+  # for merge())! 
+
   #Alle Traktecken im Inventurgebiet
   x <- trakte$m
   #n Trakte im Inventurgebiet ist konstant
@@ -807,6 +812,11 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   n.t.s <- length(y[,1])
   #Anfügen der Anzahl Traktecken (Wald und Nicht-Wald)
   y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
+  # this was:  
+  #  y <- merge(y,subset(trakte,select=c(tnr,m),by=c(tnr)))
+  # where the ellipsis of subset() swallows up the misplaces by argument (meant 
+  # for merge())! 
+
   #Alle Traktecken im Inventurgebiet
   x <- trakte$m
   #n Trakte im Inventurgebiet ist konstant
@@ -1202,10 +1212,10 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
 
   #gemeinsames Netz Land BW BWI 2 und 3 auf begehbarem Holzboden
   ecken.23.hb <- merge(
-      subset(ecken.3.s, select=c(TNr,ENr)),
-      subset(ecken.2.s,select=c(TNr,ENr)),
+      ecken.3.s[TRUE,  c("TNr", "ENr")],
+      ecken.2.s[TRUE, c("TNr", "ENr")],
       by=c("TNr","ENr"))
-  ecken.23.hb <- merge(ecken.23.hb,subset(ecken.3,select=c(TNr,ENr,PL,PLkal)),
+  ecken.23.hb <- merge(ecken.23.hb,ecken.3[TRUE, c("TNr", "ENr", "PL", "PLkal")],
       by=c("TNr","ENr"))
 
   #-----------------------------------------------------------------------------
@@ -1224,15 +1234,21 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
   names(bagr.tab)[3] <- "BaGr"
 
   #Baumartengruppen hinzufügen
-  baeume.3.s <- merge(subset(baeume.3,select=c(TNr,ENr,STP,BNr,Entf,Pk,BA,
-        Alt1,Alt2,BHD1,BHD2,D031,D032,H1,H2,VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,
-        StFl2,NHa2)),subset(bagr.tab,select=c(ICode,BaGr)),by.x="BA",
-        by.y="ICode",all.x=T)
+  baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Entf", "Pk",
+                                       "BA", "Alt1", "Alt2", "BHD1", "BHD2", 
+                                       "D031", "D032", "H1", "H2", "VolV1", 
+                                       "VolV2", "VolE1", "VolE2", "oiB1", 
+                                       "oiB2", "StFl2", "NHa2")],
+                      bagr.tab[TRUE, c("ICode", "BaGr")],
+                      by.x = "BA", by.y = "ICode", all.x = TRUE)
 
-  baeume.2.s <- merge(subset(baeume.23,select=c(TNr,ENr,STP,BNr,Entf,Pk,BA,
-        Alt1,Alt2,BHD1,BHD2,D031,D032,H1,H2,VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,
-        StFl1,NHa1)),subset(bagr.tab,select=c(ICode,BaGr)),by.x="BA",
-        by.y="ICode",all.x=T)
+  baeume.2.s <- merge(baeume.23[TRUE, c("TNr", "ENr", "STP", "BNr", "Entf", 
+                                        "Pk", "BA", "Alt1", "Alt2", "BHD1", 
+                                        "BHD2", "D031", "D032", "H1", "H2", 
+                                        "VolV1", "VolV2", "VolE1", "VolE2", 
+                                        "oiB1", "oiB2", "StFl1", "NHa1")],
+                      bagr.tab[TRUE, c("ICode", "BaGr")],
+                      by.x = "BA", by.y = "ICode", all.x = TRUE)
 
   #Auf gemeinsames Netz reduzieren!
   baeume.3.s <- merge(baeume.3.s,ecken.23.hb,by=c("TNr","ENr"))
@@ -1246,7 +1262,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
   hb.te <- stats::aggregate(baeume.3.s$StFl2/10000,
                         by=list(baeume.3.s$TNr,baeume.3.s$ENr),sum)
   names(hb.te) <- c("TNr","ENr","m_HB_s")
-  ecken <- merge(hb.te,subset(ecken.23.hb,select=c(TNr,ENr,PL,PLkal)),
+  ecken <- merge(hb.te,ecken.23.hb[TRUE, c("TNr", "ENr", "PL", "PLkal")],
                     by=c("TNr","ENr") )
   #Nach T
   hb.t <- stats::aggregate(baeume.3.s$StFl2/10000,by=list(baeume.3.s$TNr),sum)
@@ -1361,22 +1377,26 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
         #kä/15.12.2014
         if (i < n.bagr)  #*
         {
-          iv.es.a.t <- subset(iv.es.a.t.bagr.akl.dkl,
-                      BaGr==bagr.list[i]&Akl==akl.lab[j]&Dkl==dkl.lab[k])
+          iv.es.a.t <- iv.es.a.t.bagr.akl.dkl[
+                      iv.es.a.t.bagr.akl.dkl[["BaGr"]] == bagr.list[i] &
+                      iv.es.a.t.bagr.akl.dkl[["Akl"]] == akl.lab[j] &
+                      iv.es.a.t.bagr.akl.dkl[["Dkl"]] == dkl.lab[k], TRUE]
         } else           #*
         { #Alle BA  09.02.2015: ...alle... für BaGr AlleBA
-          iv.es.a.t <- subset(iv.es.a.t.alle.akl.dkl,
-                      Akl==akl.lab[j]&Dkl==dkl.lab[k])
+          iv.es.a.t <- iv.es.a.t.alle.akl.dkl[
+                                              iv.es.a.t.alle.akl.dkl[["Akl"]] == akl.lab[j] &
+                                              iv.es.a.t.alle.akl.dkl[["Dkl"]] == dkl.lab[k], TRUE]
         } #*
 
         #Anzahl Trakte mit Beobachtungen
         iVB.bagr.akl.dkl[16,1,i,j,k] <- length(iv.es.a.t[,1])
         #-----------------------------------------------------------------------
-        iv.bil.t <- subset(iv.es.a.t,select=
-                c(TNr,mBAF,mBAF.oLK,mPL,mPLkal,iV.DhmR,iV.DhmR.HB,iV.EoR,iB,
-                V.DhmR.A,V.DhmR.HB.A,V.EoR.A,B.A))
+        iv.bil.t <- iv.es.a.t[TRUE, c("TNr", "mBAF", "mBAF.oLK", "mPL", "mPLkal",
+                                     "iV.DhmR", "iV.DhmR.HB", "iV.EoR", "iB", 
+                                     "V.DhmR.A", "V.DhmR.HB.A", "V.EoR.A", 
+                                     "B.A")]
         #Traktecken Wald/Nichtwald hinzufügen
-        iv.bil.t <- merge(subset(trakte,select=c(TNr,m,m_HB)),iv.bil.t,
+        iv.bil.t <- merge(trakte[TRUE, c("TNr", "m", "m_HB")],iv.bil.t,
                           by=c("TNr"),all.x=T)
         #NA eliminieren
         iv.bil.t[is.na(iv.bil.t)] <- 0
@@ -1557,11 +1577,11 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
   #gemeinsames Netz Land BW BWI 1 und 2 (in der Logik BWI 2 zu 3)
   #auf begehbarem Holzboden
   ecken.23.hb <- merge(
-      subset(ecken.3.s, select=c(TNr,ENr)),
-      subset(ecken.2.s,select=c(TNr,ENr)),
+      ecken.3.s[TRUE,  c("TNr", "ENr")],
+      ecken.2.s[TRUE, c("TNr", "ENr")],
       by=c("TNr","ENr"))
   #Anpassung BWI 2    <ecken.2> statt <ecken.3>
-  ecken.23.hb <- merge(ecken.23.hb,subset(ecken.2,select=c(TNr,ENr,PL,PLkal)),
+  ecken.23.hb <- merge(ecken.23.hb,ecken.2[TRUE, c("TNr", "ENr", "PL", "PLkal")],
       by=c("TNr","ENr"))
 
   #-----------------------------------------------------------------------------
@@ -1576,15 +1596,21 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
   names(bagr.tab)[3] <- "BaGr"
 
   #Baumartengruppen hinzufügen
-  baeume.3.s <- merge(subset(baeume.3,select=c(TNr,ENr,STP,BNr,Entf,Pk,BA,
-        Alt1,Alt2,BHD1,BHD2,D031,D032,H1,H2,VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,
-        StFl2,NHa2)),subset(bagr.tab,select=c(ICode,BaGr)),by.x="BA",
-        by.y="ICode",all.x=T)
+  baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Entf", "Pk",
+                                       "BA", "Alt1", "Alt2", "BHD1", "BHD2", 
+                                       "D031", "D032", "H1", "H2", "VolV1", 
+                                       "VolV2", "VolE1", "VolE2", "oiB1", "oiB2", 
+                                       "StFl2", "NHa2")],
+                      bagr.tab[TRUE, c("ICode", "BaGr")],
+                      by.x = "BA", by.y = "ICode",all.x = TRUE)
 
-  baeume.2.s <- merge(subset(baeume.23,select=c(TNr,ENr,STP,BNr,Entf,Pk,BA,
-        Alt1,Alt2,BHD1,BHD2,D031,D032,H1,H2,VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,
-        StFl1,NHa1)),subset(bagr.tab,select=c(ICode,BaGr)),by.x="BA",
-        by.y="ICode",all.x=T)
+  baeume.2.s <- merge(baeume.23[TRUE, c("TNr", "ENr", "STP", "BNr", "Entf", "Pk",
+                                        "BA", "Alt1", "Alt2", "BHD1", "BHD2", 
+                                        "D031", "D032", "H1", "H2", "VolV1", 
+                                        "VolV2", "VolE1", "VolE2", "oiB1", 
+                                        "oiB2", "StFl1", "NHa1")],
+                      bagr.tab[TRUE, c("ICode", "BaGr")],
+                      by.x = "BA", by.y = "ICode", all.x = TRUE)
 
   #Auf gemeinsames Netz reduzieren!
   baeume.3.s <- merge(baeume.3.s,ecken.23.hb,by=c("TNr","ENr"))
@@ -1598,7 +1624,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
   hb.te <- stats::aggregate(baeume.3.s$StFl2/10000,
                         by=list(baeume.3.s$TNr,baeume.3.s$ENr),sum)
   names(hb.te) <- c("TNr","ENr","m_HB_s")
-  ecken <- merge(hb.te,subset(ecken.23.hb,select=c(TNr,ENr,PL,PLkal)),
+  ecken <- merge(hb.te,ecken.23.hb[TRUE, c("TNr", "ENr", "PL", "PLkal")],
                     by=c("TNr","ENr") )
   #Nach T
   hb.t <- stats::aggregate(baeume.3.s$StFl2/10000,by=list(baeume.3.s$TNr),sum)
@@ -1701,17 +1727,20 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
       for (k in 1:D.k)
       {
 
-        iv.es.a.t <- subset(iv.es.a.t.bagr.akl.dkl,
-                      BaGr==bagr.list[i]&Akl==akl.lab[j]&Dkl==dkl.lab[k])
+        iv.es.a.t <- iv.es.a.t.bagr.akl.dkl[
+                      iv.es.a.t.bagr.akl.dkl[["BaGr"]] == bagr.list[i] &
+                      iv.es.a.t.bagr.akl.dkl[["Akl"]] == akl.lab[j] &
+                      iv.es.a.t.bagr.akl.dkl[["Dkl"]] == dkl.lab[k], TRUE]
 
         #Anzahl Trakte mit Beobachtungen
         iVB.bagr.akl.dkl[16,1,i,j,k] <- length(iv.es.a.t[,1])
         #-----------------------------------------------------------------------
-        iv.bil.t <- subset(iv.es.a.t,select=
-                c(TNr,mBAF,mBAF.oLK,mPL,mPLkal,iV.DhmR,iV.DhmR.HB,iV.EoR,iB,
-                V.DhmR.A,V.DhmR.HB.A,V.EoR.A,B.A))
+        iv.bil.t <- iv.es.a.t[TRUE, c("TNr", "mBAF", "mBAF.oLK", "mPL", "mPLkal", 
+                                     "iV.DhmR", "iV.DhmR.HB", "iV.EoR", "iB", 
+                                     "V.DhmR.A", "V.DhmR.HB.A", "V.EoR.A", "B.A"
+                                     )]
         #Traktecken Wald/Nichtwald hinzufügen
-        iv.bil.t <- merge(subset(trakte,select=c(TNr,m,m_HB)),iv.bil.t,
+        iv.bil.t <- merge(trakte[TRUE, c("TNr", "m", "m_HB")],iv.bil.t,
                           by=c("TNr"),all.x=T)
         #NA eliminieren
         iv.bil.t[is.na(iv.bil.t)] <- 0
@@ -1891,10 +1920,10 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
 
   #gemeinsames Netz Land BW BWI 2 und 3 auf begehbarem Holzboden
   ecken.23.hb <- merge(
-      subset(ecken.3.s, select=c(TNr,ENr)),
-      subset(ecken.2.s,select=c(TNr,ENr)),
+      ecken.3.s[TRUE,  c("TNr", "ENr")],
+      ecken.2.s[TRUE, c("TNr", "ENr")],
       by=c("TNr","ENr"))
-  ecken.23.hb <- merge(ecken.23.hb,subset(ecken.3,select=c(TNr,ENr,PL,PLkal)),
+  ecken.23.hb <- merge(ecken.23.hb,ecken.3[TRUE, c("TNr", "ENr", "PL", "PLkal")],
       by=c("TNr","ENr"))
 
   #-----------------------------------------------------------------------------
@@ -1913,15 +1942,21 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
   names(bagr.tab)[3] <- "BaGr"
 
   #Baumartengruppen hinzufügen
-  baeume.3.s <- merge(subset(baeume.3,select=c(TNr,ENr,STP,BNr,Entf,Pk,BA,
-        Alt1,Alt2,BHD1,BHD2,D031,D032,H1,H2,VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,
-        StFl2,NHa2)),subset(bagr.tab,select=c(ICode,BaGr)),by.x="BA",
-        by.y="ICode",all.x=T)
+  baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Entf", "Pk",
+                                       "BA", "Alt1", "Alt2", "BHD1", "BHD2", 
+                                       "D031", "D032", "H1", "H2", "VolV1", 
+                                       "VolV2", "VolE1", "VolE2", "oiB1", "oiB2", 
+                                       "StFl2", "NHa2")],
+                      bagr.tab[TRUE, c("ICode", "BaGr")],
+                      by.x = "BA", by.y = "ICode", all.x = T)
 
-  baeume.2.s <- merge(subset(baeume.23,select=c(TNr,ENr,STP,BNr,Entf,Pk,BA,
-        Alt1,Alt2,BHD1,BHD2,D031,D032,H1,H2,VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,
-        StFl1,NHa1)),subset(bagr.tab,select=c(ICode,BaGr)),by.x="BA",
-        by.y="ICode",all.x=T)
+  baeume.2.s <- merge(baeume.23[TRUE, c("TNr", "ENr", "STP", "BNr", "Entf", "Pk",
+                                        "BA", "Alt1", "Alt2", "BHD1", "BHD2", 
+                                        "D031", "D032", "H1", "H2", "VolV1", 
+                                        "VolV2", "VolE1", "VolE2", "oiB1", 
+                                        "oiB2", "StFl1", "NHa1")],
+                      bagr.tab[TRUE, c("ICode", "BaGr")],
+                      by.x = "BA", by.y = "ICode", all.x = T)
 
   #Auf gemeinsames Netz reduzieren!
   baeume.3.s <- merge(baeume.3.s,ecken.23.hb,by=c("TNr","ENr"))
@@ -1935,7 +1970,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
   hb.te <- stats::aggregate(baeume.3.s$StFl2/10000,
                         by=list(baeume.3.s$TNr,baeume.3.s$ENr),sum)
   names(hb.te) <- c("TNr","ENr","m_HB_s")
-  ecken <- merge(hb.te,subset(ecken.23.hb,select=c(TNr,ENr,PL,PLkal)),
+  ecken <- merge(hb.te,ecken.23.hb[TRUE, c("TNr", "ENr", "PL", "PLkal")],
                     by=c("TNr","ENr") )
   #Nach T
   hb.t <- stats::aggregate(baeume.3.s$StFl2/10000,by=list(baeume.3.s$TNr),sum)
@@ -2049,23 +2084,27 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
         #kä/15.12.2014
         if (i < n.bagr)  #*
         {
-          iv.es.a.t <- subset(iv.es.a.t.bagr.akl.dkl,
-                      BaGr==bagr.list[i]&Akl==akl.lab[j]&Dkl==dkl.lab[k])
+          iv.es.a.t <- iv.es.a.t.bagr.akl.dkl[
+                      iv.es.a.t.bagr.akl.dkl[["BaGr"]] == bagr.list[i] &
+                      iv.es.a.t.bagr.akl.dkl[["Akl"]] == akl.lab[j] &
+                      iv.es.a.t.bagr.akl.dkl[["Dkl"]] == dkl.lab[k], TRUE]
         } else           #*
         { #Alle BA   kä/27.01.2015
-          iv.es.a.t <- subset(iv.es.a.t.alle.akl.dkl,
-                      Akl==akl.lab[j]&Dkl==dkl.lab[k])
+          iv.es.a.t <- iv.es.a.t.alle.akl.dkl[
+                      iv.es.a.t.alle.akl.dkl[["Akl"]] == akl.lab[j] & 
+                      iv.es.a.t.alle.akl.dkl[["Dkl"]] == dkl.lab[k], TRUE]
         }
 
         #Anzahl Trakte mit Beobachtungen
         #+++ Dim 16 -> 19
         iVB.bagr.akl.dkl[19,1,i,j,k] <- length(iv.es.a.t[,1])
         #-----------------------------------------------------------------------
-        iv.bil.t <- subset(iv.es.a.t,select=
-                c(TNr,mBAF,mBAF.oLK,mPL,mPLkal,iV.DhmR,iV.DhmR.HB,iV.EoR,iB,iG,
-                V.DhmR.A,V.DhmR.HB.A,V.EoR.A,B.A,G.A))
+        iv.bil.t <- iv.es.a.t[TRUE, c("TNr", "mBAF", "mBAF.oLK", "mPL", "mPLkal", 
+                                     "iV.DhmR", "iV.DhmR.HB", "iV.EoR", "iB", 
+                                     "iG", "V.DhmR.A", "V.DhmR.HB.A", "V.EoR.A", 
+                                     "B.A", "G.A")]
         #Traktecken Wald/Nichtwald hinzufügen
-        iv.bil.t <- merge(subset(trakte,select=c(TNr,m,m_HB)),iv.bil.t,
+        iv.bil.t <- merge(trakte[TRUE, c("TNr", "m", "m_HB")],iv.bil.t,
                           by=c("TNr"),all.x=T)
         #NA eliminieren
         iv.bil.t[is.na(iv.bil.t)] <- 0
@@ -2222,7 +2261,7 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
+  y <- merge(trakte[TRUE, c("tnr", "m")],y,by=c("tnr"),all.x=T)
   y[is.na(y)] <- 0
   r.list <- r.variance.fun(y[,2:3],length(trakte[,1]))
   T.hbf <- r.list$R.xy*A
@@ -2234,13 +2273,14 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   inv <- ifelse(inv>1,2,inv)
   names(verj) <- sub(inv,names(verj),replacement="")
   #Attribute und Untermenge des Stratums aus <verj> auswählen
-  verj.s.bis130 <- merge(subset(verj,h <1.3,select=c(tnr,enr,ba,nha,biss)),
-                    subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"))
+  verj.s.bis130 <- merge(verj[verj[["h"]] < 1.3, 
+                         c("tnr", "enr", "ba", "nha", "biss")],
+                    stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
                     
   bagr.list <- c("FI","TA","DGL","KI","LAE","BU","EI","ALH","ALN")
   n.bagr <- 9
   #Baumartengruppen hinzufügen
-  verj.s.bis130 <- merge(verj.s.bis130, subset(bacode,select=c(ICode,BaGr)),
+  verj.s.bis130 <- merge(verj.s.bis130, bacode[TRUE, c("ICode", "BaGr")],
                               by.x="ba",by.y="ICode",all.x=T)
                               
   #Verbiss auf Traktecke aggregieren, differenziert nach <Biss> 1 oder 2
@@ -2293,7 +2333,7 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   
   for (i in 1:n.bagr)
   {
-    verbiss.t.bagr <- subset(verbiss.t,BaGr==bagr.list[i])
+    verbiss.t.bagr <- verbiss.t[verbiss.t[["BaGr"]] == bagr.list[i], TRUE]
     
     for (j in 1:4)
     {
@@ -2415,7 +2455,7 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
+  y <- merge(trakte[TRUE, c("tnr", "m")],y,by=c("tnr"),all.x=T)
   y[is.na(y)] <- 0
   r.list <- r.variance.fun(y[,2:3],length(trakte[,1]))
   T.hbf <- r.list$R.xy*A
@@ -2427,8 +2467,9 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   inv <- ifelse(inv>1,2,inv)
   names(verj) <- sub(inv,names(verj),replacement="")
   #Attribute und Untermenge des Stratums aus <verj> auswählen
-  verj.s.bis130 <- merge(subset(verj,h <1.3,select=c(tnr,enr,ba,nha,biss)),
-                    subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"))
+  verj.s.bis130 <- merge(verj[verj[["h"]] < 1.3, 
+                         c("tnr", "enr", "ba", "nha", "biss")],
+                    stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
 
   #Klassifizierung durchführen
   #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
@@ -2437,7 +2478,7 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   #Attribut <bagr> in <BaGr>
   names(bagr.tab)[3] <- "BaGr"
   #BA-Gruppe dazu spielen
-  verj.s.bis130 <- merge(verj.s.bis130, subset(bagr.tab,select=c(ICode,BaGr)),
+  verj.s.bis130 <- merge(verj.s.bis130, bagr.tab[TRUE, c("ICode", "BaGr")],
                                   by.x="ba",by.y="ICode",all.x=T)
   verj.s.bis130[is.na(verj.s.bis130)] <- 0
   n.bagr <- length(ba.grupp[[1]])
@@ -2493,7 +2534,7 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
 
   for (i in 1:n.bagr)
   {
-    verbiss.t.bagr <- subset(verbiss.t,BaGr==bagr.list[i])
+    verbiss.t.bagr <- verbiss.t[verbiss.t[["BaGr"]] == bagr.list[i],TRUE]
 
     for (j in 1:4)
     {
@@ -2606,7 +2647,7 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
-  y <- merge(subset(trakte,select=c(tnr,m)),y,by=c("tnr"),all.x=T)
+  y <- merge(trakte[TRUE, c("tnr", "m")],y,by=c("tnr"),all.x=T)
   y[is.na(y)] <- 0
   r.list <- r.variance.fun(y[,2:3],length(trakte[,1]))
   T.hbf <- r.list$R.xy*A
@@ -2618,13 +2659,13 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   inv <- ifelse(inv>1,2,inv)
   names(verj) <- sub(inv,names(verj),replacement="")
   #Attribute und Untermenge des Stratums aus <verj> auswählen
-  verj.s <- merge(subset(verj,select=c(tnr,enr,ba,h,oib,nha)),
-                    subset(stratum,select=c(tnr,enr)),by=c("tnr","enr"))
+  verj.s <- merge(verj[TRUE, c("tnr", "enr", "ba", "h", "oib", "nha")],
+                    stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
                     
   bagr.list <- c("FI","TA","DGL","KI","LAE","BU","EI","ALH","ALN")
   n.bagr <- 9
   #Baumartengruppen hinzufügen
-  verj.s <- merge(verj.s, subset(bacode,select=c(ICode,BaGr)),
+  verj.s <- merge(verj.s, bacode[TRUE, c("ICode", "BaGr")],
                               by.x="ba",by.y="ICode",all.x=T)
   verj.s[is.na(verj.s)] <- 0
   names(verj.s)[7]<- "bagr"                            
@@ -2649,7 +2690,7 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   
   for (i in 1:n.bagr)
   {
-    verj.t.bagr <- subset(verj.t,bagr==bagr.list[i])
+    verj.t.bagr <- verj.t[verj.t[["bagr"]] == bagr.list[i], TRUE]
     #Gesamtzahlen nach BAGR
     xy <- merge(subset(trakte,select=c(tnr,m)),
                 subset(verj.t.bagr, select=c(tnr,n)),by="tnr",all.x=T)
