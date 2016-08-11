@@ -3194,12 +3194,13 @@ ntns.stratum.fun <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg){
   
   for (i in 1:6){
     if (i < 6){
-      xy.ntns.i.t <- xy.ntns.t[xy.ntns.t[["ntns"]] == i,c("TNr", "n.ntns")]
+      xy.ntns.i.t <- xy.ntns.t[xy.ntns.t[["ntns"]] == i, c("TNr", "n.ntns")]
     } else{  #OHNE NTNS-Angabe
-      xy.ntns.i.t <- subset(xy.ntns.t,!ntns %in% c(1:5),select=c(TNr,n.ntns))
+      xy.ntns.i.t <- xy.ntns.t[! xy.ntns.t[["ntns"]] %in% c(1:5), 
+                               c("TNr","n.ntns")]
     }
     names(xy.ntns.i.t)[2] <- "n.ntns"
-    xy.i.t <- merge(subset(trakte,select=c(TNr,m)),
+    xy.i.t <- merge(trakte[TRUE, c("TNr", "m")],
                       xy.ntns.i.t,by="TNr",all.x=T)
     xy.i.t[is.na(xy.i.t)] <- 0
     #Fläche
@@ -3207,14 +3208,14 @@ ntns.stratum.fun <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg){
     ntns.f.ant[1,1,i] <- r.list$R.xy*A
     ntns.f.ant[1,2,i] <- sqrt(r.list$V.R.xy)*A
     #Flächenanteil
-    xy.i.t <- merge(subset(xy.t,select=c(TNr,n)),xy.ntns.i.t,by=c("TNr"),all.x=T)
+    xy.i.t <- merge(xy.t[TRUE, c("TNr", "n")],xy.ntns.i.t,by=c("TNr"),all.x=T)
     xy.i.t[is.na(xy.i.t)] <- 0
     r.list <- r.variance.fun(xy.i.t[,2:3],length(trakte[,1]))
     ntns.f.ant[2,1,i] <- r.list$R.xy*100
     ntns.f.ant[2,2,i] <- sqrt(r.list$V.R.xy)*100
   }
   #HBF des Stratums
-  xy.i.t <- merge(subset(trakte,select=c(TNr,m)),xy.t,by="TNr",all.x=T)
+  xy.i.t <- merge(trakte[TRUE, c("TNr", "m")],xy.t,by="TNr",all.x=T)
   xy.i.t[is.na(xy.i.t)] <- 0
   r.list <- r.variance.fun(xy.i.t[,2:3],length(trakte[,1]))
 
@@ -3262,39 +3263,39 @@ ntns.stratum.fun.2 <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg,schicht)
   #NTNS-Attribut entsprechend Schicht
   if (bwi==3){
     if (schicht==1){ #kleiner 4m
-      stratum <- merge(stratum,subset(ntns.te,
-              select=c(Tnr,Enr,NTNS_F_kl4m_BA_Anteile_BWI3)),
+      stratum <- merge(stratum,
+                       ntns.te[TRUE, c("Tnr", "Enr", "NTNS_F_kl4m_BA_Anteile_BWI3")],
               by.x=c("TNr","ENr"),by.y=c("Tnr","Enr"),all.x=T)
       NTNS <- "BWI 3 Schicht < 4m"
     } else{
-      stratum <- merge(stratum,subset(ntns.te,
-              select=c(Tnr,Enr,NTNS_F_gr4m_alleBaeume_BWI3)),
+      stratum <- merge(stratum,
+                       ntns.te[TRUE, c("Tnr", "Enr", "NTNS_F_gr4m_alleBaeume_BWI3")],
               by.x=c("TNr","ENr"),by.y=c("Tnr","Enr"),all.x=T)
       NTNS <- "BWI 3 Schicht > 4m"
     }
   } else{ #BWI 2: Fallunterscheidung nach verwendeten nat. WG
     if (natwg==3){
         if (schicht==1){
-          stratum <- merge(stratum,subset(ntns.te,
-                select=c(Tnr,Enr,NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3)),
+          stratum <- merge(stratum,
+                           ntns.te[TRUE, c("Tnr", "Enr", "NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3")],
                 by.x=c("TNr","ENr"),by.y=c("Tnr","Enr"),all.x=T)
           NTNS <- "BWI 2 Schicht < 4 m mit nat. WG der BWI 3"
         } else{
-          stratum <- merge(stratum,subset(ntns.te,
-                select=c(Tnr,Enr,NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3)),
+          stratum <- merge(stratum,
+                           ntns.te[TRUE, c("Tnr", "Enr", "NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3")],
                 by.x=c("TNr","ENr"),by.y=c("Tnr","Enr"),all.x=T)
           NTNS <- "BWI 2 Schicht > 4 m mit nat. WG der BWI 3"
         }
       } else{
         #Nat. WG der BWI 2
         if (schicht==1){
-          stratum <- merge(stratum,subset(ntns.te,
-                select=c(Tnr,Enr,NTNS_F_kl4m_BA_Anteile_BWI2)),
+          stratum <- merge(stratum,
+                           ntns.te[TRUE, c("Tnr", "Enr", "NTNS_F_kl4m_BA_Anteile_BWI2")],
                 by.x=c("TNr","ENr"),by.y=c("Tnr","Enr"),all.x=T)
           NTNS <- "BWI 2 Schicht < 4 m mit nat. WG der BWI 2"
         }else{
-          stratum <- merge(stratum,subset(ntns.te,
-                select=c(Tnr,Enr,NTNS_F_gr4m_alleBaeume_BWI2)),
+          stratum <- merge(stratum,
+                           ntns.te[TRUE, c("Tnr", "Enr", "NTNS_F_gr4m_alleBaeume_BWI2")],
                 by.x=c("TNr","ENr"),by.y=c("Tnr","Enr"),all.x=T)
           NTNS <- "BWI 2 Schicht > 4 m mit nat. WG der BWI 2"
         }
@@ -3319,12 +3320,12 @@ ntns.stratum.fun.2 <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg,schicht)
   
   for (i in 1:6){
     if (i < 6){
-      xy.ntns.i.t <- subset(xy.ntns.t,ntns==i,select=c(TNr,n.ntns))
+      xy.ntns.i.t <- xy.ntns.t[xy.ntns.t[["ntns"]] == i, c("TNr", "n.ntns")]
     } else   {#OHNE NTNS-Angabe
-      xy.ntns.i.t <- subset(xy.ntns.t,!ntns %in% c(1:5),select=c(TNr,n.ntns))
+      xy.ntns.i.t <- xy.ntns.t[! xy.ntns.t[["ntns"]] %in% c(1:5), c("TNr", "n.ntns")]
     }
     names(xy.ntns.i.t)[2] <- "n.ntns"
-    xy.i.t <- merge(subset(trakte,select=c(TNr,m)),
+    xy.i.t <- merge(trakte[TRUE, c("TNr", "m")],
                       xy.ntns.i.t,by="TNr",all.x=T)
     xy.i.t[is.na(xy.i.t)] <- 0
     #Fläche
@@ -3332,14 +3333,14 @@ ntns.stratum.fun.2 <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg,schicht)
     ntns.f.ant[1,1,i] <- r.list$R.xy*A
     ntns.f.ant[1,2,i] <- sqrt(r.list$V.R.xy)*A
     #Flächenanteil
-    xy.i.t <- merge(subset(xy.t,select=c(TNr,n)),xy.ntns.i.t,by=c("TNr"),all.x=T)
+    xy.i.t <- merge(xy.t[TRUE, c("TNr", "n")],xy.ntns.i.t,by=c("TNr"),all.x=T)
     xy.i.t[is.na(xy.i.t)] <- 0
     r.list <- r.variance.fun(xy.i.t[,2:3],length(trakte[,1]))
     ntns.f.ant[2,1,i] <- r.list$R.xy*100
     ntns.f.ant[2,2,i] <- sqrt(r.list$V.R.xy)*100
   }
   #HBF des Stratums
-  xy.i.t <- merge(subset(trakte,select=c(TNr,m)),xy.t,by="TNr",all.x=T)
+  xy.i.t <- merge(trakte[TRUE, c("TNr", "m")],xy.t,by="TNr",all.x=T)
   xy.i.t[is.na(xy.i.t)] <- 0
   r.list <- r.variance.fun(xy.i.t[,2:3],length(trakte[,1]))
 
@@ -3648,7 +3649,8 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   ast.pos <- grep("ast",names(wzp4.merkmale))
   if (length(ast.pos)>0)
   {
-    wzp4.merkmale <- subset(wzp4.merkmale,select=c(-ast.pos))
+    wzp4.merkmale <- wzp4.merkmale[TRUE, 
+                                   !(names(wzp4.merkmale) %in% c("ast.pos"))]
   }
   #(2) Merkmal-DS <wzp4.merkmale> mit Attribut-Auswahl aus <baeume> verknüpfen
   wzp4.merkmale <- merge(subset(baeume,stp==0,
