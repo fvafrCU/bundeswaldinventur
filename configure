@@ -4,13 +4,15 @@
 # I can't keep the R CMD stuff, and I'm used  to 'make', so I wrap R CMDs into
 # make.
 temp_file1=$(tempfile)
+temp_file1=/tmp/fileKC8FKV
 temp_file2=$(tempfile)
 TAB="$(printf '\t')"
+DOLLAR=$
 cat > Makefile <<EOF
 dev_all: dev_test dev_check
 dev_test:
-${TAB}Rscript --vanilla -e 'devtools::test()' >  $temp_file1 2>&1; \\
-${TAB}sed -e '/^DONE.*/,\$d' < $temp_file1 > dev_test.Rout 
++${TAB}Rscript --vanilla -e 'devtools::test()' >  $temp_file1 2>&1; \\
+${TAB}sed -n -e '/^DONE.*/q;p' < $temp_file1 > dev_test.Rout 
 dev_check:
 ${TAB}Rscript --vanilla -e 'devtools::check()' > $temp_file2 2>&1; \\
 ${TAB}grep -v ".*'/" $temp_file2 | grep -v ".*/tmp/R.*" > dev_check.Rout 
