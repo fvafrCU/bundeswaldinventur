@@ -12,9 +12,9 @@ Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
 Building bundeswaldinventur ----------------------------------------------------
-  --no-resave-data --no-manual 
+  --no-manual 
 
-* checking for file ‘/adc_mnt/data/git/oudeis/fva/bundeswaldinventur/DESCRIPTION’ ... OK
+* checking for file ‘/home/nik/git/os/fva/bundeswaldinventur/DESCRIPTION’ ... OK
 * preparing ‘bundeswaldinventur’:
 * checking DESCRIPTION meta-information ... OK
 * checking for LF line-endings in source and make files
@@ -51,7 +51,9 @@ Checking bundeswaldinventur ----------------------------------------------------
     data  32.8Mb
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
-* checking top-level files ... OK
+* checking top-level files ... NOTE
+Non-standard file/directory found at top level:
+  ‘foo.r’
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -84,31 +86,7 @@ Use \uxxxx escapes for other characters.
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ecken.2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ecken.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘trakte.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘baeume.23’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘baeume.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘ecken.2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘ecken.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘trakte.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘baeume.23’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘baeume.3’
 ba.klass.lab.tab.fun: no visible binding for global variable ‘bacode’
-fl.proz.stratum.fun: no visible binding for global variable ‘trakte.3’
-fl.stratum.fun: no visible binding for global variable ‘TNr’
-fl.stratum.fun: no visible binding for global variable ‘m’
-fl.stratum.fun: no visible binding for global variable ‘trakte.3’
 flaechen.kreis.fun.1: no visible binding for global variable ‘kreise’
 flaechen.kreis.fun.1: no visible binding for global variable ‘krs.list’
 flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.3’
@@ -129,6 +107,8 @@ flaechen.stratum.fun.1: no visible binding for global variable
   ‘ecken.1’
 flaechen.stratum.fun.1: no visible binding for global variable
   ‘trakte.1’
+fl.proz.stratum.fun: no visible binding for global variable ‘trakte.3’
+fl.stratum.fun: no visible binding for global variable ‘trakte.3’
 fvbn.kreis.fun.1: no visible binding for global variable ‘baeume.1’
 fvbn.kreis.fun.1: no visible binding for global variable ‘ecken.1’
 fvbn.kreis.fun.1: no visible binding for global variable ‘trakte.1’
@@ -307,65 +287,67 @@ stamm.merkmale.bagr.akl.fun: no visible binding for global variable
   ‘hbf.ba’
 stamm.merkmale.bagr.akl.fun: no visible binding for global variable
   ‘trakte.3’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘stp’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘tnr’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘enr’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘bnr’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘ba’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘alt’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘bhd’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘h’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘volv’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘oib’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘nha’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘stfl’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘m’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘hbf’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘bl’
-stamm.merkmale.bagr.fun: no visible binding for global variable ‘ibl’
-stamm.merkmale.bagr.fun: no visible binding for global variable
-  ‘hbf.ba’
 stamm.merkmale.bagr.fun: no visible binding for global variable
   ‘trakte.3’
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+  variable ‘ecken.2’
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+  variable ‘ecken.3’
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+  variable ‘trakte.3’
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+  variable ‘baeume.23’
+VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
+  variable ‘baeume.3’
+VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
+  variable ‘ecken.2’
+VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
+  variable ‘ecken.3’
+VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
+  variable ‘trakte.3’
+VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
+  variable ‘baeume.23’
+VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
+  variable ‘baeume.3’
 verbiss.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
 Undefined global functions or variables:
-  BHD1 BHD2 BNr BaGr ENr NHa1 NHa2 Pk STP StFl1 StFl2 TNr VolE1 VolE2
-  VolV1 VolV2 akl alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3
-  bhd bhd.pm bl bnr bwi comma dkl ecken.1 ecken.2 ecken.3 enr group h
-  hbf hbf.ba ibl kreise krs.list m name nha oiB1 oiB2 oib prediction
-  standard_error stfl stp tnr trakte.1 trakte.2 trakte.3 volv
+  akl alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3 BaGr bhd BHD1
+  BHD2 bhd.pm bl bnr BNr bwi comma dkl ecken.1 ecken.2 ecken.3 enr ENr
+  group h hbf hbf.ba ibl kreise krs.list m name nha NHa1 NHa2 oib oiB1
+  oiB2 Pk prediction standard_error stfl StFl1 StFl2 stp STP tnr TNr
+  trakte.1 trakte.2 trakte.3 VolE1 VolE2 volv VolV1 VolV2
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... WARNING
 Undocumented code objects:
-  ‘FVBN.alleba.akl.gw.1’ ‘FVBN.alleba.akl.gw.2’ ‘FVBN.alleba.akl.gw.3’
-  ‘FVBN.alleba.akl.kw.1’ ‘FVBN.alleba.akl.kw.2’ ‘FVBN.alleba.akl.kw.3’
-  ‘FVBN.alleba.akl.pw.1’ ‘FVBN.alleba.akl.pw.2’ ‘FVBN.alleba.akl.pw.3’
-  ‘FVBN.alleba.akl.stw.1’ ‘FVBN.alleba.akl.stw.2’
-  ‘FVBN.alleba.akl.stw.3’ ‘FVBN.alleba.gw.1’ ‘FVBN.alleba.gw.2’
-  ‘FVBN.alleba.gw.3’ ‘FVBN.bagr.akl.gw.1’ ‘FVBN.bagr.akl.gw.2’
-  ‘FVBN.bagr.akl.gw.3’ ‘FVBN.bagr.akl.kw.1’ ‘FVBN.bagr.akl.kw.2’
-  ‘FVBN.bagr.akl.kw.3’ ‘FVBN.bagr.akl.pw.1’ ‘FVBN.bagr.akl.pw.2’
-  ‘FVBN.bagr.akl.pw.3’ ‘FVBN.bagr.akl.stw.1’ ‘FVBN.bagr.akl.stw.2’
-  ‘FVBN.bagr.akl.stw.3’ ‘FVBN.bagr.dkl.gw.1’ ‘FVBN.bagr.dkl.gw.2’
-  ‘FVBN.bagr.dkl.gw.3’ ‘FVBN.bagr.dkl.kw.1’ ‘FVBN.bagr.dkl.kw.2’
-  ‘FVBN.bagr.dkl.kw.3’ ‘FVBN.bagr.dkl.pw.1’ ‘FVBN.bagr.dkl.pw.2’
-  ‘FVBN.bagr.dkl.pw.3’ ‘FVBN.bagr.dkl.stw.1’ ‘FVBN.bagr.dkl.stw.2’
-  ‘FVBN.bagr.dkl.stw.3’ ‘FVBN.bagr.gw.1’ ‘FVBN.bagr.gw.2’
-  ‘FVBN.bagr.gw.3’ ‘FVBN.bagr.kw.1’ ‘FVBN.bagr.kw.2’ ‘FVBN.bagr.kw.3’
-  ‘FVBN.bagr.pw.1’ ‘FVBN.bagr.pw.2’ ‘FVBN.bagr.pw.3’
-  ‘FVBN.bagr.spec.gw.1’ ‘FVBN.bagr.spec.gw.2’ ‘FVBN.bagr.spec.gw.3’
-  ‘FVBN.bagr.stw.1’ ‘FVBN.bagr.stw.2’ ‘FVBN.bagr.stw.3’ ‘bacode’
-  ‘baeume.1’ ‘baeume.12’ ‘baeume.2’ ‘baeume.23’ ‘baeume.3’
+  ‘bacode’ ‘baeume.1’ ‘baeume.12’ ‘baeume.2’ ‘baeume.23’ ‘baeume.3’
   ‘ecke.feld.3’ ‘ecken.1’ ‘ecken.2’ ‘ecken.23’ ‘ecken.3’ ‘fba.2’
-  ‘fba.3’ ‘gk_coord’ ‘kreise’ ‘ntns.te’ ‘schutzgebiete.3’ ‘totholz.2’
-  ‘totholz.3’ ‘trakte.1’ ‘trakte.2’ ‘trakte.3’ ‘verj.2’ ‘verj.3’
-  ‘verj.kl4m.2’ ‘verj.kl4m.3’ ‘wzp4.merkmale.2’ ‘wzp4.merkmale.3’
-  ‘x_dichte’ ‘x_fba.3’
+  ‘fba.3’ ‘FVBN.alleba.akl.gw.1’ ‘FVBN.alleba.akl.gw.2’
+  ‘FVBN.alleba.akl.gw.3’ ‘FVBN.alleba.akl.kw.1’ ‘FVBN.alleba.akl.kw.2’
+  ‘FVBN.alleba.akl.kw.3’ ‘FVBN.alleba.akl.pw.1’ ‘FVBN.alleba.akl.pw.2’
+  ‘FVBN.alleba.akl.pw.3’ ‘FVBN.alleba.akl.stw.1’
+  ‘FVBN.alleba.akl.stw.2’ ‘FVBN.alleba.akl.stw.3’ ‘FVBN.alleba.gw.1’
+  ‘FVBN.alleba.gw.2’ ‘FVBN.alleba.gw.3’ ‘FVBN.bagr.akl.gw.1’
+  ‘FVBN.bagr.akl.gw.2’ ‘FVBN.bagr.akl.gw.3’ ‘FVBN.bagr.akl.kw.1’
+  ‘FVBN.bagr.akl.kw.2’ ‘FVBN.bagr.akl.kw.3’ ‘FVBN.bagr.akl.pw.1’
+  ‘FVBN.bagr.akl.pw.2’ ‘FVBN.bagr.akl.pw.3’ ‘FVBN.bagr.akl.stw.1’
+  ‘FVBN.bagr.akl.stw.2’ ‘FVBN.bagr.akl.stw.3’ ‘FVBN.bagr.dkl.gw.1’
+  ‘FVBN.bagr.dkl.gw.2’ ‘FVBN.bagr.dkl.gw.3’ ‘FVBN.bagr.dkl.kw.1’
+  ‘FVBN.bagr.dkl.kw.2’ ‘FVBN.bagr.dkl.kw.3’ ‘FVBN.bagr.dkl.pw.1’
+  ‘FVBN.bagr.dkl.pw.2’ ‘FVBN.bagr.dkl.pw.3’ ‘FVBN.bagr.dkl.stw.1’
+  ‘FVBN.bagr.dkl.stw.2’ ‘FVBN.bagr.dkl.stw.3’ ‘FVBN.bagr.gw.1’
+  ‘FVBN.bagr.gw.2’ ‘FVBN.bagr.gw.3’ ‘FVBN.bagr.kw.1’ ‘FVBN.bagr.kw.2’
+  ‘FVBN.bagr.kw.3’ ‘FVBN.bagr.pw.1’ ‘FVBN.bagr.pw.2’ ‘FVBN.bagr.pw.3’
+  ‘FVBN.bagr.spec.gw.1’ ‘FVBN.bagr.spec.gw.2’ ‘FVBN.bagr.spec.gw.3’
+  ‘FVBN.bagr.stw.1’ ‘FVBN.bagr.stw.2’ ‘FVBN.bagr.stw.3’ ‘gk_coord’
+  ‘kreise’ ‘ntns.te’ ‘schutzgebiete.3’ ‘totholz.2’ ‘totholz.3’
+  ‘trakte.1’ ‘trakte.2’ ‘trakte.3’ ‘verj.2’ ‘verj.3’ ‘verj.kl4m.2’
+  ‘verj.kl4m.3’ ‘wzp4.merkmale.2’ ‘wzp4.merkmale.3’ ‘x_dichte’
+  ‘x_fba.3’
 Undocumented data sets:
   ‘bacode’ ‘baeume.1’ ‘baeume.12’ ‘baeume.2’ ‘baeume.23’ ‘baeume.3’
   ‘ecke.feld.3’ ‘ecken.1’ ‘ecken.2’ ‘ecken.23’ ‘ecken.3’ ‘fba.2’
@@ -410,6 +392,58 @@ Extensions’ manual.
 * checking contents of ‘data’ directory ... OK
 * checking data for non-ASCII characters ... WARNING
   Warning: found non-ASCII strings
+  'Alter 1 pr<c3><bc>fen!/St. BWI 1/Z-Gebiet =  0/10.08.2004' in object 'baeume.1'
+  ' bei BWI II Pk = 6!PB au<c3><9f>erh. Grz./St. BWI 1/Z-Gebiet =  0/10.08.2004' in object 'baeume.1'
+  ' PB au<c3><9f>erh. Grz./St. BWI 1/Z-Gebiet =  0/10.08.2004' in object 'baeume.1'
+  'Alter 1 pr<c3><bc>fen!/St. BWI 2/Z-Gebiet =  0/10.08.2004' in object 'baeume.12'
+  ' PB au<c3><9f>erh. Grz./St. BWI 2/Z-Gebiet =  0/10.08.2004' in object 'baeume.12'
+  '  au<c3><9f>erhalbA/ Z-Gebiet =  0//13.01.2005' in object 'baeume.2'
+  '  au<c3><9f>erhalb / EHKA/ Z-Gebiet =  0//13.01.2005' in object 'baeume.2'
+  ' /D031 mit FT BWI 3/D032 mit FT BWI 3PB au<c3><9f>erh. Grz./St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
+  ' /D031 mit FT BWI 3PB au<c3><9f>erh. Grz./St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
+  ' /korr. auf Mindesth<c3><b6>he 3 m/D031 mit FT BWI 3/D032 mit FT BWI 3/St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
+  ' /korr. auf Mindesth<c3><b6>he 3 m/D031 mit FT BWI 3/St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
+  ' PB au<c3><9f>erh. Grz./St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
+  ' /Alter 1 fehlt/S- zu E-Baum!/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /Alter 1 fehlt/S- zu E-Baum! / EHK/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' / Ausschluss, da BHD < 7/au<c3><9f>erhalb/D031: BDAT-Fehler15/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /au<c3><9f>erhalb/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /au<c3><9f>erhalb/D031: BDAT-Fehler15/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /au<c3><9f>erhalb / EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /Bs fehlt(Def.=1)/au<c3><9f>erhalb / EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /D031: BDAT-Fehler15/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  'Dummy f<c3><bc>r Bl<c3><b6><c3><9f>e (entspr. Wa =3)' in object 'baeume.3'
+  'Dummy f<c3><bc>r ideelle Bl<c3><b6><c3><9f>e (L<c3><bc>cke) Fall ohne NB' in object 'baeume.3'
+  'Dummy f<c3><bc>r idelle Bl<c3><b6><c3><9f>e mit NB' in object 'baeume.3'
+  '  / EHK/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  '  / EHK/D031: BDAT-Fehler15/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  '  / EHK/korr. auf Mindesth<c3><b6>he 3 m/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /gem. ob. D. wg. fehlender Messh<c3><b6>he gel<c3><b6>scht / EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /H<c3><b6>he 1 auf 3 m gesetzt/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /korr. auf Mindesth<c3><b6>he 3 m/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  ' /korr. auf Mindesth<c3><b6>he 3 m/D031: BDAT-Fehler15/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  '  / Krenn-HT U/Bs 9 zu 2/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  'PL fehlt!/au<c3><9f>erhalb / EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  'PL fehlt!/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
+  'L<c3><a4>ndlicher Raum im engeren Sinne' in object 'ecken.1'
+  'Randzone um die Verdichtungsr<c3><a4>ume' in object 'ecken.1'
+  'Verdichtungsbereiche im l<c3><a4>ndlichen Raum' in object 'ecken.1'
+  'Verdichtungsr<c3><a4>ume' in object 'ecken.1'
+  'Ostw<c3><bc>rttemberg' in object 'ecken.1'
+  'S<c3><bc>dlicher Oberrhein' in object 'ecken.1'
+  'L<c3><a4>ndlicher Raum im engeren Sinne' in object 'ecken.2'
+  'Randzone um die Verdichtungsr<c3><a4>ume' in object 'ecken.2'
+  'Verdichtungsbereiche im l<c3><a4>ndlichen Raum' in object 'ecken.2'
+  'Verdichtungsr<c3><a4>ume' in object 'ecken.2'
+  'Ostw<c3><bc>rttemberg' in object 'ecken.2'
+  'S<c3><bc>dlicher Oberrhein' in object 'ecken.2'
+  'L<c3><a4>ndlicher Raum im engeren Sinne' in object 'ecken.3'
+  'Randzone um die Verdichtungsr<c3><a4>ume' in object 'ecken.3'
+  'Verdichtungsbereiche im l<c3><a4>ndlichen Raum' in object 'ecken.3'
+  'Verdichtungsr<c3><a4>ume' in object 'ecken.3'
+  'Ostw<c3><bc>rttemberg' in object 'ecken.3'
+  'S<c3><bc>dlicher Oberrhein' in object 'ecken.3'
   'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.gw.1'
   'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.gw.2'
   'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.gw.3'
@@ -470,58 +504,6 @@ Extensions’ manual.
   'Gr<c3><b6><c3><9f>en' in object 'FVBN.bagr.stw.1'
   'Gr<c3><b6><c3><9f>en' in object 'FVBN.bagr.stw.2'
   'Gr<c3><b6><c3><9f>en' in object 'FVBN.bagr.stw.3'
-  'Alter 1 pr<c3><bc>fen!/St. BWI 1/Z-Gebiet =  0/10.08.2004' in object 'baeume.1'
-  ' bei BWI II Pk = 6!PB au<c3><9f>erh. Grz./St. BWI 1/Z-Gebiet =  0/10.08.2004' in object 'baeume.1'
-  ' PB au<c3><9f>erh. Grz./St. BWI 1/Z-Gebiet =  0/10.08.2004' in object 'baeume.1'
-  'Alter 1 pr<c3><bc>fen!/St. BWI 2/Z-Gebiet =  0/10.08.2004' in object 'baeume.12'
-  ' PB au<c3><9f>erh. Grz./St. BWI 2/Z-Gebiet =  0/10.08.2004' in object 'baeume.12'
-  '  au<c3><9f>erhalbA/ Z-Gebiet =  0//13.01.2005' in object 'baeume.2'
-  '  au<c3><9f>erhalb / EHKA/ Z-Gebiet =  0//13.01.2005' in object 'baeume.2'
-  ' /D031 mit FT BWI 3/D032 mit FT BWI 3PB au<c3><9f>erh. Grz./St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
-  ' /D031 mit FT BWI 3PB au<c3><9f>erh. Grz./St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
-  ' /korr. auf Mindesth<c3><b6>he 3 m/D031 mit FT BWI 3/D032 mit FT BWI 3/St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
-  ' /korr. auf Mindesth<c3><b6>he 3 m/D031 mit FT BWI 3/St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
-  ' PB au<c3><9f>erh. Grz./St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
-  ' /Alter 1 fehlt/S- zu E-Baum!/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /Alter 1 fehlt/S- zu E-Baum! / EHK/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' / Ausschluss, da BHD < 7/au<c3><9f>erhalb/D031: BDAT-Fehler15/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /au<c3><9f>erhalb/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /au<c3><9f>erhalb/D031: BDAT-Fehler15/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /au<c3><9f>erhalb / EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /Bs fehlt(Def.=1)/au<c3><9f>erhalb / EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /D031: BDAT-Fehler15/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  'Dummy f<c3><bc>r Bl<c3><b6><c3><9f>e (entspr. Wa =3)' in object 'baeume.3'
-  'Dummy f<c3><bc>r ideelle Bl<c3><b6><c3><9f>e (L<c3><bc>cke) Fall ohne NB' in object 'baeume.3'
-  'Dummy f<c3><bc>r idelle Bl<c3><b6><c3><9f>e mit NB' in object 'baeume.3'
-  '  / EHK/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  '  / EHK/D031: BDAT-Fehler15/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  '  / EHK/korr. auf Mindesth<c3><b6>he 3 m/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /gem. ob. D. wg. fehlender Messh<c3><b6>he gel<c3><b6>scht / EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /H<c3><b6>he 1 auf 3 m gesetzt/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /korr. auf Mindesth<c3><b6>he 3 m/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  ' /korr. auf Mindesth<c3><b6>he 3 m/D031: BDAT-Fehler15/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  '  / Krenn-HT U/Bs 9 zu 2/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  'PL fehlt!/au<c3><9f>erhalb / EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  'PL fehlt!/au<c3><9f>erhalb Gr./A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614' in object 'baeume.3'
-  'L<c3><a4>ndlicher Raum im engeren Sinne' in object 'ecken.1'
-  'Randzone um die Verdichtungsr<c3><a4>ume' in object 'ecken.1'
-  'Verdichtungsbereiche im l<c3><a4>ndlichen Raum' in object 'ecken.1'
-  'Verdichtungsr<c3><a4>ume' in object 'ecken.1'
-  'Ostw<c3><bc>rttemberg' in object 'ecken.1'
-  'S<c3><bc>dlicher Oberrhein' in object 'ecken.1'
-  'L<c3><a4>ndlicher Raum im engeren Sinne' in object 'ecken.2'
-  'Randzone um die Verdichtungsr<c3><a4>ume' in object 'ecken.2'
-  'Verdichtungsbereiche im l<c3><a4>ndlichen Raum' in object 'ecken.2'
-  'Verdichtungsr<c3><a4>ume' in object 'ecken.2'
-  'Ostw<c3><bc>rttemberg' in object 'ecken.2'
-  'S<c3><bc>dlicher Oberrhein' in object 'ecken.2'
-  'L<c3><a4>ndlicher Raum im engeren Sinne' in object 'ecken.3'
-  'Randzone um die Verdichtungsr<c3><a4>ume' in object 'ecken.3'
-  'Verdichtungsbereiche im l<c3><a4>ndlichen Raum' in object 'ecken.3'
-  'Verdichtungsr<c3><a4>ume' in object 'ecken.3'
-  'Ostw<c3><bc>rttemberg' in object 'ecken.3'
-  'S<c3><bc>dlicher Oberrhein' in object 'ecken.3'
   'Vorg<c3><a4>nger' in object 'gk_coord'
   'B<c3><b6>blingen' in object 'kreise'
   'G<c3><b6>ppingen' in object 'kreise'
@@ -4322,13 +4304,13 @@ Extensions’ manual.
 * checking examples ... OK
 * DONE
 
-Status: 5 WARNINGs, 2 NOTEs
+Status: 5 WARNINGs, 3 NOTEs
 See
 for details.
 
 
 R CMD check results
-0 errors | 5 warnings | 2 notes
+0 errors | 5 warnings | 3 notes
 checking R files for non-ASCII characters ... WARNING
 Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
@@ -4349,14 +4331,14 @@ Use \uxxxx escapes for other characters.
 
 checking for missing documentation entries ... WARNING
 Undocumented code objects:
-  ‘FVBN.alleba.akl.gw.1’ ‘FVBN.alleba.akl.gw.2’ ‘FVBN.alleba.akl.gw.3’
-  ‘FVBN.alleba.akl.kw.1’ ‘FVBN.alleba.akl.kw.2’ ‘FVBN.alleba.akl.kw.3’
-  ‘FVBN.alleba.akl.pw.1’ ‘FVBN.alleba.akl.pw.2’ ‘FVBN.alleba.akl.pw.3’
-  ‘FVBN.alleba.akl.stw.1’ ‘FVBN.alleba.akl.stw.2’
-  ‘FVBN.alleba.akl.stw.3’ ‘FVBN.alleba.gw.1’ ‘FVBN.alleba.gw.2’
-  ‘FVBN.alleba.gw.3’ ‘FVBN.bagr.akl.gw.1’ ‘FVBN.bagr.akl.gw.2’
-  ‘FVBN.bagr.akl.gw.3’ ‘FVBN.bagr.akl.kw.1’ ‘FVBN.bagr.akl.kw.2’
-  ‘FVBN.bagr.akl.kw.3’ ‘FVBN.bagr.akl.pw.1’ ‘FVBN.bagr.akl.pw.2’
+  ‘bacode’ ‘baeume.1’ ‘baeume.12’ ‘baeume.2’ ‘baeume.23’ ‘baeume.3’
+  ‘ecke.feld.3’ ‘ecken.1’ ‘ecken.2’ ‘ecken.23’ ‘ecken.3’ ‘fba.2’
+  ‘fba.3’ ‘FVBN.alleba.akl.gw.1’ ‘FVBN.alleba.akl.gw.2’
+  ‘FVBN.alleba.akl.gw.3’ ‘FVBN.alleba.akl.kw.1’ ‘FVBN.alleba.akl.kw.2’
+  ‘FVBN.alleba.akl.kw.3’ ‘FVBN.alleba.akl.pw.1’ ‘FVBN.alleba.akl.pw.2’
+  ‘FVBN.alleba.akl.pw.3’ ‘FVBN.alleba.akl.stw.1’
+  ‘FVBN.alleba.akl.stw.2’ ‘FVBN.alleba.akl.stw.3’ ‘FVBN.alleba.gw.1’
+  ‘FVBN.alleba.gw.2’ ‘FVBN.alleba.gw.3’ ‘FVBN.bagr.akl.gw.1’
 ... 33 lines ...
   ‘FVBN.bagr.dkl.gw.2’ ‘FVBN.bagr.dkl.gw.3’ ‘FVBN.bagr.dkl.kw.1’
   ‘FVBN.bagr.dkl.kw.2’ ‘FVBN.bagr.dkl.kw.3’ ‘FVBN.bagr.dkl.pw.1’
@@ -4384,14 +4366,14 @@ Extensions’ manual.
 
 checking data for non-ASCII characters ... WARNING
   Warning: found non-ASCII strings
-  'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.gw.1'
-  'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.gw.2'
-  'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.gw.3'
-  'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.kw.1'
-  'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.kw.2'
-  'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.kw.3'
-  'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.pw.1'
-  'Gr<c3><b6><c3><9f>en' in object 'FVBN.alleba.akl.pw.2'
+  'Alter 1 pr<c3><bc>fen!/St. BWI 1/Z-Gebiet =  0/10.08.2004' in object 'baeume.1'
+  ' bei BWI II Pk = 6!PB au<c3><9f>erh. Grz./St. BWI 1/Z-Gebiet =  0/10.08.2004' in object 'baeume.1'
+  ' PB au<c3><9f>erh. Grz./St. BWI 1/Z-Gebiet =  0/10.08.2004' in object 'baeume.1'
+  'Alter 1 pr<c3><bc>fen!/St. BWI 2/Z-Gebiet =  0/10.08.2004' in object 'baeume.12'
+  ' PB au<c3><9f>erh. Grz./St. BWI 2/Z-Gebiet =  0/10.08.2004' in object 'baeume.12'
+  '  au<c3><9f>erhalbA/ Z-Gebiet =  0//13.01.2005' in object 'baeume.2'
+  '  au<c3><9f>erhalb / EHKA/ Z-Gebiet =  0//13.01.2005' in object 'baeume.2'
+  ' /D031 mit FT BWI 3/D032 mit FT BWI 3PB au<c3><9f>erh. Grz./St. BWI 3/Z-Gebiet =  0(BWI 23)/Zuwachskorr./04.07.2014/1.4/060614' in object 'baeume.23'
 ... 3885 lines ...
   'Naturverj<c3><bc>ngung' in object 'verj.kl4m.3'
   'fl<c3><a4>chig, > 50 %' in object 'x_dichte'
@@ -4417,25 +4399,29 @@ checking installed package size ... NOTE
   sub-directories of 1Mb or more:
     data  32.8Mb
 
+checking top-level files ... NOTE
+Non-standard file/directory found at top level:
+  ‘foo.r’
+
 checking R code for possible problems ... NOTE
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ecken.2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ecken.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘trakte.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘baeume.23’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-... 233 lines ...
-stamm.merkmale.bagr.fun: no visible binding for global variable
-  ‘trakte.3’
+ba.klass.lab.tab.fun: no visible binding for global variable ‘bacode’
+flaechen.kreis.fun.1: no visible binding for global variable ‘kreise’
+flaechen.kreis.fun.1: no visible binding for global variable ‘krs.list’
+flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.3’
+flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.3’
+flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.2’
+flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.2’
+flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.1’
+flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.1’
+... 213 lines ...
+VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
+  variable ‘baeume.3’
 verbiss.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
 Undefined global functions or variables:
-  BHD1 BHD2 BNr BaGr ENr NHa1 NHa2 Pk STP StFl1 StFl2 TNr VolE1 VolE2
-  VolV1 VolV2 akl alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3
-  bhd bhd.pm bl bnr bwi comma dkl ecken.1 ecken.2 ecken.3 enr group h
-  hbf hbf.ba ibl kreise krs.list m name nha oiB1 oiB2 oib prediction
-  standard_error stfl stp tnr trakte.1 trakte.2 trakte.3 volv
+  akl alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3 BaGr bhd BHD1
+  BHD2 bhd.pm bl bnr BNr bwi comma dkl ecken.1 ecken.2 ecken.3 enr ENr
+  group h hbf hbf.ba ibl kreise krs.list m name nha NHa1 NHa2 oib oiB1
+  oiB2 Pk prediction standard_error stfl StFl1 StFl2 stp STP tnr TNr
+  trakte.1 trakte.2 trakte.3 VolE1 VolE2 volv VolV1 VolV2

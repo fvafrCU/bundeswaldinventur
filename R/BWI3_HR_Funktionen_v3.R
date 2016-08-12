@@ -3653,8 +3653,8 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
                                    !(names(wzp4.merkmale) %in% c("ast.pos"))]
   }
   #(2) Merkmal-DS <wzp4.merkmale> mit Attribut-Auswahl aus <baeume> verknüpfen
-  wzp4.merkmale <- merge(subset(baeume,stp==0,
-                        select=c(tnr,enr,bnr,ba,alt,bhd,h,volv,oib,nha,stfl)),
+  wzp4.merkmale <- merge(baeume[baeume$stp==0,
+                        c("tnr", "enr", "bnr", "ba", "alt", "bhd", "h", "volv", "oib", "nha", "stfl")],
                         wzp4.merkmale, by=c("tnr","enr","bnr"),all.x=T)
   wzp4.merkmale[is.na(wzp4.merkmale)] <- 0
   
@@ -3671,8 +3671,9 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
     wzp4.merkmale$merkmal.s <- wzp4.merkmale$merkmal.s+ wzp4.merkmale[,mm.pos[i]]
   }
   mm.s.pos <- length(wzp4.merkmale)
-  wzp4.merkmale.s <- merge(subset(wzp4.merkmale,
-    select=c(1:3,12,mm.pos,mm.s.pos,4:11)),subset(stratum,select=c(tnr,enr)),
+  wzp4.merkmale.s <- merge(
+                           wzp4.merkmale[TRUE, c(1:3,12,mm.pos,mm.s.pos,4:11)], #TODO: use names, not index numbers!
+                           stratum[TRUE, c("tnr", "enr")], 
     by=c("tnr","enr"),all.y=T)
   wzp4.merkmale.s[is.na(wzp4.merkmale.s)] <- 0 
   
@@ -3693,25 +3694,25 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
                   by=list(wzp4.merkmale.s$tnr),sum)$x/10000)
   names(xy) <- c("tnr","hbf","bl","ibl")
   n.t.s <- length(xy[,1])
-  xy <- merge(subset(trakte,select=c(tnr,m)),xy,by=c("tnr"),all.x=T)
+  xy <- merge(trakte[TRUE, c("tnr", "m")],xy,by=c("tnr"),all.x=T)
   xy[is.na(xy)] <- 0
   #Nur die HBF der realen Baumarten (d,h. OHNE BL bzw. iBL)
   xy$hbf.ba <- xy$hbf-xy$bl-xy$ibl
 
   #HBFl. [ha]
-  r.list= r.variance.fun(subset(xy,select=c(m,hbf)),nT)
+  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
   T.hbf <- r.list$R.xy*A
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
   #Blößen [ha]
-  r.list <- r.variance.fun(subset(xy,select=c(m,bl)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
   T.bl <- r.list$R.xy*A
   se.T.bl <- sqrt(r.list$V.R.xy)*A
   #Ideelle Blößen ("Lücken") [ha]
-  r.list <- r.variance.fun(subset(xy,select=c(m,ibl)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
   T.ibl <- r.list$R.xy*A
   se.T.ibl <- sqrt(r.list$V.R.xy)*A
   #Lückenkorrekturfaktor
-  r.list <- r.variance.fun(subset(xy,select=c(hbf.ba,hbf)),nT)
+  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
   lk <- r.list$R.xy
   se.lk <- sqrt(r.list$V.R.xy)
 
@@ -3773,7 +3774,7 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
     names(merkmal.t) <- c("tnr","N.MM","V.MM","oiB.MM","SthV.MM","N.ges","V.ges")
     utils::head(merkmal.t)
   
-    merkmal.t <- merge(subset(xy,select=c(tnr,m,hbf)),merkmal.t,by="tnr",
+    merkmal.t <- merge(xy[TRUE, c("tnr", "m", "hbf")],merkmal.t,by="tnr",
                       all.x=T)
     merkmal.t[is.na(merkmal.t)] <- 0
   
@@ -3931,7 +3932,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   #entsprechende Flächenanteile für 0,1,2,3
   d.fl.ant <- data.frame(dichte=0:3,fl.ant=c(0,0.05,0.3,0.7))
   fba.tab <- merge(fba.tab,d.fl.ant,by="dichte",all.x=T)
-  fba.tab <- subset(fba.tab,select=c(2:4,1,5)) #TODO: What the hell, this is just a reodering of columns!
+  fba.tab <- subset(fba.tab,select=c(2:4,1,5)) #FIXME: What the hell, this is just a reodering of columns _by index_!
   #Auf überschießende Fläche prüfen
   n.fba.te <- stats::aggregate(cbind(ifelse(fba.tab$dichte<=0,0,1),fba.tab$fl.ant),
                         by=list(fba.tab$tnr,fba.tab$enr),sum)
@@ -4022,7 +4023,7 @@ fl.stratum.fun <- function(auswahl,ecken,trakte,A){
   nte.t <- stats::aggregate(rep(1,length(te[,1])),by=list(te$TNr),sum)
   names(nte.t) <- c("TNr","nte")
   utils::head(nte.t)
-  nte.t <- merge(subset(trakte,select=c(TNr,m)),nte.t,by="TNr",all.x=T)
+  nte.t <- merge(trakte[TRUE, c("TNr", "m")],nte.t,by="TNr",all.x=T)
   nte.t[is.na(nte.t)] <- 0
   r.list <- r.variance.fun(nte.t[,2:3],length(trakte.3[,1]))
   return(list(Flaeche=r.list$R.xy*A, SE_Flaeche=sqrt(r.list$V.R.xy)*A))
@@ -4111,7 +4112,6 @@ stratum.fun <- function(auswahl,ecken){
   
   return(stratum)
 }
-
 #-------------------------------------------------------------------------------
 #' Klassifiziert und aggegiert die mittlere Baumartenfläche
 #' 
