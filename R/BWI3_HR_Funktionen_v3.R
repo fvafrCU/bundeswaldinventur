@@ -4182,8 +4182,8 @@ mbaf.bagr.alt.bhd.pm.fun <- function(baeume.vor,baeume.folg,A.klass,D.klass){
   #Vorinventur
   lk.v <- sum(baeume.vor$stfl1)/sum(baeume.vor$stfl1[baeume.vor$ba<998])
   lk.f <- sum(baeume.folg$stfl2)/sum(baeume.folg$stfl2[baeume.folg$ba<998])
-  baeume.vor  <- subset(baeume.vor, ba < 998)
-  baeume.folg <- subset(baeume.folg,ba < 998)
+  baeume.vor  <- baeume.vor[baeume.vor[["ba"]] < 998, TRUE]
+  baeume.folg  <- baeume.folg[baeume.folg[["ba"]] < 998, TRUE]
   #Umrechnen in ha
   baf1.tnr <- stats::aggregate(baeume.vor$stfl1*lk.v/10000,
     by=list(baeume.vor$tnr,baeume.vor$bagr,baeume.vor$akl.pm,baeume.vor$dkl.pm),
@@ -4319,9 +4319,10 @@ r.xxy.variance.fun <- function(xy,n){
 iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
   #(1)Berechnung der Bilanzkomponenten iV.S und iV.E aus baeume.folg
   #nach Trakt, BAGR, akl, dkl
-  baeume.ba <- subset(baeume.folg,
-            select=c(TNr,ENr,STP,BNr,Pk,BHD1,BHD2,BaGr,akl,dkl,
-                      VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,NHa2,StFl2))
+  baeume.ba <- baeume.folg[TRUE, c("TNr", "ENr", "STP", "BNr", "Pk", "BHD1", 
+                                   "BHD2", "BaGr", "akl", "dkl", "VolV1", 
+                                   "VolV2", "VolE1", "VolE2", "oiB1", "oiB2", 
+                                   "NHa2", "StFl2")]
 
   #(1.1) S-Baeume
   #(1.111) Derbholz m.R.
@@ -4401,9 +4402,10 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
   utils::head(iv.es.t)
 
   #(2) Berechnung der Bilanzkomponenten iV.A aus baeume.vor
-  baeume.ba <- subset(baeume.vor,
-          select=c(TNr,ENr,STP,BNr,Pk,BHD1,BHD2,BaGr,akl,dkl,
-                    VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,NHa1,StFl1))
+  baeume.ba <- baeume.vor[TRUE, c("TNr", "ENr", "STP", "BNr", "Pk", "BHD1", 
+                                  "BHD2", "BaGr", "akl", "dkl", "VolV1", 
+                                  "VolV2", "VolE1", "VolE2", "oiB1", "oiB2", 
+                                  "NHa1", "StFl1")]
   #(2.1) A-Baeume
   #(2.111) Derbholz m.R. Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
@@ -4549,9 +4551,10 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
 iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   #(1)Berechnung der Bilanzkomponenten iV.S und iV.E aus baeume.folg
   #nach Trakt, BAGR, akl, dkl       + kä/09.02.2015: <bhd.pm>
-  baeume.ba <- subset(baeume.folg,
-            select=c(TNr,ENr,STP,BNr,Pk,BHD1,BHD2,bhd.pm,BaGr,akl,dkl,
-                      VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,NHa2,StFl2))
+  baeume.ba <- baeume.folg[TRUE, c("TNr", "ENr", "STP", "BNr", "Pk", "BHD1", 
+                                   "BHD2", "bhd.pm", "BaGr", "akl", "dkl", 
+                                   "VolV1", "VolV2", "VolE1", "VolE2", "oiB1", 
+                                   "oiB2", "NHa2", "StFl2")]
 
   #(1.1) S-Baeume
   #(1.111) Derbholz m.R.
@@ -4658,9 +4661,10 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   utils::head(iv.es.t)
 
   #(2) Berechnung der Bilanzkomponenten iV.A aus baeume.vor
-  baeume.ba <- subset(baeume.vor,
-          select=c(TNr,ENr,STP,BNr,Pk,BHD1,BHD2,BaGr,akl,dkl,
-                    VolV1,VolV2,VolE1,VolE2,oiB1,oiB2,NHa1,StFl1))
+  baeume.ba <- baeume.vor[TRUE, c("TNr", "ENr", "STP", "BNr", "Pk", "BHD1", 
+                                  "BHD2", "BaGr", "akl", "dkl", "VolV1", 
+                                  "VolV2", "VolE1", "VolE2", "oiB1", "oiB2", 
+                                  "NHa1", "StFl1")]
   #(2.1) A-Baeume
   #(2.111) Derbholz m.R. Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa1
