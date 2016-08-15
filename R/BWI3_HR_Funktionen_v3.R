@@ -3646,11 +3646,10 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
 
   #Aus Kompatibiltäts-Gründen werden die nur in der BWI 3 vorkommenden
   #Attribute <Ast> und <Ast_Hoe> im DS der BWI 3 entfernt
-  ast.pos <- grep("ast",names(wzp4.merkmale))
+  ast.pos <- grep("Ast",names(wzp4.merkmale))
   if (length(ast.pos)>0)
   {
-    wzp4.merkmale <- wzp4.merkmale[TRUE, 
-                                   !(names(wzp4.merkmale) %in% c("ast.pos"))]
+    wzp4.merkmale <- wzp4.merkmale[TRUE, -c(ast.pos)]
   }
   #(2) Merkmal-DS <wzp4.merkmale> mit Attribut-Auswahl aus <baeume> verknüpfen
   wzp4.merkmale <- merge(baeume[baeume$stp==0,
@@ -4974,10 +4973,10 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   
   #Aus Kompatibiltäts-Gründen werden die nur in der BWI 3 vorkommenden
   #Attribute <Ast> und <Ast_Hoe> im DS der BWI 3 entfernt
-  ast.pos <- grep("ast",names(wzp4.merkmale))
+  ast.pos <- grep("Ast",names(wzp4.merkmale))
   if (length(ast.pos)>0)
   {
-    wzp4.merkmale <- subset(wzp4.merkmale,select=c(-ast.pos))
+    wzp4.merkmale <- wzp4.merkmale[TRUE, -c(ast.pos)]
   }
   #(2) Merkmal-DS <wzp4.merkmale> mit Attribut-Auswahl aus <baeume> verknüpfen
   wzp4.merkmale <- merge(subset(baeume,stp==0,
