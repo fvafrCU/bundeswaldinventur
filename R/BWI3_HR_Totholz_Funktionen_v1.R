@@ -142,9 +142,11 @@ Totholz.bagr.art.zg.stratum.fun <-
               #                         tbagr==i&tart==tart.code[j]&tzg==k&dkl==dkl.lab[l],
               #                         select=c(tnr,enr,tbagr,tart,tzg,dm,lge,tvol,anz,thf))
               ## this returns an empty data.frame if the subset is not found.
-              totholz.ba <- totholz.s[
-                                      totholz.s$tbagr==i&totholz.s$tart==tart.code[j]&totholz.s$tzg==k&totholz.s$dkl==dkl.lab[l],
-                                      c("tnr", "enr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")]
+              totholz.ba <- totholz.s[totholz.s[["tbagr"]] == i & 
+                                      totholz.s[["tart"]] == tart.code[j] &
+                                      totholz.s[["tzg"]] == k & 
+                                      totholz.s[["dkl"]] == dkl.lab[l],
+                                  c("tnr", "enr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")]
               ## So I empty all rows if there's only NA in it.
               if(all(is.na(totholz.ba))) totholz.ba <- totholz.ba[FALSE, TRUE] 
           if (length(totholz.ba[,1])== 0)
@@ -578,11 +580,11 @@ Totholz.klass.stratum.fun <-
   {
     if (klass.k>1)
     {
-      totholz.klass <- subset(totholz.s,totholz.s[,pos]%in%klass$kat[[i]],
-                        select=c(1,2,9,10,11)) #TODO: WTF?
+      totholz.klass <- totholz.s[totholz.s[TRUE, pos] %in% klass[["kat"]][[i]],
+                                 c(1,2,9,10,11)] #TODO: Use named index.
     }else
     {
-      totholz.klass <- subset(totholz.s, select=c(1,2,9,10,11)) #TODO: WTF?
+      totholz.klass <- totholz.s[TRUE, c(1,2,9,10,11)] #TODO: Use named index.
     }
     if (length(totholz.klass[,1])== 0)
     {
