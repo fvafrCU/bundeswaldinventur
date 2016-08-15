@@ -8,7 +8,6 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
-Writing stratum.fun.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -21,7 +20,7 @@ Building bundeswaldinventur ----------------------------------------------------
 * checking for LF line-endings in source and make files
 * checking for empty or unneeded directories
 * looking to see if a ‘data/datalist’ file should be added
-* building ‘bundeswaldinventur_0.1.0.tar.gz’
+* building ‘bundeswaldinventur_0.1.2.tar.gz’
 
 Setting env vars ---------------------------------------------------------------
 _R_CHECK_CRAN_INCOMING_USE_ASPELL_: TRUE
@@ -35,7 +34,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * using session charset: UTF-8
 * using options ‘--no-manual --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.1.0’
+* this is package ‘bundeswaldinventur’ version ‘0.1.2’
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
@@ -52,9 +51,7 @@ Checking bundeswaldinventur ----------------------------------------------------
     data  32.8Mb
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
-* checking top-level files ... NOTE
-Non-standard file/directory found at top level:
-  ‘TODO.md’
+* checking top-level files ... OK
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -4188,13 +4185,13 @@ Extensions’ manual.
 * checking examples ... OK
 * DONE
 
-Status: 5 WARNINGs, 3 NOTEs
+Status: 5 WARNINGs, 2 NOTEs
 See
 for details.
 
 
 R CMD check results
-0 errors | 5 warnings | 3 notes
+0 errors | 5 warnings | 2 notes
 checking R files for non-ASCII characters ... WARNING
 Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
@@ -4282,10 +4279,6 @@ checking installed package size ... NOTE
   installed size is 33.1Mb
   sub-directories of 1Mb or more:
     data  32.8Mb
-
-checking top-level files ... NOTE
-Non-standard file/directory found at top level:
-  ‘TODO.md’
 
 checking R code for possible problems ... NOTE
 ba.klass.lab.tab.fun: no visible binding for global variable ‘bacode’
