@@ -8,6 +8,7 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
+Writing stratum.fun.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -53,7 +54,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... NOTE
 Non-standard file/directory found at top level:
-  ‘foo.r’
+  ‘TODO.md’
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -139,88 +140,6 @@ fvbn.stratum.fun.2: no visible binding for global variable ‘ecken.3’
 fvbn.stratum.fun.2: no visible binding for global variable ‘trakte.3’
 get_label_for_abbreviation: no visible binding for global variable
   ‘name’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘TNr’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘ENr’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘STP’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘BNr’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘Pk’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘BHD1’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘BHD2’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘BaGr’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘akl’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘dkl’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘VolV1’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘VolV2’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘VolE1’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘VolE2’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘oiB1’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘oiB2’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘NHa2’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘StFl2’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘NHa1’
-iVB.bilanz.bagr.akl.dkl.fun: no visible binding for global variable
-  ‘StFl1’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘TNr’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘ENr’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘STP’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘BNr’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘Pk’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘BHD1’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘BHD2’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘bhd.pm’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘BaGr’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘akl’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘dkl’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘VolV1’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘VolV2’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘VolE1’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘VolE2’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘oiB1’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘oiB2’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘NHa2’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘StFl2’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘NHa1’
-iVB.bilanz.bagr.akl.dkl.fun.2g: no visible binding for global variable
-  ‘StFl1’
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
   variable ‘ecken.2’
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
@@ -239,7 +158,6 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12: no visible binding for global
   variable ‘ecken.2’
 iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12: no visible binding for global
   variable ‘trakte.2’
-mbaf.bagr.alt.bhd.pm.fun: no visible binding for global variable ‘ba’
 plot_by_group: no visible binding for global variable ‘prediction’
 plot_by_group: no visible binding for global variable ‘standard_error’
 plot_by_group: no visible binding for global variable ‘comma’
@@ -313,11 +231,10 @@ verbiss.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
 Undefined global functions or variables:
-  akl alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3 BaGr bhd BHD1
-  BHD2 bhd.pm bl bnr BNr bwi comma dkl ecken.1 ecken.2 ecken.3 enr ENr
-  group h hbf hbf.ba ibl kreise krs.list m name nha NHa1 NHa2 oib oiB1
-  oiB2 Pk prediction standard_error stfl StFl1 StFl2 stp STP tnr TNr
-  trakte.1 trakte.2 trakte.3 VolE1 VolE2 volv VolV1 VolV2
+  alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3 bhd bl bnr bwi
+  comma ecken.1 ecken.2 ecken.3 enr group h hbf hbf.ba ibl kreise
+  krs.list m name nha oib prediction standard_error stfl stp tnr
+  trakte.1 trakte.2 trakte.3 volv
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -4401,7 +4318,7 @@ checking installed package size ... NOTE
 
 checking top-level files ... NOTE
 Non-standard file/directory found at top level:
-  ‘foo.r’
+  ‘TODO.md’
 
 checking R code for possible problems ... NOTE
 ba.klass.lab.tab.fun: no visible binding for global variable ‘bacode’
@@ -4413,15 +4330,15 @@ flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.2’
 flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.2’
 flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.1’
 flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.1’
-... 213 lines ...
+... 129 lines ...
+  variable ‘baeume.23’
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
   variable ‘baeume.3’
 verbiss.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
 Undefined global functions or variables:
-  akl alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3 BaGr bhd BHD1
-  BHD2 bhd.pm bl bnr BNr bwi comma dkl ecken.1 ecken.2 ecken.3 enr ENr
-  group h hbf hbf.ba ibl kreise krs.list m name nha NHa1 NHa2 oib oiB1
-  oiB2 Pk prediction standard_error stfl StFl1 StFl2 stp STP tnr TNr
-  trakte.1 trakte.2 trakte.3 VolE1 VolE2 volv VolV1 VolV2
+  alt ba bacode baeume.1 baeume.2 baeume.23 baeume.3 bhd bl bnr bwi
+  comma ecken.1 ecken.2 ecken.3 enr group h hbf hbf.ba ibl kreise
+  krs.list m name nha oib prediction standard_error stfl stp tnr
+  trakte.1 trakte.2 trakte.3 volv
