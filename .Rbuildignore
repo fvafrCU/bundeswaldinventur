@@ -3,7 +3,8 @@
 ^.*\.sh$
 ^.*\.Rout$
 ^tmp.*$
-^testing.r$
+^tests.r$
+^devtools.r$
 ^create.R$
 ^sedscr$
 ^Makefile$
