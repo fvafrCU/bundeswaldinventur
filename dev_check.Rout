@@ -8,7 +8,6 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
-Writing stratum.fun.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
