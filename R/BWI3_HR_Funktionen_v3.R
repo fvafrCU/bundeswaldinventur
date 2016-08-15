@@ -3931,7 +3931,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   #entsprechende Flächenanteile für 0,1,2,3
   d.fl.ant <- data.frame(dichte=0:3,fl.ant=c(0,0.05,0.3,0.7))
   fba.tab <- merge(fba.tab,d.fl.ant,by="dichte",all.x=T)
-  fba.tab <- fba.tab[TRUE, c(2:4,1,5)] #FIXME: What the hell, this is just a reodering of columns _by index_!
+  fba.tab <- fba.tab[TRUE, c(2:4,1,5)] #TODO: Use named index.
   #Auf überschießende Fläche prüfen
   n.fba.te <- stats::aggregate(cbind(ifelse(fba.tab$dichte<=0,0,1),fba.tab$fl.ant),
                         by=list(fba.tab$tnr,fba.tab$enr),sum)
@@ -4269,7 +4269,7 @@ r.xxy.variance.fun <- function(xy,n){
   #Indikator-Variable t für x2 > 0
   ti <- ifelse(xy[,2]>0,1,0)
   #in Datensatz einfügen (an 3. Stelle)
-  xy <- cbind(xy[,1:2],ti,y=xy[,3])    #TODO
+  xy <- cbind(xy[,1:2],ti,y=xy[,3])    #TODO: use named index.
   #Summenterme = Komponenten des Ratio-Schätzers
   S.x1 <- sum(xy[,1]); S.x2 <- sum(xy[,2])
   S.ti <- sum(xy[,3]); S.y  <- sum(xy[,4])
