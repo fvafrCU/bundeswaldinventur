@@ -4081,7 +4081,7 @@ fl.proz.stratum.fun <- function(stratum,substratum,ecken){
 #' @section Note: in \code{stratum} wird zunaechst die Gesamt-Menge, also die 
 #'  vollstaendige Tabelle \code{ecken} uebergeben, die dann entsprechend der in 
 #'  der Liste \code{auswahl} uebergebenen Attribute und den zulaessigen 
-#'  Werte-Mengen als Untermenge (subset) heraus gefiltert wird.
+#'  Werte-Mengen als Untermenge heraus gefiltert wird.
 #' @param auswahl Liste, welche die Eckenmerkmale mit den Werten enthaelt, 
 #'  anhand derer die Auswahl erfolgt.
 #' @param ecken Tabelle mit allen zur Selektion dienenden Eckenmerkmalen.
@@ -4101,11 +4101,11 @@ stratum.fun <- function(auswahl,ecken){
     #pos[i] <- grep(attribute[i],names(ecken),fixed=T)[1]
     #exaktes "matching"  kä/23.01.2015
     pos[i] <- which(names(ecken)==attribute[i])
-    stratum <- subset(stratum,stratum[,pos[i]]%in%auswahl[[i]])
+    stratum <- stratum[stratum[,pos[i]]%in%auswahl[[i]], TRUE]
     if (is.factor(stratum[,pos[i]])) stratum[,pos[i]] <-
               as.numeric(stratum[,pos[i]])
   }
-  stratum <- subset(stratum,select=c(1,2,pos))
+  stratum <- stratum[TRUE, c(1,2,pos)]
   n.stratum <- length(stratum[,1])
   stratum[is.na(stratum)] <- 0
   
