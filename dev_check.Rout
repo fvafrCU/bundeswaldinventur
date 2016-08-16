@@ -8,6 +8,10 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
+Writing NAMESPACE
+Writing set_options.Rd
+Writing get_options.Rd
+Writing get_data.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -84,7 +88,6 @@ Use \uxxxx escapes for other characters.
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-ba.klass.lab.tab.fun: no visible binding for global variable ‘bacode’
 flaechen.kreis.fun.1: no visible binding for global variable ‘kreise’
 flaechen.kreis.fun.1: no visible binding for global variable ‘krs.list’
 flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.3’
@@ -4259,7 +4262,6 @@ checking installed package size ... NOTE
     data  32.8Mb
 
 checking R code for possible problems ... NOTE
-ba.klass.lab.tab.fun: no visible binding for global variable ‘bacode’
 flaechen.kreis.fun.1: no visible binding for global variable ‘kreise’
 flaechen.kreis.fun.1: no visible binding for global variable ‘krs.list’
 flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.3’
@@ -4268,7 +4270,8 @@ flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.2’
 flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.2’
 flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.1’
 flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.1’
-... 96 lines ...
+flaechen.stratum.fun.1: no visible binding for global variable
+... 95 lines ...
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
   variable ‘baeume.23’
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global

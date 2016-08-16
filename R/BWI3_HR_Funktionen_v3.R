@@ -4825,7 +4825,7 @@ ba.klass.fun <- function(ba,ba.klass){
 #'  c(110,111), c(112:199), c(200:299))).
 #' @return Dataframe-Tabelle mit Baumartengruppen-Nummer und dem entspechenden 
 #'  Baumartengruppen-Label.
-ba.klass.lab.tab.fun <- function(ba.lab.klass, bacodes = bacode){
+ba.klass.lab.tab.fun <- function(ba.lab.klass, bacodes = get_data("bacode")){
    n <-  length(bacodes[,1])
    ba.klass.tab <- data.frame(ICode=bacodes$ICode,bagr.nr=rep(0,n))
    for (i in 1:n){

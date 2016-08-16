@@ -10,3 +10,5 @@ if (FALSE) {
     foo <-    evaluate::evaluate(devtools::check())
 }
 
+
+devtools::dev_example("set_options")
