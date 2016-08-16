@@ -4818,7 +4818,7 @@ ba.klass.fun <- function(ba,ba.klass){
 #' zu ermoeglichen.
 #'
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
-#' @param bacodes: Basistabelle mit Baumartencodes.
+#' @param bacodes Basistabelle mit Baumartencodes.
 #' @param ba.lab.klass Liste mit Angaben zu Baumartenlabel und Baumartencode \cr
 #'  Beispiel: ba.lab.klass <- list(ba.lab = c("FiTa","DglKiLae","Bu","Ei","BLb",
 #'  "WLb"), ba.code = list(c(10:19,30:39,90:99), c(20:29,40,50,51), c(100),

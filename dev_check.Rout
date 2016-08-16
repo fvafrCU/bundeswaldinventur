@@ -257,17 +257,7 @@ All user-level objects in a package should have documentation entries.
 See chapter ‘Writing R documentation files’ in the ‘Writing R
 Extensions’ manual.
 * checking for code/documentation mismatches ... OK
-* checking Rd \usage sections ... WARNING
-Undocumented arguments in documentation object 'ba.klass.lab.tab.fun'
-  ‘bacodes’
-Documented arguments not in \usage in documentation object 'ba.klass.lab.tab.fun':
-  ‘bacodes:’
-
-Functions with \usage entries need to have the appropriate \alias
-entries, and all their arguments documented.
-The \usage entries must correspond to syntactically valid R code.
-See chapter ‘Writing R documentation files’ in the ‘Writing R
-Extensions’ manual.
+* checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
 * checking contents of ‘data’ directory ... OK
@@ -4185,13 +4175,13 @@ Extensions’ manual.
 * checking examples ... OK
 * DONE
 
-Status: 5 WARNINGs, 2 NOTEs
+Status: 4 WARNINGs, 2 NOTEs
 See
 for details.
 
 
 R CMD check results
-0 errors | 5 warnings | 2 notes
+0 errors | 4 warnings | 2 notes
 checking R files for non-ASCII characters ... WARNING
 Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
@@ -4230,18 +4220,6 @@ Undocumented code objects:
   ‘FVBN.bagr.spec.gw.1’ ‘FVBN.bagr.spec.gw.2’ ‘FVBN.bagr.spec.gw.3’
   ‘FVBN.bagr.stw.1’ ‘FVBN.bagr.stw.2’ ‘FVBN.bagr.stw.3’
 All user-level objects in a package should have documentation entries.
-See chapter ‘Writing R documentation files’ in the ‘Writing R
-Extensions’ manual.
-
-checking Rd \usage sections ... WARNING
-Undocumented arguments in documentation object 'ba.klass.lab.tab.fun'
-  ‘bacodes’
-Documented arguments not in \usage in documentation object 'ba.klass.lab.tab.fun':
-  ‘bacodes:’
-
-Functions with \usage entries need to have the appropriate \alias
-entries, and all their arguments documented.
-The \usage entries must correspond to syntactically valid R code.
 See chapter ‘Writing R documentation files’ in the ‘Writing R
 Extensions’ manual.
 
