@@ -1,14 +1,4 @@
-#' Datendokumentation
-#' 
-#' Dieses Script dient der Dokumentation der im Paket BWI3 enthaltenen Daten und 
-#' keine weiteren Funktionen.
-#' 
-#' @author Franziska Berg
-#' @section version: 26.11.2015
-#' @name data documentation
-NULL
 
-# A --------------------------------------------------------------
 #' Total Inventory area
 #' 
 #' The total area of the inventory area of BWI3 (3575148 ha).
@@ -16,7 +6,6 @@ NULL
 #' @format An integer number
 "A"
 
-# A.12 -------------------------------------------------------
 #' Combined Inventory area
 #' 
 #' The inventory area which covers the areab of BWI2 and BWI3 (3575163 ha).
@@ -24,10 +13,9 @@ NULL
 #' @format An integer number 
 "A.12"
 
-# bacode ----------------------------
 #' "bacode"
 #'
-#' Fix me.
+#' Image of an SQL table giving the tree species codes.
 #'
 #'@format A data frame with 88 rows and 17 variables:
 #' \describe{
@@ -51,7 +39,6 @@ NULL
 #' }
 "bacode"
 
-# baeume.1 --------------------------------------
 #' Tree information of BWI1
 #' 
 #' Data frame with tree information from BWI1.
@@ -94,7 +81,6 @@ NULL
 #'  }
 "baeume.1"
 
-# baeume.2 -------------------------------- 
 #' Tree information of BWI2
 #' 
 #' Data frame with tree information from BWI2.
@@ -134,7 +120,6 @@ NULL
 #'  }
 "baeume.2"
 
-# baeume.3 -------------------
 #' Tree information of BWI3
 #' 
 #' Data frame with tree information from BWI3.
@@ -186,7 +171,6 @@ NULL
 #'  }
 "baeume.3"
 
-# baeume.12-------------------
 #' Tree information of BWI1 and BWI2
 #' 
 #' Data frame with tree information from BWI1 and BWI2.
@@ -226,7 +210,6 @@ NULL
 #'  }
 "baeume.12"
 
-# baeume.23 ------------------
 #' Tree information of BWI2 and BWI3
 #' 
 #' Data frame with tree information from BWI2 and BWI3.
@@ -268,7 +251,6 @@ NULL
 #'  }
 "baeume.23"
 
-# bagr.bwi -------------
 #' Tree species groups and further information
 #' 
 #' List with tree species groups used in BWI3 and further information.
@@ -282,7 +264,6 @@ NULL
 #'  }
 "bagr.bwi"
 
-# bagr.list ------------------
 #' Tree species groups
 #' 
 #' List with tree species groups used in BWI3.
@@ -290,7 +271,6 @@ NULL
 #' @format A vector with 9 tree species groups (abbreviations)
 "bagr.list"
 
-# bagr.x --------------
 #' Speciefied tree species groups and further information
 #' 
 #' List with more speciefied tree species groups used in BWI3 and further 
@@ -303,7 +283,6 @@ NULL
 #'  }
 "bagr.x"
 
-# COLORS_BWI ------------------------
 #' BWI standard green shades
 #' 
 #' Standard green shades for BWI plots.
@@ -311,7 +290,6 @@ NULL
 #' @format A vector with 3 strings (green shades).
 "COLORS_BWI"
 
-# ecke.feld.3 ----------------
 #' Waldlebensraumtypen
 #' 
 #' Tabelle enthaelt Informationen ueber die Waldlebensraumtypen, aufgenommen in 
@@ -335,7 +313,6 @@ NULL
 #'  }
 "ecke.feld.3"
 
-# ecken.1 --------------
 #' Eckenmerkmale BWI1
 #' 
 #' Eckenbezogene Informationen aus der Traktvorklaerung der BWI 1.
@@ -373,7 +350,6 @@ NULL
 #'  } 
 "ecken.1"
 
-# ecken.2 ---------------
 #' Eckenmerkmale BWI2
 #' 
 #' Eckenbezogene Informationen aus der Traktvorklaerung der BWI 2.
@@ -416,7 +392,6 @@ NULL
 #'  }
 "ecken.2"
 
-# ecken.3 --------------
 #' Eckenmerkmale BWI3
 #' 
 #' Eckenbezogene Informationen der Traktvorklaerung der BWI 3.
@@ -472,7 +447,6 @@ NULL
 #'  }
 "ecken.3"
 
-# ecken.23 --------------
 #' Eckenmerkmale der BWI2 and BWI 3
 #' 
 #' Kombinierte Eckeninformationen aus den Traktvorklaerungen der BWI 2 and BWI 
@@ -512,7 +486,6 @@ NULL
 #'  }
 "ecken.23"
 
-# fba.2 ------------------
 #' Forstlich besonders bedeutsame Pflanzenarten der BWI 2
 #' 
 #' Forstlich besonders bedeutsame Pflanzenarten (FBA) der BWI 2 je Traktecke.
@@ -541,7 +514,6 @@ NULL
 #'  }
 "fba.2"
 
-# fba.3 -----------
 #' Forstlich besonders bedeutsame Pflanzenarten der BWI 3
 #' 
 #' Forstlich besonders bedeutsame Pflanzenarten (FBA) der BWI 3 je Traktecke.
@@ -571,7 +543,6 @@ NULL
 #'  }
 "fba.3"
 
-# FVBN.alleba.akl.gw.1 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.gw.1
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -603,7 +574,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.gw.1"
 
-# FVBN.alleba.akl.gw.2 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.gw.2
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -635,7 +605,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.gw.2"
 
-# FVBN.alleba.akl.gw.3 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.gw.3
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -667,7 +636,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.gw.3"
 
-# FVBN.alleba.akl.kw.1 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.kw.1
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -699,7 +667,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.kw.1"
 
-# FVBN.alleba.akl.kw.2 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.kw.2
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -731,7 +698,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.kw.2"
 
-# FVBN.alleba.akl.kw.3 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.kw.3
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -763,7 +729,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.kw.3"
 
-# FVBN.alleba.akl.pw.1 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.pw.1
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -795,7 +760,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.pw.1"
 
-# FVBN.alleba.akl.pw.2 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.pw.2
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -827,7 +791,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.pw.2"
 
-# FVBN.alleba.akl.pw.3 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.pw.3
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -859,7 +822,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.pw.3"
 
-# FVBN.alleba.akl.stw.1 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.stw.1
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -891,7 +853,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.stw.1"
 
-# FVBN.alleba.akl.stw.2 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.stw.2
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -923,7 +884,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.stw.2"
 
-# FVBN.alleba.akl.stw.3 ----------------
 #' Zustandshochrechnung FVBN.alleba.akl.stw.3
 #' 
 #' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
@@ -955,7 +915,6 @@ NULL
 #'  }
 "FVBN.alleba.akl.stw.3"
 
-# FVBN.alleba.gw.1 ------------------
 #' Zustandshochrechnung FVBN.alleba.gw.1
 #' 
 #' Zustandshochrechnung fuer alle Baumarten fuer den Gemeindewald der BWI 1.
@@ -986,7 +945,6 @@ NULL
 #'  }
 "FVBN.alleba.gw.1"
 
-# FVBN.alleba.gw.2 ------------------
 #' Zustandshochrechnung FVBN.alleba.gw.2
 #' 
 #' Zustandshochrechnung fuer alle Baumarten fuer den Gemeindewald der BWI 2.
@@ -1017,7 +975,6 @@ NULL
 #'  }
 "FVBN.alleba.gw.2"
 
-# FVBN.alleba.gw.3 ------------------
 #' Zustandshochrechnung FVBN.alleba.gw.3
 #' 
 #' Zustandshochrechnung fuer alle Baumarten fuer den Gemeindewald der BWI 3.
@@ -1048,7 +1005,6 @@ NULL
 #'  }
 "FVBN.alleba.gw.3"
 
-# FVBN.bagr.akl.gw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.gw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1080,7 +1036,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.gw.1"
 
-# FVBN.bagr.akl.gw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.gw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1112,7 +1067,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.gw.2"
 
-# FVBN.bagr.akl.gw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.gw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1144,7 +1098,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.gw.3"
 
-# FVBN.bagr.akl.kw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.kw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1176,7 +1129,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.kw.1"
 
-# FVBN.bagr.akl.kw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.kw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1208,7 +1160,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.kw.2"
 
-# FVBN.bagr.akl.kw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.kw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1240,7 +1191,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.kw.3"
 
-# FVBN.bagr.akl.pw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.pw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1272,7 +1222,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.pw.1"
 
-# FVBN.bagr.akl.pw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.pw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1304,7 +1253,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.pw.2"
 
-# FVBN.bagr.akl.pw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.pw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1336,7 +1284,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.pw.3"
 
-# FVBN.bagr.akl.stw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.stw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1368,7 +1315,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.stw.1"
 
-# FVBN.bagr.akl.stw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.stw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1400,7 +1346,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.stw.2"
 
-# FVBN.bagr.akl.stw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.akl.stw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
@@ -1432,7 +1377,6 @@ NULL
 #'  }
 "FVBN.bagr.akl.stw.3"
 
-# FVBN.bagr.dkl.gw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.gw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1464,7 +1408,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.gw.1"
 
-# FVBN.bagr.dkl.gw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.gw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1496,7 +1439,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.gw.2"
 
-# FVBN.bagr.dkl.gw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.gw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1528,7 +1470,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.gw.3"
 
-# FVBN.bagr.dkl.kw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.kw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1560,7 +1501,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.kw.1"
 
-# FVBN.bagr.dkl.kw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.kw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1592,7 +1532,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.kw.2"
 
-# FVBN.bagr.dkl.kw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.kw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1624,7 +1563,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.kw.3"
 
-# FVBN.bagr.dkl.pw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.pw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1656,7 +1594,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.pw.1"
 
-# FVBN.bagr.dkl.pw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.pw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1688,7 +1625,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.pw.2"
 
-# FVBN.bagr.dkl.pw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.pw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1720,7 +1656,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.pw.3"
 
-# FVBN.bagr.dkl.stw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.stw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1752,7 +1687,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.stw.1"
 
-# FVBN.bagr.dkl.stw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.stw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1784,7 +1718,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.stw.2"
 
-# FVBN.bagr.dkl.stw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.dkl.stw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
@@ -1816,7 +1749,6 @@ NULL
 #'  }
 "FVBN.bagr.dkl.stw.3"
 
-# FVBN.bagr.gw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.gw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Gemeindewald der BWI 1.
@@ -1847,7 +1779,6 @@ NULL
 #'  }
 "FVBN.bagr.gw.1"
 
-# FVBN.bagr.gw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.gw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Gemeindewald der BWI 2.
@@ -1878,7 +1809,6 @@ NULL
 #'  }
 "FVBN.bagr.gw.2"
 
-# FVBN.bagr.gw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.gw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Gemeindewald der BWI 3.
@@ -1909,7 +1839,6 @@ NULL
 #'  }
 "FVBN.bagr.gw.3"
 
-# FVBN.bagr.kw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.kw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Koerperschaftswald der BWI 1.
@@ -1940,7 +1869,6 @@ NULL
 #'  }
 "FVBN.bagr.kw.1"
 
-# FVBN.bagr.kw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.kw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Koerperschaftswald der BWI 2.
@@ -1971,7 +1899,6 @@ NULL
 #'  }
 "FVBN.bagr.kw.2"
 
-# FVBN.bagr.kw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.kw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Koerperschaftswald der BWI 3.
@@ -2002,7 +1929,6 @@ NULL
 #'  }
 "FVBN.bagr.kw.3"
 
-# FVBN.bagr.pw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.pw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Privatwald der BWI 1.
@@ -2033,7 +1959,6 @@ NULL
 #'  }
 "FVBN.bagr.pw.1"
 
-# FVBN.bagr.pw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.pw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Privatwald der BWI 2.
@@ -2064,7 +1989,6 @@ NULL
 #'  }
 "FVBN.bagr.pw.2"
 
-# FVBN.bagr.pw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.pw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Privatwald der BWI 3.
@@ -2095,7 +2019,6 @@ NULL
 #'  }
 "FVBN.bagr.pw.3"
 
-# FVBN.bagr.stw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.stw.1
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Staatswald der BWI 1.
@@ -2126,7 +2049,6 @@ NULL
 #'  }
 "FVBN.bagr.stw.1"
 
-# FVBN.bagr.stw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.stw.2
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Staatswald der BWI 2.
@@ -2157,7 +2079,6 @@ NULL
 #'  }
 "FVBN.bagr.stw.2"
 
-# FVBN.bagr.stw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.stw.3
 #' 
 #' Zustandshochrechnung nach Baumartengruppen fuer den Staatswald der BWI 3.
@@ -2188,7 +2109,6 @@ NULL
 #'  }
 "FVBN.bagr.stw.3"
 
-# FVBN.bagr.spec.gw.1 ----------
 #' Zustandshochrechnung FVBN.bagr.spec.gw.1
 #' 
 #' Zustandshochrechnung nach spezifizierten Baumartengruppen fuer den 
@@ -2220,7 +2140,6 @@ NULL
 #'  }
 "FVBN.bagr.spec.gw.1"
 
-# FVBN.bagr.spec.gw.2 ----------
 #' Zustandshochrechnung FVBN.bagr.spec.gw.2
 #' 
 #' Zustandshochrechnung nach spezifizeirten Baumartengruppen fuer den 
@@ -2252,7 +2171,6 @@ NULL
 #'  }
 "FVBN.bagr.spec.gw.2"
 
-# FVBN.bagr.spec.gw.3 ----------
 #' Zustandshochrechnung FVBN.bagr.spec.gw.3
 #' 
 #' Zustandshochrechnung nach spezifizierten Baumartengruppen fuer den 
@@ -2284,7 +2202,6 @@ NULL
 #'  }
 "FVBN.bagr.spec.gw.3"
 
-# gk_coord------------
 #' Eckenkoordinaten
 #' 
 #' Tabelle enthaelt Informationen zu Sollkoordinaten und tatsaechlich 
@@ -2305,7 +2222,6 @@ NULL
 #'  }
 "gk_coord"
 
-# kreise ------------
 #' Kreisinformationen
 #' 
 #' Tabele enthaelt Infomrationen ueber Kreise, die entsprechenden Kreiscodes der 
@@ -2321,7 +2237,6 @@ NULL
 #'  } 
 "kreise"
 
-# krs.list ---------------
 #' Kreiscodes der BWI
 #' 
 #' Liste enthaelte alle Kreiscodes der BWI.
@@ -2329,7 +2244,6 @@ NULL
 #' @format A list with 44 integer numbers.
 "krs.list"
 
-# nT-----------------
 #' Traktanzahl
 #' 
 #' Anzahl der in der BWI aufgenommenen Trakte (8970).
@@ -2337,7 +2251,6 @@ NULL
 #' @format An integer number.
 "nT"
 
-# nTE.12 --------------
 #' Eckenanzahl aus BWI 1 und 2
 #' 
 #' Anzahl der Traktecken, die in der BWI 1 und 2 aufgenommen wurden (?) (35743).
@@ -2345,7 +2258,6 @@ NULL
 #' @format An integer number.
 "nTE.12"
 
-# nTE -------------
 #' Eckenanzahl der BWI 3
 #' 
 #' Anzahl der Traktecken, welche in der BWI 3 aufgenommen wurden (35731).
@@ -2353,7 +2265,6 @@ NULL
 #' @format An integer number.
 "nTE"
 
-# ntns.te --------------
 #' Naturnaehestufen
 #' 
 #' Angaben zur Naturnaehestufe pro Traktecke.
@@ -2382,23 +2293,20 @@ NULL
 #'  }
 "ntns.te"
 
-# RF.12 --------------
-#' Fix me
+#' Representationsfaktor BWI 1 und 2
 #' 
-#' Fix me.
+#' Area representation factor of each plot (Ecke).
 #' 
 #' @format A double number.
 "RF.12"
 
-# RF --------------
-#' Fix me
+#' Representationsfaktor BWI 3
 #' 
-#' Fix me.
+#' Area representation factor of each plot (Ecke).
 #' 
 #' @format A double number.
 "RF"
 
-# schutzgebiete.3 -------------
 #' Schutzgebietsinformationen
 #' 
 #' Informationen ueber die Schutzgebiete zum Zeitpunkt der BWI 3.
@@ -2426,7 +2334,6 @@ NULL
 #'  }
 "schutzgebiete.3"
 
-# tab -------------
 #' Volumen je Baumartengruppe (?)
 #' 
 #' Volumenauflistung (?) fuer die einzelnen Baumartengruppen.
@@ -2443,7 +2350,6 @@ NULL
 #'  }
 "tab"
 
-# totholz.2 ---------------
 #' Totholzinformationen der BWI 2
 #' 
 #' Tabelle mit Information zum Totholz aufgebnommen waehrend der BWI 2.
@@ -2464,7 +2370,6 @@ NULL
 #'  }
 "totholz.2"
 
-# totholz.3 ---------------
 #' Totholzinformationen der BWI 3
 #' 
 #' Tabelle mit Information zum Totholz aufgebnommen waehrend der BWI 3.
@@ -2487,7 +2392,6 @@ NULL
 #'  }
 "totholz.3"
 
-# trakte.1 ---------------
 #' Traktinformationen BWI 1
 #' 
 #' Traktbezogene Informationen zu den Trakten der BWI 1.
@@ -2502,7 +2406,6 @@ NULL
 #'  }
 "trakte.1"
 
-# trakte.2 ---------------
 #' Traktinformationen BWI 2
 #' 
 #' Traktbezogene Informationen zu den Trakten der BWI 2.
@@ -2517,7 +2420,6 @@ NULL
 #'  }
 "trakte.2"
 
-# trakte.3 ---------------
 #' Traktinformationen BWI 3
 #' 
 #' Traktbezogene Informationen zu den Trakten der BWI 3.
@@ -2532,7 +2434,6 @@ NULL
 #'  }
 "trakte.3"
 
-# verj.2 ---------------
 #' Verjuengung BWI 2
 #' 
 #' Informationen zur Verjuengung der BWI 2.
@@ -2556,7 +2457,6 @@ NULL
 #'  }
 "verj.2"
 
-# verj.3 ---------------
 #' Verjuengung BWI 3
 #' 
 #' Informationen zur Verjuengung der BWI 3.
@@ -2580,7 +2480,6 @@ NULL
 #'  }
 "verj.3"
 
-# verj.kl4m.2 -----------------
 #' Verjuengung kleiner 4 Meter BWI2
 #' 
 #' Informationen zur Verjuengung, welche kleiner als 4 Meter ist, der BWI 2.
@@ -2599,7 +2498,6 @@ NULL
 #'  }
 "verj.kl4m.2"
 
-# verj.kl4m.3 -----------------
 #' Verjuengung kleiner 4 Meter BWI3
 #' 
 #' Informationen zur Verjuengung, welche kleiner als 4 Meter ist, der BWI 3.
@@ -2618,7 +2516,6 @@ NULL
 #'  }
 "verj.kl4m.3"
 
-# wzp4.merkmale.2 ------------------------
 #' Schadensmerkmale BWI 2
 #' 
 #' Informationen zu Schaeden, die bei der Winkelzaehlprobe der BWI 2 aufgenommen 
@@ -2645,7 +2542,6 @@ NULL
 #'  }
 "wzp4.merkmale.2"
 
-# wzp4.merkmale.3 ------------------------
 #' Schadensmerkmale BWI 3
 #' 
 #' Informationen zu Schaeden, die bei der Winkelzaehlprobe der BWI 3 aufgenommen 
@@ -2677,7 +2573,6 @@ NULL
 #'  }
 "wzp4.merkmale.3"
 
-# x_dichte -------------
 #' Dichtetabelle
 #' 
 #' Uebersichtstabelle fuer Dichteangaben
@@ -2698,7 +2593,6 @@ NULL
 #'  }
 "x_dichte"
 
-# x_fba.3 ----------------------
 #' Forstlich besonders bedeutsame Pflanzenarten
 #' 
 #' Uebersichtstabelle zu den Forstlich besonders bedeutsame Pflanzenarten
