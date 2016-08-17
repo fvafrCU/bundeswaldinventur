@@ -1,0 +1,2725 @@
+#' Datendokumentation
+#' 
+#' Dieses Script dient der Dokumentation der im Paket BWI3 enthaltenen Daten und 
+#' keine weiteren Funktionen.
+#' 
+#' @author Franziska Berg
+#' @section version: 26.11.2015
+#' @name data documentation
+NULL
+
+# A --------------------------------------------------------------
+#' Total Inventory area
+#' 
+#' The total area of the inventory area of BWI3 (3575148 ha).
+#' 
+#' @format An integer number
+"A"
+
+# A.12 -------------------------------------------------------
+#' Combined Inventory area
+#' 
+#' The inventory area which covers the areab of BWI2 and BWI3 (3575163 ha).
+#' 
+#' @format An integer number 
+"A.12"
+
+# bacode ----------------------------
+#' "bacode"
+#'
+#' Fix me.
+#'
+#'@format A data frame with 88 rows and 17 variables:
+#' \describe{
+#'   \item{ICode}{fix me}
+#'   \item{ACode}{fix me}
+#'   \item{KurzD}{fix me}
+#'   \item{Konv_Ba2_Ba3}{fix me}
+#'   \item{AutoKonv_Ba2_Ba3}{fix me}
+#'   \item{BaGr}{abbreviation of the tree species group}
+#'   \item{BDAT.BA}{abbreviation of the specific tree species}
+#'   \item{BDAT.BANr}{number of the specific tree species}
+#'   \item{EHK.BA}{fix me}
+#'   \item{StFl.BA}{fix me}
+#'   \item{BA_STR}{fix me}
+#'   \item{Krenn_HT.BA}{fix me}
+#'   \item{WKoeff_BA}{fix me}
+#'   \item{WKoeff_BA_Code}{fix me}
+#'   \item{Kommentar}{comment}
+#'   \item{WKoeff_BA_Code_alt}{fix me}
+#'   \item{WKoeff_BA_BWI3}{fix me}
+#' }
+"bacode"
+
+# baeume.1 --------------------------------------
+#' Tree information of BWI1
+#' 
+#' Data frame with tree information from BWI1.
+#' 
+#' @format A data frame with 178464 rows and 33 variables:
+#'  \describe{
+#'    \item{Bl1}{fix me}
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{STP}{fix me}
+#'    \item{BNr}{Baumnummer}
+#'    \item{Pk}{Probebaumkennziffer}
+#'    \item{WZ1}{fix me}
+#'    \item{BA}{Baumart}
+#'    \item{Azi}{Azimut}
+#'    \item{Entf}{Horizontalentfernung}
+#'    \item{Bs1}{Bestandesschicht}
+#'    \item{Alt1}{Baumalter 1}
+#'    \item{Alt2}{Baumalter 2 (?)}
+#'    \item{BHD1}{Brusthoehendurchmesser 1}
+#'    \item{BHD2}{Brusthoehendurchmesser 2}
+#'    \item{D71}{fix me}
+#'    \item{D72}{fix me}
+#'    \item{D031}{fix me}
+#'    \item{D032}{fix me}
+#'    \item{H1}{Baumhoehe 1}
+#'    \item{H2}{Baumhoehe 2}
+#'    \item{VolV1}{Baumvolumen 1}
+#'    \item{VolV2}{Baumvolumen 2}
+#'    \item{VolE1}{fix me}
+#'    \item{VolE2}{fix me}
+#'    \item{oiB1}{oberirdische Biomasse 1}
+#'    \item{oiB2}{oberirdische Biomasse 2}
+#'    \item{StFl1}{fix me}
+#'    \item{Nha1}{fix me}
+#'    \item{HSt1}{fix me}
+#'    \item{Kh1}{fix me}
+#'    \item{Kf1}{fix me}
+#'    \item{Bemerk}{Bemerkung/ Kommentar}
+#'  }
+"baeume.1"
+
+# baeume.2 -------------------------------- 
+#' Tree information of BWI2
+#' 
+#' Data frame with tree information from BWI2.
+#' 
+#' @format A data frame with 122093 rows and 30 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{STP}{fix me}
+#'    \item{BNr}{Baumnummer}
+#'    \item{Pk}{Probebaumkennziffer}
+#'    \item{PL}{fix me}
+#'    \item{BA}{Baumart}
+#'    \item{Azi}{Azimut}
+#'    \item{Entf}{Horizontalentfernung}
+#'    \item{Bs1}{Bestandesschicht}
+#'    \item{Alt1}{Baumalter 1}
+#'    \item{Alt2}{Baumalter 2 (?)}
+#'    \item{BHD1}{Brusthoehendurchmesser 1}
+#'    \item{BHD2}{Brusthoehendurchmesser 2}
+#'    \item{D031}{fix me}
+#'    \item{D032}{fix me}
+#'    \item{H1}{Baumhoehe 1}
+#'    \item{H2}{Baumhoehe 2}
+#'    \item{VolV1}{Baumvolumen 1}
+#'    \item{VolV2}{Baumvolumen 2}
+#'    \item{VolE1}{fix me}
+#'    \item{VolE2}{fix me}
+#'    \item{oiB1}{oberirdische Biomasse 1}
+#'    \item{oiB2}{oberirdische Biomasse 2}
+#'    \item{StFl2}{fix me}
+#'    \item{NHa2}{fix me}
+#'    \item{HSt2}{fix me}
+#'    \item{Kh2}{fix me}
+#'    \item{Kf2}{fix me}
+#'    \item{Bemerk}{Bemerkung/ Kommentar}
+#'  }
+"baeume.2"
+
+# baeume.3 -------------------
+#' Tree information of BWI3
+#' 
+#' Data frame with tree information from BWI3.
+#' 
+#' @format A data frame with 140096 rows and 42 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{STP}{fix me}
+#'    \item{BNr}{Baumnummer}
+#'    \item{Pk}{Probebaumkennziffer}
+#'    \item{PL}{fix me}
+#'    \item{WZ1}{fix me}
+#'    \item{BA}{Baumart}
+#'    \item{Azi}{Azimut}
+#'    \item{Entf}{Horizontalentfernung}
+#'    \item{Du}{Baumdurchmesser}
+#'    \item{aMh}{fix me}
+#'    \item{Bs1}{Bestandesschicht 1}
+#'    \item{Bs2}{Bestandesschicht 2}
+#'    \item{Alt1}{Baumalter 1}
+#'    \item{Alt2}{Baumalter 2 (?)}
+#'    \item{BHD1}{Brusthoehendurchmesser 1}
+#'    \item{BHD2}{Brusthoehendurchmesser 2}
+#'    \item{D031}{fix me}
+#'    \item{D032}{fix me}
+#'    \item{H1}{Baumhoehe 1}
+#'    \item{H2}{Baumhoehe 2}
+#'    \item{hM}{fix me}
+#'    \item{HSt1}{fix me}
+#'    \item{HSt2}{fix me}
+#'    \item{VolV1}{Baumvolumen 1}
+#'    \item{VolV2}{Baumvolumen 2}
+#'    \item{VolE1}{fix me}
+#'    \item{VolE2}{fix me}
+#'    \item{oiB1}{oberirdische Biomasse 1}
+#'    \item{oiB2}{oberirdische Biomasse 2}
+#'    \item{StFl1}{fix me}
+#'    \item{StFl2}{fix me}
+#'    \item{NHa1}{fix me}
+#'    \item{NHa2}{fix me}
+#'    \item{Kf1}{fix me}
+#'    \item{Kf2}{fix me}
+#'    \item{Kh1}{fix me}
+#'    \item{Kh2}{fix me}
+#'    \item{Kst1}{fix me}
+#'    \item{Kst2}{fix me}
+#'    \item{Bemerk}{Bemerkung/ Kommentar}
+#'  }
+"baeume.3"
+
+# baeume.12-------------------
+#' Tree information of BWI1 and BWI2
+#' 
+#' Data frame with tree information from BWI1 and BWI2.
+#' 
+#' @format A data frame with 177720 rows and 30 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{STP}{fix me}
+#'    \item{BNr}{Baumnummer}
+#'    \item{Pk}{Probebaumkennziffer}
+#'    \item{PL}{fix me}
+#'    \item{BA}{Baumart}
+#'    \item{Azi}{Azimut}
+#'    \item{Entf}{Horizontalentfernung}
+#'    \item{Bs1}{Bestandesschicht}
+#'    \item{Alt1}{Baumalter 1}
+#'    \item{Alt2}{Baumalter 2 (?)}
+#'    \item{BHD1}{Brusthoehendurchmesser 1}
+#'    \item{BHD2}{Brusthoehendurchmesser 2}
+#'    \item{D031}{fix me}
+#'    \item{D032}{fix me}
+#'    \item{H1}{Baumhoehe 1}
+#'    \item{H2}{Baumhoehe 2}
+#'    \item{VolV1}{Baumvolumen 1}
+#'    \item{VolV2}{Baumvolumen 2}
+#'    \item{VolE1}{fix me}
+#'    \item{VolE2}{fix me}
+#'    \item{oiB1}{oberirdische Biomasse 1}
+#'    \item{oiB2}{oberirdische Biomasse 2}
+#'    \item{StFl1}{fix me}
+#'    \item{NHa1}{fix me}
+#'    \item{HSt1}{fix me}
+#'    \item{Kh1}{fix me}
+#'    \item{Kf1}{fix me}
+#'    \item{Bemerk}{Bemerkung/ Kommentar}
+#'  }
+"baeume.12"
+
+# baeume.23 ------------------
+#' Tree information of BWI2 and BWI3
+#' 
+#' Data frame with tree information from BWI2 and BWI3.
+#' 
+#' @format A data frame with 122100 rows and 32 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{STP}{fix me}
+#'    \item{BNr}{Baumnummer}
+#'    \item{Pk}{Probebaumkennziffer}
+#'    \item{PL}{fix me}
+#'    \item{WZ1}{fix me}
+#'    \item{BA}{Baumart}
+#'    \item{Azi}{Azimut}
+#'    \item{Entf}{Horizontalentfernung}
+#'    \item{Bs1}{Bestandesschicht}
+#'    \item{Alt1}{Baumalter 1}
+#'    \item{Alt2}{Baumalter 2 (?)}
+#'    \item{BHD1}{Brusthoehendurchmesser 1}
+#'    \item{BHD2}{Brusthoehendurchmesser 2}
+#'    \item{D031}{fix me}
+#'    \item{D032}{fix me}
+#'    \item{H1}{Baumhoehe 1}
+#'    \item{H2}{Baumhoehe 2}
+#'    \item{VolV1}{Baumvolumen 1}
+#'    \item{VolV2}{Baumvolumen 2}
+#'    \item{VolE1}{fix me}
+#'    \item{VolE2}{fix me}
+#'    \item{oiB1}{oberirdische Biomasse 1}
+#'    \item{oiB2}{oberirdische Biomasse 2}
+#'    \item{StFl1}{fix me}
+#'    \item{NHa1}{fix me}
+#'    \item{HSt1}{fix me}
+#'    \item{Kh1}{fix me}
+#'    \item{Kst1}{fix me}
+#'    \item{Kf1}{fix me}
+#'    \item{Bemerk}{Bemerkung/ Kommentar}
+#'  }
+"baeume.23"
+
+# bagr.bwi -------------
+#' Tree species groups and further information
+#' 
+#' List with tree species groups used in BWI3 and further information.
+#' 
+#' @format A list with 4 elements
+#' \describe{
+#'  \item{bagr.lab}{abbreviation of tree species group}
+#'  \item{ba.group}{lists with tree species numbers for tree species group}
+#'  \item{ba.colors}{standard colors for tree species group}
+#'  \item{ba.text}{names of tree species groups}
+#'  }
+"bagr.bwi"
+
+# bagr.list ------------------
+#' Tree species groups
+#' 
+#' List with tree species groups used in BWI3.
+#' 
+#' @format A vector with 9 tree species groups (abbreviations)
+"bagr.list"
+
+# bagr.x --------------
+#' Speciefied tree species groups and further information
+#' 
+#' List with more speciefied tree species groups used in BWI3 and further 
+#' information.
+#' 
+#' @format A List with 2 elements
+#'  \describe{
+#'    \item{bagr.lab}{abbreviation of tree species group}
+#'    \item{ba.group}{lists with tree species numbers for tree species group}
+#'  }
+"bagr.x"
+
+# COLORS_BWI ------------------------
+#' BWI standard green shades
+#' 
+#' Standard green shades for BWI plots.
+#' 
+#' @format A vector with 3 strings (green shades).
+"COLORS_BWI"
+
+# ecke.feld.3 ----------------
+#' Waldlebensraumtypen
+#' 
+#' Tabelle enthaelt Informationen ueber die Waldlebensraumtypen, aufgenommen in 
+#' der BWI 3.
+#' 
+#' @format A data frame with 13845 rows and 12 variables
+#'  \describe{
+#'    \item{Tnr}{Traktnummer}
+#'    \item{Enr}{Eckennummer}
+#'    \item{Be}{Begehbarkeit (?)}
+#'    \item{Ab}{fix me}
+#'    \item{Al_best}{Bestandesalter (?)}
+#'    \item{Phase}{fix me}
+#'    \item{WLT}{Waldlebensraumtyp}
+#'    \item{WLT_Eutro}{Eutrophierungszeiger}
+#'    \item{WLT_InvG}{Invasive Gehoelzer}
+#'    \item{WLT_Befahr}{Befahrung}
+#'    \item{WLT_AnzFein}{Anzahl forstlicher Feinerschliessungslinien im 
+#'      Probekreis r = 25m}
+#'    \item{natWG_WLT}{natuerliche Waldgesellschaft}
+#'  }
+"ecke.feld.3"
+
+# ecken.1 --------------
+#' Eckenmerkmale BWI1
+#' 
+#' Eckenbezogene Informationen aus der Traktvorklaerung der BWI 1.
+#' 
+#' @format A data frame with 13596 rows and 28 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{Wa}{Wald/ Nichtwald}
+#'    \item{Begehbar}{Begehbarkeit}
+#'    \item{Be}{fix me}
+#'    \item{Bl}{Bundesland}
+#'    \item{Kreis}{Landkreiscode}
+#'    \item{Gemeinde}{Gemeindecode}
+#'    \item{raumkat_id}{Raumkategoriencode (?)}
+#'    \item{raumkat}{Raumkategorie (?)}
+#'    \item{region_id}{Regionscode}
+#'    \item{region}{Region}
+#'    \item{RBez}{fix me}
+#'    \item{Eg}{Eigentumsartencode}
+#'    \item{EgGrkl}{Eigentumsgroessenklassencode}
+#'    \item{EigArt}{Eigentumsart Oberklasse}
+#'    \item{EigArt2}{Eigentumsart Unterklasse}
+#'    \item{Wg}{fix me}
+#'    \item{WGNr_BW}{fix me}
+#'    \item{Wb}{fix me}
+#'    \item{HoeNN}{Hoehe ueber Null}
+#'    \item{NatHoe}{Natuerliche Hoehenstufe}
+#'    \item{NatWG}{Natuerliche Waldgesellschaft}
+#'    \item{Biosphaere}{biosphaerengebiet (?)}
+#'    \item{BTyp}{fix me}
+#'    \item{PL}{fix me}
+#'    \item{Mark}{fix me}
+#'    \item{Bemerkung}{Bemerkung/ Kommentar}
+#'  } 
+"ecken.1"
+
+# ecken.2 ---------------
+#' Eckenmerkmale BWI2
+#' 
+#' Eckenbezogene Informationen aus der Traktvorklaerung der BWI 2.
+#' 
+#' @format A data frame with 13619 rows and 33 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{Wa}{Wald/ Nichtwald}
+#'    \item{Begehbar}{Begehbarkeit}
+#'    \item{Be}{fix me}
+#'    \item{Bl}{Bundesland}
+#'    \item{Kreis}{Landkreiscode}
+#'    \item{Gemeinde}{Gemeindecode}
+#'    \item{raumkat_id}{Raumkategoriencode (?)}
+#'    \item{raumkat}{Raumkategorie (?)}
+#'    \item{region_id}{Regionscode}
+#'    \item{region}{Region}
+#'    \item{RBez}{fix me}
+#'    \item{Eg}{Eigentumsartencode}
+#'    \item{EgGrkl}{Eigentumsgroessenklassencode}
+#'    \item{EigArt}{Eigentumsart Oberklasse}
+#'    \item{EigArt2}{Eigentumsart Unterklasse}
+#'    \item{Wg}{fix me}
+#'    \item{WGNr_BW}{fix me}
+#'    \item{Wb}{fix me}
+#'    \item{HoeNN}{Hoehe ueber Null}
+#'    \item{NatHoe}{Natuerliche Hoehenstufe}
+#'    \item{NatWG}{Natuerliche Waldgesellschaft}
+#'    \item{Biosphaere}{biosphaerengebiet (?)}
+#'    \item{BTyp}{fix me}
+#'    \item{Gform}{Gelaendeform}
+#'    \item{Gneig}{Gelaendeneigung}
+#'    \item{Gexp}{Gelaendeexposition}
+#'    \item{DatumFeld}{Datum der "fix me" - Aufnahme}
+#'    \item{PL}{fix me}
+#'    \item{PLkal}{fix me}
+#'    \item{Mark}{fix me}
+#'    \item{Bemerkung}{Bemerkung/ Kommentar}
+#'  }
+"ecken.2"
+
+# ecken.3 --------------
+#' Eckenmerkmale BWI3
+#' 
+#' Eckenbezogene Informationen der Traktvorklaerung der BWI 3.
+#' 
+#' @format A data frame with 13711 rows and 46 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{Vbl}{fix me}
+#'    \item{Perm}{fix me}
+#'    \item{Wa}{Wald/ Nichtwald}
+#'    \item{Begehbar}{Begehbarkeit}
+#'    \item{Be}{fix me}
+#'    \item{Ne}{fix me}
+#'    \item{NeUrsacheNB}{fix me}
+#'    \item{NeUrsacheB}{fix me}
+#'    \item{LaNu}{Landnutzungscode}
+#'    \item{Bl}{Bundesland}
+#'    \item{Kreis}{Landkreiscode}
+#'    \item{Gemeinde}{Gemeindecode}
+#'    \item{raumkat_id}{Raumkategoriencode (?)}
+#'    \item{raumkat}{Raumkategorie (?)}
+#'    \item{region_id}{Regionscode}
+#'    \item{region}{Region}
+#'    \item{RBez}{fix me}
+#'    \item{Eg}{Eigentumsartencode}
+#'    \item{EgGrkl}{Eigentumsgroessenklassencode}
+#'    \item{EigArt}{Eigentumsart Oberklasse}
+#'    \item{EigArt2}{Eigentumsart Unterklasse}
+#'    \item{Wg}{fix me}
+#'    \item{WGNr_BW}{fix me}
+#'    \item{Wb}{fix me}
+#'    \item{HoeNN}{Hoehe ueber Null}
+#'    \item{NatHoe}{Natuerliche Hoehenstufe}
+#'    \item{NatWG}{Natuerliche Waldgesellschaft}
+#'    \item{NatWgV}{Natuerliche Waldgesellschaft Vorklaerung (?)}
+#'    \item{WLT}{Waldlebensraumtyp}
+#'    \item{BTyp}{fix me}
+#'    \item{Gform}{Gelaendeform}
+#'    \item{Gneig}{Gelaendeneigung}
+#'    \item{Gexp}{Gelaendeexposition}
+#'    \item{FFH}{FFH- Gebiet}
+#'    \item{NationalP}{Nationalpark}
+#'    \item{NaturP}{Naturpark}
+#'    \item{Biosphaere}{Biosphaerengebiet (?)}
+#'    \item{NaturSG}{Naturschutzgebiet}
+#'    \item{AT}{fix me}
+#'    \item{DatumFeld}{Datum der "fix me" - Aufnahme}
+#'    \item{PL}{fix me}
+#'    \item{PLkal}{fix me}
+#'    \item{Mark}{fix me}
+#'    \item{Bemerkung}{Bemerkung/ Kommentar}
+#'  }
+"ecken.3"
+
+# ecken.23 --------------
+#' Eckenmerkmale der BWI2 and BWI 3
+#' 
+#' Kombinierte Eckeninformationen aus den Traktvorklaerungen der BWI 2 and BWI 
+#' 3.
+#' 
+#' @format A data frame with 13722 rows and 29 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{Wa}{Wald/ Nichtwald}
+#'    \item{Begehbar}{Begehbarkeit}
+#'    \item{Be}{fix me}
+#'    \item{Bl}{Bundesland}
+#'    \item{Kreis}{Landkreiscode}
+#'    \item{Gemeinde}{Gemeindecode}
+#'    \item{RBez}{fix me}
+#'    \item{Eg}{Eigentumsartencode}
+#'    \item{EgGrkl}{Eigentumsgroessenklassencode}
+#'    \item{EigArt}{Eigentumsart Oberklasse}
+#'    \item{EigArt2}{Eigentumsart Unterklasse}
+#'    \item{Wg}{fix me}
+#'    \item{WGNr_BW}{fix me}
+#'    \item{Wb}{fix me}
+#'    \item{HoeNN}{Hoehe ueber Null}
+#'    \item{NatHoe}{Natuerliche Hoehenstufe}
+#'    \item{NatWG}{Natuerliche Waldgesellschaft}
+#'    \item{BTyp}{fix me}
+#'    \item{Gform}{Gelaendeform}
+#'    \item{Gneig}{Gelaendeneigung}
+#'    \item{Gexp}{Gelaendeexposition}
+#'    \item{Biosphaere}{biosphaerengebiet (?)}
+#'    \item{DatumFeld}{Datum der "fix me" - Aufnahme}
+#'    \item{PL}{fix me}
+#'    \item{PLkal}{fix me}
+#'    \item{Mark}{fix me}
+#'    \item{Bemerkung}{Bemerkung/ Kommentar}
+#'  }
+"ecken.23"
+
+# fba.2 ------------------
+#' Forstlich besonders bedeutsame Pflanzenarten der BWI 2
+#' 
+#' Forstlich besonders bedeutsame Pflanzenarten (FBA) der BWI 2 je Traktecke.
+#' 
+#' @section moegliche FBA:
+#'  11 - 	Adlerfarn \cr
+#'  12 -	Brennessel \cr
+#'  13 -	Riedgras \cr
+#'  14 -	Honiggras \cr
+#'  15 -	Reitgras \cr
+#'  16 - 	Heidekraut \cr
+#'  17 - 	Heidelbeere \cr
+#'  18 -	Brombeere \cr
+#'  19 - 	Riesenbaerenklau \cr
+#'  20 -	Riesenknoeterich \cr
+#'  21 -	Druesiges Springkraut \cr
+#'  22 -	Kleinbluetiges Springkraut \cr
+#'  23 -	Kernesbeere
+#'  
+#' @format A data frame with 58996 rows and 4 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{FBA}{Fortstlich besonders bedeutsame Pflanzenarten}
+#'    \item{Dichte}{Dichtecode}
+#'  }
+"fba.2"
+
+# fba.3 -----------
+#' Forstlich besonders bedeutsame Pflanzenarten der BWI 3
+#' 
+#' Forstlich besonders bedeutsame Pflanzenarten (FBA) der BWI 3 je Traktecke.
+#' 
+#' @section moegliche FBA:
+#'  11 -   Adlerfarn \cr
+#'  12 -	Brennessel \cr
+#'  13 -	Riedgras \cr
+#'  14 -	Honiggras \cr
+#'  15 -	Reitgras \cr
+#'  16 - 	Heidekraut \cr
+#'  17 - 	Heidelbeere \cr
+#'  18 -	Brombeere \cr
+#'  19 - 	Riesenbaerenklau \cr
+#'  20 -	Riesenknoeterich \cr
+#'  21 -	Druesiges Springkraut \cr
+#'  22 -	Kleinbluetiges Springkraut \cr
+#'  23 -	Kernesbeere
+#'  
+#' @format A data frame with 170235 rows and 5 variables:
+#'  \describe{
+#'    \item{Tnr}{Traktnummer}
+#'    \item{Enr}{Eckennummer}
+#'    \item{Vbl}{fix me}
+#'    \item{FBA}{Fortstlich besonders bedeutsame Pflanzenarten}
+#'    \item{Dichte}{Dichtecode}
+#'  }
+"fba.3"
+
+# FVBN.alleba.akl.gw.1 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.gw.1
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Gemeindewald fuer die BWI 1.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.gw.1"
+
+# FVBN.alleba.akl.gw.2 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.gw.2
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Gemeindewald fuer die BWI 2.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.gw.2"
+
+# FVBN.alleba.akl.gw.3 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.gw.3
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Gemeindewald fuer die BWI 3.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.gw.3"
+
+# FVBN.alleba.akl.kw.1 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.kw.1
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Koerperschaftswald fuer die BWI 1.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.kw.1"
+
+# FVBN.alleba.akl.kw.2 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.kw.2
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Koerperschaftswald fuer die BWI 2.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.kw.2"
+
+# FVBN.alleba.akl.kw.3 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.kw.3
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Koerperschaftswald fuer die BWI 3.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.kw.3"
+
+# FVBN.alleba.akl.pw.1 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.pw.1
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Privatwald fuer die BWI 1.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.pw.1"
+
+# FVBN.alleba.akl.pw.2 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.pw.2
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Privatwald fuer die BWI 2.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.pw.2"
+
+# FVBN.alleba.akl.pw.3 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.pw.3
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Privatwald fuer die BWI 3.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.pw.3"
+
+# FVBN.alleba.akl.stw.1 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.stw.1
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Staatswald fuer die BWI 1.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.stw.1"
+
+# FVBN.alleba.akl.stw.2 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.stw.2
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Staatswald fuer die BWI 2.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.stw.2"
+
+# FVBN.alleba.akl.stw.3 ----------------
+#' Zustandshochrechnung FVBN.alleba.akl.stw.3
+#' 
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#' Staatswald fuer die BWI 3.
+#' 
+#' @format A list with 20 elements:
+#'  \describe{
+#'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
+#'  }
+"FVBN.alleba.akl.stw.3"
+
+# FVBN.alleba.gw.1 ------------------
+#' Zustandshochrechnung FVBN.alleba.gw.1
+#' 
+#' Zustandshochrechnung fuer alle Baumarten fuer den Gemeindewald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.alleba.gw.1"
+
+# FVBN.alleba.gw.2 ------------------
+#' Zustandshochrechnung FVBN.alleba.gw.2
+#' 
+#' Zustandshochrechnung fuer alle Baumarten fuer den Gemeindewald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.alleba.gw.2"
+
+# FVBN.alleba.gw.3 ------------------
+#' Zustandshochrechnung FVBN.alleba.gw.3
+#' 
+#' Zustandshochrechnung fuer alle Baumarten fuer den Gemeindewald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.alleba.gw.3"
+
+# FVBN.bagr.akl.gw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.gw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Gemeindewald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.gw.1"
+
+# FVBN.bagr.akl.gw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.gw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Gemeindewald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.gw.2"
+
+# FVBN.bagr.akl.gw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.gw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Gemeindewald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.gw.3"
+
+# FVBN.bagr.akl.kw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.kw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Koerperschaftswald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.kw.1"
+
+# FVBN.bagr.akl.kw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.kw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Koerperschaftswald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.kw.2"
+
+# FVBN.bagr.akl.kw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.kw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Koerperschaftswald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.kw.3"
+
+# FVBN.bagr.akl.pw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.pw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Privatwald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.pw.1"
+
+# FVBN.bagr.akl.pw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.pw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Privatwald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.pw.2"
+
+# FVBN.bagr.akl.pw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.pw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Privatwald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.pw.3"
+
+# FVBN.bagr.akl.stw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.stw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Staatswald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.stw.1"
+
+# FVBN.bagr.akl.stw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.stw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Staatswald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.stw.2"
+
+# FVBN.bagr.akl.stw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.akl.stw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#' Staatswald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.akl.stw.3"
+
+# FVBN.bagr.dkl.gw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.gw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Gemeindewald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.gw.1"
+
+# FVBN.bagr.dkl.gw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.gw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Gemeindewald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.gw.2"
+
+# FVBN.bagr.dkl.gw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.gw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Gemeindewald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.gw.3"
+
+# FVBN.bagr.dkl.kw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.kw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Koerperschaftswald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.kw.1"
+
+# FVBN.bagr.dkl.kw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.kw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Koerperschaftswald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.kw.2"
+
+# FVBN.bagr.dkl.kw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.kw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Koerperschaftswald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.kw.3"
+
+# FVBN.bagr.dkl.pw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.pw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Privatwald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.pw.1"
+
+# FVBN.bagr.dkl.pw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.pw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Privatwald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.pw.2"
+
+# FVBN.bagr.dkl.pw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.pw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Privatwald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.pw.3"
+
+# FVBN.bagr.dkl.stw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.stw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Staatswald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.stw.1"
+
+# FVBN.bagr.dkl.stw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.stw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Staatswald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.stw.2"
+
+# FVBN.bagr.dkl.stw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.dkl.stw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#' Staatswald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.dkl.stw.3"
+
+# FVBN.bagr.gw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.gw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Gemeindewald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.gw.1"
+
+# FVBN.bagr.gw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.gw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Gemeindewald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.gw.2"
+
+# FVBN.bagr.gw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.gw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Gemeindewald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.gw.3"
+
+# FVBN.bagr.kw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.kw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Koerperschaftswald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.kw.1"
+
+# FVBN.bagr.kw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.kw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Koerperschaftswald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.kw.2"
+
+# FVBN.bagr.kw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.kw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Koerperschaftswald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.kw.3"
+
+# FVBN.bagr.pw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.pw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Privatwald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.pw.1"
+
+# FVBN.bagr.pw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.pw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Privatwald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.pw.2"
+
+# FVBN.bagr.pw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.pw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Privatwald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.pw.3"
+
+# FVBN.bagr.stw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.stw.1
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Staatswald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.stw.1"
+
+# FVBN.bagr.stw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.stw.2
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Staatswald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.stw.2"
+
+# FVBN.bagr.stw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.stw.3
+#' 
+#' Zustandshochrechnung nach Baumartengruppen fuer den Staatswald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.stw.3"
+
+# FVBN.bagr.spec.gw.1 ----------
+#' Zustandshochrechnung FVBN.bagr.spec.gw.1
+#' 
+#' Zustandshochrechnung nach spezifizierten Baumartengruppen fuer den 
+#' Gemeindewald der BWI 1.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.spec.gw.1"
+
+# FVBN.bagr.spec.gw.2 ----------
+#' Zustandshochrechnung FVBN.bagr.spec.gw.2
+#' 
+#' Zustandshochrechnung nach spezifizeirten Baumartengruppen fuer den 
+#' Gemeindewald der BWI 2.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.spec.gw.2"
+
+# FVBN.bagr.spec.gw.3 ----------
+#' Zustandshochrechnung FVBN.bagr.spec.gw.3
+#' 
+#' Zustandshochrechnung nach spezifizierten Baumartengruppen fuer den 
+#' Gemeindewald der BWI 3.
+#' 
+#' @format A list with 20 elements
+#'  \describe{
+#'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
+#'    \item{Stratum}{Informationen zu dem definierten Stratum}
+#'    \item{nTE}{Anzahl der genutzten Traktecken zur Zustandshochrechnung}
+#'    \item{HBF}{Holzbodenflaeche in ha}
+#'    \item{se.HBF}{Standardfehler der Holzbodenflaeche}
+#'    \item{BL}{Flaechen der Bloessen in ha}
+#'    \item{se.BL}{Standardfehler der Bloessenflaechen}
+#'    \item{iBL}{Flaeche der idellen Bloessen ("Luecken") in ha}
+#'    \item{se.iBL}{Standardfehler der idellen Bloessen ("Luecken")}
+#'    \item{LK}{relative Lueckenkorrektur}
+#'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
+#'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
+#'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
+#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{BAGR}{genutzte Baumartengruppe}
+#'    \item{AKL}{Vektor mit Altersklassen}
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer Gesamtwerte}
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'      Standardfehler) fuer hektabezogene Kenngroessen}
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'  }
+"FVBN.bagr.spec.gw.3"
+
+# gk_coord------------
+#' Eckenkoordinaten
+#' 
+#' Tabelle enthaelt Informationen zu Sollkoordinaten und tatsaechlich 
+#' eingemessenen Koordinaten.
+#' 
+#' @format A data frame with 13234 rows and 8 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{Soll_X_GK3}{Sollwert fuer die X- Koordinate im Gauss-Krueger-
+#'      Koordinatensystem}
+#'    \item{Soll_Y_GK3}{Sollwert fuer die Y- Koordinate im Gauss-Krueger-
+#'      Koordinatensystem}
+#'    \item{RW_MED}{Eingemessener Rechtswert der Ecke (X- Koordinate)}
+#'    \item{HW_MED}{Eingemessener Hochwert der Ecke (Y- Koordinate)}
+#'    \item{Abw_von_Soll}{Abweichung der eingemessenen von der Soll- Koordinate}
+#'    \item{Einmess.Art}{Art der Einmessung}
+#'  }
+"gk_coord"
+
+# kreise ------------
+#' Kreisinformationen
+#' 
+#' Tabele enthaelt Infomrationen ueber Kreise, die entsprechenden Kreiscodes der 
+#' BWI, die Kreishauptstadt und die Groesse des Kreises.
+#' 
+#' @format A data frame with 44 rows and 5 variables:
+#'  \describe{
+#'    \item{codeBL}{Code des Bundeslandes}
+#'    \item{codeKreis}{Code des Kreises}
+#'    \item{langKreis}{Kreis}
+#'    \item{KreisHauptstadt}{Kreishauptstadt}
+#'    \item{Flaeche_km2}{Kreisflaeche in km2}
+#'  } 
+"kreise"
+
+# krs.list ---------------
+#' Kreiscodes der BWI
+#' 
+#' Liste enthaelte alle Kreiscodes der BWI.
+#' 
+#' @format A list with 44 integer numbers.
+"krs.list"
+
+# nT-----------------
+#' Traktanzahl
+#' 
+#' Anzahl der in der BWI aufgenommenen Trakte (8970).
+#' 
+#' @format An integer number.
+"nT"
+
+# nTE.12 --------------
+#' Eckenanzahl aus BWI 1 und 2
+#' 
+#' Anzahl der Traktecken, die in der BWI 1 und 2 aufgenommen wurden (?) (35743).
+#' 
+#' @format An integer number.
+"nTE.12"
+
+# nTE -------------
+#' Eckenanzahl der BWI 3
+#' 
+#' Anzahl der Traktecken, welche in der BWI 3 aufgenommen wurden (35731).
+#' 
+#' @format An integer number.
+"nTE"
+
+# ntns.te --------------
+#' Naturnaehestufen
+#' 
+#' Angaben zur Naturnaehestufe pro Traktecke.
+#' 
+#' @format A data frame with 35859 rows and 18 variables:
+#'  \describe{
+#'    \item{Tnr}{Traktnummer}
+#'    \item{Enr}{Eckennummer}
+#'    \item{NTNS_F_WZP_Fak4_BWI3}{Anzahl der Baeume nach der Winkelzaehlprobe 
+#'      Faktor 4 (?)}
+#'    \item{NTNS_F_gr4m_min5Baeume_BWI3}{fix me}
+#'    \item{NTNS_F_gr4m_alleBaeume_BWI3}{fix me}
+#'    \item{NTNS_F_kl4m_BA_Anteile_BWI3}{fix me}
+#'    \item{NTNS_F_BaWue_BWI3}{fix me}
+#'    \item{NTNS_F_Bund_BWI3}{fix me}
+#'    \item{NTNS_F_WZP_Fak4_BWI2}{fix me}
+#'    \item{NTNS_F_gr4m_min5Baeume_BWI2}{fix me}
+#'    \item{NTNS_F_gr4m_alleBaeume_BWI2}{fix me}
+#'    \item{NTNS_F_kl4m_BA_Anteile_BWI2}{fix me}
+#'    \item{NTNS_F_BaWue_BWI2}{fix me}
+#'    \item{NTNS_F_Bund_BWI2}{fix me}
+#'    \item{NTNS_F_WZP_Fak4_BWI2_natwgBWI3}{fix me}
+#'    \item{NTNS_F_gr4m_alleBaeume_BWI2_natwgBWI3}{fix me}
+#'    \item{NTNS_F_kl4m_BA_Anteile_BWI2_natwgBWI3}{fix me}
+#'    \item{NTNS_F_BaWue_BWI2_natwgBWI3}{fix me}
+#'  }
+"ntns.te"
+
+# RF.12 --------------
+#' Fix me
+#' 
+#' Fix me.
+#' 
+#' @format A double number.
+"RF.12"
+
+# RF --------------
+#' Fix me
+#' 
+#' Fix me.
+#' 
+#' @format A double number.
+"RF"
+
+# schutzgebiete.3 -------------
+#' Schutzgebietsinformationen
+#' 
+#' Informationen ueber die Schutzgebiete zum Zeitpunkt der BWI 3.
+#' 
+#' @format A data frame with 13711 rows and 18 variables:
+#'  \describe{
+#'    \item{Tnr}{Traktnummer}
+#'    \item{Enr}{Eckennummer}
+#'    \item{Wa}{Waldentscheid}
+#'    \item{Begehbar}{Begehbarkeit}
+#'    \item{NLP}{fix me}
+#'    \item{BSG_Kern}{fix me}
+#'    \item{BSG_Pflege}{fix me}
+#'    \item{BSG_Entwicklung}{fix me}
+#'    \item{BW}{fix me}
+#'    \item{BW_Erklaerungsjahr}{fix me}
+#'    \item{SW}{fix me}
+#'    \item{NSG}{Naturschutzgebiet}
+#'    \item{NAP}{Naturpark (?)}
+#'    \item{FFH}{FFH-Gebiet}
+#'    \item{WLRT}{Waldlebensraumtyp}
+#'    \item{Waldrefugien}{fix me}
+#'    \item{gesch_Biotop}{geschuetztes Biotop (?)}
+#'    \item{Biotop_Bez}{fix me}
+#'  }
+"schutzgebiete.3"
+
+# tab -------------
+#' Volumen je Baumartengruppe (?)
+#' 
+#' Volumenauflistung (?) fuer die einzelnen Baumartengruppen.
+#' 
+#' @format A data frame with 13 rows and 7 variables:
+#'  \describe{
+#'    \item{BAGR}{Baumartengruppe}
+#'    \item{Vj_uS_ha}{fix me}
+#'    \item{Vj_uS_Proz}{fix me}
+#'    \item{Vj_HB_ha}{fix me}
+#'    \item{Vj_HB_Proz}{fix me}
+#'    \item{Vj_gesamt_ha}{fix me}
+#'    \item{Vjgesamt_Proz}{fix me}
+#'  }
+"tab"
+
+# totholz.2 ---------------
+#' Totholzinformationen der BWI 2
+#' 
+#' Tabelle mit Information zum Totholz aufgebnommen waehrend der BWI 2.
+#' 
+#' @format A data frame with 11796 rows and 11 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{Nr}{Totholznummer}
+#'    \item{TBAGr}{Baumartengruppe des Totholzes}
+#'    \item{TArt}{Totholzart}
+#'    \item{TZg}{Zersetzungsgrad des Totholzes}
+#'    \item{TVol}{Volumen des Totholzes}
+#'    \item{Dm}{Durchmesser des Totholzes (?)}
+#'    \item{Lge}{Laenge des Totholzes}
+#'    \item{THf}{fix me}
+#'    \item{Bemerkung}{Bemerkung/ Kommentar}
+#'  }
+"totholz.2"
+
+# totholz.3 ---------------
+#' Totholzinformationen der BWI 3
+#' 
+#' Tabelle mit Information zum Totholz aufgebnommen waehrend der BWI 3.
+#' 
+#' @format A data frame with 11796 rows and 11 variables:
+#'  \describe{
+#'    \item{Tnr}{Traktnummer}
+#'    \item{Enr}{Eckennummer}
+#'    \item{Nr}{Totholznummer}
+#'    \item{Tbagr}{Baumartengruppe des Totholzes}
+#'    \item{Tart}{Totholzart}
+#'    \item{Tzg}{Zersetzungsgrad des Totholzes}
+#'    \item{Tbd}{fix me}
+#'    \item{Tsd}{fix me}
+#'    \item{Tl}{Laenge des Totholzes}
+#'    \item{Tvol}{Volumen des Totholzes}
+#'    \item{Anz}{Anzahl}
+#'    \item{Thf}{fix me}
+#'    \item{Bemerkung}{Bemerkung/ Kommentar}
+#'  }
+"totholz.3"
+
+# trakte.1 ---------------
+#' Traktinformationen BWI 1
+#' 
+#' Traktbezogene Informationen zu den Trakten der BWI 1.
+#' 
+#' @format A data frame with 8970 rows and 5 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{m}{Anzahl Ecken (?)}
+#'    \item{m_HB}{Anzahl Holzboden-Ecken (?)}
+#'    \item{m_bHB}{fix me}
+#'    \item{m_Wa}{Anzahl Wald-ecken (?)}
+#'  }
+"trakte.1"
+
+# trakte.2 ---------------
+#' Traktinformationen BWI 2
+#' 
+#' Traktbezogene Informationen zu den Trakten der BWI 2.
+#' 
+#' @format A data frame with 8970 rows and 5 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{m}{Anzahl Ecken (?)}
+#'    \item{m_HB}{Anzahl Holzboden-Ecken (?)}
+#'    \item{m_bHB}{fix me}
+#'    \item{m_Wa}{Anzahl Wald-ecken (?)}
+#'  }
+"trakte.2"
+
+# trakte.3 ---------------
+#' Traktinformationen BWI 3
+#' 
+#' Traktbezogene Informationen zu den Trakten der BWI 3.
+#' 
+#' @format A data frame with 8970 rows and 5 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{m}{Anzahl Ecken (?)}
+#'    \item{m_HB}{Anzahl Holzboden-Ecken (?)}
+#'    \item{m_bHB}{fix me}
+#'    \item{m_Wa}{Anzahl Wald-ecken (?)}
+#'  }
+"trakte.3"
+
+# verj.2 ---------------
+#' Verjuengung BWI 2
+#' 
+#' Informationen zur Verjuengung der BWI 2.
+#' 
+#' @format A data frame with 24957 rows and 14 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{STP}{fix me}
+#'    \item{BNr}{Baumnummer}
+#'    \item{Ba}{Baumart}
+#'    \item{Bs2}{fix me}
+#'    \item{BHD2}{Brusthoehendurchmesser}
+#'    \item{H2}{Baumhoehe}
+#'    \item{oiB2}{oberirdische Biomasse}
+#'    \item{StFl2}{fix me}
+#'    \item{NHa2}{fix me}
+#'    \item{Biss}{Verbissspuren}
+#'    \item{sonst}{sonstiges}
+#'    \item{Schu}{fix me}
+#'  }
+"verj.2"
+
+# verj.3 ---------------
+#' Verjuengung BWI 3
+#' 
+#' Informationen zur Verjuengung der BWI 3.
+#' 
+#' @format A data frame with 39929 rows and 14 variables:
+#'  \describe{
+#'    \item{TNr}{Traktnummer}
+#'    \item{ENr}{Eckennummer}
+#'    \item{STP}{fix me}
+#'    \item{BNr}{Baumnummer}
+#'    \item{Ba}{Baumart}
+#'    \item{Bs2}{fix me}
+#'    \item{BHD2}{Brusthoehendurchmesser}
+#'    \item{H2}{Baumhoehe}
+#'    \item{oiB2}{oberirdische Biomasse}
+#'    \item{StFl2}{fix me}
+#'    \item{NHa2}{fix me}
+#'    \item{Biss}{Verbissspuren}
+#'    \item{Sonst}{sonstiges}
+#'    \item{Schu}{fix me}
+#'  }
+"verj.3"
+
+# verj.kl4m.2 -----------------
+#' Verjuengung kleiner 4 Meter BWI2
+#' 
+#' Informationen zur Verjuengung, welche kleiner als 4 Meter ist, der BWI 2.
+#' 
+#' @format A data frame with 20944 rows and 9 variables:
+#'  \describe{
+#'    \item{Tnr}{Traktnummer}
+#'    \item{Enr}{Eckennummer}
+#'    \item{DG}{fix me}
+#'    \item{Bs}{fix me}
+#'    \item{VjgArt_ID}{verjuengungsartencode}
+#'    \item{VjgArt}{Verjuengungsart}
+#'    \item{Nr}{verjuengungsnummer}
+#'    \item{Ba}{Baumart}
+#'    \item{Anteil}{Anteilsklasse}
+#'  }
+"verj.kl4m.2"
+
+# verj.kl4m.3 -----------------
+#' Verjuengung kleiner 4 Meter BWI3
+#' 
+#' Informationen zur Verjuengung, welche kleiner als 4 Meter ist, der BWI 3.
+#' 
+#' @format A data frame with 20944 rows and 9 variables:
+#'  \describe{
+#'    \item{Tnr}{Traktnummer}
+#'    \item{Enr}{Eckennummer}
+#'    \item{DG}{fix me}
+#'    \item{Bs}{fix me}
+#'    \item{VjgArt_ID}{verjuengungsartencode}
+#'    \item{VjgArt}{Verjuengungsart}
+#'    \item{Nr}{verjuengungsnummer}
+#'    \item{Ba}{Baumart}
+#'    \item{Anteil}{Anteilsklasse}
+#'  }
+"verj.kl4m.3"
+
+# wzp4.merkmale.2 ------------------------
+#' Schadensmerkmale BWI 2
+#' 
+#' Informationen zu Schaeden, die bei der Winkelzaehlprobe der BWI 2 aufgenommen 
+#' wurden.
+#' 
+#' @format A data frame with 96675 rows and 16 variables:
+#'  \describe{
+#'    \item{Tnr}{Traktnummer}
+#'    \item{Enr}{Eckennummer}
+#'    \item{Bnr}{Baumnummer}
+#'    \item{Pk}{Probebaumkennziffer}
+#'    \item{Bkl}{fix me}
+#'    \item{Tot}{fix me}
+#'    \item{jSchael}{junge Schaelschaeden}
+#'    \item{aeSchael}{aeltere Schaelschaeden}
+#'    \item{Ruecke}{Ruecke- oder Faellschaeden}
+#'    \item{Pilz}{Pilzbefall}
+#'    \item{Harz}{Harzlachten}
+#'    \item{Kaefer}{Kaeferbohrloecher}
+#'    \item{sStamm}{fix me}
+#'    \item{Hoehle}{Hoehlenbaum}
+#'    \item{Bl}{Bundesland}
+#'    \item{STP}{fix me}
+#'  }
+"wzp4.merkmale.2"
+
+# wzp4.merkmale.3 ------------------------
+#' Schadensmerkmale BWI 3
+#' 
+#' Informationen zu Schaeden, die bei der Winkelzaehlprobe der BWI 3 aufgenommen 
+#' wurden.
+#' 
+#' @format A data frame with 100684 rows and 21 variables:
+#'  \describe{
+#'    \item{Tnr}{Traktnummer}
+#'    \item{Enr}{Eckennummer}
+#'    \item{Bnr}{Baumnummer}
+#'    \item{Pk}{Probebaumkennziffer}
+#'    \item{Bkl}{fix me}
+#'    \item{Ast}{Astung}
+#'    \item{Ast_Hoe}{Hoehe der Astung}
+#'    \item{Tot}{fix me}
+#'    \item{jSchael}{junge Schaelschaeden}
+#'    \item{aeSchael}{aeltere Schaelschaeden}
+#'    \item{Ruecke}{Ruecke- oder Faellschaeden}
+#'    \item{Pilz}{Pilzbefall}
+#'    \item{Harz}{Harzlachten}
+#'    \item{Kaefer}{Kaeferbohrloecher}
+#'    \item{sStamm}{fix me}
+#'    \item{FaulKon}{fix me}
+#'    \item{Hoehle}{Hoehlenbaum}
+#'    \item{Bizarr}{fix me}
+#'    \item{Uralt}{Uralter Baum}
+#'    \item{Horst}{Horstbaum}
+#'    \item{MBiotop}{Biotopbaum}
+#'  }
+"wzp4.merkmale.3"
+
+# x_dichte -------------
+#' Dichtetabelle
+#' 
+#' Uebersichtstabelle fuer Dichteangaben
+#' 
+#' @format A data frame with 5 rows and 11 variables:
+#'  \describe{
+#'    \item{ICode}{fix me}
+#'    \item{ACode}{fix me}
+#'    \item{KurzD}{Kurzbezeichnung Dichte}
+#'    \item{KurzE}{Kurzbezeihnung Dichte in englisch}
+#'    \item{LangD}{Ausfuehrliche Bezeichnung der Dichte}
+#'    \item{LangE}{Ausfuehrliche Bezeichnung der Dichte in englisch}
+#'    \item{Sort}{fix me}
+#'    \item{Farbe}{Farbliche darstellung fuer Grafiken}
+#'    \item{Zu_1}{fix me}
+#'    \item{Zu_2}{fix me}
+#'    \item{Zu_3}{fix me}
+#'  }
+"x_dichte"
+
+# x_fba.3 ----------------------
+#' Forstlich besonders bedeutsame Pflanzenarten
+#' 
+#' Uebersichtstabelle zu den Forstlich besonders bedeutsame Pflanzenarten
+#' 
+#' @format A data frame with 14 rows and 16 variables:
+#'  \describe{
+#'    \item{ICode}{fix me}
+#'    \item{ACode}{fix me}
+#'    \item{KurzD}{Kurzbeschreibung}
+#'    \item{KurzE}{Kurzbeschreibung in englisch}
+#'    \item{LangD}{Lange Bezeichnung}
+#'    \item{LangE}{lange bezeichnung in englisch}
+#'    \item{Sort}{fix me}
+#'    \item{Farbe}{farbliche Darstellung in Grafiken}
+#'    \item{Zu_1}{fix me}
+#'    \item{Zu_2}{fix me}
+#'    \item{Zu_3}{fix me}
+#'    \item{Zu_BodStrBaGr1}{fix me}
+#'    \item{Zu_BodStrBaGr2}{fix me}
+#'    \item{Zu_BodStrBaGr3}{fix me}
+#'    \item{Zu_BodStrBaAlle}{fix me}
+#'    \item{Zu_Veg}{fix me}
+#'  }
+"x_fba.3"
