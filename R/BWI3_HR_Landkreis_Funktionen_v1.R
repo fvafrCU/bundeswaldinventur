@@ -1,7 +1,23 @@
-#Funktion wertet Flächen für Landkreis aus
-flaechen.kreis.fun.1 <- function(kreiscode)
-#Funktion berechnet verschiedene Flächen nach Eigentumskategorien
-{
+#' Aggregiert Flaechen fuer den Landkreis
+#' 
+#' Funktion wertet verschiedene Flaechen fuer den Landkreis aus, unterteilt fuer 
+#' die Eigentumskategorien.
+#' 
+#' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
+#' @section Hinweis: \code{krs.list} muss geladen sein
+#' @param kreiscode Code fuer den Landkreis.
+#' @return Liste mit folgenden Komponenten: \strong{Kreis} (Label fuer den 
+#'  Kreis), \strong{KreisCode} (\code{kreiscode}), 
+#'  \strong{Kreisfläche_gesamt_ha} (Groesse des Kreises in ha), 
+#'  \strong{Waldanteil} (waldanteil des Kreises an den verschiedenen BWIs),
+#'  \strong{Waldflaeche} (Waldflaeche und Standardfehler fuer verschiedene 
+#'  Eigentumsklassen und BWIs), \strong{Waldfl_Proz} (Waldflaeche in Prozent und 
+#'  Standardfehler fuer verschiedene Eigentumsklassen), \strong{begehb_Holzbfl} 
+#'  (Holzbodenflaeche und Standardfehler fuer verschiedene Eigentumsklassen)
+flaechen.kreis.fun.1 <- function(kreiscode){
+  #Input Check
+    checkmate::assertInt(kreiscode, lower = 0)
+  #End Input Check
   i <- as.numeric(rownames(kreise[kreise$codeKreis==kreiscode,]))
   #Waldfläche insgesamt
   (wfl.3 <-
@@ -137,7 +153,7 @@ flaechen.kreis.fun.1 <- function(kreiscode)
 
   return(list(Kreis = as.character(kreise[kreise$codeKreis==kreiscode,3]),
     KreisCode = kreiscode,
-    Kreisfläche_gesamt_ha = kreise[kreise$codeKreis==kreiscode,5]*100,
+    'Kreisfl\u00e4che_gesamt_ha' = kreise[kreise$codeKreis==kreiscode,5]*100,
     Waldanteil=data.frame(BWI=c(1987,2002,2012),
     Waldanteil= round(c(wfl.3$Flaeche/kreise[kreise$codeKreis==kreiscode,5],
                   wfl.2$Flaeche/kreise[kreise$codeKreis==kreiscode,5],
@@ -184,11 +200,24 @@ flaechen.kreis.fun.1 <- function(kreiscode)
                 bhbf.pw.3$SE_Flaeche,bhbf.gpw.3$SE_Flaeche,
                 bhbf.mpw.3$SE_Flaeche,bhbf.kpw.3$SE_Flaeche),0))))
 } #Ende <flaechen.kreis.fun.1>
-#-------------------------------------------------------------------------------
 
-flaechen.stratum.fun.1 <- function(auswahl)
-#Funktion berechnet verschiedene Flächen nach Eigentumskategorien
-{
+#' Aggregiert Flaechen fuer ein Stratum
+#' 
+#' Funktion berechnet verschiedene Flaechen nach Eigentumskategorien.
+#' 
+#' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
+#' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten 
+#'  enthaelt, anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: 
+#'  list(Wa=c(3,5), Begehbar=1).
+#' @return Liste mit folgenden Komponenten: \strong{Stratum} (\code{auswahl}), 
+#'  \strong{Waldflaeche} (Waldflaeche und Standardfehler fuer verschiedene 
+#'  Eigentumsklassen und BWIs), \strong{Waldfl_Proz} (Waldflaeche in Prozent und 
+#'  Standardfehler fuer verschiedene Eigentumsklassen), \strong{begehb_Holzbfl} 
+#'  (Holzbodenflaeche und Standardfehler fuer verschiedene Eigentumsklassen)
+flaechen.stratum.fun.1 <- function(auswahl){
+  #Input Check
+    checkmate::assertList(auswahl, min.len = 1, names = "named")
+  #Output check
   auswahl.o <- auswahl
   auswahl.oo <- auswahl
   #Waldfläche insgesamt
@@ -374,5 +403,4 @@ flaechen.stratum.fun.1 <- function(auswahl)
                 bhbf.pw.3$SE_Flaeche,bhbf.gpw.3$SE_Flaeche,
                 bhbf.mpw.3$SE_Flaeche,bhbf.kpw.3$SE_Flaeche),0))))
 } #Ende <flaechen.stratum.fun.1>
-#-------------------------------------------------------------------------------
 

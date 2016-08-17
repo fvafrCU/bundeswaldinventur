@@ -8,10 +8,6 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
-Writing NAMESPACE
-Writing set_options.Rd
-Writing get_options.Rd
-Writing get_data.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -63,7 +59,6 @@ Checking bundeswaldinventur ----------------------------------------------------
 Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
   BWI3_HR_Grafikfunktionen_v2.R
-  BWI3_HR_Landkreis_Funktionen_v1.R
   fvbn2a.R
   fvbn2b.R
   fvbn2c.R
@@ -4189,7 +4184,6 @@ checking R files for non-ASCII characters ... WARNING
 Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
   BWI3_HR_Grafikfunktionen_v2.R
-  BWI3_HR_Landkreis_Funktionen_v1.R
   fvbn2a.R
   fvbn2b.R
   fvbn2c.R
