@@ -94,14 +94,30 @@ round_and_prettify_german <- function(x, digits = 0) {
 }
 
 
-# @NULL 
-#FIXME:
-
+#' Changes number formatting to german style
+#' 
+#' Changes number fformatting to german style - "." as big mark and "," as 
+#' decimal mark.
+#' 
+#' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
+#' @param x A number.
+#' @param ... arguemnts passed to \code{\link{format}}.
+#' @return number with changed formatting.
+#' @export
 german_number <- function(x, ...) {
     y  <- format(x, big.mark = ".", decimal.mark = ',',
                  justify = "right", scientific = FALSE, ...)
     return(y)
 }
+
+#' Tex code for german umlauts
+#' 
+#' Gets tex code for german umlauts.
+#' 
+#' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
+#' @param string Non ASCII code for german umlaut.
+#' @return Tex code for german umlaut.
+#' @export
 tex_umlauts <- function(string) {
     s <- gsub("ä", '\\\\"a{}', string)
     s <- gsub("Ä", '\\\\"A{}', s)
@@ -112,6 +128,15 @@ tex_umlauts <- function(string) {
     s <- gsub("ß", '\\\\"s{}', s)
     return(s)
 }
+
+#' ASCII code for german umlauts
+#' 
+#' Gets ASCII code for german umlauts.
+#' 
+#' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
+#' @param string Non ASCII code for german umlaut.
+#' @return ASCII code for german umlaut.
+#' @export
 ascii_umlauts <- function(string) {
     s <- gsub("ä", 'ae', string)
     s <- gsub("Ä", 'Ae', s)

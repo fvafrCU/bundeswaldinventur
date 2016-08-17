@@ -8,6 +8,7 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
+Writing german_number.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic

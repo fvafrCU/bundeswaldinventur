@@ -2,6 +2,8 @@
 
 export(add_colSums_prettify_and_print_xtable)
 export(as_percent_and_round)
+export(ascii_umlauts)
+export(german_number)
 export(get_abbreviation_for_label)
 export(get_axis_label_for_abbreviation)
 export(get_color_for_ownership)
@@ -17,3 +19,4 @@ export(round_and_prettify)
 export(round_and_prettify_german)
 export(set_options)
 export(set_to_limit)
+export(tex_umlauts)
