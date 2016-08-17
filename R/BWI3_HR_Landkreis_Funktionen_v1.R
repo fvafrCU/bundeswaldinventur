@@ -5,7 +5,14 @@
 #' 
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
 #' @section Hinweis: \code{krs.list} muss geladen sein
-#' @param kreiscode Code fuer den Landkreis.
+#' @param kreise A data.frame (see \code{\link{kreise}}
+#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
+#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
+#' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
+#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
+#' @param trakte.1 A data.frame (see \code{\link{trakte.1}}
+#' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
+#' @param kreiscode Code fuer den Landkreis.   kreiscode
 #' @return Liste mit folgenden Komponenten: \strong{Kreis} (Label fuer den 
 #'  Kreis), \strong{KreisCode} (\code{kreiscode}), 
 #'  \strong{Kreisfläche_gesamt_ha} (Groesse des Kreises in ha), 
@@ -14,10 +21,19 @@
 #'  Eigentumsklassen und BWIs), \strong{Waldfl_Proz} (Waldflaeche in Prozent und 
 #'  Standardfehler fuer verschiedene Eigentumsklassen), \strong{begehb_Holzbfl} 
 #'  (Holzbodenflaeche und Standardfehler fuer verschiedene Eigentumsklassen)
-flaechen.kreis.fun.1 <- function(kreiscode){
+flaechen.kreis.fun.1 <- function(kreiscode, 
+                                 kreise = get_data("kreise"),
+                                 trakte.3 = get_data("trakte.3"),
+                                 ecken.3 = get_data("ecken.3"),
+                                 trakte.2 = get_data("trakte.2"),
+                                 ecken.2 = get_data("ecken.2"),
+                                 trakte.1 = get_data("trakte.1"),
+                                 ecken.1 = get_data("ecken.1")
+                                 ) {
   #Input Check
     checkmate::assertInt(kreiscode, lower = 0)
   #End Input Check
+    krs.list <- unique(kreise$codeKreis)
   i <- as.numeric(rownames(kreise[kreise$codeKreis==kreiscode,]))
   #Waldfläche insgesamt
   (wfl.3 <-

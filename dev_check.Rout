@@ -8,7 +8,7 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
-Writing german_number.Rd
+Writing flaechen.kreis.fun.1.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -47,7 +47,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * checking for sufficient/correct file permissions ... OK
 * checking whether package ‘bundeswaldinventur’ can be installed ... OK
 * checking installed package size ... NOTE
-  installed size is 33.1Mb
+  installed size is 33.3Mb
   sub-directories of 1Mb or more:
     data  32.8Mb
 * checking package directory ... OK
@@ -84,14 +84,6 @@ Use \uxxxx escapes for other characters.
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-flaechen.kreis.fun.1: no visible binding for global variable ‘kreise’
-flaechen.kreis.fun.1: no visible binding for global variable ‘krs.list’
-flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.3’
-flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.3’
-flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.2’
-flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.2’
-flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.1’
-flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.1’
 flaechen.stratum.fun.1: no visible binding for global variable
   ‘ecken.3’
 flaechen.stratum.fun.1: no visible binding for global variable
@@ -196,65 +188,13 @@ verjg.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
 Undefined global functions or variables:
   bacode baeume.1 baeume.2 baeume.23 baeume.3 bwi comma ecken.1 ecken.2
-  ecken.3 group kreise krs.list name prediction standard_error trakte.1
-  trakte.2 trakte.3
+  ecken.3 group kreise name prediction standard_error trakte.1 trakte.2
+  trakte.3
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
 * checking Rd cross-references ... OK
-* checking for missing documentation entries ... WARNING
-Undocumented code objects:
-  ‘bacode’ ‘baeume.1’ ‘baeume.12’ ‘baeume.2’ ‘baeume.23’ ‘baeume.3’
-  ‘ecke.feld.3’ ‘ecken.1’ ‘ecken.2’ ‘ecken.23’ ‘ecken.3’ ‘fba.2’
-  ‘fba.3’ ‘FVBN.alleba.akl.gw.1’ ‘FVBN.alleba.akl.gw.2’
-  ‘FVBN.alleba.akl.gw.3’ ‘FVBN.alleba.akl.kw.1’ ‘FVBN.alleba.akl.kw.2’
-  ‘FVBN.alleba.akl.kw.3’ ‘FVBN.alleba.akl.pw.1’ ‘FVBN.alleba.akl.pw.2’
-  ‘FVBN.alleba.akl.pw.3’ ‘FVBN.alleba.akl.stw.1’
-  ‘FVBN.alleba.akl.stw.2’ ‘FVBN.alleba.akl.stw.3’ ‘FVBN.alleba.gw.1’
-  ‘FVBN.alleba.gw.2’ ‘FVBN.alleba.gw.3’ ‘FVBN.bagr.akl.gw.1’
-  ‘FVBN.bagr.akl.gw.2’ ‘FVBN.bagr.akl.gw.3’ ‘FVBN.bagr.akl.kw.1’
-  ‘FVBN.bagr.akl.kw.2’ ‘FVBN.bagr.akl.kw.3’ ‘FVBN.bagr.akl.pw.1’
-  ‘FVBN.bagr.akl.pw.2’ ‘FVBN.bagr.akl.pw.3’ ‘FVBN.bagr.akl.stw.1’
-  ‘FVBN.bagr.akl.stw.2’ ‘FVBN.bagr.akl.stw.3’ ‘FVBN.bagr.dkl.gw.1’
-  ‘FVBN.bagr.dkl.gw.2’ ‘FVBN.bagr.dkl.gw.3’ ‘FVBN.bagr.dkl.kw.1’
-  ‘FVBN.bagr.dkl.kw.2’ ‘FVBN.bagr.dkl.kw.3’ ‘FVBN.bagr.dkl.pw.1’
-  ‘FVBN.bagr.dkl.pw.2’ ‘FVBN.bagr.dkl.pw.3’ ‘FVBN.bagr.dkl.stw.1’
-  ‘FVBN.bagr.dkl.stw.2’ ‘FVBN.bagr.dkl.stw.3’ ‘FVBN.bagr.gw.1’
-  ‘FVBN.bagr.gw.2’ ‘FVBN.bagr.gw.3’ ‘FVBN.bagr.kw.1’ ‘FVBN.bagr.kw.2’
-  ‘FVBN.bagr.kw.3’ ‘FVBN.bagr.pw.1’ ‘FVBN.bagr.pw.2’ ‘FVBN.bagr.pw.3’
-  ‘FVBN.bagr.spec.gw.1’ ‘FVBN.bagr.spec.gw.2’ ‘FVBN.bagr.spec.gw.3’
-  ‘FVBN.bagr.stw.1’ ‘FVBN.bagr.stw.2’ ‘FVBN.bagr.stw.3’ ‘gk_coord’
-  ‘kreise’ ‘ntns.te’ ‘schutzgebiete.3’ ‘totholz.2’ ‘totholz.3’
-  ‘trakte.1’ ‘trakte.2’ ‘trakte.3’ ‘verj.2’ ‘verj.3’ ‘verj.kl4m.2’
-  ‘verj.kl4m.3’ ‘wzp4.merkmale.2’ ‘wzp4.merkmale.3’ ‘x_dichte’
-  ‘x_fba.3’
-Undocumented data sets:
-  ‘bacode’ ‘baeume.1’ ‘baeume.12’ ‘baeume.2’ ‘baeume.23’ ‘baeume.3’
-  ‘ecke.feld.3’ ‘ecken.1’ ‘ecken.2’ ‘ecken.23’ ‘ecken.3’ ‘fba.2’
-  ‘fba.3’ ‘gk_coord’ ‘kreise’ ‘ntns.te’ ‘schutzgebiete.3’ ‘totholz.2’
-  ‘totholz.3’ ‘trakte.1’ ‘trakte.2’ ‘trakte.3’ ‘verj.2’ ‘verj.3’
-  ‘verj.kl4m.2’ ‘verj.kl4m.3’ ‘wzp4.merkmale.2’ ‘wzp4.merkmale.3’
-  ‘x_dichte’ ‘x_fba.3’ ‘FVBN.alleba.akl.gw.1’ ‘FVBN.alleba.akl.gw.2’
-  ‘FVBN.alleba.akl.gw.3’ ‘FVBN.alleba.akl.kw.1’ ‘FVBN.alleba.akl.kw.2’
-  ‘FVBN.alleba.akl.kw.3’ ‘FVBN.alleba.akl.pw.1’ ‘FVBN.alleba.akl.pw.2’
-  ‘FVBN.alleba.akl.pw.3’ ‘FVBN.alleba.akl.stw.1’
-  ‘FVBN.alleba.akl.stw.2’ ‘FVBN.alleba.akl.stw.3’ ‘FVBN.alleba.gw.1’
-  ‘FVBN.alleba.gw.2’ ‘FVBN.alleba.gw.3’ ‘FVBN.bagr.akl.gw.1’
-  ‘FVBN.bagr.akl.gw.2’ ‘FVBN.bagr.akl.gw.3’ ‘FVBN.bagr.akl.kw.1’
-  ‘FVBN.bagr.akl.kw.2’ ‘FVBN.bagr.akl.kw.3’ ‘FVBN.bagr.akl.pw.1’
-  ‘FVBN.bagr.akl.pw.2’ ‘FVBN.bagr.akl.pw.3’ ‘FVBN.bagr.akl.stw.1’
-  ‘FVBN.bagr.akl.stw.2’ ‘FVBN.bagr.akl.stw.3’ ‘FVBN.bagr.dkl.gw.1’
-  ‘FVBN.bagr.dkl.gw.2’ ‘FVBN.bagr.dkl.gw.3’ ‘FVBN.bagr.dkl.kw.1’
-  ‘FVBN.bagr.dkl.kw.2’ ‘FVBN.bagr.dkl.kw.3’ ‘FVBN.bagr.dkl.pw.1’
-  ‘FVBN.bagr.dkl.pw.2’ ‘FVBN.bagr.dkl.pw.3’ ‘FVBN.bagr.dkl.stw.1’
-  ‘FVBN.bagr.dkl.stw.2’ ‘FVBN.bagr.dkl.stw.3’ ‘FVBN.bagr.gw.1’
-  ‘FVBN.bagr.gw.2’ ‘FVBN.bagr.gw.3’ ‘FVBN.bagr.kw.1’ ‘FVBN.bagr.kw.2’
-  ‘FVBN.bagr.kw.3’ ‘FVBN.bagr.pw.1’ ‘FVBN.bagr.pw.2’ ‘FVBN.bagr.pw.3’
-  ‘FVBN.bagr.spec.gw.1’ ‘FVBN.bagr.spec.gw.2’ ‘FVBN.bagr.spec.gw.3’
-  ‘FVBN.bagr.stw.1’ ‘FVBN.bagr.stw.2’ ‘FVBN.bagr.stw.3’
-All user-level objects in a package should have documentation entries.
-See chapter ‘Writing R documentation files’ in the ‘Writing R
-Extensions’ manual.
+* checking for missing documentation entries ... OK
 * checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
@@ -4174,13 +4114,13 @@ Extensions’ manual.
 * checking examples ... OK
 * DONE
 
-Status: 4 WARNINGs, 2 NOTEs
+Status: 3 WARNINGs, 2 NOTEs
 See
 for details.
 
 
 R CMD check results
-0 errors | 4 warnings | 2 notes
+0 errors | 3 warnings | 2 notes
 checking R files for non-ASCII characters ... WARNING
 Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
@@ -4197,29 +4137,6 @@ Found the following files with non-ASCII characters:
 Portable packages must use only ASCII characters in their R code,
 except perhaps in comments.
 Use \uxxxx escapes for other characters.
-
-checking for missing documentation entries ... WARNING
-Undocumented code objects:
-  ‘bacode’ ‘baeume.1’ ‘baeume.12’ ‘baeume.2’ ‘baeume.23’ ‘baeume.3’
-  ‘ecke.feld.3’ ‘ecken.1’ ‘ecken.2’ ‘ecken.23’ ‘ecken.3’ ‘fba.2’
-  ‘fba.3’ ‘FVBN.alleba.akl.gw.1’ ‘FVBN.alleba.akl.gw.2’
-  ‘FVBN.alleba.akl.gw.3’ ‘FVBN.alleba.akl.kw.1’ ‘FVBN.alleba.akl.kw.2’
-  ‘FVBN.alleba.akl.kw.3’ ‘FVBN.alleba.akl.pw.1’ ‘FVBN.alleba.akl.pw.2’
-  ‘FVBN.alleba.akl.pw.3’ ‘FVBN.alleba.akl.stw.1’
-  ‘FVBN.alleba.akl.stw.2’ ‘FVBN.alleba.akl.stw.3’ ‘FVBN.alleba.gw.1’
-  ‘FVBN.alleba.gw.2’ ‘FVBN.alleba.gw.3’ ‘FVBN.bagr.akl.gw.1’
-... 33 lines ...
-  ‘FVBN.bagr.dkl.gw.2’ ‘FVBN.bagr.dkl.gw.3’ ‘FVBN.bagr.dkl.kw.1’
-  ‘FVBN.bagr.dkl.kw.2’ ‘FVBN.bagr.dkl.kw.3’ ‘FVBN.bagr.dkl.pw.1’
-  ‘FVBN.bagr.dkl.pw.2’ ‘FVBN.bagr.dkl.pw.3’ ‘FVBN.bagr.dkl.stw.1’
-  ‘FVBN.bagr.dkl.stw.2’ ‘FVBN.bagr.dkl.stw.3’ ‘FVBN.bagr.gw.1’
-  ‘FVBN.bagr.gw.2’ ‘FVBN.bagr.gw.3’ ‘FVBN.bagr.kw.1’ ‘FVBN.bagr.kw.2’
-  ‘FVBN.bagr.kw.3’ ‘FVBN.bagr.pw.1’ ‘FVBN.bagr.pw.2’ ‘FVBN.bagr.pw.3’
-  ‘FVBN.bagr.spec.gw.1’ ‘FVBN.bagr.spec.gw.2’ ‘FVBN.bagr.spec.gw.3’
-  ‘FVBN.bagr.stw.1’ ‘FVBN.bagr.stw.2’ ‘FVBN.bagr.stw.3’
-All user-level objects in a package should have documentation entries.
-See chapter ‘Writing R documentation files’ in the ‘Writing R
-Extensions’ manual.
 
 checking data for non-ASCII characters ... WARNING
   Warning: found non-ASCII strings
@@ -4252,21 +4169,21 @@ checking data for ASCII and uncompressed saves ... WARNING
   bwi.RData   32.6Mb   15.2Mb       xz
 
 checking installed package size ... NOTE
-  installed size is 33.1Mb
+  installed size is 33.3Mb
   sub-directories of 1Mb or more:
     data  32.8Mb
 
 checking R code for possible problems ... NOTE
-flaechen.kreis.fun.1: no visible binding for global variable ‘kreise’
-flaechen.kreis.fun.1: no visible binding for global variable ‘krs.list’
-flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.3’
-flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.3’
-flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.2’
-flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.2’
-flaechen.kreis.fun.1: no visible binding for global variable ‘ecken.1’
-flaechen.kreis.fun.1: no visible binding for global variable ‘trakte.1’
 flaechen.stratum.fun.1: no visible binding for global variable
-... 95 lines ...
+  ‘ecken.3’
+flaechen.stratum.fun.1: no visible binding for global variable
+  ‘trakte.3’
+flaechen.stratum.fun.1: no visible binding for global variable
+  ‘ecken.2’
+flaechen.stratum.fun.1: no visible binding for global variable
+  ‘trakte.2’
+flaechen.stratum.fun.1: no visible binding for global variable
+... 87 lines ...
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
   variable ‘baeume.23’
 VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
@@ -4276,5 +4193,5 @@ verjg.bagr.fun: no visible binding for global variable ‘bacode’
 verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
 Undefined global functions or variables:
   bacode baeume.1 baeume.2 baeume.23 baeume.3 bwi comma ecken.1 ecken.2
-  ecken.3 group kreise krs.list name prediction standard_error trakte.1
-  trakte.2 trakte.3
+  ecken.3 group kreise name prediction standard_error trakte.1 trakte.2
+  trakte.3
