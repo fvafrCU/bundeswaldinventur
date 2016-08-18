@@ -7,7 +7,7 @@
 ^tmp.*$
 ^tests.r$
 ^devtools.r$
-^data_encoding.R$
+^data_encoding.r$
 ^create.R$
 ^sedscr$
 ^Makefile$
