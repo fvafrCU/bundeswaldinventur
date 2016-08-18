@@ -285,7 +285,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
               #Attribute2 erweitert um "BA_Proz" (=BAFAnt)  kä/11.10.14
               Attribute2=c("BA_Proz","V_DhmR/ha","V_DhmR_HB/ha","oiB/ha","N/ha",
                             "N_Dh/ha", "N_Dh_HB/ha"),
-              Größen = c("Wert","Standardfehler"),
+              "Gr\u00f6\u00dfen" = c("Wert","Standardfehler"),
               BAGR=bagr.list,AKL = akl.lab[1:A.k], DKL = dkl.lab,
               T.FVBN.Bagr.Akl.Dkl=Y.bagr.akl.dkl,
               FVBN.ha.Bagr.Akl.Dkl=Yha.bagr.akl.dkl,

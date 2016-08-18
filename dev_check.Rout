@@ -20,7 +20,7 @@ Building bundeswaldinventur ----------------------------------------------------
 * checking for LF line-endings in source and make files
 * checking for empty or unneeded directories
 * looking to see if a ‘data/datalist’ file should be added
-* building ‘bundeswaldinventur_0.1.2.tar.gz’
+* building ‘bundeswaldinventur_0.1.3.tar.gz’
 
 Setting env vars ---------------------------------------------------------------
 _R_CHECK_CRAN_INCOMING_USE_ASPELL_: TRUE
@@ -34,7 +34,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * using session charset: UTF-8
 * using options ‘--no-manual --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.1.2’
+* this is package ‘bundeswaldinventur’ version ‘0.1.3’
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
@@ -59,11 +59,6 @@ Checking bundeswaldinventur ----------------------------------------------------
 Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
   BWI3_HR_Grafikfunktionen_v2.R
-  fvbn2a.R
-  fvbn2b.R
-  fvbn2c.R
-  fvbn2d.R
-  fvbn2e.R
   german_things.R
   global_variables.R
   labeling.R
@@ -220,11 +215,6 @@ checking R files for non-ASCII characters ... WARNING
 Found the following files with non-ASCII characters:
   BWI3_HR_Funktionen_v3.R
   BWI3_HR_Grafikfunktionen_v2.R
-  fvbn2a.R
-  fvbn2b.R
-  fvbn2c.R
-  fvbn2d.R
-  fvbn2e.R
   german_things.R
   global_variables.R
   labeling.R

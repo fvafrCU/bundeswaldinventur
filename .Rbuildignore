@@ -8,6 +8,7 @@
 ^tests.r$
 ^devtools.r$
 ^data_encoding.r$
+^non_ascii_code.r$
 ^create.R$
 ^sedscr$
 ^Makefile$

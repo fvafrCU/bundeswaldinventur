@@ -225,7 +225,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
               BL=T.bl,se.BL=se.T.bl,iBL=T.ibl,se.iBL=se.T.ibl,LK=lk,se.LK=se.lk,
               Attribute1=c("BAF", "V_DhmR","V_DhmR_HB", "oiB", "N", "N_Dh"),
               Attribute2=c("V_DhmR/ha","V_DhmR_HB/ha","oiB/ha","N/ha","N_Dh/ha"),
-              Größen = c("Wert","Standardfehler"),
+              "Gr\u00f6\u00dfen" = c("Wert","Standardfehler"),
               BAGR=bagr.list,AKL = akl.lab[1:A.k], DKL = dkl.lab,
               T.FVBN.Bagr.Akl.Dkl=Y.bagr.akl.dkl,
               FVBN.ha.Bagr.Akl.Dkl=Yha.bagr.akl.dkl,
