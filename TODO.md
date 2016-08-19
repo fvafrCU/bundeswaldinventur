@@ -5,4 +5,4 @@
 * add #' @export to all of Gerald's functions.
 * add #' @examples to all of Gerald's functions.
 * There's loads of undocumented functions. devtools::check() does not seem to
-  complain. Why?
+  complain. Why? Because there not exported!
