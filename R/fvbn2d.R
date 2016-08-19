@@ -110,7 +110,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
   #[m^3Dh mR], B (oberird. Biomasse) [t], N (gesamtzahl), NDh (Gesamtzahl
   #Derbholzb\u00e4ume)
   #NDhHB (Gesamtzahl Derbholzb\u00e4ume im Hauptbestand)
-  #F\u00fcr diese 7 "Gr\u00f6\u00df" werden jeweils der Gesamtwert ("Total") und der
+  #F\u00fcr diese 7 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der
   #Stichprobenfehler (SE) berechnet, und zwar jeweils f\u00fcr die 9 Baumartengruppen
   #sowie A.k Alters- und D.k Durchmesserklassen
   Y.bagr.akl.dkl    <- array(dim=c(7,2,n.bagr,A.k,D.k))

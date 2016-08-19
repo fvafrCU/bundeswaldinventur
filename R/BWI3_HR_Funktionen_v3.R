@@ -688,7 +688,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
               Attribute=c("V_DhmR", "V_EoR", "oiB", "N_Dh",
                       "V_DhmR/J", "V_EoR/J", "oiB/J", "N_Dh/J",
                       "V_DhmR/ha/J", "V_EoR/ha/J", "oiB/ha/J", "N_Dh/ha/J"),
-              "Gr\u00f6\u00df" = c("Wert","Standardfehler"),
+              "Gr\u00f6\u00dfen" = c("Wert","Standardfehler"),
               Nutzungsart = n.nart,
               BAGR=bagr.list, AKL = akl.lab[1:A.k], DKL = dkl.lab,
               T.VBN.A.NArt.Bagr.Akl.Dkl=Y.na.bagr.akl.dkl,
@@ -1128,7 +1128,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
               Attribute=c("V_DhmR", "V_EoR", "oiB", "V_EoR_HB",
                       "V_DhmR/J", "V_EoR/J", "oiB/J", "V_EoR_HB/J",
                       "V_DhmR/ha/J", "V_EoR/ha/J", "oiB/ha/J", "V_EoR_HB/ha/J"),
-              "Gr\u00f6\u00df" = c("Wert","Standardfehler"),
+              "Gr\u00f6\u00dfen" = c("Wert","Standardfehler"),
               Nutzungsart = nart,
               BAGR=bagr.list, AKL = akl.lab[1:A.k], DKL = dkl.lab,
               T.VBN.A.NArt.Bagr.Akl.Dkl=Y.na.bagr.akl.dkl,
@@ -1420,7 +1420,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
           {
             iii <- iii + 1
             #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00dfen"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
@@ -1439,7 +1439,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
           {
             iiii <- iiii + 1
             #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00dfen"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
@@ -1498,7 +1498,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
                         "V_DhmR/J", "V_DhmR_HB/J", "V_EoR/J", "oiB/J",
                         "V_DhmR/ha/J", "V_DhmR_HB/ha/J", "V_EoR/ha/J", "oiB/ha/J",
                         "mBAF_mLK","mBAFoLK","mPL","nT"),
-              "Gr\u00f6\u00df"=c("Wert","Standardfehler"),
+              "Gr\u00f6\u00dfen"=c("Wert","Standardfehler"),
               BAGR = bagr.list,
               AKL = akl.lab[1:A.k], DKL = dkl.lab,
               iVB.bagr.akl.dkl = iVB.bagr.akl.dkl,
@@ -1764,7 +1764,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
           {
             iii <- iii + 1
             #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00dfen"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
@@ -1783,7 +1783,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
           {
             iiii <- iiii + 1
             #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00dfen"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
@@ -1841,7 +1841,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
               Attribute=c("V_DhmR", "V_DhmR_HB", "V_EoR", "oiB",
                         "V_DhmR/J", "V_DhmR_HB/J", "V_EoR/J", "oiB/J",
                         "V_DhmR/ha/J", "V_DhmR_HB/ha/J", "V_EoR/ha/J", "oiB/ha/J"),
-              "Gr\u00f6\u00df"=c("Wert","Standardfehler"),
+              "Gr\u00f6\u00dfen"=c("Wert","Standardfehler"),
               BAGR = bagr.list,
               AKL = akl.lab[1:A.k], DKL = dkl.lab,
               iVB.bagr.akl.dkl = iVB.bagr.akl.dkl,
@@ -2129,7 +2129,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
           {
             iii <- iii + 1
             #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00dfen"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB, 12: iG: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
@@ -2148,7 +2148,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
           {
             iiii <- iiii + 1
             #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00dfen"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB, 12: iG: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
@@ -2212,7 +2212,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
                         "V_DhmR/J", "V_DhmR_HB/J", "V_EoR/J", "oiB/J","G/J",
                         "V_DhmR/ha/J", "V_DhmR_HB/ha/J", "V_EoR/ha/J",
                         "oiB/ha/J", "G/ha/J", "mBAF_mLK","mBAFoLK","mPL","nT"),
-              "Gr\u00f6\u00df"=c("Wert","Standardfehler"),
+              "Gr\u00f6\u00dfen"=c("Wert","Standardfehler"),
               BAGR = bagr.list,
               AKL = akl.lab[1:A.k], DKL = dkl.lab,
               iVB.bagr.akl.dkl = iVB.bagr.akl.dkl,

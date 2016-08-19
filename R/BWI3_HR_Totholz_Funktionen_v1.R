@@ -119,7 +119,7 @@ Totholz.bagr.art.zg.stratum.fun <-
   tzg.k <- 4
   #Array f\u00fcr Ergebnisse (Totals und SE jeweils nach tbagr, tart, tzg)
   #Es gibt 2 Zielgr\u00f6\u00dfen <Y>: V [m^3], N (Gesamtzahl)
-  #F\u00fcr diese 2 "Gr\u00f6\u00df" werden jeweils der Gesamtwert ("Total") und der Stichproben-
+  #F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
   #fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
   #7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
   
@@ -341,7 +341,7 @@ Totholz.Tart.stratum.fun <-
   
   #Array f\u00fcr Ergebnisse (Totals und SE jeweils nach tbagr, tart, tzg)
   #Es gibt 2 Zielgr\u00f6\u00dfen <Y>: V [m^3], N (Gesamtzahl)
-  #F\u00fcr diese 2 "Gr\u00f6\u00df" werden jeweils der Gesamtwert ("Total") und der Stichproben-
+  #F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
   #fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
   #7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
 
@@ -565,7 +565,7 @@ Totholz.klass.stratum.fun <-
 
   #Array f\u00fcr Ergebnisse (Totals und SE jeweils nach tbagr, tart, tzg)
   #Es gibt 2 Zielgr\u00f6\u00dfen <Y>: V [m^3], N (Gesamtzahl)
-  #F\u00fcr diese 2 "Gr\u00f6\u00df" werden jeweils der Gesamtwert ("Total") und der Stichproben-
+  #F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
   #fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
   #7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
 

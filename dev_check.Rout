@@ -8,11 +8,6 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
-Writing verbiss.bagr.fun.Rd
-Writing verjg.bagr.fun.Rd
-Writing verjg.bagrupp.fun.Rd
-Writing ntns.stratum.fun.Rd
-Writing ntns.stratum.fun.2.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
