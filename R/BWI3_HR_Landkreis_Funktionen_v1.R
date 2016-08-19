@@ -225,12 +225,25 @@ flaechen.kreis.fun.1 <- function(kreiscode,
 #' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten 
 #'  enthaelt, anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: 
 #'  list(Wa=c(3,5), Begehbar=1).
+#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
+#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
+#' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
+#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
+#' @param trakte.1 A data.frame (see \code{\link{trakte.1}}
+#' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
 #' @return Liste mit folgenden Komponenten: \strong{Stratum} (\code{auswahl}), 
 #'  \strong{Waldflaeche} (Waldflaeche und Standardfehler fuer verschiedene 
 #'  Eigentumsklassen und BWIs), \strong{Waldfl_Proz} (Waldflaeche in Prozent und 
 #'  Standardfehler fuer verschiedene Eigentumsklassen), \strong{begehb_Holzbfl} 
 #'  (Holzbodenflaeche und Standardfehler fuer verschiedene Eigentumsklassen)
-flaechen.stratum.fun.1 <- function(auswahl){
+flaechen.stratum.fun.1 <- function(auswahl,
+                                 trakte.3 = get_data("trakte.3"),
+                                 ecken.3 = get_data("ecken.3"),
+                                 trakte.2 = get_data("trakte.2"),
+                                 ecken.2 = get_data("ecken.2"),
+                                 trakte.1 = get_data("trakte.1"),
+                                 ecken.1 = get_data("ecken.1")
+                                 ){
   #Input Check
     checkmate::assertList(auswahl, min.len = 1, names = "named")
   #Output check
