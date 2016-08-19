@@ -7,7 +7,19 @@ temp_file1=$(tempfile)
 temp_file2=$(tempfile)
 TAB="$(printf '\t')"
 DOLLAR=$
+rpackage=$(basename $(pwd)) 
+rpversion=$(grep 'Version:' DESCRIPTION |cut -f2 -d' ')
+
 cat > Makefile <<EOF
+# R CMD header
+rpackage=${rpackage}
+rpversion=${rpversion}
+roxy_code=tmp_roxy.r
+
+EOF
+
+cat >> Makefile <<EOF
+# devtools
 dev_all: dev_test dev_check
 dev_test:
 ${TAB}Rscript --vanilla -e 'devtools::test()' >  $temp_file1 2>&1; \\
@@ -15,4 +27,39 @@ ${TAB}sed -n -e '/^DONE.*/q;p' < $temp_file1 > dev_test.Rout
 dev_check:
 ${TAB}Rscript --vanilla -e 'devtools::check()' > $temp_file2 2>&1; \\
 ${TAB}grep -v ".*'/" $temp_file2 | grep -v ".*/tmp/R.*" > dev_check.Rout 
+EOF
+
+cat >> Makefile <<\EOF
+craninstall: crancheck
+	R --vanilla CMD INSTALL  ${rpackage}_${rpversion}.tar.gz
+crancheck: check 
+	export _R_CHECK_FORCE_SUGGESTS_=FALSE && \
+        R CMD check --as-cran ${rpackage}_${rpversion}.tar.gz 
+install: check 
+	R --vanilla CMD INSTALL  ${rpackage}_${rpversion}.tar.gz && \
+        printf '===== have you run\n\tmake check_demo && ' && \
+        printf 'make package_tools && make runit && make coldr\n?!\n' 
+install_bare: build_bare 
+	R --vanilla CMD INSTALL  ${rpackage}_${rpversion}.tar.gz 
+check_bare: build_bare 
+	export _R_CHECK_FORCE_SUGGESTS_=FALSE && \
+        R --vanilla CMD check --no-examples ${rpackage}_${rpversion}.tar.gz && \
+        printf '===== run\n\tmake install\n!!\n'
+check: build 
+	export _R_CHECK_FORCE_SUGGESTS_=FALSE && \
+        R --vanilla CMD check ${rpackage}_${rpversion}.tar.gz && \
+        printf '===== run\n\tmake install\n!!\n'
+build_bare: 
+	R --vanilla CMD build ../${rpackage}
+build: check_meta_info
+	R --vanilla CMD build ../${rpackage}
+check_meta_info: roxy
+	./${check_meta_info_script}
+direct_check:  
+	R --vanilla CMD check ../${rpackage} ## check without build -- not recommended
+roxy:
+	rm man/* || true
+	printf "library('roxygen2')\nroxygen2::roxygenize('.', roclets = c('rd'))\n" > ${roxy_code}
+	R --vanilla CMD BATCH --vanilla ${roxy_code}
+
 EOF
