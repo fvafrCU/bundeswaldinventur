@@ -1,5 +1,3 @@
-
-# @NULL 
 theme_bold_axes <- function() {
     return(
 	   ggplot2::theme(axis.title =  ggplot2::element_text(colour = "black", size = 20),

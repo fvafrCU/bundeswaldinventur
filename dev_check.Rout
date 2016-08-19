@@ -8,6 +8,7 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
+Writing VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -20,7 +21,7 @@ Building bundeswaldinventur ----------------------------------------------------
 * checking for LF line-endings in source and make files
 * checking for empty or unneeded directories
 * looking to see if a ‘data/datalist’ file should be added
-* building ‘bundeswaldinventur_0.1.3.tar.gz’
+* building ‘bundeswaldinventur_0.1.4.tar.gz’
 
 Setting env vars ---------------------------------------------------------------
 _R_CHECK_CRAN_INCOMING_USE_ASPELL_: TRUE
@@ -34,7 +35,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * using session charset: UTF-8
 * using options ‘--no-manual --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.1.3’
+* this is package ‘bundeswaldinventur’ version ‘0.1.4’
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
@@ -68,68 +69,9 @@ Checking bundeswaldinventur ----------------------------------------------------
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘ecken.3’
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘trakte.3’
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘ecken.2’
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘trakte.2’
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘ecken.1’
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘trakte.1’
-fl.proz.stratum.fun: no visible binding for global variable ‘trakte.3’
 fl.stratum.fun: no visible binding for global variable ‘trakte.3’
-fvbn.kreis.fun.1: no visible binding for global variable ‘baeume.1’
-fvbn.kreis.fun.1: no visible binding for global variable ‘ecken.1’
-fvbn.kreis.fun.1: no visible binding for global variable ‘trakte.1’
-fvbn.kreis.fun.1: no visible binding for global variable ‘baeume.2’
-fvbn.kreis.fun.1: no visible binding for global variable ‘ecken.2’
-fvbn.kreis.fun.1: no visible binding for global variable ‘trakte.2’
-fvbn.kreis.fun.1: no visible binding for global variable ‘baeume.3’
-fvbn.kreis.fun.1: no visible binding for global variable ‘ecken.3’
-fvbn.kreis.fun.1: no visible binding for global variable ‘trakte.3’
-fvbn.kreis.fun.1: no visible binding for global variable ‘kreise’
-fvbn.stratum.fun.1: no visible binding for global variable ‘baeume.1’
-fvbn.stratum.fun.1: no visible binding for global variable ‘ecken.1’
-fvbn.stratum.fun.1: no visible binding for global variable ‘trakte.1’
-fvbn.stratum.fun.1: no visible binding for global variable ‘baeume.2’
-fvbn.stratum.fun.1: no visible binding for global variable ‘ecken.2’
-fvbn.stratum.fun.1: no visible binding for global variable ‘trakte.2’
-fvbn.stratum.fun.1: no visible binding for global variable ‘baeume.3’
-fvbn.stratum.fun.1: no visible binding for global variable ‘ecken.3’
-fvbn.stratum.fun.1: no visible binding for global variable ‘trakte.3’
-fvbn.stratum.fun.2: no visible binding for global variable ‘baeume.1’
-fvbn.stratum.fun.2: no visible binding for global variable ‘ecken.1’
-fvbn.stratum.fun.2: no visible binding for global variable ‘trakte.1’
-fvbn.stratum.fun.2: no visible binding for global variable ‘baeume.2’
-fvbn.stratum.fun.2: no visible binding for global variable ‘ecken.2’
-fvbn.stratum.fun.2: no visible binding for global variable ‘trakte.2’
-fvbn.stratum.fun.2: no visible binding for global variable ‘baeume.3’
-fvbn.stratum.fun.2: no visible binding for global variable ‘ecken.3’
-fvbn.stratum.fun.2: no visible binding for global variable ‘trakte.3’
 get_label_for_abbreviation: no visible binding for global variable
   ‘name’
-iVB.ew.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ecken.2’
-iVB.ew.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ecken.3’
-iVB.ew.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘trakte.3’
-iVB.ew.bagrupp.akl.dkl.stratum.fun.2g: no visible binding for global
-  variable ‘ecken.2’
-iVB.ew.bagrupp.akl.dkl.stratum.fun.2g: no visible binding for global
-  variable ‘ecken.3’
-iVB.ew.bagrupp.akl.dkl.stratum.fun.2g: no visible binding for global
-  variable ‘trakte.3’
-iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12: no visible binding for global
-  variable ‘ecken.1’
-iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12: no visible binding for global
-  variable ‘ecken.2’
-iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12: no visible binding for global
-  variable ‘trakte.2’
 plot_by_group: no visible binding for global variable ‘prediction’
 plot_by_group: no visible binding for global variable ‘standard_error’
 plot_by_group: no visible binding for global variable ‘comma’
@@ -143,37 +85,8 @@ plot_species_attribute_group: no visible binding for global variable
   ‘standard_error’
 plot_species_attribute_group: no visible binding for global variable
   ‘comma’
-stamm.merkmale.bagr.akl.fun: no visible binding for global variable
-  ‘trakte.3’
-stamm.merkmale.bagr.fun: no visible binding for global variable
-  ‘trakte.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ecken.2’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘ecken.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘trakte.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘baeume.23’
-VB.A.bagrupp.akl.dkl.stratum.fun.2: no visible binding for global
-  variable ‘baeume.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘ecken.2’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘ecken.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘trakte.3’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘baeume.23’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘baeume.3’
-verbiss.bagr.fun: no visible binding for global variable ‘bacode’
-verjg.bagr.fun: no visible binding for global variable ‘bacode’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
 Undefined global functions or variables:
-  bacode baeume.1 baeume.2 baeume.23 baeume.3 bwi comma ecken.1 ecken.2
-  ecken.3 group kreise name prediction standard_error trakte.1 trakte.2
-  trakte.3
+  bwi comma group name prediction standard_error trakte.3
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -202,24 +115,21 @@ checking installed package size ... NOTE
     data  32.8Mb
 
 checking R code for possible problems ... NOTE
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘ecken.3’
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘trakte.3’
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘ecken.2’
-flaechen.stratum.fun.1: no visible binding for global variable
-  ‘trakte.2’
-flaechen.stratum.fun.1: no visible binding for global variable
-... 87 lines ...
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘baeume.23’
-VB.A.bagrupp.akl.dkl.stratum.fun.3: no visible binding for global
-  variable ‘baeume.3’
-verbiss.bagr.fun: no visible binding for global variable ‘bacode’
-verjg.bagr.fun: no visible binding for global variable ‘bacode’
-verjg.kl4.bagr.fun: no visible binding for global variable ‘bacode’
+fl.stratum.fun: no visible binding for global variable ‘trakte.3’
+get_label_for_abbreviation: no visible binding for global variable
+  ‘name’
+plot_by_group: no visible binding for global variable ‘prediction’
+plot_by_group: no visible binding for global variable ‘standard_error’
+plot_by_group: no visible binding for global variable ‘comma’
+plot_species_attribute_group: no visible binding for global variable
+  ‘prediction’
+plot_species_attribute_group: no visible binding for global variable
+  ‘group’
+plot_species_attribute_group: no visible binding for global variable
+  ‘bwi’
+plot_species_attribute_group: no visible binding for global variable
+  ‘standard_error’
+plot_species_attribute_group: no visible binding for global variable
+  ‘comma’
 Undefined global functions or variables:
-  bacode baeume.1 baeume.2 baeume.23 baeume.3 bwi comma ecken.1 ecken.2
-  ecken.3 group kreise name prediction standard_error trakte.1 trakte.2
-  trakte.3
+  bwi comma group name prediction standard_error trakte.3
