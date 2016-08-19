@@ -8,6 +8,11 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
+Writing verbiss.bagr.fun.Rd
+Writing verjg.bagr.fun.Rd
+Writing verjg.bagrupp.fun.Rd
+Writing ntns.stratum.fun.Rd
+Writing ntns.stratum.fun.2.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -55,17 +60,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
-* checking R files for non-ASCII characters ... WARNING
-Found the following files with non-ASCII characters:
-  BWI3_HR_Funktionen_v3.R
-  BWI3_HR_Grafikfunktionen_v2.R
-  german_things.R
-  global_variables.R
-  labeling.R
-  variable_getters.R
-Portable packages must use only ASCII characters in their R code,
-except perhaps in comments.
-Use \uxxxx escapes for other characters.
+* checking R files for non-ASCII characters ... OK
 * checking R files for syntax errors ... OK
 * checking whether the package can be loaded ... OK
 * checking whether the package can be loaded with stated dependencies ... OK
@@ -204,25 +199,13 @@ Undefined global functions or variables:
 * checking examples ... OK
 * DONE
 
-Status: 2 WARNINGs, 2 NOTEs
+Status: 1 WARNING, 2 NOTEs
 See
 for details.
 
 
 R CMD check results
-0 errors | 2 warnings | 2 notes
-checking R files for non-ASCII characters ... WARNING
-Found the following files with non-ASCII characters:
-  BWI3_HR_Funktionen_v3.R
-  BWI3_HR_Grafikfunktionen_v2.R
-  german_things.R
-  global_variables.R
-  labeling.R
-  variable_getters.R
-Portable packages must use only ASCII characters in their R code,
-except perhaps in comments.
-Use \uxxxx escapes for other characters.
-
+0 errors | 1 warning  | 2 notes
 checking data for ASCII and uncompressed saves ... WARNING
   
   Note: significantly better compression could be obtained

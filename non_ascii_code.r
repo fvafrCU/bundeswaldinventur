@@ -14,10 +14,13 @@ if (FALSE) {
     stringi::stri_escape_unicode("Ü")
     stringi::stri_escape_unicode("ü")
     stringi::stri_escape_unicode("ß")
-
+    stringi::stri_enc_toascii("ä")
+    stringi::stri_enc_toutf8("ä")
     stringi::stri_trans_general("ß", "latin-ascii")
 }
-file <- "R/global_variables.R"
+file <- "R/BWI3_HR_Funktionen_v3.R"
 l <- readLines(file)
-gsub("\u00e4", stringi::stri_escape_unicode("ä"), l)
-
+is_roxygen <- grepl("#'", l)
+l[! is_roxygen] <- stringi::stri_escape_unicode(l[! is_roxygen])
+full <- stringi::stri_trans_general(l, "latin-ascii")
+writeLines(full, con = "foo.txt")

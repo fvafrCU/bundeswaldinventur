@@ -17,8 +17,8 @@
 get_species_groups <- function(type) { 
     return(switch(type,
                   "*" = ,
-                  "spec" =  list(bagr.lab = c("Fichte", "Weißtanne", 
-                                              "Douglasie", "Kiefer", "Lärchen", 
+                  "spec" =  list(bagr.lab = c("Fichte", "Wei\u00dftanne", 
+                                              "Douglasie", "Kiefer", "L\u00e4rchen", 
                                               "sonst. Nadelholz", 
                                               "Buche", "Eichen", 
                                               "Roteiche", "Esche", "Bergahorn",

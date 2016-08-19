@@ -17,13 +17,13 @@ COLORS_BWI <- c(rgb(154,205,50, maxColorValue = 255),
 		)
 # Old stuff from BWI3_Dateninput_BWI_1_2_3_v1.r
 ##Parameter
-##A: Fläche des Inventurgebiets (Land BW)[ha]; nTE: Anzahl Ecken im Inventurgebiet;
-##RF "Repräsentationsfaktor einer Ecke [ha] (=A/nTE)
+##A: Fl\u00e4che des Inventurgebiets (Land BW)[ha]; nTE: Anzahl Ecken im Inventurgebiet;
+##RF "Repr\u00e4sentationsfaktor einer Ecke [ha] (=A/nTE)
 A <- 3575148;	nTE <- 35731;	RF <- A/nTE
-##aktuell: 3575136 gemäß:
+##aktuell: 3575136 gem\u00e4\u00df:
 ##http://www.statistik-portal.de/statistik-portal/de_jb01_jahrtab1.asp
 ##Zugriff am 17.04.2014
-##Anzahl Trakte (Gesamtfläche BW)
+##Anzahl Trakte (Gesamtfl\u00e4che BW)
 nT <- 8970
 ##BWI 1 und 2:
 A.12 <- 3575163; nTE.12 <- 35743;  RF.12 = A.12/nTE.12
@@ -43,7 +43,7 @@ assign('BAGR.BWI',
 			  "green", "darkblue",
 			  rgb(100,190, 150, maxColorValue = 255), "brown"),
 	    ba.text = c("Fichte", "Tanne", 
-			"Douglasie", "Kiefer", "Lärche",
+			"Douglasie", "Kiefer", "L\u00e4rche",
 			"Buche", "Eiche", 
 			"ALH", "ALN")
 			)

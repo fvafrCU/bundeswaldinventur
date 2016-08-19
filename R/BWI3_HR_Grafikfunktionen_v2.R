@@ -1,15 +1,15 @@
 #===============================================================================
 #BWI 3 Hochrechnung
-#kä/14.03.2014 Version 2
+#k\u00e4/14.03.2014 Version 2
 #-------------------------------------------------------------------------------
-#Funktionen für graphische Darstellungen
-#Aktualisierung: BA-Farben korrigiert (Ki, Lä, Ei, Alh)
+#Funktionen f\u00fcr graphische Darstellungen
+#Aktualisierung: BA-Farben korrigiert (Ki, L\u00e4, Ei, Alh)
 #-------------------------------------------------------------------------------
 require(gplots)
 #-------------------------------------------------------------------------------
 plot.bar.bagr <- function(Y,se.Y,titel,y.lab)
-#Funktion erzeugt Säulendiagramm für die BWI-Standard-Baumartengruppen
-#kä/25.09.13
+#Funktion erzeugt S\u00e4ulendiagramm f\u00fcr die BWI-Standard-Baumartengruppen
+#k\u00e4/25.09.13
 {
   #Baumartenfarben
   bagr.list <- c("FI","TA","DGL","KI","LAE","BU","EI","ALH","ALN")
@@ -26,10 +26,10 @@ plot.bar.bagr <- function(Y,se.Y,titel,y.lab)
         sub=Sys.time(),cex.sub=0.5)
   graphics::axis(side=1,at=1:k,labels=bagr.list)
 
-  #Säulen mit Fehlerbalken einzeichnen
+  #S\u00e4ulen mit Fehlerbalken einzeichnen
   for (i in 1:k)
   {
-    #Säulen-Polygon
+    #S\u00e4ulen-Polygon
     y <- c(0,Y[i],Y[i],0)
     x <- c(i-dx,i-dx,i+dx,i+dx)
     graphics::polygon(x,y, col=clrs[i])
@@ -46,12 +46,12 @@ plot.bar.bagr <- function(Y,se.Y,titel,y.lab)
 #-------------------------------------------------------------------------------
 
 plot.mult.bar.bagr <- function(Y,se.Y,titel,bar.lab,y.lab)
-#Funktion erzeugt Säulendiagramm für die BWI-Standard-Baumartengruppen
-#mit der Möglichkeit, mehrere Datenreihen als Säulen je Kategorie nebeneinander
+#Funktion erzeugt S\u00e4ulendiagramm f\u00fcr die BWI-Standard-Baumartengruppen
+#mit der M\u00f6glichkeit, mehrere Datenreihen als S\u00e4ulen je Kategorie nebeneinander
 #zu platzieren
-#kä/30.09.13
+#k\u00e4/30.09.13
 #<Y> bzw. <se.Y> muss hier eine Matrix sein mit den Spalten als Datenreihen
-#<bar.lab> enthält die Bezeichnungen je Datenreihe
+#<bar.lab> enth\u00e4lt die Bezeichnungen je Datenreihe
 {
   #Baumartenfarben
   bagr.list <- c("FI","TA","DGL","KI","LAE","BU","EI","ALH","ALN")
@@ -71,14 +71,14 @@ plot.mult.bar.bagr <- function(Y,se.Y,titel,bar.lab,y.lab)
         sub=Sys.time(),cex.sub=0.5)
   graphics::axis(side=1,at=1:k,labels=bagr.list)
 
-  #Säulen mit Fehlerbalken einzeichnen
+  #S\u00e4ulen mit Fehlerbalken einzeichnen
 
   for (r in 1:n.r)
   {
     for (i in 1:k)
     {
       dx.i <- i-dx+(r-1)*dx.r             #neu
-      #Säulen-Polygon
+      #S\u00e4ulen-Polygon
       y <- c(0,Y[i,r],Y[i,r],0)
       x <- c(dx.i,dx.i,dx.i+dx.r,dx.i+dx.r) #neu
       graphics::polygon(x,y, col=clrs[i])
@@ -93,22 +93,22 @@ plot.mult.bar.bagr <- function(Y,se.Y,titel,bar.lab,y.lab)
     }
   }
   #Legende
-  graphics::legend("topright",legend=paste(1:n.r,". Säule: ",bar.lab,sep=""))
+  graphics::legend("topright",legend=paste(1:n.r,". S\u00e4ule: ",bar.lab,sep=""))
 
 }
 #-------------------------------------------------------------------------------
 
 
 plot.bar.kl <- function(Y,se.Y,kl.lab,titel,x.lab,y.lab,clr)
-#<Y>: Zielgröße
-#<se.Y>: Stichprobenfehler der Zielgröße
+#<Y>: Zielgr\u00f6\u00dfe
+#<se.Y>: Stichprobenfehler der Zielgr\u00f6\u00dfe
 #<kl.lab>: Klassen (x-Achse)
 #<titel>
-#<x.lab>: Beschriftung der x-Achse (Klassifizierte Größe)
-#<y.lab>: Einheit der Zielgröße
-#<clr>: Farbe für Säulen
-#Funktion erzeugt Säulendiagramm für eine klassifizierte Zielgröße (AKl oder DKl)
-#kä/25.09.13
+#<x.lab>: Beschriftung der x-Achse (Klassifizierte Gr\u00f6\u00dfe)
+#<y.lab>: Einheit der Zielgr\u00f6\u00dfe
+#<clr>: Farbe f\u00fcr S\u00e4ulen
+#Funktion erzeugt S\u00e4ulendiagramm f\u00fcr eine klassifizierte Zielgr\u00f6\u00dfe (AKl oder DKl)
+#k\u00e4/25.09.13
 {
 
   dx <- 0.4
@@ -124,10 +124,10 @@ plot.bar.kl <- function(Y,se.Y,kl.lab,titel,x.lab,y.lab,clr)
         sub=Sys.time(), cex.sub=0.5)
   graphics::axis(side=1,at=1:k,labels=kl.lab)
 
-  #Säulen mit Fehlerbalken einzeichnen
+  #S\u00e4ulen mit Fehlerbalken einzeichnen
   for (i in 1:k)
   {
-    #Säulen-Polygon
+    #S\u00e4ulen-Polygon
     y <- c(0,Y[i],Y[i],0)
     x <- c(i-dx,i-dx,i+dx,i+dx)
     graphics::polygon(x,y, col=clr)
@@ -147,16 +147,16 @@ plot.bar.kl <- function(Y,se.Y,kl.lab,titel,x.lab,y.lab,clr)
 #-------------------------------------------------------------------------------
 
 plot.bar.kl.2 <- function(Y,se.Y,kl.lab,titel,x.lab,y.lab,kl.clrs)
-#Variante: für jede Klasse kann eine Farbe festgelegt werden
-#<Y>: Zielgröße
-#<se.Y>: Stichprobenfehler der Zielgröße
+#Variante: f\u00fcr jede Klasse kann eine Farbe festgelegt werden
+#<Y>: Zielgr\u00f6\u00dfe
+#<se.Y>: Stichprobenfehler der Zielgr\u00f6\u00dfe
 #<kl.lab>: Klassen (x-Achse)
 #<titel>
-#<x.lab>: Beschriftung der x-Achse (Klassifizierte Größe)
-#<y.lab>: Einheit der Zielgröße
-#<clr>: Farbe für Säulen
-#Funktion erzeugt Säulendiagramm für eine klassifizierte Zielgröße (AKl oder DKl)
-#kä/25.09.13
+#<x.lab>: Beschriftung der x-Achse (Klassifizierte Gr\u00f6\u00dfe)
+#<y.lab>: Einheit der Zielgr\u00f6\u00dfe
+#<clr>: Farbe f\u00fcr S\u00e4ulen
+#Funktion erzeugt S\u00e4ulendiagramm f\u00fcr eine klassifizierte Zielgr\u00f6\u00dfe (AKl oder DKl)
+#k\u00e4/25.09.13
 {
 
   dx <- 0.4
@@ -172,10 +172,10 @@ plot.bar.kl.2 <- function(Y,se.Y,kl.lab,titel,x.lab,y.lab,kl.clrs)
         sub=Sys.time(), cex.sub=0.5)
   graphics::axis(side=1,at=1:k,labels=kl.lab)
 
-  #Säulen mit Fehlerbalken einzeichnen
+  #S\u00e4ulen mit Fehlerbalken einzeichnen
   for (i in 1:k)
   {
-    #Säulen-Polygon
+    #S\u00e4ulen-Polygon
     y <- c(0,Y[i],Y[i],0)
     x <- c(i-dx,i-dx,i+dx,i+dx)
     graphics::polygon(x,y, col=kl.clrs[i])
@@ -195,16 +195,16 @@ plot.bar.kl.2 <- function(Y,se.Y,kl.lab,titel,x.lab,y.lab,kl.clrs)
 #-------------------------------------------------------------------------------
 
 plot.mult.bar.kl <- function(Y,se.Y,bar.lab,kl.lab,titel,x.lab,y.lab,bar.clr)
-#<Y>: Zielgrößen-Matrix mit Datenreihen in den Spalten
-#<se.Y>: Stichprobenfehler der Zielgrößen-Matrix mit Datenreihen in den Spalten
+#<Y>: Zielgr\u00f6\u00dfen-Matrix mit Datenreihen in den Spalten
+#<se.Y>: Stichprobenfehler der Zielgr\u00f6\u00dfen-Matrix mit Datenreihen in den Spalten
 #<bar.lab>: Bezeichnung der Datenreihen
 #<kl.lab>: Klassen (x-Achse)
 #<titel>
-#<x.lab>: Beschriftung der x-Achse (Klassifizierte Größe)
-#<y.lab>: Einheit der Zielgröße
-#<bar.clr>: Farben für Säulen der jeweiligen Dataenreihe
-#Funktion erzeugt Säulendiagramm (nebeneinander liegende Säu,en)
-#für eine klassifizierte Zielgröße (AKl oder DKl) kä/30.09.13
+#<x.lab>: Beschriftung der x-Achse (Klassifizierte Gr\u00f6\u00dfe)
+#<y.lab>: Einheit der Zielgr\u00f6\u00dfe
+#<bar.clr>: Farben f\u00fcr S\u00e4ulen der jeweiligen Dataenreihe
+#Funktion erzeugt S\u00e4ulendiagramm (nebeneinander liegende S\u00e4u,en)
+#f\u00fcr eine klassifizierte Zielgr\u00f6\u00dfe (AKl oder DKl) k\u00e4/30.09.13
 {
 
   n.r <- length(Y[1,])  #Anzahl Datenreihen
@@ -227,13 +227,13 @@ plot.mult.bar.kl <- function(Y,se.Y,bar.lab,kl.lab,titel,x.lab,y.lab,bar.clr)
         sub=Sys.time(), cex.sub=0.5)
   graphics::axis(side=1,at=1:k,labels=kl.lab)
 
-  #Säulen mit Fehlerbalken einzeichnen
+  #S\u00e4ulen mit Fehlerbalken einzeichnen
   for (r in 1:n.r)
   {
     for (i in 1:k)
     {
       dx.i <- i-dx+(r-1)*dx.r
-      #Säulen-Polygon
+      #S\u00e4ulen-Polygon
       y <- c(0,Y[i,r],Y[i,r],0)
       x <- c(dx.i,dx.i,dx.i+dx.r,dx.i+dx.r)
       graphics::polygon(x,y, col=bar.clr[r])
@@ -259,22 +259,22 @@ plot.mult.bar.kl <- function(Y,se.Y,bar.lab,kl.lab,titel,x.lab,y.lab,bar.clr)
 
 plot.line.bar.kl <- function(Y,se.Y,bar.lab,kl.lab,titel,x.lab,y.lab,y.max,
                               line.clr, bar.clr, l.wd)
-#Funktion kombiniert Linien und Säulen-Darstellung
-#nur für 2 Datenreihen
-#<Y>: Zielgrößen-Matrix mit den 2 Datenreihen in den Spalten; die erste wird
-#als Linie, die zweite in Säulen dargestellt
-#<se.Y>: Stichprobenfehler der Zielgrößen-Matrix mit Datenreihen in den Spalten
+#Funktion kombiniert Linien und S\u00e4ulen-Darstellung
+#nur f\u00fcr 2 Datenreihen
+#<Y>: Zielgr\u00f6\u00dfen-Matrix mit den 2 Datenreihen in den Spalten; die erste wird
+#als Linie, die zweite in S\u00e4ulen dargestellt
+#<se.Y>: Stichprobenfehler der Zielgr\u00f6\u00dfen-Matrix mit Datenreihen in den Spalten
 #<bar.lab>: Bezeichnung der Datenreihen
 #<kl.lab>: Klassen (x-Achse)
 #<titel>
-#<x.lab>: Beschriftung der x-Achse (Klassifizierte Größe)
-#<y.lab>: Einheit der Zielgröße
+#<x.lab>: Beschriftung der x-Achse (Klassifizierte Gr\u00f6\u00dfe)
+#<y.lab>: Einheit der Zielgr\u00f6\u00dfe
 #<y.max>: maximaler Wert der Y-Achse ( wenn NA, dann wird es von der Funktion
 #         selbst bestimmt
 #<line.clr>: Farbe der Linie
-#<bar.clr>: Farbe für Säulen der Datenreihe
+#<bar.clr>: Farbe f\u00fcr S\u00e4ulen der Datenreihe
 #<l.wd>: Liniendicke (=lwd)
-#für eine klassifizierte Zielgröße (AKl oder DKl) kä/16.03.2014
+#f\u00fcr eine klassifizierte Zielgr\u00f6\u00dfe (AKl oder DKl) k\u00e4/16.03.2014
 {
   n.r <- 2
   dx <- 0.33
@@ -298,12 +298,12 @@ plot.line.bar.kl <- function(Y,se.Y,bar.lab,kl.lab,titel,x.lab,y.lab,y.max,
   graphics::axis(side=1,at=1:k,labels=kl.lab)
 
 
-  #1. Säulen mit Fehlerbalken einzeichnen
+  #1. S\u00e4ulen mit Fehlerbalken einzeichnen
   r <- 2
   for (i in 1:k)
   {
     dx.i <- i-dx
-    #Säulen-Polygon
+    #S\u00e4ulen-Polygon
     y <- c(0,Y[i,r],Y[i,r],0)
     x <- c(dx.i,dx.i,dx.i+2*dx,dx.i+2*dx.r)
     graphics::polygon(x,y, col=bar.clr)
@@ -348,19 +348,19 @@ plot.line.bar.kl <- function(Y,se.Y,bar.lab,kl.lab,titel,x.lab,y.lab,y.max,
 
 plot.mult.line.kl <- function(Y,se.Y,line.lab,kl.lab,titel,x.lab,y.lab,y.max,
                               line.clr, l.wd)
-#Funktion erstellt mehrfache Linien-Darstellung für n.r Datenreihen
-#<Y>: Zielgrößen-Matrix mit den n.r Datenreihen in den Spalten
-#<se.Y>: Stichprobenfehler der Zielgrößen-Matrix mit n.r Datenreihen in den Spalten
+#Funktion erstellt mehrfache Linien-Darstellung f\u00fcr n.r Datenreihen
+#<Y>: Zielgr\u00f6\u00dfen-Matrix mit den n.r Datenreihen in den Spalten
+#<se.Y>: Stichprobenfehler der Zielgr\u00f6\u00dfen-Matrix mit n.r Datenreihen in den Spalten
 #<bar.lab>: Vektor mit Bezeichnungen der Datenreihen
 #<kl.lab>: Vektor der Klassen bzw. Werte der x-Achse
 #<titel>
 #<x.lab>: Beschriftung der x-Achse
-#<y.lab>: Einheit der Zielgröße auf der y-Achse
+#<y.lab>: Einheit der Zielgr\u00f6\u00dfe auf der y-Achse
 #<y.max>: maximaler Wert der Y-Achse ( wenn NA, dann wird es von der Funktion
 #         selbst bestimmt
 #<line.clr>: Vektor der Linienfarben (=col)
 #<l.wd>: Vektor der Liniendicken (=lwd)
-#kä/16.03.2014
+#k\u00e4/16.03.2014
 {
   n.r <- length(Y[1,])
   k <- length(kl.lab)
@@ -413,20 +413,20 @@ plot.mult.line.kl <- function(Y,se.Y,line.lab,kl.lab,titel,x.lab,y.lab,y.max,
 
 plot.mult.line.kl.2 <- function(Y,se.Y,line.lab,kl.lab,titel,x.lab,y.lab,y.max,
                               line.clr, l.wd)
-#Funktion erstellt mehrfache Linien-Darstellung für n.r Datenreihen
+#Funktion erstellt mehrfache Linien-Darstellung f\u00fcr n.r Datenreihen
 #Variante OHNE Fehlerbalken, statt dessen Linien
-#<Y>: Zielgrößen-Matrix mit den n.r Datenreihen in den Spalten
-#<se.Y>: Stichprobenfehler der Zielgrößen-Matrix mit n.r Datenreihen in den Spalten
+#<Y>: Zielgr\u00f6\u00dfen-Matrix mit den n.r Datenreihen in den Spalten
+#<se.Y>: Stichprobenfehler der Zielgr\u00f6\u00dfen-Matrix mit n.r Datenreihen in den Spalten
 #<bar.lab>: Vektor mit Bezeichnungen der Datenreihen
 #<kl.lab>: Vektor der Klassen bzw. Werte der x-Achse
 #<titel>
 #<x.lab>: Beschriftung der x-Achse
-#<y.lab>: Einheit der Zielgröße auf der y-Achse
+#<y.lab>: Einheit der Zielgr\u00f6\u00dfe auf der y-Achse
 #<y.max>: maximaler Wert der Y-Achse ( wenn NA, dann wird es von der Funktion
 #         selbst bestimmt
 #<line.clr>: Vektor der Linienfarben (=col)
 #<l.wd>: Vektor der Liniendicken (=lwd)
-#kä/16.03.2014
+#k\u00e4/16.03.2014
 {
   n.r <- length(Y[1,])
   k <- length(kl.lab)
@@ -469,10 +469,10 @@ plot.mult.stacked.bar <- function(y.mat,bar.lab,kat.lab,titel,x.lab,y.lab,kat.co
 #Basis ist <barplot2> aus <gplots>
 #<y.mat> entspricht <height> als Matrix
 #<bar.lab> entspricht <names.arg>   (z.B. Inventur bzw. Referenzjahr)
-#<kat.lab> enstpricht den Bezeichnungen der Kategorien der gestapelten Säulen
+#<kat.lab> enstpricht den Bezeichnungen der Kategorien der gestapelten S\u00e4ulen
 #(z.B. Baumarten(gruppen)) = <legend.text>
 #<titel> = <main>; <x.lab> = X-Achsen-Beschriftung; <y.lab> = Y-Achsen-Beschr.
-#<kat.col>: Farben für die Kategorien innerhalb der gestapelten Säulen
+#<kat.col>: Farben f\u00fcr die Kategorien innerhalb der gestapelten S\u00e4ulen
 {
  x.max <- length(y.mat[1,])*1.4
  p <- gplots::barplot2(y.mat,names.arg=bar.lab,legend.text=kat.lab,xlab=x.lab,ylab=y.lab,
@@ -502,7 +502,7 @@ if(F)
     round( FVBN.Gw.3$T.FVBN.Bagr.Akl.Dkl[1,1,,,]/sum( FVBN.Gw.3$T.FVBN.Bagr.Akl.Dkl[1,1,,,])*100,1))
  bar.lab <- c("1987","2002","2012")
  kat.lab <- FVBN.Gw.1$BAGR.Liste
- titel <- "Entwicklung der Baumartenanteile im Land Baden-Württemberg"
+ titel <- "Entwicklung der Baumartenanteile im Land Baden-W\u00fcrttemberg"
  x.lab="";y.lab="";
  kat.col <- c("grey30","red","violet","yellow","orange","green","lightblue","darkblue",
             "brown")

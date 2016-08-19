@@ -3,7 +3,7 @@ harmonize_deadwood <- function(deadwood, to_bwi_2 = TRUE) {
     if (to_bwi_2) {
         # Bezeichnung <tl> durch <lge> (wie bei BWI2) ersetzen
         names(deadwood)[which("tl" == names(deadwood))] <- "lge"
-        # Mittendurchmesser wird bei Bruchstücken (mit 2 Durchmessern als mittlerer
+        # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
         # Walzedurchmesser ermittelt
         deadwood$dm <- ifelse(deadwood$tsd > 0 & ! is.na(deadwood$tsd),
                              round(200 * 
@@ -12,7 +12,7 @@ harmonize_deadwood <- function(deadwood, to_bwi_2 = TRUE) {
         # BWI3 has former tart 1 split into 11, 12 and 13. Undo that:
         deadwood[["tart"]][deadwood[["tart"]] %in% 11:13]  <- 1
     } else {
-        #Attribut <anz> einfügen
+        #Attribut <anz> einf\u00fcgen
         deadwood$anz <- rep(1,length(deadwood[,1]))
     }
     return(deadwood)

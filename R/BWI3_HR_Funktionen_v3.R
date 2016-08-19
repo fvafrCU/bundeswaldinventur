@@ -151,12 +151,12 @@ fvbn.kreis.fun.1 <- function(kreiscode,eig.list,bwi.list,bagr){
 #-------------------------------------------------------------------------------
 #' Zustandshochrechnung fuer ein Stratum
 #'
-#' Funktion berechnet Standard-FVBN-Auswertung für die Befundeinheit 
+#' Funktion berechnet Standard-FVBN-Auswertung fuer die Befundeinheit 
 #' \code{auswahl} fuer die in der \code{eig.list} aufgefuehrten 
 #' Eigentumskategorien {gw, stw, kw, oew, pw, gpw, mpw, kpw} sowie die in 
 #' \code{bwi.list} aufgefuehrten BWI-Aufnahmen {1,2,3}. Es wird die Funktion 
 #' \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2d}} verwendet, welche neben 
-#' Baumartengruppen auch die Summenwerte für alle Baumarten liefert.
+#' Baumartengruppen auch die Summenwerte fuer alle Baumarten liefert.
 #' 
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
 #' @section Erstellungsdatum: 02.12.2014
@@ -177,13 +177,13 @@ fvbn.stratum.fun.1 <- function(auswahl,eig.list,bwi.list,bagr){
   k <- length(eig.list)
   eig.list <- toupper(eig.list)
   eig.list <- sub("STW","StW",eig.list)
-  #kä/11.12.14 
+  #k\u00e4/11.12.14 
   l <-length(bwi.list)
   fvbn.bagr.stratum   <- list()
   
   for (i in 1:k)
   {
-    auswahl.i <- auswahl #kä/11.12.14
+    auswahl.i <- auswahl #k\u00e4/11.12.14
     if (eig.list[i]=="OEW")
       {auswahl.i$EigArt=c("BW","StW","KW")} else
       if (eig.list[i]%in%c("GPW","MPW","KPW"))
@@ -254,13 +254,13 @@ fvbn.stratum.fun.2 <- function(auswahl,eig.list,bwi.list,bagr,a.klass,d.klass){
   k <- length(eig.list)
   eig.list <- toupper(eig.list)
   eig.list <- sub("STW","StW",eig.list)
-  #kä/12.12.14
+  #k\u00e4/12.12.14
   l <-length(bwi.list)
   fvbn.bagr.stratum   <- list()
   
   for (i in 1:k)
   {
-    auswahl.i <- auswahl #kä/12.12.14
+    auswahl.i <- auswahl #k\u00e4/12.12.14
     if (eig.list[i]=="OEW")
       {auswahl.i$EigArt=c("BW","StW","KW")} else
       if (eig.list[i]%in%c("GPW","MPW","KPW"))
@@ -297,7 +297,7 @@ fvbn.stratum.fun.2 <- function(auswahl,eig.list,bwi.list,bagr,a.klass,d.klass){
 #-------------------------------------------------------------------------------
 
 #(2) Funktionen zur Auswertung der Inventurperiode zwischen BWI 2 und 3
-#Hinweis: diese Version ist speziell für die Inventurperiode 2003 bis 2012
+#Hinweis: diese Version ist speziell f\u00fcr die Inventurperiode 2003 bis 2012
 #TODO: Verallgemeinerte Version, die auch auf die Periode 1987 bis 2002
 #anwendbar ist
 
@@ -329,7 +329,7 @@ fvbn.stratum.fun.2 <- function(auswahl,eig.list,bwi.list,bagr,a.klass,d.klass){
 #'  Option einer Differenzierung nach Nutzungsart. \cr
 #'  Ratio-Schaetzer-Varianz ueber \code{r.variance.fun} (Matrizen-Notation) 
 #'  berechnet! \cr
-#'  Version für Periode BWI 2 zu 3! \cr
+#'  Version fuer Periode BWI 2 zu 3! \cr
 #'  Auswertung erfolgt auf dem gemeinsamen Netz im Unterschied zu
 #'  der historischen Version VB.A.BAGR.akl.dkl.stratum.fun, welche das Nutzungsgeschehen 
 #'  auf der bei der BWI 2 erfassten Flaeche abdeckte! \cr
@@ -341,7 +341,7 @@ fvbn.stratum.fun.2 <- function(auswahl,eig.list,bwi.list,bagr,a.klass,d.klass){
 #'  Um Konflikte mit unterschiedlicher Gross- und Kleinschreibung bei den 
 #'  Attributnamen zu vermeiden, werden innerhalb dieser Funktion alle 
 #'  Attributnamen auf Kleinschreibung umgestellt.
-#' @section TODO: Verallgemeinerung bzw. Variante für BWI 1 zu 2 !!!!
+#' @section TODO: Verallgemeinerung bzw. Variante fuer BWI 1 zu 2 !!!!
 #' @param BA.grupp Liste mit Baumarten-Zusammenfassungen zu Baumgruppen mit 
 #'  Bezeichner der Baumarten-Gruppen ("lab") z.B. list(bagr.lab = c("FiTa", 
 #'  "DglKiLae", "Bu", "Ei", "BLb", "WLb"), ba.grupp =list(c(10:19,30:39,90:99), 
@@ -363,7 +363,7 @@ fvbn.stratum.fun.2 <- function(auswahl,eig.list,bwi.list,bagr,a.klass,d.klass){
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{nTE} 
 #'  (Anzahl Ecken im Stratum), \strong{HBF} (Holzbodenflaeche in ha), 
 #'  \strong{se.HBF} (Standardfehler der HBF), \strong{Attribute} (Vektor mir 
-#'  berechneten Attributen), \strong{Größen} (Vektor mit berechneten Groessen 
+#'  berechneten Attributen), \strong{Groessen} (Vektor mit berechneten Groessen 
 #'  fuer Attribute (Wert, Standardfehler)), \strong{Nutzungsart} (2 Kategorien: 
 #'  geernet oder ungenutzt, wenn diese nicht definiert sind, wird "insgesamt" 
 #'  ausgegeben), \strong{BAGR} (Labels fuer Baumartengruppen aus 
@@ -380,10 +380,10 @@ fvbn.stratum.fun.2 <- function(auswahl,eig.list,bwi.list,bagr,a.klass,d.klass){
 #'  Baumartengruppen, Altersklassen und Durchmesserklassen).
 VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
           function(BA.grupp,A.klass,D.klass,auswahl,N.art,A){
-  #Bei Flächenbezug Reduktion auf gemeinsames Netz!!
-  #kä/28.02.2014
+  #Bei Fl\u00e4chenbezug Reduktion auf gemeinsames Netz!!
+  #k\u00e4/28.02.2014
   #---
-  #kä/24.08.2014: Bei Stratifikation anhand von Eckenmerkmalen gilt die
+  #k\u00e4/24.08.2014: Bei Stratifikation anhand von Eckenmerkmalen gilt die
   #aktuelle Inventur (BWI 3), z.B. die Eigentumsklassenzuordnung
   #alte Fassung:
   #auswahl$Begehbar=1; auswahl$Wa=c(1:3)
@@ -400,7 +400,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
       by=c("TNr","ENr"))
   stratum <- ecken.23.hb
   trakte <- trakte.3
-  t.pos <- length(trakte)#Anzahl Spalten in <trakte> wird benötigt, um
+  t.pos <- length(trakte)#Anzahl Spalten in <trakte> wird ben\u00f6tigt, um
   #Attribut-Positionen zu bestimmen
   #--------------------
   #inv <- 1
@@ -409,12 +409,12 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   n.te.s <- length(stratum[,1])
-  #<y> steht hier für die Anzahl der Traktecken auf begehbarem HB im Stratum
+  #<y> steht hier f\u00fcr die Anzahl der Traktecken auf begehbarem HB im Stratum
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Anzahl der Trakte im Stratum
   n.t.s <- length(y[,1])
-  #Anfügen der Anzahl Traktecken (Wald und Nicht-Wald)
+  #Anf\u00fcgen der Anzahl Traktecken (Wald und Nicht-Wald)
   y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr")) 
   # this was:  
   #  y <- merge(y,subset(trakte,select=c(tnr,m),by=c(tnr)))
@@ -431,11 +431,11 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                       -2*sum(y$y*y$m)/sum(y$y)/sum(x))
   se.T.hbf <- var.T.hbf^0.5 #Standardfehler
-  #Hier könnte als Alternative die Funktion <r.variance.fun> benutzt werden
-  #Hierzu müsste eine alle Trakte umfassende Matrix <xy> mit <m> und <y>
-  #übergeben werden
+  #Hier k\u00f6nnte als Alternative die Funktion <r.variance.fun> benutzt werden
+  #Hierzu m\u00fcsste eine alle Trakte umfassende Matrix <xy> mit <m> und <y>
+  #\u00fcbergeben werden
   #----------------
-  #kä/28.02.2014:
+  #k\u00e4/28.02.2014:
   baeume <- baeume.23 #muss eingelesen sein!
   #Kleinschreibung aller Atttributnahmen in <baeume>
   names(baeume) <- tolower(names(baeume))
@@ -447,7 +447,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
           stratum[TRUE, c("tnr", "enr", "pl", "plkal")],by=c("tnr","enr"))
 
   #BA-Gruppe dazu spielen
-  #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
+  #Baumartengruppen-Zuordnungstabelle f\u00fcr BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   bagr.tab <- ba.klass.lab.tab.fun(BA.grupp)
   n.bagr <- length(BA.grupp[[1]])
@@ -459,7 +459,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
                     by.x="ba",by.y="ICode",all.x=T)
   names(baeume.s) <- tolower(names(baeume.s))
 
-  #Folgeinventur: BA-Gruppen hinzufügen
+  #Folgeinventur: BA-Gruppen hinzuf\u00fcgen
   baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Pk", "BA", "Alt1", "Alt2", "BHD1", "BHD2", "StFl2")],
                       bagr.tab[TRUE, c("ICode", "bagr")],
                     by.x="BA",by.y="ICode",all.x=T)
@@ -468,12 +468,12 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
           by=c("tnr","enr"))
 
   #--------------------------------------------------
-  #Mittlere Baumartenflächen nach BAGr, AKl und DKl zur Periodenmitte nach Trakt
+  #Mittlere Baumartenfl\u00e4chen nach BAGr, AKl und DKl zur Periodenmitte nach Trakt
   mbaf.bagr.akl.dkl.tnr <- mbaf.bagr.alt.bhd.pm.fun(
                                     baeume.s,baeume.3.s,A.klass,D.klass)
 
   #-------------
-  #Klassifizierung des Ausgeschiedenen Vorrats durchführen
+  #Klassifizierung des Ausgeschiedenen Vorrats durchf\u00fchren
   #Alter
   A.max <- 999
   #Hinweis: A-Klassifizierung nach fortgeschriebenem Alter: alt2!!!
@@ -498,35 +498,35 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   dkl.lab <- as.character(dkl.lab[order(dkl.lab)])
   D.k <- length(dkl.lab[!is.na(dkl.lab)])
 
-  #Array für mittlere BAF zur PM nach BAGr, AKl, DKl
+  #Array f\u00fcr mittlere BAF zur PM nach BAGr, AKl, DKl
   BAF.bagr.akl.dkl  <- array(dim=c(2,n.bagr,A.k,D.k))
 
   if(N.art)
     {pk.list <- list(c(2,3,9),c(4,5));n.nart <- 2}else
     {pk.list <- list(c(2:5,9)); n.nart <- 1}
-  #Array für Ergebnisse (Totals und SE jeweils nach Nutzungsart, BAGr, AKl, DKl)
-  #Nutzungsart: aus <pk>: 2 = selektiv genutzt,  3 = flächig genutzt
+  #Array f\u00fcr Ergebnisse (Totals und SE jeweils nach Nutzungsart, BAGr, AKl, DKl)
+  #Nutzungsart: aus <pk>: 2 = selektiv genutzt,  3 = fl\u00e4chig genutzt
   #                       4 = am Ort verblieben, 5 = abgestorben  (stehend)
   #                       9 = unauffindbar (wird der Kategorie geerntet
   #                           zugewiesen)
   #                       2,3,9 definieren den geernteten ausgeschiedenen Vorrat
-  #                       4, 5 definieren den ungenutzten (tw. aus natürl. Mort.
+  #                       4, 5 definieren den ungenutzten (tw. aus nat\u00fcrl. Mort.
   #                       stammenden) ungenutzten ausgeschiedenen Vorrat)
   #Aus diesen Kennzahlen werden die 2 Kategorien der Nutzungsart (NArt):
   #geerntet bzw. ungenutzt festgelegt.
-  #Es gibt 4 Zielgrößen <Y>:  V [m³Dh mR], V Eor (Erntevolumen o. R.) [m³E oR],
-  #B (oberird. Biomasse) [t], N (Anzahl), für die jeweils der Gesamtwert der
-  #Periode ("Total") und der jährliche Wert berechnet wird, sowie der
-  #Stichprobenfehler (SE), und zwar jeweils für die 2 Kategorien "geerntet" /
+  #Es gibt 4 Zielgr\u00f6\u00dfen <Y>:  V [m^3Dh mR], V Eor (Erntevolumen o. R.) [m^3E oR],
+  #B (oberird. Biomasse) [t], N (Anzahl), f\u00fcr die jeweils der Gesamtwert der
+  #Periode ("Total") und der j\u00e4hrliche Wert berechnet wird, sowie der
+  #Stichprobenfehler (SE), und zwar jeweils f\u00fcr die 2 Kategorien "geerntet" /
   #"ungenutzt" sowie 9 Baumartengruppen, A.k Alters- und D.k Durchmesserklassen
   #1. Index: 1- 4: Perioden-Total (v, v.eor, b, n);
-  #          4- 8: m. jährlicher Wert (j.v, j.v.eor, j.b, j.n);
-  #          9-12: m. jährlicher Wert je ha     (kä/28.02.2014)
+  #          4- 8: m. j\u00e4hrlicher Wert (j.v, j.v.eor, j.b, j.n);
+  #          9-12: m. j\u00e4hrlicher Wert je ha     (k\u00e4/28.02.2014)
   #2. Index: 1: Wert; 2: SE;
   #3. Index: Nutzungsart (wenn <N.art> == TRUE (1: geerntet, 2: ungenutzt)
   #4. Index: BAGr; 5. Index: A-Klasse; 6. Index: D-Klasse
   Y.na.bagr.akl.dkl    <- array(dim=c(12,2,n.nart,n.bagr,A.k,D.k))
-  #mittlere kal. Periodenlänge mit Standard-Fehler
+  #mittlere kal. Periodenl\u00e4nge mit Standard-Fehler
   mPL.na.bagr.akl.dkl   <- array(dim=c(2,2,n.bagr,A.k,D.k))
   #Anzahl Trakte (PSU) je NArt, BAGR, Akl, Dkl
   nT.na.bagr.akl.dkl   <- array(dim=c(n.nart,n.bagr,A.k,D.k))
@@ -534,7 +534,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   ne.T <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
             names(ne.T) <- c("tnr","n.te")
   #"Periodensumme" je Trakt (mit n Ecken gewogen)
-  #Bei Nutzung wird kalendarische Periodenlänge <plkal> verwendet!
+  #Bei Nutzung wird kalendarische Periodenl\u00e4nge <plkal> verwendet!
   y.pl <- stats::aggregate(stratum$plkal,by=list(stratum$tnr),mean,na.rm=T)$x*ne.T$n.te
   #mittl. PL als gewogenes Mittel
   mpl.stratum <- sum(y.pl)/sum(ne.T$n.te)
@@ -552,7 +552,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
     {
       for (k in 1:D.k)  #Durchmesserklassen
       {
-        #Baumartenfläche zur Periodenmitte aggregieren
+        #Baumartenfl\u00e4che zur Periodenmitte aggregieren
         baf.ba <- mbaf.bagr.akl.dkl.tnr[
                       mbaf.bagr.akl.dkl.tnr[["bagr"]]==bagr.list[i]&mbaf.bagr.akl.dkl.tnr[["akl.pm"]]==akl.lab[j]&mbaf.bagr.akl.dkl.tnr[["dkl.pm"]]==dkl.lab[k],
                       c("tnr", "mbaf")]
@@ -562,7 +562,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
         xy.baf$mbaf[is.na(xy.baf$mbaf)] <- 0
         #xy.baf$mbaf <- xy.baf$mbaf
         #xy. <- cbind(xy$m,xy$mbaf/10000)
-        #Total der Baumartenfläche
+        #Total der Baumartenfl\u00e4che
         R.list <- r.variance.fun(cbind(xy.baf$m,xy.baf$mbaf),nT)
         BAF.bagr.akl.dkl[1,i,j,k] <-  R.list$R.xy*A
         BAF.bagr.akl.dkl[2,i,j,k] <-  sqrt(R.list$V.R.xy)*A
@@ -575,7 +575,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
               c("tnr", "enr", "pk", "volv2", "vole2", "oib2", "nha1", "plkal")]
           if (length(baeume.ba[,1])== 0)
           {
-             Y.na.bagr.akl.dkl[,1,i.n,i,j,k] <- rep(0,12) #Zielgröße
+             Y.na.bagr.akl.dkl[,1,i.n,i,j,k] <- rep(0,12) #Zielgr\u00f6\u00dfe
              Y.na.bagr.akl.dkl[,2,i.n,i,j,k] <- rep(0,12) #Stichprobenfehler (SE)
 
              mPL.na.bagr.akl.dkl[1:2,i.n,i,j,k]   <- rep(0,2)
@@ -584,11 +584,11 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
           {
             #Nach Trakt aggregieren
             #fortgeschrieben: volv2, vole2, oib2!!!!
-            #Ausgeschiedener Derbholz-Vorrat [m³ mR] als "v"
+            #Ausgeschiedener Derbholz-Vorrat [m^3 mR] als "v"
             xy <- stats::aggregate(baeume.ba$volv2*baeume.ba$nha1,by=list(baeume.ba$tnr),
                   sum)
             names(xy) <- c("tnr","v")
-            #Ausgeschiedener Vorrat Erntevolumen [m³ oR] als "v.eor"
+            #Ausgeschiedener Vorrat Erntevolumen [m^3 oR] als "v.eor"
             xy <- cbind(xy,
               stats::aggregate(baeume.ba$vole2*baeume.ba$nha1,
                                               by=list(baeume.ba$tnr),sum)$x )
@@ -597,24 +597,24 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
             xy <- cbind(xy,stats::aggregate(baeume.ba$oib2*baeume.ba$nha1,
                                             by=list(baeume.ba$tnr),sum)$x/1000)
             names(xy)[4] <- "b"
-            #Anzahl Bäume als "n"
+            #Anzahl B\u00e4ume als "n"
             xy <- cbind(xy,stats::aggregate(baeume.ba$nha1,by=list(baeume.ba$tnr),
                         sum)$x)
             names(xy)[5] <- "n"
-            #Mittlere kal. Periodenlänge je Trakt
+            #Mittlere kal. Periodenl\u00e4nge je Trakt
             mpl <- stats::aggregate(baeume.ba$plkal,by=list(baeume.ba$tnr),mean)$x
 
-            #Jährlicher ausgeschiedener Derbholzvorrat
+            #J\u00e4hrlicher ausgeschiedener Derbholzvorrat
             xy$j.v <- xy$v/mpl
-            #Jährlicher ausgeschiedener Erntevorrat
+            #J\u00e4hrlicher ausgeschiedener Erntevorrat
             xy$j.v.eor <- xy$v.eor/mpl
-            #Jährlicher ausgeschiedener oi. Biomassevorrat
+            #J\u00e4hrlicher ausgeschiedener oi. Biomassevorrat
             xy$j.b <- xy$b/mpl
-            #Jährliche ausgeschiedene Stammzahl
+            #J\u00e4hrliche ausgeschiedene Stammzahl
             xy$j.n <- xy$n/mpl
 
             #Anzahl Traktecken je Trakt (Wald- und Nichtwald) und <mbaf>
-            #hinzufügen   Hinweis: <xy.baf> enthält jetzt auch <m_bhb>!
+            #hinzuf\u00fcgen   Hinweis: <xy.baf> enth\u00e4lt jetzt auch <m_bhb>!
             #xy <- merge(xy,xy.baf,by=c("tnr"))
             xy <- merge(xy.baf,xy,by=c("tnr"),all.x=T)
             #for (ii in 7:14) {xy[is.na(xy[,ii]),ii] <- 0}
@@ -623,7 +623,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
             #Anzahl Trakte (i.S. von PSU) im Teilkollektiv i.n,i,j,k
             nT.na.bagr.akl.dkl[i.n,i,j,k] <- length(xy[,1])
 
-            #mittlere kal. Periodenlänge mit Standard-Fehler
+            #mittlere kal. Periodenl\u00e4nge mit Standard-Fehler
             #Anzahl Ecken je Trakt bestimmen
             nb.TE <- stats::aggregate(rep(1,length(baeume.ba[,1])),
                                     by=list(baeume.ba$tnr,baeume.ba$enr),sum)
@@ -640,26 +640,26 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
             #Berechnung des Standardfehlers
             mPL.na.bagr.akl.dkl[2,i.n,i,j,k] <- sqrt(R.list$V.R.xy)
 
-            for (l in 1:8)  #4 Totale, 4 Jährliche Totale
+            for (l in 1:8)  #4 Totale, 4 J\u00e4hrliche Totale
             {
-              #Zielgrößen Y ausgeschiedenes Kollektiv{V,V.EoR,B,N)
-              #Perioden-Total, jährl. Total, jährl. Ha-Wert (kä/01-03-2014)
+              #Zielgr\u00f6\u00dfen Y ausgeschiedenes Kollektiv{V,V.EoR,B,N)
+              #Perioden-Total, j\u00e4hrl. Total, j\u00e4hrl. Ha-Wert (k\u00e4/01-03-2014)
               R.list <- r.variance.fun(cbind(xy$m,xy[,(l+t.pos+1)]),nT)
               Y.na.bagr.akl.dkl[l,1,i.n,i,j,k] <- R.list$R.xy*A
               #Y.na.bagr.akl.dkl[l,1,i.n,i,j,k] <- sum(xy[,(1+l)])/sum(x)*A
-              #Zugehöriger Stichprobenfehler
+              #Zugeh\u00f6riger Stichprobenfehler
               Y.na.bagr.akl.dkl[l,2,i.n,i,j,k] <- sqrt(R.list$V.R.xy)*A
-            }#End for l (Zielgrößen)
-            #Offset für Spalten-Position der 4 jährliche Ha-Werte
+            }#End for l (Zielgr\u00f6\u00dfen)
+            #Offset f\u00fcr Spalten-Position der 4 j\u00e4hrliche Ha-Werte
             off <- length(xy)-4
-            #Flächenbezogene Zielgrößen:
-            for (l in 1:4) #4 jährliche Ha-Werte
+            #Fl\u00e4chenbezogene Zielgr\u00f6\u00dfen:
+            for (l in 1:4) #4 j\u00e4hrliche Ha-Werte
             {
-              #Zielgrößen Y ausgeschiedenes Kollektiv{V,V.EoR,B,N)
-              #Perioden-Total, jährl. Total, jährl. Ha-Wert (kä/01-03-2014)
+              #Zielgr\u00f6\u00dfen Y ausgeschiedenes Kollektiv{V,V.EoR,B,N)
+              #Perioden-Total, j\u00e4hrl. Total, j\u00e4hrl. Ha-Wert (k\u00e4/01-03-2014)
               R.list <- r.variance.fun(cbind(xy$mbaf,xy[,(l+off)]),nT)
               Y.na.bagr.akl.dkl[(l+8),1,i.n,i,j,k] <- R.list$R.xy
-              #Zugehöriger Stichprobenfehler
+              #Zugeh\u00f6riger Stichprobenfehler
               Y.na.bagr.akl.dkl[(l+8),2,i.n,i,j,k] <- sqrt(R.list$V.R.xy)
             }#
 
@@ -674,9 +674,9 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
   akl.lab <- akl.lab.fun(A.klass,A.k)
   
   #DKL-Labels
-  dkl.lab <- dkl.lab.fun(D.klass,D.k) #kä/16.07.14
+  dkl.lab <- dkl.lab.fun(D.klass,D.k) #k\u00e4/16.07.14
   
-  #Tabelle für BA-Gruppen
+  #Tabelle f\u00fcr BA-Gruppen
   #Dokumentation der Grunddaten und Auswertungsdatum der HR
   a <- regexpr("/",baeume$bemerk[baeume$stp==0][1],fixed=T)
   b <- nchar(as.character(baeume$bemerk[baeume$stp==0][1]))
@@ -688,7 +688,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
               Attribute=c("V_DhmR", "V_EoR", "oiB", "N_Dh",
                       "V_DhmR/J", "V_EoR/J", "oiB/J", "N_Dh/J",
                       "V_DhmR/ha/J", "V_EoR/ha/J", "oiB/ha/J", "N_Dh/ha/J"),
-              Größen = c("Wert","Standardfehler"),
+              "Gr\u00f6\u00df" = c("Wert","Standardfehler"),
               Nutzungsart = n.nart,
               BAGR=bagr.list, AKL = akl.lab[1:A.k], DKL = dkl.lab,
               T.VBN.A.NArt.Bagr.Akl.Dkl=Y.na.bagr.akl.dkl,
@@ -736,7 +736,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
 #'  Fuer die Berechnung der flaechenbezogenen Nutzungen muss die mittlere 
 #'  Baumartenflaeche der Periode berechnet werden, d.h. es werden auch die 
 #'  Standflaechen der Folgeaufnahme benoetigt! Dies wird von der Funktion 
-#'  \code{\link{mbaf.bagr.alt.bhd.pm.fun}} übernommen! \cr
+#'  \code{\link{mbaf.bagr.alt.bhd.pm.fun}} uebernommen! \cr
 #'  Um Konflikte mit unterschiedlicher Gross- und Kleinschreibung bei den 
 #'  Attributnamen zu vermeiden, werden innerhalb dieser Funktion alle 
 #'  Attributnamen auf Kleinschreibung umgestellt.
@@ -762,7 +762,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{nTE} 
 #'  (Anzahl Ecken im Stratum), \strong{HBF} (Holzbodenflaeche in ha), 
 #'  \strong{se.HBF} (Standardfehler der HBF), \strong{Attribute} (Vektor mir 
-#'  berechneten Attributen), \strong{Größen} (Vektor mit berechneten Groessen 
+#'  berechneten Attributen), \strong{Groessen} (Vektor mit berechneten Groessen 
 #'  fuer Attribute (Wert, Standardfehler)), \strong{Nutzungsart} (2 Kategorien: 
 #'  geernet oder ungenutzt, wenn diese nicht definiert sind, wird "insgesamt" 
 #'  ausgegeben), \strong{BAGR} (Labels fuer Baumartengruppen aus 
@@ -779,7 +779,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
 #'  Baumartengruppen, Altersklassen und Durchmesserklassen).
 VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
           function(BA.grupp,A.klass,D.klass,auswahl,N.art,A){
-  #kä/24.08.2014: Bei Stratifikation anhand von Eckenmerkmalen gilt die
+  #k\u00e4/24.08.2014: Bei Stratifikation anhand von Eckenmerkmalen gilt die
   #aktuelle Inventur (BWI 3), z.B. die Eigentumsklassenzuordnung
   #alte Fassung:
   #auswahl$Begehbar=1; auswahl$Wa=c(1:3)
@@ -796,7 +796,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
       by=c("TNr","ENr"))
   stratum <- ecken.23.hb
   trakte <- trakte.3
-  t.pos <- length(trakte)#Anzahl Spalten in <trakte> wird benötigt, um
+  t.pos <- length(trakte)#Anzahl Spalten in <trakte> wird ben\u00f6tigt, um
   #Attribut-Positionen zu bestimmen
   #--------------------
   #inv <- 1
@@ -805,12 +805,12 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   n.te.s <- length(stratum[,1])
-  #<y> steht hier für die Anzahl der Traktecken auf begehbarem HB im Stratum
+  #<y> steht hier f\u00fcr die Anzahl der Traktecken auf begehbarem HB im Stratum
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Anzahl der Trakte im Stratum
   n.t.s <- length(y[,1])
-  #Anfügen der Anzahl Traktecken (Wald und Nicht-Wald)
+  #Anf\u00fcgen der Anzahl Traktecken (Wald und Nicht-Wald)
   y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
   # this was:  
   #  y <- merge(y,subset(trakte,select=c(tnr,m),by=c(tnr)))
@@ -827,11 +827,11 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                       -2*sum(y$y*y$m)/sum(y$y)/sum(x))
   se.T.hbf <- var.T.hbf^0.5 #Standardfehler
-  #Hier könnte als Alternative die Funktion <r.variance.fun> benutzt werden
-  #Hierzu müsste eine alle Trakte umfassende Matrix <xy> mit <m> und <y>
-  #übergeben werden
+  #Hier k\u00f6nnte als Alternative die Funktion <r.variance.fun> benutzt werden
+  #Hierzu m\u00fcsste eine alle Trakte umfassende Matrix <xy> mit <m> und <y>
+  #\u00fcbergeben werden
   #----------------
-  #kä/28.02.2014:
+  #k\u00e4/28.02.2014:
   baeume <- baeume.23 #muss eingelesen sein!
   #Kleinschreibung aller Atttributnahmen in <baeume>
   names(baeume) <- tolower(names(baeume))
@@ -843,10 +843,10 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
           stratum[TRUE, c("tnr", "enr", "pl", "plkal")],by=c("tnr","enr"))
 
   #BA-Gruppe dazu spielen
-  #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
+  #Baumartengruppen-Zuordnungstabelle f\u00fcr BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   bagr.tab <- ba.klass.lab.tab.fun(BA.grupp)
-  n.bagr <- length(BA.grupp[[1]]) + 1 #kä/15.12.14
+  n.bagr <- length(BA.grupp[[1]]) + 1 #k\u00e4/15.12.14
   #BAGR-Liste
   bagr.list <- c(BA.grupp[[1]],"Alle BA")
   #n.bagr <- length(bagr.list)
@@ -855,7 +855,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
                     by.x="ba",by.y="ICode",all.x=T)
   names(baeume.s) <- tolower(names(baeume.s))
 
-  #Folgeinventur: BA-Gruppen hinzufügen
+  #Folgeinventur: BA-Gruppen hinzuf\u00fcgen
   baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Pk", "BA", "Alt1", "Alt2", "BHD1", "BHD2", "StFl2")],
                       bagr.tab[TRUE, c("ICode", "bagr")],
                     by.x="BA",by.y="ICode",all.x=T)
@@ -864,12 +864,12 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
           by=c("tnr","enr"))
 
   #--------------------------------------------------
-  #Mittlere Baumartenflächen nach BAGr, AKl und DKl zur Periodenmitte nach Trakt
+  #Mittlere Baumartenfl\u00e4chen nach BAGr, AKl und DKl zur Periodenmitte nach Trakt
   mbaf.bagr.akl.dkl.tnr <- mbaf.bagr.alt.bhd.pm.fun(
                                     baeume.s,baeume.3.s,A.klass,D.klass)
 
   #-------------
-  #Klassifizierung des Ausgeschiedenen Vorrats durchführen
+  #Klassifizierung des Ausgeschiedenen Vorrats durchf\u00fchren
   #Alter
   A.max <- 999
   #Hinweis: A-Klassifizierung nach fortgeschriebenem Alter: alt2!!!
@@ -894,37 +894,37 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   dkl.lab <- as.character(dkl.lab[order(dkl.lab)])
   D.k <- length(dkl.lab[!is.na(dkl.lab)])
 
-  #Array für mittlere BAF zur PM nach BAGr, AKl, DKl
+  #Array f\u00fcr mittlere BAF zur PM nach BAGr, AKl, DKl
   BAF.bagr.akl.dkl  <- array(dim=c(2,n.bagr,A.k,D.k))
 
   if(N.art)
     {pk.list <- list(c(2,3,9),c(4,5));n.nart <- 2}
   else
     {pk.list <- list(c(2:5,9)); n.nart <- 1}
-  #Array für Ergebnisse (Totals und SE jeweils nach Nutzungsart, BAGr, AKl, DKl)
-  #Nutzungsart: aus <pk>: 2 = selektiv genutzt,  3 = flächig genutzt
+  #Array f\u00fcr Ergebnisse (Totals und SE jeweils nach Nutzungsart, BAGr, AKl, DKl)
+  #Nutzungsart: aus <pk>: 2 = selektiv genutzt,  3 = fl\u00e4chig genutzt
   #                       4 = am Ort verblieben, 5 = abgestorben  (stehend)
   #                       9 = unauffindbar (wird der Kategorie geerntet
   #                           zugewiesen)
   #                       2,3,9 definieren den geernteten ausgeschiedenen Vorrat
-  #                       4, 5 definieren den ungenutzten (tw. aus natürl. Mort.
+  #                       4, 5 definieren den ungenutzten (tw. aus nat\u00fcrl. Mort.
   #                       stammenden) ungenutzten ausgeschiedenen Vorrat)
   #Aus diesen Kennzahlen werden die 2 Kategorien der Nutzungsart (NArt):
   #geerntet bzw. ungenutzt festgelegt.
-  #Es gibt 4 Zielgrößen <Y>:  V [m³Dh mR], V Eor (Erntevolumen o. R.) [m³E oR],
-  #B (oberird. Biomasse) [t], V.EoR im HB, für die jeweils der Gesamtwert der
-  #Periode ("Total") und der jährliche Wert berec (neu!)hnet wird, sowie der
-  #Stichprobenfehler (SE), und zwar jeweils für die 2 Kategorien "geerntet" /
+  #Es gibt 4 Zielgr\u00f6\u00dfen <Y>:  V [m^3Dh mR], V Eor (Erntevolumen o. R.) [m^3E oR],
+  #B (oberird. Biomasse) [t], V.EoR im HB, f\u00fcr die jeweils der Gesamtwert der
+  #Periode ("Total") und der j\u00e4hrliche Wert berec (neu!)hnet wird, sowie der
+  #Stichprobenfehler (SE), und zwar jeweils f\u00fcr die 2 Kategorien "geerntet" /
   #"ungenutzt" sowie <n.bagr> Baumartengruppen, A.k Alters- und D.k
   #Durchmesserklassen:
   #1. Index: 1- 4: Perioden-Total (v, v.eor, b, v.eor.hb);
-  #          4- 8: m. jährlicher Wert (j.v, j.v.eor, j.b, j.v.eor.hb);
-  #          9-12: m. jährlicher Wert je ha     (kä/28.02.2014)
+  #          4- 8: m. j\u00e4hrlicher Wert (j.v, j.v.eor, j.b, j.v.eor.hb);
+  #          9-12: m. j\u00e4hrlicher Wert je ha     (k\u00e4/28.02.2014)
   #2. Index: 1: Wert; 2: SE;
   #3. Index: Nutzungsart (wenn <N.art> == TRUE (1: geerntet, 2: ungenutzt)
   #4. Index: BAGr; 5. Index: A-Klasse; 6. Index: D-Klasse
   Y.na.bagr.akl.dkl    <- array(dim=c(12,2,n.nart,n.bagr,A.k,D.k))
-  #mittlere kal. Periodenlänge mit Standard-Fehler
+  #mittlere kal. Periodenl\u00e4nge mit Standard-Fehler
   mPL.na.bagr.akl.dkl   <- array(dim=c(2,2,n.bagr,A.k,D.k))
   #Anzahl Trakte (PSU) je NArt, BAGR, Akl, Dkl
   nT.na.bagr.akl.dkl   <- array(dim=c(n.nart,n.bagr,A.k,D.k))
@@ -932,7 +932,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   ne.T <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
             names(ne.T) <- c("tnr","n.te")
   #"Periodensumme" je Trakt (mit n Ecken gewogen)
-  #Bei Nutzung wird kalendarische Periodenlänge <plkal> verwendet!
+  #Bei Nutzung wird kalendarische Periodenl\u00e4nge <plkal> verwendet!
   y.pl <- stats::aggregate(stratum$plkal,by=list(stratum$tnr),mean,na.rm=T)$x*ne.T$n.te
   #mittl. PL als gewogenes Mittel
   mpl.stratum <- sum(y.pl)/sum(ne.T$n.te)
@@ -950,8 +950,8 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
     {
       for (k in 1:D.k)  #Durchmesserklassen
       {
-        #Baumartenfläche zur Periodenmitte aggregieren
-        #kä/15.12.14
+        #Baumartenfl\u00e4che zur Periodenmitte aggregieren
+        #k\u00e4/15.12.14
         if (i < n.bagr)
         {
           baf.ba <- mbaf.bagr.akl.dkl.tnr[
@@ -977,7 +977,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
         xy.baf[is.na(xy.baf)] <- 0
         #xy.baf$mbaf <- xy.baf$mbaf
         #xy. <- cbind(xy$m,xy$mbaf/10000)
-        #Total der Baumartenfläche
+        #Total der Baumartenfl\u00e4che
         R.list <- r.variance.fun(cbind(xy.baf$m,xy.baf$mbaf),nT)
         BAF.bagr.akl.dkl[1,i,j,k] <-  R.list$R.xy*A
         BAF.bagr.akl.dkl[2,i,j,k] <-  sqrt(R.list$V.R.xy)*A
@@ -985,7 +985,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
         for (i.n in 1:n.nart)   #Nutzungsart (geerntet, ungenutzt), wenn gesetzt!
         {
 
-          #Kä 15.12.14
+          #K\u00e4 15.12.14
           if (i < n.bagr)
           {
             baeume.ba <- baeume.s[
@@ -1006,7 +1006,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
           } #*
           if (length(baeume.ba[,1])== 0)
           {
-             Y.na.bagr.akl.dkl[,1,i.n,i,j,k] <- rep(0,12) #Zielgröße
+             Y.na.bagr.akl.dkl[,1,i.n,i,j,k] <- rep(0,12) #Zielgr\u00f6\u00dfe
              Y.na.bagr.akl.dkl[,2,i.n,i,j,k] <- rep(0,12) #Stichprobenfehler SE)
 
              mPL.na.bagr.akl.dkl[1:2,i.n,i,j,k]   <- rep(0,2)
@@ -1015,11 +1015,11 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
           {
             #Nach Trakt aggregieren
             #fortgeschrieben: volv2, vole2, oib2!!!!
-            #Ausgeschiedener Derbholz-Vorrat [m³ mR] als "v"
+            #Ausgeschiedener Derbholz-Vorrat [m^3 mR] als "v"
             xy <- stats::aggregate(baeume.ba$volv2*baeume.ba$nha1,
                             by=list(baeume.ba$tnr),sum)
             names(xy) <- c("tnr","v")
-            #Ausgeschiedener Vorrat Erntevolumen [m³ oR] als "v.eor"
+            #Ausgeschiedener Vorrat Erntevolumen [m^3 oR] als "v.eor"
             xy <- cbind(xy,
               stats::aggregate(baeume.ba$vole2*baeume.ba$nha1,
                                               by=list(baeume.ba$tnr),sum)$x )
@@ -1033,20 +1033,20 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
                                       ifelse(baeume.ba$stfl1>0,1,0),
                         by=list(baeume.ba$tnr),sum)$x)
             names(xy)[5] <- "v.eor.hb"
-            #Mittlere kal. Periodenlänge je Trakt
+            #Mittlere kal. Periodenl\u00e4nge je Trakt
             mpl <- stats::aggregate(baeume.ba$plkal,by=list(baeume.ba$tnr),mean)$x
 
-            #Jährlicher ausgeschiedener Derbholzvorrat
+            #J\u00e4hrlicher ausgeschiedener Derbholzvorrat
             xy$j.v <- xy$v/mpl
-            #Jährlicher ausgeschiedener Erntevorrat
+            #J\u00e4hrlicher ausgeschiedener Erntevorrat
             xy$j.v.eor <- xy$v.eor/mpl
-            #Jährlicher ausgeschiedener oi. Biomassevorrat
+            #J\u00e4hrlicher ausgeschiedener oi. Biomassevorrat
             xy$j.b <- xy$b/mpl
-            #Jährliche ausgeschiedene Stammzahl
+            #J\u00e4hrliche ausgeschiedene Stammzahl
             xy$j.v.eor.hb <- xy$v.eor.hb/mpl
 
             #Anzahl Traktecken je Trakt (Wald- und Nichtwald) und <mbaf>
-            #hinzufügen   Hinweis: <xy.baf> enthält jetzt auch <m_bhb>!
+            #hinzuf\u00fcgen   Hinweis: <xy.baf> enth\u00e4lt jetzt auch <m_bhb>!
             #xy <- merge(xy,xy.baf,by=c("tnr"))
             xy <- merge(xy.baf,xy,by=c("tnr"),all.x=T)
             xy[is.na(xy)] <- 0
@@ -1054,7 +1054,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
             #Anzahl Trakte (i.S. von PSU) im Teilkollektiv i.n,i,j,k
             nT.na.bagr.akl.dkl[i.n,i,j,k] <- length(xy[,1])
 
-            #mittlere kal. Periodenlänge mit Standard-Fehler
+            #mittlere kal. Periodenl\u00e4nge mit Standard-Fehler
             #Anzahl Ecken je Trakt bestimmen
             nb.TE <- stats::aggregate(rep(1,length(baeume.ba[,1])),
                                     by=list(baeume.ba$tnr,baeume.ba$enr),sum)
@@ -1071,24 +1071,24 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
             #Berechnung des Standardfehlers
             mPL.na.bagr.akl.dkl[2,i.n,i,j,k] <- sqrt(R.list$V.R.xy)
 
-            for (l in 1:8)  #4 Totale, 4 Jährliche Totale
+            for (l in 1:8)  #4 Totale, 4 J\u00e4hrliche Totale
             {
-              #Zielgrößen Y ausgeschiedenes Kollektiv{V,V.EoR,B,V.Eor.HB)
-              #Perioden-Total, jährl. Total, jährl. Ha-Wert (kä/01-03-2014)
-              #Attribut-Indizierung (l+t.pos+2) korrigiert (kä/08.07.14)
+              #Zielgr\u00f6\u00dfen Y ausgeschiedenes Kollektiv{V,V.EoR,B,V.Eor.HB)
+              #Perioden-Total, j\u00e4hrl. Total, j\u00e4hrl. Ha-Wert (k\u00e4/01-03-2014)
+              #Attribut-Indizierung (l+t.pos+2) korrigiert (k\u00e4/08.07.14)
               R.list <- r.variance.fun(cbind(xy$m,xy[,(l+t.pos+2)]),nT)
               Y.na.bagr.akl.dkl[l,1,i.n,i,j,k] <- R.list$R.xy*A
               #Y.na.bagr.akl.dkl[l,1,i.n,i,j,k] <- sum(xy[,(1+l)])/sum(x)*A
-              #Zugehöriger Stichprobenfehler
+              #Zugeh\u00f6riger Stichprobenfehler
               Y.na.bagr.akl.dkl[l,2,i.n,i,j,k] <- sqrt(R.list$V.R.xy)*A
-            }#End for l (Zielgrößen)
-            #Offset für Spalten-Position der 4 jährliche Ha-Werte
+            }#End for l (Zielgr\u00f6\u00dfen)
+            #Offset f\u00fcr Spalten-Position der 4 j\u00e4hrliche Ha-Werte
             off <- length(xy)-4
-            #Flächenbezogene Zielgrößen:
-            for (l in 1:4) #4 jährliche Ha-Werte
+            #Fl\u00e4chenbezogene Zielgr\u00f6\u00dfen:
+            for (l in 1:4) #4 j\u00e4hrliche Ha-Werte
             {
-              #Zielgrößen Y ausgeschiedenes Kollektiv{V,V.EoR,B,V.EoR.HB)
-              #Perioden-Total, jährl. Total, jährl. Ha-Wert (kä/01-03-2014)
+              #Zielgr\u00f6\u00dfen Y ausgeschiedenes Kollektiv{V,V.EoR,B,V.EoR.HB)
+              #Perioden-Total, j\u00e4hrl. Total, j\u00e4hrl. Ha-Wert (k\u00e4/01-03-2014)
               #Wegen V.Eor.HB muss nach BAF mit BL bzw. OHNE BL getrennt werden
               if (l<4)
               {
@@ -1098,7 +1098,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
                 R.list <- r.variance.fun(cbind(xy$mbaf.hb,xy[,(l+off)]),nT)
               }
               Y.na.bagr.akl.dkl[(l+8),1,i.n,i,j,k] <- R.list$R.xy
-              #Zugehöriger Stichprobenfehler
+              #Zugeh\u00f6riger Stichprobenfehler
               Y.na.bagr.akl.dkl[(l+8),2,i.n,i,j,k] <- sqrt(R.list$V.R.xy)
             }#
 
@@ -1114,9 +1114,9 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
   akl.lab <- akl.lab.fun(A.klass,A.k)
 
   #DKL-Labels
-  dkl.lab <- dkl.lab.fun(D.klass,D.k) #kä/16.07.14
+  dkl.lab <- dkl.lab.fun(D.klass,D.k) #k\u00e4/16.07.14
 
-  #Tabelle für BA-Gruppen
+  #Tabelle f\u00fcr BA-Gruppen
   #Dokumentation der Grunddaten und Auswertungsdatum der HR
   a <- regexpr("/",baeume$bemerk[baeume$stp==0][1],fixed=T)
   b <- nchar(as.character(baeume$bemerk[baeume$stp==0][1]))
@@ -1128,7 +1128,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
               Attribute=c("V_DhmR", "V_EoR", "oiB", "V_EoR_HB",
                       "V_DhmR/J", "V_EoR/J", "oiB/J", "V_EoR_HB/J",
                       "V_DhmR/ha/J", "V_EoR/ha/J", "oiB/ha/J", "V_EoR_HB/ha/J"),
-              Größen = c("Wert","Standardfehler"),
+              "Gr\u00f6\u00df" = c("Wert","Standardfehler"),
               Nutzungsart = nart,
               BAGR=bagr.list, AKL = akl.lab[1:A.k], DKL = dkl.lab,
               T.VBN.A.NArt.Bagr.Akl.Dkl=Y.na.bagr.akl.dkl,
@@ -1186,7 +1186,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit Datum und 
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{HBF} 
 #'  (Holzbodenflaeche in ha), \strong{se.HBF} (Standardfehler Holzbodenflaeche), 
-#'  \strong{Attribute} (Vektor mit berechneten Attributen), \strong{Größen} 
+#'  \strong{Attribute} (Vektor mit berechneten Attributen), \strong{Groessen} 
 #'  (vektor mit berechneten Grroessen ("Wert", "Standardfehler")), \strong{BAGR} 
 #'  (Labels fuer Baumartengruppen aus \code{ba.grupp}), \strong{AKL} (Labels der 
 #'  Altersklassen), \strong{DKL} (Labels der Durchmesserklassen), 
@@ -1195,7 +1195,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
           BA.grupp,A.klass,D.klass,auswahl,A){
   #---
-  #kä/24.08.2014: Bei Stratifikation anhand von Eckenmerkmalen gilt die
+  #k\u00e4/24.08.2014: Bei Stratifikation anhand von Eckenmerkmalen gilt die
   #aktuelle Inventur (BWI 3), z.B. die Eigentumsklassenzuordnung
   #alte Fassung:
   #auswahl$Begehbar=1; auswahl$Wa=c(1:3)
@@ -1219,21 +1219,21 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
       by=c("TNr","ENr"))
 
   #-----------------------------------------------------------------------------
-  #Klassifizierung durchführen
-  #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
+  #Klassifizierung durchf\u00fchren
+  #Baumartengruppen-Zuordnungstabelle f\u00fcr BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   
-  #Erweiterung um "Alle BA"  kä/15.12.2014
+  #Erweiterung um "Alle BA"  k\u00e4/15.12.2014
   n.bagr <- length(BA.grupp[[1]]) + 1 #* +1
-  BA.grupp$ba.grupp[[n.bagr]] <- c(10:299)    #*** eigentlich unnötig!!!
+  BA.grupp$ba.grupp[[n.bagr]] <- c(10:299)    #*** eigentlich unn\u00f6tig!!!
   BA.grupp$bagr.lab[[n.bagr]] <- "Alle BA"    #*** 
   bagr.list <- BA.grupp[[1]]
   bagr.tab <- ba.klass.lab.tab.fun(BA.grupp)  #*** 
-  #Aus Komaptibilitätsgründen wird Attribut-Name "bagr" auf "BaGr" geändert
+  #Aus Komaptibilit\u00e4tsgr\u00fcnden wird Attribut-Name "bagr" auf "BaGr" ge\u00e4ndert
   #(wegen Funktion <iVB.bilanz.bagr.akl.dkl.fun>
   names(bagr.tab)[3] <- "BaGr"
 
-  #Baumartengruppen hinzufügen
+  #Baumartengruppen hinzuf\u00fcgen
   baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Entf", "Pk",
                                        "BA", "Alt1", "Alt2", "BHD1", "BHD2", 
                                        "D031", "D032", "H1", "H2", "VolV1", 
@@ -1257,7 +1257,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
   #Zur Kontrolle
   sum(baeume.3.s$StFl2)/10000; sum(baeume.2.s$StFl1)/10000
 
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   #Nach TE
   hb.te <- stats::aggregate(baeume.3.s$StFl2/10000,
                         by=list(baeume.3.s$TNr,baeume.3.s$ENr),sum)
@@ -1274,7 +1274,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
   se.HBF <- sqrt(r.list$V.R.xy)*A
 
   #-----------------------------------
-  #Klassifizierung der Probebäume nach Alter und BHD zur Periodenmitte
+  #Klassifizierung der Probeb\u00e4ume nach Alter und BHD zur Periodenmitte
   #BWI 2:
   #Alter und BHD zur Periodenmitte bestimmen (bei ausgeschiedenem Kollektiv
   #ist Alt2 und BHD2 in PM)
@@ -1284,8 +1284,8 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
       ifelse(baeume.2.s$BA<998,baeume.2.s$Alt1+baeume.2.s$PL/2,0))
 
   #BWI 3:
-  #Alter und BHD zur Periodenmitte bestimmen (Hinweis nur relevant für
-  #die bei der Zuwachsbilanzierung benötigten PB-Kategorien S- und E-Bäume)
+  #Alter und BHD zur Periodenmitte bestimmen (Hinweis nur relevant f\u00fcr
+  #die bei der Zuwachsbilanzierung ben\u00f6tigten PB-Kategorien S- und E-B\u00e4ume)
   baeume.3.s$bhd.pm <- (baeume.3.s$BHD1+baeume.3.s$BHD2)/2
   baeume.3.s$alt.pm<- ifelse(baeume.3.s$BA<998,baeume.3.s$Alt2-baeume.3.s$PL/2,0)
 
@@ -1324,7 +1324,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
                                                   ecken)
                                                   
   #++++
-  #Korrektur kä/09.02.2015
+  #Korrektur k\u00e4/09.02.2015
   #Aggregation alle Baumarten
   baeume.2.s$BaGr <- "AlleBA"
   baeume.3.s$BaGr <- "AlleBA"
@@ -1335,12 +1335,12 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
   #-----------------------------------------------------------------------------
   #Zuwachs
   #Tabelle anlegen mit den Dimensionen
-  #1. 1-12: 4 Zielgrößen: V_DhmR, V_DhmR_HB, V_EoR, oiB in je 3 Varianten
-  #     (1) Periodengesamtwert, (2) jährlicher Gesamtwert,
-  #     (3) Ha-bezogener jährlicher Wert
-  #     13: m. Baumartenfläche  mit Lückenkorrektur
-  #     14: m. Baumartenfläche ohne Lückenkorr. für HB-Bäume
-  #     15: m. Periodenlänge
+  #1. 1-12: 4 Zielgr\u00f6\u00dfen: V_DhmR, V_DhmR_HB, V_EoR, oiB in je 3 Varianten
+  #     (1) Periodengesamtwert, (2) j\u00e4hrlicher Gesamtwert,
+  #     (3) Ha-bezogener j\u00e4hrlicher Wert
+  #     13: m. Baumartenfl\u00e4che  mit L\u00fcckenkorrektur
+  #     14: m. Baumartenfl\u00e4che ohne L\u00fcckenkorr. f\u00fcr HB-B\u00e4ume
+  #     15: m. Periodenl\u00e4nge
   #     16: Anzahl Trakte mit Beobachtungen
   #2. 2: Wert, Standardfehler
   #3. <n.bagr> Baumartengruppen
@@ -1353,11 +1353,11 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
   #------
   #Ausgeschiedener Vorrat (Volumen, Biomasse
   #Tabelle mit den Dimensionen
-  #1. 1-12: 4 Zielgrößen: V_A_DhmR, V_A_DhmR_HB, V_A_EoR, oiB_A in je
+  #1. 1-12: 4 Zielgr\u00f6\u00dfen: V_A_DhmR, V_A_DhmR_HB, V_A_EoR, oiB_A in je
   #         3 Varianten
-  #         (1) Periodengesamtwert, (2) jährlicher Gesamtwert,
-  #         (3) Ha-bezogener jährlicher Wert  = 1:12
-  #     13: m. kal. Periodenlänge
+  #         (1) Periodengesamtwert, (2) j\u00e4hrlicher Gesamtwert,
+  #         (3) Ha-bezogener j\u00e4hrlicher Wert  = 1:12
+  #     13: m. kal. Periodenl\u00e4nge
   #2. 2: Wert, Standardfehler
   #3. <n.bagr> Baumartengruppen
   #4. <A.k>    Altersklassen
@@ -1374,7 +1374,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
       for (k in 1:D.k)
       {
 
-        #kä/15.12.2014
+        #k\u00e4/15.12.2014
         if (i < n.bagr)  #*
         {
           iv.es.a.t <- iv.es.a.t.bagr.akl.dkl[
@@ -1382,7 +1382,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
                       iv.es.a.t.bagr.akl.dkl[["Akl"]] == akl.lab[j] &
                       iv.es.a.t.bagr.akl.dkl[["Dkl"]] == dkl.lab[k], TRUE]
         } else           #*
-        { #Alle BA  09.02.2015: ...alle... für BaGr AlleBA
+        { #Alle BA  09.02.2015: ...alle... f\u00fcr BaGr AlleBA
           iv.es.a.t <- iv.es.a.t.alle.akl.dkl[
                                               iv.es.a.t.alle.akl.dkl[["Akl"]] == akl.lab[j] &
                                               iv.es.a.t.alle.akl.dkl[["Dkl"]] == dkl.lab[k], TRUE]
@@ -1395,7 +1395,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
                                      "iV.DhmR", "iV.DhmR.HB", "iV.EoR", "iB", 
                                      "V.DhmR.A", "V.DhmR.HB.A", "V.EoR.A", 
                                      "B.A")]
-        #Traktecken Wald/Nichtwald hinzufügen
+        #Traktecken Wald/Nichtwald hinzuf\u00fcgen
         iv.bil.t <- merge(trakte[TRUE, c("TNr", "m", "m_HB")],iv.bil.t,
                           by=c("TNr"),all.x=T)
         #NA eliminieren
@@ -1408,43 +1408,43 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
         #V.DhmR.A,V.DhmR.HB.A,V.EoR.A,B.A
         
 
-        iii <- 0  #Index für Array <iVB.bagr.akl.dkl>
-        iiii <- 0 #Index für Array <VB.A.bagr.akl.dkl>
+        iii <- 0  #Index f\u00fcr Array <iVB.bagr.akl.dkl>
+        iiii <- 0 #Index f\u00fcr Array <VB.A.bagr.akl.dkl>
 
         for (ii in 1:3)   #Aggregationsebenen: Gesamtperiodenwert,
-                          #jährlicher Gesamtwert, Ha-bezogener jährl. Wert
+                          #j\u00e4hrlicher Gesamtwert, Ha-bezogener j\u00e4hrl. Wert
         {
-          for (jj in 8:11) #Spaltenpositionen der 4 Zielgrößen iV.DhmR,
+          for (jj in 8:11) #Spaltenpositionen der 4 Zielgr\u00f6\u00dfen iV.DhmR,
                           #iV.DhmR.HB,
                           #iV.EoR, iB
           {
             iii <- iii + 1
-            #Bezugsgröße x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: Größen
+            #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
             {if(jj==9) {x <- iv.bil.t[,5]} else {x <- iv.bil.t[,4]}}
-            #Zielgöße y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPL
+            #Zielg\u00f6\u00dfe y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPL
             if(ii < 2) {y <- iv.bil.t[,jj]} else
               {y <- ifelse(iv.bil.t[,6]>0,iv.bil.t[,jj]/iv.bil.t[,6],0)}
             R.list <- r.variance.fun(cbind(x,y),nT)
             iVB.bagr.akl.dkl[iii,1,i,j,k] <- R.list$R.xy*ifelse(ii<3,A,1)
             iVB.bagr.akl.dkl[iii,2,i,j,k]<- sqrt(R.list$V.R.xy)*ifelse(ii<3,A,1)
           }
-          #Auswertung für ausgeschiedenen Vorrat (kä/11.04.2014)
+          #Auswertung f\u00fcr ausgeschiedenen Vorrat (k\u00e4/11.04.2014)
 
-          for (jj in 12:15) #Spaltenpositionen der 4 Zielgrößen V.DhmR.A,
+          for (jj in 12:15) #Spaltenpositionen der 4 Zielgr\u00f6\u00dfen V.DhmR.A,
                             #V.DhmR.HB.A, V.EoR.A, B.A
           {
             iiii <- iiii + 1
-            #Bezugsgröße x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: Größen
+            #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
             {if(jj==13) {x <- iv.bil.t[,5]} else {x <- iv.bil.t[,4]}}
-            #Zielgöße y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPLkal
+            #Zielg\u00f6\u00dfe y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPLkal
             if(ii < 2) {y <- iv.bil.t[,jj]} else
               {y <- ifelse(iv.bil.t[,7]>0,iv.bil.t[,jj]/iv.bil.t[,7],0)}
             R.list <- r.variance.fun(cbind(x,y),nT)
@@ -1456,11 +1456,11 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,4]),nT)
         iVB.bagr.akl.dkl[13,1,i,j,k] <- R.list$R.xy*A
         iVB.bagr.akl.dkl[13,2,i,j,k] <- sqrt(R.list$V.R.xy)*A
-        #Mittlere BAF ohne Lückenkorrektur je BAGR, Akl, Dkl
+        #Mittlere BAF ohne L\u00fcckenkorrektur je BAGR, Akl, Dkl
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,5]),nT)
         iVB.bagr.akl.dkl[14,1,i,j,k] <- R.list$R.xy*A
         iVB.bagr.akl.dkl[14,2,i,j,k] <- sqrt(R.list$V.R.xy)*A
-        #Mittlere Periodenlänge je BAGR, Akl, Dkl
+        #Mittlere Periodenl\u00e4nge je BAGR, Akl, Dkl
         #Mit Anzahl der TE auf HB gewogenes Mittel
         #Hinweis: es sind weitere Mittelbildungen denkbar; z.B. mit der
         #mBAF gewogenen PL
@@ -1468,7 +1468,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,6]),nT)
         iVB.bagr.akl.dkl[15,1,i,j,k] <- R.list$R.xy
         iVB.bagr.akl.dkl[15,2,i,j,k] <- sqrt(R.list$V.R.xy)
-        #Mittlere kalendarische Periodenlänge je BAGR, Akl, Dkl
+        #Mittlere kalendarische Periodenl\u00e4nge je BAGR, Akl, Dkl
         #Mit Anzahl der TE auf HB gewogenes Mittel
         x <- ifelse(iv.bil.t[,7]>0,iv.bil.t[,3],0)
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,7]),nT)
@@ -1483,7 +1483,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
   akl.lab <- akl.lab.fun(A.klass,A.k)
 
   #DKL-Labels
-  dkl.lab <- dkl.lab.fun(D.klass,D.k) #kä/16.07.14
+  dkl.lab <- dkl.lab.fun(D.klass,D.k) #k\u00e4/16.07.14
   
   #Dokumentation der Grunddaten und Auswertungsdatum der HR
   a <- regexpr("/",baeume.3$Bemerk[baeume.3$STP==0][1],fixed=T)
@@ -1498,7 +1498,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
                         "V_DhmR/J", "V_DhmR_HB/J", "V_EoR/J", "oiB/J",
                         "V_DhmR/ha/J", "V_DhmR_HB/ha/J", "V_EoR/ha/J", "oiB/ha/J",
                         "mBAF_mLK","mBAFoLK","mPL","nT"),
-              Größen=c("Wert","Standardfehler"),
+              "Gr\u00f6\u00df"=c("Wert","Standardfehler"),
               BAGR = bagr.list,
               AKL = akl.lab[1:A.k], DKL = dkl.lab,
               iVB.bagr.akl.dkl = iVB.bagr.akl.dkl,
@@ -1554,7 +1554,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23,baeume.3,
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit Datum und 
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{HBF} 
 #'  (Holzbodenflaeche in ha), \strong{se.HBF} (Standardfehler Holzbodenflaeche), 
-#'  \strong{Attribute} (Vektor mit berechneten Attributen), \strong{Größen} 
+#'  \strong{Attribute} (Vektor mit berechneten Attributen), \strong{Groessen} 
 #'  (vektor mit berechneten Grroessen ("Wert", "Standardfehler")), \strong{BAGR} 
 #'  (Labels fuer Baumartengruppen aus \code{ba.grupp}), \strong{AKL} (Labels der 
 #'  Altersklassen), \strong{DKL} (Labels der Durchmesserklassen), 
@@ -1585,17 +1585,17 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
       by=c("TNr","ENr"))
 
   #-----------------------------------------------------------------------------
-  #Klassifizierung durchführen
-  #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
+  #Klassifizierung durchf\u00fchren
+  #Baumartengruppen-Zuordnungstabelle f\u00fcr BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   bagr.tab <- ba.klass.lab.tab.fun(BA.grupp)
   n.bagr <- length(BA.grupp[[1]])
   bagr.list <- BA.grupp[[1]]
-  #Aus Komaptibilitätsgründen wird Attribut-Name "bagr" auf "BaGr" geändert
+  #Aus Komaptibilit\u00e4tsgr\u00fcnden wird Attribut-Name "bagr" auf "BaGr" ge\u00e4ndert
   #(wegen Funktion <iVB.bilanz.bagr.akl.dkl.fun>
   names(bagr.tab)[3] <- "BaGr"
 
-  #Baumartengruppen hinzufügen
+  #Baumartengruppen hinzuf\u00fcgen
   baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Entf", "Pk",
                                        "BA", "Alt1", "Alt2", "BHD1", "BHD2", 
                                        "D031", "D032", "H1", "H2", "VolV1", 
@@ -1619,7 +1619,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
   #Zur Kontrolle
   sum(baeume.3.s$StFl2)/10000; sum(baeume.2.s$StFl1)/10000
 
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   #Nach TE
   hb.te <- stats::aggregate(baeume.3.s$StFl2/10000,
                         by=list(baeume.3.s$TNr,baeume.3.s$ENr),sum)
@@ -1636,7 +1636,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
   se.HBF <- sqrt(r.list$V.R.xy)*A
 
   #-----------------------------------
-  #Klassifizierung der Probebäume nach Alter und BHD zur Periodenmitte
+  #Klassifizierung der Probeb\u00e4ume nach Alter und BHD zur Periodenmitte
   #BWI 2:
   #Alter und BHD zur Periodenmitte bestimmen (bei ausgeschiedenem Kollektiv
   #ist Alt2 und BHD2 in PM)
@@ -1646,8 +1646,8 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
       ifelse(baeume.2.s$BA<998,baeume.2.s$Alt1+baeume.2.s$PL/2,0))
 
   #BWI 3:
-  #Alter und BHD zur Periodenmitte bestimmen (Hinweis nur relevant für
-  #die bei der Zuwachsbilanzierung benötigten PB-Kategorien S- und E-Bäume)
+  #Alter und BHD zur Periodenmitte bestimmen (Hinweis nur relevant f\u00fcr
+  #die bei der Zuwachsbilanzierung ben\u00f6tigten PB-Kategorien S- und E-B\u00e4ume)
   baeume.3.s$bhd.pm <- (baeume.3.s$BHD1+baeume.3.s$BHD2)/2
   baeume.3.s$alt.pm<- ifelse(baeume.3.s$BA<998,baeume.3.s$Alt2-baeume.3.s$PL/2,0)
 
@@ -1688,12 +1688,12 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
   #-----------------------------------------------------------------------------
   #Zuwachs
   #Tabelle anlegen mit den Dimensionen
-  #1. 1-12: 4 Zielgrößen: V_DhmR, V_DhmR_HB, V_EoR, oiB in je 3 Varianten
-  #     (1) Periodengesamtwert, (2) jährlicher Gesamtwert,
-  #     (3) Ha-bezogener jährlicher Wert
-  #     13: m. Baumartenfläche  mit Lückenkorrektur
-  #     14: m. Baumartenfläche ohne Lückenkorr. für HB-Bäume
-  #     15: m. Periodenlänge
+  #1. 1-12: 4 Zielgr\u00f6\u00dfen: V_DhmR, V_DhmR_HB, V_EoR, oiB in je 3 Varianten
+  #     (1) Periodengesamtwert, (2) j\u00e4hrlicher Gesamtwert,
+  #     (3) Ha-bezogener j\u00e4hrlicher Wert
+  #     13: m. Baumartenfl\u00e4che  mit L\u00fcckenkorrektur
+  #     14: m. Baumartenfl\u00e4che ohne L\u00fcckenkorr. f\u00fcr HB-B\u00e4ume
+  #     15: m. Periodenl\u00e4nge
   #     16: Anzahl Trakte mit Beobachtungen
   #2. 2: Wert, Standardfehler
   #3. <n.bagr> Baumartengruppen
@@ -1706,11 +1706,11 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
   #------
   #Ausgeschiedener Vorrat (Volumen, Biomasse
   #Tabelle mit den Dimensionen
-  #1. 1-12: 4 Zielgrößen: V_A_DhmR, V_A_DhmR_HB, V_A_EoR, oiB_A in je
+  #1. 1-12: 4 Zielgr\u00f6\u00dfen: V_A_DhmR, V_A_DhmR_HB, V_A_EoR, oiB_A in je
   #         3 Varianten
-  #         (1) Periodengesamtwert, (2) jährlicher Gesamtwert,
-  #         (3) Ha-bezogener jährlicher Wert  = 1:12
-  #     13: m. kal. Periodenlänge
+  #         (1) Periodengesamtwert, (2) j\u00e4hrlicher Gesamtwert,
+  #         (3) Ha-bezogener j\u00e4hrlicher Wert  = 1:12
+  #     13: m. kal. Periodenl\u00e4nge
   #2. 2: Wert, Standardfehler
   #3. <n.bagr> Baumartengruppen
   #4. <A.k>    Altersklassen
@@ -1739,7 +1739,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
                                      "iV.DhmR", "iV.DhmR.HB", "iV.EoR", "iB", 
                                      "V.DhmR.A", "V.DhmR.HB.A", "V.EoR.A", "B.A"
                                      )]
-        #Traktecken Wald/Nichtwald hinzufügen
+        #Traktecken Wald/Nichtwald hinzuf\u00fcgen
         iv.bil.t <- merge(trakte[TRUE, c("TNr", "m", "m_HB")],iv.bil.t,
                           by=c("TNr"),all.x=T)
         #NA eliminieren
@@ -1752,43 +1752,43 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
         #V.DhmR.A,V.DhmR.HB.A,V.EoR.A,B.A
         
 
-        iii <- 0  #Index für Array <iVB.bagr.akl.dkl>
-        iiii <- 0 #Index für Array <VB.A.bagr.akl.dkl>
+        iii <- 0  #Index f\u00fcr Array <iVB.bagr.akl.dkl>
+        iiii <- 0 #Index f\u00fcr Array <VB.A.bagr.akl.dkl>
 
         for (ii in 1:3)   #Aggregationsebenen: Gesamtperiodenwert,
-                          #jährlicher Gesamtwert, Ha-bezogener jährl. Wert
+                          #j\u00e4hrlicher Gesamtwert, Ha-bezogener j\u00e4hrl. Wert
         {
-          for (jj in 8:11) #Spaltenpositionen der 4 Zielgrößen iV.DhmR,
+          for (jj in 8:11) #Spaltenpositionen der 4 Zielgr\u00f6\u00dfen iV.DhmR,
                           #iV.DhmR.HB,
                           #iV.EoR, iB
           {
             iii <- iii + 1
-            #Bezugsgröße x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: Größen
+            #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
             {if(jj==9) {x <- iv.bil.t[,5]} else {x <- iv.bil.t[,4]}}
-            #Zielgöße y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPL
+            #Zielg\u00f6\u00dfe y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPL
             if(ii < 2) {y <- iv.bil.t[,jj]} else
               {y <- ifelse(iv.bil.t[,6]>0,iv.bil.t[,jj]/iv.bil.t[,6],0)}
             R.list <- r.variance.fun(cbind(x,y),nT)
             iVB.bagr.akl.dkl[iii,1,i,j,k] <- R.list$R.xy*ifelse(ii<3,A,1)
             iVB.bagr.akl.dkl[iii,2,i,j,k]<- sqrt(R.list$V.R.xy)*ifelse(ii<3,A,1)
           }
-          #Auswertung für ausgeschiedenen Vorrat (kä/11.04.2014)
+          #Auswertung f\u00fcr ausgeschiedenen Vorrat (k\u00e4/11.04.2014)
 
-          for (jj in 12:15) #Spaltenpositionen der 4 Zielgrößen V.DhmR.A,
+          for (jj in 12:15) #Spaltenpositionen der 4 Zielgr\u00f6\u00dfen V.DhmR.A,
                             #V.DhmR.HB.A, V.EoR.A, B.A
           {
             iiii <- iiii + 1
-            #Bezugsgröße x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: Größen
+            #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
             {if(jj==13) {x <- iv.bil.t[,5]} else {x <- iv.bil.t[,4]}}
-            #Zielgöße y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPLkal
+            #Zielg\u00f6\u00dfe y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPLkal
             if(ii < 2) {y <- iv.bil.t[,jj]} else
               {y <- ifelse(iv.bil.t[,7]>0,iv.bil.t[,jj]/iv.bil.t[,7],0)}
             R.list <- r.variance.fun(cbind(x,y),nT)
@@ -1800,11 +1800,11 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,4]),nT)
         iVB.bagr.akl.dkl[13,1,i,j,k] <- R.list$R.xy*A
         iVB.bagr.akl.dkl[13,2,i,j,k] <- sqrt(R.list$V.R.xy)*A
-        #Mittlere BAF ohne Lückenkorrektur je BAGR, Akl, Dkl
+        #Mittlere BAF ohne L\u00fcckenkorrektur je BAGR, Akl, Dkl
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,5]),nT)
         iVB.bagr.akl.dkl[14,1,i,j,k] <- R.list$R.xy*A
         iVB.bagr.akl.dkl[14,2,i,j,k] <- sqrt(R.list$V.R.xy)*A
-        #Mittlere Periodenlänge je BAGR, Akl, Dkl
+        #Mittlere Periodenl\u00e4nge je BAGR, Akl, Dkl
         #Mit Anzahl der TE auf HB gewogenes Mittel
         #Hinweis: es sind weitere Mittelbildungen denkbar; z.B. mit der
         #mBAF gewogenen PL
@@ -1812,7 +1812,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,6]),nT)
         iVB.bagr.akl.dkl[15,1,i,j,k] <- R.list$R.xy
         iVB.bagr.akl.dkl[15,2,i,j,k] <- sqrt(R.list$V.R.xy)
-        #Mittlere kalendarische Periodenlänge je BAGR, Akl, Dkl
+        #Mittlere kalendarische Periodenl\u00e4nge je BAGR, Akl, Dkl
         #Mit Anzahl der TE auf HB gewogenes Mittel
         x <- ifelse(iv.bil.t[,7]>0,iv.bil.t[,3],0)
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,7]),nT)
@@ -1827,7 +1827,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
   akl.lab <- akl.lab.fun(A.klass,A.k)
 
   #DKL-Labels
-  dkl.lab <- dkl.lab.fun(D.klass,D.k) #kä/16.07.14
+  dkl.lab <- dkl.lab.fun(D.klass,D.k) #k\u00e4/16.07.14
   
   #Dokumentation der Grunddaten und Auswertungsdatum der HR
   a <- regexpr("/",baeume.3$Bemerk[baeume.3$STP==0][1],fixed=T)
@@ -1841,7 +1841,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
               Attribute=c("V_DhmR", "V_DhmR_HB", "V_EoR", "oiB",
                         "V_DhmR/J", "V_DhmR_HB/J", "V_EoR/J", "oiB/J",
                         "V_DhmR/ha/J", "V_DhmR_HB/ha/J", "V_EoR/ha/J", "oiB/ha/J"),
-              Größen=c("Wert","Standardfehler"),
+              "Gr\u00f6\u00df"=c("Wert","Standardfehler"),
               BAGR = bagr.list,
               AKL = akl.lab[1:A.k], DKL = dkl.lab,
               iVB.bagr.akl.dkl = iVB.bagr.akl.dkl,
@@ -1872,7 +1872,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
 #'  Tabellen: <baeume.3>, <baeume.23>, <ecken.3>, <ecken.2>, <trakte.3>.
 #' @section Hinweis: "Endwert-Verfahren" bzgl. S- und E-Baeume, Bilanzierung 
 #'  inkomaptibel mit Vorratsdifferenz aus Zustandsgroessen! \cr
-#'  Echter Einwuchs wird getrennt ausgewiesen, ausschließlich nach dem Kriterium 
+#'  Echter Einwuchs wird getrennt ausgewiesen, ausschliesslich nach dem Kriterium 
 #'  (modellierter) BHD1 < 7 cm (abweichend von bisherigem Kriterium Entf < 1.75 
 #'  & BHD2 < 22).
 #' @param baeume.23 Tabelle mit Baumdaten aus BWI 2.
@@ -1894,7 +1894,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit Datum und 
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{HBF} 
 #'  (Holzbodenflaeche in ha), \strong{se.HBF} (Standardfehler Holzbodenflaeche), 
-#'  \strong{Attribute} (Vektor mit berechneten Attributen), \strong{Größen} 
+#'  \strong{Attribute} (Vektor mit berechneten Attributen), \strong{Groessen} 
 #'  (vektor mit berechneten Grroessen ("Wert", "Standardfehler")), \strong{BAGR} 
 #'  (Labels fuer Baumartengruppen aus \code{ba.grupp}), \strong{AKL} (Labels der 
 #'  Altersklassen), \strong{DKL} (Labels der Durchmesserklassen), 
@@ -1903,7 +1903,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23,baeume.3,
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
           BA.grupp,A.klass,D.klass,auswahl,A){
   #---
-  #kä/24.08.2014: Bei Stratifikation anhand von Eckenmerkmalen gilt die
+  #k\u00e4/24.08.2014: Bei Stratifikation anhand von Eckenmerkmalen gilt die
   #aktuelle Inventur (BWI 3), z.B. die Eigentumsklassenzuordnung
   #alte Fassung:
   #auswahl$Begehbar=1; auswahl$Wa=c(1:3)
@@ -1927,21 +1927,21 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
       by=c("TNr","ENr"))
 
   #-----------------------------------------------------------------------------
-  #Klassifizierung durchführen
-  #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
+  #Klassifizierung durchf\u00fchren
+  #Baumartengruppen-Zuordnungstabelle f\u00fcr BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
 
-  #Erweiterung um "Alle BA"  kä/15.12.2014
+  #Erweiterung um "Alle BA"  k\u00e4/15.12.2014
   n.bagr <- length(BA.grupp[[1]]) + 1 #* +1
-  BA.grupp$ba.grupp[[n.bagr]] <- c(10:299)    #*** eigentlich unnötig!!!
+  BA.grupp$ba.grupp[[n.bagr]] <- c(10:299)    #*** eigentlich unn\u00f6tig!!!
   BA.grupp$bagr.lab[[n.bagr]] <- "Alle BA"    #***
   bagr.list <- BA.grupp[[1]]
   bagr.tab <- ba.klass.lab.tab.fun(BA.grupp)  #***
-  #Aus Komaptibilitätsgründen wird Attribut-Name "bagr" auf "BaGr" geändert
+  #Aus Komaptibilit\u00e4tsgr\u00fcnden wird Attribut-Name "bagr" auf "BaGr" ge\u00e4ndert
   #(wegen Funktion <iVB.bilanz.bagr.akl.dkl.fun.2g>
   names(bagr.tab)[3] <- "BaGr"
 
-  #Baumartengruppen hinzufügen
+  #Baumartengruppen hinzuf\u00fcgen
   baeume.3.s <- merge(baeume.3[TRUE, c("TNr", "ENr", "STP", "BNr", "Entf", "Pk",
                                        "BA", "Alt1", "Alt2", "BHD1", "BHD2", 
                                        "D031", "D032", "H1", "H2", "VolV1", 
@@ -1965,7 +1965,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
   #Zur Kontrolle
   sum(baeume.3.s$StFl2)/10000; sum(baeume.2.s$StFl1)/10000
 
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   #Nach TE
   hb.te <- stats::aggregate(baeume.3.s$StFl2/10000,
                         by=list(baeume.3.s$TNr,baeume.3.s$ENr),sum)
@@ -1982,7 +1982,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
   se.HBF <- sqrt(r.list$V.R.xy)*A
 
   #-----------------------------------
-  #Klassifizierung der Probebäume nach Alter und BHD zur Periodenmitte
+  #Klassifizierung der Probeb\u00e4ume nach Alter und BHD zur Periodenmitte
   #BWI 2:
   #Alter und BHD zur Periodenmitte bestimmen (bei ausgeschiedenem Kollektiv
   #ist Alt2 und BHD2 in PM)
@@ -1992,8 +1992,8 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
       ifelse(baeume.2.s$BA<998,baeume.2.s$Alt1+baeume.2.s$PL/2,0))
 
   #BWI 3:
-  #Alter und BHD zur Periodenmitte bestimmen (Hinweis nur relevant für
-  #die bei der Zuwachsbilanzierung benötigten PB-Kategorien S- und E-Bäume)
+  #Alter und BHD zur Periodenmitte bestimmen (Hinweis nur relevant f\u00fcr
+  #die bei der Zuwachsbilanzierung ben\u00f6tigten PB-Kategorien S- und E-B\u00e4ume)
   baeume.3.s$bhd.pm <- (baeume.3.s$BHD1+baeume.3.s$BHD2)/2
   baeume.3.s$alt.pm<- ifelse(baeume.3.s$BA<998,baeume.3.s$Alt2-baeume.3.s$PL/2,0)
 
@@ -2031,7 +2031,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
   iv.es.a.t.bagr.akl.dkl <- iVB.bilanz.bagr.akl.dkl.fun.2g(baeume.2.s,baeume.3.s,
                                                   ecken)
   #++++
-  #Korrektur kä/27.01.2015
+  #Korrektur k\u00e4/27.01.2015
   #Aggregation alle Baumarten
   baeume.2.s$BaGr <- "AlleBA"
   baeume.3.s$BaGr <- "AlleBA"
@@ -2042,12 +2042,12 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
   #Zuwachs
   #Tabelle anlegen mit den Dimensionen
   #+++
-  #1. 1-15: 5 Zielgrößen: V_DhmR, V_DhmR_HB, V_EoR, oiB, G in je 3 Varianten
-  #     (1) Periodengesamtwert, (2) jährlicher Gesamtwert,
-  #     (3) Ha-bezogener jährlicher Wert
-  #     16: m. Baumartenfläche  mit Lückenkorrektur
-  #     17: m. Baumartenfläche ohne Lückenkorr. für HB-Bäume
-  #     18: m. Periodenlänge
+  #1. 1-15: 5 Zielgr\u00f6\u00dfen: V_DhmR, V_DhmR_HB, V_EoR, oiB, G in je 3 Varianten
+  #     (1) Periodengesamtwert, (2) j\u00e4hrlicher Gesamtwert,
+  #     (3) Ha-bezogener j\u00e4hrlicher Wert
+  #     16: m. Baumartenfl\u00e4che  mit L\u00fcckenkorrektur
+  #     17: m. Baumartenfl\u00e4che ohne L\u00fcckenkorr. f\u00fcr HB-B\u00e4ume
+  #     18: m. Periodenl\u00e4nge
   #     19: Anzahl Trakte mit Beobachtungen
   #2. 2: Wert, Standardfehler
   #3. <n.bagr> Baumartengruppen
@@ -2060,11 +2060,11 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
   #------
   #Ausgeschiedener Vorrat (Volumen, Biomasse
   #Tabelle mit den Dimensionen
-  #1. 1-15: 4 Zielgrößen: V_A_DhmR, V_A_DhmR_HB, V_A_EoR, oiB_A, G_A in je
+  #1. 1-15: 4 Zielgr\u00f6\u00dfen: V_A_DhmR, V_A_DhmR_HB, V_A_EoR, oiB_A, G_A in je
   #         3 Varianten
-  #         (1) Periodengesamtwert, (2) jährlicher Gesamtwert,
-  #         (3) Ha-bezogener jährlicher Wert  = 1:12
-  #     16: m. kal. Periodenlänge
+  #         (1) Periodengesamtwert, (2) j\u00e4hrlicher Gesamtwert,
+  #         (3) Ha-bezogener j\u00e4hrlicher Wert  = 1:12
+  #     16: m. kal. Periodenl\u00e4nge
   #2. 2: Wert, Standardfehler
   #3. <n.bagr> Baumartengruppen
   #4. <A.k>    Altersklassen
@@ -2081,7 +2081,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
       for (k in 1:D.k)
       {
 
-        #kä/15.12.2014
+        #k\u00e4/15.12.2014
         if (i < n.bagr)  #*
         {
           iv.es.a.t <- iv.es.a.t.bagr.akl.dkl[
@@ -2089,7 +2089,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
                       iv.es.a.t.bagr.akl.dkl[["Akl"]] == akl.lab[j] &
                       iv.es.a.t.bagr.akl.dkl[["Dkl"]] == dkl.lab[k], TRUE]
         } else           #*
-        { #Alle BA   kä/27.01.2015
+        { #Alle BA   k\u00e4/27.01.2015
           iv.es.a.t <- iv.es.a.t.alle.akl.dkl[
                       iv.es.a.t.alle.akl.dkl[["Akl"]] == akl.lab[j] & 
                       iv.es.a.t.alle.akl.dkl[["Dkl"]] == dkl.lab[k], TRUE]
@@ -2103,7 +2103,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
                                      "iV.DhmR", "iV.DhmR.HB", "iV.EoR", "iB", 
                                      "iG", "V.DhmR.A", "V.DhmR.HB.A", "V.EoR.A", 
                                      "B.A", "G.A")]
-        #Traktecken Wald/Nichtwald hinzufügen
+        #Traktecken Wald/Nichtwald hinzuf\u00fcgen
         iv.bil.t <- merge(trakte[TRUE, c("TNr", "m", "m_HB")],iv.bil.t,
                           by=c("TNr"),all.x=T)
         #NA eliminieren
@@ -2116,45 +2116,45 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
         #iG, V.DhmR.A,V.DhmR.HB.A,V.EoR.A,B.A, G.A
 
 
-        iii <- 0  #Index für Array <iVB.bagr.akl.dkl>
-        iiii <- 0 #Index für Array <VB.A.bagr.akl.dkl>
+        iii <- 0  #Index f\u00fcr Array <iVB.bagr.akl.dkl>
+        iiii <- 0 #Index f\u00fcr Array <VB.A.bagr.akl.dkl>
 
         for (ii in 1:3)   #Aggregationsebenen: Gesamtperiodenwert,
-                          #jährlicher Gesamtwert, Ha-bezogener jährl. Wert
+                          #j\u00e4hrlicher Gesamtwert, Ha-bezogener j\u00e4hrl. Wert
         {
-          for (jj in 8:12) #Spaltenpositionen der 5 Zielgrößen iV.DhmR,
+          for (jj in 8:12) #Spaltenpositionen der 5 Zielgr\u00f6\u00dfen iV.DhmR,
                           #iV.DhmR.HB,
                           #iV.EoR, iB
                           #iG
           {
             iii <- iii + 1
-            #Bezugsgröße x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: Größen
+            #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB, 12: iG: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
             {if(jj==9) {x <- iv.bil.t[,5]} else {x <- iv.bil.t[,4]}}
-            #Zielgöße y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPL
+            #Zielg\u00f6\u00dfe y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPL
             if(ii < 2) {y <- iv.bil.t[,jj]} else
               {y <- ifelse(iv.bil.t[,6]>0,iv.bil.t[,jj]/iv.bil.t[,6],0)}
             R.list <- r.variance.fun(cbind(x,y),nT)
             iVB.bagr.akl.dkl[iii,1,i,j,k] <- R.list$R.xy*ifelse(ii<3,A,1)
             iVB.bagr.akl.dkl[iii,2,i,j,k]<- sqrt(R.list$V.R.xy)*ifelse(ii<3,A,1)
           }
-          #Auswertung für ausgeschiedenen Vorrat (kä/11.04.2014)
+          #Auswertung f\u00fcr ausgeschiedenen Vorrat (k\u00e4/11.04.2014)
 
-          for (jj in 13:17) #Spaltenpositionen der 5 Zielgrößen V.DhmR.A,
+          for (jj in 13:17) #Spaltenpositionen der 5 Zielgr\u00f6\u00dfen V.DhmR.A,
                             #V.DhmR.HB.A, V.EoR.A, B.A, G.A
           {
             iiii <- iiii + 1
-            #Bezugsgröße x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
-            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: Größen
+            #Bezugsgr\u00f6\u00dfe x: bei ii = 1 oder 2 (Gesamtwerte): Anzahl Ecken je
+            #Takt (m); bei ii = 3 (Hektar.Bezug) Fallunterscheidung: "Gr\u00f6\u00df"
             #jj = 8: iV.DmR, 10:iV.Eor, 11: iB, 12: iG: m. BAF m. LK;
             #bei jj=9: iV.DmR.HB: m. BAF o. LK
             if(ii < 3) {x <- iv.bil.t[,2]}  else
             #+++ Dim 13 -> 14
             {if(jj==14) {x <- iv.bil.t[,5]} else {x <- iv.bil.t[,4]}}
-            #Zielgöße y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPLkal
+            #Zielg\u00f6\u00dfe y: ii = 1: Total; ii = 2 oder 3: Zeitbezug mPLkal
             if(ii < 2) {y <- iv.bil.t[,jj]} else
               {y <- ifelse(iv.bil.t[,7]>0,iv.bil.t[,jj]/iv.bil.t[,7],0)}
             R.list <- r.variance.fun(cbind(x,y),nT)
@@ -2167,12 +2167,12 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
         #+++ Dim 13 -> 16
         iVB.bagr.akl.dkl[16,1,i,j,k] <- R.list$R.xy*A
         iVB.bagr.akl.dkl[16,2,i,j,k] <- sqrt(R.list$V.R.xy)*A
-        #Mittlere BAF ohne Lückenkorrektur je BAGR, Akl, Dkl
+        #Mittlere BAF ohne L\u00fcckenkorrektur je BAGR, Akl, Dkl
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,5]),nT)
         #+++ Dim 14 -> 17
         iVB.bagr.akl.dkl[17,1,i,j,k] <- R.list$R.xy*A
         iVB.bagr.akl.dkl[17,2,i,j,k] <- sqrt(R.list$V.R.xy)*A
-        #Mittlere Periodenlänge je BAGR, Akl, Dkl
+        #Mittlere Periodenl\u00e4nge je BAGR, Akl, Dkl
         #Mit Anzahl der TE auf HB gewogenes Mittel
         #Hinweis: es sind weitere Mittelbildungen denkbar; z.B. mit der
         #mBAF gewogenen PL
@@ -2181,7 +2181,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
         #+++ Dim 15 -> 18
         iVB.bagr.akl.dkl[18,1,i,j,k] <- R.list$R.xy
         iVB.bagr.akl.dkl[18,2,i,j,k] <- sqrt(R.list$V.R.xy)
-        #Mittlere kalendarische Periodenlänge je BAGR, Akl, Dkl
+        #Mittlere kalendarische Periodenl\u00e4nge je BAGR, Akl, Dkl
         #Mit Anzahl der TE auf HB gewogenes Mittel
         x <- ifelse(iv.bil.t[,7]>0,iv.bil.t[,3],0)
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,7]),nT)
@@ -2197,7 +2197,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
   akl.lab <- akl.lab.fun(A.klass,A.k)
 
   #DKL-Labels
-  dkl.lab <- dkl.lab.fun(D.klass,D.k) #kä/16.07.14
+  dkl.lab <- dkl.lab.fun(D.klass,D.k) #k\u00e4/16.07.14
 
   #Dokumentation der Grunddaten und Auswertungsdatum der HR
   a <- regexpr("/",baeume.3$Bemerk[baeume.3$STP==0][1],fixed=T)
@@ -2212,7 +2212,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
                         "V_DhmR/J", "V_DhmR_HB/J", "V_EoR/J", "oiB/J","G/J",
                         "V_DhmR/ha/J", "V_DhmR_HB/ha/J", "V_EoR/ha/J",
                         "oiB/ha/J", "G/ha/J", "mBAF_mLK","mBAFoLK","mPL","nT"),
-              Größen=c("Wert","Standardfehler"),
+              "Gr\u00f6\u00df"=c("Wert","Standardfehler"),
               BAGR = bagr.list,
               AKL = akl.lab[1:A.k], DKL = dkl.lab,
               iVB.bagr.akl.dkl = iVB.bagr.akl.dkl,
@@ -2224,7 +2224,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
 #' 
 #' Funktion berechnet das mittlere Verbissprozent der Verjuengung 
 #' (Groessenklasse bis 1,3 m) nach BWI-Baumartengruppen entsprechend der 
-#' Auswertungskonvention als sogenannter Mean of Ratios (gemaeß Absprache mit TI 
+#' Auswertungskonvention als sogenannter Mean of Ratios (gemaess Absprache mit TI 
 #' Petra Henning bzw. Friedrich Schmitz, BMEL vom 11.08.14).
 #' 
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
@@ -2233,14 +2233,14 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23,baeume.3,
 #'  Folgende Verbiss-Kategorien werden ausgewertet: \cr 0- ohne Verbiss; \cr 1- 
 #'  nur Verbiss der Terminalknospe (der letzten 12 Monate); \cr 2- mehrfacher 
 #'  Verbiss (auch bei intakter Terminalknospe) ueber einen laengeren Zeitraum 
-#'  (einschließlich der letzten 12 Monate); \cr 12- beide Verbiss-Kategorien 
+#'  (einschliesslich der letzten 12 Monate); \cr 12- beide Verbiss-Kategorien 
 #'  (1 oder 2).
 #' @param verj Tabelle, welche die Kennwerte der Verjuengung mit Schadmerkmal 
 #'  Verbiss <Biss> enthaelt.
 #' @param ecken Tabelle mit den Stichproben (Ecken)-Merkmalen fuer die 
-#'  Startifikation gemaeß der Auswahlkriterien in \code{auswahl} (gemaeß der 
+#'  Startifikation gemaess der Auswahlkriterien in \code{auswahl} (gemaess der 
 #'  Konvention).
-#' @param trakte Traktinformationen für die Hochrechnung.
+#' @param trakte Traktinformationen fuer die Hochrechnung.
 #' @param auswahl Liste, welche die Eckenmerkmale mit den Werten enthaelt, 
 #'  anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: list(Wa=c(3,5),
 #'  Begehbar=1).
@@ -2257,7 +2257,7 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
@@ -2269,17 +2269,17 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   
   #Kleinschreibung aller Atttributnahmen in <baeume>
   names(verj) <- tolower(names(verj))
-  #"Neutralisierung" der benötigten Attributnamen
+  #"Neutralisierung" der ben\u00f6tigten Attributnamen
   inv <- ifelse(inv>1,2,inv)
   names(verj) <- sub(inv,names(verj),replacement="")
-  #Attribute und Untermenge des Stratums aus <verj> auswählen
+  #Attribute und Untermenge des Stratums aus <verj> ausw\u00e4hlen
   verj.s.bis130 <- merge(verj[verj[["h"]] < 1.3, 
                          c("tnr", "enr", "ba", "nha", "biss")],
                     stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
                     
   bagr.list <- c("FI","TA","DGL","KI","LAE","BU","EI","ALH","ALN")
   n.bagr <- 9
-  #Baumartengruppen hinzufügen
+  #Baumartengruppen hinzuf\u00fcgen
   verj.s.bis130 <- merge(verj.s.bis130, bacode[TRUE, c("ICode", "BaGr")],
                               by.x="ba",by.y="ICode",all.x=T)
                               
@@ -2346,7 +2346,7 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   }
   
   #-------------------------------------------
-  #Über alle Baumarten
+  #\u00dcber alle Baumarten
   
   #Verbiss auf Traktecke aggregieren, differenziert nach <Biss> 1 oder 2
   verbiss.a <- stats::aggregate(verj.s.bis130$nha,
@@ -2372,7 +2372,7 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   verbiss$vb12.prz <-  (verbiss$n.vb1+verbiss$n.vb2)/verbiss$n.ges
   verbiss[is.na(verbiss)] <- 0
 
-  #Vorkommen Verjüngung je Trakt
+  #Vorkommen Verj\u00fcngung je Trakt
   verbiss.t.a <- stats::aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr),sum)
   names(verbiss.t.a) <- c("TNr","t")
   #Verbiss-Kategorie 0
@@ -2429,9 +2429,9 @@ verbiss.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
 #' @param verj Tabelle, welche die Kennwerte der Verjuengung mit Schadmerkmal 
 #'  Verbiss <Biss> enthaelt.
 #' @param ecken Tabelle mit den Stichproben (Ecken)-Merkmalen fuer die 
-#'  Startifikation gemaeß der Auswahlkriterien in \code{auswahl} (gemaess der 
+#'  Startifikation gemaess der Auswahlkriterien in \code{auswahl} (gemaess der 
 #'  Konvention).
-#' @param trakte Traktinformationen für die Hochrechnung.
+#' @param trakte Traktinformationen fuer die Hochrechnung.
 #' @param ba.grupp Liste mit Baumarten-Zusammenfassungen zu Baumgruppen mit 
 #'  Bezeichner der Baumarten-Gruppen ("lab") z.B. list(bagr.lab = c("FiTa", 
 #'  "DglKiLae", "Bu", "Ei", "BLb", "WLb"), ba.grupp =list(c(10:19,30:39,90:99), 
@@ -2451,7 +2451,7 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
@@ -2463,16 +2463,16 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
 
   #Kleinschreibung aller Atttributnahmen in <baeume>
   names(verj) <- tolower(names(verj))
-  #"Neutralisierung" der benötigten Attributnamen
+  #"Neutralisierung" der ben\u00f6tigten Attributnamen
   inv <- ifelse(inv>1,2,inv)
   names(verj) <- sub(inv,names(verj),replacement="")
-  #Attribute und Untermenge des Stratums aus <verj> auswählen
+  #Attribute und Untermenge des Stratums aus <verj> ausw\u00e4hlen
   verj.s.bis130 <- merge(verj[verj[["h"]] < 1.3, 
                          c("tnr", "enr", "ba", "nha", "biss")],
                     stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
 
-  #Klassifizierung durchführen
-  #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
+  #Klassifizierung durchf\u00fchren
+  #Baumartengruppen-Zuordnungstabelle f\u00fcr BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   bagr.tab <- ba.klass.lab.tab.fun(ba.grupp)
   #Attribut <bagr> in <BaGr>
@@ -2547,7 +2547,7 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   }
 
   #-------------------------------------------
-  #Über alle Baumarten
+  #\u00dcber alle Baumarten
 
   #Verbiss auf Traktecke aggregieren, differenziert nach <Biss> 1 oder 2
   verbiss.a <- stats::aggregate(verj.s.bis130$nha,
@@ -2573,7 +2573,7 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   verbiss$vb12.prz <-  (verbiss$n.vb1+verbiss$n.vb2)/verbiss$n.ges
   verbiss[is.na(verbiss)] <- 0
 
-  #Vorkommen Verjüngung je Trakt
+  #Vorkommen Verj\u00fcngung je Trakt
   verbiss.t.a <- stats::aggregate(ifelse(verbiss$n.ges>0,1,0),by=list(verbiss$TNr),sum)
   names(verbiss.t.a) <- c("TNr","t")
   #Verbiss-Kategorie 0
@@ -2623,9 +2623,9 @@ verbiss.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
 #' @param verj Tabelle, welche die Kennwerte der Verjuengung mit Schadmerkmal 
 #'  Verbiss <Biss> enthaelt.
 #' @param ecken Tabelle mit den Stichproben (Ecken)-Merkmalen fuer die 
-#'  Startifikation gemaeß der Auswahlkriterien in \code{auswahl} (gemaeß der 
+#'  Startifikation gemaess der Auswahlkriterien in \code{auswahl} (gemaess der 
 #'  Konvention).
-#' @param trakte Traktinformationen für die Hochrechnung.
+#' @param trakte Traktinformationen fuer die Hochrechnung.
 #' @param auswahl Liste, welche die Eckenmerkmale mit den Werten enthaelt, 
 #'  anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: list(Wa=c(3,5),
 #'  Begehbar=1).
@@ -2643,7 +2643,7 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
@@ -2655,16 +2655,16 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   
   #Kleinschreibung aller Atttributnahmen in <verj>
   names(verj) <- tolower(names(verj))
-  #"Neutralisierung" der benötigten Attributnamen
+  #"Neutralisierung" der ben\u00f6tigten Attributnamen
   inv <- ifelse(inv>1,2,inv)
   names(verj) <- sub(inv,names(verj),replacement="")
-  #Attribute und Untermenge des Stratums aus <verj> auswählen
+  #Attribute und Untermenge des Stratums aus <verj> ausw\u00e4hlen
   verj.s <- merge(verj[TRUE, c("tnr", "enr", "ba", "h", "oib", "nha")],
                     stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
                     
   bagr.list <- c("FI","TA","DGL","KI","LAE","BU","EI","ALH","ALN")
   n.bagr <- 9
-  #Baumartengruppen hinzufügen
+  #Baumartengruppen hinzuf\u00fcgen
   verj.s <- merge(verj.s, bacode[TRUE, c("ICode", "BaGr")],
                               by.x="ba",by.y="ICode",all.x=T)
   verj.s[is.na(verj.s)] <- 0
@@ -2672,7 +2672,7 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   #-----------------------------------------------------------------------------
   #Hochrechnen
   #-----------------------------
-  #Verjüngung auf Trakt aggregieren
+  #Verj\u00fcngung auf Trakt aggregieren
   #Nach Baumartengruppen  
   verj.t <-
     stats::aggregate(verj.s$nha,by=list(verj.s$tnr,verj.s$bagr),sum)
@@ -2698,7 +2698,7 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
     vj.bagr <- r.variance.fun(xy[,2:3],length(trakte[,1]))
     n.verj.bagr[1,1,i] <- vj.bagr$R.xy * A        
     n.verj.bagr[1,2,i] <- sqrt(vj.bagr$V.R.xy)* A 
-    #Baumartenanteile in Prozent (Stückzahl BAGR/Gesamtstückzahl)
+    #Baumartenanteile in Prozent (St\u00fcckzahl BAGR/Gesamtst\u00fcckzahl)
     xy <- merge(verj.t.a,xy[TRUE, c("tnr", "n")],by="tnr",all.y=T)
     xy[is.na(xy)] <- 0
     vj.proz.bagr <- r.variance.fun(xy[,2:3],length(trakte[,1])) 
@@ -2707,14 +2707,14 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
   }
   
   #-------------------------------------------
-  #Über alle Baumarten
+  #\u00dcber alle Baumarten
   
   verj.t.a <- merge(trakte[TRUE, c("tnr", "m")],verj.t.a,by="tnr",all.x=T) 
   verj.t.a[is.na(verj.t.a)] <- 0 
   r.list <- r.variance.fun(cbind(verj.t.a$m,verj.t.a$n.ges),length(trakte[,1]))
   n.verj.bagr[1,1,(n.bagr+1)] <- r.list$R.xy*A
   n.verj.bagr[1,2,(n.bagr+1)] <- sqrt(r.list$V.R.xy)*A
-  #Baumartenanteile in Prozent (Stückzahl BAGR/Gesamtstückzahl)
+  #Baumartenanteile in Prozent (St\u00fcckzahl BAGR/Gesamtst\u00fcckzahl)
   n.verj.bagr[2,1,(n.bagr+1)] <- 100 #Prozent        
   n.verj.bagr[2,2,(n.bagr+1)] <- 0   #Prozent 
   
@@ -2738,9 +2738,9 @@ verjg.bagr.fun <- function(verj,ecken,trakte,auswahl,inv,A){
 #' @param verj Tabelle, welche die Kennwerte der Verjuengung mit Schadmerkmal 
 #'  Verbiss <Biss> enthaelt.
 #' @param ecken Tabelle mit den Stichproben (Ecken)-Merkmalen fuer die 
-#'  Startifikation gemaeß der Auswahlkriterien in \code{auswahl} (gemaeß der 
+#'  Startifikation gemaess der Auswahlkriterien in \code{auswahl} (gemaess der 
 #'  Konvention).
-#' @param trakte Traktinformationen für die Hochrechnung.
+#' @param trakte Traktinformationen fuer die Hochrechnung.
 #' @param ba.grupp Liste mit Baumarten-Zusammenfassungen zu Baumgruppen mit 
 #'  Bezeichner der Baumarten-Gruppen ("lab") z.B. list(bagr.lab = c("FiTa", 
 #'  "DglKiLae", "Bu", "Ei", "BLb", "WLb"), ba.grupp =list(c(10:19,30:39,90:99), 
@@ -2762,7 +2762,7 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
@@ -2774,15 +2774,15 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   
   #Kleinschreibung aller Atttributnahmen in <baeume>
   names(verj) <- tolower(names(verj))
-  #"Neutralisierung" der benötigten Attributnamen
+  #"Neutralisierung" der ben\u00f6tigten Attributnamen
   inv <- ifelse(inv>1,2,inv)
   names(verj) <- sub(inv,names(verj),replacement="")
-  #Attribute und Untermenge des Stratums aus <verj> auswählen
+  #Attribute und Untermenge des Stratums aus <verj> ausw\u00e4hlen
   verj.s <- merge(verj[TRUE, c("tnr", "enr", "ba", "h", "oib", "nha")],
                     stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
                     
-  #Klassifizierung durchführen
-  #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
+  #Klassifizierung durchf\u00fchren
+  #Baumartengruppen-Zuordnungstabelle f\u00fcr BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   bagr.tab <- ba.klass.lab.tab.fun(ba.grupp)
   n.bagr <- length(ba.grupp[[1]])
@@ -2795,7 +2795,7 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   #-----------------------------------------------------------------------------
   #Hochrechnen
   #-----------------------------
-  #Verjüngung auf Trakt aggregieren
+  #Verj\u00fcngung auf Trakt aggregieren
   #Nach Baumartengruppen  
   verj.t <-
     stats::aggregate(verj.s$nha,by=list(verj.s$tnr,verj.s$bagr),sum)
@@ -2821,7 +2821,7 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
     vj.bagr <- r.variance.fun(xy[,2:3],length(trakte[,1]))
     n.verj.bagr[1,1,i] <- vj.bagr$R.xy * A        
     n.verj.bagr[1,2,i] <- sqrt(vj.bagr$V.R.xy)* A 
-    #Baumartenanteile in Prozent (Stückzahl BAGR/Gesamtstückzahl)
+    #Baumartenanteile in Prozent (St\u00fcckzahl BAGR/Gesamtst\u00fcckzahl)
     xy <- merge(verj.t.a,xy[TRUE, c("tnr", "n")],by="tnr",all.y=T)
     xy[is.na(xy)] <- 0
     vj.proz.bagr <- r.variance.fun(xy[,2:3],length(trakte[,1])) 
@@ -2830,14 +2830,14 @@ verjg.bagrupp.fun <- function(verj,ecken,trakte,ba.grupp,auswahl,inv,A){
   }
   
   #-------------------------------------------
-  #Über alle Baumarten
+  #\u00dcber alle Baumarten
   
   verj.t.a <- merge(trakte[TRUE, c("tnr", "m")],verj.t.a,by="tnr",all.x=T) 
   verj.t.a[is.na(verj.t.a)] <- 0 
   r.list <- r.variance.fun(cbind(verj.t.a$m,verj.t.a$n.ges),length(trakte[,1]))
   n.verj.bagr[1,1,(n.bagr+1)] <- r.list$R.xy*A
   n.verj.bagr[1,2,(n.bagr+1)] <- sqrt(r.list$V.R.xy)*A
-  #Baumartenanteile in Prozent (Stückzahl BAGR/Gesamtstückzahl)
+  #Baumartenanteile in Prozent (St\u00fcckzahl BAGR/Gesamtst\u00fcckzahl)
   n.verj.bagr[2,1,(n.bagr+1)] <- 100 #Prozent        
   n.verj.bagr[2,2,(n.bagr+1)] <- 0   #Prozent 
   
@@ -2880,7 +2880,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
@@ -2893,29 +2893,29 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   #Kleinschreibung aller Attributnahmen in <verj.kl4>
   names(verj.kl4) <- tolower(names(verj.kl4))
   
-  #Baumartenflächen nach Baumart herleiten:
+  #Baumartenfl\u00e4chen nach Baumart herleiten:
   #BAF = Deckungsgrad (Zehntel) * Anteil (Zehntel)/100
   verj.kl4$baf <- verj.kl4$dg*verj.kl4$anteil/100
   
-  #Attribute und Untermenge des Stratums aus <verj.kl4> auswählen
+  #Attribute und Untermenge des Stratums aus <verj.kl4> ausw\u00e4hlen
   verj.kl4.s <- 
           merge(verj.kl4, stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
    
-  #Baumartengruppe hinzufügen
+  #Baumartengruppe hinzuf\u00fcgen
   verj.kl4.s <- merge(verj.kl4.s,bacode[TRUE, c("ICode", "BaGr")],by.x="ba",
                       by.y="ICode",all.x=T)
   names(verj.kl4.s)[11] <- "bagr"
-  #Nach Trakt, BAGR und Verjüngungsart aggregieren
+  #Nach Trakt, BAGR und Verj\u00fcngungsart aggregieren
   vj.kl4.t <- stats::aggregate(verj.kl4.s$baf,
                     by=list(verj.kl4.s$tnr,verj.kl4.s$bagr,verj.kl4.s$vjgart),
                     sum)
   names(vj.kl4.t) <- c("tnr","bagr","vart","baf")
   
-  #Verjüngungs-Baumartenfläche nach BA-Gruppe und Verjüngungsart
+  #Verj\u00fcngungs-Baumartenfl\u00e4che nach BA-Gruppe und Verj\u00fcngungsart
   
   bagr.list <- c("FI","TA","DGL","KI","LAE","BU","EI","ALH","ALN")
   vart.list <-
-    c("Naturverjüngung","Pflanzung","Saat","Stockausschlag","nicht zuzuordnen")
+    c("Naturverj\u00fcngung","Pflanzung","Saat","Stockausschlag","nicht zuzuordnen")
   n.bagr <- length(bagr.list)
   n.vart <- length(vart.list)
   
@@ -2926,7 +2926,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   {
     #BAGR
     vj.kl4.t.bagr <- vj.kl4.t[vj.kl4.t[["bagr"]]==bagr.list[i], TRUE]
-    #Nach Verjüngungsarten
+    #Nach Verj\u00fcngungsarten
     for (j in 1:n.vart)
     {
       vj.kl4.t.vart <- vj.kl4.t.bagr[vj.kl4.t.bagr[["vart"]] == vart.list[j], 
@@ -2937,7 +2937,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
       vj.kl4.baf.bagr.vart[1,j,i] <- r.list$R.xy * A
       vj.kl4.baf.bagr.vart[2,j,i] <- sqrt(r.list$V.R.xy) * A
       
-      #Über alle Baumartengruppen einer Verjüngungsart
+      #\u00dcber alle Baumartengruppen einer Verj\u00fcngungsart
       vj.kl4.t.a <- stats::aggregate(vj.kl4.t$baf[vj.kl4.t$vart==vart.list[j]],
                       by=list(vj.kl4.t$tnr[vj.kl4.t$vart==vart.list[j]]),sum)
       names(vj.kl4.t.a) <- c("tnr","baf")
@@ -2947,7 +2947,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
       vj.kl4.baf.bagr.vart[1,j,(n.bagr+1)] <- r.list$R.xy * A
       vj.kl4.baf.bagr.vart[2,j,(n.bagr+1)] <- sqrt(r.list$V.R.xy) * A
     }
-    #Alle Verjüngungsarten zusammen nach BA-Gruppe
+    #Alle Verj\u00fcngungsarten zusammen nach BA-Gruppe
     vj.kl4.t.a <- stats::aggregate(vj.kl4.t.bagr$baf,by=list(vj.kl4.t.bagr$tnr),sum)
     names(vj.kl4.t.a) <- c("tnr","baf")
     xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.a,by="tnr",all.x=T)
@@ -2958,7 +2958,7 @@ verjg.kl4.bagr.fun <- function(verj.kl4,ecken,trakte,auswahl,A){
   }
   
   
-  #Alle Verjüngungsarten und alle Baumartengruppen
+  #Alle Verj\u00fcngungsarten und alle Baumartengruppen
   vj.kl4.t.a <- stats::aggregate(vj.kl4.t$baf,by=list(vj.kl4.t$tnr),sum)
   names(vj.kl4.t.a) <- c("tnr","baf")
   xy <- merge(trakte[TRUE, c("tnr", "m")],vj.kl4.t.a,by="tnr",all.x=T)
@@ -3011,7 +3011,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   y <- tryCatch(stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum),
                 error = function(e) return(data.frame(NA, 0))
                 )
@@ -3026,15 +3026,15 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   #Kleinschreibung aller Attributnahmen in <verj.kl4>
   names(verj.kl4) <- tolower(names(verj.kl4))
   
-  #Baumartenflächen nach Baumart herleiten:
+  #Baumartenfl\u00e4chen nach Baumart herleiten:
   #BAF = Deckungsgrad (Zehntel) * Anteil (Zehntel)/100
   verj.kl4$baf <- verj.kl4$dg*verj.kl4$anteil/100
   
-  #Attribute und Untermenge des Stratums aus <verj.kl4> auswählen
+  #Attribute und Untermenge des Stratums aus <verj.kl4> ausw\u00e4hlen
   verj.kl4.s <- 
           merge(verj.kl4, stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"))
    
-  #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
+  #Baumartengruppen-Zuordnungstabelle f\u00fcr BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   bagr.tab <- ba.klass.lab.tab.fun(ba.grupp)
   #Attribut <bagr> in <BaGr>
@@ -3047,12 +3047,12 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   bagr.list <- ba.grupp[[1]]
   names(verj.kl4.s)[11] <- "bagr"
     
-  #Verjüngungsart
+  #Verj\u00fcngungsart
   vart.list <-
-    c("Naturverjüngung","Pflanzung","Saat","Stockausschlag","nicht zuzuordnen")
+    c("Naturverj\u00fcngung","Pflanzung","Saat","Stockausschlag","nicht zuzuordnen")
   n.vart <- length(vart.list)
   
-  #Nach Trakt, BAGR und Verjüngungsart aggregieren
+  #Nach Trakt, BAGR und Verj\u00fcngungsart aggregieren
   vj.kl4.t <- tryCatch(stats::aggregate(verj.kl4.s$baf,
                                  by=list(verj.kl4.s$tnr, verj.kl4.s$bagr,
                                          verj.kl4.s$vjgart),
@@ -3068,7 +3068,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
   {
     #BAGR
     vj.kl4.t.bagr <- vj.kl4.t[vj.kl4.t[["bagr"]] == bagr.list[i], TRUE]
-    #Nach Verjüngungsarten
+    #Nach Verj\u00fcngungsarten
     for (j in 1:n.vart)
     {
       vj.kl4.t.vart <- vj.kl4.t.bagr[vj.kl4.t.bagr[["vart"]] == vart.list[j],
@@ -3079,7 +3079,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
       vj.kl4.baf.bagr.vart[1,j,i] <- r.list$R.xy * A
       vj.kl4.baf.bagr.vart[2,j,i] <- sqrt(r.list$V.R.xy) * A
       
-      #Über alle Baumartengruppen einer Verjüngungsart
+      #\u00dcber alle Baumartengruppen einer Verj\u00fcngungsart
       vj.kl4.t.a <- 
           tryCatch(stats::aggregate(stats::na.fail(vj.kl4.t$baf[vj.kl4.t$vart ==
                                      vart.list[j]]) ,
@@ -3095,7 +3095,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
       vj.kl4.baf.bagr.vart[1,j,(n.bagr+1)] <- r.list$R.xy * A
       vj.kl4.baf.bagr.vart[2,j,(n.bagr+1)] <- sqrt(r.list$V.R.xy) * A
     }
-    #Alle Verjüngungsarten zusammen nach BA-Gruppe
+    #Alle Verj\u00fcngungsarten zusammen nach BA-Gruppe
     vj.kl4.t.a <-
         tryCatch(stats::aggregate(vj.kl4.t.bagr$baf,by=list(vj.kl4.t.bagr$tnr),sum),
                    error = function(e) return(data.frame(NA, 0))
@@ -3108,7 +3108,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
     vj.kl4.baf.bagr.vart[2,(n.vart+1),i] <- sqrt(r.list$V.R.xy) * A
   }
   
-  #Alle Verjüngungsarten und alle Baumartengruppen
+  #Alle Verj\u00fcngungsarten und alle Baumartengruppen
   vj.kl4.t.a <-
       tryCatch(stats::aggregate(stats::na.fail(vj.kl4.t$baf),by=list(stats::na.fail(vj.kl4.t$tnr)),sum),
                 error = function(e) return(data.frame(NA, 0))
@@ -3132,13 +3132,13 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
 #-------------------------------------------------------------------------------
 #' Berechnet Flaechen und Flaechenanteile der Naturnaehestufen
 #' 
-#' Funktion berechnet für das in \code{auswahl} definierte Stratum die Flaechen 
+#' Funktion berechnet fuer das in \code{auswahl} definierte Stratum die Flaechen 
 #' und Flaechenanteile (\%) der 5 Naturnaehestufen (ntns) fuer BWI 2 oder BWI 3
 #' 
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
 #' @section Erstellungsdatum: 19.08.2014
 #' @param ntns.te alle Traktecken die Naturnaehestufen in allen Varianten 
-#'  (Schichten, Gesamtwert für Hauptbestockung) für BWI 2 und 3 sowie fuerr BWI 
+#'  (Schichten, Gesamtwert fuer Hauptbestockung) fuer BWI 2 und 3 sowie fuerr BWI 
 #'  2 in den 2 Vaianten natWG BWI 2 und natWG BWI 3.
 #' @param ecken Stichprobenmerkmale der jeweiligen BWI (2 oder 3).
 #' @param trakte Traktmermale (m, m_HB, m_bHB, m_Wa).
@@ -3147,7 +3147,7 @@ verjg.kl4.bagrupp.fun <- function(verj.kl4,ecken,trakte,ba.grupp,auswahl,A){
 #'  anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: list(Wa=c(3,5),
 #'  Begehbar=1).
 #' @param bwi Angabe welche BWI (2 oder 3).
-#' @param natwg Differenzierung bei Auswertung für BWI 2: 2: nat. WG der 3
+#' @param natwg Differenzierung bei Auswertung fuer BWI 2: 2: nat. WG der 3
 #'  damaligen BWI 2 oder 3: bei BWI 3 aktualisierte nat. WG, die rueckwirkend 
 #'  auf BWI 2 angewandt wird.
 #' @return Liste mit folgenden Komponenten: \strong{Datum}, \strong{HBF} 
@@ -3186,9 +3186,9 @@ ntns.stratum.fun <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg){
   names(xy.t) <- c("TNr","n")
 
   #Array definieren
-  #1. Dim (2): 1: Fläche ha HB; 2: Prozent-Anteil;
+  #1. Dim (2): 1: Fl\u00e4che ha HB; 2: Prozent-Anteil;
   #2. Dim (2): 1: Wert, 2: Standardfehler
-  #3. Dim (6): 1-5 Naturnähestufen + "keine Angabe"
+  #3. Dim (6): 1-5 Naturn\u00e4hestufen + "keine Angabe"
   
   ntns.f.ant <- array(dim=c(2,2,6))
   
@@ -3203,11 +3203,11 @@ ntns.stratum.fun <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg){
     xy.i.t <- merge(trakte[TRUE, c("TNr", "m")],
                       xy.ntns.i.t,by="TNr",all.x=T)
     xy.i.t[is.na(xy.i.t)] <- 0
-    #Fläche
+    #Fl\u00e4che
     r.list <- r.variance.fun(xy.i.t[,2:3], length(trakte[,1]))
     ntns.f.ant[1,1,i] <- r.list$R.xy*A
     ntns.f.ant[1,2,i] <- sqrt(r.list$V.R.xy)*A
-    #Flächenanteil
+    #Fl\u00e4chenanteil
     xy.i.t <- merge(xy.t[TRUE, c("TNr", "n")],xy.ntns.i.t,by=c("TNr"),all.x=T)
     xy.i.t[is.na(xy.i.t)] <- 0
     r.list <- r.variance.fun(xy.i.t[,2:3],length(trakte[,1]))
@@ -3231,13 +3231,13 @@ ntns.stratum.fun <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg){
 #'
 #' Funktion berechnet fuer das in \code{auswahl} definierte Stratum die Flaechen 
 #' und Flaechenanteile (\%) der 5 Naturnaehestufen (ntns) fuer die Schicht 
-#' "kl 4m" oder "gr 4m" für BWI 2 oder BWI 3.
+#' "kl 4m" oder "gr 4m" fuer BWI 2 oder BWI 3.
 #' 
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
 #' @section Erstellungsdatum: 27.10.2014
 #' @section Version: 1.0 basierend auf \code{\link{ntns.stratum.fun}}
 #' @param ntns.te alle Traktecken die Naturnaehestufen in allen Varianten 
-#'  (Schichten, Gesamtwert für Hauptbestockung) für BWI 2 und 3 sowie fuer BWI 2 
+#'  (Schichten, Gesamtwert fuer Hauptbestockung) fuer BWI 2 und 3 sowie fuer BWI 2 
 #'  in den 2 Vaianten natWG BWI 2 und natWG BWI 3.
 #' @param ecken Stichprobenmerkmale der jeweiligen BWI (2 oder 3).
 #' @param trakte Traktmermale (m, m_HB, m_bHB, m_Wa).
@@ -3246,7 +3246,7 @@ ntns.stratum.fun <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg){
 #'  anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: list(Wa=c(3,5),
 #'  Begehbar=1).
 #' @param bwi Angabe welche BWI (2 oder 3).
-#' @param natwg Differenzierung bei Auswertung für BWI 2: 2: nat. WG der 3
+#' @param natwg Differenzierung bei Auswertung fuer BWI 2: 2: nat. WG der 3
 #'  damaligen BWI 2 oder 3: bei BWI 3 aktualisierte nat. WG, die rueckwirkend 
 #'  auf BWI 2 angewandt wird.
 #' @param schicht Angabe zur Schicht(1: kleiner 4m, 2: groesser 4 m)
@@ -3312,9 +3312,9 @@ ntns.stratum.fun.2 <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg,schicht)
   names(xy.t) <- c("TNr","n")
 
   #Array definieren
-  #1. Dim (2): 1: Fläche ha HB; 2: Prozent-Anteil;
+  #1. Dim (2): 1: Fl\u00e4che ha HB; 2: Prozent-Anteil;
   #2. Dim (2): 1: Wert, 2: Standardfehler
-  #3. Dim (6): 1-5 Naturnähestufen + "keine Angabe"
+  #3. Dim (6): 1-5 Naturn\u00e4hestufen + "keine Angabe"
   
   ntns.f.ant <- array(dim=c(2,2,6))
   
@@ -3328,11 +3328,11 @@ ntns.stratum.fun.2 <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg,schicht)
     xy.i.t <- merge(trakte[TRUE, c("TNr", "m")],
                       xy.ntns.i.t,by="TNr",all.x=T)
     xy.i.t[is.na(xy.i.t)] <- 0
-    #Fläche
+    #Fl\u00e4che
     r.list <- r.variance.fun(xy.i.t[,2:3], length(trakte[,1]))
     ntns.f.ant[1,1,i] <- r.list$R.xy*A
     ntns.f.ant[1,2,i] <- sqrt(r.list$V.R.xy)*A
-    #Flächenanteil
+    #Fl\u00e4chenanteil
     xy.i.t <- merge(xy.t[TRUE, c("TNr", "n")],xy.ntns.i.t,by=c("TNr"),all.x=T)
     xy.i.t[is.na(xy.i.t)] <- 0
     r.list <- r.variance.fun(xy.i.t[,2:3],length(trakte[,1]))
@@ -3354,7 +3354,7 @@ ntns.stratum.fun.2 <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg,schicht)
 #Ende <ntns.stratum.fun.2>
 
 #-------------------------------------------------------------------------------
-#' Funktion zur Auswertung der Biotop-Bäume
+#' Funktion zur Auswertung der Biotop-Baeume
 #' 
 #' Funktion wertet Biotop-Baeume aus, die bei der 3. BWI als Merkmal der 
 #' Probebaeume in der WZP 4 aufgenommen worden sind. Als Biotop-Baeume werden 
@@ -3388,28 +3388,28 @@ ntns.stratum.fun.2 <- function(ntns.te,ecken,trakte,A,auswahl,bwi,natwg,schicht)
 #'  gesamtes Nadelbaumvolumen, Nadelbaumvolumen je ha, gesamte oberirdische 
 #'  Biomasse, oberirdische Biomasse je ha).
 biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
-  #(1) Befundeinheit festlegen (Traktecken auswählen)
+  #(1) Befundeinheit festlegen (Traktecken ausw\u00e4hlen)
   stratum <- stratum.fun(auswahl,ecken)
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   names(baeume) <- tolower(names(baeume))
   names(wzp4.merkmale) <- tolower(names(wzp4.merkmale))
-  #"Neutralisierung" der benötigten Attributnamen in <baeume>: <2> entfernen
+  #"Neutralisierung" der ben\u00f6tigten Attributnamen in <baeume>: <2> entfernen
   names(baeume) <- sub(2,names(baeume),replacement="")
 
-  #(2) Biotop-Bäume definieren
+  #(2) Biotop-B\u00e4ume definieren
   wzp4.merkmale <- merge(baeume[baeume$stp==0,
                         c("tnr", "enr", "bnr", "ba", "alt", "bhd", "h", "volv", "oib", "nha", "stfl")], 
                         wzp4.merkmale, by=c("tnr","enr","bnr"),all.x=T)
   wzp4.merkmale[is.na(wzp4.merkmale)] <- 0
-  #Biotop-Bäume
+  #Biotop-B\u00e4ume
   #Merkmal: FaulKon, Hoehle, Bizarr, Uralt, Horst, MBiotop
   #Neues Merkmal <BiotopB> festlegen
   wzp4.merkmale$biotopb <-
       wzp4.merkmale$faulkon + wzp4.merkmale$hoehle + wzp4.merkmale$bizarr + wzp4.merkmale$uralt + wzp4.merkmale$horst + wzp4.merkmale$mbiotop
 
-  #Probebäume im Stratum auswählen
+  #Probeb\u00e4ume im Stratum ausw\u00e4hlen
   wzp4.merkmale.s <- merge(wzp4.merkmale[TRUE, c("tnr", "enr", "bnr", "pk", 
                                                  "biotopb", "ba", "alt", "bhd",
                                                  "volv", "oib", "nha", "stfl")],
@@ -3418,7 +3418,7 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
   wzp4.merkmale.s[is.na(wzp4.merkmale.s)] <- 0
   
   #---------------------
-  #(3) Flächen
+  #(3) Fl\u00e4chen
   #n Trakte im Inventurgebiet ist konstant
   nT <- length(trakte[,1])
   #TE im Stratum
@@ -3426,7 +3426,7 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
   #------
   #HBF nach Trakt im Stratum
   xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
-  #Blößen (BL): BA=999, Lücken (iBL): BA=998
+  #Bl\u00f6\u00dfen (BL): BA=999, L\u00fccken (iBL): BA=998
   xy <- cbind(xy,stats::aggregate(ifelse(
                   wzp4.merkmale.s$ba==999,wzp4.merkmale.s$stfl/10000,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x)
@@ -3443,15 +3443,15 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")], nT)
   T.hbf <- r.list$R.xy*A
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
-  #Blößen [ha]
+  #Bl\u00f6\u00dfen [ha]
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")], nT)
   T.bl <- r.list$R.xy*A
   se.T.bl <- sqrt(r.list$V.R.xy)*A
-  #Ideelle Blößen ("Lücken") [ha]
+  #Ideelle Bl\u00f6\u00dfen ("L\u00fccken") [ha]
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")], nT)
   T.ibl <- r.list$R.xy*A
   se.T.ibl <- sqrt(r.list$V.R.xy)*A
-  #Lückenkorrekturfaktor
+  #L\u00fcckenkorrekturfaktor
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")], nT)
   lk <- r.list$R.xy
   se.lk <- sqrt(r.list$V.R.xy)
@@ -3505,7 +3505,7 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
   biotop.t[is.na(biotop.t)] <- 0
 
   n <- length(trakte[,1])
-  #Stückzahl
+  #St\u00fcckzahl
   R.xy <- r.variance.fun(cbind(biotop.t$m,biotop.t$N.BB),n)
   (T.N.BB <- R.xy$R.xy*A)
   (se.T.N.BB <- R.xy$V.R.xy^0.5*A)
@@ -3525,12 +3525,12 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
   (V.BB.ha <- R.xy$R.xy)
   (se.V.BB.ha <- R.xy$V.R.xy^0.5)
 
-  #Stückvolumen
+  #St\u00fcckvolumen
   R.xy <- r.variance.fun(cbind(biotop.t$N.BB,biotop.t$V.BB),n)
   (V.BB.Stck <- R.xy$R.xy)
   (se.V.BB.Stck <- R.xy$V.R.xy^0.5)
 
-  #Vorrat der Laubbäume
+  #Vorrat der Laubb\u00e4ume
   R.xy <- r.variance.fun(cbind(biotop.t$m,biotop.t$V.BB.LB),n)
   (T.V.BB.LB <- R.xy$R.xy*A)
   (se.T.V.BB.LB <- R.xy$V.R.xy^0.5*A)
@@ -3540,7 +3540,7 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
   (V.BB.LB.ha <- R.xy$R.xy)
   (se.V.BB.LB.ha <- R.xy$V.R.xy^0.5)
 
-  #Vorrat der Nadelbäume
+  #Vorrat der Nadelb\u00e4ume
   R.xy <- r.variance.fun(cbind(biotop.t$m,biotop.t$V.BB.NB),n)
   (T.V.BB.NB <- R.xy$R.xy*A)
   (se.T.V.BB.NB <- R.xy$V.R.xy^0.5*A)
@@ -3634,31 +3634,31 @@ biotop.baeume.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,auswahl){
 #'  am Gesamtvorrat).
 stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
             auswahl,merkmale,ba.grupp){
-  #(1) Befundeinheit festlegen (Traktecken auswählen)
+  #(1) Befundeinheit festlegen (Traktecken ausw\u00e4hlen)
   stratum <- stratum.fun(auswahl,ecken)
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   names(baeume) <- tolower(names(baeume))
   names(wzp4.merkmale) <- tolower(names(wzp4.merkmale))
-  #"Neutralisierung" der benötigten Attributnamen in <baeume>: <2> entfernen
+  #"Neutralisierung" der ben\u00f6tigten Attributnamen in <baeume>: <2> entfernen
   names(baeume) <- sub(2,names(baeume),replacement="")
 
-  #Aus Kompatibiltäts-Gründen werden die nur in der BWI 3 vorkommenden
+  #Aus Kompatibilt\u00e4ts-Gr\u00fcnden werden die nur in der BWI 3 vorkommenden
   #Attribute <Ast> und <Ast_Hoe> im DS der BWI 3 entfernt
   ast.pos <- grep("Ast",names(wzp4.merkmale))
   if (length(ast.pos)>0)
   {
     wzp4.merkmale <- wzp4.merkmale[TRUE, -c(ast.pos)]
   }
-  #(2) Merkmal-DS <wzp4.merkmale> mit Attribut-Auswahl aus <baeume> verknüpfen
+  #(2) Merkmal-DS <wzp4.merkmale> mit Attribut-Auswahl aus <baeume> verkn\u00fcpfen
   wzp4.merkmale <- merge(baeume[baeume$stp==0,
                         c("tnr", "enr", "bnr", "ba", "alt", "bhd", "h", "volv", "oib", "nha", "stfl")],
                         wzp4.merkmale, by=c("tnr","enr","bnr"),all.x=T)
   wzp4.merkmale[is.na(wzp4.merkmale)] <- 0
   
-  #Probebäume im Stratum mit den Merkmalen in  <merkmale> auswählen
-  #Anzahl zu berücksichtigender Merkmale
+  #Probeb\u00e4ume im Stratum mit den Merkmalen in  <merkmale> ausw\u00e4hlen
+  #Anzahl zu ber\u00fccksichtigender Merkmale
   k <- length(merkmale)
   mm.pos <- rep(0,k)
   #Wenn mehrere Merkmale als Kriterium angegeben sind, wird ein Attribut
@@ -3677,7 +3677,7 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   wzp4.merkmale.s[is.na(wzp4.merkmale.s)] <- 0 
   
   #---------------------
-  #(3) Flächen
+  #(3) Fl\u00e4chen
   #n Trakte im Inventurgebiet ist konstant
   nT <- length(trakte[,1])
   #TE im Stratum
@@ -3685,7 +3685,7 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   #------
   #HBF nach Trakt im Stratum
   xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
-  #Blößen (BL): BA=999, Lücken (iBL): BA=998
+  #Bl\u00f6\u00dfen (BL): BA=999, L\u00fccken (iBL): BA=998
   xy <- cbind(xy,stats::aggregate(ifelse(
                   wzp4.merkmale.s$ba==999,wzp4.merkmale.s$stfl/10000,0),
                   by=list(wzp4.merkmale.s$tnr),sum)$x)
@@ -3702,22 +3702,22 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
   T.hbf <- r.list$R.xy*A
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
-  #Blößen [ha]
+  #Bl\u00f6\u00dfen [ha]
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
   T.bl <- r.list$R.xy*A
   se.T.bl <- sqrt(r.list$V.R.xy)*A
-  #Ideelle Blößen ("Lücken") [ha]
+  #Ideelle Bl\u00f6\u00dfen ("L\u00fccken") [ha]
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
   T.ibl <- r.list$R.xy*A
   se.T.ibl <- sqrt(r.list$V.R.xy)*A
-  #Lückenkorrekturfaktor
+  #L\u00fcckenkorrekturfaktor
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
   lk <- r.list$R.xy
   se.lk <- sqrt(r.list$V.R.xy)
 
   #(4) Attribute des Merkmals auf Trakt aggregieren
   
-  #getrennt für die Baumarten(gruppen)
+  #getrennt f\u00fcr die Baumarten(gruppen)
 
   Kennwerte=c("Gesamtzahl","Zahl_je_ha","Vorrat_m3_mR",
               "Vorrat_m3_mR_je_ha","Stueckvolumen_m3_mR","oi_Biom_t",
@@ -3727,10 +3727,10 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   #Anzahl BA-Gruppen
   n.bagr <- length(ba.grupp$ba.grupp)
   n.bagr <- n.bagr+1
-  #Alle Baumarten ergänzen
+  #Alle Baumarten erg\u00e4nzen
   ba.grupp$bagr.lab[[n.bagr]] <- "Alle BA"
   ba.grupp$ba.grupp[[n.bagr]] <- c(10:299)
-  #Array  für Ergebnisse je  BAGR (Dimension 2 steht für Wert und Standardfehler)
+  #Array  f\u00fcr Ergebnisse je  BAGR (Dimension 2 steht f\u00fcr Wert und Standardfehler)
   attr.bagr.tab <- array(dim=c(n.kw,2,n.bagr))
   
   for (i in 1:n.bagr)
@@ -3778,7 +3778,7 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
     merkmal.t[is.na(merkmal.t)] <- 0
   
     n <- length(trakte.3[,1])
-    #Stückzahl
+    #St\u00fcckzahl
     R.xy <- r.variance.fun(cbind(merkmal.t$m,merkmal.t$N.MM),n)
     (T.N.MM <- R.xy$R.xy*A)
     (se.T.N.MM <- R.xy$V.R.xy^0.5*A)
@@ -3798,7 +3798,7 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
     (V.MM.ha <- R.xy$R.xy)
     (se.V.MM.ha <- R.xy$V.R.xy^0.5)
   
-    #Stückvolumen
+    #St\u00fcckvolumen
     R.xy <- r.variance.fun(cbind(merkmal.t$N.MM,merkmal.t$V.MM),n)
     (V.MM.Stck <- R.xy$R.xy)
     (se.V.MM.Stck <- R.xy$V.R.xy^0.5)
@@ -3866,10 +3866,10 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
 #'  Vorkommen interpretiert. \cr
 #'  Zur Flaechenberechnung: Die Beobachtung des Vorkommens wird in visuell 
 #'  angesprochene Dichtestufen angegeben: 0: "nicht vorhanden", 1: "selten, bis 
-#'  10%", 2: "häufig, > 10 bis 50%", 3:"flächig, > 50%". Diese Dichten werden in 
+#'  10%", 2: "haeufig, > 10 bis 50%", 3:"flaechig, > 50%". Diese Dichten werden in 
 #'  Flaechenanteile umgerechnet: 0: 0; 1: 0.05; 2: 0.3; 3: 0.7; da jede 
 #'  Stichprobe mit dem Repraesentationsfaktor (RF) hochgerechnet wird, ergeben 
-#'  sich hieraus Flächenschaetzungen in ha
+#'  sich hieraus Flaechenschaetzungen in ha
 #'  d.fl.ant <- data.frame(dichte=0:3,fl.ant=c(0,0.05,0.3,0.7))
 #' @param fba Vektor mit den auszuwertenden FBA, wird NA oder "alle" uebergeben, 
 #'  werden alle ausgewertet.
@@ -3882,8 +3882,8 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
 #' @return Liste mit folgenden Attributen: \strong{Stratum}, \strong{HBF} 
 #'  (Holzbodenflaeche), \strong{se.HBF} (Standardfehler Holzbodenflaeche), 
 #'  \strong{FBA}, \strong{Dichtestufen}, \strong{FBA.Dichtevertlg}, 
-#'  \strong{FBA.Fläche}. Wobei FBA.Dichtevertlg ein Array mit den
-#'  Dichteanteilen der FBA ist und FBA.Fläche ein Array ist, welches Wert und 
+#'  \strong{FBA.Flaeche}. Wobei FBA.Dichtevertlg ein Array mit den
+#'  Dichteanteilen der FBA ist und FBA.Flaeche ein Array ist, welches Wert und 
 #'  Standardfehler fuer Flaeche (ha) und Flaechenanteile enthaelt.
 fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   #Auswertungseinheit festlegen
@@ -3891,7 +3891,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
-  #Holzbodenfläche des Stratums
+  #Holzbodenfl\u00e4che des Stratums
   y <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
   names(y) <- c("tnr","y")
   #Teilmenge der Trakte im Auswertungsstratum
@@ -3912,31 +3912,31 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
                    by = c("tnr", "enr"), all.x = T)
   #fehlende Angaben werden als Nicht-Vorkommen interpretiert
   fba.tab$dichte[is.na(fba.tab$dichte)] <- 0
-  #Falls aus Originaldaten Code -1 für fehlende Angabe vorkommt
+  #Falls aus Originaldaten Code -1 f\u00fcr fehlende Angabe vorkommt
   fba.tab$dichte[fba.tab$dichte==-1] <- 0
   
   fba.lab <- c("Adlerfarn", "Brennessel",  "Riedgras", "Honiggras",  "Reitgras",
-               "Heidekraut", "Heidelbeere","Brombeere", "Riesenbärenklau",
-               "Riesenknöterich", "Drüsiges Springkraut","Kleinblütiges Springkraut",
+               "Heidekraut", "Heidelbeere","Brombeere", "Riesenb\u00e4renklau",
+               "Riesenkn\u00f6terich", "Dr\u00fcsiges Springkraut","Kleinbl\u00fctiges Springkraut",
                "Kermesbeere")
   fba.code <- c(11:23)
   
   if (is.na(fba[1]) | tolower(fba[1])=="alle")
   {fba <- c(11:23) }
   
-  #d.lab <- c("k.A.","fehlt","selten","häufig","flächig")
+  #d.lab <- c("k.A.","fehlt","selten","h\u00e4ufig","fl\u00e4chig")
   #entsprechend den Codes -1, 0, 1, 2, 3
-  d.lab <- c("nicht vorhanden","selten, bis 10%","häufig, > 10 bis 50%","flächig, > 50%")
+  d.lab <- c("nicht vorhanden","selten, bis 10%","h\u00e4ufig, > 10 bis 50%","fl\u00e4chig, > 50%")
   #entsprechend den Codes 0, 1, 2, 3
-  #entsprechende Flächenanteile für 0,1,2,3
+  #entsprechende Fl\u00e4chenanteile f\u00fcr 0,1,2,3
   d.fl.ant <- data.frame(dichte=0:3,fl.ant=c(0,0.05,0.3,0.7))
   fba.tab <- merge(fba.tab,d.fl.ant,by="dichte",all.x=T)
   fba.tab <- fba.tab[TRUE, c(2:4,1,5)] #TODO: Use named index.
-  #Auf überschießende Fläche prüfen
+  #Auf \u00fcberschie\u00dfende Fl\u00e4che pr\u00fcfen
   n.fba.te <- stats::aggregate(cbind(ifelse(fba.tab$dichte<=0,0,1),fba.tab$fl.ant),
                         by=list(fba.tab$tnr,fba.tab$enr),sum)
   names(n.fba.te) <- c("tnr","enr","n.fba","sum.fl.ant")
-  #Überschießende Fläche auf eins korrigieren
+  #\u00dcberschie\u00dfende Fl\u00e4che auf eins korrigieren
   fba.tab <- merge(fba.tab,n.fba.te,by=c("tnr","enr"),all.x=T)
   #fba.tab$fl.ant.0 <- fba.tab$fl.ant
   fba.tab$fl.ant <- ifelse(fba.tab$sum.fl.ant>1,fba.tab$fl.ant/fba.tab$sum.fl.ant,fba.tab$fl.ant)
@@ -3944,10 +3944,10 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
   #---------------------
   #Ausgabe-Tabelle als Array
   #Dichte-Anteile
-  #jeweils Wert und Fehler für 4 Dichte-Stufen nach FBA
+  #jeweils Wert und Fehler f\u00fcr 4 Dichte-Stufen nach FBA
   fba.d <-array(dim=c(2,4,length(fba)))
-  #Flächen und Flächenanteile
-  #jeweils Wert und Fehler für FBA für Fläche (ha) und Flächenanteil
+  #Fl\u00e4chen und Fl\u00e4chenanteile
+  #jeweils Wert und Fehler f\u00fcr FBA f\u00fcr Fl\u00e4che (ha) und Fl\u00e4chenanteil
   fba.fl <-array(dim=c(2,length(fba),2))
   
   ii <- 0
@@ -3973,20 +3973,20 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
       fba.d[1,(j+1),ii] <- round(r.list$R.xy,4)
       fba.d[2,(j+1),ii] <- round(sqrt(r.list$V.R.xy),5)      
     }
-    #Fläche schätzen als Total
+    #Fl\u00e4che sch\u00e4tzen als Total
     fl.i.t <- stats::aggregate(fba.i$fl.ant,by=list(fba.i$tnr),sum)
     names(fl.i.t) <- c("tnr","fl")
-    #daher Verknüpfung mit <y>
+    #daher Verkn\u00fcpfung mit <y>
     fl.i.t <- merge(y[,1:2],fl.i.t,by="tnr",all.x=T)
     fl.i.t[is.na(fl.i.t)] <- 0
     r.list <-  r.variance.fun(fl.i.t[,2:3],length(trakte[,1]))
     fba.fl[1,ii,1] <- round(r.list$R.xy*A,1)
     fba.fl[2,ii,1] <- round(sqrt(r.list$V.R.xy)*A,2)
     
-    #Fläche schätzen als Anteil
+    #Fl\u00e4che sch\u00e4tzen als Anteil
     fl.i.t <- stats::aggregate(fba.i$fl.ant,by=list(fba.i$tnr),sum)
     names(fl.i.t) <- c("tnr","fl")
-    #Verknüpfung mit <nte.t>
+    #Verkn\u00fcpfung mit <nte.t>
     fl.i.t <- merge(nte.t,fl.i.t,by="tnr",all.x=T)
     fl.i.t[is.na(fl.i.t)] <- 0
     r.list <-  r.variance.fun(fl.i.t[,2:3],length(trakte[,1]))
@@ -4000,7 +4000,7 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
               FBA = fba.lab[match(fba,fba.code)],
               Dichtestufen = d.lab,
               FBA.Dichtevertlg=fba.d,
-              FBA.Fläche = fba.fl))
+              "FBA.Fl\u00e4che" = fba.fl))
 }
 #Ende Funktion <fba.stratum.fun>
 
@@ -4088,7 +4088,7 @@ fl.proz.stratum.fun <- function(stratum,substratum,ecken){
 #' @return Untermenge der Ecken, die der Auswahl entsprechen.
 stratum.fun <- function(auswahl,ecken){
   ecken <- as.data.frame(ecken)
-  #Attribute für Auswahl
+  #Attribute f\u00fcr Auswahl
   attribute <- names(auswahl)
   k <- length(attribute)
   n <- length(ecken[,1])
@@ -4099,7 +4099,7 @@ stratum.fun <- function(auswahl,ecken){
   for (i in 1:k)
   {
     #pos[i] <- grep(attribute[i],names(ecken),fixed=T)[1]
-    #exaktes "matching"  kä/23.01.2015
+    #exaktes "matching"  k\u00e4/23.01.2015
     pos[i] <- which(names(ecken)==attribute[i])
     stratum <- stratum[stratum[,pos[i]]%in%auswahl[[i]], TRUE]
     if (is.factor(stratum[,pos[i]])) stratum[,pos[i]] <-
@@ -4112,7 +4112,7 @@ stratum.fun <- function(auswahl,ecken){
   return(stratum)
 }
 #-------------------------------------------------------------------------------
-#' Klassifiziert und aggegiert die mittlere Baumartenfläche
+#' Klassifiziert und aggegiert die mittlere Baumartenflaeche
 #' 
 #' Funktion fuehrt eine Klassifikation der mittleren Baumartenflaeche nach 
 #' Baumarten-Gruppe, BHD und Alter zur Periodenmitte durch und aggregiert nach 
@@ -4126,11 +4126,11 @@ stratum.fun <- function(auswahl,ecken){
 #' @param baeume.folg Tabelle fuer Folgeinventur mit Baumartengruppe,
 #'  Attribute: tnr, enr, bnr, pk, pl, ba, bagr, bhd1, bhd2, alt1, alt2, 
 #'  stfl1, stfl2.
-#' @param A.klass Liste mit den Klassifizierungsparametern fürs Alter: z.B. 
+#' @param A.klass Liste mit den Klassifizierungsparametern fuers Alter: z.B. 
 #'  list(A.ob=160,A.b=20).
-#' @param D.klass Liste mit den Klassifizierungsparametern für Durchmesser z.B. 
+#' @param D.klass Liste mit den Klassifizierungsparametern fuer Durchmesser z.B. 
 #'  list(D.unt=0,D.ob=70,D.b=10,Ndh=T), Ndh (Nicht-Derbholz) = T bedeutet, dass 
-#'  zusätzlich Nicht-Dh (unter 7 cm) ausgewiesen wird, sonst gilt \code{D.unt} 
+#'  zusaetzlich Nicht-Dh (unter 7 cm) ausgewiesen wird, sonst gilt \code{D.unt} 
 #'  als unterste Schwelle.
 #' @return Dataframe-Tabelle mit folgenden Attributen: tnr, bagr, akl.pm,
 #'  dkl.pm, baf1, baf2, mbaf, mbaf.hb. Wobei mbaf die mittlere Baumartenflaeche 
@@ -4139,7 +4139,7 @@ mbaf.bagr.alt.bhd.pm.fun <- function(baeume.vor,baeume.folg,A.klass,D.klass){
   names(baeume.vor) <- tolower(names(baeume.vor))
   names(baeume.folg) <- tolower(names(baeume.folg))
   #Vorinventur (aus Sicht Folgeinventur):
-  #pk == 0; Bäume mit BHD1 < 7 cm! (STP=1,2)
+  #pk == 0; B\u00e4ume mit BHD1 < 7 cm! (STP=1,2)
   baeume.vor$bhd.pm <- ifelse(baeume.vor$pk%in%c(2:5,9),baeume.vor$bhd2,
                         (baeume.vor$bhd1+baeume.vor$bhd2)/2)
   baeume.vor$alt.pm <- ifelse(baeume.vor$pk%in%c(2:5,9),baeume.vor$alt2,
@@ -4149,7 +4149,7 @@ mbaf.bagr.alt.bhd.pm.fun <- function(baeume.vor,baeume.folg,A.klass,D.klass){
   baeume.folg$bhd.pm <- (baeume.folg$bhd1+baeume.folg$bhd2)/2
   baeume.folg$alt.pm <- ifelse(baeume.folg$ba<998,baeume.folg$alt2-baeume.folg$pl/2,
                 0)
-  #Klassifizierung durchführen
+  #Klassifizierung durchf\u00fchren
   #Alter
   A.max <- 999
   #Hinweis: A-Klassifizierung nach fortgeschriebenem Alter: alt2!!!
@@ -4177,7 +4177,7 @@ mbaf.bagr.alt.bhd.pm.fun <- function(baeume.vor,baeume.folg,A.klass,D.klass){
   dkl.lab <- as.character(dkl.lab[order(dkl.lab)])
   D.k <- length(dkl.lab[!is.na(dkl.lab)])
 
-  #Lückenkorrekturfaktoren
+  #L\u00fcckenkorrekturfaktoren
   #Vorinventur
   lk.v <- sum(baeume.vor$stfl1)/sum(baeume.vor$stfl1[baeume.vor$ba<998])
   lk.f <- sum(baeume.folg$stfl2)/sum(baeume.folg$stfl2[baeume.folg$ba<998])
@@ -4197,9 +4197,9 @@ mbaf.bagr.alt.bhd.pm.fun <- function(baeume.vor,baeume.folg,A.klass,D.klass){
   #NA entfernen
   baf12.tnr$baf1[is.na(baf12.tnr$baf1)] <- 0
   baf12.tnr$baf2[is.na(baf12.tnr$baf2)] <- 0
-  #Mittlere Baumartenfläche
+  #Mittlere Baumartenfl\u00e4che
   baf12.tnr$mbaf <- (baf12.tnr$baf1+baf12.tnr$baf2)/2
-  #Mittlere Baumartenfläche im Hauptbestand
+  #Mittlere Baumartenfl\u00e4che im Hauptbestand
   baf12.tnr$mbaf.hb <- (baf12.tnr$baf1/lk.v+baf12.tnr$baf2/lk.f)/2
   return(baf12.tnr)
 }
@@ -4208,7 +4208,7 @@ mbaf.bagr.alt.bhd.pm.fun <- function(baeume.vor,baeume.folg,A.klass,D.klass){
 #-------------------------------------------------------------------------------
 #' Berechnet Ratio-Schaetzer und seine Varianz
 #' 
-#' Funktion berechnet Ratio-Schaetzer und seine Varianz über Fehlerfortpflanzung.
+#' Funktion berechnet Ratio-Schaetzer und seine Varianz ueber Fehlerfortpflanzung.
 #' 
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
 #' @section Erstellungsdatum: 13.03.2014
@@ -4228,7 +4228,7 @@ mbaf.bagr.alt.bhd.pm.fun <- function(baeume.vor,baeume.folg,A.klass,D.klass){
 #' @return Liste mit Ratio-Schaetzer(\code{R.xy}) und Varianz des Ratio-
 #'  Schaetzers (\code{V.R.xy}).
 r.variance.fun <- function(xy,n){
-  #Ratio-Schätzer
+  #Ratio-Sch\u00e4tzer
   S.y <- sum(xy[,2]); S.x <- sum(xy[,1])
   R.xy <- S.y/S.x
   #Jacobi-Vektor: dR/dS.x/n = -n*S.y/S.x^2, dR/dS.y/n = n/S.x
@@ -4236,7 +4236,7 @@ r.variance.fun <- function(xy,n){
   #Varianz-Covarianz-Matrix von xy ("reduziert")
   xy <- as.matrix(xy)
   VC.xy <- (t(xy)%*%xy)/n/(n-1)
-  #Varianz des Ratio-Schätzers
+  #Varianz des Ratio-Sch\u00e4tzers
   V.R.xy <- (t(J.xy)%*%VC.xy)%*%J.xy
   return(list(R.xy = R.xy, V.R.xy=as.numeric(V.R.xy)))
 }
@@ -4245,8 +4245,8 @@ r.variance.fun <- function(xy,n){
 #-------------------------------------------------------------------------------
 #' Berechnet einen "kombinierten" Ratio-Schaetzer und seine Varianz
 #' 
-#' Funktion berechnet einen "kombinierten" Ratio-Schaetzer mit 2 x-Groeßen im 
-#' Nenner und seine Varianz über Fehlerfortpflanzung.
+#' Funktion berechnet einen "kombinierten" Ratio-Schaetzer mit 2 x-Groessen im 
+#' Nenner und seine Varianz ueber Fehlerfortpflanzung.
 #' 
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
 #' @section Erstellungsdatum: 10.03.2014
@@ -4266,26 +4266,26 @@ r.variance.fun <- function(xy,n){
 r.xxy.variance.fun <- function(xy,n){
   #n <- length(trakte[,1])
   #n <- length(xy[,1])
-  #Indikator-Variable t für x2 > 0
+  #Indikator-Variable t f\u00fcr x2 > 0
   ti <- ifelse(xy[,2]>0,1,0)
-  #in Datensatz einfügen (an 3. Stelle)
+  #in Datensatz einf\u00fcgen (an 3. Stelle)
   xy <- cbind(xy[,1:2],ti,y=xy[,3])    #TODO: use named index.
-  #Summenterme = Komponenten des Ratio-Schätzers
+  #Summenterme = Komponenten des Ratio-Sch\u00e4tzers
   S.x1 <- sum(xy[,1]); S.x2 <- sum(xy[,2])
   S.ti <- sum(xy[,3]); S.y  <- sum(xy[,4])
-  #Ratio-Schätzer
+  #Ratio-Sch\u00e4tzer
   R.xxy <- S.y/S.x1*S.ti/S.x2
   #Jacobi-Vektor:
   #dR/dS.x1/n = -n*S.y*S.ti/S.x2/S.x1^2, dR/dS.x2  = -S.y*S.ti/S.x1/S.x2^2
   #dR/dS.ti   = S.y/S.x1/S.x2,           dR/dS.y/n = n*S.ti/S.x1/S.x2
-  #lässt sich mit R.xxy = S.y*S.t/S.x1/S.x2 umformen in
+  #l\u00e4sst sich mit R.xxy = S.y*S.t/S.x1/S.x2 umformen in
   #dR/dS.x1/n = -R.xxy*n/S.x1, dR/dS.x2/n  = -R.xxy*n/S.x2
   #dR/dS.ti/n   =  R.xxy*n/S.ti,   dR/dS.y/n = R.xxy*n/S.y
   J.xxy <- n*R.xxy*c(-1/S.x1,-1/S.x2,1/S.ti,1/S.y)
   #Varianz-Covarianz-Matrix von xy ("reduziert")
   xy <- as.matrix(xy)
   VC.xxy <- (t(xy)%*%xy)/n/(n-1)
-  #Varianz des Ratio-Schätzers
+  #Varianz des Ratio-Sch\u00e4tzers
   V.R.xxy <- (t(J.xxy)%*%VC.xxy)%*%J.xxy
   return(list(R.xxy = R.xxy, V.R.xxy=as.numeric(V.R.xxy)))
 }
@@ -4304,7 +4304,7 @@ r.xxy.variance.fun <- function(xy,n){
 #' @section Aktualisierungen: 
 #'  11.04.2014 (1) Einfuegen Derbholzvolumen im Hauptbestand, (2) Ausgeschiedener 
 #'    Vorrat \cr
-#'  09.02.2015 Biomassezuwachs auf Derbholz-Kollektiv beschränkt (echter 
+#'  09.02.2015 Biomassezuwachs auf Derbholz-Kollektiv beschraenkt (echter 
 #'  Einwuchs);  Grund: Einwuchs ins Derbholz-Kollektiv wird als Zuwachs explizit 
 #'  erfasst, da bei Vorinventur nicht vorhanden. Wuerde auch die Biomasse 
 #'  unterhalb der Derbholzschwelle einbebzogen, muesste der Biomasse-Vorrat 
@@ -4328,7 +4328,7 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
   iv.es.t <- stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)
-  #(1.112) Derbholz m.R. im Hauptbestand (kä/11.04.2014)
+  #(1.112) Derbholz m.R. im Hauptbestand (k\u00e4/11.04.2014)
   iv.es.t <- cbind(iv.es.t,
           stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0)* ifelse(baeume.ba$StFl2>0,1,0),
@@ -4380,12 +4380,12 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
           stats::aggregate(baeume.ba$VolE2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
-  #(1.33) oberird. Biomasse (nur Derbholzkollektiv kä/09.02.2015)
+  #(1.33) oberird. Biomasse (nur Derbholzkollektiv k\u00e4/09.02.2015)
   iv.es.t <- cbind(iv.es.t,
           stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
-  #BA-Fläche (über alle PB der BAGr)
+  #BA-Fl\u00e4che (\u00fcber alle PB der BAGr)
   iv.es.t <- cbind(iv.es.t,
           stats::aggregate(baeume.ba$StFl2,
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x/10000)
@@ -4446,7 +4446,7 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
       stats::aggregate(baeume.ba$oiB2*baeume.ba$NHa1
       *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
-  #(2.14) BA-Fläche (über alle PB der BAGr)
+  #(2.14) BA-Fl\u00e4che (\u00fcber alle PB der BAGr)
   iv.a.t <- cbind(iv.a.t,
       stats::aggregate(baeume.ba$StFl1,
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x/10000)
@@ -4471,7 +4471,7 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
   iv.es.a.t[is.na(iv.es.a.t)] <- 0
   length(iv.es.a.t[,1])
  
-  #Periodenlänge je Trakt hinzufügen
+  #Periodenl\u00e4nge je Trakt hinzuf\u00fcgen
   nte.pl.t <- stats::aggregate(rep(1,length(ecken[,1])),by=list(ecken$TNr),sum)
   nte.pl.t <- cbind(nte.pl.t,
                      stats::aggregate(ecken$PL,by=list(ecken$TNr),mean)$x,
@@ -4498,12 +4498,12 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
   (iv.es.a.t$iB.S + iv.es.a.t$iB.Es + iv.es.a.t$B.E  + iv.es.a.t$iB.A)/1000
   iv.es.a.t$B.A <- iv.es.a.t$B.A/1000
 
-  #Mittlere Baumartenfläche
+  #Mittlere Baumartenfl\u00e4che
   hbf <- length(ecken[,1]) #ohne REF!!!
   lk.2 <- hbf/sum(baeume.folg$StFl2[baeume.folg$Pk!=8])*10000
   lk.1 <- hbf/sum(baeume.vor$StFl1[baeume.vor$Pk!=8])*10000
   iv.es.a.t$mBAF <- (iv.es.a.t$BAF1*lk.1+iv.es.a.t$BAF2*lk.2)/2
-  #Mitt. Baumartenfläche OHNE Lückenkorrektur (Bezugsfläche für Hauptbestand)
+  #Mitt. Baumartenfl\u00e4che OHNE L\u00fcckenkorrektur (Bezugsfl\u00e4che f\u00fcr Hauptbestand)
   iv.es.a.t$mBAF.oLK <- 
         (iv.es.a.t$BAF1+iv.es.a.t$BAF2)/2
   
@@ -4549,7 +4549,7 @@ iVB.bilanz.bagr.akl.dkl.fun <- function(baeume.vor,baeume.folg,ecken){
 #'  in Tonnen, Grundflaeche in m² und Baumartenflaeche.
 iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   #(1)Berechnung der Bilanzkomponenten iV.S und iV.E aus baeume.folg
-  #nach Trakt, BAGR, akl, dkl       + kä/09.02.2015: <bhd.pm>
+  #nach Trakt, BAGR, akl, dkl       + k\u00e4/09.02.2015: <bhd.pm>
   baeume.ba <- baeume.folg[TRUE, c("TNr", "ENr", "STP", "BNr", "Pk", "BHD1", 
                                    "BHD2", "bhd.pm", "BaGr", "akl", "dkl", 
                                    "VolV1", "VolV2", "VolE1", "VolE2", "oiB1", 
@@ -4560,7 +4560,7 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   iv.es.t <- stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)
-  #(1.112) Derbholz m.R. im Hauptbestand (kä/11.04.2014)
+  #(1.112) Derbholz m.R. im Hauptbestand (k\u00e4/11.04.2014)
   iv.es.t <- cbind(iv.es.t,
           stats::aggregate((baeume.ba$VolV2-baeume.ba$VolV1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0)* ifelse(baeume.ba$StFl2>0,1,0),
@@ -4576,7 +4576,7 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
           *ifelse(baeume.ba$Pk ==1,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #+++
-  #(1.14) Grundfläche (Derbholz)
+  #(1.14) Grundfl\u00e4che (Derbholz)
   iv.es.t <- cbind(iv.es.t,
           stats::aggregate((baeume.ba$BHD2^2-baeume.ba$BHD1^2)*pi/40000*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk ==1,1,0),
@@ -4604,7 +4604,7 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #+++
-  #(1.24) Grundfläche (Derbholz)
+  #(1.24) Grundfl\u00e4che (Derbholz)
   iv.es.t <- cbind(iv.es.t,
           stats::aggregate((baeume.ba$BHD2^2-baeume.ba$BHD1^2)*pi/40000*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0&baeume.ba$BHD1>=7,1,0),
@@ -4628,22 +4628,22 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
           stats::aggregate(baeume.ba$VolE2*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2 >=7 ,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
-  #(1.33) oberird. Biomasse: nur Derbholzkollektiv kä/26.01.2015
-  #kä/09.02.2015: hier wird die Differenz gebildet, da auch der Anfangswert mit
+  #(1.33) oberird. Biomasse: nur Derbholzkollektiv k\u00e4/26.01.2015
+  #k\u00e4/09.02.2015: hier wird die Differenz gebildet, da auch der Anfangswert mit
   #BHD < 7 cm eine Biomasse hat (im Unterschied zum Derbholzvolumen!)
-  #Das Erreichen der Derbholzschwelle wird ebenfalls berücksichtigt!
+  #Das Erreichen der Derbholzschwelle wird ebenfalls ber\u00fccksichtigt!
   iv.es.t <- cbind(iv.es.t,
           stats::aggregate((baeume.ba$oiB2-baeume.ba$oiB1)*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #+++
-  #(1.34) Grundfläche (Derbholz) +kä/09.02.2015: Derbholz-Zuwachs: 7[cm]²abziehen!!  
+  #(1.34) Grundfl\u00e4che (Derbholz) +k\u00e4/09.02.2015: Derbholz-Zuwachs: 7[cm]²abziehen!!  
   iv.es.t <- cbind(iv.es.t,
           stats::aggregate((baeume.ba$BHD2^2-7^2)*pi/40000*baeume.ba$NHa2
           *ifelse(baeume.ba$Pk==0 & baeume.ba$BHD1<7 & baeume.ba$BHD2>=7,1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
           
-  #BA-Fläche (über alle PB der BAGr)
+  #BA-Fl\u00e4che (\u00fcber alle PB der BAGr)
   iv.es.t <- cbind(iv.es.t,
           stats::aggregate(baeume.ba$StFl2,
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x/10000)
@@ -4706,18 +4706,18 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
       *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
   #+++
-  #(2.141) Grundfläche Zuwachs des ausgeschiedenen Vorrats
+  #(2.141) Grundfl\u00e4che Zuwachs des ausgeschiedenen Vorrats
   iv.a.t <- cbind(iv.a.t,
           stats::aggregate((baeume.ba$BHD2^2-baeume.ba$BHD1^2)*pi/40000*baeume.ba$NHa1
           *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
           by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
-  #(2.142) Grundfläche  ausgeschiedener Vorrat
+  #(2.142) Grundfl\u00e4che  ausgeschiedener Vorrat
   iv.a.t <- cbind(iv.a.t,
       stats::aggregate(baeume.ba$BHD2^2*pi/40000*baeume.ba$NHa1
       *ifelse(baeume.ba$Pk %in%c(2:5,9),1,0),
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x)
 
-  #(2.14) BA-Fläche (über alle PB der BAGr)
+  #(2.14) BA-Fl\u00e4che (\u00fcber alle PB der BAGr)
   iv.a.t <- cbind(iv.a.t,
       stats::aggregate(baeume.ba$StFl1,
       by=list(baeume.ba$TNr,baeume.ba$BaGr,baeume.ba$akl,baeume.ba$dkl),sum)$x/10000)
@@ -4742,7 +4742,7 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   iv.es.a.t[is.na(iv.es.a.t)] <- 0
   length(iv.es.a.t[,1])
 
-  #Periodenlänge je Trakt hinzufügen
+  #Periodenl\u00e4nge je Trakt hinzuf\u00fcgen
   nte.pl.t <- stats::aggregate(rep(1,length(ecken[,1])),by=list(ecken$TNr),sum)
   nte.pl.t <- cbind(nte.pl.t,
                      stats::aggregate(ecken$PL,by=list(ecken$TNr),mean)$x,
@@ -4768,16 +4768,16 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
   iv.es.a.t$iB <-
   (iv.es.a.t$iB.S + iv.es.a.t$iB.Es + iv.es.a.t$B.E  + iv.es.a.t$iB.A)/1000
   iv.es.a.t$B.A <- iv.es.a.t$B.A/1000
-  #Grundfläche in m²
+  #Grundfl\u00e4che in m²
   iv.es.a.t$iG <-
   (iv.es.a.t$iG.S + iv.es.a.t$iG.Es + iv.es.a.t$G.E  + iv.es.a.t$iG.A)
 
-  #Mittlere Baumartenfläche
+  #Mittlere Baumartenfl\u00e4che
   hbf <- length(ecken[,1]) #ohne REF!!!
   lk.2 <- hbf/sum(baeume.folg$StFl2[baeume.folg$Pk!=8])*10000
   lk.1 <- hbf/sum(baeume.vor$StFl1[baeume.vor$Pk!=8])*10000
   iv.es.a.t$mBAF <- (iv.es.a.t$BAF1*lk.1+iv.es.a.t$BAF2*lk.2)/2
-  #Mitt. Baumartenfläche OHNE Lückenkorrektur (Bezugsfläche für Hauptbestand)
+  #Mitt. Baumartenfl\u00e4che OHNE L\u00fcckenkorrektur (Bezugsfl\u00e4che f\u00fcr Hauptbestand)
   iv.es.a.t$mBAF.oLK <-
         (iv.es.a.t$BAF1+iv.es.a.t$BAF2)/2
 
@@ -4799,7 +4799,7 @@ iVB.bilanz.bagr.akl.dkl.fun.2g <- function(baeume.vor,baeume.folg,ecken){
 #' @return Wenn der Baumartencode in der Liste mit der Baumartenzusammenfassung 
 #'  gefunden wurde, wird die Position des ersten Vectors in der Liste, welcher 
 #'  die Baumart enthaelt, zurueck gegeben. Wenn der Baumartencode nicht gefunden
-#'  wurde, wird NA zurück gegeben.
+#'  wurde, wird NA zurueck gegeben.
 ba.klass.fun <- function(ba,ba.klass){
   i <- 0
   while (i < length(ba.klass)){
@@ -4868,7 +4868,7 @@ dkl.lab.fun <- function(D.klass,D.k){
     }
     dkl.lab[D.k] <- paste(">=",D.klass[[2]],sep="")
   }else
-  {dkl.lab[D.k] <- paste(D.klass[[1]],"-",D.klass[[2]],sep="")} #kä/07.02.2015
+  {dkl.lab[D.k] <- paste(D.klass[[1]],"-",D.klass[[2]],sep="")} #k\u00e4/07.02.2015
   
   return(dkl.lab)
 }
@@ -4912,8 +4912,8 @@ akl.lab.fun <- function(A.klass,A.k){
 #'@return Dataframe-Tabelle.
 verjg.tab.fun <- function(vj.tab){
   return(data.frame(BAGR=c(vj.tab$BAGR,"Alle"),
-    Stückzahl_Verj_Mio=round(vj.tab$n.Verjg.BAGR[1,1,]/1e6,3),
-    SE_Stückzahl_Verj_Mio=round(vj.tab$n.Verjg.BAGR[1,2,]/1e6,3),
+    "St\u00fcckzahl_Verj_Mio"=round(vj.tab$n.Verjg.BAGR[1,1,]/1e6,3),
+    "SE_St\u00fcckzahl_Verj_Mio"=round(vj.tab$n.Verjg.BAGR[1,2,]/1e6,3),
     Anteil_Proz = round(vj.tab$n.Verjg.BAGR[2,1,],1),
     SE_Anteil_Proz = round(vj.tab$n.Verjg.BAGR[2,2,],2) ))
 }
@@ -4960,33 +4960,33 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
 {
 #Version 1,  05.11.2015
 #basierend auf <stamm.merkmale.bagr.fun>
-#nur für BWI 2 und 3!
-  #(1) Befundeinheit festlegen (Traktecken auswählen)
+#nur f\u00fcr BWI 2 und 3!
+  #(1) Befundeinheit festlegen (Traktecken ausw\u00e4hlen)
   stratum <- stratum.fun(auswahl,ecken)
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
   names(trakte)  <- tolower(names(trakte))
   names(baeume) <- tolower(names(baeume))
   names(wzp4.merkmale) <- tolower(names(wzp4.merkmale))
-  #"Neutralisierung" der benötigten Attributnamen in <baeume>: <2> entfernen
+  #"Neutralisierung" der ben\u00f6tigten Attributnamen in <baeume>: <2> entfernen
   names(baeume) <- sub(2,names(baeume),replacement="")
   
-  #Aus Kompatibiltäts-Gründen werden die nur in der BWI 3 vorkommenden
+  #Aus Kompatibilt\u00e4ts-Gr\u00fcnden werden die nur in der BWI 3 vorkommenden
   #Attribute <Ast> und <Ast_Hoe> im DS der BWI 3 entfernt
   ast.pos <- grep("Ast",names(wzp4.merkmale))
   if (length(ast.pos)>0)
   {
     wzp4.merkmale <- wzp4.merkmale[TRUE, -c(ast.pos)]
   }
-  #(2) Merkmal-DS <wzp4.merkmale> mit Attribut-Auswahl aus <baeume> verknüpfen
+  #(2) Merkmal-DS <wzp4.merkmale> mit Attribut-Auswahl aus <baeume> verkn\u00fcpfen
   wzp4.merkmale <- merge(baeume[baeume[["stp"]] == 0,
                                 c("tnr", "enr", "bnr", "ba", "alt", "bhd", 
                                   "h", "volv", "oib", "nha", "stfl")],
                          wzp4.merkmale, by=c("tnr","enr","bnr"),all.x=T)
   wzp4.merkmale[is.na(wzp4.merkmale)] <- 0
   
-  #Probebäume im Stratum mit den Merkmalen in  <merkmale> auswählen
-  #Anzahl zu berücksichtigender Merkmale
+  #Probeb\u00e4ume im Stratum mit den Merkmalen in  <merkmale> ausw\u00e4hlen
+  #Anzahl zu ber\u00fccksichtigender Merkmale
   k <- length(merkmale)
   mm.pos <- rep(0,k)
   #Wenn mehrere Merkmale als Kriterium angegeben sind, wird ein Attribut
@@ -5005,7 +5005,7 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   wzp4.merkmale.s[is.na(wzp4.merkmale.s)] <- 0 
   
   #---------------------
-  #(3) Flächen
+  #(3) Fl\u00e4chen
   #n Trakte im Inventurgebiet ist konstant
   nT <- length(trakte[,1])
   #TE im Stratum
@@ -5013,7 +5013,7 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   #------
   #HBF nach Trakt im Stratum
   xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
-  #Blößen (BL): BA=999, Lücken (iBL): BA=998
+  #Bl\u00f6\u00dfen (BL): BA=999, L\u00fccken (iBL): BA=998
   xy <- cbind(xy,stats::aggregate(ifelse(
     wzp4.merkmale.s$ba==999,wzp4.merkmale.s$stfl/10000,0),
     by=list(wzp4.merkmale.s$tnr),sum)$x)
@@ -5030,15 +5030,15 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
   T.hbf <- r.list$R.xy*A
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
-  #Blößen [ha]
+  #Bl\u00f6\u00dfen [ha]
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
   T.bl <- r.list$R.xy*A
   se.T.bl <- sqrt(r.list$V.R.xy)*A
-  #Ideelle Blößen ("Lücken") [ha]
+  #Ideelle Bl\u00f6\u00dfen ("L\u00fccken") [ha]
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
   T.ibl <- r.list$R.xy*A
   se.T.ibl <- sqrt(r.list$V.R.xy)*A
-  #Lückenkorrekturfaktor
+  #L\u00fcckenkorrekturfaktor
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
   lk <- r.list$R.xy
   se.lk <- sqrt(r.list$V.R.xy)
@@ -5046,7 +5046,7 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   #Altersklassifikation
   
   A.max <- 999
-  #----- kä/15.02.
+  #----- k\u00e4/15.02.
   wzp4.merkmale.s$akl <- as.integer(cut(wzp4.merkmale.s$alt,
                                  breaks=c(seq(0,A.klass[[1]],A.klass[[2]]),A.max),right=T))
   akl.lab <- unique(wzp4.merkmale.s$akl)
@@ -5063,7 +5063,7 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   
   #(4) Attribute des Merkmals auf Trakt aggregieren
   
-  #getrennt für die Baumarten(gruppen)
+  #getrennt f\u00fcr die Baumarten(gruppen)
   
   Kennwerte=c("Gesamtzahl","Zahl_je_ha","Vorrat_m3_mR",
               "Vorrat_m3_mR_je_ha","Stueckvolumen_m3_mR","oi_Biom_t",
@@ -5073,10 +5073,10 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
   #Anzahl BA-Gruppen
   n.bagr <- length(ba.grupp$ba.grupp)
   n.bagr <- n.bagr+1
-  #Alle Baumarten ergänzen
+  #Alle Baumarten erg\u00e4nzen
   ba.grupp$bagr.lab[[n.bagr]] <- "Alle BA"
   ba.grupp$ba.grupp[[n.bagr]] <- c(10:299)
-  #Array  für Ergebnisse je  BAGR und AKL (Dimension 2 steht für Wert und Standardfehler)
+  #Array  f\u00fcr Ergebnisse je  BAGR und AKL (Dimension 2 steht f\u00fcr Wert und Standardfehler)
   attr.bagr.akl.tab <- array(dim=c(n.kw,2,n.bagr,A.k))
   
   for (j in 1:A.k)
@@ -5129,7 +5129,7 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
       merkmal.t[is.na(merkmal.t)] <- 0
       
       n <- length(trakte.3[,1])
-      #Stückzahl
+      #St\u00fcckzahl
       R.xy <- r.variance.fun(cbind(merkmal.t$m,merkmal.t$N.MM),n)
       (T.N.MM <- R.xy$R.xy*A)
       (se.T.N.MM <- R.xy$V.R.xy^0.5*A)
@@ -5149,7 +5149,7 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale,baeume,ecken,trakte,A,
       (V.MM.ha <- R.xy$R.xy)
       (se.V.MM.ha <- R.xy$V.R.xy^0.5)
       
-      #Stückvolumen
+      #St\u00fcckvolumen
       R.xy <- r.variance.fun(cbind(merkmal.t$N.MM,merkmal.t$V.MM),n)
       (V.MM.Stck <- R.xy$R.xy)
       (se.V.MM.Stck <- R.xy$V.R.xy^0.5)

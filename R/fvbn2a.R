@@ -7,14 +7,14 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
   names(trakte)  <- tolower(names(trakte))
   #Kleinschreibung aller Atttributnahmen in <baeume>
   names(baeume) <- tolower(names(baeume))
-  #"Neutralisierung" der benötigten Attributnamen
+  #"Neutralisierung" der ben\u00f6tigten Attributnamen
   names(baeume) <- sub(inv,names(baeume),replacement="")
-  #Attribute und Untermenge des Stratums aus <baeume> auswählen
+  #Attribute und Untermenge des Stratums aus <baeume> ausw\u00e4hlen
   baeume.s <- merge(baeume[TRUE, c("tnr", "enr", "ba", "alt", "bhd", "volv", "oib", "nha", "stfl")],
                     stratum[TRUE, c("tnr", "enr")],by=c("tnr","enr"),all.y=T)
 
-  #Klassifizierung durchführen
-  #Baumartengruppen-Zuordnungstabelle für BWI-BA-Code erzeugen
+  #Klassifizierung durchf\u00fchren
+  #Baumartengruppen-Zuordnungstabelle f\u00fcr BWI-BA-Code erzeugen
   #(Tab. <bacode> muss geladen sein)
   bagr.tab <- ba.klass.lab.tab.fun(BA.grupp)
   #BA-Gruppe dazu spielen
@@ -31,10 +31,10 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
   n.te.s <- length(stratum[,1])
 
   #---------------------
-  #Flächen
+  #Fl\u00e4chen
   #HBF nach Trakt im Stratum
   xy <- stats::aggregate(rep(1,length(stratum[,1])),by=list(stratum$tnr),sum)
-  #Blößen (BL): BA=999, Lücken (iBL): BA=998
+  #Bl\u00f6\u00dfen (BL): BA=999, L\u00fccken (iBL): BA=998
   xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==999,baeume.s$stfl/10000,0),
                   by=list(baeume.s$tnr),sum)$x)
   xy <- cbind(xy,stats::aggregate(ifelse(baeume.s$ba==998,baeume.s$stfl,0),
@@ -50,22 +50,22 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
   T.hbf <- r.list$R.xy*A
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
-  #Blößen [ha]
+  #Bl\u00f6\u00dfen [ha]
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
   T.bl <- r.list$R.xy*A
   se.T.bl <- sqrt(r.list$V.R.xy)*A
-  #Ideelle Blößen ("Lücken") [ha]
+  #Ideelle Bl\u00f6\u00dfen ("L\u00fccken") [ha]
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
   T.ibl <- r.list$R.xy*A
   se.T.ibl <- sqrt(r.list$V.R.xy)*A
-  #Lückenkorrekturfaktor
+  #L\u00fcckenkorrekturfaktor
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
   lk <- r.list$R.xy
   se.lk <- sqrt(r.list$V.R.xy)
   #---------------------------------------
   #Alter
   A.max <- 999
-  #----- kä/15.02.
+  #----- k\u00e4/15.02.
   baeume.s$akl <- as.integer(cut(baeume.s$alt,
                       breaks=c(seq(0,A.klass[[1]],A.klass[[2]]),A.max),right=T))
   akl.lab <- unique(baeume.s$akl)
@@ -78,7 +78,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
     max.A.k <- A.klass[[1]]/A.klass[[2]] + 1
     if (A.k < max.A.k) {A.k <- max.A.k }
   }
-  #----- kä/15.02.
+  #----- k\u00e4/15.02.
 
   #Durchmesser
   D.max <- 999
@@ -93,25 +93,25 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
   dkl.lab <- unique(baeume.s$dkl)
   dkl.lab <- as.character(dkl.lab[order(dkl.lab)])
   D.k <- length(dkl.lab[!is.na(dkl.lab)])
-  #----- kä/15.02.
+  #----- k\u00e4/15.02.
   #Maximale Anzahl D-klassen aus D-Kl-Parametern <D.klass>
   if(D.klass[[2]]>D.klass[[3]])
   {
     max.D.k <- (D.klass[[2]]-D.klass[[1]])/D.klass[[2]] + 2
     if (D.k < max.D.k) {D.k <- max.D.k }
   }
-  #----- kä/15.02.
+  #----- k\u00e4/15.02.
 
-  #Array für Ergebnisse (Totals und SE jeweils nach BAGr, AKl, DKl)
-  #Es gibt 6 Zielgrößen <Y>: BAF [ha], V [m³Dh mR], VHb (nur Hauptbestand)
-  #[m³Dh mR], B (oberird. Biomasse) [t], N (gesamtzahl), NDh (Gesamtzahl
-  #Derbholzbäume)
-  #Für diese 6 Größen werden jeweils der Gesamtwert ("Total") und der
-  #Stichprobenfehler (SE) berechnet, und zwar jeweils für die 9 Baumartengruppen
+  #Array f\u00fcr Ergebnisse (Totals und SE jeweils nach BAGr, AKl, DKl)
+  #Es gibt 6 Zielgr\u00f6\u00dfen <Y>: BAF [ha], V [m^3Dh mR], VHb (nur Hauptbestand)
+  #[m^3Dh mR], B (oberird. Biomasse) [t], N (gesamtzahl), NDh (Gesamtzahl
+  #Derbholzb\u00e4ume)
+  #F\u00fcr diese 6 "Gr\u00f6\u00df" werden jeweils der Gesamtwert ("Total") und der
+  #Stichprobenfehler (SE) berechnet, und zwar jeweils f\u00fcr die 9 Baumartengruppen
   #sowie A.k Alters- und D.k Durchmesserklassen
   Y.bagr.akl.dkl    <- array(dim=c(6,2,n.bagr,A.k,D.k))
   nT.bagr.akl.dkl   <- array(dim=c(n.bagr,A.k,D.k))
-  #Hektarbezogene Kennwerte. 5 Zielgrößen:  Vha, VHbha, Bha, Nha, NDhha
+  #Hektarbezogene Kennwerte. 5 Zielgr\u00f6\u00dfen:  Vha, VHbha, Bha, Nha, NDhha
   Yha.bagr.akl.dkl  <- array(dim=c(5,2,n.bagr,A.k,D.k))
   #----------------
 
@@ -126,7 +126,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
                       c("tnr", "enr", "bhd", "dkl", "volv", "oib", "nha", "stfl")]
         if (length(baeume.ba[,1])== 0)
         {
-           Y.bagr.akl.dkl[1:6,1,i,j,k]    <- rep(0,6)  #Zielgröße Total
+           Y.bagr.akl.dkl[1:6,1,i,j,k]    <- rep(0,6)  #Zielgr\u00f6\u00dfe Total
            Y.bagr.akl.dkl[1:6,2,i,j,k]    <- rep(0,6)  #Stichprobenfehler (SE)
            Yha.bagr.akl.dkl[1:5,1,i,j,k]  <- rep(0,5)
            Yha.bagr.akl.dkl[1:5,1,i,j,k]  <- rep(0,5)
@@ -137,12 +137,12 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
           #BAF der BA-Gruppe [ha] als "x"
           xy <- stats::aggregate(baeume.ba$stfl,by=list(baeume.ba$tnr),sum)
           names(xy) <- c("tnr","x")
-          xy$x <- xy$x/10000*lk  #Umrechnung in ha  und Lückenkorrektur
-          #Derbholz-Vorrat [m³ mR] als "v"
+          xy$x <- xy$x/10000*lk  #Umrechnung in ha  und L\u00fcckenkorrektur
+          #Derbholz-Vorrat [m^3 mR] als "v"
           xy <- cbind(xy,stats::aggregate(baeume.ba$volv*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x )
           names(xy)[3] <- "v"
-          #Derbholz-Vorrat [m³ mR] im Hauptbestand als "v.hb"
+          #Derbholz-Vorrat [m^3 mR] im Hauptbestand als "v.hb"
           xy <- cbind(xy,
             stats::aggregate(baeume.ba$volv*baeume.ba$nha*ifelse(baeume.ba$stfl>0,1,0),
                                             by=list(baeume.ba$tnr),sum)$x )
@@ -151,10 +151,10 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
           xy <- cbind(xy,stats::aggregate(baeume.ba$oib*baeume.ba$nha,
                                             by=list(baeume.ba$tnr),sum)$x/1000)
           names(xy)[5] <- "b"
-          #Anzahl Bäume als "n"
+          #Anzahl B\u00e4ume als "n"
           xy <- cbind(xy,stats::aggregate(baeume.ba$nha,by=list(baeume.ba$tnr),sum)$x)
           names(xy)[6] <- "n"
-          #Anzahl nur Derbholz-Bäume (bhd>=7)  als "ndh"
+          #Anzahl nur Derbholz-B\u00e4ume (bhd>=7)  als "ndh"
           #sofern in der Klassifizierung solche vorkommen!
           x.ndh <- try(stats::aggregate(baeume.ba$nha*ifelse(baeume.ba$bhd>=7,1,0),
               by=list(baeume.ba$tnr),sum)$x, silent=T )
@@ -165,7 +165,7 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
           xy <- cbind(xy,x.ndh)
           names(xy)[7] <- "ndh"
 
-          #Anzahl Traktecken je Trakt (Wald- und Nichtwald) hinzufügen
+          #Anzahl Traktecken je Trakt (Wald- und Nichtwald) hinzuf\u00fcgen
           #xy <- merge(xy,trakte[TRUE, c("tnr", "m"),by=c("tnr")]
           #Anzahl Trakte (i.S. von PSU) im Teilkollektiv ijk
           nT.bagr.akl.dkl[i,j,k] <- length(xy[,1])
@@ -176,43 +176,43 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2a <-
 
           for (l in 1:6)
           {
-            #Zielgrößen Y {BAF,V,VHb,B,N,NDh)
+            #Zielgr\u00f6\u00dfen Y {BAF,V,VHb,B,N,NDh)
             R.list <- r.variance.fun(cbind(xy$m,xy[,(2+l)]),nT)
             #Total
             Y.bagr.akl.dkl[l,1,i,j,k] <- R.list$R.xy*A
             #sum(xy[,(1+l)])/sum(x)*A *ifelse(l==1,lk,1)
-                                      #Lückenkorrektur bei BAF bereits erfolgt
-            #Zugehöriger Stichprobenfehler
+                                      #L\u00fcckenkorrektur bei BAF bereits erfolgt
+            #Zugeh\u00f6riger Stichprobenfehler
             Y.bagr.akl.dkl[l,2,i,j,k] <- sqrt(R.list$V.R.xy)*A
 
-            #Ratio-Schätzer (Vha, VHbha, Bha, Nha, NDhha) 5!
-            if (l > 1)    #Hinweis: l+1 = Spalte der Zielgröße in xy; Spalte 2
-                          #ist BA-Fläche (HB) als Bezugsfläche (= xy$x)
+            #Ratio-Sch\u00e4tzer (Vha, VHbha, Bha, Nha, NDhha) 5!
+            if (l > 1)    #Hinweis: l+1 = Spalte der Zielgr\u00f6\u00dfe in xy; Spalte 2
+                          #ist BA-Fl\u00e4che (HB) als Bezugsfl\u00e4che (= xy$x)
             {
-              #Bei Ha-Vorrat Hauptbestand muss Flächenbezug die Fläche OHNE
-              #Lückenkorrektur sein, daher wird durch <lk>idiert
-              #TODO prüfen kä/17.04.2014
-              lk.c <- ifelse(l==3,lk,1) #lk.c macht bei HB-Vorrat Lückenkorrektur
-              #rückgängig
+              #Bei Ha-Vorrat Hauptbestand muss Fl\u00e4chenbezug die Fl\u00e4che OHNE
+              #L\u00fcckenkorrektur sein, daher wird durch <lk>idiert
+              #TODO pr\u00fcfen k\u00e4/17.04.2014
+              lk.c <- ifelse(l==3,lk,1) #lk.c macht bei HB-Vorrat L\u00fcckenkorrektur
+              #r\u00fcckg\u00e4ngig
               R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(2+l)]),nT)
               l.ha <- l-1
               Yha.bagr.akl.dkl[l.ha,1,i,j,k] <- R.list$R.xy
               #              Y.bagr.akl.dkl[l,1,i,j,k]/Y.bagr.akl.dkl[1,1,i,j,k]
               Yha.bagr.akl.dkl[l.ha,2,i,j,k] <- sqrt(R.list$V.R.xy)
             }#End if
-          }#End for l (Zielgrößen)
+          }#End for l (Zielgr\u00f6\u00dfen)
         }#End if ... else
       }#End for k (D-Klassen)
     }#End for j (A-Klassen)
   }#End for i (BAGR)
   #-----------------------
-  #Tabelle für BA-Gruppen
+  #Tabelle f\u00fcr BA-Gruppen
 
   #AKL-Labels
-  akl.lab <- akl.lab.fun(A.klass,A.k) #kä/16.07.14
+  akl.lab <- akl.lab.fun(A.klass,A.k) #k\u00e4/16.07.14
   #-------------------------
-  #DKL-Labels  kä/16.07.2014
-  dkl.lab <- dkl.lab.fun(D.klass,D.k) #kä/16.07.14
+  #DKL-Labels  k\u00e4/16.07.2014
+  dkl.lab <- dkl.lab.fun(D.klass,D.k) #k\u00e4/16.07.14
 
   #Dokumentation der Grunddaten und Auswertungsdatum der HR
   a <- regexpr("/",baeume$bemerk[baeume$stp==0][1],fixed=T)

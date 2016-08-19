@@ -550,7 +550,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -581,7 +581,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -612,7 +612,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -643,7 +643,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -674,7 +674,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -705,7 +705,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -736,7 +736,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -767,7 +767,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -798,7 +798,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -829,7 +829,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -860,7 +860,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -891,7 +891,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -921,7 +921,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -951,7 +951,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -981,7 +981,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1012,7 +1012,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1043,7 +1043,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1074,7 +1074,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1105,7 +1105,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1136,7 +1136,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1167,7 +1167,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1198,7 +1198,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1229,7 +1229,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1260,7 +1260,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1291,7 +1291,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1322,7 +1322,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1353,7 +1353,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1384,7 +1384,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1415,7 +1415,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1446,7 +1446,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1477,7 +1477,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1508,7 +1508,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1539,7 +1539,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1570,7 +1570,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1601,7 +1601,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1632,7 +1632,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1663,7 +1663,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1694,7 +1694,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1725,7 +1725,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1755,7 +1755,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1785,7 +1785,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1815,7 +1815,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1845,7 +1845,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1875,7 +1875,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1905,7 +1905,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1935,7 +1935,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1965,7 +1965,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -1995,7 +1995,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -2025,7 +2025,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -2055,7 +2055,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -2085,7 +2085,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -2116,7 +2116,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -2147,7 +2147,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
@@ -2178,7 +2178,7 @@
 #'    \item{se.LK}{Standardfehler der Lueckenkorrektur}
 #'    \item{Attribute1}{Vektor mit berechneten absoluten Attributnamen}
 #'    \item{Attribute2}{vektor mit berechneten pro ha Attributname}
-#'    \item{Größen}{Vektor mit berechneten Groessen}
+#'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
 #'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 

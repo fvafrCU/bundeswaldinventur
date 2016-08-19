@@ -15,7 +15,7 @@
 #' @param kreiscode Code fuer den Landkreis.   kreiscode
 #' @return Liste mit folgenden Komponenten: \strong{Kreis} (Label fuer den 
 #'  Kreis), \strong{KreisCode} (\code{kreiscode}), 
-#'  \strong{Kreisfläche_gesamt_ha} (Groesse des Kreises in ha), 
+#'  \strong{Kreisflaeche_gesamt_ha} (Groesse des Kreises in ha), 
 #'  \strong{Waldanteil} (waldanteil des Kreises an den verschiedenen BWIs),
 #'  \strong{Waldflaeche} (Waldflaeche und Standardfehler fuer verschiedene 
 #'  Eigentumsklassen und BWIs), \strong{Waldfl_Proz} (Waldflaeche in Prozent und 
@@ -35,7 +35,7 @@ flaechen.kreis.fun.1 <- function(kreiscode,
   #End Input Check
     krs.list <- unique(kreise$codeKreis)
   i <- as.numeric(rownames(kreise[kreise$codeKreis==kreiscode,]))
-  #Waldfläche insgesamt
+  #Waldfl\u00e4che insgesamt
   (wfl.3 <-
         fl.stratum.fun(list(Wa=c(3,4,5),Kreis=krs.list[i]),ecken.3,trakte.3,A))
   (wfl.2 <-
@@ -124,22 +124,22 @@ flaechen.kreis.fun.1 <- function(kreiscode,
                       ecken.1,trakte.1,A.12))
 
   #--------------------
-  #Eigentumsart Prozent der Waldfläche  nur für aktuelle BWi 3 2012
+  #Eigentumsart Prozent der Waldfl\u00e4che  nur f\u00fcr aktuelle BWi 3 2012
   #Staatswald (mit Bundeswald)
   fl.ant.stw.3 <-
   fl.proz.stratum.fun(list(Wa=c(3:5),Kreis=krs.list[i]),list(EigArt=c("BW","StW")),
                       ecken.3)
-  #Körperschaftswald
+  #K\u00f6rperschaftswald
   fl.ant.kw.3 <-
   fl.proz.stratum.fun(list(Wa=c(3:5),Kreis=krs.list[i]),list(EigArt="KW"),ecken.3)
-  #Körperschaftswald
+  #K\u00f6rperschaftswald
   fl.ant.oew.3 <-
   fl.proz.stratum.fun(list(Wa=c(3:5),Kreis=krs.list[i]),
                           list(EigArt=c("BW","StW","KW")),ecken.3)
   #Privatwald
   fl.ant.pw.3 <-
   fl.proz.stratum.fun(list(Wa=c(3:5),Kreis=krs.list[i]),list(EigArt="PW"),ecken.3)
-  #Groß-PW
+  #Gro\u00df-PW
   fl.ant.gpw.3 <-
   fl.proz.stratum.fun(list(Wa=c(3:5),Kreis=krs.list[i]),list(EigArt2="GPW"),ecken.3)
   #Mittlerer PW
@@ -149,7 +149,7 @@ flaechen.kreis.fun.1 <- function(kreiscode,
   fl.ant.kpw.3 <-
   fl.proz.stratum.fun(list(Wa=c(3:5),Kreis=krs.list[i]),list(EigArt2="KPW"),ecken.3)
 
-  #begehbare Holzbodenfläche
+  #begehbare Holzbodenfl\u00e4che
   (bhbf.3 <- fl.stratum.fun(list(Wa=c(3,5),Begehbar=1,Kreis=krs.list[i]),
                       ecken.3,trakte.3,A))
   (bhbf.stw.3 <- fl.stratum.fun(list(Wa=c(3,5),Begehbar=1,Kreis=krs.list[i],
@@ -236,7 +236,7 @@ flaechen.stratum.fun.1 <- function(auswahl){
   #Output check
   auswahl.o <- auswahl
   auswahl.oo <- auswahl
-  #Waldfläche insgesamt
+  #Waldfl\u00e4che insgesamt
   auswahl$Wa <- c(3:5)
   (wfl.3 <-
         fl.stratum.fun(auswahl,ecken.3,trakte.3,A))
@@ -328,23 +328,23 @@ flaechen.stratum.fun.1 <- function(auswahl){
         fl.stratum.fun(auswahl, ecken.1,trakte.1,A.12))
 
   #--------------------
-  #Eigentumsart Prozent der Waldfläche  nur für aktuelle BWI 3 2012
+  #Eigentumsart Prozent der Waldfl\u00e4che  nur f\u00fcr aktuelle BWI 3 2012
   #Staatswald (mit Bundeswald)
 
   auswahl.o$Wa <- c(3:5)
   fl.ant.stw.3 <-
   fl.proz.stratum.fun(auswahl.o,list(EigArt=c("BW","StW")),
                       ecken.3)
-  #Körperschaftswald
+  #K\u00f6rperschaftswald
   fl.ant.kw.3 <-
   fl.proz.stratum.fun(auswahl.o,list(EigArt="KW"),ecken.3)
-  #Körperschaftswald
+  #K\u00f6rperschaftswald
   fl.ant.oew.3 <-
   fl.proz.stratum.fun(auswahl.o,list(EigArt=c("BW","StW","KW")),ecken.3)
   #Privatwald
   fl.ant.pw.3 <-
   fl.proz.stratum.fun(auswahl.o,list(EigArt="PW"),ecken.3)
-  #Groß-PW
+  #Gro\u00df-PW
   fl.ant.gpw.3 <-
   fl.proz.stratum.fun(auswahl.o,list(EigArt2="GPW"),ecken.3)
   #Mittlerer PW
@@ -354,7 +354,7 @@ flaechen.stratum.fun.1 <- function(auswahl){
   fl.ant.kpw.3 <-
   fl.proz.stratum.fun(auswahl.o,list(EigArt2="KPW"),ecken.3)
 
-  #begehbare Holzbodenfläche
+  #begehbare Holzbodenfl\u00e4che
 
   auswahl.o$Wa=c(3,5)
   auswahl.o$Begehbar=1

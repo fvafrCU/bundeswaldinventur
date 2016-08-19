@@ -119,13 +119,13 @@ german_number <- function(x, ...) {
 #' @return Tex code for german umlaut.
 #' @export
 tex_umlauts <- function(string) {
-    s <- gsub("ä", '\\\\"a{}', string)
-    s <- gsub("Ä", '\\\\"A{}', s)
-    s <- gsub("ö", '\\\\"o{}', s)
-    s <- gsub("Ö", '\\\\"O{}', s)
-    s <- gsub("ü", '\\\\"u{}', s)
-    s <- gsub("Ü", '\\\\"U{}', s)
-    s <- gsub("ß", '\\\\"s{}', s)
+    s <- gsub("\u00e4", '\\\\"a{}', string)
+    s <- gsub("\u00c4", '\\\\"A{}', s)
+    s <- gsub("\u00f6", '\\\\"o{}', s)
+    s <- gsub("\u00d6", '\\\\"O{}', s)
+    s <- gsub("\u00fc", '\\\\"u{}', s)
+    s <- gsub("\u00dc", '\\\\"U{}', s)
+    s <- gsub("\u00df", '\\\\"s{}', s)
     return(s)
 }
 
@@ -138,13 +138,13 @@ tex_umlauts <- function(string) {
 #' @return ASCII code for german umlaut.
 #' @export
 ascii_umlauts <- function(string) {
-    s <- gsub("ä", 'ae', string)
-    s <- gsub("Ä", 'Ae', s)
-    s <- gsub("ö", 'oe', s)
-    s <- gsub("Ö", 'Oe', s)
-    s <- gsub("ü", 'ue', s)
-    s <- gsub("Ü", 'Ue', s)
-    s <- gsub("ß", 'ss', s)
+    s <- gsub("\u00e4", 'ae', string)
+    s <- gsub("\u00c4", 'Ae', s)
+    s <- gsub("\u00f6", 'oe', s)
+    s <- gsub("\u00d6", 'Oe', s)
+    s <- gsub("\u00fc", 'ue', s)
+    s <- gsub("\u00dc", 'Ue', s)
+    s <- gsub("\u00df", 'ss', s)
     return(s)
 }
 
