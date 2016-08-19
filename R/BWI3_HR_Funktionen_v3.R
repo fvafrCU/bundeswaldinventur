@@ -4131,8 +4131,9 @@ fba.stratum.fun <- function(fba,fba.tab,auswahl,ecken,trakte,A){
 #' @param ecken Traktecken-Merkmale.
 #' @param trakte Trakt-Kennwerte (m, m_HB, m_bHB, m_Wa).
 #' @param A Flaeche des Inventurgebietes in ha.
+#' @param trakte.3 A data.frame (see \code{\link{trakte.3}} 
 #' @return Liste mit der Flaeche und dem Standardfehler.
-fl.stratum.fun <- function(auswahl,ecken,trakte,A
+fl.stratum.fun <- function(auswahl,ecken,trakte,A,
                                  trakte.3 = get_data("trakte.3") # TODO: see below.
                            ){
   te <- stratum.fun(auswahl,ecken)

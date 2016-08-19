@@ -236,7 +236,7 @@ get_label_for_abbreviation <- function(abbreviation,
            switch(label_type,
                   'axis_label' = get_axis_label_for_abbreviation(abbreviation),
                   'text_label' =  get_text_label_for_abbreviation(abbreviation),
-                  stop(paste('unkown name', name))
+                  stop(paste('unkown name', abbreviation))
                   )
            )
 }
