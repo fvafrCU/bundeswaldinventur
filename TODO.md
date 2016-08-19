@@ -4,3 +4,5 @@
 * Write data input checks to make sure BWI4 input data will conform to the tables in BWI3.
 * add #' @export to all of Gerald's functions.
 * add #' @examples to all of Gerald's functions.
+* There's loads of undocumented functions. devtools::check() does not seem to
+  complain. Why?

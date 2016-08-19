@@ -10,5 +10,13 @@ Depends:
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: graphics, stats, utils, reshape2, gplots, xtable, ggplot2, checkmate
+Imports: graphics, 
+         stats, 
+         utils, 
+         reshape2, 
+         gplots, 
+         xtable, 
+         ggplot2, 
+         checkmate,
+         scales
 RoxygenNote: 5.0.1

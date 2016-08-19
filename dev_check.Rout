@@ -8,7 +8,7 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
-Writing VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd
+Writing fl.stratum.fun.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -68,25 +68,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * checking S3 generic/method consistency ... OK
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
-* checking R code for possible problems ... NOTE
-fl.stratum.fun: no visible binding for global variable ‘trakte.3’
-get_label_for_abbreviation: no visible binding for global variable
-  ‘name’
-plot_by_group: no visible binding for global variable ‘prediction’
-plot_by_group: no visible binding for global variable ‘standard_error’
-plot_by_group: no visible binding for global variable ‘comma’
-plot_species_attribute_group: no visible binding for global variable
-  ‘prediction’
-plot_species_attribute_group: no visible binding for global variable
-  ‘group’
-plot_species_attribute_group: no visible binding for global variable
-  ‘bwi’
-plot_species_attribute_group: no visible binding for global variable
-  ‘standard_error’
-plot_species_attribute_group: no visible binding for global variable
-  ‘comma’
-Undefined global functions or variables:
-  bwi comma group name prediction standard_error trakte.3
+* checking R code for possible problems ... OK
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -102,34 +84,14 @@ Undefined global functions or variables:
 * checking examples ... OK
 * DONE
 
-Status: 2 NOTEs
+Status: 1 NOTE
 See
 for details.
 
 
 R CMD check results
-0 errors | 0 warnings | 2 notes
+0 errors | 0 warnings | 1 note 
 checking installed package size ... NOTE
   installed size is 33.3Mb
   sub-directories of 1Mb or more:
     data  32.8Mb
-
-checking R code for possible problems ... NOTE
-fl.stratum.fun: no visible binding for global variable ‘trakte.3’
-get_label_for_abbreviation: no visible binding for global variable
-  ‘name’
-plot_by_group: no visible binding for global variable ‘prediction’
-plot_by_group: no visible binding for global variable ‘standard_error’
-plot_by_group: no visible binding for global variable ‘comma’
-plot_species_attribute_group: no visible binding for global variable
-  ‘prediction’
-plot_species_attribute_group: no visible binding for global variable
-  ‘group’
-plot_species_attribute_group: no visible binding for global variable
-  ‘bwi’
-plot_species_attribute_group: no visible binding for global variable
-  ‘standard_error’
-plot_species_attribute_group: no visible binding for global variable
-  ‘comma’
-Undefined global functions or variables:
-  bwi comma group name prediction standard_error trakte.3

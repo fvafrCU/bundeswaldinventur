@@ -90,14 +90,14 @@ melt_species_attribute_group <- function(list, species, abbreviation, group) {
 plot_species_attribute_group <- function(data) {
     return(
 	   ggplot2::ggplot(data = data,
-		  ggplot2::aes(y = prediction,
-		      x = group,
-		      fill = factor(bwi)
+		  ggplot2::aes_string(y = "prediction",
+		      x = "group",
+		      fill = factor("bwi")
 		      ), 
-		  group = group) +
+		  group = "group") +
 	   ggplot2::geom_bar(stat = "identity", position =  ggplot2::position_dodge()) +
-	   ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
-			     ymax = prediction + standard_error
+	   ggplot2::geom_errorbar(ggplot2::aes(ymin = "prediction" - "standard_error",
+			     ymax = "prediction" + "standard_error"
 			     ),
 			 width = .3,
 			 position = ggplot2::position_dodge(width=0.9)
@@ -106,7 +106,7 @@ plot_species_attribute_group <- function(data) {
 	   ggplot2::theme(axis.text.x  = ggplot2::element_text(size = 8)) +
 	   ggplot2::xlab(get_label_for_abbreviation(as.character(unique(data$grouping_variable)),
 					  "text_label")) + 
-	   ggplot2::scale_y_continuous(labels = comma) +
+	   ggplot2::scale_y_continuous(labels = scales::comma) +
 	   ggplot2::ylab(get_label_for_abbreviation(as.character(unique(data$abbreviation)),
 					  "axis_label")) + 
 	   ggplot2::ggtitle(paste("Baumartengruppe", unique(data$species), "im" ,
@@ -179,14 +179,14 @@ plot_by_group <- function(data, subs, x = "Baumartengruppe") {
 			     ), 
 		  group = deparse(substitute(x))) +
 	   ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-	   ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
-			     ymax = prediction + standard_error
+	   ggplot2::geom_errorbar(ggplot2::aes_string(ymin = "prediction" - "standard_error",
+			     ymax = "prediction" + "standard_error"
 			     ),
 			 width = .3,
 			 position = ggplot2::position_dodge(width=0.9)
 			 ) +
 	   ggplot2::scale_fill_manual(values = COLORS_BWI, name = "BWI") +
-	   ggplot2::scale_y_continuous(labels = comma) +
+	   ggplot2::scale_y_continuous(labels = scales::comma) +
 	   ggplot2::xlab(x) +
 	   ggplot2::ylab(get_label_for_abbreviation(unique(data$abbreviation), "axis_label")) +
 	   ggplot2::ggtitle(gsub("[^A-z ]","", subs))
