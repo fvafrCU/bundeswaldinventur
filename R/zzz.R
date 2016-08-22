@@ -1,5 +1,3 @@
-
-
 .onLoad <- function(libname, pkgname) {
   op <- options()
   op.package <- list(
