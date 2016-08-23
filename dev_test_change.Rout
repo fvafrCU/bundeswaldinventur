@@ -1,0 +1,14 @@
+Loading bundeswaldinventur
+Loading required package: testthat
+Loading required package: gplots
+
+Attaching package: ‘gplots’
+
+The following object is masked from ‘package:stats’:
+
+    lowess
+
+Testing bundeswaldinventur
+deadwood.R: ....
+tree_species_shares.R: ...
+

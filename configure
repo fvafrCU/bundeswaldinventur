@@ -3,33 +3,51 @@
 # And it's just a little helper script, it's not part of the package.
 # I can't keep the R CMD stuff, and I'm used  to 'make', so I wrap R CMDs into
 # make.
-temp_file1=$(tempfile)
-temp_file2=$(tempfile)
+temp_file=$(tempfile)
 TAB="$(printf '\t')"
 DOLLAR=$
 rpackage=$(basename $(pwd)) 
 rpversion=$(grep 'Version:' DESCRIPTION |cut -f2 -d' ')
+
+test_changes_file=tmp_test_change.R
+
+
+cat > $test_changes_file <<\EOF
+git_status <- system("git status --porcelain", intern = TRUE)
+modified_codes <- basename(sub(" M ", "", grep(" M R/", git_status , value = TRUE)))
+pattern <- paste0("\\.*", sub(".R", "", modified_codes), collapse = '|')
+devtools::test(filter = pattern)
+EOF
 
 cat > Makefile <<EOF
 # R CMD header
 rpackage=${rpackage}
 rpversion=${rpversion}
 roxy_code=tmp_roxy.r
-
-EOF
-
-cat >> Makefile <<EOF
-# devtools
-dev_all: dev_test dev_check
-dev_test:
-${TAB}Rscript --vanilla -e 'devtools::test()' >  $temp_file1 2>&1; \\
-${TAB}sed -n -e '/^DONE.*/q;p' < $temp_file1 > dev_test.Rout 
-dev_check:
-${TAB}Rscript --vanilla -e 'devtools::check()' > $temp_file2 2>&1; \\
-${TAB}grep -v ".*'/" $temp_file2 | grep -v ".*/tmp/R.*" > dev_check.Rout 
+temp_file=${temp_file}
+test_changes_file=${test_changes_file}
 EOF
 
 cat >> Makefile <<\EOF
+# devtools
+dev_all: dev_test dev_check
+dev: dev_test_change dev_check
+dev_test:
+	rm ${temp_file} || TRUE; \
+	Rscript --vanilla -e 'devtools::test()' >  ${temp_file} 2>&1; \
+	sed -n -e '/^DONE.*/q;p' < ${temp_file} > dev_test.Rout 
+dev_test_change:
+	rm ${temp_file} || TRUE; \
+	Rscript --vanilla ${test_changes_file} >  ${temp_file} 2>&1; \
+	sed -n -e '/^DONE.*/q;p' < ${temp_file} > dev_test_change.Rout 
+dev_check:
+	rm ${temp_file} || TRUE; \
+	Rscript --vanilla -e 'devtools::check()' > ${temp_file} 2>&1; \
+	grep -v ".*'/" ${temp_file} | grep -v ".*/tmp/R.*" > dev_check.Rout 
+EOF
+
+cat >> Makefile <<\EOF
+# R CMD 
 craninstall: crancheck
 	R --vanilla CMD INSTALL  ${rpackage}_${rpversion}.tar.gz
 crancheck: check 
