@@ -9,6 +9,10 @@ ls -1 R > $tfb
 sdiff $tfa $tfb
 file=${1:-R/bits_and_pieces.R}
 ffile=../hochrechnungen/HR_Funktionen/BWI3/$file
+if  [ ! -e $ffile ]
+then
+    ffile=${ffile%.R}.r
+fi
 file $ffile
 diffuse $file $ffile
 sed -e "s/[[:blank:]]\(assert.*(.*)\)/ checkmate::\1/g" < $file > $tfb
