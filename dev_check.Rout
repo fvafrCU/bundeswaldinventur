@@ -8,10 +8,7 @@ The following object is masked from ‘package:stats’:
 
     lowess
 
-Writing Header.Rd
-Writing tree_species_percent.Rd
-Writing melt_tree_species_percent.Rd
-Writing cast_tree_species_percent.Rd
+Writing NAMESPACE
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic

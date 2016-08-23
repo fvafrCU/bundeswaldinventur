@@ -1,14 +1,3 @@
-#' tree_species_shares.R
-#'
-#' reproduce tables 6 through 10 of
-#' Landesspezifische_Auswertung_Bundeswaldinventur_3_Ba_Wue_2014_v1.docx
-#'
-#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>, Franziska Berg
-#' @section Version: $Id: fec000cba1ad6b39cf9bca1e63e0b1babb7e8728 $
-#' @docType data 
-#' @name Header
-NULL 
-
 #' Creates vektor with percentage values for tree species
 #' 
 #' Function selects area for each tree from the statistical list and calculates 
@@ -16,6 +5,7 @@ NULL
 #' 
 #' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>, Franziska Berg
 #' @param statistics_list Name of the list holding the statistical data. 
+#' @export 
 #' @return vektor with tree species areas in percent.
 tree_species_percent <- function(statistics_list){
   checkmate::assertList(statistics_list)
@@ -34,6 +24,7 @@ tree_species_percent <- function(statistics_list){
 #' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>, Franziska Berg
 #' @param statistics_list String which defines the list holding the statistical 
 #'  data.
+#' @export 
 #' @return Data Frame with information about relative tree species area for each 
 #'  species. Information for all three BWI's.
 melt_tree_species_percent <- function(statistics_list) {
@@ -91,6 +82,7 @@ melt_tree_species_percent <- function(statistics_list) {
 #' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>, Franziska Berg
 #' @param statistics_list String which defines the list holding the statistical 
 #'  data.
+#' @export 
 #' @return Data Frame with information about relative tree species area for each 
 #'  species. Information for all three BWI's.
 cast_tree_species_percent <- function(statistics_list) {
