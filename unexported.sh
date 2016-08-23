@@ -1,4 +1,4 @@
-for file in $( find R/ -type f -print)
+for file in $(find R/ -type f -print | sort)
 do
     num_functions=$(grep "function([^.]" $file | wc -l)
     num_exported=$(grep -F "#' @export" $file | wc -l)
