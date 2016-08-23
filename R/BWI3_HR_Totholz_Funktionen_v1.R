@@ -2,57 +2,77 @@
 #BWI 3; Funktionen zur Totholz-Auswertung
 #k\u00e4/17.02.2014
 #-------------------------------------------------------------------------------
-#Maximalvariante
-#-------------------------------------------------------------------------------
+#' Funktion aggregiert Totholz-Volumen (Maximalvariante)
+#' 
+#' Funktion wertet nach Totholz-BA-Gruppen \code{Tbagr}, Totholzart \code{Tart} 
+#' und Totholzzersetzungsgrad \code{Tzg} im Stratum aus. Verallgemeinerte 
+#' Version fuer die Auswertung unterschiedlicher Inventurzeitpunkte, also BWI 2 
+#' und BWI 3.
+#' 
+#' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
+#' @section version: 1.0 (kä/17.02.2014)
+#' @section Hinweis: Auf Grund verschiedener Inventurzeitpunkte werden die 
+#'  Datentabellen \code{totholz}, die Eckenmerkmale \code{ecken} und die 
+#'  \code{trakte} als Argumente uebergeben. \cr
+#'  "Harmonisieren" der Totholzaufnahme BWI 2 und 3 -> Basis-Attribute (BWI 2): 
+#'  <TBAGr>, <TArt>, <TZg>, <TVol>, <Dm>, <Lge>, <THf>. Neu bei der BWI 3 <Tbd>: 
+#'  Durchmesser am staerkeren Ende bzw. BHD und <Tsd>: Durchmesser am duennen 
+#'  Ende (nur bei Tart 1 und 13). Fuer die Klassifikation relevant ist bei 
+#'  Bruchstuecken der Mitten-Durchmesser, bei Stuecken mit Wurzelanlauf (stehend 
+#'  oder liegend) ist es der BHD. Mittendurchmesser wird berechnet, wenn 
+#'  Tsd > 0, aus Volumen und Laenge: <Dm> = sqrt(tvol/tl/pi)*200; die 
+#'  Bezeichnung <Dm> entspricht auch derjenigen der BWI 2.Wegen der 
+#'  Einheitlichkeit mit BWI 2 wird der Bezeichner <tl> in <lge> umgewandelt. \cr 
+#'  Vergleichbarkeit mit BWI 2 -> Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) 
+#'  Oder ([Tart]<>4 Und [Tbd]>=20). \cr
+#'  Um Konflikte mit unterschiedlicher Gross-/Kleinschreibung bei den 
+#'  Attributnamen zu vermeiden, werden innerhalb dieser Funktion alle 
+#'  Attributnamen auf Kleinschreibung umgestellt.
+#' @param totholz Dataframe-Tabelle mit Totholz-Informationen. Die Tabele muss 
+#'  mindestens folgende Attribute enthalten: Tnr, Enr, Nr, Tbagr, Tart, Tzg, 
+#'  Tbd, Tsd,  Tl, Tvol, Anz, Thf. Hinweis: BWI3 -> Durchmesser: Tbd, Tsd; 
+#'  Laenge: Tl. BWI2 -> Durchmesser: Dm; Laenge: Lge.
+#' @param ecken Dataframe-Tabelle mit Eckenmerkmalen.
+#' @param trakte Dataframe-tabelle mit Traktmerkmalen.
+#' @param bwi Angabe zu BWI- Nummer (2 oder 3), um mit denselben Algorithmen 
+#'  fuer beide Zustaende arbeiten zu koennen.
+#' @param A Flaeche in ha des Inventurgebietes zum jeweiligen Inventurzeitpunkt 
+#'  (sollte konstant sein).
+#' @param D.klass Liste mit den Klassifizierungsparametern fuer Durchmesser z.B. 
+#'  list(D.unt=0, D.ob=70, D.b=10, Ndh=T), Ndh (Nicht-Derbholz) = T bedeutet, 
+#'  dass zusaetzlich Nicht-Dh (unter 7 cm) ausgewiesen wird, sonst gilt 
+#'  \code{D.unt} als unterste Schwelle.
+#' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten 
+#'  enthaelt, anhand derer die Auswahl fuer das Stratum ueber die Funktion 
+#'  \code{\link{stratum.fun}} erfolgt. Die Funktion benoetigt des weiteren die 
+#'  Tabelle <bacode>. Bsp.: list(Wa=c(3,5), Begehbar=1).
+#' @export
+#' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit 
+#'  Erstellungsdatum und version.totholz.b), \strong{Stratum} (\code{auswahl}), 
+#'  \strong{nTE} (Anzahl der Ecken im Stratum), \strong{HBF} (Holzbodenflaeche), 
+#'  \strong{se.HBF} (Standardfehler der Holzbodenflaeche), \strong{BAGR.Liste} 
+#'  (Vektor mit Baumartengruppen), \strong{DKL} (Labels der Durchmesserklassen), 
+#'  \strong{T.ThVN.Bagr.Tart.Tzg.Dkl} (Array mit Volumenwerten, Gesamtanzahl und 
+#'  Standardfehler nach Baumartengruppen, Totholzart, Zersetzungsgrad und 
+#'  Durchmesserklassen), \strong{ThVN.ha.Bagr.Tart.Tzg.Dkl} (Array mit 
+#'  Volumenwerten, Gesamtanzahl je ha und Standardfehler nach Baumartengruppen, 
+#'  Totholzart, Zersetzungsgrad und Durchmesserklassen), 
+#'  \strong{nT.Bagr.Tart.Tzg.Dkl} (Array mit Trakteckenanzahl nach 
+#'  Baumartengruppen, Totholzart, Zersetzungsgrad und Durchmesserklassen)
 Totholz.bagr.art.zg.stratum.fun <-
-          function(totholz,ecken,trakte,bwi,A,D.klass,auswahl)
+          function(totholz,ecken,trakte,bwi,A,D.klass,auswahl) {
 
-#-------------------------------------------------------------------------------
-#Funktion wertet nach Totholz-BA-Gruppen (Tbagr>, Totholzart <Tart> und
-#Totholzzersetzungsgrad <Tzg> im Stratum aus.
-#Verallgemeinerte Version f\u00fcr die Auswertung unterschiedlicher Inventurzeit-
-#punkte, also BWI 2, BWI 3:
-#daher werden die Datentabellen <totholz>, die Eckenmerkmale <ecken> und die
-#<trakte> als Argumente \u00fcbergeben.
-#Die Tabelle <totholz> muss mindestens die Attribute
-#Tnr, Enr, Nr, Tbagr, Tart, Tzg, Tbd, Tsd,  Tl, Tvol, Anz, Thf enthalten;
-#Hinweis BWI 3: Durchmesser: Tbd Tsd; L\u00e4nge: Tl; BWI 2: Dm, Lge
-#---------------------
-#"Harmonisieren" der Totholzaufnahme BWI 2 und 3
-#Basis-Attribute (BWI 2)
-#<TBAGr>, <TArt>, <TZg>, <TVol>, <Dm>, <Lge>, <THf>
-#neu bei BWI 3
-#<Tbd>: Durchmesser am st\u00e4rkeren Ende bzw. BHD
-#<Tsd>: Durchmesser am d\u00fcnnen Ende (nur bei Tart 1 und 13),
-#f\u00fcr Klassifikation relevant ist bei Bruchst\u00fccken der Mitten-Durchmesser,
-#bei St\u00fccken mit Wurzelanlauf (stehend oder liegend) ist es der BHD
-#Mittendurchmesser berechnen, wenn Tsd > 0, aus Volumen und l\u00e4nge
-#<Dm> = sqrt(tvol/tl/pi)*200; die Bezeichnung <Dm> entspricht auch derjenigen
-#der BWI 2;
-#Wegen der Einheitlichkeit mit BWI 2wird der Bezeichner <tl> in <lge>
-#umgewandelt.
-
-#Vergleichbarkeit mit BWI 2
-#Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
-#---------------
-
-#<bwi> (2 oder 3): um mit denselben Algorithmen f\u00fcr beide Zust\u00e4nde arbeiten zu
-#k\u00f6nnen
-#<A> ist die Fl\u00e4che in ha des Inventurgebiets zum jeweiligen Inventurzeitpunkt
-#(sollte eigentlich konstant sein)
-#<D.klass>: Liste mit den Klassifizierungsparametern f\u00fcr Durchmesser
-#z.B. list(D.unt=0,D.ob=70,D.b=10,Ndh=T), Ndh (Nicht-Derbholz) = T bedeutet,
-#dass zus\u00e4tzlich Nicht-Dh (unter 7 cm) ausgewiesen wird, sonst gilt D.unt als
-#unterste Schwelle.
-#<auswahl> definiert das auszuwertende Stratum entsprechend Funktion <stratum.fun>
-#Die Funktion ben\u00f6tigt desweiteren die Tabelle <bacode>;
-
-#Version 1.0 (k\u00e4/17.02.2014)
-#Hinweis: um Konfliktze mit unterschiedlicher Gro\u00df-/Kleinschreibung bei den
-#Attributnamen zu vermeiden, werden innerhalb dieser Funktion alle Attribut.
-#Namen auf Kleinschreibung umgestellt
-#-------------------------------------------------------------------------------
-{
+  checkmate::assertDataFrame(totholz, col.names = "named")
+  columns <- tolower(names(totholz))
+  attributes <- c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tbd", "tsd", 
+                  "tl", "tvol", "thf")
+  checkmate::assertSubset(attributes, columns)
+  checkmate::assertDataFrame(ecken, col.names = "named")
+  checkmate::assertDataFrame(trakte, col.names = "named")
+  checkmate::assertInt(bwi, lower = 2, upper = 3)
+  checkmate::assertNumber(A, lower = 0)
+  checkmate::assertList(D.klass, min.len = 1, names = "named")
+  checkmate::assertList(auswahl, min.len = 1, names = "named")
   stratum <- stratum.fun(auswahl,ecken)
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
@@ -222,59 +242,85 @@ Totholz.bagr.art.zg.stratum.fun <-
 }#End <Toth.Tbagr.Tart.Tzg.stratum.fun>
 
 #-------------------------------------------------------------------------------
+#' Funktion aggregiert Totholz-Volumen nach Totholzart
+#'
+#' Funktion wertet nach  Totholzart <Tart>, Aufnahmekriterium <krit> [2,3] im 
+#' Stratum \code{auswahl} aus. Bezueglich der Totholz-Aufnahmeschwellen gibt es 
+#' 2 Varianten: \cr 
+#' (1) die BWI 2-Kriterien mit Schwellendurchmessern: 20 cm am schwaecheren Ende 
+#' bei liegenden Stuecken  bzw. BHD sowie 60 cm Schnittflaechendurchmesser bei 
+#' Stoecken \cr 
+#' (2) die BWI 3-Kriterien mit Schwellendurchmessern: 10 cm am schwaecheren Ende 
+#' bei liegenden Stuecken  bzw. BHD  20 cm Schnittflaechendurchmesser bei 
+#' Stoecken.
+#'
+#' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
+#' @section Version: 1.0 (kä/17.02.2014)
+#' @section Hinweis: BWI 2-Kriterien bei BWI 3-Aufnahme: Wenn(([Tart]=4 Und 
+#'  ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20) \cr
+#'  Verallgemeinerte Version fuer die Auswertung unterschiedlicher 
+#'  Inventurzeitpunkte, also BWI 2, BWI 3: daher werden die Datentabellen 
+#'  \code{totholz}, die Eckenmerkmale \code{ecken} und die \code{trakte} als 
+#'  Argumente uebergeben. \cr
+#'  Um Konflikte mit unterschiedlicher Gross-/Kleinschreibung bei den 
+#'  Attributnamen zu vermeiden, werden innerhalb dieser Funktion alle 
+#'  Attributnamen auf Kleinschreibung umgestellt.
+#' @section TODO: "harmonisieren" -> Basis-Attribute (BWI 2): <TBAGr>, <TArt>, 
+#'  <TZg>, <TVol>, <Dm>, <Lge>, <THf>. Neu bei BWI 3: <Tbd> Durchmesser am 
+#'  staerkeren Ende bzw. BHD und <Tsd> Durchmesser am duennen Ende (nur bei 
+#'  Tart 1 und 13). Fuer Klassifikation relevant ist bei Bruchstuecken der 
+#'  Mitten-Durchmesser, bei Stuecken mit Wurzelanlauf (stehend oder liegend) ist 
+#'  es der BHD. Mittendurchmesser wird berechnet, wenn Tsd > 0, aus Volumen und 
+#'  Laenge. <Dm> = sqrt(tvol/tl/pi)*200; die Bezeichnung <Dm> entspricht auch 
+#'  derjenigen der BWI 2. Wegen der Einheitlichkeit mit BWI 2 wird der 
+#'  Bezeichner <tl> in <lge> umgewandelt.
+#' @param totholz Dataframe-Tabelle mit Totholz-Informationen. Die Tabele muss 
+#'  mindestens folgende Attribute enthalten: Tnr, Enr, Nr, Tbagr, Tart, Tzg, 
+#'  Tbd, Tsd,  Tl, Tvol, Anz, Thf. Hinweis: BWI3 -> Durchmesser: Tbd, Tsd; 
+#'  Laenge: Tl. BWI2 -> Durchmesser: Dm; Laenge: Lge, kein Anz.
+#' @param ecken Dataframe-Tabelle mit Eckenmerkmalen.
+#' @param trakte Dataframe-tabelle mit Traktmerkmalen.
+#' @param bwi Angabe zu BWI- Nummer (2 oder 3), um mit denselben Algorithmen 
+#'  fuer beide Zustaende arbeiten zu koennen.
+#' @param krit Angabe zu Aufnahmekriterium (2 oder 3), welche verwendet werden 
+#'  sollen fuer die Berechnung. 
+#' @param tart.grupp Liste, mit der Totholz-Arten-Gruppen definiert werden 
+#'  koennen. z.B. tart.grupp = list(g1=c(11,12,13),g2=c(2,3),g3=c(4,5)). Wird 
+#'  fuer tart.grupp NA übergeben, werden die Original-tart-Kategorien verwendet, 
+#'  also bei BWI 3: 11,12,13,2,3,4,5; BWI 2: 1,2,3,4,5.
+#' @param A Flaeche in ha des Inventurgebietes zum jeweiligen Inventurzeitpunkt 
+#'  (sollte konstant sein).
+#' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten 
+#'  enthaelt, anhand derer die Auswahl fuer das Stratum ueber die Funktion 
+#'  \code{\link{stratum.fun}} erfolgt. Die Funktion benoetigt des weiteren die 
+#'  Tabelle <bacode>. Bsp.: list(Wa=c(3,5), Begehbar=1).
+#' @export
+#' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit 
+#'  Erstellungsdatum und version.totholz.b), \strong{Stratum} (\code{auswahl}), 
+#'  \strong{nTE} (Anzahl der Ecken im Stratum), \strong{HBF} (Holzbodenflaeche), 
+#'  \strong{se.HBF} (Standardfehler der Holzbodenflaeche), \strong{Tart.Liste} 
+#'  (Liste mit Angaben zu Totholzarten. Wenn \code{tart.grupp} definiert wurde, 
+#'  so wird "Gesamt" ausgegeben. Wenn fuer \code{tart.grupp} NA uebergeben wird, 
+#'  so wird eine Liste mit BWI-Codes fuer enthaltende Totholzarten aggregiert),
+#'  \strong{T.ThVN.Tart} (Tabellen mit Volumenwerten, Gesamtanzahl und Fehlern 
+#'  nach Totholzart), \strong{ThVN.ha.Tart} (Tabellen mit Volumenwerten, 
+#'  Gesamtanzahl je ha und Fehlern nach Totholzart), \strong{nT.Tart} 
+#'  (Eckenanzahl nach Totholzart)
 Totholz.Tart.stratum.fun <-
-          function(totholz,ecken,trakte,bwi,krit,tart.grupp,A,auswahl)
+          function(totholz,ecken,trakte,bwi,krit,tart.grupp,A,auswahl){
 
-#-------------------------------------------------------------------------------
-#Funktion wertet nach  Totholzart <Tart>, Aufnahmekriterium <krit> [2,3]
-#im Stratum <auswahl> aus. Bez\u00fcglich
-#der Totholz-Aufnahmeschwellen gibt es 2 Varianten:
-#(1) die BWI 2-Kriterien mit Schwellendurchmessern: 20 cm am schw\u00e4cheren Ende
-#bei liegenden St\u00fccken  bzw. BHD sowie 60 cm Schnittfl\u00e4chendurchmesser bei St\u00f6cken
-#(2) die BWI 3-Kriterien mit Schwellendurchmessern: 10 cm am schw\u00e4cheren Ende
-#bei liegenden St\u00fccken  bzw. BHD  20 cm Schnittfl\u00e4chendurchmesser bei St\u00f6cken.
-#BWI 2-Kriterien bei BWI 3-Aufnahme:
-#Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
-#<tart.grupp> ist eine Liste, mit der Th-Arten-Gruppen definiert werden k\u00f6nnen
-#z. B. tart.grupp = list(g1=c(11,12,13),g2=c(2,3),g3=c(4,5))
-#Wird f\u00fcr tart.grupp NA \u00fcbergeben, werden die Original-tart-Kategorien verwendet,
-#also bei BWI 3: 11,12,13,2,3,4,5; BWI 2: 1,2,3,4,5
-
-#Verallgemeinerte Version f\u00fcr die Auswertung unterschiedlicher Inventurzeit-
-#punkte, also BWI 2, BWI 3:
-#daher werden die Datentabellen <totholz>, die Eckenmerkmale <ecken> und die
-#<trakte> als Argumente \u00fcbergeben.
-#Die Tabelle <totholz> muss mindestens die Attribute
-#Tnr, Enr, Nr, Tbagr, Tart, Tzg, Tbd, Tsd,  Tl, Tvol, Anz, Thf enthalten;
-#Hinweis BWI 3: Durchmesser: Tbd Tsd; L\u00e4nge: Tl; BWI 2: Dm, Lge, kein <Anz>
-#---------------------
-#TODO: "harmonisieren"
-#Basis-Attribute (BWI 2)
-#<TBAGr>, <TArt>, <TZg>, <TVol>, <Dm>, <Lge>, <THf>
-#neu bei BWI 3
-#<Tbd>: Durchmesser am st\u00e4rkeren Ende bzw. BHD
-#<Tsd>: Durchmesser am d\u00fcnnen Ende (nur bei Tart 1 und 13),
-#f\u00fcr Klassifikation relevant ist bei Bruchst\u00fccken der Mitten-Durchmesser,
-#bei St\u00fccken mit Wurzelanlauf (stehend oder liegend) ist es der BHD
-#Mittendurchmesser berechnen, wenn Tsd > 0, aus Volumen und l\u00e4nge
-#<Dm> = sqrt(tvol/tl/pi)*200; die Bezeichnung <Dm> entspricht auch derjenigen
-#der BWI 2;
-#Wegen der Einheitlichkeit mit BWI 2wird der Bezeichner <tl> in <lge>
-#umgewandelt.
-
-#<bwi> (2 oder 3): um mit denselben Algorithmen f\u00fcr beide Zust\u00e4nde arbeiten zu
-#k\u00f6nnen
-#<A> ist die Fl\u00e4che in ha des Inventurgebiets zum jeweiligen Inventurzeitpunkt
-#(sollte eigentlich konstant sein)
-
-#<auswahl> definiert das auszuwertende Stratum entsprechend Funktion <stratum.fun>
-
-#Version 1.0 (k\u00e4/17.02.2014)
-#Hinweis: um Konfliktze mit unterschiedlicher Gro\u00df-/Kleinschreibung bei den
-#Attributnamen zu vermeiden, werden innerhalb dieser Funktion alle Attribut.
-#Namen auf Kleinschreibung umgestellt
-#-------------------------------------------------------------------------------
-{
+  checkmate::assertDataFrame(totholz, col.names = "named")
+  columns <- tolower(names(totholz))
+  attributes <- c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tbd", "tsd", 
+                  "tl", "tvol", "thf")
+  checkmate::assertSubset(attributes, columns)
+  checkmate::assertDataFrame(ecken, col.names = "named")
+  checkmate::assertDataFrame(trakte, col.names = "named")
+  checkmate::assertInt(bwi, lower = 2, upper = 3)
+  checkmate::assertInt(krit, lower = 2, upper = 3)
+  checkmate::assertList(tart.grupp, min.len = 1)
+  checkmate::assertNumber(A, lower = 0)
+  checkmate::assertList(auswahl, min.len = 1, names = "named")
   stratum <- stratum.fun(auswahl,ecken)
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
@@ -418,64 +464,99 @@ Totholz.Tart.stratum.fun <-
 }#End <Totholz.Tart.stratum.fun>
 
 #-------------------------------------------------------------------------------
+#' Funktion aggregiert Totholz-Volumen nach Klassifikation
+#'
+#' Funktion wertet nach  Klassifikation <klass>, Aufnahmekriterium <krit> [2,3] 
+#' im Stratum \code{auswahl} aus. Bezueglich der Totholz-Aufnahmeschwellen gibt 
+#' es 2 Varianten: \cr 
+#' (1) die BWI 2-Kriterien mit Schwellendurchmessern: 20 cm am schwaecheren Ende 
+#' bei liegenden Stuecken  bzw. BHD sowie 60 cm Schnittflaechendurchmesser bei 
+#' Stoecken \cr 
+#' (2) die BWI 3-Kriterien mit Schwellendurchmessern: 10 cm am schwaecheren Ende 
+#' bei liegenden Stuecken  bzw. BHD  20 cm Schnittflaechendurchmesser bei 
+#' Stoecken.
+#'
+#' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
+#' @section Erstellungsdatum: 17.02.2014
+#' @section Aktualisierung: 10.04.2014
+#' @section Hinweis: BWI 2-Kriterien bei BWI 3-Aufnahme: Wenn(([Tart]=4 Und 
+#'  ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20) \cr
+#'  Verallgemeinerte Version fuer die Auswertung unterschiedlicher 
+#'  Inventurzeitpunkte, also BWI 2, BWI 3: daher werden die Datentabellen 
+#'  \code{totholz}, die Eckenmerkmale \code{ecken} und die \code{trakte} als 
+#'  Argumente uebergeben. \cr
+#'  Um Konflikte mit unterschiedlicher Gross-/Kleinschreibung bei den 
+#'  Attributnamen zu vermeiden, werden innerhalb dieser Funktion alle 
+#'  Attributnamen auf Kleinschreibung umgestellt.
+#' @section TODO: "harmonisieren" -> Basis-Attribute (BWI 2): <TBAGr>, <TArt>, 
+#'  <TZg>, <TVol>, <Dm>, <Lge>, <THf>. Neu bei BWI 3: <Tbd> Durchmesser am 
+#'  staerkeren Ende bzw. BHD und <Tsd> Durchmesser am duennen Ende (nur bei 
+#'  Tart 1 und 13). Fuer Klassifikation relevant ist bei Bruchstuecken der 
+#'  Mitten-Durchmesser, bei Stuecken mit Wurzelanlauf (stehend oder liegend) ist 
+#'  es der BHD. Mittendurchmesser wird berechnet, wenn Tsd > 0, aus Volumen und 
+#'  Laenge. <Dm> = sqrt(tvol/tl/pi)*200; die Bezeichnung <Dm> entspricht auch 
+#'  derjenigen der BWI 2. Wegen der Einheitlichkeit mit BWI 2 wird der 
+#'  Bezeichner <tl> in <lge> umgewandelt.
+#' @param totholz Dataframe-Tabelle mit Totholz-Informationen. Die Tabele muss 
+#'  mindestens folgende Attribute enthalten: Tnr, Enr, Nr, Tbagr, Tart, Tzg, 
+#'  Tbd, Tsd,  Tl, Tvol, Anz, Thf. Hinweis: BWI3 -> Durchmesser: Tbd, Tsd; 
+#'  Laenge: Tl. BWI2 -> Durchmesser: Dm; Laenge: Lge, kein Anz.
+#' @param ecken Dataframe-Tabelle mit Eckenmerkmalen.
+#' @param trakte Dataframe-tabelle mit Traktmerkmalen.
+#' @param bwi Angabe zu BWI- Nummer (2 oder 3), um mit denselben Algorithmen 
+#'  fuer beide Zustaende arbeiten zu koennen.
+#' @param krit Angabe zu Aufnahmekriterium (2 oder 3), welche verwendet werden 
+#'  sollen fuer die Berechnung. 
+#' @param klass Liste, mit der die Klassifikationsvariable (Attribut) und ihre 
+#'  Kategorien definiert werden koennen. Moegliche Klassifikationsattribute sind 
+#'  Totholzbaumartengruppe <tbagr>, Totholzart <tart>, Zersetzungsgrad <tzg>, 
+#'  Durchmesser <dm> (Mittendurchmesser, BHD, Stockschnittflaechendurchmessser) 
+#'  oder Laenge <lge>. z.B. klass = list(attr="tart", kat=list(c(11,12,13),
+#'  c(2,3),c(4,5))). Wird für klass NA übergeben, erfolgt keine Klassifikation.
+#' @param A Flaeche in ha des Inventurgebietes zum jeweiligen Inventurzeitpunkt 
+#'  (sollte konstant sein).
+#' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten 
+#'  enthaelt, anhand derer die Auswahl fuer das Stratum ueber die Funktion 
+#'  \code{\link{stratum.fun}} erfolgt. Die Funktion benoetigt des weiteren die 
+#'  Tabelle <bacode>. Bsp.: list(Wa=c(3,5), Begehbar=1).
+#' @param strict Logical value which defines wheteher Input Check shall be done 
+#'  strictly after documentation or not. By default set to FALSE.
+#' @export
+#' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit 
+#'  Erstellungsdatum und version.totholz.b), \strong{Stratum} (\code{auswahl}), 
+#'  \strong{nTE} (Anzahl der Ecken im Stratum), \strong{HBF} (Holzbodenflaeche), 
+#'  \strong{se.HBF} (Standardfehler der Holzbodenflaeche), \strong{Klass.Attr} 
+#'  (die Klassifizierungsvariable) \strong{Klass.Kat} (Klassifizierungswerte, 
+#'  -gruppen), \strong{T.ThVN.klass} (Arrays mit Volumwerten, Gesamtanzahl 
+#'  und Fehlern nach den Klassifizierungswerten), \strong{ThVN.ha.klass} (Arrays 
+#'  mit Volumenwerten und Gesamsamtanazhl je ha und Fehlern nach den 
+#'  Klassifizierungswerten), \strong{nT.klass} (Anzahl der Trakteckenn nach 
+#'  Klassifizierungswerten)
 Totholz.klass.stratum.fun <-
-          function(totholz,ecken,trakte,bwi,krit,klass,A,auswahl)
+          function(totholz,ecken,trakte,bwi,krit,klass,A,auswahl, strict = FALSE){
 
-#aktualisiert 10.04.2014
-#-------------------------------------------------------------------------------
-#Funktion wertet nach Klassifikation <klass>, Aufnahmekriterium <krit> [2,3]
-#im Stratum <auswahl> aus.
-#Bez\u00fcglich der Totholz-Aufnahmeschwellen <krit> gibt es 2 Varianten:
-#(1) die BWI 2-Kriterien mit Schwellendurchmessern: 20 cm am schw\u00e4cheren Ende
-#bei liegenden St\u00fccken  bzw. BHD sowie 60 cm Schnittfl\u00e4chendurchmesser bei St\u00f6cken
-#(2) die BWI 3-Kriterien mit Schwellendurchmessern: 10 cm am schw\u00e4cheren Ende
-#bei liegenden St\u00fccken  bzw. BHD  20 cm Schnittfl\u00e4chendurchmesser bei St\u00f6cken.
-#BWI 2-Kriterien bei BWI 3-Aufnahme:
-#Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
-
-#<klass> ist eine Liste, mit der die Klassifikationsvariable (Attribut) und ihre
-#Kategorien definiert werden k\u00f6nnen; m\u00f6gliche Klassifikationsattribute sind
-#Totholzbaumartengruppe <tbagr>, Totholzart <tart>, Zersetzungsgrad <tzg>,
-#Durchmesser <dm> (Mittendurchmesser, BHD, Stockschnittfl\u00e4chendurchmessser) oder
-#L\u00e4nge <lge>
-#z. B. klass = list(attr="tart", kat=list(c(11,12,13),c(2,3),c(4,5)))
-#Wird f\u00fcr klass NA \u00fcbergeben, erfolgt keine Klassifikation.
-
-#Verallgemeinerte Version f\u00fcr die Auswertung unterschiedlicher Inventurzeit-
-#punkte, also BWI 2, BWI 3:
-#daher werden die Datentabellen <totholz>, die Eckenmerkmale <ecken> und die
-#<trakte> als Argumente \u00fcbergeben.
-#Die Tabelle <totholz> muss mindestens die Attribute
-#Tnr, Enr, Nr, Tbagr, Tart, Tzg, Tbd, Tsd,  Tl, Tvol, Anz, Thf enthalten;
-#Hinweis BWI 3: Durchmesser: Tbd Tsd; L\u00e4nge: Tl; BWI 2: Dm, Lge, kein <Anz>
-#---------------------
-#TODO: "harmonisieren"
-#Basis-Attribute (BWI 2)
-#<TBAGr>, <TArt>, <TZg>, <TVol>, <Dm>, <Lge>, <THf>
-#neu bei BWI 3
-#<Tbd>: Durchmesser am st\u00e4rkeren Ende bzw. BHD
-#<Tsd>: Durchmesser am d\u00fcnnen Ende (nur bei Tart 1 und 13),
-#f\u00fcr Klassifikation relevant ist bei Bruchst\u00fccken der Mitten-Durchmesser,
-#bei St\u00fccken mit Wurzelanlauf (stehend oder liegend) ist es der BHD
-#Mittendurchmesser berechnen, wenn Tsd > 0, aus Volumen und L\u00e4nge
-#<Dm> = sqrt(tvol/tl/pi)*200; die Bezeichnung <Dm> entspricht auch derjenigen
-#der BWI 2;
-#Wegen der Einheitlichkeit mit BWI 2wird der Bezeichner <tl> in <lge>
-#umgewandelt.
-
-#<bwi> (2 oder 3): um mit denselben Algorithmen f\u00fcr beide Zust\u00e4nde arbeiten zu
-#k\u00f6nnen
-#<A> ist die Fl\u00e4che in ha des Inventurgebiets zum jeweiligen Inventurzeitpunkt
-#(sollte eigentlich konstant sein)
-
-#<auswahl> definiert das auszuwertende Stratum entsprechend Funktion <stratum.fun>
-
-#Version 1.0 (k\u00e4/17.02.2014)
-#Hinweis: um Konfliktze mit unterschiedlicher Gro\u00df-/Kleinschreibung bei den
-#Attributnamen zu vermeiden, werden innerhalb dieser Funktion alle Attribut.
-#Namen auf Kleinschreibung umgestellt
-#-------------------------------------------------------------------------------
-{
+  checkmate::assertDataFrame(totholz, col.names = "named")
+  if (strict){
+    columns <- tolower(names(totholz))
+    print(columns)
+    attributes <- c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tbd", "tsd", 
+                    "tl", "tvol", "thf")
+    print(attributes)
+    checkmate::assertSubset(attributes, columns)
+  }
+  checkmate::assertDataFrame(ecken, col.names = "named")
+  checkmate::assertDataFrame(trakte, col.names = "named")
+  checkmate::assertInt(bwi, lower = 2, upper = 3)
+  checkmate::assertInt(krit, lower = 2, upper = 3)
+  if (checkmate::testList(klass, min.len = 1)) {
+    components <- names(klass)
+    attributes <- c("attr", "kat")
+    checkmate::assertSetEqual(components, attributes)
+  } else if(checkmate::testScalarNA(klass) == FALSE){
+    stop("klass must be list or NA")
+  }
+  checkmate::assertNumber(A, lower = 0)
+  checkmate::assertList(auswahl, min.len = 1, names = "named")
   stratum <- stratum.fun(auswahl,ecken)
   #Kleinschreibung
   names(stratum) <- tolower(names(stratum))
