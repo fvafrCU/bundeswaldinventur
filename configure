@@ -15,7 +15,7 @@ test_changes_file=tmp_test_change.R
 cat > $test_changes_file <<\EOF
 git_status <- system("git status --porcelain", intern = TRUE)
 modified_codes <- basename(sub(" M ", "", grep(" M R/", git_status , value = TRUE)))
-pattern <- paste0("\\.*", sub(".R", "", modified_codes), collapse = '|')
+pattern <- paste0("\\.*", sub("\\.R", "", modified_codes), collapse = '|')
 devtools::test(filter = pattern)
 EOF
 
