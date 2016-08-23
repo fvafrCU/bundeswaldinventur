@@ -295,6 +295,7 @@ map_abbreviations_to_labels <- function(x) {
 #' 
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param datacolumn Datacolumn of a table containing abbreviations.
+#' @export
 #' @return invisible(status) Which becomes TRUE when the abbrevations were
 #'   successfully replaced.
 revalue_data <- function(datacolumn) {
@@ -316,7 +317,7 @@ revalue_data <- function(datacolumn) {
 #' @examples
 #' ownership <- "Mittlerer Privatwald"
 #' color <- get_color_for_ownership(ownership)
-get_color_for_ownership <- function (ownership) {
+get_color_for_ownership <- function(ownership) {
     ownership_colors <- c("gw" = 'lightgreen',
                           "bw" = "darkgreen",
                           "stw" = "green", 
@@ -341,7 +342,7 @@ get_color_for_ownership <- function (ownership) {
 #' @examples
 #' ownership <- c("Kleinprivatwald", "Mittlerer Privatwald")
 #' colors <- get_colors_for_ownership(ownership)
-get_colors_for_ownership <- function (x) {
+get_colors_for_ownership <- function(x) {
     y <- vapply(as.character(x), get_color_for_ownership,
                 character(length = 1)
                 )
