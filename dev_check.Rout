@@ -9,6 +9,7 @@ The following object is masked from ‘package:stats’:
     lowess
 
 Writing NAMESPACE
+Writing get_period.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
