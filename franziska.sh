@@ -10,8 +10,8 @@ sdiff $tfa $tfb
 file=${1:-R/bits_and_pieces.R}
 ffile=../hochrechnungen/HR_Funktionen/BWI3/$file
 file $ffile
+diffuse $file $ffile
 sed -e "s/[[:blank:]]\(assert.*(.*)\)/ checkmate::\1/g" < $file > $tfb
 mv $tfb $file
-diffuse $file $ffile
 gvim -p $file $ffile
 
