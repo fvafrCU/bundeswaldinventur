@@ -60,6 +60,7 @@
 #' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten 
 #'  enthaelt, anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: 
 #'  list(Wa=c(3,5), Begehbar=1).
+#' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit 
 #'  Erstellungsdatum und Version.baeume.b, \strong{Stratum} 
 #'  (\code{auswahl}), \strong{nTE} (Anzahl Ecken im Stratum), \strong{HBF} 

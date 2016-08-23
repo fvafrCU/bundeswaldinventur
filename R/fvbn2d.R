@@ -1,3 +1,4 @@
+#' @export
 #' @describeIn FVBN.bagrupp.akl.dkl.stratum.fun.2e (version 2d)
 FVBN.bagrupp.akl.dkl.stratum.fun.2d <-
           function(baeume,ecken,trakte,A,inv,BA.grupp,A.klass,D.klass,auswahl){
