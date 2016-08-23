@@ -1,5 +1,3 @@
-# @NULL 
-
 tree_species_labels <- factor(bagr.bwi$bagr.lab,
 			      levels = bagr.bwi$bagr.lab) 
 
