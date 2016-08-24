@@ -1,13 +1,1 @@
-Loading bundeswaldinventur
-Loading required package: testthat
-Loading required package: gplots
-
-Attaching package: ‘gplots’
-
-The following object is masked from ‘package:stats’:
-
-    lowess
-
-Testing bundeswaldinventur
-BWI3_HR_Totholz_Funktionen_v1.R: ...
-
+no code files with modified git status found.
