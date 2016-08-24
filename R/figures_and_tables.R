@@ -1,3 +1,11 @@
+#' Sets plot axes bold
+#' 
+#' Function produces a theme which sets the axes of a plot bold (black colour 
+#' and letter size 20).
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @export
+#' @return theme which sets axes of a plot bold.
 theme_bold_axes <- function() {
     return(
 	   ggplot2::theme(axis.title =  ggplot2::element_text(colour = "black", size = 20),
@@ -5,6 +13,14 @@ theme_bold_axes <- function() {
 	   )
 }
 
+#' Sets plot legend bold
+#' 
+#' Function produces a theme which sets the legend of a plot bold (black 
+#' colour and letter size 16).
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @export
+#' @return theme which sets legend of a plot bold.
 theme_bold_legend <- function() {
     return(
 	   ggplot2::theme(legend.title = ggplot2::element_text(colour = "black", size = 16),
@@ -13,19 +29,55 @@ theme_bold_legend <- function() {
 	   )
 }
 
+#' Sets plot title bold
+#' 
+#' Function produces a theme which sets the title of a plot bold (black colour 
+#' and letter size 20).
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @export
+#' @return theme which sets axes of a plot bold.
 theme_bold_title <- function() {
     return(
 	   ggplot2::theme(plot.title = ggplot2::element_text(colour = "black", size = 20))
 	   )
 }
 
+#' Change axes, title and legend style of a plot.
+#' 
+#' Function changes axes, title and legend styles of a plot. Styles are definded 
+#' in \code{\link{theme_bold_axes}}, \code{\link{theme_bold_title}} and 
+#' \code{\link{theme_bold_legend}}. 
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @param obj Grafic defined by ggplot().
+#' @export
+#' @return Grafic with predefined axes, title and legend style.
 tplot <- function(obj) {
     graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
 	 ggplot2::theme(strip.text.y = ggplot2::element_text(size=12))
 	 )
 }
 
-# by abbreviation, group and bwi
+#' Predicts values for species grouped by a variable and BWI 
+#' 
+#' Function predicts a value which is speciefied by the user for a variable 
+#' species. The prediction is done grouped by the different BWI's and a grouping 
+#' variable, given by the user. 
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @param list Output (List) of BWI3_HR_Funktionen (e.g. 
+#'  \code{\link{FVBN.bagrupp.akl.dkl.stratum.fun.2a}}).
+#' @param species String which specifies the tree species for which calculation 
+#'  shall be done. Possible inputs: FI TA DGL KI LAE BU EI ALH ALN.
+#' @param abbreviation String which speciefies the value for which the 
+#'  calculation shall be done. Possible input depends on the existing values in 
+#'  \code{list}.
+#' @param group String which specifies the value by which the calculation shall 
+#'  be grouped.
+#' @export
+#' @return Data frame with prediction for the given \code{abbreviation} and 
+#'  \code{species}, grouped by \code{group} and BWI.
 melt_species_attribute_group <- function(list, species, abbreviation, group) {
     bwi1 <- eval(parse(text = paste(list, 1, sep = ".")))
     bwi2 <- eval(parse(text = paste(list, 2, sep = ".")))
@@ -87,6 +139,17 @@ melt_species_attribute_group <- function(list, species, abbreviation, group) {
 
 }
 
+#' Plots the output of \code{\link{melt_species_attribute_group}}
+#' 
+#' Function plots the output of \code{\link{melt_species_attribute_group}}. 
+#' Different BWI's are shown in three different green shades. The grouping value 
+#' is shown on the x axis and the prediction is the y value.
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @param data Output Dataframe of \code{\link{melt_species_attribute_group}}.
+#' @export
+#' @return Plot which shows calculation of 
+#'  \code{\link{melt_species_attribute_group}}.
 plot_species_attribute_group <- function(data) {
     return(
 	   ggplot2::ggplot(data = data,
@@ -114,7 +177,16 @@ plot_species_attribute_group <- function(data) {
 	   )
 }
 
-# by  group and bwi
+#' Reassembles by ownership and a variable abbreviation
+#' 
+#' Fix me! What do I do? 
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @param owner String which defines the owner.
+#' @param abbreviation String which defines the variable which shall be 
+#'  predicted.
+#' @export
+#' @return Dataframe.
 reassemble_by_group <- function(owner, abbreviation) {
     ownership <- get_abbreviation_for_label(owner)
     data_list <- paste("FVBN.bagr", ownership, sep = ".")
@@ -162,6 +234,17 @@ reassemble_by_group <- function(owner, abbreviation) {
     return(data_frame)
 }
 
+#' Predicts value of a variable grouped by a tree species, BWI and owner 
+#' 
+#' Function predicts a variable and it's standard error grouped by tree species
+#' and BWI.
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @param abbreviation String which defines the variable which shall be 
+#'  predicted.
+#' @export
+#' @return Data frame with prediction for the given \code{abbreviation}, grouped 
+#'  by tree species group, BWI and owner.
 all_data_by_group <- function(abbreviation) {
     attribute_name <- get_abbreviation_for_label(abbreviation)
     owners <- c("gw", "stw", "kw", "pw")
@@ -170,6 +253,21 @@ all_data_by_group <- function(abbreviation) {
     return(data_frame)
 }
 
+#' Plots data by group
+#' 
+#' Function creates a bar diagramm plot of the output of 
+#' \code{\link{all_data_by_group}}. The predicted value for the abbreviation is 
+#' used to define the height of the bars. The bars are grouped by 
+#' "Baumartengruppe" (by default) or another parameter.
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @param data Output table of \code{\link{all_data_by_group}}
+#' @param subs String which defines subset parameters, e.g. "Eigentumsart == 
+#'  'Privatwald'".
+#' @param x String which defines the column in data which shall be used for the 
+#'  grouping on the x-axis. by default "Baumartengruppe"
+#' @export
+#' @return Bar plot
 plot_by_group <- function(data, subs, x = "Baumartengruppe") {
     return(
 	   ggplot2::ggplot(subset(data, eval(parse(text = subs))),
@@ -193,6 +291,19 @@ plot_by_group <- function(data, subs, x = "Baumartengruppe") {
 	   )
 }
 
+#' Xtable by group
+#' 
+#' Fix me
+#' 
+#' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
+#' @param data Output table of \code{\link{all_data_by_group}}
+#' @param subs String which defines subset parameters, e.g. "Eigentumsart == 
+#'  'Privatwald'".
+#' @param group String which defines the column in data which shall be used for the 
+#'  grouping on the x-axis. by default "Baumartengruppe"
+#' @param label_prefix String which defines the prefix for teh label.
+#' @export
+#' @return Fix me.
 xtable_by_group <- function(data, subs, group = "Baumartengruppe",
 			    label_prefix = "total") {
     data_received <- subset(data, eval(parse(text = subs)))

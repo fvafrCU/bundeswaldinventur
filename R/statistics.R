@@ -10,6 +10,7 @@
 #' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
 #' @param multiple return multiple modal values (or just the first one)?
 #' @param x a vector of values.
+#' @export
 #' @return  the modal value(s) of x.
 modal_value <- function(x, multiple = FALSE) {
     if (! is.logical(multiple)) throw("multiple must be TRUE or FALSE")

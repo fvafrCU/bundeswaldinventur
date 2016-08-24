@@ -1,13 +1,6 @@
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Loading required package: gplots
-
-Attaching package: ‘gplots’
-
-The following object is masked from ‘package:stats’:
-
-    lowess
-
+Writing melt_species_attribute_group.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic

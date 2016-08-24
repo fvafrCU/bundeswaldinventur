@@ -28,7 +28,6 @@ Imports:
 RoxygenNote: 5.0.1
 Collate:
     'BWI3_HR_Funktionen_v3.R'
-    'BWI3_HR_Grafikfunktionen_v2.R'
     'BWI3_HR_Landkreis_Funktionen_v1.R'
     'BWI3_HR_Totholz_Funktionen_v1.R'
     'bits_and_pieces.R'

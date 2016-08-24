@@ -13,6 +13,7 @@
 #' @param trakte.1 A data.frame (see \code{\link{trakte.1}}
 #' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
 #' @param kreiscode Code fuer den Landkreis.   kreiscode
+#' @export
 #' @return Liste mit folgenden Komponenten: \strong{Kreis} (Label fuer den 
 #'  Kreis), \strong{KreisCode} (\code{kreiscode}), 
 #'  \strong{Kreisflaeche_gesamt_ha} (Groesse des Kreises in ha), 
@@ -231,6 +232,7 @@ flaechen.kreis.fun.1 <- function(kreiscode,
 #' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
 #' @param trakte.1 A data.frame (see \code{\link{trakte.1}}
 #' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
+#' @export
 #' @return Liste mit folgenden Komponenten: \strong{Stratum} (\code{auswahl}), 
 #'  \strong{Waldflaeche} (Waldflaeche und Standardfehler fuer verschiedene 
 #'  Eigentumsklassen und BWIs), \strong{Waldfl_Proz} (Waldflaeche in Prozent und 

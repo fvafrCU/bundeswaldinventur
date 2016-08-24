@@ -1,13 +1,7 @@
 Loading bundeswaldinventur
 Loading required package: testthat
-Loading required package: gplots
-
-Attaching package: ‘gplots’
-
-The following object is masked from ‘package:stats’:
-
-    lowess
-
 Testing bundeswaldinventur
-variable_getters.R: .
+BWI3_HR_Landkreis_Funktionen_v1.R: ..
+figures_and_tables: .
+statistics.R: ......
 

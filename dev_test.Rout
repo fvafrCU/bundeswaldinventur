@@ -1,13 +1,5 @@
 Loading bundeswaldinventur
 Loading required package: testthat
-Loading required package: gplots
-
-Attaching package: ‘gplots’
-
-The following object is masked from ‘package:stats’:
-
-    lowess
-
 Testing bundeswaldinventur
 get_abbreviation_for_label: .......
 get_axis_label_for_abbreviation: .......
