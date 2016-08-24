@@ -11,7 +11,7 @@ context("variable_getters.R")
 
 test_that("get_species_groups", {
   
-  output <- get_species_groups("*")
+  output <- get_species_groups()
   
   reference <- 
     structure(list(bagr.lab = c("Fichte", "Weißtanne", "Douglasie", 
@@ -30,7 +30,4 @@ test_that("get_species_groups", {
   
   expect_equal(output, reference)
   
-  output <- get_species_groups("spec")
-  
-  expect_equal(output, reference)
 })

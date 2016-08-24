@@ -1,7 +1,6 @@
 #' add colSums to a data.frame, preserve its row.names
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 8bb9bd5c3d0ac9d48580e4497df4a9433d3ab412 $
 #' @param data_frame The data from to add colSums to.
 #' @param german If TRUE, the name of the colSums row will be 'Summe' and 'Sum'
 #' otherwise.
@@ -26,7 +25,6 @@ add_colSums_to_data_frame <- function(data_frame, german = TRUE) {
 #' change it to 12.1.
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 8bb9bd5c3d0ac9d48580e4497df4a9433d3ab412 $
 #' @param x the numbers to be modified.
 #' @param digits The digits passed to round().
 #' @return  the modified numbers. 
@@ -45,7 +43,6 @@ as_percent_and_round <- function(x, digits = 1){
 #' without changing the original data.frame
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 8bb9bd5c3d0ac9d48580e4497df4a9433d3ab412 $
 #' @param data_frame Give the data.frame.
 #' @param condition See Details
 #' @return  the modified data.frame

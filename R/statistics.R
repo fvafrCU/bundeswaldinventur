@@ -8,7 +8,6 @@
 #' http://stackoverflow.com/questions/2547402/standard-library-function-in-r-for-finding-the-mode.
 #'
 #' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 7c6d9e45f1674fa810ca20d87a9016e584540653 $
 #' @param multiple return multiple modal values (or just the first one)?
 #' @param x a vector of values.
 #' @return  the modal value(s) of x.

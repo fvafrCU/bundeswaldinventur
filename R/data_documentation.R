@@ -1,17 +1,3 @@
-#' Total Inventory area
-#' 
-#' The total area of the inventory area of BWI3 (3575148 ha).
-#' 
-#' @format An integer number
-"A"
-
-#' Total Inventory area in BWI 1 and 2
-#' 
-#' The inventory area which covers the area of BWI1 and BWI2 (3575163 ha).
-#' 
-#' @format An integer number 
-"A.12"
-
 #' "bacode"
 #'
 #' Image of an SQL table giving the tree species codes.
@@ -250,32 +236,7 @@
 #'  }
 "baeume.23"
 
-#' Tree species groups and further information
-#' 
-#' List with tree species groups used in BWI3 and further information.
-#' 
-#' @format A list with 4 elements
-#' \describe{
-#'  \item{bagr.lab}{abbreviation of tree species group}
-#'  \item{ba.group}{lists with tree species numbers for tree species group}
-#'  \item{ba.colors}{standard colors for tree species group}
-#'  \item{ba.text}{names of tree species groups}
-#'  }
-"bagr.bwi"
 
-#' Tree species groups
-#' 
-#' List with tree species groups used in BWI3.
-#' 
-#' @format A vector with 9 tree species groups (abbreviations)
-"bagr.list"
-
-#' BWI standard green shades
-#' 
-#' Standard green shades for BWI plots.
-#' 
-#' @format A vector with 3 strings (green shades).
-"COLORS_BWI"
 
 #' Waldlebensraumtypen
 #' 
@@ -2224,26 +2185,6 @@
 #'  } 
 "kreise"
 
-#' Traktanzahl
-#' 
-#' Anzahl der in der BWI aufgenommenen Trakte (8970).
-#' 
-#' @format An integer number.
-"nT"
-
-#' Eckenanzahl aus BWI 1 und 2
-#' 
-#' Anzahl der Traktecken, die in der BWI 1 und 2 aufgenommen wurden (?) (35743).
-#' 
-#' @format An integer number.
-"nTE.12"
-
-#' Eckenanzahl der BWI 3
-#' 
-#' Anzahl der Traktecken, welche in der BWI 3 aufgenommen wurden (35731).
-#' 
-#' @format An integer number.
-"nTE"
 
 #' Naturnaehestufen
 #' 
@@ -2273,19 +2214,6 @@
 #'  }
 "ntns.te"
 
-#' Representationsfaktor BWI 1 und 2
-#' 
-#' Area representation factor of each plot (Ecke).
-#' 
-#' @format A double number.
-"RF.12"
-
-#' Representationsfaktor BWI 3
-#' 
-#' Area representation factor of each plot (Ecke).
-#' 
-#' @format A double number.
-"RF"
 
 #' Schutzgebietsinformationen
 #' 

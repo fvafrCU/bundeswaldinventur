@@ -1,3 +1,7 @@
+#' @include internals.R
+NULL
+
+
 #' set options in a list
 #'
 #' I want to bundle options in a named list to not clutter the options().
@@ -17,7 +21,6 @@
 #' }
 #' in your zzz.R to bundle a package's options into the list named "foo".
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 01015ff091d53e47fc1caa95805585b6e3911ba5 $
 #' @param name [character(1)]\cr Name of the list.
 #' @param overwrite [boolean(1)]\cr Overwrite options already set? Is set to
 #' FALSE on package loading to ensure your previously set list options
@@ -65,7 +68,6 @@ set_options <- function(...,
 #' a convenience function for \code{\link{getOption}}.
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 01015ff091d53e47fc1caa95805585b6e3911ba5 $
 #' @param ... see \code{\link{getOption}}/
 #' @param name [character(1)]\cr Name of the list.
 #' @param remove_names [boolean(1)]\cr Remove the names?
@@ -101,7 +103,6 @@ get_options <- function(...,
 #' data.frames in his functions.
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 01015ff091d53e47fc1caa95805585b6e3911ba5 $
 #' @param name a string of lenght one giving the name of the data.frame.
 #' @return the data requested.
 #' @export

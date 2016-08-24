@@ -3,7 +3,6 @@
 #' apply prettyNum to a data.frame, preserve its row.names
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 9be1ec3c316c4c9ca5af009959e89607c154f14c $
 #' @param data_frame The data which to prettyNum().
 #' @param digits The number of digits to be rounded to.
 #' @return  the modified data.frame. 
@@ -21,7 +20,6 @@ prettify_data_frame <- function(data_frame, digits = 0) {
 #' 'Enhanced' means: add colSums(), use prettyNum()s.
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 9be1ec3c316c4c9ca5af009959e89607c154f14c $
 #' @param data_frame The data which to xtable::xtable().
 #' @param caption A caption for the LaTeX table.
 #' @note The LaTeX table will have a latex label tab:data_frame. So you really
@@ -60,7 +58,6 @@ add_colSums_prettify_and_print_xtable <- function(data_frame,
 #' change it to 12,000.
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 9be1ec3c316c4c9ca5af009959e89607c154f14c $
 #' @param x the numbers to be modified.
 #' @param digits The digits passed to round().
 #' @param big_mark the big.mark passed to \code{prettyNum}.
@@ -82,7 +79,6 @@ round_and_prettify <- function(x, digits = 0, big_mark = ',', decimal_mark = '.'
 #' @note This is just an alias for 
 #' \code{\link{round_and_prettify}}(\ldots, big_mark = '.') 
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 9be1ec3c316c4c9ca5af009959e89607c154f14c $
 #' @param x the numbers to be modified.
 #' @param digits The digits passed to round().
 #' @return  the modified numbers. 

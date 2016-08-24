@@ -14,13 +14,38 @@ Depends:
 License: file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: graphics, 
-         stats, 
-         utils, 
-         reshape2, 
-         gplots, 
-         xtable, 
-         ggplot2, 
-         checkmate,
-         scales
+Imports:
+    graphics,
+    grDevices,
+    stats,
+    utils,
+    reshape2,
+    gplots,
+    xtable,
+    ggplot2,
+    checkmate,
+    scales
 RoxygenNote: 5.0.1
+Collate:
+    'BWI3_HR_Funktionen_v3.R'
+    'BWI3_HR_Grafikfunktionen_v2.R'
+    'BWI3_HR_Landkreis_Funktionen_v1.R'
+    'BWI3_HR_Totholz_Funktionen_v1.R'
+    'bits_and_pieces.R'
+    'data_documentation.R'
+    'deadwood.R'
+    'figures_and_tables.R'
+    'fvbn2a.R'
+    'fvbn2b.R'
+    'fvbn2c.R'
+    'fvbn2d.R'
+    'fvbn2e.R'
+    'german_things.R'
+    'internals.R'
+    'utils.R'
+    'variable_getters.R'
+    'global_variables.R'
+    'labeling.R'
+    'statistics.R'
+    'tree_species_shares.R'
+    'zzz.R'

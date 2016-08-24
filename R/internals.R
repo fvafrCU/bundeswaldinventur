@@ -5,7 +5,6 @@
 #' We use this condition as an error dedictated to \pkg{bundeswaldinventur}.
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 01015ff091d53e47fc1caa95805585b6e3911ba5 $
 #' @keywords internal
 #' @param message_string The message to be thrown.
 #' @param system_call The call to be thrown.
