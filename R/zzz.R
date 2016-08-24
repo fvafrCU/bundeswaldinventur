@@ -5,6 +5,7 @@
   )
   toset <- !(names(op.package) %in% names(op))
   if(any(toset)) options(op.package[toset])
+  options(useFancyQuotes = FALSE)
 
   set_options(overwrite = FALSE)
 
