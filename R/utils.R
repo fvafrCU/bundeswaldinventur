@@ -1,31 +1,3 @@
-#' throw a condition
-#'
-#' throws a condition of class c("bundeswaldinventur", "error", "condition").
-#'
-#' We use this condition as an error dedictated to \pkg{bundeswaldinventur}.
-#'
-#' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @section Version: $Id: 01015ff091d53e47fc1caa95805585b6e3911ba5 $
-#' @keywords internal
-#' @param message_string The message to be thrown.
-#' @param system_call The call to be thrown.
-#' @param ... Arguments to be passed to \code{\link{structure}}.
-#' @return FALSE. But it doesn't return anything, it stops with a
-#' condition of class c("bundeswaldinventur", "error", "condition").
-#' @examples
-#' tryCatch(bundeswaldinventur:::throw("Hello error!"), 
-#'          bundeswaldinventur = function(e) return(e))
-throw <- function(message_string, system_call = sys.call(-1), ...) {
-    checkmate::qassert(message_string, "s*")
-    condition <- structure(
-                           class = c("bundeswaldinventur", "error", "condition"),
-                           list(message = message_string, call = system_call),
-                           ...
-                           )
-    stop(condition)
-    return(FALSE)
-}
-
 #' set options in a list
 #'
 #' I want to bundle options in a named list to not clutter the options().
@@ -120,10 +92,6 @@ get_options <- function(...,
     if (remove_names) names(option_list)  <- NULL
     return(option_list)
 }
-
-
-
-
 
 #' get data if we want to use example data provided with the package
 #' 

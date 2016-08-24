@@ -13,8 +13,8 @@
 #' @param x a vector of values.
 #' @return  the modal value(s) of x.
 modal_value <- function(x, multiple = FALSE) {
-    if (! is.logical(multiple)) stop("multiple must be TRUE or FALSE")
-    if (! is.vector(x) || ! is.atomic(x)) stop("x must be an atomic vector")
+    if (! is.logical(multiple)) throw("multiple must be TRUE or FALSE")
+    if (! is.vector(x) || ! is.atomic(x)) throw("x must be an atomic vector")
     if (multiple) {
         table_of_frequencies <- table(x)
         modals <- names(table_of_frequencies)[table_of_frequencies 

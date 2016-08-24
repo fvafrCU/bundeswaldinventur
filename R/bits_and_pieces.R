@@ -84,7 +84,7 @@ get_period <- function(label) {
     period <- switch(as.character(label),
                      "1" = "1987 - 2002", 
                      "2" = "2002 - 2012", 
-                     stop("unkown period, give 1 or 2")
+                     throw("unkown period, give 1 or 2")
                      )
     return(period)
 }

@@ -34,7 +34,7 @@ melt_species_attribute_group <- function(list, species, abbreviation, group) {
     if (species %in% bwi1$BAGR) {
 	species_index <- which(species == bwi1$BAGR)  
     } else {
-	stop(cat("got unkown species", species, ". Should be one of",
+	throw(cat("got unkown species", species, ". Should be one of",
 		 bwi1$BAGR, "."
 		 )
 	)

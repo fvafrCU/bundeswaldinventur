@@ -553,7 +553,7 @@ Totholz.klass.stratum.fun <-
     attributes <- c("attr", "kat")
     checkmate::assertSetEqual(components, attributes)
   } else if(checkmate::testScalarNA(klass) == FALSE){
-    stop("klass must be list or NA")
+    throw("klass must be list or NA")
   }
   checkmate::assertNumber(A, lower = 0)
   checkmate::assertList(auswahl, min.len = 1, names = "named")
