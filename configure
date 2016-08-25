@@ -24,7 +24,7 @@ if (length(modified_codes) > 0) {
 EOF
 
 cat > Makefile <<EOF
-# R CMD header
+# header
 rpackage=${rpackage}
 rpversion=${rpversion}
 roxy_code=tmp_roxy.r
