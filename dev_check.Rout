@@ -1,6 +1,5 @@
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing melt_species_attribute_group.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -13,7 +12,7 @@ Building bundeswaldinventur ----------------------------------------------------
 * checking for LF line-endings in source and make files
 * checking for empty or unneeded directories
 * looking to see if a ‘data/datalist’ file should be added
-* building ‘bundeswaldinventur_0.2.0.tar.gz’
+* building ‘bundeswaldinventur_0.3.0.tar.gz’
 
 Setting env vars ---------------------------------------------------------------
 _R_CHECK_CRAN_INCOMING_USE_ASPELL_: TRUE
@@ -27,7 +26,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * using session charset: UTF-8
 * using options ‘--no-manual --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.2.0’
+* this is package ‘bundeswaldinventur’ version ‘0.3.0’
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
@@ -39,7 +38,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * checking for sufficient/correct file permissions ... OK
 * checking whether package ‘bundeswaldinventur’ can be installed ... OK
 * checking installed package size ... NOTE
-  installed size is 33.3Mb
+  installed size is 33.4Mb
   sub-directories of 1Mb or more:
     data  32.8Mb
 * checking package directory ... OK
@@ -84,6 +83,6 @@ for details.
 R CMD check results
 0 errors | 0 warnings | 1 note 
 checking installed package size ... NOTE
-  installed size is 33.3Mb
+  installed size is 33.4Mb
   sub-directories of 1Mb or more:
     data  32.8Mb
