@@ -73,15 +73,14 @@ check: build
         printf '===== run\n\tmake install\n!!\n'
 build_bare: 
 	R --vanilla CMD build ../${rpackage}
-build: check_meta_info
+build: roxy 
 	R --vanilla CMD build ../${rpackage}
-check_meta_info: roxy
-	./${check_meta_info_script}
 direct_check:  
 	R --vanilla CMD check ../${rpackage} ## check without build -- not recommended
 roxy:
 	rm man/* || true
-	printf "library('roxygen2')\nroxygen2::roxygenize('.', roclets = c('rd'))\n" > ${roxy_code}
+	printf "devtools::load_all()\n" > ${roxy_code}
+	printf "roxygen2::roxygenize('.', roclets = c('rd'))\n" >> ${roxy_code}
 	R --vanilla CMD BATCH --vanilla ${roxy_code}
 
 EOF
