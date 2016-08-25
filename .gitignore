@@ -5,3 +5,5 @@ man/*
 sedscr
 tmp*
 Makefile
+*.Rcheck/
+*.tar.gz

@@ -1,3 +1,8 @@
+\.git.*
+.*\.tar\.gz
+.*\.Rcheck
+Makefile
+configure
 ^\.RData$
 ^\.Rhistory$
 ^.*\.Rproj$
