@@ -129,7 +129,7 @@ melt_species_attribute_group <- function(list, species, abbreviation, group) {
     )
     data_frame <- rbind(bwi1_statistics, bwi2_statistics, bwi3_statistics)
     data_frame$group <- factor(get(group, bwi3), levels = get(group, bwi3))
-    data_frame$species <- BAGR.BWI$ba.text[which(BAGR.BWI$bagr.lab == species)]
+    data_frame$species <- get_data("bagr.bwi")$ba.text[which(get_data("bagr.bwi")$bagr.lab == species)]
     data_frame$grouping_variable <- group
     data_frame$ownership <- get_label_for_abbreviation(owner_postfix,
 						      "text_label")
@@ -165,7 +165,7 @@ plot_species_attribute_group <- function(data) {
 			 width = .3,
 			 position = ggplot2::position_dodge(width=0.9)
 			 ) +
-	   ggplot2::scale_fill_manual(values = COLORS_BWI, name = "BWI") +
+	   ggplot2::scale_fill_manual(values = get_data("colors_bwi"), name = "BWI") +
 	   ggplot2::theme(axis.text.x  = ggplot2::element_text(size = 8)) +
 	   ggplot2::xlab(get_label_for_abbreviation(as.character(unique(data$grouping_variable)),
 					  "text_label")) + 
@@ -283,7 +283,7 @@ plot_by_group <- function(data, subs, x = "Baumartengruppe") {
 			 width = .3,
 			 position = ggplot2::position_dodge(width=0.9)
 			 ) +
-	   ggplot2::scale_fill_manual(values = COLORS_BWI, name = "BWI") +
+	   ggplot2::scale_fill_manual(values = get_data("colors_bwi"), name = "BWI") +
 	   ggplot2::scale_y_continuous(labels = scales::comma) +
 	   ggplot2::xlab(x) +
 	   ggplot2::ylab(get_label_for_abbreviation(unique(data$abbreviation), "axis_label")) +

@@ -6,6 +6,8 @@
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
 #' @section Hinweis: \code{krs.list} muss geladen sein
 #' @param kreise A data.frame (see \code{\link{kreise}}
+#' @param A A global variable  (see \code{\link{A}}
+#' @param A.12 A global variable  (see \code{\link{A.12}}
 #' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
 #' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
 #' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
@@ -23,6 +25,8 @@
 #'  Standardfehler fuer verschiedene Eigentumsklassen), \strong{begehb_Holzbfl} 
 #'  (Holzbodenflaeche und Standardfehler fuer verschiedene Eigentumsklassen)
 flaechen.kreis.fun.1 <- function(kreiscode, 
+                                 A = get_data("A"),
+                                 A.12 = get_data("A.12"),
                                  kreise = get_data("kreise"),
                                  trakte.3 = get_data("trakte.3"),
                                  ecken.3 = get_data("ecken.3"),
@@ -226,6 +230,8 @@ flaechen.kreis.fun.1 <- function(kreiscode,
 #' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten 
 #'  enthaelt, anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: 
 #'  list(Wa=c(3,5), Begehbar=1).
+#' @param A A global variable  (see \code{\link{A}}
+#' @param A.12 A global variable  (see \code{\link{A.12}}
 #' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
 #' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
 #' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
@@ -239,6 +245,8 @@ flaechen.kreis.fun.1 <- function(kreiscode,
 #'  Standardfehler fuer verschiedene Eigentumsklassen), \strong{begehb_Holzbfl} 
 #'  (Holzbodenflaeche und Standardfehler fuer verschiedene Eigentumsklassen)
 flaechen.stratum.fun.1 <- function(auswahl,
+                                 A = get_data("A"),
+                                 A.12 = get_data("A.12"),
                                  trakte.3 = get_data("trakte.3"),
                                  ecken.3 = get_data("ecken.3"),
                                  trakte.2 = get_data("trakte.2"),

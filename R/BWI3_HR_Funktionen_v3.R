@@ -99,6 +99,8 @@
 #'  Bezeichner der Baumarten-Gruppen ("lab") z.B. list(bagr.lab = c("FiTa", 
 #'  "DglKiLae", "Bu", "Ei", "BLb", "WLb"), ba.grupp =list(c(10:19,30:39,90:99), 
 #'  c(20:29,40,50,51), c(100), c(110,111), c(112:199),c(200:299))).
+#' @param A A global variable  (see \code{\link{A}}
+#' @param A.12 A global variable  (see \code{\link{A.12}}
 #' @param kreise A data.frame (see \code{\link{kreise}}
 #' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
 #' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
@@ -113,6 +115,8 @@
 #' @return Dataframe-Tabelle mit FVBN-Auswertung nach Eigentumsklasse und 
 #'  aufgelisteter BWI.
 fvbn.kreis.fun.1 <- function(kreiscode,eig.list,bwi.list,bagr,
+                                 A = get_data("A"),
+                                 A.12 = get_data("A.12"),
                                  kreise = get_data("kreise"),
                                  trakte.3 = get_data("trakte.3"),
                                  ecken.3 = get_data("ecken.3"),
@@ -192,6 +196,8 @@ fvbn.kreis.fun.1 <- function(kreiscode,eig.list,bwi.list,bagr,
 #'  Bezeichner der Baumarten-Gruppen ("lab") z.B. list(bagr.lab = c("FiTa", 
 #'  "DglKiLae", "Bu", "Ei", "BLb", "WLb"), ba.grupp =list(c(10:19,30:39,90:99), 
 #'  c(20:29,40,50,51), c(100), c(110,111), c(112:199),c(200:299))).
+#' @param A A global variable  (see \code{\link{A}}
+#' @param A.12 A global variable  (see \code{\link{A.12}}
 #' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
 #' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
 #' @param baeume.3 A data.frame (see \code{\link{baeume.3}}
@@ -205,6 +211,8 @@ fvbn.kreis.fun.1 <- function(kreiscode,eig.list,bwi.list,bagr,
 #' @return Dataframe-Tabelle mit FVBN-Auswertung nach Eigentumsklasse und 
 #'  aufgelisteter BWI.
 fvbn.stratum.fun.1 <- function(auswahl,eig.list,bwi.list,bagr,
+                                 A = get_data("A"),
+                                 A.12 = get_data("A.12"),
                                  trakte.3 = get_data("trakte.3"),
                                  ecken.3 = get_data("ecken.3"),
                                  baeume.3 = get_data("baeume.3"),
@@ -289,6 +297,8 @@ fvbn.stratum.fun.1 <- function(auswahl,eig.list,bwi.list,bagr,
 #'  list(D.unt=0, D.ob=70, D.b=10, Ndh=T), Ndh (Nicht-Derbholz) = T bedeutet, 
 #'  dass zusaetzlich Nicht-Dh (unter 7 cm) ausgewiesen wird, sonst gilt 
 #'  \code{D.unt} als unterste Schwelle.
+#' @param A A global variable  (see \code{\link{A}}
+#' @param A.12 A global variable  (see \code{\link{A.12}}
 #' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
 #' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
 #' @param baeume.3 A data.frame (see \code{\link{baeume.3}}
@@ -302,6 +312,8 @@ fvbn.stratum.fun.1 <- function(auswahl,eig.list,bwi.list,bagr,
 #' @return Dataframe-Tabelle mit FVBN-Auswertung nach Eigentumsklasse und 
 #'  aufgelisteter BWI.
 fvbn.stratum.fun.2 <- function(auswahl,eig.list,bwi.list,bagr,a.klass,d.klass,
+                                 A = get_data("A"),
+                                 A.12 = get_data("A.12"),
                                  trakte.3 = get_data("trakte.3"),
                                  ecken.3 = get_data("ecken.3"),
                                  baeume.3 = get_data("baeume.3"),

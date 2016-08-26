@@ -12,7 +12,7 @@ Building bundeswaldinventur ----------------------------------------------------
 * checking for LF line-endings in source and make files
 * checking for empty or unneeded directories
 * looking to see if a ‘data/datalist’ file should be added
-* building ‘bundeswaldinventur_0.3.0.tar.gz’
+* building ‘bundeswaldinventur_0.3.0.9000.tar.gz’
 
 Setting env vars ---------------------------------------------------------------
 _R_CHECK_CRAN_INCOMING_USE_ASPELL_: TRUE
@@ -26,7 +26,7 @@ Checking bundeswaldinventur ----------------------------------------------------
 * using session charset: UTF-8
 * using options ‘--no-manual --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.3.0’
+* this is package ‘bundeswaldinventur’ version ‘0.3.0.9000’
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK

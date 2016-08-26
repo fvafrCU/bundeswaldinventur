@@ -29,8 +29,8 @@ tree_species_percent <- function(statistics_list){
 #'  species. Information for all three BWI's.
 melt_tree_species_percent <- function(statistics_list) {
   checkmate::assertString(statistics_list)
-  tree_species_labels <- factor(bagr.bwi$bagr.lab,
-                                levels = bagr.bwi$bagr.lab)
+  tree_species_labels <- factor(get_data("bagr.bwi")$bagr.lab,
+                                levels = get_data("bagr.bwi")$bagr.lab)
   
     return(
 	Reduce(function(...) merge(..., all = T), 
