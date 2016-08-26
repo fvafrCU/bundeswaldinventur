@@ -602,7 +602,7 @@ Totholz.klass.stratum.fun <-
   if(krit.bwi2)
   #Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
   {
-     totholz <- totholz[(totholz$tart!=4&totholz$tbd>=20)|(totholz$tart==4&(totholz$tbd>=60|totholz$lge>=0.5))]
+     totholz <- totholz[(totholz$tart!=4&totholz$tbd>=20)|(totholz$tart==4&(totholz$tbd>=60|totholz$lge>=0.5)), TRUE]
   }
 
   #Attribute und Untermenge des Stratums aus <totholz> ausw\u00e4hlen
