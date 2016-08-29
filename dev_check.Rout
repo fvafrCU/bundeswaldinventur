@@ -1,7 +1,6 @@
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Updating collate directive in  /home/nik/git/os/fva/bundeswaldinventur/DESCRIPTION 
-Writing get_data.Rd
+Writing adapt_script.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
@@ -88,4 +87,3 @@ checking installed package size ... NOTE
   installed size is 33.4Mb
   sub-directories of 1Mb or more:
     data  32.8Mb
-There were 12 warnings (use warnings() to see them)

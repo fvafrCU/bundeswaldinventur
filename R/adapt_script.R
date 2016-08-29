@@ -16,13 +16,16 @@ NULL
 #' @param overwrite overwrite files on disk?
 #' @param backup backup files to be overwriten?
 #' @param verbose be verbose?
+#' @param clean_warning delete lines containing only a "options(warn=2)"
+#' instruction?
 #' @export
 #' @return invisibly the content of the change files.
 adapt_script <- function(file_names = NA, path = ".", 
                          pattern = ".*\\.[RrSs]$|.*\\.[RrSs]nw$",
                          all.files = TRUE, recursive = TRUE, 
                          ignore.case = FALSE,
-                         overwrite = FALSE, backup = overwrite, verbose = TRUE
+                         overwrite = FALSE, backup = overwrite, verbose = TRUE,
+                         clean_warning = FALSE
                          ) {
     file_names <- find_files(file_names = file_names, path = path, 
                              pattern = pattern, all.files = all.files, 
@@ -44,6 +47,10 @@ adapt_script <- function(file_names = NA, path = ".",
             s <-  c(header, dependencies, bottom)
             s <- s[ - c(grep("^\\ *provide_data().*", s), 
                         grep("^\\ *provide_statistics().*", s))] 
+            if (isTRUE(clean_warning)){
+                s <- s[ - grep("^options\\(warn=2\\)$", 
+                               gsub("[[:space:]]", "", s))]
+            }
             if (isTRUE(overwrite)) {
                 if (backup) {
                     new_name <- paste0(file_name, "_adapted")
