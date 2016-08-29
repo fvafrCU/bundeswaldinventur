@@ -1,9 +1,7 @@
 Loading bundeswaldinventur
 Loading required package: testthat
 Testing bundeswaldinventur
-Examples of existing scripts: ........................
-made up examples: ........
-BWI3_HR_Landkreis_Funktionen_v1.R: ..
-figures_and_tables: .
-tree_species_shares.R: ...
-
+Error in test_files(paths, reporter = reporter, env = env, ...) : 
+  No matching test file in dir
+Calls: <Anonymous> -> <Anonymous> -> force -> <Anonymous> -> test_files
+Execution halted

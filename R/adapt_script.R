@@ -1,8 +1,28 @@
+#' @include utils.R
+NULL
+
+#' adapt old scripts to package bundeswaldinventur
+#' 
+#' Old scripts were based on a set of R codes in a customization directory that
+#' were controlled by customization/customization.R. These are adapted to use
+#' the package bundeswaldinventur.
+#' 
+#' @param file_names character vector naming the scripts to be adapted.
+#' @param path see \code{\link{find_files}}.
+#' @param pattern see \code{\link{find_files}}.
+#' @param all.files see \code{\link{find_files}}.
+#' @param recursive see \code{\link{find_files}}.
+#' @param ignore.case see \code{\link{find_files}}.
+#' @param overwrite overwrite files on disk?
+#' @param backup backup files to be overwriten?
+#' @param verbose be verbose?
+#' @export
+#' @return invisibly the content of the change files.
 adapt_script <- function(file_names = NA, path = ".", 
                          pattern = ".*\\.[RrSs]$|.*\\.[RrSs]nw$",
                          all.files = TRUE, recursive = TRUE, 
                          ignore.case = FALSE,
-                         overwrite = FALSE, backup = FALSE, verbose = TRUE
+                         overwrite = FALSE, backup = overwrite, verbose = TRUE
                          ) {
     file_names <- find_files(file_names = file_names, path = path, 
                              pattern = pattern, all.files = all.files, 
@@ -14,8 +34,9 @@ adapt_script <- function(file_names = NA, path = ".",
         if (length(i) == 0) {
             warning("script ", file_name, " doesn't seem to need adaption.")
         } else {
-            dependencies <- c('library("bundeswaldinventur")', 'library("xtable")', 
-                              'library("plyr")', 'library("reshape")', 'library("reshape2")',
+            dependencies <- c('library("bundeswaldinventur")', 
+                              'library("xtable")', 'library("plyr")', 
+                              'library("reshape")', 'library("reshape2")',
                               'library("ggplot2")', 'library("scales")')
             header <- s[seq_len(i - 1)]  
             bottom <- s[seq.int(from = (i + 1), to = length(s), by = 1)]  
@@ -27,7 +48,8 @@ adapt_script <- function(file_names = NA, path = ".",
                 if (backup) {
                     new_name <- paste0(file_name, "_adapted")
                     file.copy(file_name, new_name, overwrite = TRUE)
-                    if (isTRUE(verbose)) message("backed up ", file_name, " to ", new_name, ".")
+                    if (isTRUE(verbose)) message("backed up ", file_name, 
+                                                 " to ", new_name, ".")
                 }
                 output <- file(file_name)
                 writeLines(text = s, con = output)
@@ -41,5 +63,4 @@ adapt_script <- function(file_names = NA, path = ".",
 
 }
 
-adapt_script(path = "~/git/os/fva/hochrechnungen/scripts/", overwrite = TRUE, backup = TRUE)
 
