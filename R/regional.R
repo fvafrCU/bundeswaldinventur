@@ -38,30 +38,30 @@ table_tex_back_matter <- function() return("\\endminipage\n\\end{document}")
 tex_text_width <- function() return(0.4)
 theme_bold_axes <- function() {
     return(
-	   theme(axis.title =  element_text(colour = "black", size = 20),
-		 axis.text =  element_text(colour = "black", size = 15))
+	   ggplot2::theme(axis.title =  ggplot2::element_text(colour = "black", size = 20),
+		 axis.text =  ggplot2::element_text(colour = "black", size = 15))
 	   )
 }
 theme_bold_legend <- function() {
     return(
-	   theme(legend.title = element_text(colour = "black", size = 20),
-		 legend.text = element_text(colour = "black", size = 20)
+	   ggplot2::theme(legend.title = ggplot2::element_text(colour = "black", size = 20),
+		 legend.text = ggplot2::element_text(colour = "black", size = 20)
 		 )
 	   )
 }
 theme_bold_title <- function() {
     return(
-	   theme(plot.title = element_text(colour = "black", size = 14))
+	   ggplot2::theme(plot.title = ggplot2::element_text(colour = "black", size = 14))
 	   )
 }
 theme_rotate_xasis_labels <- function() {
     return(
-           theme(axis.text.x = element_text(angle = -70, hjust = 0, vjust = 1))
+           ggplot2::theme(axis.text.x = ggplot2::element_text(angle = -70, hjust = 0, vjust = 1))
            )
 }
 ptplot <- function(obj) {
-    plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +  
-         theme(axis.line=element_blank(),
+    graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +  
+         ggplot2::theme(axis.line=element_blank(),
                axis.text=element_blank(),
                axis.ticks=element_blank(),
                axis.title=element_blank(),
@@ -71,16 +71,16 @@ ptplot <- function(obj) {
 }
 
 tplot <- function(obj) {
-    plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
-         theme(strip.text.y = element_text(size=12)) + theme_rotate_xasis_labels()
+    graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
+         ggplot2::theme(strip.text.y = ggplot2::element_text(size=12)) + theme_rotate_xasis_labels()
          )
 }
 tplot1 <- function(obj) {
-    plot(obj + theme_bold_axes() + theme_bold_title() + 
-         theme(strip.text.y = element_text(size=12)) +
+    graphics::plot(obj + theme_bold_axes() + theme_bold_title() + 
+         ggplot2::theme(strip.text.y = ggplot2::element_text(size=12)) +
          theme_rotate_xasis_labels() +
-         theme(legend.title = element_text(colour = "black", size = 12),
-		 legend.text = element_text(colour = "black", size = 12)
+         ggplot2::theme(legend.title = ggplot2::element_text(colour = "black", size = 12),
+		 legend.text = ggplot2::element_text(colour = "black", size = 12)
 		 )
 
          )
@@ -91,10 +91,10 @@ to_tex <- function(..., file_name = dot_district_tex, append = TRUE) {
     cat(..., "\n",  file = file_name, append = append, sep = '')
 }
 
-grouping_species <- function(species = c('Fichte', 'Weißtanne'), 
+grouping_species <- function(species = c('Fichte', 'Wei\u00dftanne'), 
                              minimal_share = 10,
                              shares = species_shares, 
-                             species_list = bagr.xx){
+                             species_list = get_bwi_species_groups("regional")){
     species_shares <- shares[species] 
 
     distinct_species <- which(species_shares >= minimal_share)
@@ -115,7 +115,7 @@ grouping_species <- function(species = c('Fichte', 'Weißtanne'),
 }
 
 get_species_groups <- 
-    function(groupings = list(c("Fichte", "Weißtanne", "Douglasie", "Kiefer", "Lärchen/sNB"), 
+    function(groupings = list(c("Fichte", "Wei\u00dftanne", "Douglasie", "Kiefer", "L\u00e4rchen/sNB"), 
                               c("Buche", "Eichen"), 
                               c("Esche", "Bergahorn", "HBu", "sBlb", "Aln")
                               ),
@@ -140,7 +140,7 @@ golden_ratio <- function(s) {
 
 ##% plotting functions
 copyright <- function(){
-    anno <- annotate("text", label = "Copyright 2015: Abt. BuI, FVA BW",
+    anno <- ggplot2::annotate("text", label = "Copyright 2015: Abt. BuI, FVA BW",
                      size = 4, colour = "white", 
                      x = -Inf, y = -Inf, hjust = 0, vjust = 0)
     return(anno)
@@ -178,33 +178,33 @@ plot_groups_areas <- function(b1, b2, b3,
     table_data <- data_frame
     levels(data_frame$species) <-  gsub("/", "\n", levels(species_label))
     d_name <- paste0(gsub(' ', '_', gsub('/', '_', file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-    type_name <- 'Fläche'
+    type_name <- 'Fl\u00e4che'
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
-    tplot(ggplot(data = data_frame[ data_frame$species != "Alle BA", ],
-                aes(y = prediction,
+    tplot(ggplot2::ggplot(data = data_frame[ data_frame$species != "Alle BA", ],
+                ggplot2::aes(y = prediction,
                     x = species,
                     fill = bwi
                     ), 
                 group = bwi) +
-         geom_bar(stat = 'identity', position = position_dodge()) +
-         geom_errorbar(aes(ymin = prediction - standard_error,
+         ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()) +
+         ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
                            ymax = prediction + standard_error
                            ),
                        width = .3,
-                       position = position_dodge(width=0.9)
+                       position = ggplot2::position_dodge(width=0.9)
                        ) +
-         scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
-         scale_y_continuous(labels = german_number)  +
-         xlab('')+
-         ylab('Fläche [ha]') + copyright() + 
-         if(TITLE_PLOT){ggtitle(title_district)} 
+         ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+         ggplot2::scale_y_continuous(labels = german_number)  +
+         ggplot2::xlab('')+
+         ggplot2::ylab('Fl\u00e4che [ha]') + copyright() + 
+         if(TITLE_PLOT){ggplot2::ggtitle(title_district)} 
          )
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
@@ -218,11 +218,11 @@ plot_groups_areas <- function(b1, b2, b3,
         table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
         caption  <- c('Fl\\"achen in Hektar, Fehler in Prozent.')
     }
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
                       Artengruppe ~ ...)
     df_v_abs <- df_cast
     df_cast <- german_number(df_cast, digits = c(2, 1))
-    names(df_cast) <- gsub(".*_Vorhersage", 'Fläche', gsub(".*_Standardfehler", 
+    names(df_cast) <- gsub(".*_Vorhersage", 'Fl\u00e4che', gsub(".*_Standardfehler", 
                                                            "Fehler",
                                                            names(df_cast)))
     label_row <- paste("BWI & ", paste0("\\multicolumn{2}{c}{",
@@ -233,7 +233,7 @@ plot_groups_areas <- function(b1, b2, b3,
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -243,7 +243,7 @@ plot_groups_areas <- function(b1, b2, b3,
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -268,16 +268,16 @@ plot_groups_areas <- function(b1, b2, b3,
                              standard_error = b3$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                              ) 
                   )
-    type_name <- 'Flächenanteil'
+    type_name <- 'Fl\u00e4chenanteil'
     out_name <- paste(d_name, type_name, sep = '_')
     table_data <- data_frame[data_frame$species != "Alle BA",]
     names(table_data)  <- c('BWI', 'Artengruppe', 'Vorhersage', 'Standardfehler')
-    caption  <- c('Flächenanteil und Fehler in Prozent.')
+    caption  <- c('Fl\u00e4chenanteil und Fehler in Prozent.')
     if(do_errors_relative) {
         table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
         caption  <- c('Anteile und Fehler in Prozent.')
     }
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
                       Artengruppe ~ ...)
     df_cast <- german_number(df_cast, digits = c(2, 1))
     names(df_cast) <- gsub(".*_Vorhersage", 'Anteil', gsub(".*_Standardfehler", 
@@ -291,7 +291,7 @@ plot_groups_areas <- function(b1, b2, b3,
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -301,7 +301,7 @@ plot_groups_areas <- function(b1, b2, b3,
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -350,29 +350,29 @@ plot_groups_stocks <- function(b1, b2, b3,
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
-    tplot(ggplot(data =  subset(data_frame, species != "Alle BA"),
-                aes(y = prediction,
+    tplot(ggplot2::ggplot(data =  subset(data_frame, species != "Alle BA"),
+                ggplot2::aes(y = prediction,
                     x = species,
                     fill = bwi
                     ), 
                 group = bwi) +
-         geom_bar(stat = 'identity', position = position_dodge()) +
-         geom_errorbar(aes(ymin = prediction - standard_error,
+         ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()) +
+         ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
                            ymax = prediction + standard_error
                            ),
                        width = .3,
-                       position = position_dodge(width=0.9)
+                       position = ggplot2::position_dodge(width=0.9)
                        ) +
-         scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
-         scale_y_continuous(labels = german_number)  +
-         xlab('') +
-         ylab(expression(paste("Vorrat [", m^3 ,"]",  sep = ""))) + copyright() +
-         if(TITLE_PLOT){ggtitle(title_district)} 
+         ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+         ggplot2::scale_y_continuous(labels = german_number)  +
+         ggplot2::xlab('') +
+         ggplot2::ylab(expression(paste("Vorrat [", m^3 ,"]",  sep = ""))) + copyright() +
+         if(TITLE_PLOT){ggplot2::ggtitle(title_district)} 
          )
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
@@ -386,7 +386,7 @@ plot_groups_stocks <- function(b1, b2, b3,
         caption  <- c('Vorr\\"ate in Kubikmetern Derbholz mit Rinde, Fehler in
                       Prozent.')
     }
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
                       Artengruppe ~ ...)
     df_v_abs <- df_cast
     df_cast <- german_number(df_cast, digits = c(2, 1))
@@ -401,7 +401,7 @@ plot_groups_stocks <- function(b1, b2, b3,
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -411,7 +411,7 @@ plot_groups_stocks <- function(b1, b2, b3,
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -451,7 +451,7 @@ plot_groups_stocks <- function(b1, b2, b3,
         caption  <- c('Vorr\\"ate in Kubikmetern Derbholz mit Rinde je Hektar,
                       Fehler in Prozent.')
     }
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
                       Artengruppe ~ ...)
     df_cast <- german_number(df_cast, digits = c(2, 1))
     names(df_cast) <- gsub(".*_Vorhersage", 'Vorrat', gsub(".*_Standardfehler", 
@@ -465,7 +465,7 @@ plot_groups_stocks <- function(b1, b2, b3,
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -475,7 +475,7 @@ plot_groups_stocks <- function(b1, b2, b3,
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -526,29 +526,29 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
-        tplot(ggplot(data = data_frame,
-               aes(y = prediction,
+        tplot(ggplot2::ggplot(data = data_frame,
+               ggplot2::aes(y = prediction,
                    x = group,
                    fill = bwi
                    ), 
                group = bwi) +
-       geom_bar(stat = 'identity', position = position_dodge()) +
-       geom_errorbar(aes(ymin = prediction - standard_error,
+       ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()) +
+       ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
                          ymax = prediction + standard_error
                          ),
                      width = .3,
-                     position = position_dodge(width=0.9)
+                     position = ggplot2::position_dodge(width=0.9)
                      ) +
-       scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
-       scale_y_continuous(labels = german_number)  +
-       xlab('Durchmesser [cm]')+
-       ylab(expression(paste("Vorrat [", m^3 ,"]",  sep = ""))) + copyright() +
-       if(TITLE_PLOT){ggtitle(bquote(atop(.(title_district),
+       ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+       ggplot2::scale_y_continuous(labels = german_number)  +
+       ggplot2::xlab('Durchmesser [cm]')+
+       ggplot2::ylab(expression(paste("Vorrat [", m^3 ,"]",  sep = ""))) + copyright() +
+       if(TITLE_PLOT){ggplot2::ggtitle(bquote(atop(.(title_district),
                            atop(italic(.(species_group)), ""))))} )
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
@@ -565,7 +565,7 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
         table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
         caption  <- c('Vorr\\"ate in Hektar, Fehler in Prozent.')
     }
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
                       Durchmesser ~ ...)
     alle_durchmesser <- v[gsub("\n", "/", v$Artengruppe) == species_group, ]
 
@@ -589,7 +589,7 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -599,7 +599,7 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -643,33 +643,33 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
                                                       'Vorhersage',
                                                       'Standardfehler')
     d_name <- paste0(gsub(' ', '_', gsub('/', '_', file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-    type_name <- paste('Fläche', gsub(' ', '_', gsub('/', '_', species_group)), sep = '_')
+    type_name <- paste('Fl\u00e4che', gsub(' ', '_', gsub('/', '_', species_group)), sep = '_')
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
-        tplot(ggplot(data = data_frame,
-               aes(y = prediction,
+        tplot(ggplot2::ggplot(data = data_frame,
+               ggplot2::aes(y = prediction,
                    x = group,
                    fill = bwi
                    ), 
                group = bwi) +
-       geom_bar(stat = 'identity', position = position_dodge()) +
-       geom_errorbar(aes(ymin = prediction - standard_error,
+       ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()) +
+       ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
                          ymax = prediction + standard_error
                          ),
                      width = .3,
-                     position = position_dodge(width=0.9)
+                     position = ggplot2::position_dodge(width=0.9)
                      ) +
-       scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
-       scale_y_continuous(labels = german_number)  +
-       xlab('Alter [a]')+
-       ylab('Fläche [ha]') + copyright() + 
-       if(TITLE_PLOT){ggtitle(bquote(atop(.(title_district),
+       ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+       ggplot2::scale_y_continuous(labels = german_number)  +
+       ggplot2::xlab('Alter [a]')+
+       ggplot2::ylab('Fl\u00e4che [ha]') + copyright() + 
+       if(TITLE_PLOT){ggplot2::ggtitle(bquote(atop(.(title_district),
                            atop(italic(.(species_group)), ""))))})
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
@@ -686,7 +686,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
         table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
         caption  <- c('Fl\\"achen in Hektar, Fehler in Prozent.')
     }
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
                       Alter ~ ...)
     alle_alter <- a[gsub("\n", "/", a$Artengruppe) == species_group, ]
 
@@ -699,7 +699,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
                                   ))
               )
     df_cast <- german_number(df_cast, digits = c(2, 1))
-    names(df_cast) <- gsub(".*_Vorhersage", 'Fläche', gsub(".*_Standardfehler", 
+    names(df_cast) <- gsub(".*_Vorhersage", 'Fl\u00e4che', gsub(".*_Standardfehler", 
                                                            "Fehler",
                                                            names(df_cast)))
     label_row <- paste("BWI & ", paste0("\\multicolumn{2}{c}{",
@@ -712,7 +712,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -722,7 +722,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1,  nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -737,7 +737,7 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
                               file_name_district = regional_file_name,
                               title_district = krs.grupp$string[i]
                               ) {
-    deadwood_class <- c("Liegend", "Stehend (Baum)", "Stehend (Bruchstück)",
+    deadwood_class <- c("Liegend", "Stehend (Baum)", "Stehend (Bruchst\u00fcck)",
                         "Wurzelstock", "Abfuhrrest", "Gesamtvorrat")
     deadwood_class <- factor(deadwood_class, levels = deadwood_class)
     data_frame <- rbind(
@@ -771,38 +771,38 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
-    tplot(ggplot(data = data_frame,
-                aes(y = prediction,
+    tplot(ggplot2::ggplot(data = data_frame,
+                ggplot2::aes(y = prediction,
                     x = group,
                     fill = bwi
                     ), 
                 group = bwi) +
-         geom_bar(stat = 'identity', position = position_dodge()) +
-         geom_errorbar(aes(ymin = prediction - standard_error,
+         ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()) +
+         ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
                            ymax = prediction + standard_error
                            ),
                        width = .3,
-                       position = position_dodge(width=0.9)
+                       position = ggplot2::position_dodge(width=0.9)
                        ) +
-         scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
-         scale_y_continuous(labels = german_number) +
-         xlab('') +
-         ylab(expression(paste("Vorrat [", m^3,
+         ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+         ggplot2::scale_y_continuous(labels = german_number) +
+         ggplot2::xlab('') +
+         ggplot2::ylab(expression(paste("Vorrat [", m^3,
                                ha^-1, "]",  
                                sep = ""))
-         )  + copyright() + ggtitle("2012*: Berechnung nach Kriterien von 2002")
+         )  + copyright() + ggplot2::ggtitle("2012*: Berechnung nach Kriterien von 2002")
           )
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
     to_tex("\n\\begin{center}\\includegraphics[width=", 1,"\\textwidth]{", out_path,
            "}\\end{center}")
 
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula = Totholzart ~ ...)
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula = Totholzart ~ ...)
     df_r <- df_cast
     names(df_cast) <- gsub(".*_Vorhersage", "Vorrat", gsub(".*_Standardfehler", 
                                                            "Fehler",
@@ -819,7 +819,7 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = "")),
                  digits = 1
@@ -832,7 +832,7 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = "")),
                  digits = 1
@@ -888,7 +888,7 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
     data_frame$foo <- 
@@ -896,29 +896,29 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
                levels = unique(paste(data_frame$period, data_frame$group)), 
                ordered = TRUE,
                labels = unique(paste(data_frame$group, data_frame$period)))
-    tplot1(ggplot(data = data_frame,
-                aes(y = prediction,
+    tplot1(ggplot2::ggplot(data = data_frame,
+                ggplot2::aes(y = prediction,
                     x = x,
                     fill = foo
                     )
                 ) +
-       geom_bar(stat = 'identity', position = position_dodge()
+       ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()
                 , size = 1
                 ) +
-       geom_errorbar(aes(ymin = prediction - standard_error,
+       ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
                          ymax = prediction + standard_error
                          ),
                      width = .6,
-                     position = position_dodge(width=0.9)
+                     position = ggplot2::position_dodge(width=0.9)
                 , size = 1
                      ) +
-       scale_fill_manual(values = c('#33FF33', '#FF6666', '#006600', '#990000' ), name = '') +
-       scale_y_continuous(labels = german_number)  +
-       xlab('') +
-       ylab(expression(paste("Derbholz mit Rinde [", m^3, ha^-1, a^-1, "]",  sep = ""))) +
-       copyright()+  theme(legend.position="top")
+       ggplot2::scale_fill_manual(values = c('#33FF33', '#FF6666', '#006600', '#990000' ), name = '') +
+       ggplot2::scale_y_continuous(labels = german_number)  +
+       ggplot2::xlab('') +
+       ggplot2::ylab(expression(paste("Derbholz mit Rinde [", m^3, ha^-1, a^-1, "]",  sep = ""))) +
+       copyright()+  ggplot2::theme(legend.position="top")
        )
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
@@ -931,7 +931,7 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
         caption  <- c('Vorratsa\\"anderungen in Kubikmeternn Derbholz mit Rinde
                       pro Hektar und Jahr, Fehler in Prozent.')
     }
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
                       Artengruppe + Periode ~ ...)
     df_cast <- german_number(df_cast, digits = c(2, 1))
     names(df_cast) <- gsub("_Vorhersage", "", gsub(".*_Standardfehler", 
@@ -947,7 +947,7 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 2, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = c("ll", "ll", rep("|rr", ncol(df_cast) -1 )) 
                  ),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -957,7 +957,7 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 2, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = c("ll", "ll", rep("|rr", ncol(df_cast) -1 )) 
                  ),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -976,20 +976,20 @@ plot_ownership <- function(ownerships,
 
      ownerships$position = cumsum(ownerships$area)- ownerships$area/2
      ownerships$radius <- c(rep(c(1.6, 1.8), length.out  = nrow(ownerships)))
-     tmp <- ggplot(data = ownerships, 
-               aes(x = factor(1),
+     tmp <- ggplot2::ggplot(data = ownerships, 
+               ggplot2::aes(x = factor(1),
                    weight = area,
-                   fill = ownership)) + geom_bar() + coord_polar(theta = "y") + 
-xlab('') + ylab ('')+ scale_x_discrete(breaks = NULL) +
-scale_fill_manual(
+                   fill = ownership)) + ggplot2::geom_bar() + coord_polar(theta = "y") + 
+ggplot2::xlab('') + ylab ('')+ scale_x_discrete(breaks = NULL) +
+ggplot2::scale_fill_manual(
                   values = as.character(get_colors_for_ownership( map_labels_to_abbreviations(ownerships$ownership)))
                   , name = 'Eigentumsart',
                   labels = ownerships$ownership) + 
-geom_text(aes(x = radius, y = position, 
+geom_text(ggplot2::aes(x = radius, y = position, 
               label = ownership_realive_area
               )
 , size=6, color ='black') + 
-ggtitle(paste('Waldfläche:', round_and_prettify_german(sum(ownerships$area)),
+ggplot2::ggtitle(paste('Waldfl\u00e4che:', round_and_prettify_german(sum(ownerships$area)),
               'ha'))
 
 d_name <- paste0(gsub(' ', '_', gsub('/', '_', file_name_district)))
@@ -997,12 +997,12 @@ d_name <- paste0(gsub(' ', '_', gsub('/', '_', file_name_district)))
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
     ptplot(tmp)
 
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
@@ -1039,35 +1039,35 @@ plot_ntns <- function(ntns2, ntns3,
       )
 names(data_frame) <- sub('SE_Anteil', 'standard_error', names(data_frame))
 names(data_frame) <- sub('Anteil', 'prediction', names(data_frame))
-    tmp <- ggplot(data = data_frame,
-                aes(y = prediction,
+    tmp <- ggplot2::ggplot(data = data_frame,
+                ggplot2::aes(y = prediction,
                     x = NTNS,
                     fill = bwi
                     ), 
                 group = bwi) +
-         geom_bar(stat = 'identity', position = position_dodge()) +
-         geom_errorbar(aes(ymin = prediction - standard_error,
+         ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()) +
+         ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
                            ymax = prediction + standard_error
                            ),
                        width = .3,
-                       position = position_dodge(width=0.9)
+                       position = ggplot2::position_dodge(width=0.9)
                        ) +
-         scale_fill_manual(values = COLORS_BWI[2:3], name = 'BWI') +
-         scale_y_continuous(labels = german_number)  +
-         xlab('')+
-         ylab('Flächenanteil [%]') + copyright() + 
-         if(TITLE_PLOT){ggtitle(title_district)}
+         ggplot2::scale_fill_manual(values = COLORS_BWI[2:3], name = 'BWI') +
+         ggplot2::scale_y_continuous(labels = german_number)  +
+         ggplot2::xlab('')+
+         ggplot2::ylab('Fl\u00e4chenanteil [%]') + copyright() + 
+         if(TITLE_PLOT){ggplot2::ggtitle(title_district)}
     d_name <- paste0(gsub(' ', '_', gsub('/', '_', 
                                                    file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-    type_name <- 'Naturnähe'
+    type_name <- 'Naturn\u00e4he'
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
     tplot(tmp)
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
@@ -1075,10 +1075,10 @@ names(data_frame) <- sub('Anteil', 'prediction', names(data_frame))
            "}\\end{center}")
 
     table_data <- data_frame[,c(1, 4:6)]
-    names(table_data)  <- c('Naturnähestufe', 'Vorhersage', 'Standardfehler', 'BWI')
+    names(table_data)  <- c('Naturnaehestufe', 'Vorhersage', 'Standardfehler', 'BWI')
     caption  <- c('Naturn\\"ahestufen in der Fl\\"ache und Fehler in Prozent.')
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
-                      Naturnähestufe ~ ...)
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
+                      Naturnaehestufe ~ ...)
     df_cast <- german_number(df_cast, digits = c(2, 1))
     names(df_cast) <- gsub(".*_Vorhersage", 'Fl\\"achenanteil', gsub(".*_Standardfehler", 
                                                            "Fehler",
@@ -1093,7 +1093,7 @@ names(data_frame) <- sub('Anteil', 'prediction', names(data_frame))
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -1103,7 +1103,7 @@ names(data_frame) <- sub('Anteil', 'prediction', names(data_frame))
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -1130,35 +1130,35 @@ plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
                                    prediction = loss2$VB.A.bagr.akl.dkl[7,1,1,,],
                                    standard_error = loss2$VB.A.bagr.akl.dkl[7,2,1,,])
                         )
-    tmp <- ggplot(data = data_frame,
-                  aes(y = prediction,
+    tmp <- ggplot2::ggplot(data = data_frame,
+                  ggplot2::aes(y = prediction,
                       x = x,
                       fill = period
                       ), 
                   group = bwi) +
-geom_bar(stat = 'identity', position = position_dodge()) +
-geom_errorbar(aes(ymin = prediction - standard_error,
+ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()) +
+ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
                   ymax = prediction + standard_error
                   ),
               width = .3,
-              position = position_dodge(width=0.9)
+              position = ggplot2::position_dodge(width=0.9)
               ) +
-scale_fill_manual(values = COLORS_BWI[2:3], name = 'BWI') +
-scale_y_continuous(labels = german_number)  +
-xlab('Durchmesser [cm]')+
-         ylab(expression(paste("Jährl. Ernte ohne Rinde [", m^3 ,"]",  sep = "")))  + copyright()+
-if(TITLE_PLOT){ggtitle(title_district)}
+ggplot2::scale_fill_manual(values = COLORS_BWI[2:3], name = 'BWI') +
+ggplot2::scale_y_continuous(labels = german_number)  +
+ggplot2::xlab('Durchmesser [cm]')+
+         ggplot2::ylab(expression(paste("J\u00e4hrl. Ernte ohne Rinde [", m^3 ,"]",  sep = "")))  + copyright()+
+if(TITLE_PLOT){ggplot2::ggtitle(title_district)}
     d_name <- paste0(gsub(' ', '_', gsub('/', '_', 
                                                    file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
     type_name <- 'Nutzungen'
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
     tplot(tmp)
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
@@ -1180,7 +1180,7 @@ if(TITLE_PLOT){ggtitle(title_district)}
           )
     caption  <- c('J\\"a{}hrliche Ernte in Kubikmetern Erntevolumen ohne Rinde 
                   nach St\\"a{}rkeklassen \\"u{}ber alle Baumarten.')
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
                       period ~ ...)
     df_cast <- german_number(df_cast, digits = c(2, 1))
     names(df_cast) <- gsub("period", "Periode", 
@@ -1202,7 +1202,7 @@ if(TITLE_PLOT){ggtitle(title_district)}
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -1212,7 +1212,7 @@ if(TITLE_PLOT){ggtitle(title_district)}
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast) - 1, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -1274,7 +1274,7 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
     # data_frame <- reshape2::melt(df_cast, id.vars = c("BWI", "Artengruppe"))
     d_name <- paste0(gsub(' ', '_', gsub('/', '_', 
                                                    file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-    type_name <- 'Naturverjüngung'
+    type_name <- 'Naturverj\u00fcngung'
     out_name <- paste(d_name, type_name, sep = '_')
 
 
@@ -1284,7 +1284,7 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
                   in Prozent.')
                   print(file = dot_district_tex, floating = TRUE, append = TRUE, 
                         size = "scriptsize",
-                        xtable(table_data, caption = caption, 
+                        xtable::xtable(table_data, caption = caption, 
                                align = paste0("ll", paste(rep("rr", 
                                                               ceiling((ncol(df_cast) - 1)
                                                                       / 2)), 
@@ -1295,7 +1295,7 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
                   to_tex(table_tex_front_matter(), file_name = table_tex, append = FALSE)
                   print(file = table_tex, floating = FALSE, append = TRUE, 
                         size = "scriptsize",
-                        xtable(df_cast, 
+                        xtable::xtable(df_cast, 
                                align = paste0("ll", paste(rep("rr", 
                                                               ceiling((ncol(df_cast) - 1)
                                                                       / 2)), 
@@ -1317,11 +1317,11 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
                               ) {
     data_frame <- rbind(
                         data.frame(bwi = "2002", species=relevant_species_2$FBA, 
-                                   prediction=round(relevant_species_2$FBA.Fläche[1, , 2]*100, 1), 
-                                   standard_error=round(relevant_species_2$FBA.Fläche[2, , 2]*100, 2)),
+                                   prediction=round(relevant_species_2$"FBA.Fl\u00e4che"[1, , 2]*100, 1), 
+                                   standard_error=round(relevant_species_2$"FBA.Fl\u00e4che"[2, , 2]*100, 2)),
                         data.frame(bwi = "2012",  species=relevant_species_3$FBA, 
-                                   prediction=round(relevant_species_3$FBA.Fläche[1, , 2]*100, 1), 
-                                   standard_error=round(relevant_species_3$FBA.Fläche[2, , 2]*100, 2))
+                                   prediction=round(relevant_species_3$"FBA.Fl\u00e4che"[1, , 2]*100, 1), 
+                                   standard_error=round(relevant_species_3$"FBA.Fl\u00e4che"[2, , 2]*100, 2))
                         )
 
     d_name <- paste0(gsub(' ', '_', gsub('/', '_', file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
@@ -1329,29 +1329,29 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
     out_name <- paste(d_name, type_name, sep = '_')
     out_file <- paste0(out_name, '.eps')
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
-    postscript(out_path, width = graphic_width, height = graphic_height,
+    grDevices::postscript(out_path, width = graphic_width, height = graphic_height,
                horizontal = FALSE, onefile = FALSE, paper = "special",
                family = "Courier")
-    tplot1(ggplot(data = data_frame,
-                aes(y = prediction,
+    tplot1(ggplot2::ggplot(data = data_frame,
+                ggplot2::aes(y = prediction,
                     x = species,
                     fill = bwi
                     ), 
                 group = bwi) +
-         geom_bar(stat = 'identity', position = position_dodge()) +
-         geom_errorbar(aes(ymin = prediction - standard_error,
+         ggplot2::geom_bar(stat = 'identity', position = ggplot2::position_dodge()) +
+         ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
                            ymax = prediction + standard_error
                            ),
                        width = .3,
-                       position = position_dodge(width=0.9)
+                       position = ggplot2::position_dodge(width=0.9)
                        ) +
-         scale_fill_manual(values = COLORS_BWI[2:3], name = 'BWI') +
-         scale_y_continuous(labels = german_number)  +
-         xlab('')+
-         ylab('Flächenanteil in Prozent') + copyright() + 
-         if(TITLE_PLOT){ggtitle(title_district)} 
+         ggplot2::scale_fill_manual(values = COLORS_BWI[2:3], name = 'BWI') +
+         ggplot2::scale_y_continuous(labels = german_number)  +
+         ggplot2::xlab('')+
+         ggplot2::ylab('Fl\u00e4chenanteil in Prozent') + copyright() + 
+         if(TITLE_PLOT){ggplot2::ggtitle(title_district)} 
          )
-    dev.off()
+    grDevices::dev.off()
     file.link(to = file.path(plots_directory, out_file),
                  from = file.path(out_path)
                  )
@@ -1369,10 +1369,10 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
         table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
         caption  <- c('Forstlich bedeutsame Arten: Anteile und Fehler in Prozent.')
     }
-    df_cast <-  dcast(melt(table_data), value.var = "value", formula =
+    df_cast <-  reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula =
                       Art~ ...)
     df_cast <- german_number(df_cast, digits = c(2, 1))
-    names(df_cast) <- gsub(".*_Vorhersage", 'Flächenanteil', 
+    names(df_cast) <- gsub(".*_Vorhersage", 'Fl\u00e4chenanteil', 
                            gsub(".*_Standardfehler", "Fehler", names(df_cast)))
     label_row <- paste("BWI & ", paste0("\\multicolumn{2}{c}{",
                                                levels(table_data$BWI), "}", 
@@ -1382,7 +1382,7 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
     print(file = dot_district_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
@@ -1392,7 +1392,7 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
     print(file = table_tex, floating = TRUE, append = TRUE, 
           size = "scriptsize", booktabs = TRUE, 
           hline.after = c(-1, 0, nrow(df_cast)),
-          xtable(df_cast, caption = caption, 
+          xtable::xtable(df_cast, caption = caption, 
                  align = paste0("ll", paste(rep("|rr", (ncol(df_cast) - 1) / 2), 
                                             collapse = ""))),
           add.to.row= list(pos = list(-1), command = label_row),
