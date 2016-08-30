@@ -8,7 +8,7 @@ NULL
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @section warning: there is a second function \code{\link{get_species_groups}}
 #' which does nearly the same but the return value is slightly different.
-#' @param param Select different lists.
+#' @param type Select different lists.
 #' @export
 #' @return  a list with 
 #' \itemize{ 
@@ -30,8 +30,8 @@ get_bwi_species_groups <- function(type = "default") {
                                           181, 190:199), 
                                         c(200, 201, 210:213, 220:224, 230, 240, 250:252, 
                                           290:299)),
-                         ba.text = c("Fichte", "Weißtanne", "Douglasie", "Kiefer", 
-                                     "Lärchen/sNB", "Buche", "Eichen", "Esche", 
+                         ba.text = c("Fichte", "Wei\u00dftanne", "Douglasie", "Kiefer", 
+                                     "L\u00e4rchen/sNB", "Buche", "Eichen", "Esche", 
                                      "Bergahorn", "HBu", "sBlb", "Aln")
                          ),
                 "default" = list(bagr.lab = c("FI", "TA", 

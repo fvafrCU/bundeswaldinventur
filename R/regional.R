@@ -198,7 +198,7 @@ plot_groups_areas <- function(b1, b2, b3,
                        width = .3,
                        position = ggplot2::position_dodge(width=0.9)
                        ) +
-         ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+         ggplot2::scale_fill_manual(values = get_bwi_colors(), name = 'BWI') +
          ggplot2::scale_y_continuous(labels = german_number)  +
          ggplot2::xlab('')+
          ggplot2::ylab('Fl\u00e4che [ha]') + copyright() + 
@@ -366,7 +366,7 @@ plot_groups_stocks <- function(b1, b2, b3,
                        width = .3,
                        position = ggplot2::position_dodge(width=0.9)
                        ) +
-         ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+         ggplot2::scale_fill_manual(values = get_bwi_colors(), name = 'BWI') +
          ggplot2::scale_y_continuous(labels = german_number)  +
          ggplot2::xlab('') +
          ggplot2::ylab(expression(paste("Vorrat [", m^3 ,"]",  sep = ""))) + copyright() +
@@ -542,7 +542,7 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
                      width = .3,
                      position = ggplot2::position_dodge(width=0.9)
                      ) +
-       ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+       ggplot2::scale_fill_manual(values = get_bwi_colors(), name = 'BWI') +
        ggplot2::scale_y_continuous(labels = german_number)  +
        ggplot2::xlab('Durchmesser [cm]')+
        ggplot2::ylab(expression(paste("Vorrat [", m^3 ,"]",  sep = ""))) + copyright() +
@@ -663,7 +663,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
                      width = .3,
                      position = ggplot2::position_dodge(width=0.9)
                      ) +
-       ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+       ggplot2::scale_fill_manual(values = get_bwi_colors(), name = 'BWI') +
        ggplot2::scale_y_continuous(labels = german_number)  +
        ggplot2::xlab('Alter [a]')+
        ggplot2::ylab('Fl\u00e4che [ha]') + copyright() + 
@@ -787,7 +787,7 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
                        width = .3,
                        position = ggplot2::position_dodge(width=0.9)
                        ) +
-         ggplot2::scale_fill_manual(values = COLORS_BWI, name = 'BWI') +
+         ggplot2::scale_fill_manual(values = get_bwi_colors(), name = 'BWI') +
          ggplot2::scale_y_continuous(labels = german_number) +
          ggplot2::xlab('') +
          ggplot2::ylab(expression(paste("Vorrat [", m^3,
@@ -1052,7 +1052,7 @@ names(data_frame) <- sub('Anteil', 'prediction', names(data_frame))
                        width = .3,
                        position = ggplot2::position_dodge(width=0.9)
                        ) +
-         ggplot2::scale_fill_manual(values = COLORS_BWI[2:3], name = 'BWI') +
+         ggplot2::scale_fill_manual(values = get_bwi_colors()[2:3], name = 'BWI') +
          ggplot2::scale_y_continuous(labels = german_number)  +
          ggplot2::xlab('')+
          ggplot2::ylab('Fl\u00e4chenanteil [%]') + copyright() + 
@@ -1143,7 +1143,7 @@ ggplot2::geom_errorbar(ggplot2::aes(ymin = prediction - standard_error,
               width = .3,
               position = ggplot2::position_dodge(width=0.9)
               ) +
-ggplot2::scale_fill_manual(values = COLORS_BWI[2:3], name = 'BWI') +
+ggplot2::scale_fill_manual(values = get_bwi_colors()[2:3], name = 'BWI') +
 ggplot2::scale_y_continuous(labels = german_number)  +
 ggplot2::xlab('Durchmesser [cm]')+
          ggplot2::ylab(expression(paste("J\u00e4hrl. Ernte ohne Rinde [", m^3 ,"]",  sep = "")))  + copyright()+
@@ -1345,7 +1345,7 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
                        width = .3,
                        position = ggplot2::position_dodge(width=0.9)
                        ) +
-         ggplot2::scale_fill_manual(values = COLORS_BWI[2:3], name = 'BWI') +
+         ggplot2::scale_fill_manual(values = get_bwi_colors()[2:3], name = 'BWI') +
          ggplot2::scale_y_continuous(labels = german_number)  +
          ggplot2::xlab('')+
          ggplot2::ylab('Fl\u00e4chenanteil in Prozent') + copyright() + 
