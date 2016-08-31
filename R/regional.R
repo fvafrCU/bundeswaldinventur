@@ -9,11 +9,11 @@ get_label_for_NatHoe <- function(height_class) {
                     "3" = "Submontan",
                     "4" = "Montan",
                     "5" = "Hochmontan",
-                    stop(paste("NatHoe", height_class, "out of range." ))
+                    stop(paste("NatHoe ", height_class, " out of range." ))
                     )
     return(label)
 }
-TITLE_PLOT <- FALSE 
+#TITLE_PLOT <- FALSE 
 tex_table <- function(file_name, out){
     tools::texi2dvi(file_name, pdf = TRUE, clean = TRUE)
     pdf_name <- sub("\\.tex$", "\\.pdf", basename(file_name))
@@ -131,12 +131,6 @@ get_species_groups <-
     return(species_groups)
 }
 
-golden_ratio <- function(s) {
-    golden_ratio  <- (1 + sqrt(5))/2
-    a  <- s / golden_ratio
-    b  <- s - a
-    return(list(a = a, b = b))
-}
 
 ##% plotting functions
 copyright <- function(){
@@ -148,7 +142,7 @@ copyright <- function(){
 
 plot_groups_areas <- function(b1, b2, b3, 
                               do_errors_relative = FALSE,
-                              graphic_width = graphics_width,
+                              graphic_width = get_options("graphics_width"),
                               graphic_height = graphics_height,
                               graphic_directory = graphics_directory,
                               file_name_district = regional_file_name,
@@ -314,7 +308,7 @@ plot_groups_areas <- function(b1, b2, b3,
 
 plot_groups_stocks <- function(b1, b2, b3, 
                               do_errors_relative = FALSE,
-                              graphic_width = graphics_width,
+                              graphic_width = get_options("graphics_width"),
                               graphic_height = graphics_height,
                               graphic_directory = graphics_directory,
                               file_name_district = regional_file_name,
@@ -487,7 +481,7 @@ plot_groups_stocks <- function(b1, b2, b3,
 }
 plot_group_stocks_by_girth <- function(b1, b2, b3, v,
                               do_errors_relative = FALSE,
-                              graphic_width = graphics_width,
+                              graphic_width = get_options("graphics_width"),
                               graphic_height = graphics_height,
                               graphic_directory = graphics_directory,
                               file_name_district = regional_file_name,
@@ -611,7 +605,7 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
 
 plot_group_area_by_age <- function(b1, b2, b3, a,
                               do_errors_relative = FALSE,
-                              graphic_width = graphics_width,
+                              graphic_width = get_options("graphics_width"),
                               graphic_height = graphics_height,
                               graphic_directory = graphics_directory,
                               file_name_district = regional_file_name,
@@ -731,7 +725,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
 }
 plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3, 
                           deadwood_2a, deadwood_3_2a, deadwood_3a, 
-                              graphic_width = graphics_width,
+                              graphic_width = get_options("graphics_width"),
                               graphic_height = graphics_height,
                               graphic_directory = graphics_directory,
                               file_name_district = regional_file_name,
@@ -844,7 +838,7 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
 }
 plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
                              do_errors_relative = FALSE,
-                             graphic_width = graphics_width,
+                             graphic_width = get_options("graphics_width"),
                              graphic_height = graphics_height,
                              graphic_directory = graphics_directory,
                              file_name_district = regional_file_name,
@@ -965,7 +959,7 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
 
 }
 plot_ownership <- function(ownerships, 
-                              graphic_width = graphics_width,
+                              graphic_width = get_options("graphics_width"),
                               graphic_height = graphics_height,
                               graphic_directory = graphics_directory,
                               file_name_district = regional_file_name,
@@ -1027,7 +1021,7 @@ ntns_output <- function(ntns.list)
     SE_Anteil=round(ntns.list$NTNS.Flaeche.Anteil[2,2,],1)))
 }
 plot_ntns <- function(ntns2, ntns3, 
-                      graphic_width = graphics_width,
+                      graphic_width = get_options("graphics_width"),
                       graphic_height = graphics_height,
                       graphic_directory = graphics_directory,
                       file_name_district = regional_file_name,
@@ -1113,7 +1107,7 @@ names(data_frame) <- sub('Anteil', 'prediction', names(data_frame))
 }
 
 plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
-                      graphic_width = graphics_width,
+                      graphic_width = get_options("graphics_width"),
                       graphic_height = graphics_height,
                       graphic_directory = graphics_directory,
                       file_name_district = regional_file_name,
@@ -1221,7 +1215,7 @@ if(TITLE_PLOT){ggplot2::ggtitle(title_district)}
 }
 regeneration <- function(r2_a, r2_bs1, r2_bs2,
                          r3_a, r3_bs1, r3_bs2,
-                         graphic_width = graphics_width,
+                         graphic_width = get_options("graphics_width"),
                          graphic_height = graphics_height,
                          graphic_directory = graphics_directory,
                          file_name_district = regional_file_name,
@@ -1308,7 +1302,7 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
 }
 plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3, 
                               do_errors_relative = FALSE,
-                              graphic_width = graphics_width,
+                              graphic_width = get_options("graphics_width"),
                               graphic_height = graphics_height,
                               graphic_directory = graphics_directory,
                               file_name_district = regional_file_name,

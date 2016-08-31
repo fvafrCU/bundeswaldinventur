@@ -46,6 +46,7 @@ Collate:
     'get_data.R'
     'global_variables.R'
     'labeling.R'
+    'options.R'
     'regional.R'
     'statistics.R'
     'tree_species_shares.R'

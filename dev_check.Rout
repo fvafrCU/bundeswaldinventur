@@ -1,13 +1,12 @@
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing get_bwi_species_groups.Rd
 Setting env vars ---------------------------------------------------------------
 CFLAGS  : -Wall -pedantic
 CXXFLAGS: -Wall -pedantic
 Building bundeswaldinventur ----------------------------------------------------
-  --no-resave-data --no-manual 
+  --no-manual 
 
-* checking for file ‘/adc_mnt/data/git/oudeis/fva/bundeswaldinventur/DESCRIPTION’ ... OK
+* checking for file ‘/home/nik/git/os/fva/bundeswaldinventur/DESCRIPTION’ ... OK
 * preparing ‘bundeswaldinventur’:
 * checking DESCRIPTION meta-information ... OK
 * checking for LF line-endings in source and make files
@@ -61,7 +60,6 @@ Checking bundeswaldinventur ----------------------------------------------------
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-plot_deadwood: no visible binding for global variable 'graphics_width'
 plot_deadwood: no visible binding for global variable 'graphics_height'
 plot_deadwood: no visible binding for global variable
   'graphics_directory'
@@ -78,8 +76,6 @@ plot_deadwood: no visible binding for global variable 'standard_error'
 plot_deadwood: no visible binding for global variable 'plots_directory'
 plot_deadwood: no visible binding for global variable
   'dot_district_tex'
-plot_group_area_by_age: no visible binding for global variable
-  'graphics_width'
 plot_group_area_by_age: no visible binding for global variable
   'graphics_height'
 plot_group_area_by_age: no visible binding for global variable
@@ -100,11 +96,57 @@ plot_group_area_by_age: no visible binding for global variable 'bwi'
 plot_group_area_by_age: no visible binding for global variable
   'standard_error'
 plot_group_area_by_age: no visible binding for global variable
+  'TITLE_PLOT'
+plot_group_area_by_age: no visible binding for global variable
   'plots_directory'
 plot_group_area_by_age: no visible binding for global variable
   'dot_district_tex'
-plot_group_stocks_by_girth: no visible binding for global variable
-  'graphics_width'
+plot_groups_areas: no visible binding for global variable
+  'graphics_height'
+plot_groups_areas: no visible binding for global variable
+  'graphics_directory'
+plot_groups_areas: no visible binding for global variable
+  'regional_file_name'
+plot_groups_areas: no visible binding for global variable 'krs.grupp'
+plot_groups_areas: no visible binding for global variable 'i'
+plot_groups_areas: no visible binding for global variable
+  'district_groups'
+plot_groups_areas: no visible binding for global variable 'stratii'
+plot_groups_areas: no visible binding for global variable
+  'stratum_index'
+plot_groups_areas: no visible binding for global variable 'prediction'
+plot_groups_areas: no visible binding for global variable 'species'
+plot_groups_areas: no visible binding for global variable 'bwi'
+plot_groups_areas: no visible binding for global variable
+  'standard_error'
+plot_groups_areas: no visible binding for global variable 'TITLE_PLOT'
+plot_groups_areas: no visible binding for global variable
+  'plots_directory'
+plot_groups_areas: no visible binding for global variable
+  'dot_district_tex'
+plot_groups_stocks: no visible binding for global variable
+  'graphics_height'
+plot_groups_stocks: no visible binding for global variable
+  'graphics_directory'
+plot_groups_stocks: no visible binding for global variable
+  'regional_file_name'
+plot_groups_stocks: no visible binding for global variable 'krs.grupp'
+plot_groups_stocks: no visible binding for global variable 'i'
+plot_groups_stocks: no visible binding for global variable
+  'district_groups'
+plot_groups_stocks: no visible binding for global variable 'stratii'
+plot_groups_stocks: no visible binding for global variable
+  'stratum_index'
+plot_groups_stocks: no visible binding for global variable 'species'
+plot_groups_stocks: no visible binding for global variable 'prediction'
+plot_groups_stocks: no visible binding for global variable 'bwi'
+plot_groups_stocks: no visible binding for global variable
+  'standard_error'
+plot_groups_stocks: no visible binding for global variable 'TITLE_PLOT'
+plot_groups_stocks: no visible binding for global variable
+  'plots_directory'
+plot_groups_stocks: no visible binding for global variable
+  'dot_district_tex'
 plot_group_stocks_by_girth: no visible binding for global variable
   'graphics_height'
 plot_group_stocks_by_girth: no visible binding for global variable
@@ -127,59 +169,11 @@ plot_group_stocks_by_girth: no visible binding for global variable
 plot_group_stocks_by_girth: no visible binding for global variable
   'standard_error'
 plot_group_stocks_by_girth: no visible binding for global variable
+  'TITLE_PLOT'
+plot_group_stocks_by_girth: no visible binding for global variable
   'plots_directory'
 plot_group_stocks_by_girth: no visible binding for global variable
   'dot_district_tex'
-plot_groups_areas: no visible binding for global variable
-  'graphics_width'
-plot_groups_areas: no visible binding for global variable
-  'graphics_height'
-plot_groups_areas: no visible binding for global variable
-  'graphics_directory'
-plot_groups_areas: no visible binding for global variable
-  'regional_file_name'
-plot_groups_areas: no visible binding for global variable 'krs.grupp'
-plot_groups_areas: no visible binding for global variable 'i'
-plot_groups_areas: no visible binding for global variable
-  'district_groups'
-plot_groups_areas: no visible binding for global variable 'stratii'
-plot_groups_areas: no visible binding for global variable
-  'stratum_index'
-plot_groups_areas: no visible binding for global variable 'prediction'
-plot_groups_areas: no visible binding for global variable 'species'
-plot_groups_areas: no visible binding for global variable 'bwi'
-plot_groups_areas: no visible binding for global variable
-  'standard_error'
-plot_groups_areas: no visible binding for global variable
-  'plots_directory'
-plot_groups_areas: no visible binding for global variable
-  'dot_district_tex'
-plot_groups_stocks: no visible binding for global variable
-  'graphics_width'
-plot_groups_stocks: no visible binding for global variable
-  'graphics_height'
-plot_groups_stocks: no visible binding for global variable
-  'graphics_directory'
-plot_groups_stocks: no visible binding for global variable
-  'regional_file_name'
-plot_groups_stocks: no visible binding for global variable 'krs.grupp'
-plot_groups_stocks: no visible binding for global variable 'i'
-plot_groups_stocks: no visible binding for global variable
-  'district_groups'
-plot_groups_stocks: no visible binding for global variable 'stratii'
-plot_groups_stocks: no visible binding for global variable
-  'stratum_index'
-plot_groups_stocks: no visible binding for global variable 'species'
-plot_groups_stocks: no visible binding for global variable 'prediction'
-plot_groups_stocks: no visible binding for global variable 'bwi'
-plot_groups_stocks: no visible binding for global variable
-  'standard_error'
-plot_groups_stocks: no visible binding for global variable
-  'plots_directory'
-plot_groups_stocks: no visible binding for global variable
-  'dot_district_tex'
-plot_growth_loss: no visible binding for global variable
-  'graphics_width'
 plot_growth_loss: no visible binding for global variable
   'graphics_height'
 plot_growth_loss: no visible binding for global variable
@@ -202,7 +196,6 @@ plot_growth_loss: no visible binding for global variable
   'plots_directory'
 plot_growth_loss: no visible binding for global variable
   'dot_district_tex'
-plot_loss: no visible binding for global variable 'graphics_width'
 plot_loss: no visible binding for global variable 'graphics_height'
 plot_loss: no visible binding for global variable 'graphics_directory'
 plot_loss: no visible binding for global variable 'regional_file_name'
@@ -213,11 +206,11 @@ plot_loss: no visible binding for global variable 'x'
 plot_loss: no visible binding for global variable 'period'
 plot_loss: no visible binding for global variable 'bwi'
 plot_loss: no visible binding for global variable 'standard_error'
+plot_loss: no visible binding for global variable 'TITLE_PLOT'
 plot_loss: no visible binding for global variable 'stratii'
 plot_loss: no visible binding for global variable 'stratum_index'
 plot_loss: no visible binding for global variable 'plots_directory'
 plot_loss: no visible binding for global variable 'dot_district_tex'
-plot_ntns: no visible binding for global variable 'graphics_width'
 plot_ntns: no visible binding for global variable 'graphics_height'
 plot_ntns: no visible binding for global variable 'graphics_directory'
 plot_ntns: no visible binding for global variable 'regional_file_name'
@@ -227,11 +220,11 @@ plot_ntns: no visible binding for global variable 'prediction'
 plot_ntns: no visible binding for global variable 'NTNS'
 plot_ntns: no visible binding for global variable 'bwi'
 plot_ntns: no visible binding for global variable 'standard_error'
+plot_ntns: no visible binding for global variable 'TITLE_PLOT'
 plot_ntns: no visible binding for global variable 'stratii'
 plot_ntns: no visible binding for global variable 'stratum_index'
 plot_ntns: no visible binding for global variable 'plots_directory'
 plot_ntns: no visible binding for global variable 'dot_district_tex'
-plot_ownership: no visible binding for global variable 'graphics_width'
 plot_ownership: no visible binding for global variable
   'graphics_height'
 plot_ownership: no visible binding for global variable
@@ -253,8 +246,6 @@ plot_ownership: no visible binding for global variable
   'ownership_realive_area'
 plot_ownership: no visible binding for global variable
   'plots_directory'
-plot_silviculturally_relevant: no visible binding for global variable
-  'graphics_width'
 plot_silviculturally_relevant: no visible binding for global variable
   'graphics_height'
 plot_silviculturally_relevant: no visible binding for global variable
@@ -280,11 +271,12 @@ plot_silviculturally_relevant: no visible binding for global variable
 plot_silviculturally_relevant: no visible binding for global variable
   'standard_error'
 plot_silviculturally_relevant: no visible binding for global variable
+  'TITLE_PLOT'
+plot_silviculturally_relevant: no visible binding for global variable
   'plots_directory'
 plot_silviculturally_relevant: no visible binding for global variable
   'dot_district_tex'
 ptplot: no visible global function definition for 'element_blank'
-regeneration: no visible binding for global variable 'graphics_width'
 regeneration: no visible binding for global variable 'graphics_height'
 regeneration: no visible binding for global variable
   'graphics_directory'
@@ -301,12 +293,12 @@ tex_table: no visible binding for global variable 'graphics_directory'
 tex_table: no visible binding for global variable 'tables_directory'
 to_tex: no visible binding for global variable 'dot_district_tex'
 Undefined global functions or variables:
-  NTNS area bwi coord_polar district_groups dot_district_tex
-  element_blank foo generator_notice geom_text graphics_directory
-  graphics_height graphics_width group i krs.grupp ownership
-  ownership_realive_area period plots_directory position prediction
-  radius regional_file_name scale_x_discrete species standard_error
-  stratii stratum_index tables_directory x ylab
+  area bwi coord_polar district_groups dot_district_tex element_blank
+  foo generator_notice geom_text graphics_directory graphics_height
+  group i krs.grupp NTNS ownership ownership_realive_area period
+  plots_directory position prediction radius regional_file_name
+  scale_x_discrete species standard_error stratii stratum_index
+  tables_directory TITLE_PLOT x ylab
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -335,7 +327,6 @@ checking installed package size ... NOTE
     data  32.8Mb
 
 checking R code for possible problems ... NOTE
-plot_deadwood: no visible binding for global variable 'graphics_width'
 plot_deadwood: no visible binding for global variable 'graphics_height'
 plot_deadwood: no visible binding for global variable
   'graphics_directory'
@@ -344,15 +335,16 @@ plot_deadwood: no visible binding for global variable
 plot_deadwood: no visible binding for global variable 'krs.grupp'
 plot_deadwood: no visible binding for global variable 'i'
 plot_deadwood: no visible binding for global variable 'stratii'
-... 227 lines ...
+plot_deadwood: no visible binding for global variable 'stratum_index'
+... 220 lines ...
   'generator_notice'
 tex_table: no visible binding for global variable 'graphics_directory'
 tex_table: no visible binding for global variable 'tables_directory'
 to_tex: no visible binding for global variable 'dot_district_tex'
 Undefined global functions or variables:
-  NTNS area bwi coord_polar district_groups dot_district_tex
-  element_blank foo generator_notice geom_text graphics_directory
-  graphics_height graphics_width group i krs.grupp ownership
-  ownership_realive_area period plots_directory position prediction
-  radius regional_file_name scale_x_discrete species standard_error
-  stratii stratum_index tables_directory x ylab
+  area bwi coord_polar district_groups dot_district_tex element_blank
+  foo generator_notice geom_text graphics_directory graphics_height
+  group i krs.grupp NTNS ownership ownership_realive_area period
+  plots_directory position prediction radius regional_file_name
+  scale_x_discrete species standard_error stratii stratum_index
+  tables_directory TITLE_PLOT x ylab
