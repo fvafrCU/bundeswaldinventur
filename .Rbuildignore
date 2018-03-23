@@ -20,3 +20,12 @@ configure
 ^Makefile$
 ^configure$
 ^TODO.md$
+^.*\.tar\.gz$
+^bundeswaldinventur\.Rcheck$
+^cran-comments\.md$
+^\.Rprofile$
+^README\.Rmd$
+^README-.*\.png$
+^\.travis\.yml$
+^make\.R$
+^log$
