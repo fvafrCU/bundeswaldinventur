@@ -29,3 +29,4 @@ configure
 ^\.travis\.yml$
 ^make\.R$
 ^log$
+^\.log\.Rout$

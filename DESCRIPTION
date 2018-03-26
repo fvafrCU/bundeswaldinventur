@@ -24,8 +24,8 @@ Imports:
     ggplot2,
     checkmate,
     scales
-RoxygenNote: 5.0.1
-Collate:
+RoxygenNote: 6.0.1
+Collate: 
     'BWI3_HR_Funktionen_v3.R'
     'BWI3_HR_Landkreis_Funktionen_v1.R'
     'BWI3_HR_Totholz_Funktionen_v1.R'
@@ -34,6 +34,7 @@ Collate:
     'adapt_script.R'
     'batch.R'
     'bits_and_pieces.R'
+    'bundeswaldinventur-package.R'
     'data_documentation.R'
     'deadwood.R'
     'figures_and_tables.R'
@@ -49,6 +50,7 @@ Collate:
     'options.R'
     'regional.R'
     'statistics.R'
+    'throw.R'
     'tree_species_shares.R'
     'variable_getters.R'
     'zzz.R'

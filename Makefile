@@ -1,8 +1,8 @@
 # Force posix:
 .POSIX:
 
-R = R-devel
-Rscript = Rscript-devel
+R = R-release
+Rscript = Rscript-release
 Rscript_release = Rscript-release
 R_release = R-release
 
@@ -95,7 +95,7 @@ README.md: README.Rmd R/$(PKGNAME)-package.R
 	$(Rscript) --vanilla -e 'knitr::knit("README.Rmd")'
 
 $(LOG_DIR)/roxygen2.Rout: .log.Rout $(R_FILES)
-	$(R) --vanilla -e 'roxygen2::roxygenize(".")' > $(LOG_DIR)/roxygen2.Rout 2>&1 
+	$(R) --vanilla -e 'devtools::document(".")' > $(LOG_DIR)/roxygen2.Rout 2>&1 
 
 .log.Rout: 
 	$(Rscript) --vanilla -e 'packager:::use_build_ignore(".log.Rout")'
