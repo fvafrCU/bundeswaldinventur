@@ -17,7 +17,8 @@
 throw <- function(message_string, system_call = sys.call(-1), ...) {
     checkmate::qassert(message_string, "s*")
     condition <- structure(
-                           class = c("bundeswaldinventur", "error", "condition"),
+                           class = c("bundeswaldinventur", "error", 
+                                     "condition"),
                            list(message = message_string, call = system_call),
                            ...
                            )
