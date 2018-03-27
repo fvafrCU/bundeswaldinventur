@@ -8,6 +8,7 @@ NULL
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @section warning: there is a second function \code{\link{get_species_groups}}
 #' which does nearly the same but the return value is slightly different.
+#' @param type Select different lists.
 #' @export
 #' @return  a list with 
 #' \itemize{ 
@@ -17,24 +18,40 @@ NULL
 #'     \item[\var{ba.colors}] a corresponding vector of color definitions.
 #'     \item[\var{ba.text}] another vector of tree species group labels.
 #' }
-get_bwi_species_groups <- function() { 
-    l <- list(bagr.lab = c("FI", "TA", 
-                           "DGL", "KI", "LAE", 
-                           "BU", "EI",
-                           "ALH", "ALN"),
-              ba.grupp = list(c(10:19, 90:99), c(30:39), 
-                              c(40), c(20:29), c(50, 51),
-                              c(100), c(110:114),
-                              c(120:199), c(200:299)),
-              ba.colors = c("grey30", "red", 
-                            "violet", "orange", "yellow", 
-                            "green", "darkblue",
-                            grDevices::rgb(100,190, 150, maxColorValue = 255), "brown"),
-              ba.text = c("Fichte", "Tanne", 
-                          "Douglasie", "Kiefer", "L\u00e4rche",
-                          "Buche", "Eiche", 
-                          "ALH", "ALN")
-              )
+get_bwi_species_groups <- function(type = "default") { 
+    l <- switch(type,
+                "regional" = list(bagr.lab = c("FI", "TA", "DGL", "KI", 
+                                               "SNB", "BU", "EI", "ES", 
+                                               "BAH", "HBU", "SBLB", "ALN"), 
+                         ba.grupp =list(c(10), c(30), c(40), c(20), 
+                                        c(50, 51, 11:19, 21:29, 31:39, 90:99), c(100), 
+                                        c(110, 111, 112),  c(120), c(140), c(130), 
+                                        c(113, 114, 121, 141:144, 150, 160, 170, 180, 
+                                          181, 190:199), 
+                                        c(200, 201, 210:213, 220:224, 230, 240, 250:252, 
+                                          290:299)),
+                         ba.text = c("Fichte", "Wei\u00dftanne", "Douglasie", "Kiefer", 
+                                     "L\u00e4rchen/sNB", "Buche", "Eichen", "Esche", 
+                                     "Bergahorn", "HBu", "sBlb", "Aln")
+                         ),
+                "default" = list(bagr.lab = c("FI", "TA", 
+                                              "DGL", "KI", "LAE", 
+                                              "BU", "EI",
+                                              "ALH", "ALN"),
+                         ba.grupp = list(c(10:19, 90:99), c(30:39), 
+                                         c(40), c(20:29), c(50, 51),
+                                         c(100), c(110:114),
+                                         c(120:199), c(200:299)),
+                         ba.colors = c("grey30", "red", 
+                                       "violet", "orange", "yellow", 
+                                       "green", "darkblue",
+                                       grDevices::rgb(100,190, 150, maxColorValue = 255), "brown"),
+                         ba.text = c("Fichte", "Tanne", 
+                                     "Douglasie", "Kiefer", "L\u00e4rche",
+                                     "Buche", "Eiche", 
+                                     "ALH", "ALN")),
+                throw("unkown type ", type, ".")
+                )
     return(l)
 }
 

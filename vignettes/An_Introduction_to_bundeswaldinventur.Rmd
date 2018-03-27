@@ -1,0 +1,19 @@
+---
+title: "An Introduction to *bundeswaldinventur*"
+author: 
+date: 2018-03-23, 15:05:09
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{An Introduction to bundeswaldinventur }
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Teaser
+Collection of design-based estimators and reporting
+functions for substrata of the area of interest. 
+
+# Features
+ 
+
+# A Minimal Example
