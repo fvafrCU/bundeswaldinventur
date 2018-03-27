@@ -1,3 +1,5 @@
+#' @include variable_getters.R
+
 # See inst/global_variables.R for details.
 #' BWI standard green shades
 #' 
@@ -9,7 +11,7 @@
 #' backward compability. It was created by 
 #' \code{COLORS_BWI <- get_bwi_colors()}
 #' and you should use the getter function instead of the object.
-"COLORS_BWI"
+"COLORS_BWI" <- get_bwi_colors()
 #' Total Inventory area
 #' 
 #' The total area of the inventory area of BWI3 (3575148 ha).
@@ -20,7 +22,7 @@
 #' backward compability. It was created by 
 #' \code{A <- get_design("a", 3)}
 #' and you should use the getter function instead of the object.
-"A" 
+"A" <- get_design("a", 3)
 #' Total Inventory area in BWI 1 and 2
 #' 
 #' The inventory area which covers the area of BWI1 and BWI2 (3575163 ha).
@@ -31,7 +33,7 @@
 #' backward compability. It was created by 
 #' \code{A.12 <- get_design("a", 1)}
 #' and you should use the getter function instead of the object.
-"A.12" 
+"A.12" <- get_design("a", 1)
 #' Traktanzahl
 #' 
 #' Anzahl der in der BWI aufgenommenen Trakte (8970).
@@ -42,7 +44,7 @@
 #' backward compability. It was created by 
 #' \code{nT <- get_design("nt", 3)}
 #' and you should use the getter function instead of the object.
-"nT" 
+"nT" <- get_design("nt", 3)
 #' Eckenanzahl aus BWI 1 und 2
 #' 
 #' Anzahl der Traktecken, die in der BWI 1 und 2 aufgenommen wurden (?) (35743).
@@ -53,7 +55,7 @@
 #' backward compability. It was created by 
 #' \code{nTE.12 <- get_design("nte", 1)}
 #' and you should use the getter function instead of the object.
-"nTE.12" 
+"nTE.12" <- get_design("nte", 1)
 #' Eckenanzahl der BWI 3
 #' 
 #' Anzahl der Traktecken, welche in der BWI 3 aufgenommen wurden (35731).
@@ -64,7 +66,7 @@
 #' backward compability. It was created by 
 #' \code{nTE <- get_design("nte", 3)}
 #' and you should use the getter function instead of the object.
-"nTE" 
+"nTE" <- get_design("nte", 3)
 #' Representationsfaktor BWI 1 und 2
 #' 
 #' Area representation factor of each plot (Ecke).
@@ -75,7 +77,7 @@
 #' backward compability. It was created by 
 #' \code{RF.12 <- get_design("rf", 1)}
 #' and you should use the getter function instead of the object.
-"RF.12" 
+"RF.12" <- get_design("rf", 1)
 #' Representationsfaktor BWI 3
 #' 
 #' Area representation factor of each plot (Ecke).
@@ -86,7 +88,7 @@
 #' backward compability. It was created by 
 #' \code{RF <- get_design("rf", 3)}
 #' and you should use the getter function instead of the object.
-"RF" 
+"RF" <- get_design("rf", 3)
 #' Tree species groups and further information
 #' 
 #' List with tree species groups used in BWI3 and further information.
@@ -103,9 +105,9 @@
 #'  \item{ba.colors}{standard colors for tree species group}
 #'  \item{ba.text}{names of tree species groups}
 #'  }
-"bagr.bwi"
+"bagr.bwi" <- get_bwi_species_groups()
 #' @rdname bagr.bwi 
-"BAGR.BWI"
+"BAGR.BWI" <- bagr.bwi
 #' Tree species groups
 #' 
 #' List with tree species groups used in BWI3.
@@ -116,6 +118,6 @@
 #' backward compability. It was created by 
 #' \code{BAGR.LIST <- bagr.list <- get_bwi_species_groups()[["bagr.lab"]]}
 #' and you should use the getter function instead of the object.
-"bagr.list"
+"bagr.list" <- get_bwi_species_groups()[["bagr.lab"]]
 #' @rdname bagr.list 
-"BAGR.LIST"
+"BAGR.LIST" <- bagr.list

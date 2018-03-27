@@ -49,6 +49,7 @@ Collate:
     'fvbn2e.R'
     'german_things.R'
     'get_data.R'
+    'variable_getters.R'
     'global_variables.R'
     'labeling.R'
     'options.R'
@@ -56,5 +57,4 @@ Collate:
     'statistics.R'
     'throw.R'
     'tree_species_shares.R'
-    'variable_getters.R'
     'zzz.R'
