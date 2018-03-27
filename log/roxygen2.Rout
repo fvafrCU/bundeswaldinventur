@@ -20,6 +20,7 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing throw.Rd
+Writing get_species_groups.Rd
+Deleting COLORS_BWI.Rd
 > 
 > 

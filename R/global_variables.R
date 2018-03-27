@@ -1,4 +1,5 @@
 #' @include variable_getters.R
+NULL
 
 # See inst/global_variables.R for details.
 #' BWI standard green shades
