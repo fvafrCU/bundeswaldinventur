@@ -1,3 +1,4 @@
+* Improve test coverage
 * Check which of the data in the RData files are needed. Especially the
   statistics data.
 * Sample and anonymise bwi.RData and rewrite all testthat test according to new data.
