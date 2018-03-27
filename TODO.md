@@ -1,3 +1,5 @@
+* FIXME: get_species_groups is defined in R/regional.R and
+  R/variable_getters.R!!! Get rid of the former!
 * Improve test coverage
 * Check which of the data in the RData files are needed. Especially the
   statistics data.

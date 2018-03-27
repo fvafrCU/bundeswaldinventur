@@ -20,7 +20,12 @@ deadwood.R: ....
 figures_and_tables: .
 statistics.R: ......
 tree_species_shares.R: ...
-variable_getters.R: .
+variable_getters.R: 1
 Testing bundeswaldinventur:::throw(): .
+
+Failed -------------------------------------------------------------------------
+1. Error: get_species_groups (@test_variable_getters.R#14) ---------------------
+'names' attribute [2] must be the same length as the vector [1]
+1: get_species_groups() at /home/nik/git/os/fva/bundeswaldinventur/tests/testthat/test_variable_getters.R:14
 
 DONE ===========================================================================
