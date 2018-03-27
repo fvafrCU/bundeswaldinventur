@@ -29,4 +29,5 @@ configure
 ^\.travis\.yml$
 ^make\.R$
 ^log$
+^maintenance$
 ^\.log\.Rout$
