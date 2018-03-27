@@ -23,7 +23,11 @@ Imports:
     xtable,
     ggplot2,
     checkmate,
-    scales
+    scales,
+    devtools,
+    rprojroot,
+    testthat,
+    RUnit
 RoxygenNote: 6.0.1
 Collate: 
     'BWI3_HR_Funktionen_v3.R'

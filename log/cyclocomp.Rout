@@ -1,4 +1,9 @@
-Installing 7 packages: digest, glue, lazyeval, Rcpp, stringi, stringr, viridisLite
+Installing 10 packages: devtools, digest, glue, lazyeval, openssl, Rcpp, stringi, stringr, testthat, viridisLite
+trying URL 'http://cloud.r-project.org/src/contrib/devtools_1.13.5.tar.gz'
+Content type 'application/x-gzip' length 486555 bytes (475 KB)
+==================================================
+downloaded 475 KB
+
 trying URL 'http://cloud.r-project.org/src/contrib/digest_0.6.15.tar.gz'
 Content type 'application/x-gzip' length 122095 bytes (119 KB)
 ==================================================
@@ -13,6 +18,11 @@ trying URL 'http://cloud.r-project.org/src/contrib/lazyeval_0.2.1.tar.gz'
 Content type 'application/x-gzip' length 80150 bytes (78 KB)
 ==================================================
 downloaded 78 KB
+
+trying URL 'http://cloud.r-project.org/src/contrib/openssl_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 1194261 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
 
 trying URL 'http://cloud.r-project.org/src/contrib/Rcpp_0.12.16.tar.gz'
 Content type 'application/x-gzip' length 3763400 bytes (3.6 MB)
@@ -29,6 +39,11 @@ Content type 'application/x-gzip' length 118333 bytes (115 KB)
 ==================================================
 downloaded 115 KB
 
+trying URL 'http://cloud.r-project.org/src/contrib/testthat_2.0.0.tar.gz'
+Content type 'application/x-gzip' length 217190 bytes (212 KB)
+==================================================
+downloaded 212 KB
+
 trying URL 'http://cloud.r-project.org/src/contrib/viridisLite_0.3.0.tar.gz'
 Content type 'application/x-gzip' length 44019 bytes (42 KB)
 ==================================================
@@ -37,7 +52,7 @@ downloaded 42 KB
 * installing *source* package ‘digest’ ...
 ** package ‘digest’ successfully unpacked and MD5 sums checked
 ** libs
-make[1]: Entering directory '/tmp/RtmpAXkjRb/R.INSTALL2aa17cf591a3/digest/src'
+make[1]: Entering directory '/tmp/Rtmp7wlXla/R.INSTALL6dc265ff7f2e/digest/src'
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c aes.c -o aes.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c crc32.c -o crc32.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c digest.c -o digest.o
@@ -50,8 +65,8 @@ gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sha256.c -o sha256.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c xxhash.c -o xxhash.o
 gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-z,relro -o digest.so aes.o crc32.o digest.o init.o md5.o pmurhash.o raes.o sha1.o sha2.o sha256.o xxhash.o -L/usr/lib/R/lib -lR
-make[1]: Leaving directory '/tmp/RtmpAXkjRb/R.INSTALL2aa17cf591a3/digest/src'
-installing to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/digest/libs
+make[1]: Leaving directory '/tmp/Rtmp7wlXla/R.INSTALL6dc265ff7f2e/digest/src'
+installing to /tmp/Rtmpx0u8yu/file6da05e0c9884/digest/libs
 ** R
 ** inst
 ** preparing package for lazy loading
@@ -64,13 +79,13 @@ installing to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/digest/libs
 * installing *source* package ‘glue’ ...
 ** package ‘glue’ successfully unpacked and MD5 sums checked
 ** libs
-make[1]: Entering directory '/tmp/RtmpBZJc2v/R.INSTALL2ad7204bda9f/glue/src'
+make[1]: Entering directory '/tmp/RtmpKWrUWt/R.INSTALL6df73d6f532d/glue/src'
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c glue.c -o glue.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c trim.c -o trim.o
 gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-z,relro -o glue.so glue.o init.o trim.o -L/usr/lib/R/lib -lR
-make[1]: Leaving directory '/tmp/RtmpBZJc2v/R.INSTALL2ad7204bda9f/glue/src'
-installing to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/glue/libs
+make[1]: Leaving directory '/tmp/RtmpKWrUWt/R.INSTALL6df73d6f532d/glue/src'
+installing to /tmp/Rtmpx0u8yu/file6da05e0c9884/glue/libs
 ** R
 ** inst
 ** byte-compile and prepare package for lazy loading
@@ -83,7 +98,7 @@ installing to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/glue/libs
 * installing *source* package ‘lazyeval’ ...
 ** package ‘lazyeval’ successfully unpacked and MD5 sums checked
 ** libs
-make[1]: Entering directory '/tmp/RtmpldmfKp/R.INSTALL2af47f4958fb/lazyeval/src'
+make[1]: Entering directory '/tmp/RtmpkfitDk/R.INSTALL6e147d8df011/lazyeval/src'
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c expr.c -o expr.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c interp.c -o interp.o
@@ -91,8 +106,8 @@ gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c name.c -o name.o
 gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.c -o utils.o
 gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-z,relro -o lazyeval.so expr.o init.o interp.o lazy.o name.o utils.o -L/usr/lib/R/lib -lR
-make[1]: Leaving directory '/tmp/RtmpldmfKp/R.INSTALL2af47f4958fb/lazyeval/src'
-installing to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/lazyeval/libs
+make[1]: Leaving directory '/tmp/RtmpkfitDk/R.INSTALL6e147d8df011/lazyeval/src'
+installing to /tmp/Rtmpx0u8yu/file6da05e0c9884/lazyeval/libs
 ** R
 ** inst
 ** preparing package for lazy loading
@@ -102,10 +117,54 @@ installing to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/lazyeval/libs
 ** installing vignettes
 ** testing if installed package can be loaded
 * DONE (lazyeval)
+* installing *source* package ‘openssl’ ...
+** package ‘openssl’ successfully unpacked and MD5 sums checked
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=
+Using PKG_LIBS=-l:libssl.so.1.1 -l:libcrypto.so.1.1
+** libs
+make[1]: Entering directory '/tmp/RtmpLeh1yd/R.INSTALL6e3a394eb07e/openssl/src'
+rm -f aes.o base64.o bignum.o cert.o compatibility.o diffie.o envelope.o error.o hash.o info.o keygen.o keys.o onload.o openssh.o password.o pem.o pkcs12.o pkcs7.o rand.o rsa.o signing.o ssl.o stream.o write.o openssl.so
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c aes.c -o aes.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c base64.c -o base64.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bignum.c -o bignum.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cert.c -o cert.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c compatibility.c -o compatibility.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c diffie.c -o diffie.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c envelope.c -o envelope.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c error.c -o error.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c hash.c -o hash.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c info.c -o info.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c keygen.c -o keygen.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c keys.c -o keys.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c onload.c -o onload.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c openssh.c -o openssh.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c password.c -o password.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pem.c -o pem.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pkcs12.c -o pkcs12.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pkcs7.c -o pkcs7.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rand.c -o rand.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rsa.c -o rsa.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c signing.c -o signing.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c ssl.c -o ssl.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c stream.c -o stream.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c write.c -o write.o
+gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-z,relro -o openssl.so aes.o base64.o bignum.o cert.o compatibility.o diffie.o envelope.o error.o hash.o info.o keygen.o keys.o onload.o openssh.o password.o pem.o pkcs12.o pkcs7.o rand.o rsa.o signing.o ssl.o stream.o write.o -l:libssl.so.1.1 -l:libcrypto.so.1.1 -L/usr/lib/R/lib -lR
+make[1]: Leaving directory '/tmp/RtmpLeh1yd/R.INSTALL6e3a394eb07e/openssl/src'
+installing to /tmp/Rtmpx0u8yu/file6da05e0c9884/openssl/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (openssl)
 * installing *source* package ‘Rcpp’ ...
 ** package ‘Rcpp’ successfully unpacked and MD5 sums checked
 ** libs
-make[1]: Entering directory '/tmp/RtmptSOwdi/R.INSTALL2b1b6f3a823a/Rcpp/src'
+make[1]: Entering directory '/tmp/RtmpHh8vpr/R.INSTALL6ee549678cd8/Rcpp/src'
 g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Date.cpp -o Date.o
 g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Module.cpp -o Module.o
 g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rcpp_init.cpp -o Rcpp_init.o
@@ -113,8 +172,8 @@ g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug
 g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c attributes.cpp -o attributes.o
 g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c barrier.cpp -o barrier.o
 g++ -shared -L/usr/lib/R/lib -Wl,-z,relro -o Rcpp.so Date.o Module.o Rcpp_init.o api.o attributes.o barrier.o -L/usr/lib/R/lib -lR
-make[1]: Leaving directory '/tmp/RtmptSOwdi/R.INSTALL2b1b6f3a823a/Rcpp/src'
-installing to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/Rcpp/libs
+make[1]: Leaving directory '/tmp/RtmpHh8vpr/R.INSTALL6ee549678cd8/Rcpp/src'
+installing to /tmp/Rtmpx0u8yu/file6da05e0c9884/Rcpp/libs
 ** R
 ** inst
 ** preparing package for lazy loading
@@ -197,7 +256,7 @@ config.status: creating src/install.libs.R
     LIBS=  
 
 ** libs
-make[1]: Entering directory '/tmp/RtmpMc4NXS/R.INSTALL2b4142ed575b/stringi/src'
+make[1]: Entering directory '/tmp/RtmpEojEmc/R.INSTALL6f0d4680ba67/stringi/src'
 g++  -I/usr/share/R/include -DNDEBUG -I.    -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_brkiter.cpp -o stri_brkiter.o
 g++  -I/usr/share/R/include -DNDEBUG -I.    -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_collator.cpp -o stri_collator.o
 g++  -I/usr/share/R/include -DNDEBUG -I.    -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_common.cpp -o stri_common.o
@@ -283,8 +342,8 @@ g++  -I/usr/share/R/include -DNDEBUG -I.    -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -
 g++  -I/usr/share/R/include -DNDEBUG -I.    -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_utils.cpp -o stri_utils.o
 g++  -I/usr/share/R/include -DNDEBUG -I.    -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_wrap.cpp -o stri_wrap.o
 g++ -shared -L/usr/lib/R/lib -Wl,-z,relro -o stringi.so stri_brkiter.o stri_collator.o stri_common.o stri_compare.o stri_container_base.o stri_container_bytesearch.o stri_container_listint.o stri_container_listraw.o stri_container_listutf8.o stri_container_regex.o stri_container_usearch.o stri_container_utf16.o stri_container_utf8.o stri_container_utf8_indexable.o stri_encoding_conversion.o stri_encoding_detection.o stri_encoding_management.o stri_escape.o stri_exception.o stri_ICU_settings.o stri_join.o stri_length.o stri_pad.o stri_prepare_arg.o stri_random.o stri_reverse.o stri_search_class_count.o stri_search_class_detect.o stri_search_class_extract.o stri_search_class_locate.o stri_search_class_replace.o stri_search_class_split.o stri_search_class_startsendswith.o stri_search_class_subset.o stri_search_class_trim.o stri_search_common.o stri_search_coll_count.o stri_search_coll_detect.o stri_search_coll_extract.o stri_search_coll_locate.o stri_search_coll_replace.o stri_search_coll_split.o stri_search_coll_startsendswith.o stri_search_coll_subset.o stri_search_boundaries_count.o stri_search_boundaries_extract.o stri_search_boundaries_locate.o stri_search_boundaries_split.o stri_search_fixed_count.o stri_search_fixed_detect.o stri_search_fixed_extract.o stri_search_fixed_locate.o stri_search_fixed_replace.o stri_search_fixed_split.o stri_search_fixed_subset.o stri_search_fixed_startsendswith.o stri_search_in.o stri_search_other_replace.o stri_search_other_split.o stri_search_regex_count.o stri_search_regex_detect.o stri_search_regex_extract.o stri_search_regex_locate.o stri_search_regex_match.o stri_search_regex_replace.o stri_search_regex_split.o stri_search_regex_subset.o stri_sort.o stri_stats.o stri_stringi.o stri_sub.o stri_test.o stri_time_zone.o stri_time_calendar.o stri_time_symbols.o stri_time_format.o stri_trans_casemap.o stri_trans_other.o stri_trans_normalization.o stri_trans_transliterate.o stri_ucnv.o stri_uloc.o stri_utils.o stri_wrap.o -L/usr/lib/x86_64-linux-gnu -licui18n -licuuc -licudata -L/usr/lib/R/lib -lR
-make[1]: Leaving directory '/tmp/RtmpMc4NXS/R.INSTALL2b4142ed575b/stringi/src'
-installing via 'install.libs.R' to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/stringi
+make[1]: Leaving directory '/tmp/RtmpEojEmc/R.INSTALL6f0d4680ba67/stringi/src'
+installing via 'install.libs.R' to /tmp/Rtmpx0u8yu/file6da05e0c9884/stringi
 ** R
 ** inst
 ** preparing package for lazy loading
@@ -305,6 +364,17 @@ installing via 'install.libs.R' to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/stringi
 ** building package indices
 ** testing if installed package can be loaded
 * DONE (viridisLite)
+* installing *source* package ‘devtools’ ...
+** package ‘devtools’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (devtools)
 * installing *source* package ‘stringr’ ...
 ** package ‘stringr’ successfully unpacked and MD5 sums checked
 ** R
@@ -319,9 +389,31 @@ installing via 'install.libs.R' to /tmp/RtmpoTJ0kQ/file2a7a395d4feb/stringi
 ** installing vignettes
 ** testing if installed package can be loaded
 * DONE (stringr)
+* installing *source* package ‘testthat’ ...
+** package ‘testthat’ successfully unpacked and MD5 sums checked
+** libs
+make[1]: Entering directory '/tmp/RtmpvADeIw/R.INSTALL73d55885ae27/testthat/src'
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG -I../inst/include -DCOMPILING_TESTTHAT     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG -I../inst/include -DCOMPILING_TESTTHAT     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c reassign.c -o reassign.o
+g++ -I/usr/share/R/include -DNDEBUG -I../inst/include -DCOMPILING_TESTTHAT     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c test-catch.cpp -o test-catch.o
+g++ -I/usr/share/R/include -DNDEBUG -I../inst/include -DCOMPILING_TESTTHAT     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c test-example.cpp -o test-example.o
+g++ -I/usr/share/R/include -DNDEBUG -I../inst/include -DCOMPILING_TESTTHAT     -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c test-runner.cpp -o test-runner.o
+g++ -shared -L/usr/lib/R/lib -Wl,-z,relro -o testthat.so init.o reassign.o test-catch.o test-example.o test-runner.o -L/usr/lib/R/lib -lR
+make[1]: Leaving directory '/tmp/RtmpvADeIw/R.INSTALL73d55885ae27/testthat/src'
+installing to /tmp/Rtmpx0u8yu/file6da05e0c9884/testthat/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (testthat)
 
 The downloaded source packages are in
-	‘/tmp/RtmpoTJ0kQ/downloaded_packages’
+	‘/tmp/Rtmpx0u8yu/downloaded_packages’
 * installing *source* package ‘bundeswaldinventur’ ...
 ** R
 ** data

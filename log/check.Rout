@@ -25,9 +25,7 @@ Version contains large components (0.3.1.9000)
     data  32.8Mb
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
-* checking top-level files ... NOTE
-Non-standard file/directory found at top level:
-  ‘testing’
+* checking top-level files ... OK
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -298,13 +296,10 @@ Undefined global functions or variables:
 * checking data for ASCII and uncompressed saves ... OK
 * checking files in ‘vignettes’ ... OK
 * checking examples ... OK
-* checking for unstated dependencies in ‘tests’ ... WARNING
-'::' or ':::' imports not declared from:
-  ‘devtools’ ‘rprojroot’ ‘RUnit’
-'library' or 'require' call not declared from: ‘testthat’
+* checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [157s/158s]
+  Running ‘testthat.R’ [157s/157s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 1 WARNING, 4 NOTEs
+Status: 3 NOTEs
