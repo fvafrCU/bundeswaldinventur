@@ -134,7 +134,7 @@ $(LOG_DIR)/make.png: .log.Rout Makefile $(R_FILES) $(MAN_FILES) \
 .PHONY: cleanr
 cleanr: $(LOG_DIR)/cleanr.Rout 
 $(LOG_DIR)/cleanr.Rout: .log.Rout $(R_FILES) $(LOG_DIR)/dependencies.Rout
-	$(Rscript) --vanilla -e 'tryCatch(cleanr::check_directory("R/", check_return = FALSE), cleanr = function(e) print(e))' > $(LOG_DIR)/cleanr.Rout 2>&1 
+	$(Rscript) --vanilla -e 'cleanr::load_internal_functions("bundeswaldinventur"); tryCatch(cleanr::check_directory("R/", check_return = FALSE), cleanr = function(e) print(e))' > $(LOG_DIR)/cleanr.Rout 2>&1 
 
 .PHONY: lintr
 lintr: $(LOG_DIR)/lintr.Rout 
