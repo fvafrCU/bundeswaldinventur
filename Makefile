@@ -20,7 +20,7 @@ TEMP_FILE = $(shell tempfile)
 LOG_DIR = log
 
 .PHONY: all
-all: cran-comments.md
+all: install
 
 # devel stuff
 .PHONY: devel
