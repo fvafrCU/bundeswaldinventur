@@ -1,3 +1,7 @@
+# bundeswaldinventur 0.6.0.9000
+
+* foo
+
 # bundeswaldinventur 0.6.0
 
 * Renamed function get\_species\_groups() to group\_district\_species() in
