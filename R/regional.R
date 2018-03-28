@@ -114,7 +114,7 @@ grouping_species <- function(species = c('Fichte', 'Wei\u00dftanne'),
     return(list(label = label, group = grouping))
 }
 
-get_species_groups <- 
+group_district_species <- 
     function(groupings = list(c("Fichte", "Wei\u00dftanne", "Douglasie", "Kiefer", "L\u00e4rchen/sNB"), 
                               c("Buche", "Eichen"), 
                               c("Esche", "Bergahorn", "HBu", "sBlb", "Aln")

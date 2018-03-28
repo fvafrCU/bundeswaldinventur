@@ -25,21 +25,12 @@ NO COPY: inst/maintenance/global_variables.R:57:7: style: Trailing whitespace is
 NO COPY: inst/maintenance/global_variables.R:70:5: style: Trailing whitespace is superfluous.
 "nT" 
     ^
-NO COPY: inst/maintenance/global_variables.R:71:1: style: Variable and function names should be all lowercase.
-nT <- get_design("nt", 3)
-^~
 NO COPY: inst/maintenance/global_variables.R:83:9: style: Trailing whitespace is superfluous.
 "nTE.12" 
         ^
-NO COPY: inst/maintenance/global_variables.R:84:1: style: Variable and function names should be all lowercase.
-nTE.12 <- get_design("nte", 1)
-^~~~~~
 NO COPY: inst/maintenance/global_variables.R:96:6: style: Trailing whitespace is superfluous.
 "nTE" 
      ^
-NO COPY: inst/maintenance/global_variables.R:97:1: style: Variable and function names should be all lowercase.
-nTE <- get_design("nte", 3)
-^~~
 NO COPY: inst/maintenance/global_variables.R:109:8: style: Trailing whitespace is superfluous.
 "RF.12" 
        ^
@@ -1009,9 +1000,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:509:80: style: Trailing whitespace is superfl
 NO COPY: R/BWI3_HR_Funktionen_v3.R:510:18: style: Trailing whitespace is superfluous.
   # for merge())! 
                  ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:515:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:515:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -1027,18 +1015,12 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:518:27: style: Put spaces around all infix op
 NO COPY: R/BWI3_HR_Funktionen_v3.R:519:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
   ^~~~~~~~~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:519:17: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:519:19: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                  ~^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:519:20: style: Place a space before left parenthesis, except in a function call.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                    ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:519:21: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:519:23: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                      ~^~
@@ -1417,18 +1399,12 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:630:3: style: Words within variable and funct
 NO COPY: R/BWI3_HR_Funktionen_v3.R:630:32: style: Put spaces around all infix operators.
   se.mpl.stratum <- mpl.stratum*
                               ~^~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:631:10: style: Variable and function names should be all lowercase.
-    sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
-         ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:631:12: style: Put spaces around all infix operators.
     sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
           ~^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:631:13: style: Place a space before left parenthesis, except in a function call.
     sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
             ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:631:14: style: Variable and function names should be all lowercase.
-    sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
-             ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:631:16: style: Put spaces around all infix operators.
     sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
               ~^~
@@ -1540,9 +1516,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:654:49: style: Commas should always have a sp
 NO COPY: R/BWI3_HR_Funktionen_v3.R:654:62: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(xy.baf$m,xy.baf$mbaf),nT)
                                                              ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:654:62: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(xy.baf$m,xy.baf$mbaf),nT)
-                                                             ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:655:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         BAF.bagr.akl.dkl[1,i,j,k] <-  R.list$R.xy*A
         ^~~~~~~~~~~~~~~~
@@ -1858,9 +1831,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:723:54: style: Commas should always have a sp
 NO COPY: R/BWI3_HR_Funktionen_v3.R:723:60: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(ne.T$n.te,y.pl),nT)
                                                            ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:723:60: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(ne.T$n.te,y.pl),nT)
-                                                           ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:725:13: style: Variable and function names should be all lowercase.
             mPL.na.bagr.akl.dkl[1,i.n,i,j,k] <- R.list$R.xy
             ^~~~~~~~~~~~~~~~~~~
@@ -1927,9 +1897,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:735:63: style: Put spaces around all infix op
 NO COPY: R/BWI3_HR_Funktionen_v3.R:735:69: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$m,xy[,(l+t.pos+1)]),nT)
                                                                     ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:735:69: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$m,xy[,(l+t.pos+1)]),nT)
-                                                                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:736:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.na.bagr.akl.dkl[l,1,i.n,i,j,k] <- R.list$R.xy*A
               ^~~~~~~~~~~~~~~~~
@@ -2002,9 +1969,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:748:60: style: Put spaces around all infix op
 NO COPY: R/BWI3_HR_Funktionen_v3.R:748:68: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$mbaf,xy[,(l+off)]),nT)
                                                                    ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:748:68: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$mbaf,xy[,(l+off)]),nT)
-                                                                   ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:749:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.na.bagr.akl.dkl[(l+8),1,i.n,i,j,k] <- R.list$R.xy
               ^~~~~~~~~~~~~~~~~
@@ -2329,9 +2293,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:917:80: style: Trailing whitespace is superfl
 NO COPY: R/BWI3_HR_Funktionen_v3.R:918:18: style: Trailing whitespace is superfluous.
   # for merge())! 
                  ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:923:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:923:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -2347,18 +2308,12 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:926:27: style: Put spaces around all infix op
 NO COPY: R/BWI3_HR_Funktionen_v3.R:927:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
   ^~~~~~~~~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:927:17: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:927:19: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                  ~^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:927:20: style: Place a space before left parenthesis, except in a function call.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                    ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:927:21: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:927:23: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                      ~^~
@@ -2746,18 +2701,12 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1040:3: style: Words within variable and func
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1040:32: style: Put spaces around all infix operators.
   se.mpl.stratum <- mpl.stratum*
                               ~^~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1041:10: style: Variable and function names should be all lowercase.
-    sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
-         ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1041:12: style: Put spaces around all infix operators.
     sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
           ~^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1041:13: style: Place a space before left parenthesis, except in a function call.
     sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
             ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1041:14: style: Variable and function names should be all lowercase.
-    sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
-             ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1041:16: style: Put spaces around all infix operators.
     sqrt(nT/(nT-1)*(sum(y.pl^2)/sum(y.pl)^2+sum(ne.T$n.te^2)/sum(ne.T$n.te)^2
               ~^~
@@ -2917,9 +2866,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1081:49: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1081:62: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(xy.baf$m,xy.baf$mbaf),nT)
                                                              ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1081:62: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(xy.baf$m,xy.baf$mbaf),nT)
-                                                             ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1082:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         BAF.bagr.akl.dkl[1,i,j,k] <-  R.list$R.xy*A
         ^~~~~~~~~~~~~~~~
@@ -3256,9 +3202,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1166:54: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1166:60: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(ne.T$n.te,y.pl),nT)
                                                            ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1166:60: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(ne.T$n.te,y.pl),nT)
-                                                           ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1168:13: style: Variable and function names should be all lowercase.
             mPL.na.bagr.akl.dkl[1,i.n,i,j,k] <- R.list$R.xy
             ^~~~~~~~~~~~~~~~~~~
@@ -3328,9 +3271,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1179:63: style: Put spaces around all infix o
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1179:69: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$m,xy[,(l+t.pos+2)]),nT)
                                                                     ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1179:69: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$m,xy[,(l+t.pos+2)]),nT)
-                                                                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1180:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.na.bagr.akl.dkl[l,1,i.n,i,j,k] <- R.list$R.xy*A
               ^~~~~~~~~~~~~~~~~
@@ -3412,9 +3352,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1195:62: style: Put spaces around all infix o
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1195:70: style: Commas should always have a space after.
                 R.list <- r.variance.fun(cbind(xy$mbaf,xy[,(l+off)]),nT)
                                                                      ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1195:70: style: Variable and function names should be all lowercase.
-                R.list <- r.variance.fun(cbind(xy$mbaf,xy[,(l+off)]),nT)
-                                                                     ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1197:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
               {
               ^
@@ -3433,9 +3370,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1198:65: style: Put spaces around all infix o
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1198:73: style: Commas should always have a space after.
                 R.list <- r.variance.fun(cbind(xy$mbaf.hb,xy[,(l+off)]),nT)
                                                                         ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1198:73: style: Variable and function names should be all lowercase.
-                R.list <- r.variance.fun(cbind(xy$mbaf.hb,xy[,(l+off)]),nT)
-                                                                        ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1200:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.na.bagr.akl.dkl[(l+8),1,i.n,i,j,k] <- R.list$R.xy
               ^~~~~~~~~~~~~~~~~
@@ -3676,9 +3610,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1315:36: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1317:4: style: Commented code should be removed.
   #A <- 3575148 #ha
    ^~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1319:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1319:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -3916,9 +3847,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1380:43: style: Words within variable and fun
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1380:58: style: Commas should always have a space after.
   r.list <- r.variance.fun(cbind(hb.t.s$m,hb.t.s$m_HB_s),nT)
                                                          ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1380:58: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(cbind(hb.t.s$m,hb.t.s$m_HB_s),nT)
-                                                         ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1381:21: style: Put spaces around all infix operators.
   HBF <- r.list$R.xy*A
                    ~^~
@@ -4489,9 +4417,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1539:46: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1539:49: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(x,y),nT)
                                                 ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1539:49: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(x,y),nT)
-                                                ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1540:13: style: Variable and function names should be all lowercase.
             iVB.bagr.akl.dkl[iii,1,i,j,k] <- R.list$R.xy*ifelse(ii<3,A,1)
             ^~~~~~~~~~~~~~~~
@@ -4681,9 +4606,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1558:46: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1558:49: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(x,y),nT)
                                                 ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1558:49: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(x,y),nT)
-                                                ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1559:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             VB.A.bagr.akl.dkl[iiii,1,i,j,k] <- R.list$R.xy*ifelse(ii<3,A,1)
             ^~~~~~~~~~~~~~~~~
@@ -4762,9 +4684,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1564:63: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1564:67: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,4]),nT)
                                                                   ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1564:67: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,4]),nT)
-                                                                  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1565:9: style: Variable and function names should be all lowercase.
         iVB.bagr.akl.dkl[13,1,i,j,k] <- R.list$R.xy*A
         ^~~~~~~~~~~~~~~~
@@ -4828,9 +4747,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1568:63: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1568:67: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,5]),nT)
                                                                   ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1568:67: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,5]),nT)
-                                                                  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1569:9: style: Variable and function names should be all lowercase.
         iVB.bagr.akl.dkl[14,1,i,j,k] <- R.list$R.xy*A
         ^~~~~~~~~~~~~~~~
@@ -4918,9 +4834,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1576:65: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1576:69: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,6]),nT)
                                                                     ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1576:69: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,6]),nT)
-                                                                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1577:9: style: Variable and function names should be all lowercase.
         iVB.bagr.akl.dkl[15,1,i,j,k] <- R.list$R.xy
         ^~~~~~~~~~~~~~~~
@@ -5002,9 +4915,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1582:65: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1582:69: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,7]),nT)
                                                                     ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1582:69: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,7]),nT)
-                                                                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1583:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         VB.A.bagr.akl.dkl[13,1,i,j,k] <- R.list$R.xy
         ^~~~~~~~~~~~~~~~~
@@ -5194,9 +5104,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1686:36: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1688:4: style: Commented code should be removed.
   #A <- 3575148 #ha
    ^~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1691:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1691:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -5431,9 +5338,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1750:43: style: Words within variable and fun
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1750:58: style: Commas should always have a space after.
   r.list <- r.variance.fun(cbind(hb.t.s$m,hb.t.s$m_HB_s),nT)
                                                          ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1750:58: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(cbind(hb.t.s$m,hb.t.s$m_HB_s),nT)
-                                                         ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1751:21: style: Put spaces around all infix operators.
   HBF <- r.list$R.xy*A
                    ~^~
@@ -5953,9 +5857,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1891:46: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1891:49: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(x,y),nT)
                                                 ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1891:49: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(x,y),nT)
-                                                ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1892:13: style: Variable and function names should be all lowercase.
             iVB.bagr.akl.dkl[iii,1,i,j,k] <- R.list$R.xy*ifelse(ii<3,A,1)
             ^~~~~~~~~~~~~~~~
@@ -6145,9 +6046,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1910:46: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1910:49: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(x,y),nT)
                                                 ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1910:49: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(x,y),nT)
-                                                ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1911:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             VB.A.bagr.akl.dkl[iiii,1,i,j,k] <- R.list$R.xy*ifelse(ii<3,A,1)
             ^~~~~~~~~~~~~~~~~
@@ -6226,9 +6124,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1916:63: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1916:67: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,4]),nT)
                                                                   ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1916:67: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,4]),nT)
-                                                                  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1917:9: style: Variable and function names should be all lowercase.
         iVB.bagr.akl.dkl[13,1,i,j,k] <- R.list$R.xy*A
         ^~~~~~~~~~~~~~~~
@@ -6292,9 +6187,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1920:63: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1920:67: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,5]),nT)
                                                                   ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1920:67: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,5]),nT)
-                                                                  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1921:9: style: Variable and function names should be all lowercase.
         iVB.bagr.akl.dkl[14,1,i,j,k] <- R.list$R.xy*A
         ^~~~~~~~~~~~~~~~
@@ -6382,9 +6274,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1928:65: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1928:69: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,6]),nT)
                                                                     ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1928:69: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,6]),nT)
-                                                                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1929:9: style: Variable and function names should be all lowercase.
         iVB.bagr.akl.dkl[15,1,i,j,k] <- R.list$R.xy
         ^~~~~~~~~~~~~~~~
@@ -6466,9 +6355,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:1934:65: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1934:69: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,7]),nT)
                                                                     ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:1934:69: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,7]),nT)
-                                                                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:1935:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         VB.A.bagr.akl.dkl[13,1,i,j,k] <- R.list$R.xy
         ^~~~~~~~~~~~~~~~~
@@ -6655,9 +6541,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:2039:36: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2041:4: style: Commented code should be removed.
   #A <- 3575148 #ha
    ^~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:2043:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2043:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -6889,9 +6772,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:2104:43: style: Words within variable and fun
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2104:58: style: Commas should always have a space after.
   r.list <- r.variance.fun(cbind(hb.t.s$m,hb.t.s$m_HB_s),nT)
                                                          ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:2104:58: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(cbind(hb.t.s$m,hb.t.s$m_HB_s),nT)
-                                                         ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2105:21: style: Put spaces around all infix operators.
   HBF <- r.list$R.xy*A
                    ~^~
@@ -7468,9 +7348,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:2264:46: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2264:49: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(x,y),nT)
                                                 ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:2264:49: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(x,y),nT)
-                                                ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2265:13: style: Variable and function names should be all lowercase.
             iVB.bagr.akl.dkl[iii,1,i,j,k] <- R.list$R.xy*ifelse(ii<3,A,1)
             ^~~~~~~~~~~~~~~~
@@ -7660,9 +7537,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:2284:46: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2284:49: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(x,y),nT)
                                                 ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:2284:49: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(x,y),nT)
-                                                ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2285:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             VB.A.bagr.akl.dkl[iiii,1,i,j,k] <- R.list$R.xy*ifelse(ii<3,A,1)
             ^~~~~~~~~~~~~~~~~
@@ -7741,9 +7615,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:2290:63: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2290:67: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,4]),nT)
                                                                   ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:2290:67: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,4]),nT)
-                                                                  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2292:9: style: Variable and function names should be all lowercase.
         iVB.bagr.akl.dkl[16,1,i,j,k] <- R.list$R.xy*A
         ^~~~~~~~~~~~~~~~
@@ -7807,9 +7678,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:2295:63: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2295:67: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,5]),nT)
                                                                   ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:2295:67: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(iv.bil.t[,2],iv.bil.t[,5]),nT)
-                                                                  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2297:9: style: Variable and function names should be all lowercase.
         iVB.bagr.akl.dkl[17,1,i,j,k] <- R.list$R.xy*A
         ^~~~~~~~~~~~~~~~
@@ -7897,9 +7765,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:2304:65: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2304:69: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,6]),nT)
                                                                     ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:2304:69: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,6]),nT)
-                                                                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2306:9: style: Variable and function names should be all lowercase.
         iVB.bagr.akl.dkl[18,1,i,j,k] <- R.list$R.xy
         ^~~~~~~~~~~~~~~~
@@ -7981,9 +7846,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:2311:65: style: Commas should always have a s
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2311:69: style: Commas should always have a space after.
         R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,7]),nT)
                                                                     ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:2311:69: style: Variable and function names should be all lowercase.
-        R.list <- r.variance.fun(cbind(x,iv.bil.t[,3]*iv.bil.t[,7]),nT)
-                                                                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:2313:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         VB.A.bagr.akl.dkl[16,1,i,j,k] <- R.list$R.xy
         ^~~~~~~~~~~~~~~~~
@@ -13627,9 +13489,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3558:25: style: Words within variable and fun
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3559:1: style: Trailing whitespace is superfluous.
   
 ^~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3563:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3563:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -13750,9 +13609,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3583:9: style: Use <-, not =, for assignment.
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3583:9: style: Put spaces around all infix operators.
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")], nT)
        ~^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3583:51: style: Variable and function names should be all lowercase.
-  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")], nT)
-                                                  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3584:23: style: Put spaces around all infix operators.
   T.hbf <- r.list$R.xy*A
                      ~^~
@@ -13765,9 +13621,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3585:27: style: Words within variable and fun
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3585:34: style: Put spaces around all infix operators.
   se.T.hbf <- sqrt(r.list$V.R.xy)*A
                                 ~^~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3587:52: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")], nT)
-                                                   ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3588:22: style: Put spaces around all infix operators.
   T.bl <- r.list$R.xy*A
                     ~^~
@@ -13780,9 +13633,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3589:26: style: Words within variable and fun
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3589:33: style: Put spaces around all infix operators.
   se.T.bl <- sqrt(r.list$V.R.xy)*A
                                ~^~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3591:53: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")], nT)
-                                                    ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3592:23: style: Put spaces around all infix operators.
   T.ibl <- r.list$R.xy*A
                      ~^~
@@ -13795,9 +13645,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3593:27: style: Words within variable and fun
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3593:34: style: Put spaces around all infix operators.
   se.T.ibl <- sqrt(r.list$V.R.xy)*A
                                 ~^~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3595:58: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")], nT)
-                                                         ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3597:24: style: Words within variable and function names should be separated by '_' rather than '.'.
   se.lk <- sqrt(r.list$V.R.xy)
                        ^~~~~~
@@ -14788,9 +14635,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3821:47: style: Trailing whitespace is superf
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3822:1: style: Trailing whitespace is superfluous.
   
 ^~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3826:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3826:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -14929,9 +14773,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3846:9: style: Put spaces around all infix op
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3846:50: style: Commas should always have a space after.
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
                                                  ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3846:50: style: Variable and function names should be all lowercase.
-  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
-                                                 ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3847:23: style: Put spaces around all infix operators.
   T.hbf <- r.list$R.xy*A
                      ~^~
@@ -14947,9 +14788,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3848:34: style: Put spaces around all infix o
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3850:51: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
                                                   ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3850:51: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
-                                                  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3851:22: style: Put spaces around all infix operators.
   T.bl <- r.list$R.xy*A
                     ~^~
@@ -14965,9 +14803,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3852:33: style: Put spaces around all infix o
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3854:52: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
                                                    ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3854:52: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
-                                                   ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3855:23: style: Put spaces around all infix operators.
   T.ibl <- r.list$R.xy*A
                      ~^~
@@ -14983,9 +14818,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:3856:34: style: Put spaces around all infix o
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3858:57: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
                                                         ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:3858:57: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
-                                                        ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:3860:24: style: Words within variable and function names should be separated by '_' rather than '.'.
   se.lk <- sqrt(r.list$V.R.xy)
                        ^~~~~~
@@ -21754,9 +21586,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:5178:47: style: Trailing whitespace is superf
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5179:1: style: Trailing whitespace is superfluous.
   
 ^~
-NO COPY: R/BWI3_HR_Funktionen_v3.R:5183:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5183:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -21898,9 +21727,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:5203:9: style: Put spaces around all infix op
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5203:50: style: Commas should always have a space after.
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
                                                  ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:5203:50: style: Variable and function names should be all lowercase.
-  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
-                                                 ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5204:23: style: Put spaces around all infix operators.
   T.hbf <- r.list$R.xy*A
                      ~^~
@@ -21916,9 +21742,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:5205:34: style: Put spaces around all infix o
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5207:51: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
                                                   ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:5207:51: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
-                                                  ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5208:22: style: Put spaces around all infix operators.
   T.bl <- r.list$R.xy*A
                     ~^~
@@ -21934,9 +21757,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:5209:33: style: Put spaces around all infix o
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5211:52: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
                                                    ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:5211:52: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
-                                                   ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5212:23: style: Put spaces around all infix operators.
   T.ibl <- r.list$R.xy*A
                      ~^~
@@ -21952,9 +21772,6 @@ NO COPY: R/BWI3_HR_Funktionen_v3.R:5213:34: style: Put spaces around all infix o
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5215:57: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
                                                         ^
-NO COPY: R/BWI3_HR_Funktionen_v3.R:5215:57: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
-                                                        ^~
 NO COPY: R/BWI3_HR_Funktionen_v3.R:5217:24: style: Words within variable and function names should be separated by '_' rather than '.'.
   se.lk <- sqrt(r.list$V.R.xy)
                        ^~~~~~
@@ -25762,9 +25579,6 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:85:44: style: Commas should always ha
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:85:46: style: Put spaces around all infix operators.
   y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
                                             ~^~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:89:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:89:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -25780,18 +25594,12 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:92:27: style: Put spaces around all i
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:93:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
   ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:93:17: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:93:19: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                  ~^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:93:20: style: Place a space before left parenthesis, except in a function call.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                    ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:93:21: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                    ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:93:23: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                      ~^~
@@ -26326,18 +26134,12 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:207:63: style: Commas should always h
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:207:65: style: Put spaces around all infix operators.
               Y.bagr.dkl[m,2,i,j,k,l] <- Y.bagr.dkl[m,1,i,j,k,l]*sqrt(
                                                                ~^~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:208:15: style: Variable and function names should be all lowercase.
-              nT/(nT-1)*(sum(xy[,(1+m)]^2)/sum(xy[,(1+m)])^2+sum(x^2)/sum(x)^2
-              ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:208:17: style: Put spaces around all infix operators.
               nT/(nT-1)*(sum(xy[,(1+m)]^2)/sum(xy[,(1+m)])^2+sum(x^2)/sum(x)^2
                ~^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:208:18: style: Place a space before left parenthesis, except in a function call.
               nT/(nT-1)*(sum(xy[,(1+m)]^2)/sum(xy[,(1+m)])^2+sum(x^2)/sum(x)^2
                  ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:208:19: style: Variable and function names should be all lowercase.
-              nT/(nT-1)*(sum(xy[,(1+m)]^2)/sum(xy[,(1+m)])^2+sum(x^2)/sum(x)^2
-                  ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:208:21: style: Put spaces around all infix operators.
               nT/(nT-1)*(sum(xy[,(1+m)]^2)/sum(xy[,(1+m)])^2+sum(x^2)/sum(x)^2
                    ~^~
@@ -26575,18 +26377,12 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:217:67: style: Commas should always h
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:217:71: style: Trailing whitespace is superfluous.
               Yha.bagr.dkl[m,2,i,j,k,l] <- Yha.bagr.dkl[m,1,i,j,k,l] * 
                                                                       ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:218:25: style: Variable and function names should be all lowercase.
-                  sqrt( nT/(nT-1)* tmp)
-                        ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:218:27: style: Put spaces around all infix operators.
                   sqrt( nT/(nT-1)* tmp)
                          ~^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:218:28: style: Place a space before left parenthesis, except in a function call.
                   sqrt( nT/(nT-1)* tmp)
                            ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:218:29: style: Variable and function names should be all lowercase.
-                  sqrt( nT/(nT-1)* tmp)
-                            ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:218:31: style: Put spaces around all infix operators.
                   sqrt( nT/(nT-1)* tmp)
                              ~^~
@@ -26740,9 +26536,6 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:333:44: style: Commas should always h
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:333:46: style: Put spaces around all infix operators.
   y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
                                             ~^~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:337:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:337:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -26758,18 +26551,12 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:340:27: style: Put spaces around all 
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:341:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
   ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:341:17: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:341:19: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                  ~^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:341:20: style: Place a space before left parenthesis, except in a function call.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                    ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:341:21: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                    ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:341:23: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                      ~^~
@@ -27172,18 +26959,12 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:435:37: style: Commas should always h
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:435:39: style: Put spaces around all infix operators.
         Y.tart[j,2,i] <- Y.tart[j,1,i]*sqrt(
                                      ~^~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:436:11: style: Variable and function names should be all lowercase.
-          nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
-          ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:436:13: style: Put spaces around all infix operators.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
            ~^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:436:14: style: Place a space before left parenthesis, except in a function call.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
              ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:436:15: style: Variable and function names should be all lowercase.
-          nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
-              ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:436:17: style: Put spaces around all infix operators.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
                ~^~
@@ -27295,18 +27076,12 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:442:41: style: Commas should always h
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:442:43: style: Put spaces around all infix operators.
         Yha.tart[j,2,i] <- Yha.tart[j,1,i]*sqrt(
                                          ~^~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:443:11: style: Variable and function names should be all lowercase.
-          nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
-          ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:443:13: style: Put spaces around all infix operators.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
            ~^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:443:14: style: Place a space before left parenthesis, except in a function call.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
              ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:443:15: style: Variable and function names should be all lowercase.
-          nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
-              ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:443:17: style: Put spaces around all infix operators.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
                ~^~
@@ -27532,9 +27307,6 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:569:44: style: Commas should always h
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:569:46: style: Put spaces around all infix operators.
   y <- merge(y,trakte[TRUE, c("tnr", "m")],by=c("tnr"))
                                             ~^~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:573:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:573:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -27550,18 +27322,12 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:576:27: style: Put spaces around all 
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:577:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
   ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:577:17: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:577:19: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                  ~^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:577:20: style: Place a space before left parenthesis, except in a function call.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                    ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:577:21: style: Variable and function names should be all lowercase.
-  var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
-                    ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:577:23: style: Put spaces around all infix operators.
   var.T.hbf <-  nT/(nT-1)*T.hbf^2*(sum(y$y^2)/sum(y$y)^2+sum(x^2)/sum(x)^2
                      ~^~
@@ -28069,18 +27835,12 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:702:39: style: Commas should always h
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:702:41: style: Put spaces around all infix operators.
         Y.klass[j,2,i] <- Y.klass[j,1,i]*sqrt(
                                        ~^~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:703:11: style: Variable and function names should be all lowercase.
-          nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
-          ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:703:13: style: Put spaces around all infix operators.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
            ~^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:703:14: style: Place a space before left parenthesis, except in a function call.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
              ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:703:15: style: Variable and function names should be all lowercase.
-          nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
-              ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:703:17: style: Put spaces around all infix operators.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(x^2)/sum(x)^2
                ~^~
@@ -28192,18 +27952,12 @@ NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:709:43: style: Commas should always h
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:709:45: style: Put spaces around all infix operators.
         Yha.klass[j,2,i] <- Yha.klass[j,1,i]*sqrt(
                                            ~^~
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:710:11: style: Variable and function names should be all lowercase.
-          nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
-          ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:710:13: style: Put spaces around all infix operators.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
            ~^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:710:14: style: Place a space before left parenthesis, except in a function call.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
              ^
-NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:710:15: style: Variable and function names should be all lowercase.
-          nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
-              ^~
 NO COPY: R/BWI3_HR_Totholz_Funktionen_v1.R:710:17: style: Put spaces around all infix operators.
           nT/(nT-1)*(sum(xy[,(1+j)]^2)/sum(xy[,(1+j)])^2+sum(xy$x^2)/sum(xy$x)^2
                ~^~
@@ -30115,9 +29869,6 @@ NO COPY: R/fvbn2a.R:23:58: style: Commas should always have a space after.
 NO COPY: R/fvbn2a.R:23:63: style: Put spaces around all infix operators.
                                   by.x="ba",by.y="ICode",all.x=T)
                                                              ~^~
-NO COPY: R/fvbn2a.R:30:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/fvbn2a.R:30:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -30238,9 +29989,6 @@ NO COPY: R/fvbn2a.R:51:9: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2a.R:51:50: style: Commas should always have a space after.
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
                                                  ^
-NO COPY: R/fvbn2a.R:51:50: style: Variable and function names should be all lowercase.
-  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
-                                                 ^~
 NO COPY: R/fvbn2a.R:52:23: style: Put spaces around all infix operators.
   T.hbf <- r.list$R.xy*A
                      ~^~
@@ -30256,9 +30004,6 @@ NO COPY: R/fvbn2a.R:53:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2a.R:55:51: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
                                                   ^
-NO COPY: R/fvbn2a.R:55:51: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
-                                                  ^~
 NO COPY: R/fvbn2a.R:56:22: style: Put spaces around all infix operators.
   T.bl <- r.list$R.xy*A
                     ~^~
@@ -30274,9 +30019,6 @@ NO COPY: R/fvbn2a.R:57:33: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2a.R:59:52: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
                                                    ^
-NO COPY: R/fvbn2a.R:59:52: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
-                                                   ^~
 NO COPY: R/fvbn2a.R:60:23: style: Put spaces around all infix operators.
   T.ibl <- r.list$R.xy*A
                      ~^~
@@ -30292,9 +30034,6 @@ NO COPY: R/fvbn2a.R:61:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2a.R:63:57: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
                                                         ^
-NO COPY: R/fvbn2a.R:63:57: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
-                                                        ^~
 NO COPY: R/fvbn2a.R:65:24: style: Words within variable and function names should be separated by '_' rather than '.'.
   se.lk <- sqrt(r.list$V.R.xy)
                        ^~~~~~
@@ -30784,9 +30523,6 @@ NO COPY: R/fvbn2a.R:181:55: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2a.R:181:61: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(xy$m,xy[,(2+l)]),nT)
                                                             ^
-NO COPY: R/fvbn2a.R:181:61: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(xy$m,xy[,(2+l)]),nT)
-                                                            ^~
 NO COPY: R/fvbn2a.R:183:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[l,1,i,j,k] <- R.list$R.xy*A
             ^~~~~~~~~~~~~~
@@ -30874,9 +30610,6 @@ NO COPY: R/fvbn2a.R:198:62: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2a.R:198:68: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(2+l)]),nT)
                                                                    ^
-NO COPY: R/fvbn2a.R:198:68: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(2+l)]),nT)
-                                                                   ^~
 NO COPY: R/fvbn2a.R:199:24: style: Put spaces around all infix operators.
               l.ha <- l-1
                       ~^~
@@ -31162,9 +30895,6 @@ NO COPY: R/fvbn2b.R:23:58: style: Commas should always have a space after.
 NO COPY: R/fvbn2b.R:23:63: style: Put spaces around all infix operators.
                                   by.x="ba",by.y="ICode",all.x=T)
                                                              ~^~
-NO COPY: R/fvbn2b.R:30:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/fvbn2b.R:30:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -31288,9 +31018,6 @@ NO COPY: R/fvbn2b.R:53:9: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2b.R:53:50: style: Commas should always have a space after.
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
                                                  ^
-NO COPY: R/fvbn2b.R:53:50: style: Variable and function names should be all lowercase.
-  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
-                                                 ^~
 NO COPY: R/fvbn2b.R:54:23: style: Put spaces around all infix operators.
   T.hbf <- r.list$R.xy*A
                      ~^~
@@ -31306,9 +31033,6 @@ NO COPY: R/fvbn2b.R:55:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2b.R:57:51: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
                                                   ^
-NO COPY: R/fvbn2b.R:57:51: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
-                                                  ^~
 NO COPY: R/fvbn2b.R:58:22: style: Put spaces around all infix operators.
   T.bl <- r.list$R.xy*A
                     ~^~
@@ -31324,9 +31048,6 @@ NO COPY: R/fvbn2b.R:59:33: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2b.R:61:52: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
                                                    ^
-NO COPY: R/fvbn2b.R:61:52: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
-                                                   ^~
 NO COPY: R/fvbn2b.R:62:23: style: Put spaces around all infix operators.
   T.ibl <- r.list$R.xy*A
                      ~^~
@@ -31342,9 +31063,6 @@ NO COPY: R/fvbn2b.R:63:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2b.R:65:57: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
                                                         ^
-NO COPY: R/fvbn2b.R:65:57: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
-                                                        ^~
 NO COPY: R/fvbn2b.R:67:24: style: Words within variable and function names should be separated by '_' rather than '.'.
   se.lk <- sqrt(r.list$V.R.xy)
                        ^~~~~~
@@ -31861,9 +31579,6 @@ NO COPY: R/fvbn2b.R:192:55: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2b.R:192:61: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(xy$m,xy[,(3+l)]),nT)
                                                             ^
-NO COPY: R/fvbn2b.R:192:61: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(xy$m,xy[,(3+l)]),nT)
-                                                            ^~
 NO COPY: R/fvbn2b.R:194:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[l,1,i,j,k] <- R.list$R.xy*A
             ^~~~~~~~~~~~~~
@@ -31933,9 +31648,6 @@ NO COPY: R/fvbn2b.R:206:59: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2b.R:206:65: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$hbf,xy[,(3+l)]),nT)
                                                                 ^
-NO COPY: R/fvbn2b.R:206:65: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$hbf,xy[,(3+l)]),nT)
-                                                                ^~
 NO COPY: R/fvbn2b.R:208:41: style: Put spaces around all infix operators.
               R.list$R.xy <- R.list$R.xy*100
                                        ~^~
@@ -31993,9 +31705,6 @@ NO COPY: R/fvbn2b.R:218:62: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2b.R:218:68: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(3+l)]),nT)
                                                                    ^
-NO COPY: R/fvbn2b.R:218:68: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(3+l)]),nT)
-                                                                   ^~
 NO COPY: R/fvbn2b.R:222:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[l.ha,1,i,j,k] <- R.list$R.xy
             ^~~~~~~~~~~~~~~~
@@ -32287,9 +31996,6 @@ NO COPY: R/fvbn2c.R:23:58: style: Commas should always have a space after.
 NO COPY: R/fvbn2c.R:23:63: style: Put spaces around all infix operators.
                                   by.x="ba",by.y="ICode",all.x=T)
                                                              ~^~
-NO COPY: R/fvbn2c.R:30:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/fvbn2c.R:30:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -32413,9 +32119,6 @@ NO COPY: R/fvbn2c.R:53:9: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2c.R:53:50: style: Commas should always have a space after.
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
                                                  ^
-NO COPY: R/fvbn2c.R:53:50: style: Variable and function names should be all lowercase.
-  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
-                                                 ^~
 NO COPY: R/fvbn2c.R:54:23: style: Put spaces around all infix operators.
   T.hbf <- r.list$R.xy*A
                      ~^~
@@ -32431,9 +32134,6 @@ NO COPY: R/fvbn2c.R:55:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2c.R:57:51: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
                                                   ^
-NO COPY: R/fvbn2c.R:57:51: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
-                                                  ^~
 NO COPY: R/fvbn2c.R:58:22: style: Put spaces around all infix operators.
   T.bl <- r.list$R.xy*A
                     ~^~
@@ -32449,9 +32149,6 @@ NO COPY: R/fvbn2c.R:59:33: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2c.R:61:52: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
                                                    ^
-NO COPY: R/fvbn2c.R:61:52: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
-                                                   ^~
 NO COPY: R/fvbn2c.R:62:23: style: Put spaces around all infix operators.
   T.ibl <- r.list$R.xy*A
                      ~^~
@@ -32467,9 +32164,6 @@ NO COPY: R/fvbn2c.R:63:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2c.R:65:57: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
                                                         ^
-NO COPY: R/fvbn2c.R:65:57: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
-                                                        ^~
 NO COPY: R/fvbn2c.R:67:24: style: Words within variable and function names should be separated by '_' rather than '.'.
   se.lk <- sqrt(r.list$V.R.xy)
                        ^~~~~~
@@ -33034,9 +32728,6 @@ NO COPY: R/fvbn2c.R:203:55: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2c.R:203:61: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(xy$m,xy[,(3+l)]),nT)
                                                             ^
-NO COPY: R/fvbn2c.R:203:61: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(xy$m,xy[,(3+l)]),nT)
-                                                            ^~
 NO COPY: R/fvbn2c.R:205:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[l,1,i,j,k] <- R.list$R.xy*A
             ^~~~~~~~~~~~~~
@@ -33106,9 +32797,6 @@ NO COPY: R/fvbn2c.R:217:59: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2c.R:217:65: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$hbf,xy[,(3+l)]),nT)
                                                                 ^
-NO COPY: R/fvbn2c.R:217:65: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$hbf,xy[,(3+l)]),nT)
-                                                                ^~
 NO COPY: R/fvbn2c.R:219:41: style: Put spaces around all infix operators.
               R.list$R.xy <- R.list$R.xy*100
                                        ~^~
@@ -33160,9 +32848,6 @@ NO COPY: R/fvbn2c.R:230:62: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2c.R:230:68: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(3+l)]),nT)
                                                                    ^
-NO COPY: R/fvbn2c.R:230:68: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(3+l)]),nT)
-                                                                   ^~
 NO COPY: R/fvbn2c.R:234:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[l.ha,1,i,j,k] <- R.list$R.xy
             ^~~~~~~~~~~~~~~~
@@ -33445,9 +33130,6 @@ NO COPY: R/fvbn2d.R:23:58: style: Commas should always have a space after.
 NO COPY: R/fvbn2d.R:23:63: style: Put spaces around all infix operators.
                                   by.x="ba",by.y="ICode",all.x=T)
                                                              ~^~
-NO COPY: R/fvbn2d.R:30:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/fvbn2d.R:30:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -33571,9 +33253,6 @@ NO COPY: R/fvbn2d.R:53:9: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2d.R:53:50: style: Commas should always have a space after.
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
                                                  ^
-NO COPY: R/fvbn2d.R:53:50: style: Variable and function names should be all lowercase.
-  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
-                                                 ^~
 NO COPY: R/fvbn2d.R:54:23: style: Put spaces around all infix operators.
   T.hbf <- r.list$R.xy*A
                      ~^~
@@ -33589,9 +33268,6 @@ NO COPY: R/fvbn2d.R:55:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2d.R:57:51: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
                                                   ^
-NO COPY: R/fvbn2d.R:57:51: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
-                                                  ^~
 NO COPY: R/fvbn2d.R:58:22: style: Put spaces around all infix operators.
   T.bl <- r.list$R.xy*A
                     ~^~
@@ -33607,9 +33283,6 @@ NO COPY: R/fvbn2d.R:59:33: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2d.R:61:52: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
                                                    ^
-NO COPY: R/fvbn2d.R:61:52: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
-                                                   ^~
 NO COPY: R/fvbn2d.R:62:23: style: Put spaces around all infix operators.
   T.ibl <- r.list$R.xy*A
                      ~^~
@@ -33625,9 +33298,6 @@ NO COPY: R/fvbn2d.R:63:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2d.R:65:57: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
                                                         ^
-NO COPY: R/fvbn2d.R:65:57: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
-                                                        ^~
 NO COPY: R/fvbn2d.R:67:24: style: Words within variable and function names should be separated by '_' rather than '.'.
   se.lk <- sqrt(r.list$V.R.xy)
                        ^~~~~~
@@ -34192,9 +33862,6 @@ NO COPY: R/fvbn2d.R:203:55: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2d.R:203:61: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(xy$m,xy[,(3+l)]),nT)
                                                             ^
-NO COPY: R/fvbn2d.R:203:61: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(xy$m,xy[,(3+l)]),nT)
-                                                            ^~
 NO COPY: R/fvbn2d.R:205:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[l,1,i,j,k] <- R.list$R.xy*A
             ^~~~~~~~~~~~~~
@@ -34264,9 +33931,6 @@ NO COPY: R/fvbn2d.R:217:59: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2d.R:217:65: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$hbf,xy[,(3+l)]),nT)
                                                                 ^
-NO COPY: R/fvbn2d.R:217:65: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$hbf,xy[,(3+l)]),nT)
-                                                                ^~
 NO COPY: R/fvbn2d.R:219:41: style: Put spaces around all infix operators.
               R.list$R.xy <- R.list$R.xy*100
                                        ~^~
@@ -34318,9 +33982,6 @@ NO COPY: R/fvbn2d.R:230:62: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2d.R:230:68: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(3+l)]),nT)
                                                                    ^
-NO COPY: R/fvbn2d.R:230:68: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(3+l)]),nT)
-                                                                   ^~
 NO COPY: R/fvbn2d.R:234:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[l.ha,1,i,j,k] <- R.list$R.xy
             ^~~~~~~~~~~~~~~~
@@ -34783,9 +34444,6 @@ NO COPY: R/fvbn2e.R:102:49: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2e.R:106:1: style: Trailing whitespace is superfluous.
   
 ^~
-NO COPY: R/fvbn2e.R:109:3: style: Variable and function names should be all lowercase.
-  nT <- length(trakte[,1])
-  ^~
 NO COPY: R/fvbn2e.R:109:24: style: Commas should always have a space after.
   nT <- length(trakte[,1])
                        ^
@@ -34912,9 +34570,6 @@ NO COPY: R/fvbn2e.R:132:9: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2e.R:132:50: style: Commas should always have a space after.
   r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
                                                  ^
-NO COPY: R/fvbn2e.R:132:50: style: Variable and function names should be all lowercase.
-  r.list= r.variance.fun(xy[TRUE, c("m", "hbf")],nT)
-                                                 ^~
 NO COPY: R/fvbn2e.R:133:23: style: Put spaces around all infix operators.
   T.hbf <- r.list$R.xy*A
                      ~^~
@@ -34930,9 +34585,6 @@ NO COPY: R/fvbn2e.R:134:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2e.R:136:51: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
                                                   ^
-NO COPY: R/fvbn2e.R:136:51: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "bl")],nT)
-                                                  ^~
 NO COPY: R/fvbn2e.R:137:22: style: Put spaces around all infix operators.
   T.bl <- r.list$R.xy*A
                     ~^~
@@ -34948,9 +34600,6 @@ NO COPY: R/fvbn2e.R:138:33: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2e.R:140:52: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
                                                    ^
-NO COPY: R/fvbn2e.R:140:52: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("m", "ibl")],nT)
-                                                   ^~
 NO COPY: R/fvbn2e.R:141:23: style: Put spaces around all infix operators.
   T.ibl <- r.list$R.xy*A
                      ~^~
@@ -34966,9 +34615,6 @@ NO COPY: R/fvbn2e.R:142:34: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2e.R:144:57: style: Commas should always have a space after.
   r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
                                                         ^
-NO COPY: R/fvbn2e.R:144:57: style: Variable and function names should be all lowercase.
-  r.list <- r.variance.fun(xy[TRUE, c("hbf.ba", "hbf")],nT)
-                                                        ^~
 NO COPY: R/fvbn2e.R:146:24: style: Words within variable and function names should be separated by '_' rather than '.'.
   se.lk <- sqrt(r.list$V.R.xy)
                        ^~~~~~
@@ -35572,9 +35218,6 @@ NO COPY: R/fvbn2e.R:308:55: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2e.R:308:61: style: Commas should always have a space after.
             R.list <- r.variance.fun(cbind(xy$m,xy[,(3+l)]),nT)
                                                             ^
-NO COPY: R/fvbn2e.R:308:61: style: Variable and function names should be all lowercase.
-            R.list <- r.variance.fun(cbind(xy$m,xy[,(3+l)]),nT)
-                                                            ^~
 NO COPY: R/fvbn2e.R:310:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[l,1,i,j,k] <- R.list$R.xy*A
             ^~~~~~~~~~~~~~
@@ -35641,9 +35284,6 @@ NO COPY: R/fvbn2e.R:322:59: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2e.R:322:65: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$hbf,xy[,(3+l)]),nT)
                                                                 ^
-NO COPY: R/fvbn2e.R:322:65: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$hbf,xy[,(3+l)]),nT)
-                                                                ^~
 NO COPY: R/fvbn2e.R:324:41: style: Put spaces around all infix operators.
               R.list$R.xy <- R.list$R.xy*100
                                        ~^~
@@ -35695,9 +35335,6 @@ NO COPY: R/fvbn2e.R:335:62: style: Put spaces around all infix operators.
 NO COPY: R/fvbn2e.R:335:68: style: Commas should always have a space after.
               R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(3+l)]),nT)
                                                                    ^
-NO COPY: R/fvbn2e.R:335:68: style: Variable and function names should be all lowercase.
-              R.list <- r.variance.fun(cbind(xy$x/lk.c,xy[,(3+l)]),nT)
-                                                                   ^~
 NO COPY: R/fvbn2e.R:339:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[l.ha,1,i,j,k] <- R.list$R.xy
             ^~~~~~~~~~~~~~~~
@@ -36256,27 +35893,6 @@ NO COPY: R/german_things.R:147:1: style: Trailing blank lines are superfluous.
 NO COPY: R/get_data.R:25:1: style: Trailing blank lines are superfluous.
 
 ^
-NO COPY: R/global_variables.R:23:4: style: Trailing whitespace is superfluous.
-"A" 
-   ^
-NO COPY: R/global_variables.R:34:7: style: Trailing whitespace is superfluous.
-"A.12" 
-      ^
-NO COPY: R/global_variables.R:45:5: style: Trailing whitespace is superfluous.
-"nT" 
-    ^
-NO COPY: R/global_variables.R:56:9: style: Trailing whitespace is superfluous.
-"nTE.12" 
-        ^
-NO COPY: R/global_variables.R:67:6: style: Trailing whitespace is superfluous.
-"nTE" 
-     ^
-NO COPY: R/global_variables.R:78:8: style: Trailing whitespace is superfluous.
-"RF.12" 
-       ^
-NO COPY: R/global_variables.R:89:5: style: Trailing whitespace is superfluous.
-"RF" 
-    ^
 NO COPY: R/internals.R:20:68: style: Trailing whitespace is superfluous.
                            class = c("bundeswaldinventur", "error", 
                                                                    ^
@@ -37324,9 +36940,9 @@ NO COPY: R/regional.R:112:40: style: Trailing whitespace is superfluous.
 NO COPY: R/regional.R:113:51: style: Trailing whitespace is superfluous.
         unlist(species_list$ba.grupp[group_index]) 
                                                   ^
-NO COPY: R/regional.R:117:22: style: Trailing whitespace is superfluous.
-get_species_groups <- 
-                     ^
+NO COPY: R/regional.R:117:26: style: Trailing whitespace is superfluous.
+group_district_species <- 
+                         ^
 NO COPY: R/regional.R:118:1: style: lines should not be more than 80 characters.
     function(groupings = list(c("Fichte", "Wei\u00dftanne", "Douglasie", "Kiefer", "L\u00e4rchen/sNB"), 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

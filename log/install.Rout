@@ -1,0 +1,13 @@
+* installing to library ‘/home/nik/R/x86_64-pc-linux-gnu-library/3.3’
+* installing *source* package ‘bundeswaldinventur’ ...
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (bundeswaldinventur)

@@ -1,3 +1,9 @@
+# bundeswaldinventur 0.6.0
+
+* Renamed function get\_species\_groups() to group\_district\_species() in
+  regional.R to avoid two functions of the same name (get\_species\_groups is 
+  already assigned in variable_getters.R).
+
 # bundeswaldinventur 0.5.0
 
 * Replaced global\_variables.RData with assignments in global\_variables.R

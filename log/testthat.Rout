@@ -1,31 +1,39 @@
 Loading bundeswaldinventur
 Loading required package: testthat
 Testing bundeswaldinventur
-get_abbreviation_for_label: .......
-get_axis_label_for_abbreviation: .......
-get_text_label_for_abbreviation: ......
-get_label_for_abbreviation: ..................
-map_abbreviations_to_label: ........
-map_labels_to_abbreviations: ............
-revalue_data: ..
-get_color_for_ownership: ........
-get_colors_for_ownership: ..........
-bits_and_pieces.R: .
-as_percent_and_round: .....
-Examples of existing scripts: ........................
-made up examples: ........
-BWI3_HR_Landkreis_Funktionen_v1.R: ..
-BWI3_HR_Totholz_Funktionen_v1.R: ...
-deadwood.R: ....
-figures_and_tables: .
-statistics.R: ......
-tree_species_shares.R: ...
-variable_getters.R: 1
-Testing bundeswaldinventur:::throw(): .
+✔ | OK F W S | Context
+⠏ |  0       | get_abbreviation_for_label⠋ |  1       | get_abbreviation_for_label⠙ |  2       | get_abbreviation_for_label⠹ |  3       | get_abbreviation_for_label⠸ |  4       | get_abbreviation_for_label⠼ |  5       | get_abbreviation_for_label⠴ |  6       | get_abbreviation_for_label⠦ |  7       | get_abbreviation_for_label✔ |  7       | get_abbreviation_for_label
+⠏ |  0       | get_axis_label_for_abbreviation⠋ |  1       | get_axis_label_for_abbreviation⠙ |  2       | get_axis_label_for_abbreviation⠹ |  3       | get_axis_label_for_abbreviation⠸ |  4       | get_axis_label_for_abbreviation⠼ |  5       | get_axis_label_for_abbreviation⠴ |  6       | get_axis_label_for_abbreviation⠦ |  7       | get_axis_label_for_abbreviation✔ |  7       | get_axis_label_for_abbreviation
+⠏ |  0       | get_text_label_for_abbreviation⠋ |  1       | get_text_label_for_abbreviation⠙ |  2       | get_text_label_for_abbreviation⠹ |  3       | get_text_label_for_abbreviation⠸ |  4       | get_text_label_for_abbreviation⠼ |  5       | get_text_label_for_abbreviation⠴ |  6       | get_text_label_for_abbreviation✔ |  6       | get_text_label_for_abbreviation
+⠏ |  0       | get_label_for_abbreviation⠋ |  1       | get_label_for_abbreviation⠙ |  2       | get_label_for_abbreviation⠹ |  3       | get_label_for_abbreviation⠸ |  4       | get_label_for_abbreviation⠼ |  5       | get_label_for_abbreviation⠴ |  6       | get_label_for_abbreviation⠦ |  7       | get_label_for_abbreviation⠧ |  8       | get_label_for_abbreviation⠇ |  9       | get_label_for_abbreviation⠏ | 10       | get_label_for_abbreviation⠋ | 11       | get_label_for_abbreviation⠙ | 12       | get_label_for_abbreviation⠹ | 13       | get_label_for_abbreviation⠸ | 14       | get_label_for_abbreviation⠼ | 15       | get_label_for_abbreviation⠴ | 16       | get_label_for_abbreviation⠦ | 17       | get_label_for_abbreviation⠧ | 18       | get_label_for_abbreviation✔ | 18       | get_label_for_abbreviation
+⠏ |  0       | map_abbreviations_to_label⠋ |  1       | map_abbreviations_to_label⠙ |  2       | map_abbreviations_to_label⠹ |  3       | map_abbreviations_to_label⠸ |  4       | map_abbreviations_to_label⠼ |  5       | map_abbreviations_to_label⠴ |  6       | map_abbreviations_to_label⠦ |  7       | map_abbreviations_to_label⠧ |  8       | map_abbreviations_to_label✔ |  8       | map_abbreviations_to_label
+⠏ |  0       | map_labels_to_abbreviations⠋ |  1       | map_labels_to_abbreviations⠙ |  2       | map_labels_to_abbreviations⠹ |  3       | map_labels_to_abbreviations⠸ |  4       | map_labels_to_abbreviations⠼ |  5       | map_labels_to_abbreviations⠴ |  6       | map_labels_to_abbreviations⠦ |  7       | map_labels_to_abbreviations⠧ |  8       | map_labels_to_abbreviations⠇ |  9       | map_labels_to_abbreviations⠏ | 10       | map_labels_to_abbreviations⠋ | 11       | map_labels_to_abbreviations⠙ | 12       | map_labels_to_abbreviations✔ | 12       | map_labels_to_abbreviations
+⠏ |  0       | revalue_data⠋ |  1       | revalue_data⠙ |  2       | revalue_data✔ |  2       | revalue_data
+⠏ |  0       | get_color_for_ownership⠋ |  1       | get_color_for_ownership⠙ |  2       | get_color_for_ownership⠹ |  3       | get_color_for_ownership⠸ |  4       | get_color_for_ownership⠼ |  5       | get_color_for_ownership⠴ |  6       | get_color_for_ownership⠦ |  7       | get_color_for_ownership⠧ |  8       | get_color_for_ownership✔ |  8       | get_color_for_ownership
+⠏ |  0       | get_colors_for_ownership⠋ |  1       | get_colors_for_ownership⠙ |  2       | get_colors_for_ownership⠹ |  3       | get_colors_for_ownership⠸ |  4       | get_colors_for_ownership⠼ |  5       | get_colors_for_ownership⠴ |  6       | get_colors_for_ownership⠦ |  7       | get_colors_for_ownership⠧ |  8       | get_colors_for_ownership⠇ |  9       | get_colors_for_ownership⠏ | 10       | get_colors_for_ownership✔ | 10       | get_colors_for_ownership
+⠏ |  0       | bits_and_pieces.R⠋ |  1       | bits_and_pieces.R✔ |  1       | bits_and_pieces.R
+⠏ |  0       | as_percent_and_round⠋ |  1       | as_percent_and_round⠙ |  2       | as_percent_and_round⠹ |  3       | as_percent_and_round⠸ |  4       | as_percent_and_round⠼ |  5       | as_percent_and_round✔ |  5       | as_percent_and_round
+⠏ |  0       | Examples of existing scripts⠋ |  1       | Examples of existing scripts⠙ |  2       | Examples of existing scripts⠹ |  3       | Examples of existing scripts⠸ |  4       | Examples of existing scripts⠼ |  5       | Examples of existing scripts⠴ |  6       | Examples of existing scripts⠦ |  7       | Examples of existing scripts⠧ |  8       | Examples of existing scripts⠇ |  9       | Examples of existing scripts⠏ | 10       | Examples of existing scripts⠋ | 11       | Examples of existing scripts⠙ | 12       | Examples of existing scripts⠹ | 13       | Examples of existing scripts⠸ | 14       | Examples of existing scripts⠼ | 15       | Examples of existing scripts⠴ | 16       | Examples of existing scripts⠦ | 17       | Examples of existing scripts⠧ | 18       | Examples of existing scripts⠇ | 19       | Examples of existing scripts⠏ | 20       | Examples of existing scripts⠋ | 21       | Examples of existing scripts⠙ | 22       | Examples of existing scripts⠹ | 23       | Examples of existing scripts⠸ | 24       | Examples of existing scripts✔ | 24       | Examples of existing scripts [97.9 s]
+⠏ |  0       | made up examples⠋ |  1       | made up examples⠙ |  2       | made up examples⠹ |  3       | made up examples⠸ |  4       | made up examples⠼ |  5       | made up examples⠴ |  6       | made up examples⠦ |  7       | made up examples⠧ |  8       | made up examples✔ |  8       | made up examples [59.2 s]
+⠏ |  0       | BWI3_HR_Landkreis_Funktionen_v1.R⠋ |  1       | BWI3_HR_Landkreis_Funktionen_v1.R⠙ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R✔ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R [2.5 s]
+⠏ |  0       | BWI3_HR_Totholz_Funktionen_v1.R⠋ |  1       | BWI3_HR_Totholz_Funktionen_v1.R⠙ |  2       | BWI3_HR_Totholz_Funktionen_v1.R⠹ |  3       | BWI3_HR_Totholz_Funktionen_v1.R✔ |  3       | BWI3_HR_Totholz_Funktionen_v1.R [6.4 s]
+⠏ |  0       | deadwood.R⠋ |  1       | deadwood.R⠙ |  2       | deadwood.R⠹ |  3       | deadwood.R⠸ |  4       | deadwood.R✔ |  4       | deadwood.R
+⠏ |  0       | figures_and_tables⠋ |  1       | figures_and_tables⠙ |  1     1 | figures_and_tables✔ |  1     1 | figures_and_tables
+────────────────────────────────────────────────────────────────────────────────
+test_figures_and_tables.R:60: skip: all_data_by_group
+Empty test
+────────────────────────────────────────────────────────────────────────────────
+⠏ |  0       | statistics.R⠋ |  1       | statistics.R⠙ |  2       | statistics.R⠹ |  3       | statistics.R⠸ |  4       | statistics.R⠼ |  5       | statistics.R⠴ |  6       | statistics.R✔ |  6       | statistics.R
+⠏ |  0       | tree_species_shares.R⠋ |  1       | tree_species_shares.R⠙ |  2       | tree_species_shares.R⠹ |  3       | tree_species_shares.R✔ |  3       | tree_species_shares.R
+⠏ |  0       | variable_getters.R⠋ |  1       | variable_getters.R✔ |  1       | variable_getters.R
+⠏ |  0       | Testing bundeswaldinventur:::throw()⠋ |  1       | Testing bundeswaldinventur:::throw()✔ |  1       | Testing bundeswaldinventur:::throw()
 
-Failed -------------------------------------------------------------------------
-1. Error: get_species_groups (@test_variable_getters.R#14) ---------------------
-'names' attribute [2] must be the same length as the vector [1]
-1: get_species_groups() at /home/nik/git/os/fva/bundeswaldinventur/tests/testthat/test_variable_getters.R:14
+══ Results ═════════════════════════════════════════════════════════════════════
+Duration: 166.4 s
 
-DONE ===========================================================================
+OK:       137
+Failed:   0
+Warnings: 0
+Skipped:  1
+
+Way to go!
