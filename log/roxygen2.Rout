@@ -20,5 +20,44 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
+Updating collate directive in  /home/nik/git/os/fva/bundeswaldinventur/DESCRIPTION 
+Writing fvbn.kreis.fun.1.Rd
+Writing fvbn.stratum.fun.1.Rd
+Writing fvbn.stratum.fun.2.Rd
+Writing VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd
+Writing VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd
+Writing iVB.ew.bagrupp.akl.dkl.stratum.fun.2.Rd
+Writing iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12.Rd
+Writing iVB.ew.bagrupp.akl.dkl.stratum.fun.2g.Rd
+Writing verbiss.bagr.fun.Rd
+Writing verbiss.bagrupp.fun.Rd
+Writing verjg.bagr.fun.Rd
+Writing verjg.bagrupp.fun.Rd
+Writing verjg.kl4.bagr.fun.Rd
+Writing verjg.kl4.bagrupp.fun.Rd
+Writing ntns.stratum.fun.Rd
+Writing ntns.stratum.fun.2.Rd
+Writing biotop.baeume.fun.Rd
+Writing stamm.merkmale.bagr.fun.Rd
+Writing fba.stratum.fun.Rd
+Writing fl.stratum.fun.Rd
+Writing fl.proz.stratum.fun.Rd
+Writing stratum.fun.Rd
+Writing mbaf.bagr.alt.bhd.pm.fun.Rd
+Writing r.variance.fun.Rd
+Writing r.xxy.variance.fun.Rd
+Writing iVB.bilanz.bagr.akl.dkl.fun.Rd
+Writing iVB.bilanz.bagr.akl.dkl.fun.2g.Rd
+Writing ba.klass.fun.Rd
+Writing ba.klass.lab.tab.fun.Rd
+Writing dkl.lab.fun.Rd
+Writing akl.lab.fun.Rd
+Writing verjg.tab.fun.Rd
+Writing stamm.merkmale.bagr.akl.fun.Rd
+Writing flaechen.kreis.fun.1.Rd
+Writing flaechen.stratum.fun.1.Rd
+Writing Totholz.bagr.art.zg.stratum.fun.Rd
+Writing Totholz.Tart.stratum.fun.Rd
+Writing Totholz.klass.stratum.fun.Rd
 > 
 > 

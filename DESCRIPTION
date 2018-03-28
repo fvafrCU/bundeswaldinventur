@@ -30,9 +30,9 @@ Imports:
     RUnit
 RoxygenNote: 6.0.1
 Collate: 
-    'BWI3_HR_Funktionen_v3.R'
-    'BWI3_HR_Landkreis_Funktionen_v1.R'
-    'BWI3_HR_Totholz_Funktionen_v1.R'
+    'BWI3_HR.R'
+    'BWI3_HR_Landkreis.R'
+    'BWI3_HR_Totholz.R'
     'internals.R'
     'utils.R'
     'adapt_script.R'

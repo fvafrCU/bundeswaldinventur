@@ -4,12 +4,10 @@
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.4.0.9000’
+* this is package ‘bundeswaldinventur’ version ‘0.6.0’
 * package encoding: UTF-8
-* checking CRAN incoming feasibility ... NOTE
+* checking CRAN incoming feasibility ... Note_to_CRAN_maintainers
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
-
-Version contains large components (0.4.0.9000)
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -299,7 +297,7 @@ Undefined global functions or variables:
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [163s/164s]
+  Running ‘testthat.R’ [162s/162s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 3 NOTEs
+Status: 2 NOTEs
