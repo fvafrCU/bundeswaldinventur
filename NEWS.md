@@ -1,4 +1,4 @@
-# bundeswaldinventur 0.4.0.9000
+# bundeswaldinventur 0.5.0
 
 * Replaced global\_variables.RData with assignments in global\_variables.R
 
