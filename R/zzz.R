@@ -4,7 +4,7 @@
     package_name = "bundeswaldinventur"
   )
   toset <- !(names(op.package) %in% names(op))
-  if(any(toset)) options(op.package[toset])
+  if (any(toset)) options(op.package[toset])
   options(useFancyQuotes = FALSE)
 
   set_options(overwrite = FALSE)

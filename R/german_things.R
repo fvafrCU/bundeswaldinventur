@@ -5,14 +5,14 @@
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param data_frame The data which to prettyNum().
 #' @param digits The number of digits to be rounded to.
-#' @return  the modified data.frame. 
+#' @return  the modified data.frame.
 #' @export
 #' @examples
 #' prettify_data_frame(utils::head(airquality * 10^4))
 prettify_data_frame <- function(data_frame, digits = 0) {
-    tmp_data <- sapply(round(data_frame, digits), prettyNum, big.mark = ",")
-    row.names(tmp_data) <- row.names(data_frame)
-    return(tmp_data)
+  tmp_data <- sapply(round(data_frame, digits), prettyNum, big.mark = ",")
+  row.names(tmp_data) <- row.names(data_frame)
+  return(tmp_data)
 }
 
 #' print an enhanced xtable from a data.frame.
@@ -29,27 +29,29 @@ prettify_data_frame <- function(data_frame, digits = 0) {
 #' @export
 #' @examples
 #' add_colSums_prettify_and_print_xtable(utils::head(airquality * 10^4))
-add_colSums_prettify_and_print_xtable <- function(data_frame, 
-						  caption = 'XXX') {
-    status <- FALSE
-    tmp_data <- prettify_data_frame(add_colSums_to_data_frame(data_frame))
-    line_portion <- 1 / (ncol(data_frame) + 1)
-    names(tmp_data)
-    dimnames(tmp_data)[[2]] <-
-	paste('\\multicolumn{1}{>{\\centering}p{', line_portion, 
-	      '\\textwidth}}{', dimnames(tmp_data)[[2]], '}')
-    print(
-	  xtable::xtable(tmp_data,
-		 label = paste('tab', deparse(substitute(data_frame)), sep = ':'), 
-		 caption = caption,
-		 align = c('l', rep('r', length(colnames(data_frame))))
-		 ),
-	  hline.after = c(-1,0,nrow(data_frame), nrow(data_frame) + 1),
-	  type='latex',
-	  sanitize.colnames.function = identity
-	  )
-    status <- TRUE
-    return(invisible(status))
+add_colSums_prettify_and_print_xtable <- function(data_frame,
+                                                  caption = "XXX") {
+  status <- FALSE
+  tmp_data <- prettify_data_frame(add_colSums_to_data_frame(data_frame))
+  line_portion <- 1 / (ncol(data_frame) + 1)
+  names(tmp_data)
+  dimnames(tmp_data)[[2]] <-
+    paste(
+      "\\multicolumn{1}{>{\\centering}p{", line_portion,
+      "\\textwidth}}{", dimnames(tmp_data)[[2]], "}"
+    )
+  print(
+    xtable::xtable(tmp_data,
+      label = paste("tab", deparse(substitute(data_frame)), sep = ":"),
+      caption = caption,
+      align = c("l", rep("r", length(colnames(data_frame))))
+    ),
+    hline.after = c(-1, 0, nrow(data_frame), nrow(data_frame) + 1),
+    type = "latex",
+    sanitize.colnames.function = identity
+  )
+  status <- TRUE
+  return(invisible(status))
 }
 
 #' round() and prettyNum() numbers
@@ -62,86 +64,88 @@ add_colSums_prettify_and_print_xtable <- function(data_frame,
 #' @param digits The digits passed to round().
 #' @param big_mark the big.mark passed to \code{prettyNum}.
 #' @param decimal_mark the decimal.mark passed to \code{prettyNum}.
-#' @return the modified numbers. 
+#' @return the modified numbers.
 #' @export
 #' @examples
 #' round_and_prettify(airquality[1:10, "Ozone"]*10^4+0.1)
-round_and_prettify <- function(x, digits = 0, big_mark = ',', decimal_mark = '.') {
-    return(prettyNum(round(x, digits), big.mark = big_mark, decimal.mark =
-                     decimal_mark))
+round_and_prettify <- function(x, digits = 0, big_mark = ",", decimal_mark = ".") {
+  return(prettyNum(round(x, digits),
+    big.mark = big_mark, decimal.mark =
+      decimal_mark
+  ))
 }
 
 #' round() and prettyNum() numbers
 #'
-#' The majority of \emph{german} readers can't cope with numbers like 12000.01. 
+#' The majority of \emph{german} readers can't cope with numbers like 12000.01.
 #' So we change it to 12.000.
 #'
-#' @note This is just an alias for 
-#' \code{\link{round_and_prettify}}(\ldots, big_mark = '.') 
+#' @note This is just an alias for
+#' \code{\link{round_and_prettify}}(\ldots, big_mark = '.')
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param x the numbers to be modified.
 #' @param digits The digits passed to round().
-#' @return  the modified numbers. 
+#' @return  the modified numbers.
 #' @export
 #' @examples
 #' round_and_prettify_german(airquality[1:10, "Ozone"]*10^4+0.1)
 round_and_prettify_german <- function(x, digits = 0) {
-    return(round_and_prettify(x, digits, big_mark = '.', decimal_mark = ","))
+  return(round_and_prettify(x, digits, big_mark = ".", decimal_mark = ","))
 }
 
 
 #' Changes number formatting to german style
-#' 
-#' Changes number fformatting to german style - "." as big mark and "," as 
+#'
+#' Changes number fformatting to german style - "." as big mark and "," as
 #' decimal mark.
-#' 
+#'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param x A number.
 #' @param ... arguemnts passed to \code{\link{format}}.
 #' @return number with changed formatting.
 #' @export
 german_number <- function(x, ...) {
-    y  <- format(x, big.mark = ".", decimal.mark = ',',
-                 justify = "right", scientific = FALSE, ...)
-    return(y)
+  y <- format(x,
+    big.mark = ".", decimal.mark = ",",
+    justify = "right", scientific = FALSE, ...
+  )
+  return(y)
 }
 
 #' Tex code for german umlauts
-#' 
+#'
 #' Gets tex code for german umlauts.
-#' 
+#'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param string Non ASCII code for german umlaut.
 #' @return Tex code for german umlaut.
 #' @export
 tex_umlauts <- function(string) {
-    s <- gsub("\u00e4", '\\\\"a{}', string)
-    s <- gsub("\u00c4", '\\\\"A{}', s)
-    s <- gsub("\u00f6", '\\\\"o{}', s)
-    s <- gsub("\u00d6", '\\\\"O{}', s)
-    s <- gsub("\u00fc", '\\\\"u{}', s)
-    s <- gsub("\u00dc", '\\\\"U{}', s)
-    s <- gsub("\u00df", '\\\\"s{}', s)
-    return(s)
+  s <- gsub("\u00e4", '\\\\"a{}', string)
+  s <- gsub("\u00c4", '\\\\"A{}', s)
+  s <- gsub("\u00f6", '\\\\"o{}', s)
+  s <- gsub("\u00d6", '\\\\"O{}', s)
+  s <- gsub("\u00fc", '\\\\"u{}', s)
+  s <- gsub("\u00dc", '\\\\"U{}', s)
+  s <- gsub("\u00df", '\\\\"s{}', s)
+  return(s)
 }
 
 #' ASCII code for german umlauts
-#' 
+#'
 #' Gets ASCII code for german umlauts.
-#' 
+#'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param string Non ASCII code for german umlaut.
 #' @return ASCII code for german umlaut.
 #' @export
 ascii_umlauts <- function(string) {
-    s <- gsub("\u00e4", 'ae', string)
-    s <- gsub("\u00c4", 'Ae', s)
-    s <- gsub("\u00f6", 'oe', s)
-    s <- gsub("\u00d6", 'Oe', s)
-    s <- gsub("\u00fc", 'ue', s)
-    s <- gsub("\u00dc", 'Ue', s)
-    s <- gsub("\u00df", 'ss', s)
-    return(s)
+  s <- gsub("\u00e4", "ae", string)
+  s <- gsub("\u00c4", "Ae", s)
+  s <- gsub("\u00f6", "oe", s)
+  s <- gsub("\u00d6", "Oe", s)
+  s <- gsub("\u00fc", "ue", s)
+  s <- gsub("\u00dc", "Ue", s)
+  s <- gsub("\u00df", "ss", s)
+  return(s)
 }
-
-

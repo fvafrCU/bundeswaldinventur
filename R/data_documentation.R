@@ -2,7 +2,7 @@
 #'
 #' Image of an SQL table giving the tree species codes.
 #'
-#'@format A data frame with 88 rows and 17 variables:
+#' @format A data frame with 88 rows and 17 variables:
 #' \describe{
 #'   \item{ICode}{fix me}
 #'   \item{ACode}{fix me}
@@ -25,9 +25,9 @@
 "bacode"
 
 #' Tree information of BWI1
-#' 
+#'
 #' Data frame with tree information from BWI1.
-#' 
+#'
 #' @format A data frame with 178464 rows and 33 variables:
 #'  \describe{
 #'    \item{Bl1}{fix me}
@@ -67,9 +67,9 @@
 "baeume.1"
 
 #' Tree information of BWI2
-#' 
+#'
 #' Data frame with tree information from BWI2.
-#' 
+#'
 #' @format A data frame with 122093 rows and 30 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -106,9 +106,9 @@
 "baeume.2"
 
 #' Tree information of BWI3
-#' 
+#'
 #' Data frame with tree information from BWI3.
-#' 
+#'
 #' @format A data frame with 140096 rows and 42 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -157,9 +157,9 @@
 "baeume.3"
 
 #' Tree information of BWI1 and BWI2
-#' 
+#'
 #' Data frame with tree information from BWI1 and BWI2.
-#' 
+#'
 #' @format A data frame with 177720 rows and 30 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -196,9 +196,9 @@
 "baeume.12"
 
 #' Tree information of BWI2 and BWI3
-#' 
+#'
 #' Data frame with tree information from BWI2 and BWI3.
-#' 
+#'
 #' @format A data frame with 122100 rows and 32 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -239,10 +239,10 @@
 
 
 #' Waldlebensraumtypen
-#' 
-#' Tabelle enthaelt Informationen ueber die Waldlebensraumtypen, aufgenommen in 
+#'
+#' Tabelle enthaelt Informationen ueber die Waldlebensraumtypen, aufgenommen in
 #' der BWI 3.
-#' 
+#'
 #' @format A data frame with 13845 rows and 12 variables
 #'  \describe{
 #'    \item{Tnr}{Traktnummer}
@@ -255,16 +255,16 @@
 #'    \item{WLT_Eutro}{Eutrophierungszeiger}
 #'    \item{WLT_InvG}{Invasive Gehoelzer}
 #'    \item{WLT_Befahr}{Befahrung}
-#'    \item{WLT_AnzFein}{Anzahl forstlicher Feinerschliessungslinien im 
+#'    \item{WLT_AnzFein}{Anzahl forstlicher Feinerschliessungslinien im
 #'      Probekreis r = 25m}
 #'    \item{natWG_WLT}{natuerliche Waldgesellschaft}
 #'  }
 "ecke.feld.3"
 
 #' Eckenmerkmale BWI1
-#' 
+#'
 #' Eckenbezogene Informationen aus der Traktvorklaerung der BWI 1.
-#' 
+#'
 #' @format A data frame with 13596 rows and 28 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -295,13 +295,13 @@
 #'    \item{PL}{fix me}
 #'    \item{Mark}{fix me}
 #'    \item{Bemerkung}{Bemerkung/ Kommentar}
-#'  } 
+#'  }
 "ecken.1"
 
 #' Eckenmerkmale BWI2
-#' 
+#'
 #' Eckenbezogene Informationen aus der Traktvorklaerung der BWI 2.
-#' 
+#'
 #' @format A data frame with 13619 rows and 33 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -341,9 +341,9 @@
 "ecken.2"
 
 #' Eckenmerkmale BWI3
-#' 
+#'
 #' Eckenbezogene Informationen der Traktvorklaerung der BWI 3.
-#' 
+#'
 #' @format A data frame with 13711 rows and 46 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -396,10 +396,10 @@
 "ecken.3"
 
 #' Eckenmerkmale der BWI2 and BWI 3
-#' 
-#' Kombinierte Eckeninformationen aus den Traktvorklaerungen der BWI 2 and BWI 
+#'
+#' Kombinierte Eckeninformationen aus den Traktvorklaerungen der BWI 2 and BWI
 #' 3.
-#' 
+#'
 #' @format A data frame with 13722 rows and 29 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -435,9 +435,9 @@
 "ecken.23"
 
 #' Forstlich besonders bedeutsame Pflanzenarten der BWI 2
-#' 
+#'
 #' Forstlich besonders bedeutsame Pflanzenarten (FBA) der BWI 2 je Traktecke.
-#' 
+#'
 #' @section moegliche FBA:
 #'  11 - 	Adlerfarn \cr
 #'  12 -	Brennessel \cr
@@ -452,7 +452,7 @@
 #'  21 -	Druesiges Springkraut \cr
 #'  22 -	Kleinbluetiges Springkraut \cr
 #'  23 -	Kernesbeere
-#'  
+#'
 #' @format A data frame with 58996 rows and 4 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -463,9 +463,9 @@
 "fba.2"
 
 #' Forstlich besonders bedeutsame Pflanzenarten der BWI 3
-#' 
+#'
 #' Forstlich besonders bedeutsame Pflanzenarten (FBA) der BWI 3 je Traktecke.
-#' 
+#'
 #' @section moegliche FBA:
 #'  11 -   Adlerfarn \cr
 #'  12 -	Brennessel \cr
@@ -480,7 +480,7 @@
 #'  21 -	Druesiges Springkraut \cr
 #'  22 -	Kleinbluetiges Springkraut \cr
 #'  23 -	Kernesbeere
-#'  
+#'
 #' @format A data frame with 170235 rows and 5 variables:
 #'  \describe{
 #'    \item{Tnr}{Traktnummer}
@@ -492,10 +492,10 @@
 "fba.3"
 
 #' Zustandshochrechnung FVBN.alleba.akl.gw.1
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Gemeindewald fuer die BWI 1.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -514,19 +514,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.gw.1"
 
 #' Zustandshochrechnung FVBN.alleba.akl.gw.2
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Gemeindewald fuer die BWI 2.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -545,19 +545,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.gw.2"
 
 #' Zustandshochrechnung FVBN.alleba.akl.gw.3
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Gemeindewald fuer die BWI 3.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -576,19 +576,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.gw.3"
 
 #' Zustandshochrechnung FVBN.alleba.akl.kw.1
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Koerperschaftswald fuer die BWI 1.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -607,19 +607,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.kw.1"
 
 #' Zustandshochrechnung FVBN.alleba.akl.kw.2
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Koerperschaftswald fuer die BWI 2.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -638,19 +638,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.kw.2"
 
 #' Zustandshochrechnung FVBN.alleba.akl.kw.3
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Koerperschaftswald fuer die BWI 3.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -669,19 +669,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.kw.3"
 
 #' Zustandshochrechnung FVBN.alleba.akl.pw.1
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Privatwald fuer die BWI 1.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -700,19 +700,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.pw.1"
 
 #' Zustandshochrechnung FVBN.alleba.akl.pw.2
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Privatwald fuer die BWI 2.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -731,19 +731,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.pw.2"
 
 #' Zustandshochrechnung FVBN.alleba.akl.pw.3
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Privatwald fuer die BWI 3.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -762,19 +762,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.pw.3"
 
 #' Zustandshochrechnung FVBN.alleba.akl.stw.1
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Staatswald fuer die BWI 1.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -793,19 +793,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.stw.1"
 
 #' Zustandshochrechnung FVBN.alleba.akl.stw.2
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Staatswald fuer die BWI 2.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -824,19 +824,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.stw.2"
 
 #' Zustandshochrechnung FVBN.alleba.akl.stw.3
-#' 
-#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den 
+#'
+#' Zustandshochrechnung fuer alle Baumarten nach Altersklassen fuer den
 #' Staatswald fuer die BWI 3.
-#' 
+#'
 #' @format A list with 20 elements:
 #'  \describe{
 #'    \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -855,18 +855,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
 #'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.akl.stw.3"
 
 #' Zustandshochrechnung FVBN.alleba.gw.1
-#' 
+#'
 #' Zustandshochrechnung fuer alle Baumarten fuer den Gemeindewald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -885,18 +885,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.gw.1"
 
 #' Zustandshochrechnung FVBN.alleba.gw.2
-#' 
+#'
 #' Zustandshochrechnung fuer alle Baumarten fuer den Gemeindewald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -915,18 +915,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.gw.2"
 
 #' Zustandshochrechnung FVBN.alleba.gw.3
-#' 
+#'
 #' Zustandshochrechnung fuer alle Baumarten fuer den Gemeindewald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -945,19 +945,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.alleba.gw.3"
 
 #' Zustandshochrechnung FVBN.bagr.akl.gw.1
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Gemeindewald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -976,19 +976,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.gw.1"
 
 #' Zustandshochrechnung FVBN.bagr.akl.gw.2
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Gemeindewald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1007,19 +1007,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.gw.2"
 
 #' Zustandshochrechnung FVBN.bagr.akl.gw.3
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Gemeindewald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1038,19 +1038,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.gw.3"
 
 #' Zustandshochrechnung FVBN.bagr.akl.kw.1
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Koerperschaftswald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1069,19 +1069,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.kw.1"
 
 #' Zustandshochrechnung FVBN.bagr.akl.kw.2
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Koerperschaftswald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1100,19 +1100,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.kw.2"
 
 #' Zustandshochrechnung FVBN.bagr.akl.kw.3
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Koerperschaftswald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1131,19 +1131,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.kw.3"
 
 #' Zustandshochrechnung FVBN.bagr.akl.pw.1
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Privatwald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1162,19 +1162,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.pw.1"
 
 #' Zustandshochrechnung FVBN.bagr.akl.pw.2
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Privatwald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1193,19 +1193,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.pw.2"
 
 #' Zustandshochrechnung FVBN.bagr.akl.pw.3
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Privatwald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1224,19 +1224,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.pw.3"
 
 #' Zustandshochrechnung FVBN.bagr.akl.stw.1
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Staatswald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1255,19 +1255,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.stw.1"
 
 #' Zustandshochrechnung FVBN.bagr.akl.stw.2
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Staatswald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1286,19 +1286,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.stw.2"
 
 #' Zustandshochrechnung FVBN.bagr.akl.stw.3
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Alterklassesn fuer den
 #' Staatswald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1317,19 +1317,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.akl.stw.3"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.gw.1
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Gemeindewald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1348,19 +1348,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.gw.1"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.gw.2
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Gemeindewald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1379,19 +1379,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.gw.2"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.gw.3
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Gemeindewald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1410,19 +1410,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.gw.3"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.kw.1
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Koerperschaftswald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1441,19 +1441,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.kw.1"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.kw.2
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Koerperschaftswald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1472,19 +1472,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.kw.2"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.kw.3
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Koerperschaftswald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1503,19 +1503,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.kw.3"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.pw.1
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Privatwald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1534,19 +1534,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.pw.1"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.pw.2
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Privatwald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1565,19 +1565,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.pw.2"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.pw.3
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Privatwald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1596,19 +1596,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.pw.3"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.stw.1
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Staatswald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1627,19 +1627,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.stw.1"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.stw.2
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Staatswald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1658,19 +1658,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.stw.2"
 
 #' Zustandshochrechnung FVBN.bagr.dkl.stw.3
-#' 
-#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den 
+#'
+#' Zustandshochrechnung nach Baumartengruppen und Durchmesserklassesn fuer den
 #' Staatswald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1689,18 +1689,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.dkl.stw.3"
 
 #' Zustandshochrechnung FVBN.bagr.gw.1
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Gemeindewald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1719,18 +1719,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.gw.1"
 
 #' Zustandshochrechnung FVBN.bagr.gw.2
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Gemeindewald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1749,18 +1749,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.gw.2"
 
 #' Zustandshochrechnung FVBN.bagr.gw.3
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Gemeindewald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1779,18 +1779,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.gw.3"
 
 #' Zustandshochrechnung FVBN.bagr.kw.1
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Koerperschaftswald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1809,18 +1809,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.kw.1"
 
 #' Zustandshochrechnung FVBN.bagr.kw.2
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Koerperschaftswald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1839,18 +1839,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.kw.2"
 
 #' Zustandshochrechnung FVBN.bagr.kw.3
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Koerperschaftswald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1869,18 +1869,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.kw.3"
 
 #' Zustandshochrechnung FVBN.bagr.pw.1
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Privatwald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1899,18 +1899,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.pw.1"
 
 #' Zustandshochrechnung FVBN.bagr.pw.2
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Privatwald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1929,18 +1929,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.pw.2"
 
 #' Zustandshochrechnung FVBN.bagr.pw.3
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Privatwald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1959,18 +1959,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.pw.3"
 
 #' Zustandshochrechnung FVBN.bagr.stw.1
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Staatswald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -1989,18 +1989,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.stw.1"
 
 #' Zustandshochrechnung FVBN.bagr.stw.2
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Staatswald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -2019,18 +2019,18 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.stw.2"
 
 #' Zustandshochrechnung FVBN.bagr.stw.3
-#' 
+#'
 #' Zustandshochrechnung nach Baumartengruppen fuer den Staatswald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -2049,19 +2049,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.stw.3"
 
 #' Zustandshochrechnung FVBN.bagr.spec.gw.1
-#' 
-#' Zustandshochrechnung nach spezifizierten Baumartengruppen fuer den 
+#'
+#' Zustandshochrechnung nach spezifizierten Baumartengruppen fuer den
 #' Gemeindewald der BWI 1.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -2080,19 +2080,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.spec.gw.1"
 
 #' Zustandshochrechnung FVBN.bagr.spec.gw.2
-#' 
-#' Zustandshochrechnung nach spezifizeirten Baumartengruppen fuer den 
+#'
+#' Zustandshochrechnung nach spezifizeirten Baumartengruppen fuer den
 #' Gemeindewald der BWI 2.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -2111,19 +2111,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.spec.gw.2"
 
 #' Zustandshochrechnung FVBN.bagr.spec.gw.3
-#' 
-#' Zustandshochrechnung nach spezifizierten Baumartengruppen fuer den 
+#'
+#' Zustandshochrechnung nach spezifizierten Baumartengruppen fuer den
 #' Gemeindewald der BWI 3.
-#' 
+#'
 #' @format A list with 20 elements
 #'  \describe{
 #'   \item{Log}{bestehend aus Datum (erstellungsdatum) und Version.baeume.b}
@@ -2142,19 +2142,19 @@
 #'    \item{Groessen}{Vektor mit berechneten Groessen}
 #'    \item{BAGR}{genutzte Baumartengruppe}
 #'    \item{AKL}{Vektor mit Altersklassen}
-#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{T.FVBN.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer Gesamtwerte}
-#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und 
+#'    \item{FVBN.ha.Bagr.Akl.Dkl}{Array mit berechneten Groessen (Wert und
 #'      Standardfehler) fuer hektabezogene Kenngroessen}
-#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)} 
+#'    \item{nT.Bagr.Akl.Dkl}{Array mit Anzahl genutzter Trakteecken (?)}
 #'  }
 "FVBN.bagr.spec.gw.3"
 
 #' Eckenkoordinaten
-#' 
-#' Tabelle enthaelt Informationen zu Sollkoordinaten und tatsaechlich 
+#'
+#' Tabelle enthaelt Informationen zu Sollkoordinaten und tatsaechlich
 #' eingemessenen Koordinaten.
-#' 
+#'
 #' @format A data frame with 13234 rows and 8 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -2171,10 +2171,10 @@
 "gk_coord"
 
 #' Kreisinformationen
-#' 
-#' Tabele enthaelt Infomrationen ueber Kreise, die entsprechenden Kreiscodes der 
+#'
+#' Tabele enthaelt Infomrationen ueber Kreise, die entsprechenden Kreiscodes der
 #' BWI, die Kreishauptstadt und die Groesse des Kreises.
-#' 
+#'
 #' @format A data frame with 44 rows and 5 variables:
 #'  \describe{
 #'    \item{codeBL}{Code des Bundeslandes}
@@ -2182,19 +2182,19 @@
 #'    \item{langKreis}{Kreis}
 #'    \item{KreisHauptstadt}{Kreishauptstadt}
 #'    \item{Flaeche_km2}{Kreisflaeche in km2}
-#'  } 
+#'  }
 "kreise"
 
 
 #' Naturnaehestufen
-#' 
+#'
 #' Angaben zur Naturnaehestufe pro Traktecke.
-#' 
+#'
 #' @format A data frame with 35859 rows and 18 variables:
 #'  \describe{
 #'    \item{Tnr}{Traktnummer}
 #'    \item{Enr}{Eckennummer}
-#'    \item{NTNS_F_WZP_Fak4_BWI3}{Anzahl der Baeume nach der Winkelzaehlprobe 
+#'    \item{NTNS_F_WZP_Fak4_BWI3}{Anzahl der Baeume nach der Winkelzaehlprobe
 #'      Faktor 4 (?)}
 #'    \item{NTNS_F_gr4m_min5Baeume_BWI3}{fix me}
 #'    \item{NTNS_F_gr4m_alleBaeume_BWI3}{fix me}
@@ -2216,9 +2216,9 @@
 
 
 #' Schutzgebietsinformationen
-#' 
+#'
 #' Informationen ueber die Schutzgebiete zum Zeitpunkt der BWI 3.
-#' 
+#'
 #' @format A data frame with 13711 rows and 18 variables:
 #'  \describe{
 #'    \item{Tnr}{Traktnummer}
@@ -2243,9 +2243,9 @@
 "schutzgebiete.3"
 
 #' Totholzinformationen der BWI 2
-#' 
+#'
 #' Tabelle mit Information zum Totholz aufgebnommen waehrend der BWI 2.
-#' 
+#'
 #' @format A data frame with 11796 rows and 11 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -2263,9 +2263,9 @@
 "totholz.2"
 
 #' Totholzinformationen der BWI 3
-#' 
+#'
 #' Tabelle mit Information zum Totholz aufgebnommen waehrend der BWI 3.
-#' 
+#'
 #' @format A data frame with 11796 rows and 11 variables:
 #'  \describe{
 #'    \item{Tnr}{Traktnummer}
@@ -2285,9 +2285,9 @@
 "totholz.3"
 
 #' Traktinformationen BWI 1
-#' 
+#'
 #' Traktbezogene Informationen zu den Trakten der BWI 1.
-#' 
+#'
 #' @format A data frame with 8970 rows and 5 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -2299,9 +2299,9 @@
 "trakte.1"
 
 #' Traktinformationen BWI 2
-#' 
+#'
 #' Traktbezogene Informationen zu den Trakten der BWI 2.
-#' 
+#'
 #' @format A data frame with 8970 rows and 5 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -2313,9 +2313,9 @@
 "trakte.2"
 
 #' Traktinformationen BWI 3
-#' 
+#'
 #' Traktbezogene Informationen zu den Trakten der BWI 3.
-#' 
+#'
 #' @format A data frame with 8970 rows and 5 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -2327,9 +2327,9 @@
 "trakte.3"
 
 #' Verjuengung BWI 2
-#' 
+#'
 #' Informationen zur Verjuengung der BWI 2.
-#' 
+#'
 #' @format A data frame with 24957 rows and 14 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -2350,9 +2350,9 @@
 "verj.2"
 
 #' Verjuengung BWI 3
-#' 
+#'
 #' Informationen zur Verjuengung der BWI 3.
-#' 
+#'
 #' @format A data frame with 39929 rows and 14 variables:
 #'  \describe{
 #'    \item{TNr}{Traktnummer}
@@ -2373,9 +2373,9 @@
 "verj.3"
 
 #' Verjuengung kleiner 4 Meter BWI2
-#' 
+#'
 #' Informationen zur Verjuengung, welche kleiner als 4 Meter ist, der BWI 2.
-#' 
+#'
 #' @format A data frame with 20944 rows and 9 variables:
 #'  \describe{
 #'    \item{Tnr}{Traktnummer}
@@ -2391,9 +2391,9 @@
 "verj.kl4m.2"
 
 #' Verjuengung kleiner 4 Meter BWI3
-#' 
+#'
 #' Informationen zur Verjuengung, welche kleiner als 4 Meter ist, der BWI 3.
-#' 
+#'
 #' @format A data frame with 20944 rows and 9 variables:
 #'  \describe{
 #'    \item{Tnr}{Traktnummer}
@@ -2409,10 +2409,10 @@
 "verj.kl4m.3"
 
 #' Schadensmerkmale BWI 2
-#' 
-#' Informationen zu Schaeden, die bei der Winkelzaehlprobe der BWI 2 aufgenommen 
+#'
+#' Informationen zu Schaeden, die bei der Winkelzaehlprobe der BWI 2 aufgenommen
 #' wurden.
-#' 
+#'
 #' @format A data frame with 96675 rows and 16 variables:
 #'  \describe{
 #'    \item{Tnr}{Traktnummer}
@@ -2435,10 +2435,10 @@
 "wzp4.merkmale.2"
 
 #' Schadensmerkmale BWI 3
-#' 
-#' Informationen zu Schaeden, die bei der Winkelzaehlprobe der BWI 3 aufgenommen 
+#'
+#' Informationen zu Schaeden, die bei der Winkelzaehlprobe der BWI 3 aufgenommen
 #' wurden.
-#' 
+#'
 #' @format A data frame with 100684 rows and 21 variables:
 #'  \describe{
 #'    \item{Tnr}{Traktnummer}
@@ -2466,9 +2466,9 @@
 "wzp4.merkmale.3"
 
 #' Dichtetabelle
-#' 
+#'
 #' Uebersichtstabelle fuer Dichteangaben
-#' 
+#'
 #' @format A data frame with 5 rows and 11 variables:
 #'  \describe{
 #'    \item{ICode}{fix me}
@@ -2486,9 +2486,9 @@
 "x_dichte"
 
 #' Forstlich besonders bedeutsame Pflanzenarten
-#' 
+#'
 #' Uebersichtstabelle zu den Forstlich besonders bedeutsame Pflanzenarten
-#' 
+#'
 #' @format A data frame with 14 rows and 16 variables:
 #'  \describe{
 #'    \item{ICode}{fix me}

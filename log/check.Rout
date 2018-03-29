@@ -9,13 +9,17 @@
 * checking CRAN incoming feasibility ... NOTE
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
 
+New submission
+
 Version contains large components (0.6.0.9000)
+
+Non-FOSS package license (file LICENSE)
 
 The Title field should be in title case, current version then in title case:
 ‘Analysing the Bundeswaldinventur in the state of Baden-Wuerttemberg’
 ‘Analysing the Bundeswaldinventur in the State of Baden-Wuerttemberg’
 
-Size of tarball: 16471995 bytes
+Size of tarball: 16469976 bytes
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -33,12 +37,19 @@ Size of tarball: 16471995 bytes
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... WARNING
 Conversion of ‘README.md’ failed:
-pandoc: Failed to retrieve https://travis-ci.org/fvafrCU/bundeswaldinventur.svg?branch=master
-FailedConnectionException2 "travis-ci.org" 443 True getAddrInfo: does not exist (Name or service not known)
+pandoc: Failed to retrieve https://www.r-pkg.org/badges/version/bundeswaldinventur
+TlsException (HandshakeFailed (Error_Protocol ("expecting server hello, got alert : [(AlertLevel_Fatal,HandshakeFailure)]",True,HandshakeFailure)))
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
-* checking R files for non-ASCII characters ... OK
+* checking R files for non-ASCII characters ... WARNING
+Found the following files with non-ASCII characters:
+  BWI3_HR_Landkreis.R
+  labeling.R
+  regional.R
+Portable packages must use only ASCII characters in their R code,
+except perhaps in comments.
+Use \uxxxx escapes for other characters.
 * checking R files for syntax errors ... OK
 * checking whether the package can be loaded ... OK
 * checking whether the package can be loaded with stated dependencies ... OK
@@ -313,4 +324,4 @@ Package has no Sweave vignette sources and no VignetteBuilder field.
   Running ‘testthat.R’ [121s/121s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 2 WARNINGs, 3 NOTEs
+Status: 3 WARNINGs, 3 NOTEs

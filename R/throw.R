@@ -12,12 +12,16 @@
 #' condition of class c("error", "bundeswaldinventur", "condition").
 #' @keywords internal
 #' @examples
-#' tryCatch(bundeswaldinventur:::throw("Hello error!"), 
+#' tryCatch(bundeswaldinventur:::throw("Hello error!"),
 #'          bundeswaldinventur = function(e) return(e))
 throw <- function(message_string, system_call = sys.call(-1), ...) {
-    condition <- structure(class = c("error", "bundeswaldinventur", 
-                                     "condition"),
-                           list(message = message_string, call = system_call),
-                           ...)
-    stop(condition)
+  condition <- structure(
+    class = c(
+      "error", "bundeswaldinventur",
+      "condition"
+    ),
+    list(message = message_string, call = system_call),
+    ...
+  )
+  stop(condition)
 }

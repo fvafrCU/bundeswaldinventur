@@ -12,17 +12,18 @@
 #' @return FALSE. But it doesn't return anything, it stops with a
 #' condition of class c("bundeswaldinventur", "error", "condition").
 #' @examples
-#' tryCatch(bundeswaldinventur:::throw("Hello error!"), 
+#' tryCatch(bundeswaldinventur:::throw("Hello error!"),
 #'          bundeswaldinventur = function(e) return(e))
 throw <- function(message_string, system_call = sys.call(-1), ...) {
-    checkmate::qassert(message_string, "s*")
-    condition <- structure(
-                           class = c("bundeswaldinventur", "error", 
-                                     "condition"),
-                           list(message = message_string, call = system_call),
-                           ...
-                           )
-    stop(condition)
-    return(FALSE)
+  checkmate::qassert(message_string, "s*")
+  condition <- structure(
+    class = c(
+      "bundeswaldinventur", "error",
+      "condition"
+    ),
+    list(message = message_string, call = system_call),
+    ...
+  )
+  stop(condition)
+  return(FALSE)
 }
-
