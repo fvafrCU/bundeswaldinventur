@@ -94,7 +94,7 @@ to_tex <- function(..., file_name = dot_district_tex, append = TRUE) {
   cat(..., "\n", file = file_name, append = append, sep = "")
 }
 
-grouping_species <- function(species = c("Fichte", "Weißtanne"),
+grouping_species <- function(species = c("Fichte", "Wei\u00dftanne"),
                              minimal_share = 10,
                              shares = species_shares,
                              species_list = get_bwi_species_groups("regional")) {
@@ -182,7 +182,7 @@ plot_groups_areas <- function(b1, b2, b3,
   table_data <- data_frame
   levels(data_frame$species) <- gsub("/", "\n", levels(species_label))
   d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-  type_name <- "Fläche"
+  type_name <- "Fl\u00e4che"
   out_name <- paste(d_name, type_name, sep = "_")
   out_file <- paste0(out_name, ".eps")
   out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
@@ -211,7 +211,7 @@ plot_groups_areas <- function(b1, b2, b3,
     ggplot2::scale_fill_manual(values = get_bwi_colors(), name = "BWI") +
     ggplot2::scale_y_continuous(labels = german_number) +
     ggplot2::xlab("") +
-    ggplot2::ylab("Fläche [ha]") + copyright() +
+    ggplot2::ylab("Fl\u00e4che [ha]") + copyright() +
     if (TITLE_PLOT) {
       ggplot2::ggtitle(title_district)
     })
@@ -238,7 +238,7 @@ plot_groups_areas <- function(b1, b2, b3,
   )
   df_v_abs <- df_cast
   df_cast <- german_number(df_cast, digits = c(2, 1))
-  names(df_cast) <- gsub(".*_Vorhersage", "Fläche", gsub(
+  names(df_cast) <- gsub(".*_Vorhersage", "Fl\u00e4che", gsub(
     ".*_Standardfehler",
     "Fehler",
     names(df_cast)
@@ -301,11 +301,11 @@ plot_groups_areas <- function(b1, b2, b3,
       standard_error = b3$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
     )
   )
-  type_name <- "Flächenanteil"
+  type_name <- "Fl\u00e4chenanteil"
   out_name <- paste(d_name, type_name, sep = "_")
   table_data <- data_frame[data_frame$species != "Alle BA", ]
   names(table_data) <- c("BWI", "Artengruppe", "Vorhersage", "Standardfehler")
-  caption <- c("Flächenanteil und Fehler in Prozent.")
+  caption <- c("Fl\u00e4chenanteil und Fehler in Prozent.")
   if (do_errors_relative) {
     table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
     caption <- c("Anteile und Fehler in Prozent.")
@@ -789,7 +789,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
       "Standardfehler"
     )
     d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-    type_name <- paste("Fläche", gsub(" ", "_", gsub("/", "_", species_group)), sep = "_")
+    type_name <- paste("Fl\u00e4che", gsub(" ", "_", gsub("/", "_", species_group)), sep = "_")
     out_name <- paste(d_name, type_name, sep = "_")
     out_file <- paste0(out_name, ".eps")
     out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
@@ -818,7 +818,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
       ggplot2::scale_fill_manual(values = get_bwi_colors(), name = "BWI") +
       ggplot2::scale_y_continuous(labels = german_number) +
       ggplot2::xlab("Alter [a]") +
-      ggplot2::ylab("Fläche [ha]") + copyright() +
+      ggplot2::ylab("Fl\u00e4che [ha]") + copyright() +
       if (TITLE_PLOT) {
         ggplot2::ggtitle(bquote(atop(
           .(title_district),
@@ -865,7 +865,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
         ))
       )
     df_cast <- german_number(df_cast, digits = c(2, 1))
-    names(df_cast) <- gsub(".*_Vorhersage", "Fläche", gsub(
+    names(df_cast) <- gsub(".*_Vorhersage", "Fl\u00e4che", gsub(
       ".*_Standardfehler",
       "Fehler",
       names(df_cast)
@@ -1229,7 +1229,7 @@ plot_ownership <- function(ownerships,
     size = 6, color = "black"
     ) +
     ggplot2::ggtitle(paste(
-      "Waldfläche:", round_and_prettify_german(sum(ownerships$area)),
+      "Waldfl\u00e4che:", round_and_prettify_german(sum(ownerships$area)),
       "ha"
     ))
 
@@ -1307,7 +1307,7 @@ plot_ntns <- function(ntns2, ntns3,
     ggplot2::scale_fill_manual(values = get_bwi_colors()[2:3], name = "BWI") +
     ggplot2::scale_y_continuous(labels = german_number) +
     ggplot2::xlab("") +
-    ggplot2::ylab("Flächenanteil [%]") + copyright() +
+    ggplot2::ylab("Fl\u00e4chenanteil [%]") + copyright() +
     if (TITLE_PLOT) {
       ggplot2::ggtitle(title_district)
     }
@@ -1315,7 +1315,7 @@ plot_ntns <- function(ntns2, ntns3,
     "/", "_",
     file_name_district
   )), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-  type_name <- "Naturnähe"
+  type_name <- "Naturn\u00e4he"
   out_name <- paste(d_name, type_name, sep = "_")
   out_file <- paste0(out_name, ".eps")
   out_path <- ascii_umlauts(file.path(graphic_directory, out_file))
@@ -1601,7 +1601,7 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
     "/", "_",
     file_name_district
   )), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-  type_name <- "Naturverjüngung"
+  type_name <- "Naturverj\u00fcngung"
   out_name <- paste(d_name, type_name, sep = "_")
 
 
@@ -1697,7 +1697,7 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
     ggplot2::scale_fill_manual(values = get_bwi_colors()[2:3], name = "BWI") +
     ggplot2::scale_y_continuous(labels = german_number) +
     ggplot2::xlab("") +
-    ggplot2::ylab("Flächenanteil in Prozent") + copyright() +
+    ggplot2::ylab("Fl\u00e4chenanteil in Prozent") + copyright() +
     if (TITLE_PLOT) {
       ggplot2::ggtitle(title_district)
     })
@@ -1728,7 +1728,7 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
   )
   df_cast <- german_number(df_cast, digits = c(2, 1))
   names(df_cast) <- gsub(
-    ".*_Vorhersage", "Flächenanteil",
+    ".*_Vorhersage", "Fl\u00e4chenanteil",
     gsub(".*_Standardfehler", "Fehler", names(df_cast))
   )
   label_row <- paste(

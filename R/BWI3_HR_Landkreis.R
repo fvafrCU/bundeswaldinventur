@@ -238,7 +238,7 @@ flaechen.kreis.fun.1 <- function(kreiscode,
   return(list(
     Kreis = as.character(kreise[kreise$codeKreis == kreiscode, 3]),
     KreisCode = kreiscode,
-    "Kreisfläche_gesamt_ha" = kreise[kreise$codeKreis == kreiscode, 5] * 100,
+    "Kreisfl\u00e4che_gesamt_ha" = kreise[kreise$codeKreis == kreiscode, 5] * 100,
     Waldanteil = data.frame(
       BWI = c(1987, 2002, 2012),
       Waldanteil = round(c(

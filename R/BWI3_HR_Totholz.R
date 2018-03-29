@@ -10,7 +10,7 @@
 #' und BWI 3.
 #'
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
-#' @section version: 1.0 (kä/17.02.2014)
+#' @section version: 1.0 (k\u00e4/17.02.2014)
 #' @section Hinweis: Auf Grund verschiedener Inventurzeitpunkte werden die
 #'  Datentabellen \code{totholz}, die Eckenmerkmale \code{ecken} und die
 #'  \code{trakte} als Argumente uebergeben. \cr
@@ -265,7 +265,7 @@ Totholz.bagr.art.zg.stratum.fun <-
 #' Stoecken.
 #'
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
-#' @section Version: 1.0 (kä/17.02.2014)
+#' @section Version: 1.0 (k\u00e4/17.02.2014)
 #' @section Hinweis: BWI 2-Kriterien bei BWI 3-Aufnahme: Wenn(([Tart]=4 Und
 #'  ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20) \cr
 #'  Verallgemeinerte Version fuer die Auswertung unterschiedlicher
@@ -296,7 +296,7 @@ Totholz.bagr.art.zg.stratum.fun <-
 #'  sollen fuer die Berechnung.
 #' @param tart.grupp Liste, mit der Totholz-Arten-Gruppen definiert werden
 #'  koennen. z.B. tart.grupp = list(g1=c(11,12,13),g2=c(2,3),g3=c(4,5)). Wird
-#'  fuer tart.grupp NA übergeben, werden die Original-tart-Kategorien verwendet,
+#'  fuer tart.grupp NA \u00fcbergeben, werden die Original-tart-Kategorien verwendet,
 #'  also bei BWI 3: 11,12,13,2,3,4,5; BWI 2: 1,2,3,4,5.
 #' @param A Flaeche in ha des Inventurgebietes zum jeweiligen Inventurzeitpunkt
 #'  (sollte konstant sein).
@@ -533,7 +533,7 @@ Totholz.Tart.stratum.fun <-
 #'  Totholzbaumartengruppe <tbagr>, Totholzart <tart>, Zersetzungsgrad <tzg>,
 #'  Durchmesser <dm> (Mittendurchmesser, BHD, Stockschnittflaechendurchmessser)
 #'  oder Laenge <lge>. z.B. klass = list(attr="tart", kat=list(c(11,12,13),
-#'  c(2,3),c(4,5))). Wird für klass NA übergeben, erfolgt keine Klassifikation.
+#'  c(2,3),c(4,5))). Wird f\u00fcr klass NA \u00fcbergeben, erfolgt keine Klassifikation.
 #' @param A Flaeche in ha des Inventurgebietes zum jeweiligen Inventurzeitpunkt
 #'  (sollte konstant sein).
 #' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten
