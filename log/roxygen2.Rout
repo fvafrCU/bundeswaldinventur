@@ -1,5 +1,5 @@
 
-R version 3.3.3 (2017-03-06) -- "Another Canoe"
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
@@ -20,59 +20,5 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing FVBN.alleba.akl.gw.1.Rd
-Writing FVBN.alleba.akl.gw.2.Rd
-Writing FVBN.alleba.akl.gw.3.Rd
-Writing FVBN.alleba.akl.kw.1.Rd
-Writing FVBN.alleba.akl.kw.2.Rd
-Writing FVBN.alleba.akl.kw.3.Rd
-Writing FVBN.alleba.akl.pw.1.Rd
-Writing FVBN.alleba.akl.pw.2.Rd
-Writing FVBN.alleba.akl.pw.3.Rd
-Writing FVBN.alleba.akl.stw.1.Rd
-Writing FVBN.alleba.akl.stw.2.Rd
-Writing FVBN.alleba.akl.stw.3.Rd
-Writing FVBN.alleba.gw.1.Rd
-Writing FVBN.alleba.gw.2.Rd
-Writing FVBN.alleba.gw.3.Rd
-Writing FVBN.bagr.akl.gw.1.Rd
-Writing FVBN.bagr.akl.gw.2.Rd
-Writing FVBN.bagr.akl.gw.3.Rd
-Writing FVBN.bagr.akl.kw.1.Rd
-Writing FVBN.bagr.akl.kw.2.Rd
-Writing FVBN.bagr.akl.kw.3.Rd
-Writing FVBN.bagr.akl.pw.1.Rd
-Writing FVBN.bagr.akl.pw.2.Rd
-Writing FVBN.bagr.akl.pw.3.Rd
-Writing FVBN.bagr.akl.stw.1.Rd
-Writing FVBN.bagr.akl.stw.2.Rd
-Writing FVBN.bagr.akl.stw.3.Rd
-Writing FVBN.bagr.dkl.gw.1.Rd
-Writing FVBN.bagr.dkl.gw.2.Rd
-Writing FVBN.bagr.dkl.gw.3.Rd
-Writing FVBN.bagr.dkl.kw.1.Rd
-Writing FVBN.bagr.dkl.kw.2.Rd
-Writing FVBN.bagr.dkl.kw.3.Rd
-Writing FVBN.bagr.dkl.pw.1.Rd
-Writing FVBN.bagr.dkl.pw.2.Rd
-Writing FVBN.bagr.dkl.pw.3.Rd
-Writing FVBN.bagr.dkl.stw.1.Rd
-Writing FVBN.bagr.dkl.stw.2.Rd
-Writing FVBN.bagr.dkl.stw.3.Rd
-Writing FVBN.bagr.gw.1.Rd
-Writing FVBN.bagr.gw.2.Rd
-Writing FVBN.bagr.gw.3.Rd
-Writing FVBN.bagr.kw.1.Rd
-Writing FVBN.bagr.kw.2.Rd
-Writing FVBN.bagr.kw.3.Rd
-Writing FVBN.bagr.pw.1.Rd
-Writing FVBN.bagr.pw.2.Rd
-Writing FVBN.bagr.pw.3.Rd
-Writing FVBN.bagr.stw.1.Rd
-Writing FVBN.bagr.stw.2.Rd
-Writing FVBN.bagr.stw.3.Rd
-Writing FVBN.bagr.spec.gw.1.Rd
-Writing FVBN.bagr.spec.gw.2.Rd
-Writing FVBN.bagr.spec.gw.3.Rd
 > 
 > 

@@ -2,7 +2,7 @@ Loading bundeswaldinventur
 Loading required package: testthat
 Testing bundeswaldinventur
 ✔ | OK F W S | Context
-⠏ |  0       | get_abbreviation_for_label⠋ |  1       | get_abbreviation_for_label⠙ |  2       | get_abbreviation_for_label⠹ |  3       | get_abbreviation_for_label⠸ |  4       | get_abbreviation_for_label⠼ |  5       | get_abbreviation_for_label⠴ |  6       | get_abbreviation_for_label⠦ |  7       | get_abbreviation_for_label✔ |  7       | get_abbreviation_for_label
+⠏ |  0       | get_abbreviation_for_label⠋ |  1       | get_abbreviation_for_label⠙ |  2       | get_abbreviation_for_label⠹ |  3       | get_abbreviation_for_label⠸ |  4       | get_abbreviation_for_label⠼ |  5       | get_abbreviation_for_label⠴ |  6       | get_abbreviation_for_label⠦ |  7       | get_abbreviation_for_label✔ |  7       | get_abbreviation_for_label [0.1 s]
 ⠏ |  0       | get_axis_label_for_abbreviation⠋ |  1       | get_axis_label_for_abbreviation⠙ |  2       | get_axis_label_for_abbreviation⠹ |  3       | get_axis_label_for_abbreviation⠸ |  4       | get_axis_label_for_abbreviation⠼ |  5       | get_axis_label_for_abbreviation⠴ |  6       | get_axis_label_for_abbreviation⠦ |  7       | get_axis_label_for_abbreviation✔ |  7       | get_axis_label_for_abbreviation
 ⠏ |  0       | get_text_label_for_abbreviation⠋ |  1       | get_text_label_for_abbreviation⠙ |  2       | get_text_label_for_abbreviation⠹ |  3       | get_text_label_for_abbreviation⠸ |  4       | get_text_label_for_abbreviation⠼ |  5       | get_text_label_for_abbreviation⠴ |  6       | get_text_label_for_abbreviation✔ |  6       | get_text_label_for_abbreviation
 ⠏ |  0       | get_label_for_abbreviation⠋ |  1       | get_label_for_abbreviation⠙ |  2       | get_label_for_abbreviation⠹ |  3       | get_label_for_abbreviation⠸ |  4       | get_label_for_abbreviation⠼ |  5       | get_label_for_abbreviation⠴ |  6       | get_label_for_abbreviation⠦ |  7       | get_label_for_abbreviation⠧ |  8       | get_label_for_abbreviation⠇ |  9       | get_label_for_abbreviation⠏ | 10       | get_label_for_abbreviation⠋ | 11       | get_label_for_abbreviation⠙ | 12       | get_label_for_abbreviation⠹ | 13       | get_label_for_abbreviation⠸ | 14       | get_label_for_abbreviation⠼ | 15       | get_label_for_abbreviation⠴ | 16       | get_label_for_abbreviation⠦ | 17       | get_label_for_abbreviation⠧ | 18       | get_label_for_abbreviation✔ | 18       | get_label_for_abbreviation
@@ -13,10 +13,47 @@ Testing bundeswaldinventur
 ⠏ |  0       | get_colors_for_ownership⠋ |  1       | get_colors_for_ownership⠙ |  2       | get_colors_for_ownership⠹ |  3       | get_colors_for_ownership⠸ |  4       | get_colors_for_ownership⠼ |  5       | get_colors_for_ownership⠴ |  6       | get_colors_for_ownership⠦ |  7       | get_colors_for_ownership⠧ |  8       | get_colors_for_ownership⠇ |  9       | get_colors_for_ownership⠏ | 10       | get_colors_for_ownership✔ | 10       | get_colors_for_ownership
 ⠏ |  0       | bits_and_pieces.R⠋ |  1       | bits_and_pieces.R✔ |  1       | bits_and_pieces.R
 ⠏ |  0       | as_percent_and_round⠋ |  1       | as_percent_and_round⠙ |  2       | as_percent_and_round⠹ |  3       | as_percent_and_round⠸ |  4       | as_percent_and_round⠼ |  5       | as_percent_and_round✔ |  5       | as_percent_and_round
-⠏ |  0       | Examples of existing scripts⠋ |  1       | Examples of existing scripts⠙ |  2       | Examples of existing scripts⠹ |  3       | Examples of existing scripts⠸ |  4       | Examples of existing scripts⠼ |  5       | Examples of existing scripts⠴ |  6       | Examples of existing scripts⠦ |  7       | Examples of existing scripts⠧ |  8       | Examples of existing scripts⠇ |  9       | Examples of existing scripts⠏ | 10       | Examples of existing scripts⠋ | 11       | Examples of existing scripts⠙ | 12       | Examples of existing scripts⠹ | 13       | Examples of existing scripts⠸ | 14       | Examples of existing scripts⠼ | 15       | Examples of existing scripts⠴ | 16       | Examples of existing scripts⠦ | 17       | Examples of existing scripts⠧ | 18       | Examples of existing scripts⠇ | 19       | Examples of existing scripts⠏ | 20       | Examples of existing scripts⠋ | 21       | Examples of existing scripts⠙ | 22       | Examples of existing scripts⠹ | 23       | Examples of existing scripts⠸ | 24       | Examples of existing scripts✔ | 24       | Examples of existing scripts [93.2 s]
-⠏ |  0       | made up examples⠋ |  1       | made up examples⠙ |  2       | made up examples⠹ |  3       | made up examples⠸ |  4       | made up examples⠼ |  5       | made up examples⠴ |  6       | made up examples⠦ |  7       | made up examples⠧ |  8       | made up examples✔ |  8       | made up examples [57.1 s]
-⠏ |  0       | BWI3_HR_Landkreis_Funktionen_v1.R⠋ |  1       | BWI3_HR_Landkreis_Funktionen_v1.R⠙ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R✔ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R [2.5 s]
-⠏ |  0       | BWI3_HR_Totholz_Funktionen_v1.R⠋ |  1       | BWI3_HR_Totholz_Funktionen_v1.R⠙ |  2       | BWI3_HR_Totholz_Funktionen_v1.R⠹ |  3       | BWI3_HR_Totholz_Funktionen_v1.R✔ |  3       | BWI3_HR_Totholz_Funktionen_v1.R [6.4 s]
+⠏ |  0       | Examples of existing scripts⠋ |  1       | Examples of existing scripts⠙ |  2       | Examples of existing scripts⠹ |  3       | Examples of existing scripts⠸ |  4       | Examples of existing scripts⠼ |  4   1   | Examples of existing scripts⠴ |  4   2   | Examples of existing scripts⠦ |  4   3   | Examples of existing scripts⠧ |  4   4   | Examples of existing scripts⠇ |  4   5   | Examples of existing scripts⠏ |  4   6   | Examples of existing scripts⠋ |  4   7   | Examples of existing scripts⠙ |  4   8   | Examples of existing scripts⠹ |  4   9   | Examples of existing scripts⠸ |  4   10   | Examples of existing scripts⠼ |  4   11   | Examples of existing scripts⠴ |  4   12   | Examples of existing scripts⠦ |  5   12   | Examples of existing scripts⠧ |  6   12   | Examples of existing scripts⠇ |  7   12   | Examples of existing scripts⠏ |  8   12   | Examples of existing scripts⠋ |  9   12   | Examples of existing scripts⠙ | 10   12   | Examples of existing scripts⠹ | 11   12   | Examples of existing scripts⠸ | 12   12   | Examples of existing scripts⠼ | 13   12   | Examples of existing scripts⠴ | 14   12   | Examples of existing scripts⠦ | 15   12   | Examples of existing scripts⠧ | 16   12   | Examples of existing scripts⠇ | 17   12   | Examples of existing scripts⠏ | 18   12   | Examples of existing scripts⠋ | 19   12   | Examples of existing scripts⠙ | 20   12   | Examples of existing scripts⠹ | 21   12   | Examples of existing scripts⠸ | 22   12   | Examples of existing scripts⠼ | 23   12   | Examples of existing scripts⠴ | 24   12   | Examples of existing scripts⠦ | 25   12   | Examples of existing scripts⠧ | 26   12   | Examples of existing scripts✔ | 26   12   | Examples of existing scripts [103.1 s]
+────────────────────────────────────────────────────────────────────────────────
+test_BWI3_HR_Funktionen_v3.R:181: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+Age must divide exactly?!
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test_BWI3_HR_Funktionen_v3.R:182: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+────────────────────────────────────────────────────────────────────────────────
+⠏ |  0       | made up examples⠋ |  1       | made up examples⠙ |  2       | made up examples⠹ |  3       | made up examples⠸ |  4       | made up examples⠼ |  5       | made up examples⠴ |  6       | made up examples⠦ |  7       | made up examples⠧ |  8       | made up examples✔ |  8       | made up examples [55.6 s]
+⠏ |  0       | BWI3_HR_Landkreis_Funktionen_v1.R⠋ |  1       | BWI3_HR_Landkreis_Funktionen_v1.R⠙ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R✔ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R [3.0 s]
+⠏ |  0       | BWI3_HR_Totholz_Funktionen_v1.R⠋ |  1       | BWI3_HR_Totholz_Funktionen_v1.R⠙ |  2       | BWI3_HR_Totholz_Funktionen_v1.R⠹ |  3       | BWI3_HR_Totholz_Funktionen_v1.R✔ |  3       | BWI3_HR_Totholz_Funktionen_v1.R [8.5 s]
 ⠏ |  0       | deadwood.R⠋ |  1       | deadwood.R⠙ |  2       | deadwood.R⠹ |  3       | deadwood.R⠸ |  4       | deadwood.R✔ |  4       | deadwood.R
 ⠏ |  0       | figures_and_tables⠋ |  1       | figures_and_tables⠙ |  1     1 | figures_and_tables✔ |  1     1 | figures_and_tables
 ────────────────────────────────────────────────────────────────────────────────
@@ -24,16 +61,14 @@ test_figures_and_tables.R:60: skip: all_data_by_group
 Empty test
 ────────────────────────────────────────────────────────────────────────────────
 ⠏ |  0       | statistics.R⠋ |  1       | statistics.R⠙ |  2       | statistics.R⠹ |  3       | statistics.R⠸ |  4       | statistics.R⠼ |  5       | statistics.R⠴ |  6       | statistics.R✔ |  6       | statistics.R
+⠏ |  0       | Testing bundeswaldinventur:::throw()⠋ |  1       | Testing bundeswaldinventur:::throw()✔ |  1       | Testing bundeswaldinventur:::throw()
 ⠏ |  0       | tree_species_shares.R⠋ |  1       | tree_species_shares.R⠙ |  2       | tree_species_shares.R⠹ |  3       | tree_species_shares.R✔ |  3       | tree_species_shares.R
 ⠏ |  0       | variable_getters.R⠋ |  1       | variable_getters.R✔ |  1       | variable_getters.R
-⠏ |  0       | Testing bundeswaldinventur:::throw()⠋ |  1       | Testing bundeswaldinventur:::throw()✔ |  1       | Testing bundeswaldinventur:::throw()
 
 ══ Results ═════════════════════════════════════════════════════════════════════
-Duration: 159.5 s
+Duration: 171.2 s
 
-OK:       137
+OK:       139
 Failed:   0
-Warnings: 0
+Warnings: 12
 Skipped:  1
-
-WOWIE - doozie code.
