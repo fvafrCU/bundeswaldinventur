@@ -50,6 +50,12 @@ get_bwi_species_groups <- function(type = "default") {
                                      "Douglasie", "Kiefer", "L\u00e4rche",
                                      "Buche", "Eiche", 
                                      "ALH", "ALN")),
+                "bc" = list(bagr.lab = c("Laub", "Nadel"),
+                         ba.grupp = list(c(10:99),
+                                         c(100:299)),
+                         ba.colors = c(get_bwi_colors()[1],
+                                       get_bwi_colors()[2]),
+                         ba.text = c("Nadelb\u00e4ume", "Laubb\u00e4ume")),
                 throw("unkown type ", type, ".")
                 )
     return(l)
