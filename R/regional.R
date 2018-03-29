@@ -966,7 +966,7 @@ plot_ownership <- function(ownerships,
                               title_district = krs.grupp$string[i]
                               ) {
      ownerships$labels <- map_abbreviations_to_labels(ownerships$ownership) 
-     ownerships$ownership_realive_area  <- paste0(round(ownerships$area/sum(ownerships$area) * 100,1), '%')
+     ownerships$ownership_realive_area  <- paste0(round_and_prettify_german(ownerships$area/sum(ownerships$area) * 100), '%')
 
      ownerships$position = cumsum(ownerships$area)- ownerships$area/2
      ownerships$radius <- c(rep(c(1.6, 1.8), length.out  = nrow(ownerships)))
@@ -1165,11 +1165,11 @@ if(TITLE_PLOT){ggplot2::ggtitle(title_district)}
           data.frame(period =  "1987 - 2002", 
                      x = "Gesamt",
                      prediction = loss1_all$VB.A.bagr.akl.dkl[7,1,1,,], 
-                     standard_error = loss1_all$VB.A.bagr.akl.dkl[7,1,2,,]), 
+                     standard_error = loss1_all$VB.A.bagr.akl.dkl[7,2,1,,]), 
           data.frame(period =  "2002 - 2012", 
                      x = "Gesamt",
                      prediction = loss2_all$VB.A.bagr.akl.dkl[7,1,1,,], 
-                     standard_error = loss2_all$VB.A.bagr.akl.dkl[7,1,2,,])
+                     standard_error = loss2_all$VB.A.bagr.akl.dkl[7,2,1,,])
 
           )
     caption  <- c('J\\"a{}hrliche Ernte in Kubikmetern Erntevolumen ohne Rinde 
