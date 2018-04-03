@@ -41,11 +41,14 @@ flaechen.kreis.fun.1 <- function(kreiscode,
   i <- as.numeric(rownames(kreise[kreise$codeKreis == kreiscode, ]))
   # Waldfl\u00e4che insgesamt
   (wfl.3 <-
-    fl.stratum.fun(list(Wa = c(3, 4, 5), Kreis = krs.list[i]), ecken.3, trakte.3, A))
+    fl.stratum.fun(list(Wa = c(3, 4, 5), Kreis = krs.list[i]), ecken.3,
+                   trakte.3, A))
   (wfl.2 <-
-    fl.stratum.fun(list(Wa = c(1:4), Kreis = krs.list[i]), ecken.2, trakte.2, A.12))
+    fl.stratum.fun(list(Wa = c(1:4), Kreis = krs.list[i]), ecken.2, trakte.2,
+                   A.12))
   (wfl.1 <-
-    fl.stratum.fun(list(Wa = c(1:4), Kreis = krs.list[i]), ecken.1, trakte.1, A.12))
+    fl.stratum.fun(list(Wa = c(1:4), Kreis = krs.list[i]), ecken.1, trakte.1,
+                   A.12))
 
   # nach Eigentumsarten:
   # StW  (mit Bundeswald)
@@ -181,7 +184,8 @@ flaechen.kreis.fun.1 <- function(kreiscode,
     )
   # K\u00f6rperschaftswald
   fl.ant.kw.3 <-
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt = "KW"), ecken.3)
+    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]),
+                        list(EigArt = "KW"), ecken.3)
   # K\u00f6rperschaftswald
   fl.ant.oew.3 <-
     fl.proz.stratum.fun(
@@ -190,16 +194,20 @@ flaechen.kreis.fun.1 <- function(kreiscode,
     )
   # Privatwald
   fl.ant.pw.3 <-
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt = "PW"), ecken.3)
+    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]),
+                        list(EigArt = "PW"), ecken.3)
   # Gro\u00df-PW
   fl.ant.gpw.3 <-
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt2 = "GPW"), ecken.3)
+    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]),
+                        list(EigArt2 = "GPW"), ecken.3)
   # Mittlerer PW
   fl.ant.mpw.3 <-
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt2 = "MPW"), ecken.3)
+    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]),
+                        list(EigArt2 = "MPW"), ecken.3)
   # Klein-PW
   fl.ant.kpw.3 <-
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt2 = "KPW"), ecken.3)
+    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]),
+                        list(EigArt2 = "KPW"), ecken.3)
 
   # begehbare Holzbodenfl\u00e4che
   (bhbf.3 <- fl.stratum.fun(
@@ -238,7 +246,8 @@ flaechen.kreis.fun.1 <- function(kreiscode,
   return(list(
     Kreis = as.character(kreise[kreise$codeKreis == kreiscode, 3]),
     KreisCode = kreiscode,
-    "Kreisfl\u00e4che_gesamt_ha" = kreise[kreise$codeKreis == kreiscode, 5] * 100,
+    "Kreisfl\u00e4che_gesamt_ha" = kreise[kreise$codeKreis == kreiscode,
+                                          5] * 100,
     Waldanteil = data.frame(
       BWI = c(1987, 2002, 2012),
       Waldanteil = round(c(
