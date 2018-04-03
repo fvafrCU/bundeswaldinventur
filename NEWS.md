@@ -1,3 +1,7 @@
+# bundeswaldinventur 0.7.0.9000
+
+* Done foo.
+
 # bundeswaldinventur 0.7.0
 
 * Exported Objects defined R/global\_variables.R this makes the scripts in 
