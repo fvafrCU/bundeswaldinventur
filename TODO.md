@@ -1,3 +1,4 @@
+* have a dedicated data package.
 * Improve test coverage
 * Fix global bindings in log/check.Rout
 * Check which of the data in the RData files are needed. Especially the

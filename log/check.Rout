@@ -4,12 +4,10 @@
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.6.0.9000’
+* this is package ‘bundeswaldinventur’ version ‘0.7.0’
 * package encoding: UTF-8
-* checking CRAN incoming feasibility ... NOTE
+* checking CRAN incoming feasibility ... Note_to_CRAN_maintainers
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
-
-Version contains large components (0.6.0.9000)
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -18,7 +16,10 @@ Version contains large components (0.6.0.9000)
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
 * checking for sufficient/correct file permissions ... OK
-* checking whether package ‘bundeswaldinventur’ can be installed ... OK
+* checking whether package ‘bundeswaldinventur’ can be installed ... WARNING
+Found the following significant warnings:
+  Warning: /home/nik/git/os/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00_pkg_src/bundeswaldinventur/man/Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
+See ‘/home/nik/git/os/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00install.out’ for details.
 * checking installed package size ... NOTE
   installed size is 33.4Mb
   sub-directories of 1Mb or more:
@@ -282,7 +283,8 @@ Undefined global functions or variables:
   plots_directory position prediction radius regional_file_name
   scale_x_discrete species standard_error stratii stratum_index
   tables_directory TITLE_PLOT x ylab
-* checking Rd files ... OK
+* checking Rd files ... WARNING
+prepare_Rd: Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
 * checking Rd cross-references ... OK
@@ -299,7 +301,7 @@ Undefined global functions or variables:
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [164s/165s]
+  Running ‘testthat.R’ [164s/164s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 3 NOTEs
+Status: 2 WARNINGs, 2 NOTEs

@@ -55,780 +55,1422 @@ NO COPY: R/BWI3_HR_Landkreis.R:40:29: style: Variable and function names should 
 NO COPY: R/BWI3_HR_Landkreis.R:41:42: style: Variable and function names should be all lowercase.
   i <- as.numeric(rownames(kreise[kreise$codeKreis == kreiscode, ]))
                                          ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:44:1: style: lines should not be more than 80 characters.
-    fl.stratum.fun(list(Wa = c(3, 4, 5), Kreis = krs.list[i]), ecken.3, trakte.3, A))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:46:1: style: lines should not be more than 80 characters.
-    fl.stratum.fun(list(Wa = c(1:4), Kreis = krs.list[i]), ecken.2, trakte.2, A.12))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:48:1: style: lines should not be more than 80 characters.
-    fl.stratum.fun(list(Wa = c(1:4), Kreis = krs.list[i]), ecken.1, trakte.1, A.12))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:52:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:55:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.stw.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:57:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:60:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.stw.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:62:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:65:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.stw.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:69:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:72:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.bw.3 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:75:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:78:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kw.3 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:80:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:83:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kw.2 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:85:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:88:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kw.1 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:91:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:94:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.oew.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:96:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:99:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.oew.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:101:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:104:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.oew.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:108:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:111:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.pw.3 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:113:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:116:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.pw.2 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:118:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:121:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.pw.1 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:125:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:128:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.gpw.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:130:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:133:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.gpw.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:135:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:138:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.gpw.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:141:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:144:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.mpw.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:146:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:149:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.mpw.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:151:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:154:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.mpw.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:158:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:161:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kpw.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:163:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:166:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kpw.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:168:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:171:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kpw.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:177:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:180:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.stw.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:183:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:186:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.kw.3 <-
   ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:184:1: style: lines should not be more than 80 characters.
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt = "KW"), ecken.3)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:186:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:190:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.oew.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:192:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:196:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.pw.3 <-
   ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:193:1: style: lines should not be more than 80 characters.
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt = "PW"), ecken.3)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:195:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:200:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.gpw.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:196:1: style: lines should not be more than 80 characters.
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt2 = "GPW"), ecken.3)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:198:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:204:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.mpw.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:199:1: style: lines should not be more than 80 characters.
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt2 = "MPW"), ecken.3)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:200:5: style: Commented code should be removed.
+NO COPY: R/BWI3_HR_Landkreis.R:207:5: style: Commented code should be removed.
   # Klein-PW
     ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:201:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:208:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.kpw.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:202:1: style: lines should not be more than 80 characters.
-    fl.proz.stratum.fun(list(Wa = c(3:5), Kreis = krs.list[i]), list(EigArt2 = "KPW"), ecken.3)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:209:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:217:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.stw.3 <- fl.stratum.fun(list(
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:213:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:221:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.kw.3 <- fl.stratum.fun(list(
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:217:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:225:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.oew.3 <- fl.stratum.fun(list(
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:221:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:229:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.pw.3 <- fl.stratum.fun(list(
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:225:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:233:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.gpw.3 <- fl.stratum.fun(list(
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:229:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:237:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.mpw.3 <- fl.stratum.fun(list(
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:233:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:241:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.kpw.3 <- fl.stratum.fun(list(
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:239:40: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:247:40: style: Variable and function names should be all lowercase.
     Kreis = as.character(kreise[kreise$codeKreis == kreiscode, 3]),
                                        ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:241:45: style: Variable and function names should be all lowercase.
-    "Kreisfläche_gesamt_ha" = kreise[kreise$codeKreis == kreiscode, 5] * 100,
-                                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:245:39: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:249:50: style: Variable and function names should be all lowercase.
+    "Kreisfl\u00e4che_gesamt_ha" = kreise[kreise$codeKreis == kreiscode,
+                                                 ^~~~~~~~~
+NO COPY: R/BWI3_HR_Landkreis.R:254:39: style: Variable and function names should be all lowercase.
         wfl.3$Flaeche / kreise[kreise$codeKreis == kreiscode, 5],
                                       ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:246:39: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:255:39: style: Variable and function names should be all lowercase.
         wfl.2$Flaeche / kreise[kreise$codeKreis == kreiscode, 5],
                                       ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:247:39: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:256:39: style: Variable and function names should be all lowercase.
         wfl.1$Flaeche / kreise[kreise$codeKreis == kreiscode, 5]
                                       ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:253:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:262:1: style: lines should not be more than 80 characters.
       SE_Waldfl_GW = round(c(wfl.1$SE_Flaeche, wfl.2$SE_Flaeche, wfl.3$SE_Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:254:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:263:1: style: lines should not be more than 80 characters.
       Waldfl_StW = round(c(wfl.stw.1$Flaeche, wfl.stw.2$Flaeche, wfl.stw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:254:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:263:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_StW = round(c(wfl.stw.1$Flaeche, wfl.stw.2$Flaeche, wfl.stw.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:254:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:263:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_StW = round(c(wfl.stw.1$Flaeche, wfl.stw.2$Flaeche, wfl.stw.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:254:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:263:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_StW = round(c(wfl.stw.1$Flaeche, wfl.stw.2$Flaeche, wfl.stw.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:256:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:265:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.stw.1$SE_Flaeche, wfl.stw.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:256:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:265:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.stw.1$SE_Flaeche, wfl.stw.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:257:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:266:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.stw.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:259:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:268:1: style: lines should not be more than 80 characters.
       Waldfl_KW = round(c(wfl.kw.1$Flaeche, wfl.kw.2$Flaeche, wfl.kw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:259:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:268:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KW = round(c(wfl.kw.1$Flaeche, wfl.kw.2$Flaeche, wfl.kw.3$Flaeche), 0),
                           ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:259:45: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:268:45: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KW = round(c(wfl.kw.1$Flaeche, wfl.kw.2$Flaeche, wfl.kw.3$Flaeche), 0),
                                             ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:259:63: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:268:63: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KW = round(c(wfl.kw.1$Flaeche, wfl.kw.2$Flaeche, wfl.kw.3$Flaeche), 0),
                                                               ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:261:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:270:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kw.1$SE_Flaeche, wfl.kw.2$SE_Flaeche,
         ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:261:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:270:30: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kw.1$SE_Flaeche, wfl.kw.2$SE_Flaeche,
                              ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:262:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:271:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kw.3$SE_Flaeche
         ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:264:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:273:1: style: lines should not be more than 80 characters.
       Waldfl_OEW = round(c(wfl.oew.1$Flaeche, wfl.oew.2$Flaeche, wfl.oew.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:264:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:273:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_OEW = round(c(wfl.oew.1$Flaeche, wfl.oew.2$Flaeche, wfl.oew.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:264:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:273:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_OEW = round(c(wfl.oew.1$Flaeche, wfl.oew.2$Flaeche, wfl.oew.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:264:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:273:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_OEW = round(c(wfl.oew.1$Flaeche, wfl.oew.2$Flaeche, wfl.oew.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:266:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:275:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.oew.1$SE_Flaeche, wfl.oew.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:266:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:275:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.oew.1$SE_Flaeche, wfl.oew.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:267:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:276:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.oew.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:269:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:278:1: style: lines should not be more than 80 characters.
       Waldfl_PW = round(c(wfl.pw.1$Flaeche, wfl.pw.2$Flaeche, wfl.pw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:269:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:278:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_PW = round(c(wfl.pw.1$Flaeche, wfl.pw.2$Flaeche, wfl.pw.3$Flaeche), 0),
                           ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:269:45: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:278:45: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_PW = round(c(wfl.pw.1$Flaeche, wfl.pw.2$Flaeche, wfl.pw.3$Flaeche), 0),
                                             ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:269:63: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:278:63: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_PW = round(c(wfl.pw.1$Flaeche, wfl.pw.2$Flaeche, wfl.pw.3$Flaeche), 0),
                                                               ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:271:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:280:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.pw.1$SE_Flaeche, wfl.pw.2$SE_Flaeche,
         ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:271:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:280:30: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.pw.1$SE_Flaeche, wfl.pw.2$SE_Flaeche,
                              ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:272:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:281:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.pw.3$SE_Flaeche
         ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:274:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:283:1: style: lines should not be more than 80 characters.
       Waldfl_GPW = round(c(wfl.gpw.1$Flaeche, wfl.gpw.2$Flaeche, wfl.gpw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:274:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:283:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_GPW = round(c(wfl.gpw.1$Flaeche, wfl.gpw.2$Flaeche, wfl.gpw.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:274:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:283:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_GPW = round(c(wfl.gpw.1$Flaeche, wfl.gpw.2$Flaeche, wfl.gpw.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:274:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:283:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_GPW = round(c(wfl.gpw.1$Flaeche, wfl.gpw.2$Flaeche, wfl.gpw.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:276:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:285:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.gpw.1$SE_Flaeche, wfl.gpw.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:276:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:285:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.gpw.1$SE_Flaeche, wfl.gpw.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:277:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:286:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.gpw.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:279:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:288:1: style: lines should not be more than 80 characters.
       Waldfl_MPW = round(c(wfl.mpw.1$Flaeche, wfl.mpw.2$Flaeche, wfl.mpw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:279:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:288:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_MPW = round(c(wfl.mpw.1$Flaeche, wfl.mpw.2$Flaeche, wfl.mpw.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:279:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:288:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_MPW = round(c(wfl.mpw.1$Flaeche, wfl.mpw.2$Flaeche, wfl.mpw.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:279:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:288:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_MPW = round(c(wfl.mpw.1$Flaeche, wfl.mpw.2$Flaeche, wfl.mpw.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:281:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:290:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.mpw.1$SE_Flaeche, wfl.mpw.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:281:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:290:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.mpw.1$SE_Flaeche, wfl.mpw.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:282:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:291:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.mpw.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:284:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:293:1: style: lines should not be more than 80 characters.
       Waldfl_KPW = round(c(wfl.kpw.1$Flaeche, wfl.kpw.2$Flaeche, wfl.kpw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:284:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:293:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KPW = round(c(wfl.kpw.1$Flaeche, wfl.kpw.2$Flaeche, wfl.kpw.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:284:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:293:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KPW = round(c(wfl.kpw.1$Flaeche, wfl.kpw.2$Flaeche, wfl.kpw.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:284:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:293:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KPW = round(c(wfl.kpw.1$Flaeche, wfl.kpw.2$Flaeche, wfl.kpw.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:286:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:295:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kpw.1$SE_Flaeche, wfl.kpw.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:286:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:295:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kpw.1$SE_Flaeche, wfl.kpw.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:287:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:296:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kpw.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:293:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:302:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.stw.3$Fl_Proz, fl.ant.kw.3$Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:293:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:302:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.stw.3$Fl_Proz, fl.ant.kw.3$Fl_Proz,
                               ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:294:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:303:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$Fl_Proz, fl.ant.pw.3$Fl_Proz, fl.ant.gpw.3$Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:294:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:303:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$Fl_Proz, fl.ant.pw.3$Fl_Proz, fl.ant.gpw.3$Fl_Proz,
                               ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:294:52: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:303:52: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$Fl_Proz, fl.ant.pw.3$Fl_Proz, fl.ant.gpw.3$Fl_Proz,
                                                    ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:295:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:304:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.mpw.3$Fl_Proz, fl.ant.kpw.3$Fl_Proz
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:295:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:304:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.mpw.3$Fl_Proz, fl.ant.kpw.3$Fl_Proz
                               ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:298:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:307:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.stw.3$SE_Fl_Proz, fl.ant.kw.3$SE_Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:298:34: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:307:34: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.stw.3$SE_Fl_Proz, fl.ant.kw.3$SE_Fl_Proz,
                                  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:299:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:308:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$SE_Fl_Proz, fl.ant.pw.3$SE_Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:299:34: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:308:34: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$SE_Fl_Proz, fl.ant.pw.3$SE_Fl_Proz,
                                  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:300:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:309:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.gpw.3$SE_Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:301:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:310:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.mpw.3$SE_Fl_Proz, fl.ant.kpw.3$SE_Fl_Proz
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:301:34: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:310:34: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.mpw.3$SE_Fl_Proz, fl.ant.kpw.3$SE_Fl_Proz
                                  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:308:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:317:25: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.3$Flaeche, bhbf.stw.3$Flaeche, bhbf.kw.3$Flaeche,
                         ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:308:45: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:317:45: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.3$Flaeche, bhbf.stw.3$Flaeche, bhbf.kw.3$Flaeche,
                                             ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:309:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:318:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.oew.3$Flaeche, bhbf.pw.3$Flaeche, bhbf.gpw.3$Flaeche,
         ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:309:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:318:29: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.oew.3$Flaeche, bhbf.pw.3$Flaeche, bhbf.gpw.3$Flaeche,
                             ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:309:48: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:318:48: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.oew.3$Flaeche, bhbf.pw.3$Flaeche, bhbf.gpw.3$Flaeche,
                                                ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:310:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:319:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.mpw.3$Flaeche, bhbf.kpw.3$Flaeche
         ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:310:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:319:29: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.mpw.3$Flaeche, bhbf.kpw.3$Flaeche
                             ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:313:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:322:28: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.3$SE_Flaeche, bhbf.stw.3$SE_Flaeche,
                            ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:314:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:323:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.kw.3$SE_Flaeche, bhbf.oew.3$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:314:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:323:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.kw.3$SE_Flaeche, bhbf.oew.3$SE_Flaeche,
                               ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:315:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:324:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.pw.3$SE_Flaeche, bhbf.gpw.3$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:315:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:324:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.pw.3$SE_Flaeche, bhbf.gpw.3$SE_Flaeche,
                               ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:316:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:325:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.mpw.3$SE_Flaeche, bhbf.kpw.3$SE_Flaeche
         ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:316:32: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:325:32: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.mpw.3$SE_Flaeche, bhbf.kpw.3$SE_Flaeche
                                ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:370:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:379:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt <- c("BW", "StW")
           ^~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:372:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:381:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.stw.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:375:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:384:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.stw.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:377:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:386:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.stw.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:381:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:390:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt <- "BW"
           ^~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:382:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:391:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.bw.3 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:385:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:394:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt <- "KW"
           ^~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:387:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:396:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kw.3 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:390:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:399:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kw.2 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:392:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:401:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kw.1 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:395:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:404:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt <- c("BW", "StW", "KW")
           ^~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:397:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:406:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.oew.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:400:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:409:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.oew.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:402:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:411:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.oew.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:406:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:415:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt <- "PW"
           ^~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:408:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:417:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.pw.3 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:411:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:420:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.pw.2 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:413:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:422:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.pw.1 <-
    ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:418:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:427:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt2 <- "GPW"
           ^~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:420:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:429:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.gpw.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:423:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:432:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.gpw.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:425:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:434:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.gpw.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:428:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:437:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt2 <- "MPW"
           ^~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:430:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:439:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.mpw.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:433:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:442:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.mpw.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:435:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:444:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.mpw.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:439:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:448:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt2 <- "KPW"
           ^~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:441:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:450:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kpw.3 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:444:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:453:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kpw.2 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:446:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:455:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (wfl.kpw.1 <-
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:454:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:463:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.stw.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:460:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:469:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.kw.3 <-
   ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:463:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:472:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.oew.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:466:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:475:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.pw.3 <-
   ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:469:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:478:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.gpw.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:472:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:481:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.mpw.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:474:5: style: Commented code should be removed.
+NO COPY: R/BWI3_HR_Landkreis.R:483:5: style: Commented code should be removed.
   # Klein-PW
     ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:475:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:484:3: style: Words within variable and function names should be separated by '_' rather than '.'.
   fl.ant.kpw.3 <-
   ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:484:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:493:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt <- "StW"
           ^~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:485:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:494:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.stw.3 <- fl.stratum.fun(auswahl, ecken.3, trakte.3, A))
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:486:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:495:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt <- "KW"
           ^~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:487:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:496:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.kw.3 <- fl.stratum.fun(auswahl, ecken.3, trakte.3, A))
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:488:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:497:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt <- c("BW", "StW", "KW")
           ^~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:489:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:498:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.oew.3 <- fl.stratum.fun(auswahl, ecken.3, trakte.3, A))
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:490:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:499:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt <- "PW"
           ^~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:491:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:500:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.pw.3 <- fl.stratum.fun(auswahl, ecken.3, trakte.3, A))
    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:493:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:502:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt2 <- "GPW"
           ^~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:494:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:503:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.gpw.3 <- fl.stratum.fun(auswahl, ecken.3, trakte.3, A))
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:495:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:504:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt2 <- "MPW"
           ^~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:496:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:505:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.mpw.3 <- fl.stratum.fun(auswahl, ecken.3, trakte.3, A))
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:497:11: style: Variable and function names should be all lowercase.
+NO COPY: R/BWI3_HR_Landkreis.R:506:11: style: Variable and function names should be all lowercase.
   auswahl$EigArt2 <- "KPW"
           ^~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:498:4: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:507:4: style: Words within variable and function names should be separated by '_' rather than '.'.
   (bhbf.kpw.3 <- fl.stratum.fun(auswahl, ecken.3, trakte.3, A))
    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:505:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:514:1: style: lines should not be more than 80 characters.
       SE_Waldfl_GW = round(c(wfl.1$SE_Flaeche, wfl.2$SE_Flaeche, wfl.3$SE_Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:506:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:515:1: style: lines should not be more than 80 characters.
       Waldfl_StW = round(c(wfl.stw.1$Flaeche, wfl.stw.2$Flaeche, wfl.stw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:506:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:515:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_StW = round(c(wfl.stw.1$Flaeche, wfl.stw.2$Flaeche, wfl.stw.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:506:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:515:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_StW = round(c(wfl.stw.1$Flaeche, wfl.stw.2$Flaeche, wfl.stw.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:506:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:515:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_StW = round(c(wfl.stw.1$Flaeche, wfl.stw.2$Flaeche, wfl.stw.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:508:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:517:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.stw.1$SE_Flaeche, wfl.stw.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:508:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:517:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.stw.1$SE_Flaeche, wfl.stw.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:509:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:518:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.stw.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:511:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:520:1: style: lines should not be more than 80 characters.
       Waldfl_KW = round(c(wfl.kw.1$Flaeche, wfl.kw.2$Flaeche, wfl.kw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:511:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:520:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KW = round(c(wfl.kw.1$Flaeche, wfl.kw.2$Flaeche, wfl.kw.3$Flaeche), 0),
                           ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:511:45: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:520:45: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KW = round(c(wfl.kw.1$Flaeche, wfl.kw.2$Flaeche, wfl.kw.3$Flaeche), 0),
                                             ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:511:63: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:520:63: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KW = round(c(wfl.kw.1$Flaeche, wfl.kw.2$Flaeche, wfl.kw.3$Flaeche), 0),
                                                               ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:513:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:522:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kw.1$SE_Flaeche, wfl.kw.2$SE_Flaeche,
         ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:513:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:522:30: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kw.1$SE_Flaeche, wfl.kw.2$SE_Flaeche,
                              ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:514:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:523:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kw.3$SE_Flaeche
         ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:516:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:525:1: style: lines should not be more than 80 characters.
       Waldfl_OEW = round(c(wfl.oew.1$Flaeche, wfl.oew.2$Flaeche, wfl.oew.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:516:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:525:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_OEW = round(c(wfl.oew.1$Flaeche, wfl.oew.2$Flaeche, wfl.oew.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:516:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:525:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_OEW = round(c(wfl.oew.1$Flaeche, wfl.oew.2$Flaeche, wfl.oew.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:516:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:525:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_OEW = round(c(wfl.oew.1$Flaeche, wfl.oew.2$Flaeche, wfl.oew.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:518:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:527:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.oew.1$SE_Flaeche, wfl.oew.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:518:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:527:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.oew.1$SE_Flaeche, wfl.oew.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:519:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:528:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.oew.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:521:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:530:1: style: lines should not be more than 80 characters.
       Waldfl_PW = round(c(wfl.pw.1$Flaeche, wfl.pw.2$Flaeche, wfl.pw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:521:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:530:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_PW = round(c(wfl.pw.1$Flaeche, wfl.pw.2$Flaeche, wfl.pw.3$Flaeche), 0),
                           ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:521:45: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:530:45: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_PW = round(c(wfl.pw.1$Flaeche, wfl.pw.2$Flaeche, wfl.pw.3$Flaeche), 0),
                                             ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:521:63: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:530:63: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_PW = round(c(wfl.pw.1$Flaeche, wfl.pw.2$Flaeche, wfl.pw.3$Flaeche), 0),
                                                               ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:523:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:532:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.pw.1$SE_Flaeche, wfl.pw.2$SE_Flaeche,
         ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:523:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:532:30: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.pw.1$SE_Flaeche, wfl.pw.2$SE_Flaeche,
                              ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:524:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:533:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.pw.3$SE_Flaeche
         ^~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:526:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:535:1: style: lines should not be more than 80 characters.
       Waldfl_GPW = round(c(wfl.gpw.1$Flaeche, wfl.gpw.2$Flaeche, wfl.gpw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:526:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:535:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_GPW = round(c(wfl.gpw.1$Flaeche, wfl.gpw.2$Flaeche, wfl.gpw.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:526:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:535:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_GPW = round(c(wfl.gpw.1$Flaeche, wfl.gpw.2$Flaeche, wfl.gpw.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:526:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:535:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_GPW = round(c(wfl.gpw.1$Flaeche, wfl.gpw.2$Flaeche, wfl.gpw.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:528:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:537:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.gpw.1$SE_Flaeche, wfl.gpw.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:528:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:537:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.gpw.1$SE_Flaeche, wfl.gpw.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:529:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:538:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.gpw.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:531:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:540:1: style: lines should not be more than 80 characters.
       Waldfl_MPW = round(c(wfl.mpw.1$Flaeche, wfl.mpw.2$Flaeche, wfl.mpw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:531:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:540:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_MPW = round(c(wfl.mpw.1$Flaeche, wfl.mpw.2$Flaeche, wfl.mpw.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:531:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:540:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_MPW = round(c(wfl.mpw.1$Flaeche, wfl.mpw.2$Flaeche, wfl.mpw.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:531:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:540:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_MPW = round(c(wfl.mpw.1$Flaeche, wfl.mpw.2$Flaeche, wfl.mpw.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:533:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:542:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.mpw.1$SE_Flaeche, wfl.mpw.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:533:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:542:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.mpw.1$SE_Flaeche, wfl.mpw.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:534:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:543:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.mpw.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:536:1: style: lines should not be more than 80 characters.
+NO COPY: R/BWI3_HR_Landkreis.R:545:1: style: lines should not be more than 80 characters.
       Waldfl_KPW = round(c(wfl.kpw.1$Flaeche, wfl.kpw.2$Flaeche, wfl.kpw.3$Flaeche), 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:536:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:545:28: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KPW = round(c(wfl.kpw.1$Flaeche, wfl.kpw.2$Flaeche, wfl.kpw.3$Flaeche), 0),
                            ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:536:47: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:545:47: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KPW = round(c(wfl.kpw.1$Flaeche, wfl.kpw.2$Flaeche, wfl.kpw.3$Flaeche), 0),
                                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:536:66: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:545:66: style: Words within variable and function names should be separated by '_' rather than '.'.
       Waldfl_KPW = round(c(wfl.kpw.1$Flaeche, wfl.kpw.2$Flaeche, wfl.kpw.3$Flaeche), 0),
                                                                  ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:538:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:547:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kpw.1$SE_Flaeche, wfl.kpw.2$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:538:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:547:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kpw.1$SE_Flaeche, wfl.kpw.2$SE_Flaeche,
                               ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:539:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:548:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         wfl.kpw.3$SE_Flaeche
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:545:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:554:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.stw.3$Fl_Proz, fl.ant.kw.3$Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:545:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:554:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.stw.3$Fl_Proz, fl.ant.kw.3$Fl_Proz,
                               ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:546:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:555:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$Fl_Proz, fl.ant.pw.3$Fl_Proz, fl.ant.gpw.3$Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:546:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:555:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$Fl_Proz, fl.ant.pw.3$Fl_Proz, fl.ant.gpw.3$Fl_Proz,
                               ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:546:52: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:555:52: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$Fl_Proz, fl.ant.pw.3$Fl_Proz, fl.ant.gpw.3$Fl_Proz,
                                                    ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:547:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:556:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.mpw.3$Fl_Proz, fl.ant.kpw.3$Fl_Proz
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:547:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:556:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.mpw.3$Fl_Proz, fl.ant.kpw.3$Fl_Proz
                               ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:550:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:559:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.stw.3$SE_Fl_Proz, fl.ant.kw.3$SE_Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:550:34: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:559:34: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.stw.3$SE_Fl_Proz, fl.ant.kw.3$SE_Fl_Proz,
                                  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:551:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:560:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$SE_Fl_Proz, fl.ant.pw.3$SE_Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:551:34: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:560:34: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.oew.3$SE_Fl_Proz, fl.ant.pw.3$SE_Fl_Proz,
                                  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:552:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:561:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.gpw.3$SE_Fl_Proz,
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:553:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:562:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.mpw.3$SE_Fl_Proz, fl.ant.kpw.3$SE_Fl_Proz
         ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:553:34: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:562:34: style: Words within variable and function names should be separated by '_' rather than '.'.
         fl.ant.mpw.3$SE_Fl_Proz, fl.ant.kpw.3$SE_Fl_Proz
                                  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:560:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:569:25: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.3$Flaeche, bhbf.stw.3$Flaeche, bhbf.kw.3$Flaeche,
                         ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:560:45: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:569:45: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.3$Flaeche, bhbf.stw.3$Flaeche, bhbf.kw.3$Flaeche,
                                             ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:561:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:570:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.oew.3$Flaeche, bhbf.pw.3$Flaeche, bhbf.gpw.3$Flaeche,
         ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:561:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:570:29: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.oew.3$Flaeche, bhbf.pw.3$Flaeche, bhbf.gpw.3$Flaeche,
                             ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:561:48: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:570:48: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.oew.3$Flaeche, bhbf.pw.3$Flaeche, bhbf.gpw.3$Flaeche,
                                                ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:562:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:571:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.mpw.3$Flaeche, bhbf.kpw.3$Flaeche
         ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:562:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:571:29: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.mpw.3$Flaeche, bhbf.kpw.3$Flaeche
                             ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:565:28: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:574:28: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.3$SE_Flaeche, bhbf.stw.3$SE_Flaeche,
                            ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:566:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:575:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.kw.3$SE_Flaeche, bhbf.oew.3$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:566:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:575:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.kw.3$SE_Flaeche, bhbf.oew.3$SE_Flaeche,
                               ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:567:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:576:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.pw.3$SE_Flaeche, bhbf.gpw.3$SE_Flaeche,
         ^~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:567:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:576:31: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.pw.3$SE_Flaeche, bhbf.gpw.3$SE_Flaeche,
                               ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:568:9: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:577:9: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.mpw.3$SE_Flaeche, bhbf.kpw.3$SE_Flaeche
         ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Landkreis.R:568:32: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/BWI3_HR_Landkreis.R:577:32: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.mpw.3$SE_Flaeche, bhbf.kpw.3$SE_Flaeche
                                ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:81:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.te.s <- length(stratum[, 1])
+    ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:82:1: style: lines should not be more than 80 characters.
+    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:84:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:84:5: warning: local variable 'n.t.s' assigned but may not be used
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:92:7: style: Commented code should be removed.
+    # HBFl. [ha]
+      ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:94:1: style: lines should not be more than 80 characters.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:94:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+    ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:94:39: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:94:52: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:94:66: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                ~^~
+NO COPY: R/BWI3_HR_Totholz.R:94:76: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                          ~^~
+NO COPY: R/BWI3_HR_Totholz.R:94:88: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                                      ~^~
+NO COPY: R/BWI3_HR_Totholz.R:96:7: style: Commented code should be removed.
+    # var.T.hbf^0.5
+      ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:97:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+    ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:97:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:97:26: style: Put spaces around all infix operators.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                        ~^~
+NO COPY: R/BWI3_HR_Totholz.R:105:1: style: lines should not be more than 80 characters.
+      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:111:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:116:1: style: lines should not be more than 80 characters.
+    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tvol", "dm", "lge", "anz", "thf")],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:121:7: style: Commented code should be removed.
+    # BA-Gruppen-Bezeichner
+      ^~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:133:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+      max.D.k <- (D.klass[[2]] - D.klass[[1]]) / D.klass[[2]] + 2
+      ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:134:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+      if (D.k < max.D.k) {
+                ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:135:16: style: Words within variable and function names should be separated by '_' rather than '.'.
+        D.k <- max.D.k
+               ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:146:1: style: lines should not be more than 80 characters.
+    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:147:1: style: lines should not be more than 80 characters.
+    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:148:1: style: lines should not be more than 80 characters.
+    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:150:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    Y.bagr.dkl <- array(dim = c(2, 2, tbagr.k, tart.k, tzg.k, D.k))
+    ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:151:5: style: Variable and function names should be all lowercase.
+    nT.bagr.dkl <- array(dim = c(tbagr.k, tart.k, tzg.k, D.k))
+    ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:151:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    nT.bagr.dkl <- array(dim = c(tbagr.k, tart.k, tzg.k, D.k))
+    ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:152:1: style: lines should not be more than 80 characters.
+    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:153:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    Yha.bagr.dkl <- array(dim = c(2, 2, tbagr.k, tart.k, tzg.k, D.k))
+    ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:157:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:159:7: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+      {
+      ^
+NO COPY: R/BWI3_HR_Totholz.R:161:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+        {
+        ^
+NO COPY: R/BWI3_HR_Totholz.R:163:11: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+          {
+          ^
+NO COPY: R/BWI3_HR_Totholz.R:166:1: style: lines should not be more than 80 characters.
+            #                         tbagr==i&tart==tart.code[j]&tzg==k&dkl==dkl.lab[l],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:167:1: style: lines should not be more than 80 characters.
+            #                         select=c(tnr,enr,tbagr,tart,tzg,dm,lge,tvol,anz,thf))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:174:1: style: lines should not be more than 80 characters.
+              c("tnr", "enr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:179:1: style: lines should not be more than 80 characters.
+              Y.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2) # Zielgr\u00f6\u00dfe Total
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:179:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              Y.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2) # Zielgr\u00f6\u00dfe Total
+              ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:180:1: style: lines should not be more than 80 characters.
+              Y.bagr.dkl[1:2, 2, i, j, k, l] <- rep(0, 2) # Stichprobenfehler (SE)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:180:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              Y.bagr.dkl[1:2, 2, i, j, k, l] <- rep(0, 2) # Stichprobenfehler (SE)
+              ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:181:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              Yha.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2)
+              ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:182:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              Yha.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2)
+              ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:183:15: style: Variable and function names should be all lowercase.
+              nT.bagr.dkl[i, j, k, l] <- 0 # n PSU (Trakte)
+              ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:183:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              nT.bagr.dkl[i, j, k, l] <- 0 # n PSU (Trakte)
+              ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:187:1: style: lines should not be more than 80 characters.
+              xy <- stats::aggregate(totholz.ba$tvol * totholz.ba$thf * totholz.ba$anz,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:200:1: style: lines should not be more than 80 characters.
+              # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:205:15: style: Variable and function names should be all lowercase.
+              nT.bagr.dkl[i, j, k, l] <- length(xy[, 1])
+              ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:205:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              nT.bagr.dkl[i, j, k, l] <- length(xy[, 1])
+              ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:208:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+              {
+              ^
+NO COPY: R/BWI3_HR_Totholz.R:211:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Y.bagr.dkl[m, 1, i, j, k, l] <- sum(xy[, (1 + m)]) / sum(x) * A
+                ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:213:1: style: lines should not be more than 80 characters.
+                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:213:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
+                ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:213:49: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
+                                                ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:214:1: style: lines should not be more than 80 characters.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:214:53: style: Put spaces around all infix operators.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                                                   ~^~
+NO COPY: R/BWI3_HR_Totholz.R:214:77: style: Put spaces around all infix operators.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                                                                           ~^~
+NO COPY: R/BWI3_HR_Totholz.R:214:87: style: Put spaces around all infix operators.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:214:99: style: Put spaces around all infix operators.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                                                                                                 ~^~
+NO COPY: R/BWI3_HR_Totholz.R:215:1: style: lines should not be more than 80 characters.
+                    - 2 * sum(xy[, (1 + m)] * xy$m) / sum(xy[, (1 + m)]) / sum(x))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:219:1: style: lines should not be more than 80 characters.
+                # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:220:1: style: lines should not be more than 80 characters.
+                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:220:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
+                ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:220:51: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
+                                                  ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:221:1: style: lines should not be more than 80 characters.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:221:42: style: Put spaces around all infix operators.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                        ~^~
+NO COPY: R/BWI3_HR_Totholz.R:221:66: style: Put spaces around all infix operators.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                ~^~
+NO COPY: R/BWI3_HR_Totholz.R:221:79: style: Put spaces around all infix operators.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:221:94: style: Put spaces around all infix operators.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                            ~^~
+NO COPY: R/BWI3_HR_Totholz.R:222:1: style: lines should not be more than 80 characters.
+                  - 2 * sum(xy[, (1 + m)] * xy$x) / sum(xy[, (1 + m)]) / sum(xy$x))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:224:1: style: lines should not be more than 80 characters.
+                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:224:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
+                ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:224:51: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
+                                                  ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:238:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:238:5: warning: local variable 'version.totholz.b' assigned but may not be used
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:245:1: style: lines should not be more than 80 characters.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:245:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                          ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:245:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                                                        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:248:34: style: Words within variable and function names should be separated by '_' rather than '.'.
+      T.ThVN.Bagr.Tart.Tzg.Dkl = Y.bagr.dkl,
+                                 ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:249:35: style: Words within variable and function names should be separated by '_' rather than '.'.
+      ThVN.ha.Bagr.Tart.Tzg.Dkl = Yha.bagr.dkl,
+                                  ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:250:30: style: Variable and function names should be all lowercase.
+      nT.Bagr.Tart.Tzg.Dkl = nT.bagr.dkl
+                             ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:250:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+      nT.Bagr.Tart.Tzg.Dkl = nT.bagr.dkl
+                             ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:339:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.te.s <- length(stratum[, 1])
+    ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:340:1: style: lines should not be more than 80 characters.
+    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:342:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:342:5: warning: local variable 'n.t.s' assigned but may not be used
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:350:7: style: Commented code should be removed.
+    # HBFl. [ha]
+      ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:352:1: style: lines should not be more than 80 characters.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:352:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+    ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:352:39: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:352:52: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:352:66: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                ~^~
+NO COPY: R/BWI3_HR_Totholz.R:352:76: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                          ~^~
+NO COPY: R/BWI3_HR_Totholz.R:352:88: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                                      ~^~
+NO COPY: R/BWI3_HR_Totholz.R:354:7: style: Commented code should be removed.
+    # var.T.hbf^0.5
+      ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:355:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+    ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:355:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:355:26: style: Put spaces around all infix operators.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                        ~^~
+NO COPY: R/BWI3_HR_Totholz.R:363:1: style: lines should not be more than 80 characters.
+      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:369:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:379:1: style: lines should not be more than 80 characters.
+    # Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:380:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:381:1: style: lines should not be more than 80 characters.
+      totholz <- totholz[(totholz$tart != 4 & totholz$tbd >= 20) | (totholz$tart == 4 & (totholz$tbd >= 60 | totholz$lge >= 0.5)), TRUE]
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:385:1: style: lines should not be more than 80 characters.
+    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tart", "tvol", "dm", "lge", "anz", "thf")],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:404:1: style: lines should not be more than 80 characters.
+    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:405:1: style: lines should not be more than 80 characters.
+    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:406:1: style: lines should not be more than 80 characters.
+    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:409:5: style: Variable and function names should be all lowercase.
+    nT.tart <- array(dim = c(tart.k, 1))
+    ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:410:1: style: lines should not be more than 80 characters.
+    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:415:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:425:9: style: Variable and function names should be all lowercase.
+        nT.tart[i, ] <- 0 # n PSU (Trakte)
+        ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:429:1: style: lines should not be more than 80 characters.
+        xy <- stats::aggregate(totholz.tart$tvol * totholz.tart$thf * totholz.tart$anz,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:441:1: style: lines should not be more than 80 characters.
+        # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:444:9: style: Variable and function names should be all lowercase.
+        nT.tart[i, ] <- length(xy[, 1])
+        ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:446:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+        {
+        ^
+NO COPY: R/BWI3_HR_Totholz.R:452:1: style: lines should not be more than 80 characters.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:452:47: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:452:71: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:452:81: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                               ~^~
+NO COPY: R/BWI3_HR_Totholz.R:452:93: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                                           ~^~
+NO COPY: R/BWI3_HR_Totholz.R:457:1: style: lines should not be more than 80 characters.
+          # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:460:1: style: lines should not be more than 80 characters.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:460:47: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:460:71: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:460:84: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:460:99: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                                 ~^~
+NO COPY: R/BWI3_HR_Totholz.R:472:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:472:5: warning: local variable 'version.totholz.b' assigned but may not be used
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:479:1: style: lines should not be more than 80 characters.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:479:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                          ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:479:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                                                        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:483:17: style: Variable and function names should be all lowercase.
+      nT.Tart = nT.tart
+                ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:557:1: style: lines should not be more than 80 characters.
+  function(totholz, ecken, trakte, bwi, krit, klass, A, auswahl, strict = FALSE) {
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:586:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.te.s <- length(stratum[, 1])
+    ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:587:1: style: lines should not be more than 80 characters.
+    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:589:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:589:5: warning: local variable 'n.t.s' assigned but may not be used
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:597:7: style: Commented code should be removed.
+    # HBFl. [ha]
+      ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:599:1: style: lines should not be more than 80 characters.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:599:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+    ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:599:39: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:599:52: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:599:66: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                ~^~
+NO COPY: R/BWI3_HR_Totholz.R:599:76: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                          ~^~
+NO COPY: R/BWI3_HR_Totholz.R:599:88: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                                      ~^~
+NO COPY: R/BWI3_HR_Totholz.R:601:7: style: Commented code should be removed.
+    # var.T.hbf^0.5
+      ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:602:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+    ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:602:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:602:26: style: Put spaces around all infix operators.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                        ~^~
+NO COPY: R/BWI3_HR_Totholz.R:610:1: style: lines should not be more than 80 characters.
+      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:616:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:626:1: style: lines should not be more than 80 characters.
+    # Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:627:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:628:1: style: lines should not be more than 80 characters.
+      totholz <- totholz[(totholz$tart != 4 & totholz$tbd >= 20) | (totholz$tart == 4 & (totholz$tbd >= 60 | totholz$lge >= 0.5)), TRUE]
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:632:1: style: lines should not be more than 80 characters.
+    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:640:1: style: lines should not be more than 80 characters.
+      # Position der m\u00f6glichen Klassifizierungsattribute im Datensatz <totholz.s>
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:642:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+      klass.attr.list <- c("tbagr", "tart", "tzg", "dm", "lge")
+      ^~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:643:35: style: Words within variable and function names should be separated by '_' rather than '.'.
+      pos <- 3 + grep(klass$attr, klass.attr.list)
+                                  ^~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:646:1: style: lines should not be more than 80 characters.
+      # bei dm und lge  werden die Klassen aufgrund von Klassifikationsparametern
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:655:1: style: lines should not be more than 80 characters.
+        # Hinweis: die Klassifizierungskategorien k\u00f6nnten auch dem Attribut <pos>
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:663:11: style: Commented code should be removed.
+        # kat <- unique(totholz.s$kl)
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:673:1: style: lines should not be more than 80 characters.
+    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:674:1: style: lines should not be more than 80 characters.
+    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:675:1: style: lines should not be more than 80 characters.
+    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:678:5: style: Variable and function names should be all lowercase.
+    nT.klass <- array(dim = c(klass.k, 1))
+    ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:679:1: style: lines should not be more than 80 characters.
+    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:685:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:692:1: style: lines should not be more than 80 characters.
+        totholz.klass <- totholz.s[TRUE, c(1, 2, 9, 10, 11)] # TODO: Use named index.
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:699:9: style: Variable and function names should be all lowercase.
+        nT.klass[i, ] <- 0 # n PSU (Trakte)
+        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:703:1: style: lines should not be more than 80 characters.
+        xy <- stats::aggregate(totholz.klass$tvol * totholz.klass$thf * totholz.klass$anz,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:715:1: style: lines should not be more than 80 characters.
+        # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:719:9: style: Variable and function names should be all lowercase.
+        nT.klass[i, ] <- length(xy[, 1])
+        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:721:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+        {
+        ^
+NO COPY: R/BWI3_HR_Totholz.R:727:1: style: lines should not be more than 80 characters.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:727:47: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:727:71: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:727:81: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                               ~^~
+NO COPY: R/BWI3_HR_Totholz.R:727:93: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                                           ~^~
+NO COPY: R/BWI3_HR_Totholz.R:732:1: style: lines should not be more than 80 characters.
+          # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:735:1: style: lines should not be more than 80 characters.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:735:47: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:735:71: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:735:84: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:735:99: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                                 ~^~
+NO COPY: R/BWI3_HR_Totholz.R:747:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:747:5: warning: local variable 'version.totholz.b' assigned but may not be used
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:757:7: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+      {
+      ^
+NO COPY: R/BWI3_HR_Totholz.R:762:1: style: lines should not be more than 80 characters.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:762:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                          ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:762:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                                                        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:767:18: style: Variable and function names should be all lowercase.
+      nT.klass = nT.klass
+                 ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:779:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.3 <-
+  ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:780:1: style: lines should not be more than 80 characters.
+    Totholz.bagr.art.zg.stratum.fun(totholz.3, ecken.3, trakte.3, 3, A, D.klass, auswahl)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:782:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.2 <-
+  ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:789:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3 <- Totholz.Tart.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:794:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.lg.st.so.3 <- Totholz.Tart.stratum.fun(
+  ^~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:799:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tart.3 <- Totholz.Tart.stratum.fun(
+  ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:804:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tzg.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:809:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tbagr.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:814:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tartgrp.ges.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:819:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:824:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:829:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.stw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:834:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.stw.ges.3.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:839:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.kw.ges.3.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:844:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.kw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:849:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.pw.ges.3.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:854:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.pw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:859:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.2 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:864:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.stw.ges.2 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:869:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.kw.ges.2 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:874:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.pw.ges.2 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:879:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tbagr.3.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:884:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.dkl.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:890:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.dkl.stth.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:895:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.dkl.lgth.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:903:1: style: lines should not be more than 80 characters.
+    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:903:11: style: Place a space before left parenthesis, except in a function call.
+    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
+          ^
+NO COPY: R/BWI3_HR_Totholz.R:903:49: style: Put spaces around all infix operators.
+    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
+                                               ~^~
+NO COPY: R/BWI3_HR_Totholz.R:909:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3.tvol.ti <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:913:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3.tvol.ti.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/BWI3_HR.R:14:5: style: Commented code should be removed.
 # 		"BWI3/Programme/HR/BWI3_HR_Funktionen_v3_xxx.r"
     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -8050,672 +8692,6 @@ NO COPY: R/BWI3_HR.R:5991:55: style: Words within variable and function names sh
 NO COPY: R/BWI3_HR.R:5994:29: style: Words within variable and function names should be separated by '_' rather than '.'.
     Kennwert_Tabelle_BAGR = attr.bagr.akl.tab
                             ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:81:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.te.s <- length(stratum[, 1])
-    ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:82:1: style: lines should not be more than 80 characters.
-    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:84:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:84:5: warning: local variable 'n.t.s' assigned but may not be used
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:92:7: style: Commented code should be removed.
-    # HBFl. [ha]
-      ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:94:1: style: lines should not be more than 80 characters.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:94:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:94:39: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:94:52: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:94:66: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                ~^~
-NO COPY: R/BWI3_HR_Totholz.R:94:76: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                          ~^~
-NO COPY: R/BWI3_HR_Totholz.R:94:88: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                                      ~^~
-NO COPY: R/BWI3_HR_Totholz.R:96:7: style: Commented code should be removed.
-    # var.T.hbf^0.5
-      ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:97:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-    ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:97:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:97:26: style: Put spaces around all infix operators.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                        ~^~
-NO COPY: R/BWI3_HR_Totholz.R:105:1: style: lines should not be more than 80 characters.
-      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:111:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:116:1: style: lines should not be more than 80 characters.
-    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tvol", "dm", "lge", "anz", "thf")],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:121:7: style: Commented code should be removed.
-    # BA-Gruppen-Bezeichner
-      ^~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:133:7: style: Words within variable and function names should be separated by '_' rather than '.'.
-      max.D.k <- (D.klass[[2]] - D.klass[[1]]) / D.klass[[2]] + 2
-      ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:134:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-      if (D.k < max.D.k) {
-                ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:135:16: style: Words within variable and function names should be separated by '_' rather than '.'.
-        D.k <- max.D.k
-               ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:146:1: style: lines should not be more than 80 characters.
-    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:147:1: style: lines should not be more than 80 characters.
-    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:148:1: style: lines should not be more than 80 characters.
-    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:150:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    Y.bagr.dkl <- array(dim = c(2, 2, tbagr.k, tart.k, tzg.k, D.k))
-    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:151:5: style: Variable and function names should be all lowercase.
-    nT.bagr.dkl <- array(dim = c(tbagr.k, tart.k, tzg.k, D.k))
-    ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:151:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    nT.bagr.dkl <- array(dim = c(tbagr.k, tart.k, tzg.k, D.k))
-    ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:152:1: style: lines should not be more than 80 characters.
-    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:153:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    Yha.bagr.dkl <- array(dim = c(2, 2, tbagr.k, tart.k, tzg.k, D.k))
-    ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:157:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:159:7: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-      {
-      ^
-NO COPY: R/BWI3_HR_Totholz.R:161:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-        {
-        ^
-NO COPY: R/BWI3_HR_Totholz.R:163:11: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-          {
-          ^
-NO COPY: R/BWI3_HR_Totholz.R:166:1: style: lines should not be more than 80 characters.
-            #                         tbagr==i&tart==tart.code[j]&tzg==k&dkl==dkl.lab[l],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:167:1: style: lines should not be more than 80 characters.
-            #                         select=c(tnr,enr,tbagr,tart,tzg,dm,lge,tvol,anz,thf))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:174:1: style: lines should not be more than 80 characters.
-              c("tnr", "enr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:179:1: style: lines should not be more than 80 characters.
-              Y.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2) # Zielgr\u00f6\u00dfe Total
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:179:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              Y.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2) # Zielgr\u00f6\u00dfe Total
-              ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:180:1: style: lines should not be more than 80 characters.
-              Y.bagr.dkl[1:2, 2, i, j, k, l] <- rep(0, 2) # Stichprobenfehler (SE)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:180:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              Y.bagr.dkl[1:2, 2, i, j, k, l] <- rep(0, 2) # Stichprobenfehler (SE)
-              ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:181:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              Yha.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2)
-              ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:182:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              Yha.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2)
-              ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:183:15: style: Variable and function names should be all lowercase.
-              nT.bagr.dkl[i, j, k, l] <- 0 # n PSU (Trakte)
-              ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:183:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              nT.bagr.dkl[i, j, k, l] <- 0 # n PSU (Trakte)
-              ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:187:1: style: lines should not be more than 80 characters.
-              xy <- stats::aggregate(totholz.ba$tvol * totholz.ba$thf * totholz.ba$anz,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:200:1: style: lines should not be more than 80 characters.
-              # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:205:15: style: Variable and function names should be all lowercase.
-              nT.bagr.dkl[i, j, k, l] <- length(xy[, 1])
-              ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:205:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              nT.bagr.dkl[i, j, k, l] <- length(xy[, 1])
-              ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:208:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-              {
-              ^
-NO COPY: R/BWI3_HR_Totholz.R:211:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Y.bagr.dkl[m, 1, i, j, k, l] <- sum(xy[, (1 + m)]) / sum(x) * A
-                ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:213:1: style: lines should not be more than 80 characters.
-                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:213:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
-                ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:213:49: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
-                                                ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:214:1: style: lines should not be more than 80 characters.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:214:53: style: Put spaces around all infix operators.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                                                   ~^~
-NO COPY: R/BWI3_HR_Totholz.R:214:77: style: Put spaces around all infix operators.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                                                                           ~^~
-NO COPY: R/BWI3_HR_Totholz.R:214:87: style: Put spaces around all infix operators.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:214:99: style: Put spaces around all infix operators.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                                                                                                 ~^~
-NO COPY: R/BWI3_HR_Totholz.R:215:1: style: lines should not be more than 80 characters.
-                    - 2 * sum(xy[, (1 + m)] * xy$m) / sum(xy[, (1 + m)]) / sum(x))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:219:1: style: lines should not be more than 80 characters.
-                # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:220:1: style: lines should not be more than 80 characters.
-                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:220:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
-                ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:220:51: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
-                                                  ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:221:1: style: lines should not be more than 80 characters.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:221:42: style: Put spaces around all infix operators.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                        ~^~
-NO COPY: R/BWI3_HR_Totholz.R:221:66: style: Put spaces around all infix operators.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                ~^~
-NO COPY: R/BWI3_HR_Totholz.R:221:79: style: Put spaces around all infix operators.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:221:94: style: Put spaces around all infix operators.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                            ~^~
-NO COPY: R/BWI3_HR_Totholz.R:222:1: style: lines should not be more than 80 characters.
-                  - 2 * sum(xy[, (1 + m)] * xy$x) / sum(xy[, (1 + m)]) / sum(xy$x))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:224:1: style: lines should not be more than 80 characters.
-                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:224:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
-                ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:224:51: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
-                                                  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:238:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:238:5: warning: local variable 'version.totholz.b' assigned but may not be used
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:245:1: style: lines should not be more than 80 characters.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:245:43: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                          ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:245:73: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                                                        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:248:34: style: Words within variable and function names should be separated by '_' rather than '.'.
-      T.ThVN.Bagr.Tart.Tzg.Dkl = Y.bagr.dkl,
-                                 ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:249:35: style: Words within variable and function names should be separated by '_' rather than '.'.
-      ThVN.ha.Bagr.Tart.Tzg.Dkl = Yha.bagr.dkl,
-                                  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:250:30: style: Variable and function names should be all lowercase.
-      nT.Bagr.Tart.Tzg.Dkl = nT.bagr.dkl
-                             ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:250:30: style: Words within variable and function names should be separated by '_' rather than '.'.
-      nT.Bagr.Tart.Tzg.Dkl = nT.bagr.dkl
-                             ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:339:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.te.s <- length(stratum[, 1])
-    ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:340:1: style: lines should not be more than 80 characters.
-    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:342:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:342:5: warning: local variable 'n.t.s' assigned but may not be used
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:350:7: style: Commented code should be removed.
-    # HBFl. [ha]
-      ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:352:1: style: lines should not be more than 80 characters.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:352:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:352:39: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:352:52: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:352:66: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                ~^~
-NO COPY: R/BWI3_HR_Totholz.R:352:76: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                          ~^~
-NO COPY: R/BWI3_HR_Totholz.R:352:88: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                                      ~^~
-NO COPY: R/BWI3_HR_Totholz.R:354:7: style: Commented code should be removed.
-    # var.T.hbf^0.5
-      ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:355:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-    ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:355:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:355:26: style: Put spaces around all infix operators.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                        ~^~
-NO COPY: R/BWI3_HR_Totholz.R:363:1: style: lines should not be more than 80 characters.
-      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:369:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:379:1: style: lines should not be more than 80 characters.
-    # Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:380:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:381:1: style: lines should not be more than 80 characters.
-      totholz <- totholz[(totholz$tart != 4 & totholz$tbd >= 20) | (totholz$tart == 4 & (totholz$tbd >= 60 | totholz$lge >= 0.5)), TRUE]
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:385:1: style: lines should not be more than 80 characters.
-    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tart", "tvol", "dm", "lge", "anz", "thf")],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:404:1: style: lines should not be more than 80 characters.
-    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:405:1: style: lines should not be more than 80 characters.
-    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:406:1: style: lines should not be more than 80 characters.
-    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:409:5: style: Variable and function names should be all lowercase.
-    nT.tart <- array(dim = c(tart.k, 1))
-    ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:410:1: style: lines should not be more than 80 characters.
-    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:415:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:425:9: style: Variable and function names should be all lowercase.
-        nT.tart[i, ] <- 0 # n PSU (Trakte)
-        ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:429:1: style: lines should not be more than 80 characters.
-        xy <- stats::aggregate(totholz.tart$tvol * totholz.tart$thf * totholz.tart$anz,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:441:1: style: lines should not be more than 80 characters.
-        # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:444:9: style: Variable and function names should be all lowercase.
-        nT.tart[i, ] <- length(xy[, 1])
-        ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:446:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-        {
-        ^
-NO COPY: R/BWI3_HR_Totholz.R:452:1: style: lines should not be more than 80 characters.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:452:47: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:452:71: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:452:81: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                               ~^~
-NO COPY: R/BWI3_HR_Totholz.R:452:93: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                                           ~^~
-NO COPY: R/BWI3_HR_Totholz.R:457:1: style: lines should not be more than 80 characters.
-          # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:460:1: style: lines should not be more than 80 characters.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:460:47: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:460:71: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:460:84: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:460:99: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                                 ~^~
-NO COPY: R/BWI3_HR_Totholz.R:472:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:472:5: warning: local variable 'version.totholz.b' assigned but may not be used
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:479:1: style: lines should not be more than 80 characters.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:479:43: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                          ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:479:73: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                                                        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:483:17: style: Variable and function names should be all lowercase.
-      nT.Tart = nT.tart
-                ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:557:1: style: lines should not be more than 80 characters.
-  function(totholz, ecken, trakte, bwi, krit, klass, A, auswahl, strict = FALSE) {
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:586:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.te.s <- length(stratum[, 1])
-    ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:587:1: style: lines should not be more than 80 characters.
-    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:589:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:589:5: warning: local variable 'n.t.s' assigned but may not be used
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:597:7: style: Commented code should be removed.
-    # HBFl. [ha]
-      ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:599:1: style: lines should not be more than 80 characters.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:599:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:599:39: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:599:52: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:599:66: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                ~^~
-NO COPY: R/BWI3_HR_Totholz.R:599:76: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                          ~^~
-NO COPY: R/BWI3_HR_Totholz.R:599:88: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                                      ~^~
-NO COPY: R/BWI3_HR_Totholz.R:601:7: style: Commented code should be removed.
-    # var.T.hbf^0.5
-      ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:602:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-    ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:602:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:602:26: style: Put spaces around all infix operators.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                        ~^~
-NO COPY: R/BWI3_HR_Totholz.R:610:1: style: lines should not be more than 80 characters.
-      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:616:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:626:1: style: lines should not be more than 80 characters.
-    # Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:627:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:628:1: style: lines should not be more than 80 characters.
-      totholz <- totholz[(totholz$tart != 4 & totholz$tbd >= 20) | (totholz$tart == 4 & (totholz$tbd >= 60 | totholz$lge >= 0.5)), TRUE]
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:632:1: style: lines should not be more than 80 characters.
-    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:640:1: style: lines should not be more than 80 characters.
-      # Position der m\u00f6glichen Klassifizierungsattribute im Datensatz <totholz.s>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:642:7: style: Words within variable and function names should be separated by '_' rather than '.'.
-      klass.attr.list <- c("tbagr", "tart", "tzg", "dm", "lge")
-      ^~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:643:35: style: Words within variable and function names should be separated by '_' rather than '.'.
-      pos <- 3 + grep(klass$attr, klass.attr.list)
-                                  ^~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:646:1: style: lines should not be more than 80 characters.
-      # bei dm und lge  werden die Klassen aufgrund von Klassifikationsparametern
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:655:1: style: lines should not be more than 80 characters.
-        # Hinweis: die Klassifizierungskategorien k\u00f6nnten auch dem Attribut <pos>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:663:11: style: Commented code should be removed.
-        # kat <- unique(totholz.s$kl)
-          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:673:1: style: lines should not be more than 80 characters.
-    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:674:1: style: lines should not be more than 80 characters.
-    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:675:1: style: lines should not be more than 80 characters.
-    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:678:5: style: Variable and function names should be all lowercase.
-    nT.klass <- array(dim = c(klass.k, 1))
-    ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:679:1: style: lines should not be more than 80 characters.
-    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:685:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:692:1: style: lines should not be more than 80 characters.
-        totholz.klass <- totholz.s[TRUE, c(1, 2, 9, 10, 11)] # TODO: Use named index.
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:699:9: style: Variable and function names should be all lowercase.
-        nT.klass[i, ] <- 0 # n PSU (Trakte)
-        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:703:1: style: lines should not be more than 80 characters.
-        xy <- stats::aggregate(totholz.klass$tvol * totholz.klass$thf * totholz.klass$anz,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:715:1: style: lines should not be more than 80 characters.
-        # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:719:9: style: Variable and function names should be all lowercase.
-        nT.klass[i, ] <- length(xy[, 1])
-        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:721:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-        {
-        ^
-NO COPY: R/BWI3_HR_Totholz.R:727:1: style: lines should not be more than 80 characters.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:727:47: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:727:71: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:727:81: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                               ~^~
-NO COPY: R/BWI3_HR_Totholz.R:727:93: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                                           ~^~
-NO COPY: R/BWI3_HR_Totholz.R:732:1: style: lines should not be more than 80 characters.
-          # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:735:1: style: lines should not be more than 80 characters.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:735:47: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:735:71: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:735:84: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:735:99: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                                 ~^~
-NO COPY: R/BWI3_HR_Totholz.R:747:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:747:5: warning: local variable 'version.totholz.b' assigned but may not be used
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:757:7: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-      {
-      ^
-NO COPY: R/BWI3_HR_Totholz.R:762:1: style: lines should not be more than 80 characters.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:762:43: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                          ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:762:73: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                                                        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:767:18: style: Variable and function names should be all lowercase.
-      nT.klass = nT.klass
-                 ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:779:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.3 <-
-  ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:780:1: style: lines should not be more than 80 characters.
-    Totholz.bagr.art.zg.stratum.fun(totholz.3, ecken.3, trakte.3, 3, A, D.klass, auswahl)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:782:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.2 <-
-  ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:789:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3 <- Totholz.Tart.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:794:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.lg.st.so.3 <- Totholz.Tart.stratum.fun(
-  ^~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:799:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tart.3 <- Totholz.Tart.stratum.fun(
-  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:804:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tzg.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:809:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tbagr.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:814:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tartgrp.ges.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:819:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:824:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:829:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.stw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:834:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.stw.ges.3.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:839:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.kw.ges.3.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:844:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.kw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:849:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.pw.ges.3.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:854:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.pw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:859:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.2 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:864:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.stw.ges.2 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:869:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.kw.ges.2 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:874:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.pw.ges.2 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:879:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tbagr.3.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:884:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.dkl.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:890:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.dkl.stth.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:895:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.dkl.lgth.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:903:1: style: lines should not be more than 80 characters.
-    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:903:11: style: Place a space before left parenthesis, except in a function call.
-    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
-          ^
-NO COPY: R/BWI3_HR_Totholz.R:903:49: style: Put spaces around all infix operators.
-    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
-                                               ~^~
-NO COPY: R/BWI3_HR_Totholz.R:909:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3.tvol.ti <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:913:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3.tvol.ti.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/deadwood.R:17:1: style: lines should not be more than 80 characters.
     # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -10303,15 +10279,15 @@ NO COPY: R/fvbn2e.R:426:25: style: Words within variable and function names shou
 NO COPY: R/german_things.R:71:1: style: lines should not be more than 80 characters.
 round_and_prettify <- function(x, digits = 0, big_mark = ",", decimal_mark = ".") {
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/labeling.R:16:32: style: Commas should never have a space before.
-    "Baumartengruppenfläche" = ,
-                              ~^
+NO COPY: R/labeling.R:16:37: style: Commas should never have a space before.
+    "Baumartengruppenfl\u00e4che" = ,
+                                   ~^
 NO COPY: R/labeling.R:17:33: style: Commas should never have a space before.
     "Baumartengruppenflaeche" = ,
                                ~^
-NO COPY: R/labeling.R:18:25: style: Commas should never have a space before.
-    "Baumartenfläche" = ,
-                       ~^
+NO COPY: R/labeling.R:18:30: style: Commas should never have a space before.
+    "Baumartenfl\u00e4che" = ,
+                            ~^
 NO COPY: R/labeling.R:19:26: style: Commas should never have a space before.
     "Baumartenflaeche" = ,
                         ~^
@@ -10387,12 +10363,12 @@ NO COPY: R/labeling.R:61:12: style: Commas should never have a space before.
 NO COPY: R/labeling.R:62:12: style: Commas should never have a space before.
     "kw" = ,
           ~^
-NO COPY: R/labeling.R:63:27: style: Commas should never have a space before.
-    "körperschaftswald" = ,
-                         ~^
-NO COPY: R/labeling.R:64:27: style: Commas should never have a space before.
-    "Körperschaftswald" = ,
-                         ~^
+NO COPY: R/labeling.R:63:32: style: Commas should never have a space before.
+    "k\u00f6rperschaftswald" = ,
+                              ~^
+NO COPY: R/labeling.R:64:32: style: Commas should never have a space before.
+    "K\u00f6rperschaftswald" = ,
+                              ~^
 NO COPY: R/labeling.R:65:28: style: Commas should never have a space before.
     "koerperschaftswald" = ,
                           ~^
@@ -10426,15 +10402,15 @@ NO COPY: R/labeling.R:77:27: style: Commas should never have a space before.
 NO COPY: R/labeling.R:78:13: style: Commas should never have a space before.
     "MPW" = ,
            ~^
-NO COPY: R/labeling.R:80:24: style: Commas should never have a space before.
-    "Großprivatwald" = ,
-                      ~^
+NO COPY: R/labeling.R:80:29: style: Commas should never have a space before.
+    "Gro\u00dfprivatwald" = ,
+                           ~^
 NO COPY: R/labeling.R:81:13: style: Commas should never have a space before.
     "GPW" = ,
            ~^
-NO COPY: R/labeling.R:106:34: style: Commas should never have a space before.
-      "Baumartengruppenfläche" = ,
-                                ~^
+NO COPY: R/labeling.R:106:39: style: Commas should never have a space before.
+      "Baumartengruppenfl\u00e4che" = ,
+                                     ~^
 NO COPY: R/labeling.R:108:26: style: Commas should never have a space before.
       "Derbholzvorrat" = ,
                         ~^
@@ -10967,8 +10943,8 @@ NO COPY: R/regional.R:791:122: warning: no visible binding for global variable '
     d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
                                                                                                                          ^~~~~~~~~~~~~
 NO COPY: R/regional.R:792:1: style: lines should not be more than 80 characters.
-    type_name <- paste("Fläche", gsub(" ", "_", gsub("/", "_", species_group)), sep = "_")
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    type_name <- paste("Fl\u00e4che", gsub(" ", "_", gsub("/", "_", species_group)), sep = "_")
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/regional.R:810:1: style: lines should not be more than 80 characters.
       ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

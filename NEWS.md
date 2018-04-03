@@ -1,6 +1,7 @@
-# bundeswaldinventur 0.6.0.9000
+# bundeswaldinventur 0.7.0
 
-* foo
+* Exported Objects defined R/global\_variables.R this makes the scripts in 
+  hochrechnungen/regional/ run.
 
 # bundeswaldinventur 0.6.0
 
