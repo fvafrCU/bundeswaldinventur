@@ -3343,7 +3343,12 @@ verjg.kl4.bagr.fun <- function(verj.kl4, ecken, trakte, auswahl, A,
   for (i in 1:n.bagr)
   {
     # BAGR
-    vj.kl4.t.bagr <- vj.kl4.t[vj.kl4.t[["bagr"]] == bagr.list[i], TRUE]
+      # TODO: for some spooky reason, subset(mtcars, cyl == NA) and
+      # the indexing variant mtcars[mtcars$cyl == NA, ] give differing
+      # results, we need subset's behaviour here.
+      idx <- vj.kl4.t[["bagr"]] == bagr.list[i]
+      if (identical(length(idx), 1) && is.na(idx)) idx <- NULL
+      vj.kl4.t.bagr <- vj.kl4.t[idx, TRUE]
     # Nach Verj\u00fcngungsarten
     for (j in 1:n.vart)
     {

@@ -1,6 +1,7 @@
-# bundeswaldinventur 0.7.0.9000
+# bundeswaldinventur 0.7.1
 
-* Done foo.
+* Fixed subset / indexing bug in verjg.kl4.bagrupp.fun(),
+  see R/BWI\_HR.R lines 3346ff.
 
 # bundeswaldinventur 0.7.0
 
