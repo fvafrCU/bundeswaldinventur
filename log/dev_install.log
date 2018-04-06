@@ -1,7 +1,8 @@
 Installing bundeswaldinventur
-'/usr/lib/R/bin/R' --no-site-file --no-environ --no-save --no-restore --quiet  \
-  CMD INSTALL '/home/nik/git/os/fva/bundeswaldinventur'  \
-  --library='/home/nik/R/x86_64-pc-linux-gnu-library/3.3' --install-tests 
+'/home/qwer/svn/R/R-3.4.3/bin/R' --no-site-file --no-environ --no-save  \
+  --no-restore --quiet CMD INSTALL  \
+  '/adc_mnt/oudeis/git_working_copies/fva/bundeswaldinventur'  \
+  --library='/home/qwer/svn/R/R-3.4.3/library' --install-tests 
 
 * installing *source* package ‘bundeswaldinventur’ ...
 ** R
@@ -11,7 +12,6 @@ Installing bundeswaldinventur
 ** tests
 ** preparing package for lazy loading
 ** help
-Warning: /home/nik/git/os/fva/bundeswaldinventur/man/Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
 *** installing help indices
 ** building package indices
 ** installing vignettes

@@ -1,5 +1,5 @@
 
-R version 3.3.3 (2017-03-06) -- "Another Canoe"
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree"
 Copyright (C) 2017 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
@@ -20,5 +20,18 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
+Writing Totholz.bagr.art.zg.stratum.fun.Rd
+Writing Totholz.Tart.stratum.fun.Rd
+Writing Totholz.klass.stratum.fun.Rd
+Writing COLORS_BWI.Rd
+Writing A.Rd
+Writing A.12.Rd
+Writing nT.Rd
+Writing nTE.12.Rd
+Writing nTE.Rd
+Writing RF.12.Rd
+Writing RF.Rd
+Writing bagr.bwi.Rd
+Writing bagr.list.Rd
 > 
 > 

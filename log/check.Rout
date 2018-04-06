@@ -1,13 +1,23 @@
-* using log directory ‘/home/nik/git/os/fva/bundeswaldinventur/bundeswaldinventur.Rcheck’
-* using R version 3.3.3 (2017-03-06)
+* using log directory ‘/adc_mnt/oudeis/git_working_copies/fva/bundeswaldinventur/bundeswaldinventur.Rcheck’
+* using R version 3.4.3 (2017-11-30)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
 * this is package ‘bundeswaldinventur’ version ‘0.7.1’
 * package encoding: UTF-8
-* checking CRAN incoming feasibility ... Note_to_CRAN_maintainers
+* checking CRAN incoming feasibility ... NOTE
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
+
+New submission
+
+Non-FOSS package license (file LICENSE)
+
+The Title field should be in title case, current version then in title case:
+‘Analysing the Bundeswaldinventur in the state of Baden-Wuerttemberg’
+‘Analysing the Bundeswaldinventur in the State of Baden-Wuerttemberg’
+
+Size of tarball: 16470488 bytes
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -18,15 +28,18 @@ Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
 * checking for sufficient/correct file permissions ... OK
 * checking whether package ‘bundeswaldinventur’ can be installed ... WARNING
 Found the following significant warnings:
-  Warning: /home/nik/git/os/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00_pkg_src/bundeswaldinventur/man/Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
-See ‘/home/nik/git/os/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00install.out’ for details.
+  Warning: /adc_mnt/oudeis/git_working_copies/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00_pkg_src/bundeswaldinventur/man/Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
+See ‘/adc_mnt/oudeis/git_working_copies/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00install.out’ for details.
 * checking installed package size ... NOTE
   installed size is 33.4Mb
   sub-directories of 1Mb or more:
     data  32.8Mb
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
-* checking top-level files ... OK
+* checking top-level files ... WARNING
+Conversion of ‘README.md’ failed:
+pandoc: Failed to retrieve https://www.r-pkg.org/badges/version/bundeswaldinventur
+TlsException (HandshakeFailed (Error_Protocol ("expecting server hello, got alert : [(AlertLevel_Fatal,HandshakeFailure)]",True,HandshakeFailure)))
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -37,7 +50,6 @@ See ‘/home/nik/git/os/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00insta
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
-* checking loading without being on the library search path ... OK
 * checking use of S3 registration ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
@@ -277,12 +289,12 @@ tex_table: no visible binding for global variable 'graphics_directory'
 tex_table: no visible binding for global variable 'tables_directory'
 to_tex: no visible binding for global variable 'dot_district_tex'
 Undefined global functions or variables:
-  area bwi coord_polar district_groups dot_district_tex element_blank
-  foo generator_notice geom_text graphics_directory graphics_height
-  group i krs.grupp NTNS ownership ownership_realive_area period
-  plots_directory position prediction radius regional_file_name
+  NTNS TITLE_PLOT area bwi coord_polar district_groups dot_district_tex
+  element_blank foo generator_notice geom_text graphics_directory
+  graphics_height group i krs.grupp ownership ownership_realive_area
+  period plots_directory position prediction radius regional_file_name
   scale_x_discrete species standard_error stratii stratum_index
-  tables_directory TITLE_PLOT x ylab
+  tables_directory x ylab
 * checking Rd files ... WARNING
 prepare_Rd: Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
 * checking Rd metadata ... OK
@@ -296,12 +308,15 @@ prepare_Rd: Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
 * checking contents of ‘data’ directory ... OK
 * checking data for non-ASCII characters ... OK
 * checking data for ASCII and uncompressed saves ... OK
-* checking files in ‘vignettes’ ... OK
+* checking files in ‘vignettes’ ... WARNING
+Files in the 'vignettes' directory but no files in 'inst/doc':
+  ‘An_Introduction_to_bundeswaldinventur.Rmd’
+Package has no Sweave vignette sources and no VignetteBuilder field.
 * checking examples ... OK
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [164s/164s]
+  Running ‘testthat.R’ [121s/121s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 2 WARNINGs, 2 NOTEs
+Status: 4 WARNINGs, 3 NOTEs
