@@ -20,18 +20,5 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing Totholz.bagr.art.zg.stratum.fun.Rd
-Writing Totholz.Tart.stratum.fun.Rd
-Writing Totholz.klass.stratum.fun.Rd
-Writing COLORS_BWI.Rd
-Writing A.Rd
-Writing A.12.Rd
-Writing nT.Rd
-Writing nTE.12.Rd
-Writing nTE.Rd
-Writing RF.12.Rd
-Writing RF.Rd
-Writing bagr.bwi.Rd
-Writing bagr.list.Rd
 > 
 > 

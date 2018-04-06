@@ -4,7 +4,7 @@
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.7.1’
+* this is package ‘bundeswaldinventur’ version ‘0.7.2’
 * package encoding: UTF-8
 * checking CRAN incoming feasibility ... NOTE
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
@@ -13,11 +13,7 @@ New submission
 
 Non-FOSS package license (file LICENSE)
 
-The Title field should be in title case, current version then in title case:
-‘Analysing the Bundeswaldinventur in the state of Baden-Wuerttemberg’
-‘Analysing the Bundeswaldinventur in the State of Baden-Wuerttemberg’
-
-Size of tarball: 16470488 bytes
+Size of tarball: 16470466 bytes
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -26,10 +22,7 @@ Size of tarball: 16470488 bytes
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
 * checking for sufficient/correct file permissions ... OK
-* checking whether package ‘bundeswaldinventur’ can be installed ... WARNING
-Found the following significant warnings:
-  Warning: /adc_mnt/oudeis/git_working_copies/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00_pkg_src/bundeswaldinventur/man/Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
-See ‘/adc_mnt/oudeis/git_working_copies/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00install.out’ for details.
+* checking whether package ‘bundeswaldinventur’ can be installed ... OK
 * checking installed package size ... NOTE
   installed size is 33.4Mb
   sub-directories of 1Mb or more:
@@ -295,8 +288,7 @@ Undefined global functions or variables:
   period plots_directory position prediction radius regional_file_name
   scale_x_discrete species standard_error stratii stratum_index
   tables_directory x ylab
-* checking Rd files ... WARNING
-prepare_Rd: Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
+* checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
 * checking Rd cross-references ... OK
@@ -316,7 +308,7 @@ Package has no Sweave vignette sources and no VignetteBuilder field.
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [121s/121s]
+  Running ‘testthat.R’ [126s/128s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 4 WARNINGs, 3 NOTEs
+Status: 2 WARNINGs, 3 NOTEs

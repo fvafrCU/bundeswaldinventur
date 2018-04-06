@@ -1,6 +1,3 @@
-Warning message:
-In parse_Rd(ifile, encoding = encoding, macros = macros) :
-  /adc_mnt/oudeis/git_working_copies/fva/bundeswaldinventur/man/Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
   WORD                               FOUND IN
 abbrevations                       revalue_data.Rd:13
 abdeckte                           VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd:102, VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd:105
@@ -989,7 +986,7 @@ Tzg                                Totholz.bagr.art.zg.stratum.fun.Rd:12,42,44,4
 TZg                                Totholz.bagr.art.zg.stratum.fun.Rd:65, Totholz.klass.stratum.fun.Rd:89, Totholz.Tart.stratum.fun.Rd:81
 ueber                              ecke.feld.3.Rd:27, ecken.1.Rd:29, ecken.23.Rd:25, ecken.2.Rd:29, ecken.3.Rd:35, FVBN.bagrupp.akl.dkl.stratum.fun.2e.Rd:95, iVB.bilanz.bagr.akl.dkl.fun.2g.Rd:17, iVB.bilanz.bagr.akl.dkl.fun.Rd:17, kreise.Rd:19, r.variance.fun.Rd:19, r.xxy.variance.fun.Rd:20, schutzgebiete.3.Rd:32, Totholz.bagr.art.zg.stratum.fun.Rd:32, Totholz.klass.stratum.fun.Rd:37, Totholz.Tart.stratum.fun.Rd:35, VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd:97, VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd:100, verbiss.bagr.fun.Rd:52, verbiss.bagrupp.fun.Rd:54, verjg.kl4.bagr.fun.Rd:31, verjg.kl4.bagrupp.fun.Rd:33
 Uebergabe                          iVB.ew.bagrupp.akl.dkl.stratum.fun.2g.Rd:63, iVB.ew.bagrupp.akl.dkl.stratum.fun.2.Rd:63, iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12.Rd:61
-uebergeben                         fba.stratum.fun.Rd:10, FVBN.bagrupp.akl.dkl.stratum.fun.2e.Rd:32,33,43, iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12.Rd:13,16,80, stamm.merkmale.bagr.akl.fun.Rd:24,25, stratum.fun.Rd:36, Totholz.bagr.art.zg.stratum.fun.Rd:63, Totholz.klass.stratum.fun.Rd:31,81, Totholz.Tart.stratum.fun.Rd:45,73, VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd:86,87, VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd:90,91
+uebergeben                         fba.stratum.fun.Rd:10, FVBN.bagrupp.akl.dkl.stratum.fun.2e.Rd:32,33,43, iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12.Rd:13,16,80, stamm.merkmale.bagr.akl.fun.Rd:24,25, stratum.fun.Rd:36, Totholz.bagr.art.zg.stratum.fun.Rd:63, Totholz.klass.stratum.fun.Rd:31,81, Totholz.Tart.stratum.fun.Rd:28,45,73, VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd:86,87, VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd:90,91
 uebergebenen                       stratum.fun.Rd:37
 uebergeordnete                     fl.proz.stratum.fun.Rd:12,27
 uebernommen                        VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd:107, VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd:112
