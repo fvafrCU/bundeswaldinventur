@@ -8887,142 +8887,145 @@ NO COPY: R/fvbn2a.R:130:9: style: Opening curly braces should never go on their 
 NO COPY: R/fvbn2a.R:132:1: style: lines should not be more than 80 characters.
             baeume.s[["bagr"]] == bagr.list[i] & baeume.s[["akl"]] == akl.lab[j] & baeume.s[["dkl"]] == dkl.lab[k],
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:136:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:138:25: style: Place a space before left parenthesis, except in a function call.
+          if (all(is.na((baeume.ba)))) {
+                        ^
+NO COPY: R/fvbn2a.R:139:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:136:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:139:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:137:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:140:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:137:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:140:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:138:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:141:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:139:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:142:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:140:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2a.R:143:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:140:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:143:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:144:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:147:1: style: lines should not be more than 80 characters.
             xy <- stats::aggregate(baeume.ba$stfl, by = list(baeume.ba$tnr), sum)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:146:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:149:1: style: lines should not be more than 80 characters.
             xy$x <- xy$x / 10000 * lk # Umrechnung in ha  und L\u00fcckenkorrektur
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:155:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:158:1: style: lines should not be more than 80 characters.
               stats::aggregate(baeume.ba$volv * baeume.ba$nha * ifelse(baeume.ba$stfl > 0, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:166:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:169:1: style: lines should not be more than 80 characters.
             xy <- cbind(xy, stats::aggregate(baeume.ba$nha, by = list(baeume.ba$tnr), sum)$x)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:170:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:173:1: style: lines should not be more than 80 characters.
             x.ndh <- try(stats::aggregate(baeume.ba$nha * ifelse(baeume.ba$bhd >= 7, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:182:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2a.R:185:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:182:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:185:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:184:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:187:1: style: lines should not be more than 80 characters.
             xy <- merge(trakte[TRUE, c("tnr", "m")], xy, by = c("tnr"), all.x = T)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:185:15: style: Commented code should be removed.
+NO COPY: R/fvbn2a.R:188:15: style: Commented code should be removed.
             # for(ii in 3:8) {xy[is.na(xy[,ii]),ii] <- 0}
               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:189:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2a.R:192:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
             {
             ^
-NO COPY: R/fvbn2a.R:193:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:196:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 1, i, j, k] <- R.list$R.xy * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:194:17: style: Commented code should be removed.
+NO COPY: R/fvbn2a.R:197:17: style: Commented code should be removed.
               # sum(xy[,(1+l)])/sum(x)*A *ifelse(l==1,lk,1)
                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:197:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:200:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:197:60: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:200:60: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
                                                            ^~~~~~
-NO COPY: R/fvbn2a.R:200:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:203:1: style: lines should not be more than 80 characters.
               if (l > 1) # Hinweis: l+1 = Spalte der Zielgr\u00f6\u00dfe in xy; Spalte 2
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:202:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2a.R:205:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
               {
               ^
-NO COPY: R/fvbn2a.R:203:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:206:1: style: lines should not be more than 80 characters.
                 # Bei Ha-Vorrat Hauptbestand muss Fl\u00e4chenbezug die Fl\u00e4che OHNE
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:206:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:209:1: style: lines should not be more than 80 characters.
                 lk.c <- ifelse(l == 3, lk, 1) # lk.c macht bei HB-Vorrat L\u00fcckenkorrektur
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:210:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:213:17: style: Words within variable and function names should be separated by '_' rather than '.'.
                 Yha.bagr.akl.dkl[l.ha, 1, i, j, k] <- R.list$R.xy
                 ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:211:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:214:1: style: lines should not be more than 80 characters.
                 #              Y.bagr.akl.dkl[l,1,i,j,k]/Y.bagr.akl.dkl[1,1,i,j,k]
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:211:32: style: Commented code should be removed.
+NO COPY: R/fvbn2a.R:214:32: style: Commented code should be removed.
                 #              Y.bagr.akl.dkl[l,1,i,j,k]/Y.bagr.akl.dkl[1,1,i,j,k]
                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:212:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:215:17: style: Words within variable and function names should be separated by '_' rather than '.'.
                 Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
                 ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:212:67: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:215:67: style: Words within variable and function names should be separated by '_' rather than '.'.
                 Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
                                                                   ^~~~~~
-NO COPY: R/fvbn2a.R:222:7: style: Commented code should be removed.
+NO COPY: R/fvbn2a.R:225:7: style: Commented code should be removed.
     # AKL-Labels
       ^~~~~~~~~~
-NO COPY: R/fvbn2a.R:231:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:234:1: style: lines should not be more than 80 characters.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:231:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:234:5: style: Words within variable and function names should be separated by '_' rather than '.'.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:231:5: warning: local variable 'version.baeume.b' assigned but may not be used
+NO COPY: R/fvbn2a.R:234:5: warning: local variable 'version.baeume.b' assigned but may not be used
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:234:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:237:1: style: lines should not be more than 80 characters.
       Version.baeume.b = substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:238:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:241:1: style: lines should not be more than 80 characters.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:238:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:241:43: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                           ^~~~~~
-NO COPY: R/fvbn2a.R:238:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:241:73: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                                                         ^~~~~~~~
-NO COPY: R/fvbn2a.R:239:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2a.R:242:1: style: lines should not be more than 80 characters.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:239:26: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:242:26: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                          ^~~~~~~
-NO COPY: R/fvbn2a.R:239:57: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:242:57: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                                                         ^~~~~~~~
-NO COPY: R/fvbn2a.R:244:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:247:29: style: Words within variable and function names should be separated by '_' rather than '.'.
       T.FVBN.Bagr.Akl.Dkl = Y.bagr.akl.dkl,
                             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:245:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:248:30: style: Words within variable and function names should be separated by '_' rather than '.'.
       FVBN.ha.Bagr.Akl.Dkl = Yha.bagr.akl.dkl,
                              ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:246:25: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2a.R:249:25: style: Variable and function names should be all lowercase.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2a.R:246:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2a.R:249:25: style: Words within variable and function names should be separated by '_' rather than '.'.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
 NO COPY: R/fvbn2b.R:14:1: style: lines should not be more than 80 characters.
@@ -9136,160 +9139,163 @@ NO COPY: R/fvbn2b.R:137:9: style: Opening curly braces should never go on their 
 NO COPY: R/fvbn2b.R:139:1: style: lines should not be more than 80 characters.
             baeume.s[["bagr"]] == bagr.list[i] & baeume.s[["akl"]] == akl.lab[j] & baeume.s[["dkl"]] == dkl.lab[k],
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:143:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:145:25: style: Place a space before left parenthesis, except in a function call.
+          if (all(is.na((baeume.ba)))) {
+                        ^
+NO COPY: R/fvbn2b.R:146:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:143:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:146:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:144:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:147:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:144:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:147:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:145:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:148:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:146:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:149:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:147:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2b.R:150:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:147:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:150:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:151:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:154:1: style: lines should not be more than 80 characters.
             xy <- stats::aggregate(baeume.ba$stfl, by = list(baeume.ba$tnr), sum)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:153:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:156:1: style: lines should not be more than 80 characters.
             xy$x <- xy$x / 10000 * lk # Umrechnung in ha  und L\u00fcckenkorrektur
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:162:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:165:1: style: lines should not be more than 80 characters.
               stats::aggregate(baeume.ba$volv * baeume.ba$nha * ifelse(baeume.ba$stfl > 0, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:173:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:176:1: style: lines should not be more than 80 characters.
             xy <- cbind(xy, stats::aggregate(baeume.ba$nha, by = list(baeume.ba$tnr), sum)$x)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:177:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:180:1: style: lines should not be more than 80 characters.
             x.ndh <- try(stats::aggregate(baeume.ba$nha * ifelse(baeume.ba$bhd >= 7, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:189:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2b.R:192:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:189:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:192:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:190:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:193:1: style: lines should not be more than 80 characters.
             #---  Erg\u00e4nzug 11.10. <m_bhb>    Hinweis: Offset f\u00fcr Indizierung ange-
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:194:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:197:1: style: lines should not be more than 80 characters.
             xy <- merge(xy.s[TRUE, c("tnr", "m", "hbf")], xy, by = c("tnr"), all.x = T)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:195:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:198:1: style: lines should not be more than 80 characters.
             # xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:195:15: style: Commented code should be removed.
+NO COPY: R/fvbn2b.R:198:15: style: Commented code should be removed.
             # xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:199:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2b.R:202:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
             {
             ^
-NO COPY: R/fvbn2b.R:200:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:203:1: style: lines should not be more than 80 characters.
               # Zielgr\u00f6\u00dfen Y {BAF,V,VHb,B,N,NDh)   (Offset von (2+l) auf (3+l)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:201:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:204:1: style: lines should not be more than 80 characters.
               # wegen zus\u00e4tzlichem Attribut <m_bhb> ge\u00e4ndert (k\u00e4/11.10.14)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:204:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:207:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 1, i, j, k] <- R.list$R.xy * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:205:17: style: Commented code should be removed.
+NO COPY: R/fvbn2b.R:208:17: style: Commented code should be removed.
               # sum(xy[,(1+l)])/sum(x)*A *ifelse(l==1,lk,1)
                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:208:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:211:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:208:60: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:211:60: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
                                                            ^~~~~~
-NO COPY: R/fvbn2b.R:212:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:215:1: style: lines should not be more than 80 characters.
               # if (l > 1)    #Hinweis: l+1 = Spalte der Zielgr\u00f6\u00dfe in xy; Spalte 2
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:215:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2b.R:218:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
               {
               ^
-NO COPY: R/fvbn2b.R:219:24: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:222:24: style: Words within variable and function names should be separated by '_' rather than '.'.
                 R.list$V.R.xy <- R.list$V.R.xy * 10000
                        ^~~~~~
-NO COPY: R/fvbn2b.R:219:41: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:222:41: style: Words within variable and function names should be separated by '_' rather than '.'.
                 R.list$V.R.xy <- R.list$V.R.xy * 10000
                                         ^~~~~~
-NO COPY: R/fvbn2b.R:221:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:224:1: style: lines should not be more than 80 characters.
                 # Bei Ha-Vorrat Hauptbestand (l==3) muss Fl\u00e4chenbezug die Fl\u00e4che
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:224:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:227:1: style: lines should not be more than 80 characters.
                 lk.c <- ifelse(l == 3, lk, 1) # lk.c macht bei HB-Vorrat L\u00fcckenkorrektur
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:226:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:229:1: style: lines should not be more than 80 characters.
                 # wegen zus\u00e4tzlichem Attribut <m_bhb> ge\u00e4ndert (k\u00e4/11.10.14)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:231:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:234:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 1, i, j, k] <- R.list$R.xy
               ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:232:30: style: Commented code should be removed.
+NO COPY: R/fvbn2b.R:235:30: style: Commented code should be removed.
               #              Y.bagr.akl.dkl[l,1,i,j,k]/Y.bagr.akl.dkl[1,1,i,j,k]
                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:233:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:236:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
               ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:233:65: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:236:65: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
                                                                 ^~~~~~
-NO COPY: R/fvbn2b.R:247:7: style: Commented code should be removed.
+NO COPY: R/fvbn2b.R:250:7: style: Commented code should be removed.
     # AKL-Labels
       ^~~~~~~~~~
-NO COPY: R/fvbn2b.R:256:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:259:1: style: lines should not be more than 80 characters.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:256:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:259:5: style: Words within variable and function names should be separated by '_' rather than '.'.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:256:5: warning: local variable 'version.baeume.b' assigned but may not be used
+NO COPY: R/fvbn2b.R:259:5: warning: local variable 'version.baeume.b' assigned but may not be used
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:259:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:262:1: style: lines should not be more than 80 characters.
       Version.baeume.b = substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:263:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:266:1: style: lines should not be more than 80 characters.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:263:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:266:43: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                           ^~~~~~
-NO COPY: R/fvbn2b.R:263:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:266:73: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                                                         ^~~~~~~~
-NO COPY: R/fvbn2b.R:264:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2b.R:267:1: style: lines should not be more than 80 characters.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:264:26: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:267:26: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                          ^~~~~~~
-NO COPY: R/fvbn2b.R:264:57: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:267:57: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                                                         ^~~~~~~~
-NO COPY: R/fvbn2b.R:273:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:276:29: style: Words within variable and function names should be separated by '_' rather than '.'.
       T.FVBN.Bagr.Akl.Dkl = Y.bagr.akl.dkl,
                             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:274:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:277:30: style: Words within variable and function names should be separated by '_' rather than '.'.
       FVBN.ha.Bagr.Akl.Dkl = Yha.bagr.akl.dkl,
                              ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:275:25: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2b.R:278:25: style: Variable and function names should be all lowercase.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2b.R:275:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2b.R:278:25: style: Words within variable and function names should be separated by '_' rather than '.'.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
 NO COPY: R/fvbn2c.R:14:1: style: lines should not be more than 80 characters.
@@ -9403,169 +9409,172 @@ NO COPY: R/fvbn2c.R:139:9: style: Opening curly braces should never go on their 
 NO COPY: R/fvbn2c.R:141:1: style: lines should not be more than 80 characters.
             baeume.s[["bagr"]] == bagr.list[i] & baeume.s[["akl"]] == akl.lab[j] & baeume.s[["dkl"]] == dkl.lab[k],
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:145:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:147:25: style: Place a space before left parenthesis, except in a function call.
+          if (all(is.na((baeume.ba)))) {
+                        ^
+NO COPY: R/fvbn2c.R:148:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:145:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:148:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:146:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:149:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:146:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:149:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:147:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:150:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:148:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:151:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:149:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2c.R:152:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:149:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:152:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:153:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:156:1: style: lines should not be more than 80 characters.
             xy <- stats::aggregate(baeume.ba$stfl, by = list(baeume.ba$tnr), sum)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:155:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:158:1: style: lines should not be more than 80 characters.
             xy$x <- xy$x / 10000 * lk # Umrechnung in ha  und L\u00fcckenkorrektur
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:164:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:167:1: style: lines should not be more than 80 characters.
               stats::aggregate(baeume.ba$volv * baeume.ba$nha * ifelse(baeume.ba$stfl > 0, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:175:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:178:1: style: lines should not be more than 80 characters.
             xy <- cbind(xy, stats::aggregate(baeume.ba$nha, by = list(baeume.ba$tnr), sum)$x)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:179:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:182:1: style: lines should not be more than 80 characters.
             x.ndh <- try(stats::aggregate(baeume.ba$nha * ifelse(baeume.ba$bhd >= 7, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:187:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:190:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             x.ndh.hb <- try(stats::aggregate(baeume.ba$nha * ifelse(
             ^~~~~~~~
-NO COPY: R/fvbn2c.R:193:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:196:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               x.ndh.hb <- rep(0, length(xy[, 1]))
               ^~~~~~~~
-NO COPY: R/fvbn2c.R:195:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:198:29: style: Words within variable and function names should be separated by '_' rather than '.'.
             xy <- cbind(xy, x.ndh.hb)
                             ^~~~~~~~
-NO COPY: R/fvbn2c.R:201:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2c.R:204:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:201:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:204:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:202:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:205:1: style: lines should not be more than 80 characters.
             #---  Erg\u00e4nzug 11.10. <m_bhb>    Hinweis: Offset f\u00fcr Indizierung ange-
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:206:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:209:1: style: lines should not be more than 80 characters.
             xy <- merge(xy.s[TRUE, c("tnr", "m", "hbf")], xy, by = c("tnr"), all.x = T)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:207:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:210:1: style: lines should not be more than 80 characters.
             # xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:207:15: style: Commented code should be removed.
+NO COPY: R/fvbn2c.R:210:15: style: Commented code should be removed.
             # xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:211:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2c.R:214:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
             {
             ^
-NO COPY: R/fvbn2c.R:212:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:215:1: style: lines should not be more than 80 characters.
               # Zielgr\u00f6\u00dfen Y {BAF,V,VHb,B,N,NDh,NDhHb)   (Offset von (2+l) auf (3+l)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:213:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:216:1: style: lines should not be more than 80 characters.
               # wegen zus\u00e4tzlichem Attribut <m_bhb> ge\u00e4ndert (k\u00e4/11.10.14)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:216:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:219:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 1, i, j, k] <- R.list$R.xy * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:217:17: style: Commented code should be removed.
+NO COPY: R/fvbn2c.R:220:17: style: Commented code should be removed.
               # sum(xy[,(1+l)])/sum(x)*A *ifelse(l==1,lk,1)
                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:220:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:223:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:220:60: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:223:60: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
                                                            ^~~~~~
-NO COPY: R/fvbn2c.R:224:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:227:1: style: lines should not be more than 80 characters.
               # if (l > 1)    #Hinweis: l+1 = Spalte der Zielgr\u00f6\u00dfe in xy; Spalte 2
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:227:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2c.R:230:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
               {
               ^
-NO COPY: R/fvbn2c.R:231:24: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:234:24: style: Words within variable and function names should be separated by '_' rather than '.'.
                 R.list$V.R.xy <- R.list$V.R.xy * 10000
                        ^~~~~~
-NO COPY: R/fvbn2c.R:231:41: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:234:41: style: Words within variable and function names should be separated by '_' rather than '.'.
                 R.list$V.R.xy <- R.list$V.R.xy * 10000
                                         ^~~~~~
-NO COPY: R/fvbn2c.R:238:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:241:1: style: lines should not be more than 80 characters.
                 # L\u00fcckenkorrektur r\u00fcckg\u00e4ngig Hinweis: Offset von (2+l) auf (3+l)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:239:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:242:1: style: lines should not be more than 80 characters.
                 # wegen zus\u00e4tzlichem Attribut <m_bhb> ge\u00e4ndert (k\u00e4/11.10.14)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:244:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:247:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 1, i, j, k] <- R.list$R.xy
               ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:245:30: style: Commented code should be removed.
+NO COPY: R/fvbn2c.R:248:30: style: Commented code should be removed.
               #              Y.bagr.akl.dkl[l,1,i,j,k]/Y.bagr.akl.dkl[1,1,i,j,k]
                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:246:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:249:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
               ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:246:65: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:249:65: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
                                                                 ^~~~~~
-NO COPY: R/fvbn2c.R:260:7: style: Commented code should be removed.
+NO COPY: R/fvbn2c.R:263:7: style: Commented code should be removed.
     # AKL-Labels
       ^~~~~~~~~~
-NO COPY: R/fvbn2c.R:269:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:272:1: style: lines should not be more than 80 characters.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:269:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:272:5: style: Words within variable and function names should be separated by '_' rather than '.'.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:269:5: warning: local variable 'version.baeume.b' assigned but may not be used
+NO COPY: R/fvbn2c.R:272:5: warning: local variable 'version.baeume.b' assigned but may not be used
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:272:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:275:1: style: lines should not be more than 80 characters.
       Version.baeume.b = substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:276:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:279:1: style: lines should not be more than 80 characters.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:276:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:279:43: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                           ^~~~~~
-NO COPY: R/fvbn2c.R:276:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:279:73: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                                                         ^~~~~~~~
-NO COPY: R/fvbn2c.R:277:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:280:1: style: lines should not be more than 80 characters.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:277:26: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:280:26: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                          ^~~~~~~
-NO COPY: R/fvbn2c.R:277:57: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:280:57: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                                                         ^~~~~~~~
-NO COPY: R/fvbn2c.R:278:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2c.R:281:1: style: lines should not be more than 80 characters.
       Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:286:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:289:29: style: Words within variable and function names should be separated by '_' rather than '.'.
       T.FVBN.Bagr.Akl.Dkl = Y.bagr.akl.dkl,
                             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:287:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:290:30: style: Words within variable and function names should be separated by '_' rather than '.'.
       FVBN.ha.Bagr.Akl.Dkl = Yha.bagr.akl.dkl,
                              ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:288:25: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2c.R:291:25: style: Variable and function names should be all lowercase.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2c.R:288:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2c.R:291:25: style: Words within variable and function names should be separated by '_' rather than '.'.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
 NO COPY: R/fvbn2d.R:14:1: style: lines should not be more than 80 characters.
@@ -9679,238 +9688,241 @@ NO COPY: R/fvbn2d.R:139:9: style: Opening curly braces should never go on their 
 NO COPY: R/fvbn2d.R:141:1: style: lines should not be more than 80 characters.
             baeume.s[["bagr"]] == bagr.list[i] & baeume.s[["akl"]] == akl.lab[j] & baeume.s[["dkl"]] == dkl.lab[k],
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:145:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:147:25: style: Place a space before left parenthesis, except in a function call.
+          if (all(is.na((baeume.ba)))) {
+                        ^
+NO COPY: R/fvbn2d.R:148:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:145:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:148:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:146:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:149:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:146:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:149:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:147:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:150:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:148:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:151:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:149:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2d.R:152:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:149:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:152:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:153:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:156:1: style: lines should not be more than 80 characters.
             xy <- stats::aggregate(baeume.ba$stfl, by = list(baeume.ba$tnr), sum)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:155:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:158:1: style: lines should not be more than 80 characters.
             xy$x <- xy$x / 10000 * lk # Umrechnung in ha  und L\u00fcckenkorrektur
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:164:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:167:1: style: lines should not be more than 80 characters.
               stats::aggregate(baeume.ba$volv * baeume.ba$nha * ifelse(baeume.ba$stfl > 0, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:175:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:178:1: style: lines should not be more than 80 characters.
             xy <- cbind(xy, stats::aggregate(baeume.ba$nha, by = list(baeume.ba$tnr), sum)$x)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:179:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:182:1: style: lines should not be more than 80 characters.
             x.ndh <- try(stats::aggregate(baeume.ba$nha * ifelse(baeume.ba$bhd >= 7, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:187:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:190:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             x.ndh.hb <- try(stats::aggregate(baeume.ba$nha * ifelse(
             ^~~~~~~~
-NO COPY: R/fvbn2d.R:193:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:196:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               x.ndh.hb <- rep(0, length(xy[, 1]))
               ^~~~~~~~
-NO COPY: R/fvbn2d.R:195:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:198:29: style: Words within variable and function names should be separated by '_' rather than '.'.
             xy <- cbind(xy, x.ndh.hb)
                             ^~~~~~~~
-NO COPY: R/fvbn2d.R:201:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2d.R:204:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:201:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:204:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:202:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:205:1: style: lines should not be more than 80 characters.
             #---  Erg\u00e4nzug 11.10. <m_bhb>    Hinweis: Offset f\u00fcr Indizierung ange-
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:206:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:209:1: style: lines should not be more than 80 characters.
             xy <- merge(xy.s[TRUE, c("tnr", "m", "hbf")], xy, by = c("tnr"), all.x = T)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:207:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:210:1: style: lines should not be more than 80 characters.
             # xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:207:15: style: Commented code should be removed.
+NO COPY: R/fvbn2d.R:210:15: style: Commented code should be removed.
             # xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:211:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2d.R:214:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
             {
             ^
-NO COPY: R/fvbn2d.R:212:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:215:1: style: lines should not be more than 80 characters.
               # Zielgr\u00f6\u00dfen Y {BAF,V,VHb,B,N,NDh,NDhHb)   (Offset von (2+l) auf (3+l)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:213:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:216:1: style: lines should not be more than 80 characters.
               # wegen zus\u00e4tzlichem Attribut <m_bhb> ge\u00e4ndert (k\u00e4/11.10.14)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:216:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:219:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 1, i, j, k] <- R.list$R.xy * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:217:17: style: Commented code should be removed.
+NO COPY: R/fvbn2d.R:220:17: style: Commented code should be removed.
               # sum(xy[,(1+l)])/sum(x)*A *ifelse(l==1,lk,1)
                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:220:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:223:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:220:60: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:223:60: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
                                                            ^~~~~~
-NO COPY: R/fvbn2d.R:224:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:227:1: style: lines should not be more than 80 characters.
               # if (l > 1)    #Hinweis: l+1 = Spalte der Zielgr\u00f6\u00dfe in xy; Spalte 2
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:227:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2d.R:230:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
               {
               ^
-NO COPY: R/fvbn2d.R:231:24: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:234:24: style: Words within variable and function names should be separated by '_' rather than '.'.
                 R.list$V.R.xy <- R.list$V.R.xy * 10000
                        ^~~~~~
-NO COPY: R/fvbn2d.R:231:41: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:234:41: style: Words within variable and function names should be separated by '_' rather than '.'.
                 R.list$V.R.xy <- R.list$V.R.xy * 10000
                                         ^~~~~~
-NO COPY: R/fvbn2d.R:238:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:241:1: style: lines should not be more than 80 characters.
                 # L\u00fcckenkorrektur r\u00fcckg\u00e4ngig Hinweis: Offset von (2+l) auf (3+l)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:239:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:242:1: style: lines should not be more than 80 characters.
                 # wegen zus\u00e4tzlichem Attribut <m_bhb> ge\u00e4ndert (k\u00e4/11.10.14)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:244:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:247:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 1, i, j, k] <- R.list$R.xy
               ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:245:30: style: Commented code should be removed.
+NO COPY: R/fvbn2d.R:248:30: style: Commented code should be removed.
               #              Y.bagr.akl.dkl[l,1,i,j,k]/Y.bagr.akl.dkl[1,1,i,j,k]
                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:246:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:249:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
               ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:246:65: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:249:65: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
                                                                 ^~~~~~
-NO COPY: R/fvbn2d.R:264:27: style: Place a space before left parenthesis, except in a function call.
+NO COPY: R/fvbn2d.R:267:27: style: Place a space before left parenthesis, except in a function call.
       nt <- array(dim = c((n.bagr + 1), A.k, D.k))
                           ^
-NO COPY: R/fvbn2d.R:265:16: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:268:16: style: Commas should never have a space before.
       t.fvbn[, , 1:n.bagr, , ] <- Y.bagr.akl.dkl
               ~^
-NO COPY: R/fvbn2d.R:265:28: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:268:28: style: Commas should never have a space before.
       t.fvbn[, , 1:n.bagr, , ] <- Y.bagr.akl.dkl
                           ~^
-NO COPY: R/fvbn2d.R:265:35: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:268:35: style: Words within variable and function names should be separated by '_' rather than '.'.
       t.fvbn[, , 1:n.bagr, , ] <- Y.bagr.akl.dkl
                                   ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:266:17: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:269:17: style: Commas should never have a space before.
       fvbn.ha[, , 1:n.bagr, , ] <- Yha.bagr.akl.dkl
                ~^
-NO COPY: R/fvbn2d.R:266:29: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:269:29: style: Commas should never have a space before.
       fvbn.ha[, , 1:n.bagr, , ] <- Yha.bagr.akl.dkl
                            ~^
-NO COPY: R/fvbn2d.R:266:36: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:269:36: style: Words within variable and function names should be separated by '_' rather than '.'.
       fvbn.ha[, , 1:n.bagr, , ] <- Yha.bagr.akl.dkl
                                    ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:267:20: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:270:20: style: Commas should never have a space before.
       nt[1:n.bagr, , ] <- nT.bagr.akl.dkl
                   ~^
-NO COPY: R/fvbn2d.R:267:27: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2d.R:270:27: style: Variable and function names should be all lowercase.
       nt[1:n.bagr, , ] <- nT.bagr.akl.dkl
                           ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:267:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:270:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       nt[1:n.bagr, , ] <- nT.bagr.akl.dkl
                           ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:268:16: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:271:16: style: Commas should never have a space before.
       t.fvbn[, , (n.bagr + 1), , ] <- fvbn.alleba$T.FVBN.Bagr.Akl.Dkl
               ~^
-NO COPY: R/fvbn2d.R:268:32: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:271:32: style: Commas should never have a space before.
       t.fvbn[, , (n.bagr + 1), , ] <- fvbn.alleba$T.FVBN.Bagr.Akl.Dkl
                               ~^
-NO COPY: R/fvbn2d.R:268:51: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:271:51: style: Words within variable and function names should be separated by '_' rather than '.'.
       t.fvbn[, , (n.bagr + 1), , ] <- fvbn.alleba$T.FVBN.Bagr.Akl.Dkl
                                                   ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:269:17: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:272:17: style: Commas should never have a space before.
       fvbn.ha[, , (n.bagr + 1), , ] <- fvbn.alleba$FVBN.ha.Bagr.Akl.Dkl
                ~^
-NO COPY: R/fvbn2d.R:269:33: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:272:33: style: Commas should never have a space before.
       fvbn.ha[, , (n.bagr + 1), , ] <- fvbn.alleba$FVBN.ha.Bagr.Akl.Dkl
                                ~^
-NO COPY: R/fvbn2d.R:269:52: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:272:52: style: Words within variable and function names should be separated by '_' rather than '.'.
       fvbn.ha[, , (n.bagr + 1), , ] <- fvbn.alleba$FVBN.ha.Bagr.Akl.Dkl
                                                    ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:270:24: style: Commas should never have a space before.
+NO COPY: R/fvbn2d.R:273:24: style: Commas should never have a space before.
       nt[(n.bagr + 1), , ] <- fvbn.alleba$nT.Bagr.Akl.Dkl
                       ~^
-NO COPY: R/fvbn2d.R:270:43: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2d.R:273:43: style: Variable and function names should be all lowercase.
       nt[(n.bagr + 1), , ] <- fvbn.alleba$nT.Bagr.Akl.Dkl
                                           ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:270:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:273:43: style: Words within variable and function names should be separated by '_' rather than '.'.
       nt[(n.bagr + 1), , ] <- fvbn.alleba$nT.Bagr.Akl.Dkl
                                           ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:271:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:274:7: style: Words within variable and function names should be separated by '_' rather than '.'.
       Y.bagr.akl.dkl <- t.fvbn
       ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:272:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:275:7: style: Words within variable and function names should be separated by '_' rather than '.'.
       Yha.bagr.akl.dkl <- fvbn.ha
       ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:273:7: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2d.R:276:7: style: Variable and function names should be all lowercase.
       nT.bagr.akl.dkl <- nt
       ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:273:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:276:7: style: Words within variable and function names should be separated by '_' rather than '.'.
       nT.bagr.akl.dkl <- nt
       ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:279:7: style: Commented code should be removed.
+NO COPY: R/fvbn2d.R:282:7: style: Commented code should be removed.
     # AKL-Labels
       ^~~~~~~~~~
-NO COPY: R/fvbn2d.R:288:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:291:1: style: lines should not be more than 80 characters.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:288:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:291:5: style: Words within variable and function names should be separated by '_' rather than '.'.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:288:5: warning: local variable 'version.baeume.b' assigned but may not be used
+NO COPY: R/fvbn2d.R:291:5: warning: local variable 'version.baeume.b' assigned but may not be used
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:291:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:294:1: style: lines should not be more than 80 characters.
       Version.baeume.b = substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:295:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:298:1: style: lines should not be more than 80 characters.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:295:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:298:43: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                           ^~~~~~
-NO COPY: R/fvbn2d.R:295:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:298:73: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                                                         ^~~~~~~~
-NO COPY: R/fvbn2d.R:296:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:299:1: style: lines should not be more than 80 characters.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:296:26: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:299:26: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                          ^~~~~~~
-NO COPY: R/fvbn2d.R:296:57: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:299:57: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                                                         ^~~~~~~~
-NO COPY: R/fvbn2d.R:297:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2d.R:300:1: style: lines should not be more than 80 characters.
       Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:305:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:308:29: style: Words within variable and function names should be separated by '_' rather than '.'.
       T.FVBN.Bagr.Akl.Dkl = Y.bagr.akl.dkl,
                             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:306:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:309:30: style: Words within variable and function names should be separated by '_' rather than '.'.
       FVBN.ha.Bagr.Akl.Dkl = Yha.bagr.akl.dkl,
                              ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:307:25: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2d.R:310:25: style: Variable and function names should be all lowercase.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2d.R:307:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2d.R:310:25: style: Words within variable and function names should be separated by '_' rather than '.'.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
 NO COPY: R/fvbn2e.R:93:1: style: lines should not be more than 80 characters.
@@ -10033,247 +10045,250 @@ NO COPY: R/fvbn2e.R:245:1: style: lines should not be more than 80 characters.
 NO COPY: R/fvbn2e.R:250:1: style: lines should not be more than 80 characters.
                 baeume.s[["bagr"]] == bagr.list[i] & baeume.s[["akl"]] == akl.lab[j] & baeume.s[["dkl"]] == dkl.lab[k],
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:256:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:258:25: style: Place a space before left parenthesis, except in a function call.
+          if (all(is.na((baeume.ba)))) {
+                        ^
+NO COPY: R/fvbn2e.R:259:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:256:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:259:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:257:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:260:1: style: lines should not be more than 80 characters.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:257:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:260:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:258:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:261:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:259:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:262:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
             ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:260:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2e.R:263:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:260:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:263:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- 0 # n PSU (Trakte)
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:264:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:267:1: style: lines should not be more than 80 characters.
             xy <- stats::aggregate(baeume.ba$stfl, by = list(baeume.ba$tnr), sum)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:266:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:269:1: style: lines should not be more than 80 characters.
             xy$x <- xy$x / 10000 * lk # Umrechnung in ha  und L\u00fcckenkorrektur
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:275:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:278:1: style: lines should not be more than 80 characters.
               stats::aggregate(baeume.ba$volv * baeume.ba$nha * ifelse(baeume.ba$stfl > 0, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:286:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:289:1: style: lines should not be more than 80 characters.
             xy <- cbind(xy, stats::aggregate(baeume.ba$nha, by = list(baeume.ba$tnr), sum)$x)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:290:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:293:1: style: lines should not be more than 80 characters.
             x.ndh <- try(stats::aggregate(baeume.ba$nha * ifelse(baeume.ba$bhd >= 7, 1, 0),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:298:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:301:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             x.ndh.hb <- try(stats::aggregate(baeume.ba$nha * ifelse(
             ^~~~~~~~
-NO COPY: R/fvbn2e.R:304:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:307:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               x.ndh.hb <- rep(0, length(xy[, 1]))
               ^~~~~~~~
-NO COPY: R/fvbn2e.R:306:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:309:29: style: Words within variable and function names should be separated by '_' rather than '.'.
             xy <- cbind(xy, x.ndh.hb)
                             ^~~~~~~~
-NO COPY: R/fvbn2e.R:312:13: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2e.R:315:13: style: Variable and function names should be all lowercase.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:312:13: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:315:13: style: Words within variable and function names should be separated by '_' rather than '.'.
             nT.bagr.akl.dkl[i, j, k] <- length(xy[, 1])
             ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:313:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:316:1: style: lines should not be more than 80 characters.
             #---  Erg\u00e4nzug 11.10. <m_bhb>    Hinweis: Offset f\u00fcr Indizierung ange-
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:317:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:320:1: style: lines should not be more than 80 characters.
             xy <- merge(xy.s[TRUE, c("tnr", "m", "hbf")], xy, by = c("tnr"), all.x = T)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:318:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:321:1: style: lines should not be more than 80 characters.
             # xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:318:15: style: Commented code should be removed.
+NO COPY: R/fvbn2e.R:321:15: style: Commented code should be removed.
             # xy <- merge(trakte[TRUE, c("tnr", "m,m_bhb")],xy,by=c("tnr"),all.x=T)
               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:322:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2e.R:325:13: style: Opening curly braces should never go on their own line and should always be followed by a new line.
             {
             ^
-NO COPY: R/fvbn2e.R:323:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:326:1: style: lines should not be more than 80 characters.
               # Zielgr\u00f6\u00dfen Y {BAF,V,VHb,B,N,NDh,NDhHb)   (Offset von (2+l) auf (3+l)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:324:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:327:1: style: lines should not be more than 80 characters.
               # wegen zus\u00e4tzlichem Attribut <m_bhb> ge\u00e4ndert (k\u00e4/11.10.14)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:327:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:330:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 1, i, j, k] <- R.list$R.xy * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:328:17: style: Commented code should be removed.
+NO COPY: R/fvbn2e.R:331:17: style: Commented code should be removed.
               # sum(xy[,(1+l)])/sum(x)*A *ifelse(l==1,lk,1)
                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:331:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:334:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
               ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:331:60: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:334:60: style: Words within variable and function names should be separated by '_' rather than '.'.
               Y.bagr.akl.dkl[l, 2, i, j, k] <- sqrt(R.list$V.R.xy) * A
                                                            ^~~~~~
-NO COPY: R/fvbn2e.R:335:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:338:1: style: lines should not be more than 80 characters.
               # if (l > 1)    #Hinweis: l+1 = Spalte der Zielgr\u00f6\u00dfe in xy; Spalte 2
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:338:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/fvbn2e.R:341:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
               {
               ^
-NO COPY: R/fvbn2e.R:342:24: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:345:24: style: Words within variable and function names should be separated by '_' rather than '.'.
                 R.list$V.R.xy <- R.list$V.R.xy * 10000
                        ^~~~~~
-NO COPY: R/fvbn2e.R:342:41: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:345:41: style: Words within variable and function names should be separated by '_' rather than '.'.
                 R.list$V.R.xy <- R.list$V.R.xy * 10000
                                         ^~~~~~
-NO COPY: R/fvbn2e.R:349:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:352:1: style: lines should not be more than 80 characters.
                 # L\u00fcckenkorrektur r\u00fcckg\u00e4ngig Hinweis: Offset von (2+l) auf (3+l)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:350:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:353:1: style: lines should not be more than 80 characters.
                 # wegen zus\u00e4tzlichem Attribut <m_bhb> ge\u00e4ndert (k\u00e4/11.10.14)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:355:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:358:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 1, i, j, k] <- R.list$R.xy
               ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:356:30: style: Commented code should be removed.
+NO COPY: R/fvbn2e.R:359:30: style: Commented code should be removed.
               #              Y.bagr.akl.dkl[l,1,i,j,k]/Y.bagr.akl.dkl[1,1,i,j,k]
                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:357:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:360:15: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
               ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:357:65: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:360:65: style: Words within variable and function names should be separated by '_' rather than '.'.
               Yha.bagr.akl.dkl[l.ha, 2, i, j, k] <- sqrt(R.list$V.R.xy)
                                                                 ^~~~~~
-NO COPY: R/fvbn2e.R:377:27: style: Place a space before left parenthesis, except in a function call.
+NO COPY: R/fvbn2e.R:380:27: style: Place a space before left parenthesis, except in a function call.
       nt <- array(dim = c((n.bagr + 1), A.k, D.k))
                           ^
-NO COPY: R/fvbn2e.R:378:16: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:381:16: style: Commas should never have a space before.
       t.fvbn[, , 1:n.bagr, , ] <- Y.bagr.akl.dkl
               ~^
-NO COPY: R/fvbn2e.R:378:28: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:381:28: style: Commas should never have a space before.
       t.fvbn[, , 1:n.bagr, , ] <- Y.bagr.akl.dkl
                           ~^
-NO COPY: R/fvbn2e.R:378:35: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:381:35: style: Words within variable and function names should be separated by '_' rather than '.'.
       t.fvbn[, , 1:n.bagr, , ] <- Y.bagr.akl.dkl
                                   ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:379:17: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:382:17: style: Commas should never have a space before.
       fvbn.ha[, , 1:n.bagr, , ] <- Yha.bagr.akl.dkl
                ~^
-NO COPY: R/fvbn2e.R:379:29: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:382:29: style: Commas should never have a space before.
       fvbn.ha[, , 1:n.bagr, , ] <- Yha.bagr.akl.dkl
                            ~^
-NO COPY: R/fvbn2e.R:379:36: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:382:36: style: Words within variable and function names should be separated by '_' rather than '.'.
       fvbn.ha[, , 1:n.bagr, , ] <- Yha.bagr.akl.dkl
                                    ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:380:20: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:383:20: style: Commas should never have a space before.
       nt[1:n.bagr, , ] <- nT.bagr.akl.dkl
                   ~^
-NO COPY: R/fvbn2e.R:380:27: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2e.R:383:27: style: Variable and function names should be all lowercase.
       nt[1:n.bagr, , ] <- nT.bagr.akl.dkl
                           ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:380:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:383:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       nt[1:n.bagr, , ] <- nT.bagr.akl.dkl
                           ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:381:16: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:384:16: style: Commas should never have a space before.
       t.fvbn[, , (n.bagr + 1), , ] <- fvbn.alleba$T.FVBN.Bagr.Akl.Dkl
               ~^
-NO COPY: R/fvbn2e.R:381:32: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:384:32: style: Commas should never have a space before.
       t.fvbn[, , (n.bagr + 1), , ] <- fvbn.alleba$T.FVBN.Bagr.Akl.Dkl
                               ~^
-NO COPY: R/fvbn2e.R:381:51: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:384:51: style: Words within variable and function names should be separated by '_' rather than '.'.
       t.fvbn[, , (n.bagr + 1), , ] <- fvbn.alleba$T.FVBN.Bagr.Akl.Dkl
                                                   ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:382:17: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:385:17: style: Commas should never have a space before.
       fvbn.ha[, , (n.bagr + 1), , ] <- fvbn.alleba$FVBN.ha.Bagr.Akl.Dkl
                ~^
-NO COPY: R/fvbn2e.R:382:33: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:385:33: style: Commas should never have a space before.
       fvbn.ha[, , (n.bagr + 1), , ] <- fvbn.alleba$FVBN.ha.Bagr.Akl.Dkl
                                ~^
-NO COPY: R/fvbn2e.R:382:52: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:385:52: style: Words within variable and function names should be separated by '_' rather than '.'.
       fvbn.ha[, , (n.bagr + 1), , ] <- fvbn.alleba$FVBN.ha.Bagr.Akl.Dkl
                                                    ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:383:24: style: Commas should never have a space before.
+NO COPY: R/fvbn2e.R:386:24: style: Commas should never have a space before.
       nt[(n.bagr + 1), , ] <- fvbn.alleba$nT.Bagr.Akl.Dkl
                       ~^
-NO COPY: R/fvbn2e.R:383:43: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2e.R:386:43: style: Variable and function names should be all lowercase.
       nt[(n.bagr + 1), , ] <- fvbn.alleba$nT.Bagr.Akl.Dkl
                                           ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:383:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:386:43: style: Words within variable and function names should be separated by '_' rather than '.'.
       nt[(n.bagr + 1), , ] <- fvbn.alleba$nT.Bagr.Akl.Dkl
                                           ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:384:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:387:7: style: Words within variable and function names should be separated by '_' rather than '.'.
       Y.bagr.akl.dkl <- t.fvbn
       ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:385:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:388:7: style: Words within variable and function names should be separated by '_' rather than '.'.
       Yha.bagr.akl.dkl <- fvbn.ha
       ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:386:7: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2e.R:389:7: style: Variable and function names should be all lowercase.
       nT.bagr.akl.dkl <- nt
       ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:386:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:389:7: style: Words within variable and function names should be separated by '_' rather than '.'.
       nT.bagr.akl.dkl <- nt
       ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:392:7: style: Commented code should be removed.
+NO COPY: R/fvbn2e.R:395:7: style: Commented code should be removed.
     # AKL-Labels
       ^~~~~~~~~~
-NO COPY: R/fvbn2e.R:393:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:396:1: style: lines should not be more than 80 characters.
     # Hinweis: A.k um 1 reduzieren bei \u00dcbergabe an Funktion k\u00e4/13.03.2015
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:394:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:397:1: style: lines should not be more than 80 characters.
     akl.lab <- akl.lab.fun(A.klass, ifelse(A.k > 1, (A.k - 1), A.k)) # k\u00e4/16.07.14
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:399:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:402:1: style: lines should not be more than 80 characters.
     # Hinweis: D.k um 1 reduzieren bei \u00dcbergabe an Funktion k\u00e4/13.03.2015
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:407:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:410:1: style: lines should not be more than 80 characters.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:407:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:410:5: style: Words within variable and function names should be separated by '_' rather than '.'.
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:407:5: warning: local variable 'version.baeume.b' assigned but may not be used
+NO COPY: R/fvbn2e.R:410:5: warning: local variable 'version.baeume.b' assigned but may not be used
     version.baeume.b <- substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
     ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:410:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:413:1: style: lines should not be more than 80 characters.
       Version.baeume.b = substr(as.character(baeume$bemerk[baeume$stp == 0][1]), a, b)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:414:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:417:1: style: lines should not be more than 80 characters.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:414:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:417:43: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                           ^~~~~~
-NO COPY: R/fvbn2e.R:414:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:417:73: style: Words within variable and function names should be separated by '_' rather than '.'.
       Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
                                                                         ^~~~~~~~
-NO COPY: R/fvbn2e.R:415:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:418:1: style: lines should not be more than 80 characters.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:415:26: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:418:26: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                          ^~~~~~~
-NO COPY: R/fvbn2e.R:415:57: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:418:57: style: Words within variable and function names should be separated by '_' rather than '.'.
       BL = T.bl, se.BL = se.T.bl, iBL = T.ibl, se.iBL = se.T.ibl, LK = lk, se.LK = se.lk,
                                                         ^~~~~~~~
-NO COPY: R/fvbn2e.R:416:1: style: lines should not be more than 80 characters.
+NO COPY: R/fvbn2e.R:419:1: style: lines should not be more than 80 characters.
       Attribute1 = c("BAF", "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:424:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:427:29: style: Words within variable and function names should be separated by '_' rather than '.'.
       T.FVBN.Bagr.Akl.Dkl = Y.bagr.akl.dkl,
                             ^~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:425:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:428:30: style: Words within variable and function names should be separated by '_' rather than '.'.
       FVBN.ha.Bagr.Akl.Dkl = Yha.bagr.akl.dkl,
                              ^~~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:426:25: style: Variable and function names should be all lowercase.
+NO COPY: R/fvbn2e.R:429:25: style: Variable and function names should be all lowercase.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
-NO COPY: R/fvbn2e.R:426:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/fvbn2e.R:429:25: style: Words within variable and function names should be separated by '_' rather than '.'.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
 NO COPY: R/german_things.R:71:1: style: lines should not be more than 80 characters.
@@ -11476,76 +11491,508 @@ NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:119:1: style: lines should 
 NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:172:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:258:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:234:1: style: lines should not be more than 80 characters.
+  reference <- list(Log = list(Datum = structure(1523138485.322, class = c("POSIXct", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:234:86: style: Trailing whitespace is superfluous.
+  reference <- list(Log = list(Datum = structure(1523138485.322, class = c("POSIXct", 
+                                                                                     ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:235:1: style: lines should not be more than 80 characters.
+"POSIXt")), Version.baeume.b = "/ EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614"), 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:235:117: style: Trailing whitespace is superfluous.
+"POSIXt")), Version.baeume.b = "/ EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614"), 
+                                                                                                                    ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:236:62: style: Trailing whitespace is superfluous.
+    Stratum = list(Wa = c(3, 5), Begehbar = 1), nTE = 13232L, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:237:63: style: Trailing whitespace is superfluous.
+    HBF = 1323958.42086703, se.HBF = 15760.6334334331, BL = 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:238:77: style: Trailing whitespace is superfluous.
+    se.BL = 0, iBL = 0, se.iBL = 0, LK = 1, se.LK = 0, Attribute1 = c("BAF", 
+                                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:239:1: style: lines should not be more than 80 characters.
+    "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), Attribute2 = c("BA_Proz", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:239:85: style: Trailing whitespace is superfluous.
+    "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), Attribute2 = c("BA_Proz", 
+                                                                                    ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:240:62: style: Trailing whitespace is superfluous.
+    "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:241:74: style: Trailing whitespace is superfluous.
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
+                                                                         ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:242:62: style: Trailing whitespace is superfluous.
+    "Nadel", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:244:63: style: Trailing whitespace is superfluous.
+    ), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 0, 0, 0, 0, 0, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:245:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:246:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:247:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:248:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:249:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:250:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:251:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:252:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:253:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:254:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:255:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:256:78: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 24.6741344154936, 28063.8661918537, 
+                                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:257:76: style: Trailing whitespace is superfluous.
+    28063.8661918537, 19116.7710432273, 10771.2123280855, 10771.2123280855, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:258:74: style: Trailing whitespace is superfluous.
+    10771.2123280855, 24.6741262537569, 28063.856908858, 28063.856908858, 
+                                                                         ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:259:76: style: Trailing whitespace is superfluous.
+    19116.7647197613, 10771.2087651723, 10771.2087651723, 10771.2087651723, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:260:76: style: Trailing whitespace is superfluous.
+    24.6741344154936, 28063.8661918537, 28063.8661918537, 19116.7710432273, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:261:76: style: Trailing whitespace is superfluous.
+    10771.2123280855, 10771.2123280855, 10771.2123280855, 24.6741262537569, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:262:74: style: Trailing whitespace is superfluous.
+    28063.856908858, 28063.856908858, 19116.7647197613, 10771.2087651723, 
+                                                                         ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:263:62: style: Trailing whitespace is superfluous.
+    10771.2087651723, 10771.2087651723, 0, 0, 0, 0, 0, 0, NA, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:264:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:265:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:266:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:267:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:268:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:269:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:270:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:271:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:272:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:273:62: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 42.6744457753771, 51996.8174347863, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:274:76: style: Trailing whitespace is superfluous.
+    51996.8174347863, 32809.6830199119, 10649.0494378779, 10649.0494378779, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:275:76: style: Trailing whitespace is superfluous.
+    10649.0494378779, 42.6744316594782, 51996.8002352233, 51996.8002352233, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:276:76: style: Trailing whitespace is superfluous.
+    32809.6721670898, 10649.0459153739, 10649.0459153739, 10649.0459153739, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:277:76: style: Trailing whitespace is superfluous.
+    42.6744457753771, 51996.8174347863, 51996.8174347863, 32809.6830199119, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:278:76: style: Trailing whitespace is superfluous.
+    10649.0494378779, 10649.0494378779, 10649.0494378779, 42.6744316594782, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:279:76: style: Trailing whitespace is superfluous.
+    51996.8002352233, 51996.8002352233, 32809.6721670898, 10649.0459153739, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:280:62: style: Trailing whitespace is superfluous.
+    10649.0459153739, 10649.0459153739, 0, 0, 0, 0, 0, 0, NA, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:281:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:282:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:283:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:284:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:285:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:286:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:287:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:288:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:289:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:290:76: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 67.3485801908707, 80060.68362664, 80060.68362664, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:291:76: style: Trailing whitespace is superfluous.
+    51926.4540631392, 21420.2617659634, 21420.2617659634, 21420.2617659634, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:292:76: style: Trailing whitespace is superfluous.
+    67.3485579132352, 80060.6571440813, 80060.6571440813, 51926.4368868511, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:293:76: style: Trailing whitespace is superfluous.
+    21420.2546805463, 21420.2546805463, 21420.2546805463, 67.3485801908707, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:294:72: style: Trailing whitespace is superfluous.
+    80060.68362664, 80060.68362664, 51926.4540631392, 21420.2617659634, 
+                                                                       ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:295:76: style: Trailing whitespace is superfluous.
+    21420.2617659634, 21420.2617659634, 67.3485579132352, 80060.6571440813, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:296:76: style: Trailing whitespace is superfluous.
+    80060.6571440813, 51926.4368868511, 21420.2546805463, 21420.2546805463, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:297:62: style: Trailing whitespace is superfluous.
+    21420.2546805463, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:298:61: style: Trailing whitespace is superfluous.
+    NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:299:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:300:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:301:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:302:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:303:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:304:61: style: Trailing whitespace is superfluous.
+    0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:305:64: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:306:1: style: lines should not be more than 80 characters.
+    0, 0, 0, 0, 0, 0, NA), .Dim = c(7L, 2L, 3L, 5L, 4L)), FVBN.ha.Bagr.Akl.Dkl = structure(c(0, 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:306:96: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, NA), .Dim = c(7L, 2L, 3L, 5L, 4L)), FVBN.ha.Bagr.Akl.Dkl = structure(c(0, 
+                                                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:307:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:308:61: style: Trailing whitespace is superfluous.
+    0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:309:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:310:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:311:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:312:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:313:62: style: Trailing whitespace is superfluous.
+    NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:314:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:315:61: style: Trailing whitespace is superfluous.
+    0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:316:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:317:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:318:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:319:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:320:79: style: Trailing whitespace is superfluous.
+    NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0.0018636638452237, 
+                                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:321:76: style: Trailing whitespace is superfluous.
+    1137.37996718668, 1137.37996718668, 774.769672618113, 436.538609489051, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:322:61: style: Trailing whitespace is superfluous.
+    436.538609489051, 436.538609489051, 0.00186372232545288, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:323:61: style: Trailing whitespace is superfluous.
+    0, 0, 1.13678880869466e-05, 0, 0, 0, 0.0018636638452237, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:324:76: style: Trailing whitespace is superfluous.
+    1137.37996718668, 1137.37996718668, 774.769672618113, 436.538609489051, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:325:61: style: Trailing whitespace is superfluous.
+    436.538609489051, 436.538609489051, 0.00186372232545288, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:326:64: style: Trailing whitespace is superfluous.
+    0, 0, 1.13678880869466e-05, 0, 0, 0, 0, 0, 0, 0, 0, NA, NA, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:327:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:328:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:329:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:330:62: style: Trailing whitespace is superfluous.
+    NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:331:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:332:61: style: Trailing whitespace is superfluous.
+    0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:333:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:334:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:335:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:336:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:337:80: style: Trailing whitespace is superfluous.
+    NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0.00322324667472793, 
+                                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:338:76: style: Trailing whitespace is superfluous.
+    1218.45325674477, 1218.45325674477, 768.836769260232, 249.541599062134, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:339:61: style: Trailing whitespace is superfluous.
+    249.541599062134, 249.541599062134, 0.00322334781754117, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:340:71: style: Trailing whitespace is superfluous.
+    NaN, NaN, 0, NaN, NaN, NaN, 0.00322324667472793, 1218.45325674477, 
+                                                                      ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:341:76: style: Trailing whitespace is superfluous.
+    1218.45325674477, 768.836769260232, 249.541599062134, 249.541599062134, 
+                                                                           ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:342:61: style: Trailing whitespace is superfluous.
+    249.541599062134, 0.00322334781754117, NaN, NaN, 0, NaN, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:343:61: style: Trailing whitespace is superfluous.
+    NaN, NaN, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:344:62: style: Trailing whitespace is superfluous.
+    NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:345:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:346:61: style: Trailing whitespace is superfluous.
+    0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:347:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:348:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:349:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:350:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:351:62: style: Trailing whitespace is superfluous.
+    NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:352:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:353:61: style: Trailing whitespace is superfluous.
+    0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:354:61: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, NA, NA, 0.00508691051995163, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:355:75: style: Trailing whitespace is superfluous.
+    1188.75087492182, 1188.75087492182, 771.010374917718, 318.05068058238, 
+                                                                          ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:356:64: style: Trailing whitespace is superfluous.
+    318.05068058238, 318.05068058238, 0.00508707014299405, NaN, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:357:68: style: Trailing whitespace is superfluous.
+    NaN, NaN, NaN, NaN, NaN, 0.00508691051995163, 1188.75087492182, 
+                                                                   ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:358:74: style: Trailing whitespace is superfluous.
+    1188.75087492182, 771.010374917718, 318.05068058238, 318.05068058238, 
+                                                                         ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:359:62: style: Trailing whitespace is superfluous.
+    318.05068058238, 0.00508707014299405, NaN, NaN, NaN, NaN, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:360:61: style: Trailing whitespace is superfluous.
+    NaN, NaN, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:361:62: style: Trailing whitespace is superfluous.
+    NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:362:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:363:61: style: Trailing whitespace is superfluous.
+    0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:364:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:365:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:366:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:367:63: style: Trailing whitespace is superfluous.
+    NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:368:62: style: Trailing whitespace is superfluous.
+    NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
+                                                             ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:369:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:370:64: style: Trailing whitespace is superfluous.
+    0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA), .Dim = c(7L, 2L, 
+                                                               ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:371:63: style: Trailing whitespace is superfluous.
+    3L, 5L, 4L)), nT.Bagr.Akl.Dkl = structure(c(0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:372:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:373:61: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:374:69: style: Trailing whitespace is superfluous.
+    0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), .Dim = c(3L, 
+                                                                    ^
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:403:1: style: lines should not be more than 80 characters.
     )), Version.baeume.b = "/ EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:274:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:419:1: style: lines should not be more than 80 characters.
     ), AKL = c("1-50", "51-100", ">100", "Alle AKl"), DKL = c("0-6.9", ">=50", "25-49.9", "Alle DKl"), T.FVBN.Bagr.Akl.Dkl = structure(c(
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:370:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:515:1: style: lines should not be more than 80 characters.
     )), Version.baeume.b = "/ EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:376:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:521:1: style: lines should not be more than 80 characters.
     se.iBL = 654.98387831204, LK = 1.01105797967723, se.LK = 0.00196277383161635,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1127:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1272:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1195:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1340:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, d.B = 500, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1420:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1565:1: style: lines should not be more than 80 characters.
       0.0889940917260452, 3734.08206390978, 3642.12803385201, 0.0164101091579517,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1532:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1677:1: style: lines should not be more than 80 characters.
       0.0935705218729192, 2686.80944055257, 2619.05481354466, 0.0186142528112237,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1580:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1725:1: style: lines should not be more than 80 characters.
       0.0749879786014173, 4757.75439532006, 4640.42558670565, 0.0132997618057585,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1636:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1781:1: style: lines should not be more than 80 characters.
       0.0796338235010496, 4277.02593268138, 4171.09899970208, 0.0147658260535502,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1692:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1837:1: style: lines should not be more than 80 characters.
       0.0987445365613301, 3201.98016251359, 3121.96078502582, 0.0169584124877272,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1850:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1995:1: style: lines should not be more than 80 characters.
       4733.88731915039, 4205.66257665902, 0.0341840976281223, 0.0340069537947664,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:1972:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2117:1: style: lines should not be more than 80 characters.
       1.01767713447205, 0.758391498984259, 0.464156327274419, 0.0340137263242301,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2232:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2377:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2258:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2403:1: style: lines should not be more than 80 characters.
       192943.566261479, 119282.887141281, 0.0763263544656992, 0.0778150959120681,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2451:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2596:1: style: lines should not be more than 80 characters.
     BAGR = c("Fi", "Ta", "Dgl/Ki/La/sNB", "Bu", "Ei", "Es", "Ah", "sBLb", "WLb"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2487:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2632:5: style: Words within variable and function names should be separated by '_' rather than '.'.
     verj.kl4m.3, ecken.3, trakte.3,
     ^~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2849:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2994:1: style: lines should not be more than 80 characters.
       0.0175096690672845, 4545.32046856041, 4436.75166375037, 0.0133289014583507,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2877:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:3022:1: style: lines should not be more than 80 characters.
       0.156181862049714, 0.15836549115004, 0.125439031520233, 0.0710564631396485,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2927:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:3072:1: style: lines should not be more than 80 characters.
       0.0239635823719636, 989.521563252434, 965.783547534023, 0.0267550721683242,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:2956:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:3101:1: style: lines should not be more than 80 characters.
       0.0239447987557637, 1088.83090101928, 1061.86742013887, 0.0284633859870514,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:3295:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:3440:5: style: Words within variable and function names should be separated by '_' rather than '.'.
     wzp4.merkmale.3, baeume.3, ecken.3, trakte.3, A,
     ^~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:3307:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:3452:1: style: lines should not be more than 80 characters.
     LK = 1.01598524438979, se.LK = 0.00113354916119642, Biotopbaumkennwerte = structure(list(
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:3348:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: tests/testthat/test_BWI3_HR_Funktionen_v3.R:3493:5: style: Words within variable and function names should be separated by '_' rather than '.'.
     wzp4.merkmale.3, baeume.3, ecken.3,
     ^~~~~~~~~~~~~~~
 NO COPY: tests/testthat/test_BWI3_HR_Landkreis_Funktionen_v1.R:97:1: style: lines should not be more than 80 characters.

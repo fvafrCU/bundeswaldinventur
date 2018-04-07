@@ -1,3 +1,7 @@
+# bundeswaldinventur 0.7.3
+
+* Fixed subsetting/indexing bug in FVBN...[abcde]().
+
 # bundeswaldinventur 0.7.2
 
 * Fixed subset / indexing bug in verjg.kl4.bagrupp.fun(),

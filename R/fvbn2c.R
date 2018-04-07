@@ -141,7 +141,10 @@ FVBN.bagrupp.akl.dkl.stratum.fun.2c <-
             baeume.s[["bagr"]] == bagr.list[i] & baeume.s[["akl"]] == akl.lab[j] & baeume.s[["dkl"]] == dkl.lab[k],
             c("tnr", "enr", "bhd", "dkl", "volv", "oib", "nha", "stfl")
           ]
-          if (length(baeume.ba[, 1]) == 0) {
+        # TODO: for some spooky reason, subset(mtcars, cyl == NA) and
+        # the indexing variant mtcars[mtcars$cyl == NA, ] give differing
+        # results, we need subset's behaviour here.
+          if (all(is.na((baeume.ba)))) {
             Y.bagr.akl.dkl[1:6, 1, i, j, k] <- rep(0, 6) # Zielgr\u00f6\u00dfe Total
             Y.bagr.akl.dkl[1:6, 2, i, j, k] <- rep(0, 6) # Stichprobenfehler (SE)
             Yha.bagr.akl.dkl[1:5, 1, i, j, k] <- rep(0, 5)
