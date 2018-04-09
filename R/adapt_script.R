@@ -38,12 +38,7 @@ adapt_script <- function(file_names = NA, path = ".",
     if (length(i) == 0) {
       warning("script ", file_name, " doesn't seem to need adaption.")
     } else {
-      dependencies <- c(
-        'library("bundeswaldinventur")',
-        'library("xtable")', 'library("plyr")',
-        'library("reshape")', 'library("reshape2")',
-        'library("ggplot2")', 'library("scales")'
-      )
+      dependencies <- c('library("bundeswaldinventur")')
       header <- s[seq_len(i - 1)]
       bottom <- s[seq.int(from = (i + 1), to = length(s), by = 1)]
 

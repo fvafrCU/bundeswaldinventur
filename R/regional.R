@@ -120,11 +120,11 @@ theme_rotate_xasis_labels <- function() {
 ptplot <- function(obj) {
   graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
     ggplot2::theme(
-      axis.line = element_blank(),
-      axis.text = element_blank(),
-      axis.ticks = element_blank(),
-      axis.title = element_blank(),
-      panel.grid = element_blank()
+      axis.line = ggplot2::element_blank(),
+      axis.text = ggplot2::element_blank(),
+      axis.ticks = ggplot2::element_blank(),
+      axis.title = ggplot2::element_blank(),
+      panel.grid = ggplot2::element_blank()
     ))
 }
 
@@ -1413,14 +1413,14 @@ plot_ownership <- function(ownerships,
       weight = area,
       fill = ownership
     )
-  ) + ggplot2::geom_bar() + coord_polar(theta = "y") +
-    ggplot2::xlab("") + ylab("") + scale_x_discrete(breaks = NULL) +
+  ) + ggplot2::geom_bar() + ggplot2::coord_polar(theta = "y") +
+    ggplot2::xlab("") + ggplot2::ylab("") + ggplot2::scale_x_discrete(breaks = NULL) +
     ggplot2::scale_fill_manual(
       values = as.character(get_colors_for_ownership(map_labels_to_abbreviations(ownerships$ownership)))
       , name = "Eigentumsart",
       labels = ownerships$ownership
     ) +
-    geom_text(ggplot2::aes(
+    ggplot2::geom_text(ggplot2::aes(
       x = radius, y = position,
       label = ownership_realive_area
     )

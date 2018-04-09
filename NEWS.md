@@ -1,5 +1,6 @@
-# bundeswaldinventur 0.7.3.9002
+# bundeswaldinventur 0.7.3.9003
 
+* Added imports from ggplot2.
 * Exported functions from R/regional.R.
 * Introduced argument `have_title` to plotting functions to get rid of 
   global object `TITLE\_PLOT`.

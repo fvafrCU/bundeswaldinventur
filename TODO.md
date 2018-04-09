@@ -1,5 +1,3 @@
-* call functions from imported packages explicitely, fix adapt\_script to call
-  on bundeswaldinventur only.
 * Fix global bindings in log/check.Rout
 * clean, lint, spell!
 * have a dedicated data package.
