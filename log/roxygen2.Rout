@@ -20,9 +20,5 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Updating collate directive in  /home/nik/git/os/fva/bundeswaldinventur/DESCRIPTION 
-Writing NAMESPACE
-Writing Totholz.Tart.stratum.fun.Rd
-Writing TITLE_PLOT.Rd
 > 
 > 

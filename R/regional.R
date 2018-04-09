@@ -2,6 +2,12 @@
 # replace referneces to global object stratii in
 # d_name <- paste0(gsub(' ', '_', gsub('/', '_', file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
 # with function arguments and adjust function calls in district_groups.r
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param height_class FIXME
 get_label_for_NatHoe <- function(height_class) {
   label <- switch(as.character(height_class),
     "1" = "Planar",
@@ -13,6 +19,13 @@ get_label_for_NatHoe <- function(height_class) {
   )
   return(label)
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param file_name FIXME
+#' @param out FIXME
 tex_table <- function(file_name, out) {
   tools::texi2dvi(file_name, pdf = TRUE, clean = TRUE)
   pdf_name <- sub("\\.tex$", "\\.pdf", basename(file_name))
@@ -24,6 +37,11 @@ tex_table <- function(file_name, out) {
     from = file.path(table_pdf)
   )
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
 table_tex_front_matter <- function() {
   return(c(
     generator_notice,
@@ -35,8 +53,23 @@ table_tex_front_matter <- function() {
     "\\captionsetup{labelformat=empty}\n"
   ))
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
 table_tex_back_matter <- function() return("\\endminipage\n\\end{document}")
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
 tex_text_width <- function() return(0.4)
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
 theme_bold_axes <- function() {
   return(
     ggplot2::theme(
@@ -45,6 +78,11 @@ theme_bold_axes <- function() {
     )
   )
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
 theme_bold_legend <- function() {
   return(
     ggplot2::theme(
@@ -53,16 +91,32 @@ theme_bold_legend <- function() {
     )
   )
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
 theme_bold_title <- function() {
   return(
     ggplot2::theme(plot.title = ggplot2::element_text(colour = "black", size = 14))
   )
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
 theme_rotate_xasis_labels <- function() {
   return(
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = -70, hjust = 0, vjust = 1))
   )
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param obj FIXME
 ptplot <- function(obj) {
   graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
     ggplot2::theme(
@@ -74,10 +128,22 @@ ptplot <- function(obj) {
     ))
 }
 
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param obj FIXME
 tplot <- function(obj) {
   graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
     ggplot2::theme(strip.text.y = ggplot2::element_text(size = 12)) + theme_rotate_xasis_labels())
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param obj FIXME
 tplot1 <- function(obj) {
   graphics::plot(obj + theme_bold_axes() + theme_bold_title() +
     ggplot2::theme(strip.text.y = ggplot2::element_text(size = 12)) +
@@ -89,10 +155,27 @@ tplot1 <- function(obj) {
 }
 
 
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param ... FIXME
+#' @param file_name FIXME
+#' @param append FIXME
 to_tex <- function(..., file_name = dot_district_tex, append = TRUE) {
   cat(..., "\n", file = file_name, append = append, sep = "")
 }
 
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param species FIXME
+#' @param minimal_share FIXME
+#' @param shares FIXME
+#' @param species_list FIXME
 grouping_species <- function(species = c("Fichte", "Wei\u00dftanne"),
                              minimal_share = 10,
                              shares = species_shares,
@@ -117,6 +200,12 @@ grouping_species <- function(species = c("Fichte", "Wei\u00dftanne"),
   return(list(label = label, group = grouping))
 }
 
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param groupings FIXME
 group_district_species <-
   function(groupings = list(
                c("Fichte", "Wei\u00dftanne", "Douglasie", "Kiefer", "L\u00e4rchen/sNB"),
@@ -136,7 +225,11 @@ group_district_species <-
   }
 
 
-## % plotting functions
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
 copyright <- function() {
   anno <- ggplot2::annotate("text",
     label = "Copyright 2015: Abt. BuI, FVA BW",
@@ -146,6 +239,22 @@ copyright <- function() {
   return(anno)
 }
 
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param b1 FIXME
+#' @param b2 FIXME
+#' @param b3 FIXME
+#' @param do_errors_relative FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
+#' @param species_groups_labels FIXME
+#' @param have_title FIXME
 plot_groups_areas <- function(b1, b2, b3,
                               do_errors_relative = FALSE,
                               graphic_width = get_options("graphics_width"),
@@ -153,7 +262,8 @@ plot_groups_areas <- function(b1, b2, b3,
                               graphic_directory = graphics_directory,
                               file_name_district = regional_file_name,
                               title_district = krs.grupp$string[i],
-                              species_groups_labels = c(district_groups$ba.text, "Alle BA")) {
+                              species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                              have_title = FALSE) {
   # reformat species labels as factor
   species_label <- factor(species_groups_labels,
     levels = species_groups_labels
@@ -211,7 +321,7 @@ plot_groups_areas <- function(b1, b2, b3,
     ggplot2::scale_y_continuous(labels = german_number) +
     ggplot2::xlab("") +
     ggplot2::ylab("Fl\u00e4che [ha]") + copyright() +
-    if (TITLE_PLOT) {
+    if (isTRUE(have_title)) {
       ggplot2::ggtitle(title_district)
     })
   grDevices::dev.off()
@@ -359,6 +469,21 @@ plot_groups_areas <- function(b1, b2, b3,
   return(invisible(df_v_abs))
 }
 
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param b1 FIXME
+#' @param b2 FIXME
+#' @param b3 FIXME
+#' @param do_errors_relative FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
+#' @param species_groups_labels FIXME
+#' @param have_title FIXME
 plot_groups_stocks <- function(b1, b2, b3,
                                do_errors_relative = FALSE,
                                graphic_width = get_options("graphics_width"),
@@ -366,7 +491,8 @@ plot_groups_stocks <- function(b1, b2, b3,
                                graphic_directory = graphics_directory,
                                file_name_district = regional_file_name,
                                title_district = krs.grupp$string[i],
-                               species_groups_labels = c(district_groups$ba.text, "Alle BA")) {
+                               species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                              have_title = FALSE) {
   # reformat species labels as factor
   species_label <- factor(species_groups_labels,
     levels = species_groups_labels
@@ -429,7 +555,7 @@ plot_groups_stocks <- function(b1, b2, b3,
     ggplot2::scale_y_continuous(labels = german_number) +
     ggplot2::xlab("") +
     ggplot2::ylab(expression(paste("Vorrat [", m^3, "]", sep = ""))) + copyright() +
-    if (TITLE_PLOT) {
+    if (isTRUE(have_title)) {
       ggplot2::ggtitle(title_district)
     })
   grDevices::dev.off()
@@ -585,13 +711,29 @@ plot_groups_stocks <- function(b1, b2, b3,
   tex_table(table_tex, out_name)
   return(invisible(df_v_abs))
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param b1 FIXME
+#' @param b2 FIXME
+#' @param b3 FIXME
+#' @param do_errors_relative FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
+#' @param have_title FIXME
 plot_group_stocks_by_girth <- function(b1, b2, b3, v,
                                        do_errors_relative = FALSE,
                                        graphic_width = get_options("graphics_width"),
                                        graphic_height = graphics_height,
                                        graphic_directory = graphics_directory,
                                        file_name_district = regional_file_name,
-                                       title_district = krs.grupp$string[i]) {
+                                       title_district = krs.grupp$string[i],
+                              have_title = FALSE) {
   # to skip the first girth class, we need their number
   num_girth_classes <- length(b1$DKL)
   # get an ordered factor
@@ -658,7 +800,7 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
       ggplot2::scale_y_continuous(labels = german_number) +
       ggplot2::xlab("Durchmesser [cm]") +
       ggplot2::ylab(expression(paste("Vorrat [", m^3, "]", sep = ""))) + copyright() +
-      if (TITLE_PLOT) {
+      if (isTRUE(have_title)) {
         ggplot2::ggtitle(bquote(atop(
           .(title_district),
           atop(italic(.(species_group)), "")
@@ -749,13 +891,29 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
   }
 }
 
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param b1 FIXME
+#' @param b2 FIXME
+#' @param b3 FIXME
+#' @param a FIXME
+#' @param do_errors_relative FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
+#' @param have_title FIXME
 plot_group_area_by_age <- function(b1, b2, b3, a,
                                    do_errors_relative = FALSE,
                                    graphic_width = get_options("graphics_width"),
                                    graphic_height = graphics_height,
                                    graphic_directory = graphics_directory,
                                    file_name_district = regional_file_name,
-                                   title_district = krs.grupp$string[i]) {
+                                   title_district = krs.grupp$string[i],
+                              have_title = FALSE) {
   # get an ordered factor
   age_classes <- factor(b1$AKL, levels = b1$AKL)
   ## % plot area by age
@@ -818,7 +976,7 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
       ggplot2::scale_y_continuous(labels = german_number) +
       ggplot2::xlab("Alter [a]") +
       ggplot2::ylab("Fl\u00e4che [ha]") + copyright() +
-      if (TITLE_PLOT) {
+      if (isTRUE(have_title)) {
         ggplot2::ggtitle(bquote(atop(
           .(title_district),
           atop(italic(.(species_group)), "")
@@ -908,6 +1066,22 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
     )
   }
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param deadwood_2 FIXME
+#' @param deadwood_3 FIXME
+#' @param deadwood_3_2 FIXME
+#' @param deadwood_2a FIXME
+#' @param deadwood_3a FIXME
+#' @param deadwood_3_2a FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
 plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
                           deadwood_2a, deadwood_3_2a, deadwood_3a,
                           graphic_width = get_options("graphics_width"),
@@ -1048,6 +1222,21 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
   )
   return(invisible(df_r))
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param g_l_12 FIXME
+#' @param g_l_23 FIXME
+#' @param g_l_12_all FIXME
+#' @param do_errors_relative FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
+#' @param species_groups_labels FIXME
 plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
                              do_errors_relative = FALSE,
                              graphic_width = get_options("graphics_width"),
@@ -1195,6 +1384,17 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
     include.rownames = FALSE
   )
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param ownerships FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
 plot_ownership <- function(ownerships,
                            graphic_width = get_options("graphics_width"),
                            graphic_height = graphics_height,
@@ -1265,6 +1465,12 @@ plot_ownership <- function(ownerships,
 
 
 
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param ntns.list FIXME
 ntns_output <- function(ntns.list) {
   return(data.frame(
     NTNS = factor(ntns.list$NTNS, levels = ntns.list$NTNS),
@@ -1274,12 +1480,26 @@ ntns_output <- function(ntns.list) {
     SE_Anteil = round(ntns.list$NTNS.Flaeche.Anteil[2, 2, ], 1)
   ))
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param ntns1 FIXME
+#' @param ntns2 FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
+#' @param have_title FIXME
 plot_ntns <- function(ntns2, ntns3,
                       graphic_width = get_options("graphics_width"),
                       graphic_height = graphics_height,
                       graphic_directory = graphics_directory,
                       file_name_district = regional_file_name,
-                      title_district = krs.grupp$string[i]) {
+                      title_district = krs.grupp$string[i],
+                              have_title = FALSE) {
   data_frame <- rbind(
     cbind(ntns_output(ntns2), bwi = "2002"),
     cbind(ntns_output(ntns3), bwi = "2012")
@@ -1307,7 +1527,7 @@ plot_ntns <- function(ntns2, ntns3,
     ggplot2::scale_y_continuous(labels = german_number) +
     ggplot2::xlab("") +
     ggplot2::ylab("Fl\u00e4chenanteil [%]") + copyright() +
-    if (TITLE_PLOT) {
+    if (isTRUE(have_title)) {
       ggplot2::ggtitle(title_district)
     }
   d_name <- paste0(gsub(" ", "_", gsub(
@@ -1386,12 +1606,28 @@ plot_ntns <- function(ntns2, ntns3,
   )
 }
 
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param loss1 FIXME
+#' @param loss2 FIXME
+#' @param loss1_all FIXME
+#' @param loss2_all FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
+#' @param have_title FIXME
 plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
                       graphic_width = get_options("graphics_width"),
                       graphic_height = graphics_height,
                       graphic_directory = graphics_directory,
                       file_name_district = regional_file_name,
-                      title_district = krs.grupp$string[i]) {
+                      title_district = krs.grupp$string[i],
+                              have_title = FALSE) {
   data_frame <- rbind(
     data.frame(
       period = get_period(1),
@@ -1428,7 +1664,7 @@ plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
     ggplot2::scale_y_continuous(labels = german_number) +
     ggplot2::xlab("Durchmesser [cm]") +
     ggplot2::ylab(expression(paste("J\u00e4hrl. Ernte ohne Rinde [", m^3, "]", sep = ""))) + copyright() +
-    if (TITLE_PLOT) {
+    if (isTRUE(have_title)) {
       ggplot2::ggtitle(title_district)
     }
   d_name <- paste0(gsub(" ", "_", gsub(
@@ -1533,6 +1769,22 @@ plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
     include.rownames = FALSE
   )
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param r2_a FIXME
+#' @param r2_bs1 FIXME
+#' @param r2_bs2 FIXME
+#' @param r3_a FIXME
+#' @param r3_bs1 FIXME
+#' @param r3_bs2 FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
 regeneration <- function(r2_a, r2_bs1, r2_bs2,
                          r3_a, r3_bs1, r3_bs2,
                          graphic_width = get_options("graphics_width"),
@@ -1645,6 +1897,21 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
 
   return(invisible(table_data))
 }
+
+#' FIXME
+#'
+#' @export
+#' @keywords internal
+#' @param relevant_species_2 FIXME
+#' @param relevant_species_3 FIXME
+#' @param do_errors_relative FIXME
+#' @param graphic_width FIXME
+#' @param graphic_height FIXME
+#' @param graphic_directory FIXME
+#' @param file_name_district FIXME
+#' @param title_district FIXME
+#' @param species_groups_labels FIXME
+#' @param have_title FIXME
 plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3,
                                           do_errors_relative = FALSE,
                                           graphic_width = get_options("graphics_width"),
@@ -1652,7 +1919,8 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
                                           graphic_directory = graphics_directory,
                                           file_name_district = regional_file_name,
                                           title_district = krs.grupp$string[i],
-                                          species_groups_labels = c(district_groups$ba.text, "Alle BA")) {
+                                          species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                              have_title = FALSE) {
   data_frame <- rbind(
     data.frame(
       bwi = "2002", species = relevant_species_2$FBA,
@@ -1697,7 +1965,7 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
     ggplot2::scale_y_continuous(labels = german_number) +
     ggplot2::xlab("") +
     ggplot2::ylab("Fl\u00e4chenanteil in Prozent") + copyright() +
-    if (TITLE_PLOT) {
+    if (isTRUE(have_title)) {
       ggplot2::ggtitle(title_district)
     })
   grDevices::dev.off()

@@ -4,12 +4,12 @@
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.7.3.9000’
+* this is package ‘bundeswaldinventur’ version ‘0.7.3.9002’
 * package encoding: UTF-8
 * checking CRAN incoming feasibility ... NOTE
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
 
-Version contains large components (0.7.3.9000)
+Version contains large components (0.7.3.9002)
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -20,7 +20,7 @@ Version contains large components (0.7.3.9000)
 * checking for sufficient/correct file permissions ... OK
 * checking whether package ‘bundeswaldinventur’ can be installed ... OK
 * checking installed package size ... NOTE
-  installed size is 33.4Mb
+  installed size is 33.5Mb
   sub-directories of 1Mb or more:
     data  32.8Mb
 * checking package directory ... OK
@@ -289,7 +289,7 @@ Undefined global functions or variables:
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [163s/163s]
+  Running ‘testthat.R’ [166s/166s]
 * checking PDF version of manual ... OK
 * DONE
 Status: 3 NOTEs

@@ -1264,88 +1264,88 @@ get_abbreviation_for_label  found 67 lines of code, max_lines_of_code was 50
 /home/nik/git/os/fva/bundeswaldinventur/R/labeling.R  get_color_for_ownership  line 11: found width 102 max_line_width was 80
 /home/nik/git/os/fva/bundeswaldinventur/R/labeling.R  get_text_label_for_abbreviation  found 55 lines of code, max_lines_of_code was 50
 R/   /home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 3 counts 137 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 20 counts 90 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 58 counts 83 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 63 counts 90 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 67 counts 85 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 78 counts 85 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 79 counts 98 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 99 counts 81 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 122 counts 88 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 156 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 183 counts 137 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 231 counts 88 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 265 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 309 counts 88 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 342 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 369 counts 95 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 401 counts 137 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 431 counts 84 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 448 counts 88 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 483 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 528 counts 137 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 533 counts 84 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 535 counts 88 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 569 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 590 counts 85 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 608 counts 86 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 609 counts 89 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 614 counts 86 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 615 counts 89 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 620 counts 86 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 621 counts 89 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 630 counts 139 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 631 counts 90 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 649 counts 82 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 660 counts 86 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 686 counts 90 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 732 counts 96 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 754 counts 81 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 790 counts 139 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 791 counts 95 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 809 counts 82 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 846 counts 90 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 879 counts 96 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 927 counts 90 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 935 counts 83 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 937 counts 82 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 955 counts 137 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 988 counts 86 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 999 counts 105 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1013 counts 91 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1014 counts 91 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1015 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1068 counts 99 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1069 counts 102 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1075 counts 101 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1076 counts 104 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1095 counts 89 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1097 counts 137 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1133 counts 99 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1136 counts 95 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1148 counts 125 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1150 counts 88 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1171 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1205 counts 123 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1219 counts 104 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1338 counts 82 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1357 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1430 counts 106 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1505 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1573 counts 100 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1574 counts 100 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1627 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1648 counts 81 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1650 counts 88 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1652 counts 81 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1653 counts 82 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1655 counts 106 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1660 counts 83 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1665 counts 83 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1669 counts 137 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1721 counts 88 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1753 counts 94 characters.
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: 1770 lines in file.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 33 counts 90 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 101 counts 83 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 111 counts 90 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 121 counts 85 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 138 counts 85 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 139 counts 98 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 182 counts 81 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 211 counts 88 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 265 counts 92 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 293 counts 137 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 341 counts 88 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 375 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 419 counts 88 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 452 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 494 counts 93 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 527 counts 137 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 557 counts 84 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 574 counts 88 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 609 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 654 counts 137 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 659 counts 84 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 661 counts 88 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 695 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 731 counts 85 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 750 counts 86 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 751 counts 89 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 756 counts 86 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 757 counts 89 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 762 counts 86 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 763 counts 89 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 772 counts 139 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 773 counts 90 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 791 counts 82 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 802 counts 86 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 828 counts 90 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 874 counts 96 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 911 counts 81 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 948 counts 139 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 949 counts 95 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 967 counts 82 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1004 counts 90 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1037 counts 96 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1101 counts 90 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1109 counts 83 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1111 counts 82 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1129 counts 137 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1162 counts 86 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1173 counts 105 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1187 counts 91 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1188 counts 91 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1189 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1257 counts 99 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1258 counts 102 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1264 counts 101 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1265 counts 104 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1284 counts 89 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1286 counts 137 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1322 counts 99 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1325 counts 95 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1337 counts 125 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1339 counts 88 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1360 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1405 counts 123 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1419 counts 104 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1558 counts 82 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1577 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1666 counts 106 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1741 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1825 counts 100 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1826 counts 100 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1879 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1915 counts 81 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1917 counts 88 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1919 counts 81 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1920 counts 82 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1922 counts 104 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1928 counts 83 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1933 counts 83 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1937 counts 137 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 1989 counts 88 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: line 2021 counts 94 characters.
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R: 2038 lines in file.
  /home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_deadwood  found 11 arguments, max_num_arguments was 5
 plot_deadwood  line 10: found width 90 max_line_width was 80
 line 18: found width 83 max_line_width was 80
@@ -1358,7 +1358,7 @@ line 97: found width 91 max_line_width was 80
 line 98: found width 94 max_line_width was 80
 plot_deadwood  found 132 lines, max_lines was 65
 plot_deadwood  found 132 lines of code, max_lines_of_code was 50
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_group_area_by_age  found 10 arguments, max_num_arguments was 5
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_group_area_by_age  found 11 arguments, max_num_arguments was 5
 plot_group_area_by_age  line 32: found width 139 max_line_width was 80
 line 33: found width 95 max_line_width was 80
 line 51: found width 82 max_line_width was 80
@@ -1366,7 +1366,7 @@ line 88: found width 90 max_line_width was 80
 line 121: found width 96 max_line_width was 80
 plot_group_area_by_age  found 151 lines, max_lines was 65
 plot_group_area_by_age  found 149 lines of code, max_lines_of_code was 50
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_group_stocks_by_girth  found 10 arguments, max_num_arguments was 5
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_group_stocks_by_girth  found 11 arguments, max_num_arguments was 5
 plot_group_stocks_by_girth  line 14: found width 86 max_line_width was 80
 line 15: found width 89 max_line_width was 80
 line 20: found width 86 max_line_width was 80
@@ -1381,7 +1381,7 @@ line 92: found width 90 max_line_width was 80
 line 138: found width 96 max_line_width was 80
 plot_group_stocks_by_girth  found 155 lines, max_lines was 65
 plot_group_stocks_by_girth  found 152 lines of code, max_lines_of_code was 50
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_groups_areas  found 10 arguments, max_num_arguments was 5
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_groups_areas  found 11 arguments, max_num_arguments was 5
 plot_groups_areas  line 27: found width 137 max_line_width was 80
 line 75: found width 88 max_line_width was 80
 line 109: found width 94 max_line_width was 80
@@ -1389,7 +1389,7 @@ line 153: found width 88 max_line_width was 80
 line 186: found width 94 max_line_width was 80
 plot_groups_areas  found 203 lines, max_lines was 65
 plot_groups_areas  found 201 lines of code, max_lines_of_code was 50
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_groups_stocks  found 10 arguments, max_num_arguments was 5
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_groups_stocks  found 11 arguments, max_num_arguments was 5
 plot_groups_stocks  line 32: found width 137 max_line_width was 80
 line 62: found width 84 max_line_width was 80
 line 79: found width 88 max_line_width was 80
@@ -1414,12 +1414,12 @@ line 92: found width 88 max_line_width was 80
 line 113: found width 94 max_line_width was 80
 plot_growth_loss  found 138 lines, max_lines was 65
 plot_growth_loss  found 137 lines of code, max_lines_of_code was 50
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_loss  found 9 arguments, max_num_arguments was 5
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_loss  found 10 arguments, max_num_arguments was 5
 plot_loss  line 36: found width 106 max_line_width was 80
 line 111: found width 94 max_line_width was 80
 plot_loss  found 140 lines, max_lines was 65
 plot_loss  found 140 lines of code, max_lines_of_code was 50
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_ntns  found 7 arguments, max_num_arguments was 5
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_ntns  found 8 arguments, max_num_arguments was 5
 plot_ntns  line 56: found width 82 max_line_width was 80
 line 75: found width 94 max_line_width was 80
 plot_ntns  found 104 lines, max_lines was 65
@@ -1428,7 +1428,7 @@ plot_ntns  found 104 lines of code, max_lines_of_code was 50
 plot_ownership  line 2: found width 123 max_line_width was 80
 line 16: found width 104 max_line_width was 80
 plot_ownership  found 60 lines of code, max_lines_of_code was 50
-/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_silviculturally_relevant  found 9 arguments, max_num_arguments was 5
+/home/nik/git/os/fva/bundeswaldinventur/R/regional.R  plot_silviculturally_relevant  found 10 arguments, max_num_arguments was 5
 plot_silviculturally_relevant  line 5: found width 83 max_line_width was 80
 line 10: found width 83 max_line_width was 80
 line 14: found width 137 max_line_width was 80

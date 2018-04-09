@@ -1,7 +1,8 @@
-* export functions in R/regional.R
-* get rid of R/vars.R
-* have a dedicated data package.
+* call functions from imported packages explicitely, fix adapt\_script to call
+  on bundeswaldinventur only.
 * Fix global bindings in log/check.Rout
+* clean, lint, spell!
+* have a dedicated data package.
 * Check which of the data in the RData files are needed. Especially the
   statistics data.
 * Sample and anonymise bwi.RData and rewrite all testthat test according to new data.
