@@ -4,10 +4,12 @@
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.7.3’
+* this is package ‘bundeswaldinventur’ version ‘0.7.3.9000’
 * package encoding: UTF-8
-* checking CRAN incoming feasibility ... Note_to_CRAN_maintainers
+* checking CRAN incoming feasibility ... NOTE
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
+
+Version contains large components (0.7.3.9000)
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -16,10 +18,7 @@ Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
 * checking for hidden files and directories ... OK
 * checking for portable file names ... OK
 * checking for sufficient/correct file permissions ... OK
-* checking whether package ‘bundeswaldinventur’ can be installed ... WARNING
-Found the following significant warnings:
-  Warning: /home/nik/git/os/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00_pkg_src/bundeswaldinventur/man/Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
-See ‘/home/nik/git/os/fva/bundeswaldinventur/bundeswaldinventur.Rcheck/00install.out’ for details.
+* checking whether package ‘bundeswaldinventur’ can be installed ... OK
 * checking installed package size ... NOTE
   installed size is 33.4Mb
   sub-directories of 1Mb or more:
@@ -80,8 +79,6 @@ plot_group_area_by_age: no visible binding for global variable 'bwi'
 plot_group_area_by_age: no visible binding for global variable
   'standard_error'
 plot_group_area_by_age: no visible binding for global variable
-  'TITLE_PLOT'
-plot_group_area_by_age: no visible binding for global variable
   'plots_directory'
 plot_group_area_by_age: no visible binding for global variable
   'dot_district_tex'
@@ -107,8 +104,6 @@ plot_group_stocks_by_girth: no visible binding for global variable
 plot_group_stocks_by_girth: no visible binding for global variable
   'standard_error'
 plot_group_stocks_by_girth: no visible binding for global variable
-  'TITLE_PLOT'
-plot_group_stocks_by_girth: no visible binding for global variable
   'plots_directory'
 plot_group_stocks_by_girth: no visible binding for global variable
   'dot_district_tex'
@@ -130,7 +125,6 @@ plot_groups_areas: no visible binding for global variable 'species'
 plot_groups_areas: no visible binding for global variable 'bwi'
 plot_groups_areas: no visible binding for global variable
   'standard_error'
-plot_groups_areas: no visible binding for global variable 'TITLE_PLOT'
 plot_groups_areas: no visible binding for global variable
   'plots_directory'
 plot_groups_areas: no visible binding for global variable
@@ -153,7 +147,6 @@ plot_groups_stocks: no visible binding for global variable 'prediction'
 plot_groups_stocks: no visible binding for global variable 'bwi'
 plot_groups_stocks: no visible binding for global variable
   'standard_error'
-plot_groups_stocks: no visible binding for global variable 'TITLE_PLOT'
 plot_groups_stocks: no visible binding for global variable
   'plots_directory'
 plot_groups_stocks: no visible binding for global variable
@@ -190,7 +183,6 @@ plot_loss: no visible binding for global variable 'x'
 plot_loss: no visible binding for global variable 'period'
 plot_loss: no visible binding for global variable 'bwi'
 plot_loss: no visible binding for global variable 'standard_error'
-plot_loss: no visible binding for global variable 'TITLE_PLOT'
 plot_loss: no visible binding for global variable 'stratii'
 plot_loss: no visible binding for global variable 'stratum_index'
 plot_loss: no visible binding for global variable 'plots_directory'
@@ -204,7 +196,6 @@ plot_ntns: no visible binding for global variable 'prediction'
 plot_ntns: no visible binding for global variable 'NTNS'
 plot_ntns: no visible binding for global variable 'bwi'
 plot_ntns: no visible binding for global variable 'standard_error'
-plot_ntns: no visible binding for global variable 'TITLE_PLOT'
 plot_ntns: no visible binding for global variable 'stratii'
 plot_ntns: no visible binding for global variable 'stratum_index'
 plot_ntns: no visible binding for global variable 'plots_directory'
@@ -255,8 +246,6 @@ plot_silviculturally_relevant: no visible binding for global variable
 plot_silviculturally_relevant: no visible binding for global variable
   'standard_error'
 plot_silviculturally_relevant: no visible binding for global variable
-  'TITLE_PLOT'
-plot_silviculturally_relevant: no visible binding for global variable
   'plots_directory'
 plot_silviculturally_relevant: no visible binding for global variable
   'dot_district_tex'
@@ -282,9 +271,8 @@ Undefined global functions or variables:
   group i krs.grupp NTNS ownership ownership_realive_area period
   plots_directory position prediction radius regional_file_name
   scale_x_discrete species standard_error stratii stratum_index
-  tables_directory TITLE_PLOT x ylab
-* checking Rd files ... WARNING
-prepare_Rd: Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
+  tables_directory x ylab
+* checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
 * checking Rd cross-references ... OK
@@ -301,7 +289,7 @@ prepare_Rd: Totholz.Tart.stratum.fun.Rd:28: unknown macro '\u00fcbergeben'
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [164s/164s]
+  Running ‘testthat.R’ [163s/163s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 2 WARNINGs, 2 NOTEs
+Status: 3 NOTEs

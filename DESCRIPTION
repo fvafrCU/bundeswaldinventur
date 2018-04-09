@@ -29,7 +29,7 @@ Imports:
     testthat,
     RUnit
 RoxygenNote: 6.0.1
-Collate:
+Collate: 
     'BWI3_HR.R'
     'BWI3_HR_Landkreis.R'
     'BWI3_HR_Totholz.R'
@@ -57,4 +57,5 @@ Collate:
     'statistics.R'
     'throw.R'
     'tree_species_shares.R'
+    'vars.R'
     'zzz.R'
