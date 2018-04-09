@@ -1,6 +1,6 @@
+* export functions in R/regional.R
 * get rid of R/vars.R
 * have a dedicated data package.
-* Improve test coverage
 * Fix global bindings in log/check.Rout
 * Check which of the data in the RData files are needed. Especially the
   statistics data.
@@ -9,3 +9,4 @@
 * use a set_options(use_global_variables) and move graphics\_[width|height] to
   getter functions reading that option.
 * reconsider the package_name-option
+* Improve test coverage
