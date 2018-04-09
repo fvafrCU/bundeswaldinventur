@@ -1,3 +1,4 @@
+* get rid of R/vars.R
 * have a dedicated data package.
 * Improve test coverage
 * Fix global bindings in log/check.Rout

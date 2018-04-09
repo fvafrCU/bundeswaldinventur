@@ -13,7 +13,6 @@ get_label_for_NatHoe <- function(height_class) {
   )
   return(label)
 }
-# TITLE_PLOT <- FALSE
 tex_table <- function(file_name, out) {
   tools::texi2dvi(file_name, pdf = TRUE, clean = TRUE)
   pdf_name <- sub("\\.tex$", "\\.pdf", basename(file_name))

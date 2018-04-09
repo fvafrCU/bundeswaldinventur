@@ -1,3 +1,7 @@
+# bundeswaldinventur 0.7.3.9000
+
+* Used variable TITLE\_PLOT.
+
 # bundeswaldinventur 0.7.3
 
 * Fixed subsetting/indexing bug in FVBN...[abcde]().
