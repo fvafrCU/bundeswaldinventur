@@ -2695,7 +2695,7 @@ test_that("verjg.kl4.bagrupp.fun", {
 
 test_that("ntns.stratum.fun", {
   result <- ntns.stratum.fun(
-    ntns.te, get_data("ecken.3"), get_data("trakte.3"), A, list(
+    get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), A, list(
       Wa = c(3, 5), Begehbar = 1,
       WLT = c(9410)
     ), 3, 3
@@ -2723,7 +2723,7 @@ test_that("ntns.stratum.fun", {
 })
 
 test_that("ntns.stratum.fun.2", {
-  result <- ntns.stratum.fun.2(ntns.te, get_data("ecken.3"), get_data("trakte.3"), A,
+  result <- ntns.stratum.fun.2(get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), A,
     list(Wa = c(3, 5), Begehbar = 1), 3, 3,
     schicht = 1
   )
@@ -2760,7 +2760,7 @@ test_that("ntns.stratum.fun.2", {
 
 test_that("fba.stratum.fun", {
   result <- fba.stratum.fun(
-    "alle", fba.3, list(Wa = c(3, 5), Begehbar = 1),
+    "alle", get_data("fba.3"), list(Wa = c(3, 5), Begehbar = 1),
     get_data("ecken.3"), get_data("trakte.3"), A
   )
 
@@ -3437,7 +3437,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2g", {
 
 test_that("biotop.baeume.fun", {
   result <- biotop.baeume.fun(
-    wzp4.merkmale.3, get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), A,
+    get_data("wzp4.merkmale.3"), get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), A,
     list(Wa = c(5), Begehbar = 1)
   )
 
@@ -3490,7 +3490,7 @@ test_that("biotop.baeume.fun", {
 
 test_that("stamm.merkmale.bagr.fun", {
   result <- stamm.merkmale.bagr.fun(
-    wzp4.merkmale.3, get_data("baeume.3"), get_data("ecken.3"),
+    get_data("wzp4.merkmale.3"), get_data("baeume.3"), get_data("ecken.3"),
     get_data("trakte.3"), A, list(Wa = c(3, 5), Begehbar = 1), c(
       "tot", "jschael",
       "aeschael", "ruecke", "pilz", "harz", "kaefer", "sstamm", "faulkon",

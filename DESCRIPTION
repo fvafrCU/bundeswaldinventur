@@ -39,7 +39,6 @@ Collate:
     'batch.R'
     'bits_and_pieces.R'
     'bundeswaldinventur-package.R'
-    'data_documentation.R'
     'deadwood.R'
     'figures_and_tables.R'
     'fvbn2a.R'

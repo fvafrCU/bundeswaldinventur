@@ -20,10 +20,5 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing fvbn.kreis.fun.1.Rd
-Writing fvbn.stratum.fun.1.Rd
-Writing fvbn.stratum.fun.2.Rd
-Writing flaechen.kreis.fun.1.Rd
-Writing flaechen.stratum.fun.1.Rd
 > 
 > 

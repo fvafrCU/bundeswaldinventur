@@ -6,8 +6,6 @@ Installing bundeswaldinventur
 
 * installing *source* package ‘bundeswaldinventur’ ...
 ** R
-** data
-*** moving datasets to lazyload DB
 ** inst
 ** tests
 ** preparing package for lazy loading

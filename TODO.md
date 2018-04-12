@@ -1,3 +1,4 @@
+* Get rid of global variables for testing!
 * Fix global bindings in log/check.Rout
 * clean, lint, spell!
 * have a dedicated data package.

@@ -8,7 +8,7 @@ NULL
 context("deadwood.R")
 
 test_that("harmonize_deadwood", {
-  output <- head(harmonize_deadwood(totholz.3))
+  output <- head(harmonize_deadwood(get_data("totholz.3")))
 
   output <- output[-13]
 
@@ -46,7 +46,7 @@ test_that("harmonize_deadwood", {
 })
 
 test_that("purge_deadwood_to_2", {
-  input <- harmonize_deadwood(totholz.3)
+  input <- harmonize_deadwood(get_data("totholz.3"))
 
   output <- head(purge_deadwood_to_2(input))
 
@@ -85,7 +85,7 @@ test_that("purge_deadwood_to_2", {
 })
 
 test_that("drop_variables", {
-  input <- head(harmonize_deadwood(totholz.3))
+  input <- head(harmonize_deadwood(get_data("totholz.3")))
 
   output <- drop_variables(input)
 
@@ -110,7 +110,7 @@ test_that("drop_variables", {
 })
 
 test_that("deadwood", {
-  input <- harmonize_deadwood(totholz.3)
+  input <- harmonize_deadwood(get_data("totholz.3"))
 
   output <- deadwood(input[0:50, ])
 
