@@ -115,8 +115,8 @@
 #' @return Dataframe-Tabelle mit FVBN-Auswertung nach Eigentumsklasse und
 #'  aufgelisteter BWI.
 fvbn.kreis.fun.1 <- function(kreiscode, eig.list, bwi.list, bagr,
-                             A = get_data("A"),
-                             A.12 = get_data("A.12"),
+                             A = get_design("a", 3),
+                             A.12 = get_design("a", 1),
                              kreise = get_data("kreise"),
                              trakte.3 = get_data("trakte.3"),
                              ecken.3 = get_data("ecken.3"),
@@ -226,8 +226,8 @@ fvbn.kreis.fun.1 <- function(kreiscode, eig.list, bwi.list, bagr,
 #' @return Dataframe-Tabelle mit FVBN-Auswertung nach Eigentumsklasse und
 #'  aufgelisteter BWI.
 fvbn.stratum.fun.1 <- function(auswahl, eig.list, bwi.list, bagr,
-                               A = get_data("A"),
-                               A.12 = get_data("A.12"),
+                               A = get_design("a", 3),
+                               A.12 = get_design("a", 1),
                                trakte.3 = get_data("trakte.3"),
                                ecken.3 = get_data("ecken.3"),
                                baeume.3 = get_data("baeume.3"),
@@ -341,8 +341,8 @@ fvbn.stratum.fun.1 <- function(auswahl, eig.list, bwi.list, bagr,
 #' @return Dataframe-Tabelle mit FVBN-Auswertung nach Eigentumsklasse und
 #'  aufgelisteter BWI.
 fvbn.stratum.fun.2 <- function(auswahl, eig.list, bwi.list, bagr, a.klass, d.klass,
-                               A = get_data("A"),
-                               A.12 = get_data("A.12"),
+                               A = get_design("a", 3),
+                               A.12 = get_design("a", 1),
                                trakte.3 = get_data("trakte.3"),
                                ecken.3 = get_data("ecken.3"),
                                baeume.3 = get_data("baeume.3"),

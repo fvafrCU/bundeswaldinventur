@@ -1,7 +1,9 @@
 #' @include utils.R
 NULL
 
-#' get data if we want to use example data provided with the package
+#' Load Data from \pkg{bwibw}
+#'
+#' Get data if we want to use example data provided with the package.
 #'
 #' this is a wrapper reading get_options("fake_data") and returning an error if
 #' this is not set to TRUE, hence globally en/dis-abling the reading of example
@@ -9,7 +11,7 @@ NULL
 #' data.frames in his functions.
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @param name a string of lenght one giving the name of the data.frame.
+#' @param name a string of length one giving the name of the data.frame.
 #' @return the data requested.
 #' @export
 #' @examples
@@ -17,7 +19,8 @@ NULL
 get_data <- function(name) {
   checkmate::qassert(name, "S1")
   if (isTRUE(as.logical(get_options("fake_data")))) {
-    return(get(name))
+      utils::data(list = name, package = "bwibw", envir = environment())
+      return(get(name))
   } else {
     throw('get_options("fake_data") did not return TRUE')
   }

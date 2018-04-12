@@ -1,5 +1,6 @@
-# bundeswaldinventur 0.7.3.9003
+# bundeswaldinventur 0.8.0
 
+* Got rid of statistics data.
 * Added imports from ggplot2.
 * Exported functions from R/regional.R.
 * Introduced argument `have_title` to plotting functions to get rid of 
@@ -7,7 +8,7 @@
 
 # bundeswaldinventur 0.7.3
 
-* Fixed subsetting/indexing bug in FVBN...[abcde]().
+* Fixed subsetting/indexing bug in FVBN...().
 
 # bundeswaldinventur 0.7.2
 

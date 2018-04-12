@@ -25,8 +25,8 @@
 #'  Standardfehler fuer verschiedene Eigentumsklassen), \strong{begehb_Holzbfl}
 #'  (Holzbodenflaeche und Standardfehler fuer verschiedene Eigentumsklassen)
 flaechen.kreis.fun.1 <- function(kreiscode,
-                                 A = get_data("A"),
-                                 A.12 = get_data("A.12"),
+                                 A = get_design("a", 3),
+                                 A.12 = get_design("a", 1),
                                  kreise = get_data("kreise"),
                                  trakte.3 = get_data("trakte.3"),
                                  ecken.3 = get_data("ecken.3"),
@@ -351,8 +351,8 @@ flaechen.kreis.fun.1 <- function(kreiscode,
 #'  Standardfehler fuer verschiedene Eigentumsklassen), \strong{begehb_Holzbfl}
 #'  (Holzbodenflaeche und Standardfehler fuer verschiedene Eigentumsklassen)
 flaechen.stratum.fun.1 <- function(auswahl,
-                                   A = get_data("A"),
-                                   A.12 = get_data("A.12"),
+                                   A = get_design("a", 3),
+                                   A.12 = get_design("a", 1),
                                    trakte.3 = get_data("trakte.3"),
                                    ecken.3 = get_data("ecken.3"),
                                    trakte.2 = get_data("trakte.2"),

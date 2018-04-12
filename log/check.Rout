@@ -1,15 +1,19 @@
-* using log directory ‘/home/nik/git/os/fva/bundeswaldinventur/bundeswaldinventur.Rcheck’
-* using R version 3.3.3 (2017-03-06)
+* using log directory ‘/adc_mnt/oudeis/git_working_copies/fva/bundeswaldinventur/bundeswaldinventur.Rcheck’
+* using R version 3.4.3 (2017-11-30)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.7.3.9002’
+* this is package ‘bundeswaldinventur’ version ‘0.8.0’
 * package encoding: UTF-8
 * checking CRAN incoming feasibility ... NOTE
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
 
-Version contains large components (0.7.3.9002)
+New submission
+
+Non-FOSS package license (file LICENSE)
+
+Size of tarball: 16169952 bytes
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -20,12 +24,15 @@ Version contains large components (0.7.3.9002)
 * checking for sufficient/correct file permissions ... OK
 * checking whether package ‘bundeswaldinventur’ can be installed ... OK
 * checking installed package size ... NOTE
-  installed size is 33.5Mb
+  installed size is 33.0Mb
   sub-directories of 1Mb or more:
-    data  32.8Mb
+    data  32.4Mb
 * checking package directory ... OK
 * checking DESCRIPTION meta-information ... OK
-* checking top-level files ... OK
+* checking top-level files ... WARNING
+Conversion of ‘README.md’ failed:
+pandoc: Failed to retrieve https://www.r-pkg.org/badges/version/bundeswaldinventur
+TlsException (HandshakeFailed (Error_Protocol ("expecting server hello, got alert : [(AlertLevel_Fatal,HandshakeFailure)]",True,HandshakeFailure)))
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
@@ -36,7 +43,6 @@ Version contains large components (0.7.3.9002)
 * checking whether the package can be unloaded cleanly ... OK
 * checking whether the namespace can be loaded with stated dependencies ... OK
 * checking whether the namespace can be unloaded cleanly ... OK
-* checking loading without being on the library search path ... OK
 * checking use of S3 registration ... OK
 * checking dependencies in R code ... OK
 * checking S3 generic/method consistency ... OK
@@ -210,11 +216,6 @@ plot_ownership: no visible binding for global variable 'krs.grupp'
 plot_ownership: no visible binding for global variable 'i'
 plot_ownership: no visible binding for global variable 'area'
 plot_ownership: no visible binding for global variable 'ownership'
-plot_ownership: no visible global function definition for 'coord_polar'
-plot_ownership: no visible global function definition for 'ylab'
-plot_ownership: no visible global function definition for
-  'scale_x_discrete'
-plot_ownership: no visible global function definition for 'geom_text'
 plot_ownership: no visible binding for global variable 'radius'
 plot_ownership: no visible binding for global variable 'position'
 plot_ownership: no visible binding for global variable
@@ -249,7 +250,6 @@ plot_silviculturally_relevant: no visible binding for global variable
   'plots_directory'
 plot_silviculturally_relevant: no visible binding for global variable
   'dot_district_tex'
-ptplot: no visible global function definition for 'element_blank'
 regeneration: no visible binding for global variable 'graphics_height'
 regeneration: no visible binding for global variable
   'graphics_directory'
@@ -266,12 +266,11 @@ tex_table: no visible binding for global variable 'graphics_directory'
 tex_table: no visible binding for global variable 'tables_directory'
 to_tex: no visible binding for global variable 'dot_district_tex'
 Undefined global functions or variables:
-  area bwi coord_polar district_groups dot_district_tex element_blank
-  foo generator_notice geom_text graphics_directory graphics_height
-  group i krs.grupp NTNS ownership ownership_realive_area period
-  plots_directory position prediction radius regional_file_name
-  scale_x_discrete species standard_error stratii stratum_index
-  tables_directory x ylab
+  NTNS area bwi district_groups dot_district_tex foo generator_notice
+  graphics_directory graphics_height group i krs.grupp ownership
+  ownership_realive_area period plots_directory position prediction
+  radius regional_file_name species standard_error stratii
+  stratum_index tables_directory x
 * checking Rd files ... OK
 * checking Rd metadata ... OK
 * checking Rd line widths ... OK
@@ -284,12 +283,15 @@ Undefined global functions or variables:
 * checking contents of ‘data’ directory ... OK
 * checking data for non-ASCII characters ... OK
 * checking data for ASCII and uncompressed saves ... OK
-* checking files in ‘vignettes’ ... OK
+* checking files in ‘vignettes’ ... WARNING
+Files in the 'vignettes' directory but no files in 'inst/doc':
+  ‘An_Introduction_to_bundeswaldinventur.Rmd’
+Package has no Sweave vignette sources and no VignetteBuilder field.
 * checking examples ... OK
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [166s/166s]
+  Running ‘testthat.R’ [124s/124s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 3 NOTEs
+Status: 2 WARNINGs, 3 NOTEs

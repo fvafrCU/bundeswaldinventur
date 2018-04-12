@@ -10,7 +10,7 @@ NULL
 context("bits_and_pieces.R")
 
 test_that("add_colSums_to_data_frame", {
-  output <- add_colSums_to_data_frame(head(baeume.3[, 0:20]))
+  output <- add_colSums_to_data_frame(head(get_data("baeume.3")[, 0:20]))
 
   reference <- structure(list(
     TNr = c(154, 154, 154, 154, 154, 154, 924), ENr = c(1, 1, 1, 1, 1, 1, 6),
@@ -65,7 +65,7 @@ test_that("correct input", {
 })
 
 test_that("set_to_limit", {
-  output <- set_to_limit(head(baeume.3[0:20]), BHD1 > 40)
+  output <- set_to_limit(head(get_data("baeume.3")[0:20]), BHD1 > 40)
 
   reference <- structure(list(
     TNr = c(154L, 154L, 154L, 154L, 154L, 154L), ENr = c(
