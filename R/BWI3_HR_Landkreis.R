@@ -4,16 +4,7 @@
 #' die Eigentumskategorien.
 #'
 #' @author Gerald Kaendler \email{gerald.kaendler@@forst.bwl.de}
-#' @section Hinweis: \code{krs.list} muss geladen sein
-#' @param kreise A data.frame (see \code{\link{kreise}}
-#' @param A A global variable  (see \code{\link{A}}
-#' @param A.12 A global variable  (see \code{\link{A.12}}
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
-#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
-#' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
-#' @param trakte.1 A data.frame (see \code{\link{trakte.1}}
-#' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @param kreiscode Code fuer den Landkreis.   kreiscode
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Kreis} (Label fuer den
@@ -336,14 +327,7 @@ flaechen.kreis.fun.1 <- function(kreiscode,
 #' @param auswahl auswahl Liste, welche die Eckenmerkmale mit den Werten
 #'  enthaelt, anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.:
 #'  list(Wa=c(3,5), Begehbar=1).
-#' @param A A global variable  (see \code{\link{A}}
-#' @param A.12 A global variable  (see \code{\link{A.12}}
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
-#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
-#' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
-#' @param trakte.1 A data.frame (see \code{\link{trakte.1}}
-#' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Stratum} (\code{auswahl}),
 #'  \strong{Waldflaeche} (Waldflaeche und Standardfehler fuer verschiedene

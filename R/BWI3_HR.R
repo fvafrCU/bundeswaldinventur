@@ -99,18 +99,18 @@
 #'  Bezeichner der Baumarten-Gruppen ("lab") z.B. list(bagr.lab = c("FiTa",
 #'  "DglKiLae", "Bu", "Ei", "BLb", "WLb"), ba.grupp =list(c(10:19,30:39,90:99),
 #'  c(20:29,40,50,51), c(100), c(110,111), c(112:199),c(200:299))).
-#' @param A A global variable  (see \code{\link{A}}
-#' @param A.12 A global variable  (see \code{\link{A.12}}
-#' @param kreise A data.frame (see \code{\link{kreise}}
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
-#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
-#' @param baeume.3 A data.frame (see \code{\link{baeume.3}}
-#' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
-#' @param baeume.2 A data.frame (see \code{\link{baeume.2}}
-#' @param trakte.1 A data.frame (see \code{\link{trakte.1}}
-#' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
-#' @param baeume.1 A data.frame (see \code{\link{baeume.1}}
+#' @param A Area for BWI 3.
+#' @param A.12 Area for BWI1 and BWI2
+#' @param kreise County information.
+#' @param trakte.3 Trakt information.
+#' @param ecken.3 Ecken information.
+#' @param baeume.3 Tree information.
+#' @param trakte.2 Trakt information.
+#' @param ecken.2 Ecken information.
+#' @param baeume.2 Tree information.
+#' @param ecken.1 Ecken information.
+#' @param trakte.1 Trakt information.
+#' @param baeume.1 Tree information.
 #' @export
 #' @return Dataframe-Tabelle mit FVBN-Auswertung nach Eigentumsklasse und
 #'  aufgelisteter BWI.
@@ -211,17 +211,7 @@ fvbn.kreis.fun.1 <- function(kreiscode, eig.list, bwi.list, bagr,
 #'  Bezeichner der Baumarten-Gruppen ("lab") z.B. list(bagr.lab = c("FiTa",
 #'  "DglKiLae", "Bu", "Ei", "BLb", "WLb"), ba.grupp =list(c(10:19,30:39,90:99),
 #'  c(20:29,40,50,51), c(100), c(110,111), c(112:199),c(200:299))).
-#' @param A A global variable  (see \code{\link{A}}
-#' @param A.12 A global variable  (see \code{\link{A.12}}
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
-#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
-#' @param baeume.3 A data.frame (see \code{\link{baeume.3}}
-#' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
-#' @param baeume.2 A data.frame (see \code{\link{baeume.2}}
-#' @param trakte.1 A data.frame (see \code{\link{trakte.1}}
-#' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
-#' @param baeume.1 A data.frame (see \code{\link{baeume.1}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @export
 #' @return Dataframe-Tabelle mit FVBN-Auswertung nach Eigentumsklasse und
 #'  aufgelisteter BWI.
@@ -326,17 +316,7 @@ fvbn.stratum.fun.1 <- function(auswahl, eig.list, bwi.list, bagr,
 #'  list(D.unt=0, D.ob=70, D.b=10, Ndh=T), Ndh (Nicht-Derbholz) = T bedeutet,
 #'  dass zusaetzlich Nicht-Dh (unter 7 cm) ausgewiesen wird, sonst gilt
 #'  \code{D.unt} als unterste Schwelle.
-#' @param A A global variable  (see \code{\link{A}}
-#' @param A.12 A global variable  (see \code{\link{A.12}}
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
-#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
-#' @param baeume.3 A data.frame (see \code{\link{baeume.3}}
-#' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
-#' @param baeume.2 A data.frame (see \code{\link{baeume.2}}
-#' @param trakte.1 A data.frame (see \code{\link{trakte.1}}
-#' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
-#' @param baeume.1 A data.frame (see \code{\link{baeume.1}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @export
 #' @return Dataframe-Tabelle mit FVBN-Auswertung nach Eigentumsklasse und
 #'  aufgelisteter BWI.
@@ -476,12 +456,8 @@ fvbn.stratum.fun.2 <- function(auswahl, eig.list, bwi.list, bagr, a.klass, d.kla
 #'  = Pk 2,3,9 und "ungenutzt" = Pk 4, 5; FALSE: keine Trennung!
 #' @param A Gesamtflaeche des Inventurgebiets in ha zum jeweiligen
 #'  Inventurzeitpunkt (sollte eigentlich konstant sein).
-#' @param baeume.3 A data.frame (see \code{\link{baeume.3}}
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
-#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
-#' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
-#' @param baeume.23 A data.frame (see \code{\link{baeume.23}}
+#' @inheritParams fvbn.kreis.fun.1 
+#' @param baeume.23 Tabelle mit Baumdaten aus BWI 2.
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit Datum und
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{nTE}
@@ -915,11 +891,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.2 <-
 #'  = Pk 2,3,9 und "ungenutzt" = Pk 4, 5; FALSE: keine Trennung!
 #' @param A Gesamtflaeche des Inventurgebiets in ha zum jeweiligen
 #'  Inventurzeitpunkt (sollte eigentlich konstant sein).
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
-#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
-#' @param baeume.3 A data.frame (see \code{\link{baeume.3}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
-#' @param baeume.23 A data.frame (see \code{\link{baeume.23}}
+#' @inheritParams VB.A.bagrupp.akl.dkl.stratum.fun.2
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit Datum und
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{nTE}
@@ -1381,9 +1353,7 @@ VB.A.bagrupp.akl.dkl.stratum.fun.3 <-
 #'  enthaelt, anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.:
 #'  list(Wa=c(3,5), Begehbar=1).
 #' @param A Gesamtflaeche des Inventurgebietes in ha.
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
-#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit Datum und
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{HBF}
@@ -1803,9 +1773,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2 <- function(baeume.23, baeume.3,
 #'  anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: list(Wa=c(3,5),
 #'  Begehbar=1).
 #' @param A Gesamtflaeche des Inventurgebietes in ha.
-#' @param trakte.2 A data.frame (see \code{\link{trakte.2}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
-#' @param ecken.1 A data.frame (see \code{\link{ecken.1}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit Datum und
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{HBF}
@@ -2193,9 +2161,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 <- function(baeume.23, baeume.3,
 #'  anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: list(Wa=c(3,5),
 #'  Begehbar=1).
 #' @param A Gesamtflaeche des Inventurgebietes in ha.
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
-#' @param ecken.3 A data.frame (see \code{\link{ecken.3}}
-#' @param ecken.2 A data.frame (see \code{\link{ecken.2}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit Datum und
 #'  genutzter Baumversion), \strong{Stratum} (\code{auswahl}), \strong{HBF}
@@ -2603,7 +2569,7 @@ iVB.ew.bagrupp.akl.dkl.stratum.fun.2g <- function(baeume.23, baeume.3,
 #'  Begehbar=1).
 #' @param inv Inventur: BWI 1: 1; BWI 2, BWI 3: 2.
 #' @param A Gesamtflaeche des Inventurgebietes in ha.
-#' @param bacode A data.frame (see \code{\link{bacode}}
+#' @param bacode A data.frame containing tree species codes.
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Datum),
 #'  \strong{Stratum} (\code{auswahl}), \strong{HBF} (Holzbodenflaeche in ha),
@@ -3027,7 +2993,7 @@ verbiss.bagrupp.fun <- function(verj, ecken, trakte, ba.grupp, auswahl, inv, A) 
 #'  Begehbar=1).
 #' @param inv Inventur: BWI 1: 1; BWI 2, BWI 3: 2.
 #' @param A Gesamtflaeche des Inventurgebietes in ha.
-#' @param bacode A data.frame (see \code{\link{bacode}}
+#' @param bacode A data.frame containing tree species codes.
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Datum),
 #'  \strong{Stratum} (\code{auswahl}), \strong{HBF} (Holzbodenflaeche in ha),
@@ -3278,7 +3244,7 @@ verjg.bagrupp.fun <- function(verj, ecken, trakte, ba.grupp, auswahl, inv, A) {
 #'  anhand derer die Auswahl fuer das Stratum erfolgt. Bsp.: list(Wa=c(3,5),
 #'  Begehbar=1).
 #' @param A Gesamtflaeche des Inventurgebietes in ha.
-#' @param bacode A data.frame (see \code{\link{bacode}}
+#' @param bacode A data.frame containing tree species codes.
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Datum),
 #'  \strong{Stratum} (\code{auswahl}), \strong{HBF} (Holzbodenflaeche in ha),
@@ -4124,7 +4090,7 @@ biotop.baeume.fun <- function(wzp4.merkmale, baeume, ecken, trakte, A, auswahl) 
 #'  Bezeichner der Baumarten-Gruppen ("lab"). Z.B. list(bagr.lab = c("FiTa",
 #'  "DglKiLae","Bu","Ei","BLb","WLb"), ba.grupp =list(c(10:19,30:39,90:99),
 #'  c(20:29,40,50,51), c(100), c(110,111), c(112:199),c(200:299))).
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @export
 #' @return Liste mit folgenden Komponenten: \strong{Log} (Liste mit
 #'  Erstellungsdatum und genutzten Baeumen(?)), \strong{Stratum}
@@ -4566,7 +4532,7 @@ fba.stratum.fun <- function(fba, fba.tab, auswahl, ecken, trakte, A) {
 #' @param ecken Traktecken-Merkmale.
 #' @param trakte Trakt-Kennwerte (m, m_HB, m_bHB, m_Wa).
 #' @param A Flaeche des Inventurgebietes in ha.
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @export
 #' @return Liste mit der Flaeche und dem Standardfehler.
 fl.stratum.fun <- function(auswahl, ecken, trakte, A,
@@ -4595,7 +4561,7 @@ fl.stratum.fun <- function(auswahl, ecken, trakte, A,
 #' @param substratum Liste, welche die Eckenmermale enthaelt nachdem das
 #'  Substratum (Untermenge) definiert wird.
 #' @param ecken Traktecken-Merkmale, die zur Stratenbildung dienen.
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
+#' @inheritParams fvbn.kreis.fun.1 
 #' @export
 #' @return Liste mit relativen Anteil des Substratums am Stratum und dessen
 #'  Standardfehler.
@@ -5722,7 +5688,7 @@ verjg.tab.fun <- function(vj.tab) {
 #'  c(20:29,40,50,51), c(100), c(110,111), c(112:199), c(200:299))).
 #' @param A.klass Liste mit den Klassifizierungsparametern fuers Alter: z.B.
 #'  list(A.ob=160, A.b=20).
-#' @param trakte.3 A data.frame (see \code{\link{trakte.3}}
+#' @inheritParams fvbn.kreis.fun.1 
 #'
 #' @note da nur das WZP-4-Kollektiv beruecksichtigt wird, koennen keine
 #' Baumartenflaechen berechnet werden!

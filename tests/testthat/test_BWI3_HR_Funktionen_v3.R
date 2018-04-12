@@ -11,7 +11,7 @@ context("Examples of existing scripts")
 
 test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2a", {
   result <- FVBN.bagrupp.akl.dkl.stratum.fun.2a(
-    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), A, 2,
+    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
     list(bagr.lab = c("Alle Baumarten"), ba.grupp = list(c(10:299))),
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
     list(Wa = c(3, 5), Begehbar = 1)
@@ -62,7 +62,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2a", {
 
 test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2b", {
   result <- FVBN.bagrupp.akl.dkl.stratum.fun.2b(
-    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), A, 2,
+    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
     list(bagr.lab = c("Alle Baumarten"), ba.grupp = list(c(10:299))),
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
     list(Wa = c(3, 5), Begehbar = 1, raumkat_id = 10)
@@ -114,7 +114,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2b", {
 
 test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2c", {
   result <- FVBN.bagrupp.akl.dkl.stratum.fun.2c(
-    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), A, 2,
+    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
     list(bagr.lab = c("Alle Baumarten"), ba.grupp = list(c(10:299))),
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
     list(Wa = c(3, 5), Begehbar = 1, RBez = 2)
@@ -167,7 +167,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2c", {
 
 test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2d", {
   result <- FVBN.bagrupp.akl.dkl.stratum.fun.2d(
-    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), A, 2,
+    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
     list(bagr.lab = c("Alle Baumarten"), ba.grupp = list(c(10:299))),
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
     list(Wa = c(3, 5), Begehbar = 1, Kreis = 317)
@@ -222,7 +222,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2d", {
 test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
   FVBN <- FVBN.bagrupp.akl.dkl.stratum.fun.2e
   result <- FVBN(
-    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), A, 2,
+    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
     get_bwi_species_groups("bc"),
     list(A.ob = 200, A.b = 60),
     list(
@@ -381,7 +381,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
   # FIXME: Es geht um unbesetzte
   # Klassen.
   result <- FVBN(
-    get_data("baeume.3")[1:10, ], get_data("ecken.3"), get_data("trakte.3"), A, 2,
+    get_data("baeume.3")[1:10, ], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
     get_bwi_species_groups("bc"),
     A.klass,
     list(
@@ -493,7 +493,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
 
 
   result <- FVBN(
-    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), A, 2,
+    get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
     get_bwi_species_groups("bc"),
     list(A.ob = 100, A.b = 100),
     list(
@@ -1270,7 +1270,7 @@ test_that("VB.A.bagrupp.akl.dkl.stratum.fun.2", {
   result <- VB.A.bagrupp.akl.dkl.stratum.fun.2(
     list(bagr.lab = c("Alle Baumarten"), ba.grupp = list(c(10:299))),
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
-    list(Wa = c(3, 5), Begehbar = 1), T, A
+    list(Wa = c(3, 5), Begehbar = 1), T, get_design("a", 3)
   )
 
   result[["Log"]] <- NULL
@@ -1338,7 +1338,7 @@ test_that("VB.A.bagrupp.akl.dkl.stratum.fun.3", {
   result <- VB.A.bagrupp.akl.dkl.stratum.fun.3(
     list(bagr.lab = c("Alle Baumarten"), ba.grupp = list(c(10:299))),
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, d.B = 500, Ndh = F),
-    list(Wa = c(1:3), Begehbar = 1), F, A
+    list(Wa = c(1:3), Begehbar = 1), F, get_design("a", 3)
   )
 
   result[["Log"]] <- NULL
@@ -1415,7 +1415,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2", {
       ba.grupp = list(c(10), c(30), c(40), c(20), c(100), c(110, 111))
     ),
     list(A.ob = 160, A.b = 20), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
-    list(Wa = c(3, 5), Begehbar = 1), A
+    list(Wa = c(3, 5), Begehbar = 1), get_design("a", 3)
   )
 
   result[["Log"]] <- NULL
@@ -2375,7 +2375,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12", {
     get_data("baeume.12"), get_data("baeume.2"),
     list(bagr.lab = c("alle Baumarten"), bacode = list(c(10:299))),
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
-    list(Wa = c(1:3), Begehbar = c(1)), A.12
+    list(Wa = c(1:3), Begehbar = c(1)), get_design("a", 1)
   )
 
   result[["Log"]] <- NULL
@@ -2431,7 +2431,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12", {
 test_that("verbiss.bagr.fun", {
   result <- verbiss.bagr.fun(
     get_data("verj.3"), get_data("ecken.3"), get_data("trakte.3"),
-    list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"), 2, A
+    list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"), 2, get_design("a", 3)
   )
 
   result[["Log"]] <- NULL
@@ -2488,7 +2488,7 @@ test_that("verbiss.bagrupp.fun", {
         c(200:299)
       )
     ),
-    list(Wa = c(3, 5), Begehbar = 1), 2, A
+    list(Wa = c(3, 5), Begehbar = 1), 2, get_design("a", 3)
   )
 
   result[["Log"]] <- NULL
@@ -2536,7 +2536,7 @@ test_that("verbiss.bagrupp.fun", {
 test_that("verjg.bagr.fun", {
   result <- verjg.bagr.fun(
     get_data("verj.3"), get_data("ecken.3"), get_data("trakte.3"),
-    list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"), 2, A
+    list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"), 2, get_design("a", 3)
   )
 
   result[["Log"]] <- NULL
@@ -2583,7 +2583,7 @@ test_that("verjg.bagrupp.fun", {
         c(200:299)
       )
     ),
-    list(Wa = c(3, 5), Begehbar = 1), 2, A
+    list(Wa = c(3, 5), Begehbar = 1), 2, get_design("a", 3)
   )
 
   result[["Log"]] <- NULL
@@ -2630,7 +2630,7 @@ test_that("verjg.kl4.bagrupp.fun", {
 
   result <- verjg.kl4.bagrupp.fun(
     get_data("verj.kl4m.3"), get_data("ecken.3"), get_data("trakte.3"),
-    bagr.vj, list(Wa = c(3, 5), Begehbar = 1), A
+    bagr.vj, list(Wa = c(3, 5), Begehbar = 1), get_design("a", 3)
   )
 
   result[["Log"]] <- NULL
@@ -2695,7 +2695,7 @@ test_that("verjg.kl4.bagrupp.fun", {
 
 test_that("ntns.stratum.fun", {
   result <- ntns.stratum.fun(
-    get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), A, list(
+    get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), list(
       Wa = c(3, 5), Begehbar = 1,
       WLT = c(9410)
     ), 3, 3
@@ -2723,7 +2723,7 @@ test_that("ntns.stratum.fun", {
 })
 
 test_that("ntns.stratum.fun.2", {
-  result <- ntns.stratum.fun.2(get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), A,
+  result <- ntns.stratum.fun.2(get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
     list(Wa = c(3, 5), Begehbar = 1), 3, 3,
     schicht = 1
   )
@@ -2761,7 +2761,7 @@ test_that("ntns.stratum.fun.2", {
 test_that("fba.stratum.fun", {
   result <- fba.stratum.fun(
     "alle", get_data("fba.3"), list(Wa = c(3, 5), Begehbar = 1),
-    get_data("ecken.3"), get_data("trakte.3"), A
+    get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3)
   )
 
   reference <- structure(list(
@@ -2821,7 +2821,7 @@ test_that("fba.stratum.fun", {
 test_that("fl.stratum.fun", {
   result <- fl.stratum.fun(
     list(Wa = c(3, 4, 5), Kreis = 317), get_data("ecken.3"),
-    get_data("trakte.3"), A
+    get_data("trakte.3"), get_design("a", 3)
   )
 
   reference <- structure(list(
@@ -2910,7 +2910,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2g", {
       ba.grupp = list(c(10), c(30))
     ),
     list(A.ob = 160, A.b = 20), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
-    list(Wa = c(3, 5), Begehbar = 1), A
+    list(Wa = c(3, 5), Begehbar = 1), get_design("a", 3)
   )
 
   result[["Log"]] <- NULL
@@ -3437,7 +3437,7 @@ test_that("iVB.ew.bagrupp.akl.dkl.stratum.fun.2g", {
 
 test_that("biotop.baeume.fun", {
   result <- biotop.baeume.fun(
-    get_data("wzp4.merkmale.3"), get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), A,
+    get_data("wzp4.merkmale.3"), get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
     list(Wa = c(5), Begehbar = 1)
   )
 
@@ -3491,7 +3491,7 @@ test_that("biotop.baeume.fun", {
 test_that("stamm.merkmale.bagr.fun", {
   result <- stamm.merkmale.bagr.fun(
     get_data("wzp4.merkmale.3"), get_data("baeume.3"), get_data("ecken.3"),
-    get_data("trakte.3"), A, list(Wa = c(3, 5), Begehbar = 1), c(
+    get_data("trakte.3"), get_design("a", 3), list(Wa = c(3, 5), Begehbar = 1), c(
       "tot", "jschael",
       "aeschael", "ruecke", "pilz", "harz", "kaefer", "sstamm", "faulkon",
       "hoehle", "bizarr", "uralt", "horst", "mbiotop"
@@ -3660,7 +3660,7 @@ test_that("verjg.tab.fun", {
         c(110, 111), c(112:199), c(200:299)
       )
     ),
-    list(Wa = c(3, 5), Begehbar = 1), 2, A
+    list(Wa = c(3, 5), Begehbar = 1), 2, get_design("a", 3)
   )
 
   result <- verjg.tab.fun(vj.tab)

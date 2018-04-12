@@ -1,6 +1,6 @@
 Package: bundeswaldinventur
 Title: Analysing the Bundeswaldinventur in the State of Baden-Wuerttemberg
-Version: 0.8.0
+Version: 0.9.0
 Authors@R: c(person(given = c("Andreas", "Dominik"), family = "Cullmann",
             email = "dominik.cullmann@forst.bwl.de", role = c("aut","cre")),
         person(given = c("Gerald"), family = "Kändler",
@@ -23,7 +23,8 @@ Imports:
     xtable,
     ggplot2,
     checkmate,
-    scales,
+    scales
+Suggests:
     devtools,
     rprojroot,
     testthat,
@@ -48,12 +49,11 @@ Collate:
     'fvbn2e.R'
     'german_things.R'
     'get_data.R'
-    'variable_getters.R'
-    'global_variables.R'
     'labeling.R'
     'options.R'
     'regional.R'
     'statistics.R'
     'throw.R'
     'tree_species_shares.R'
+    'variable_getters.R'
     'zzz.R'

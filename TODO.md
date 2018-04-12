@@ -1,10 +1,9 @@
-* Get rid of global variables for testing!
+* get rid of RData history following https://blog.ostermiller.org/git-remove-from-history
 * Fix global bindings in log/check.Rout
 * clean, lint, spell!
-* have a dedicated data package.
-* Check which of the data in the RData files are needed. Especially the
-  statistics data.
-* Sample and anonymise bwi.RData and rewrite all testthat test according to new data.
+* consider pulling documentation from deleted files 
+  R/data\_documentation.R and
+  R/global\_variables.R
 * Write data input checks to make sure BWI4 input data will conform to the tables in BWI3.
 * use a set_options(use_global_variables) and move graphics\_[width|height] to
   getter functions reading that option.

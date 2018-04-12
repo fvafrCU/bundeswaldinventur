@@ -5,7 +5,7 @@
 #' @author Franziska Berg
 #' @section Version: 21.08.2015
 #' @section TODO: Fix Encoding problems
-#' @name A Header for
+#' @name get_design("a", 3) Header for
 NULL
 
 #' Test get_abbreviation_for_label

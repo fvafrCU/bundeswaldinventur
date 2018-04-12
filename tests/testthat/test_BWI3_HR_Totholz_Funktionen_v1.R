@@ -5,14 +5,14 @@
 #'
 #' @author Franziska Berg
 #' @section Version: 24.09.2015
-#' @name A Header for
+#' @name get_design("a", 3) Header for
 NULL
 
 context("BWI3_HR_Totholz_Funktionen_v1.R")
 
 test_that("Totholz.bagr.art.zg.stratum.fun", {
   result <- Totholz.bagr.art.zg.stratum.fun(
-    get_data("totholz.3"), get_data("ecken.3"), get_data("trakte.3"), 3, A,
+    get_data("totholz.3"), get_data("ecken.3"), get_data("trakte.3"), 3, get_design("a", 3),
     list(D.unt = 0, D.ob = 70, D.b = 10, Ndh = T), list(Wa = c(3, 5), Begehbar = 1)
   )
 
@@ -1051,7 +1051,7 @@ test_that("Totholz.bagr.art.zg.stratum.fun", {
 test_that("Totholz.Tart.stratum.fun", {
   result <- Totholz.Tart.stratum.fun(
     get_data("totholz.3"), get_data("ecken.3"), get_data("trakte.3"), 3, 3,
-    list(g1 = c(11, 12, 13), g2 = c(2, 3), g3 = c(4, 5)), A,
+    list(g1 = c(11, 12, 13), g2 = c(2, 3), g3 = c(4, 5)), get_design("a", 3),
     list(Wa = c(3, 5), Begehbar = 1)
   )
 
@@ -1091,7 +1091,7 @@ test_that("Totholz.Tart.stratum.fun", {
 test_that("Totholz.klass.stratum.fun", {
   result <- Totholz.klass.stratum.fun(
     get_data("totholz.3"), get_data("ecken.3"), get_data("trakte.3"), 3, 3,
-    list(attr = "tart", kat = list(c(11, 12, 13), c(2, 3), c(4, 5))), A,
+    list(attr = "tart", kat = list(c(11, 12, 13), c(2, 3), c(4, 5))), get_design("a", 3),
     list(Wa = c(3, 5), Begehbar = 1)
   )
 

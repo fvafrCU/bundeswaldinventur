@@ -4,7 +4,7 @@
 #'
 #' @author Franziska Berg
 #' @section Version: 20.10.2015
-#' @name A Header for
+#' @name get_design("a", 3) Header for
 NULL
 
 context("bits_and_pieces.R")

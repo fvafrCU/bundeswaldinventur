@@ -4,7 +4,7 @@
 #'
 #' @author Franziska Berg
 #' @section Version: 25.09.2015
-#' @name A Header for
+#' @name get_design("a", 3) Header for
 NULL
 
 context("variable_getters.R")

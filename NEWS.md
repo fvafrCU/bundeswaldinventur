@@ -1,3 +1,8 @@
+# bundeswaldinventur 0.9.0
+
+* Get rid of data and global variables.
+  Both can be found in hochrechnungen/functions/ and hochrechnungen/data.
+
 # bundeswaldinventur 0.8.0
 
 * Got rid of statistics data.

@@ -20,5 +20,10 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
+Writing VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd
+Writing VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd
+Writing verbiss.bagr.fun.Rd
+Writing verjg.bagr.fun.Rd
+Writing verjg.kl4.bagr.fun.Rd
 > 
 > 
