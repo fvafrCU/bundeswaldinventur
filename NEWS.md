@@ -1,3 +1,7 @@
+# bundeswaldinventur 0.10.1
+
+* Added man files to git.
+
 # bundeswaldinventur 0.10.0
 
 * Purged data files from git's history.

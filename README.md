@@ -17,9 +17,16 @@ help("bundeswaldinventur-package", package = "bundeswaldinventur")
 ```
 
 ```
-#> Warning in file(con, "r"): cannot open file 'man/bundeswaldinventur-
-#> package.Rd': No such file or directory
-#> Error in file(con, "r"): cannot open the connection
-#> Error in cat(captured, sep = "\n"): object 'captured' not found
+#> What it Does (One Line, Title Case)
+#> 
+#> Description:
+#> 
+#>      A description is a paragraph consisting of one or more sentences.
+#> 
+#> Details:
+#> 
+#>      You will find the details in
+#>      'vignette("An_Introduction_to_bundeswaldinventur", package =
+#>      "bundeswaldinventur")'.
 ```
 
