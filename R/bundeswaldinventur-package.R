@@ -1,6 +1,7 @@
-#' What it Does (One Line, Title Case)
+#'  Analysing the Bundeswaldinventur in the State of Baden-Wuerttemberg
 #'
-#' A description is a paragraph consisting of one or more sentences.
+#' A collection of design-based estimators and reporting functions for
+#' substrata of the area of interest.
 #'
 #' You will find the details in\cr
 #' \code{vignette("An_Introduction_to_bundeswaldinventur", package =

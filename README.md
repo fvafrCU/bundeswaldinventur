@@ -17,11 +17,12 @@ help("bundeswaldinventur-package", package = "bundeswaldinventur")
 ```
 
 ```
-#> What it Does (One Line, Title Case)
+#> Analysing the Bundeswaldinventur in the State of Baden-Wuerttemberg
 #> 
 #> Description:
 #> 
-#>      A description is a paragraph consisting of one or more sentences.
+#>      A collection of design-based estimators and reporting functions
+#>      for substrata of the area of interest.
 #> 
 #> Details:
 #> 

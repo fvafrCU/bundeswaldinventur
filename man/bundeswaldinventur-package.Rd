@@ -3,9 +3,10 @@
 \docType{package}
 \name{bundeswaldinventur-package}
 \alias{bundeswaldinventur-package}
-\title{What it Does (One Line, Title Case)}
+\title{Analysing the Bundeswaldinventur in the State of Baden-Wuerttemberg}
 \description{
-A description is a paragraph consisting of one or more sentences.
+A collection of design-based estimators and reporting functions for
+substrata of the area of interest.
 }
 \details{
 You will find the details in\cr

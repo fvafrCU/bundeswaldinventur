@@ -7,7 +7,7 @@ Authors@R: c(person(given = c("Andreas", "Dominik"), family = "Cullmann",
             email = "gerald.kaendler@forst.bwl.de", role = c("aut")),
         person(given = c("Franziska"), family = "Berg",
             email = "franziska.berg@forst.bwl.de", role = c("ctb")))
-Description: Collection of design-based estimators and reporting functions for
+Description: A collection of design-based estimators and reporting functions for
     substrata of the area of interest.
 Depends:
     R (>= 3.3.1)
