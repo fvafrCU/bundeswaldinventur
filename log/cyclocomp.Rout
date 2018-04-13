@@ -1,0 +1,27 @@
+* installing *source* package ‘bundeswaldinventur’ ...
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (bundeswaldinventur)
+<error in packager::check_cyclomatic_complexity(): Exceeding maximum cyclomatic complexity of 10 for FVBN.bagrupp.akl.dkl.stratum.fun.2e by 26.
+Exceeding maximum cyclomatic complexity of 10 for VB.A.bagrupp.akl.dkl.stratum.fun.3 by 25.
+Exceeding maximum cyclomatic complexity of 10 for FVBN.bagrupp.akl.dkl.stratum.fun.2a by 21.
+Exceeding maximum cyclomatic complexity of 10 for Totholz.bagr.art.zg.stratum.fun by 21.
+Exceeding maximum cyclomatic complexity of 10 for VB.A.bagrupp.akl.dkl.stratum.fun.2 by 21.
+Exceeding maximum cyclomatic complexity of 10 for FVBN.bagrupp.akl.dkl.stratum.fun.2d by 19.
+Exceeding maximum cyclomatic complexity of 10 for FVBN.bagrupp.akl.dkl.stratum.fun.2c by 18.
+Exceeding maximum cyclomatic complexity of 10 for FVBN.bagrupp.akl.dkl.stratum.fun.2b by 17.
+Exceeding maximum cyclomatic complexity of 10 for iVB.ew.bagrupp.akl.dkl.stratum.fun.2 by 15.
+Exceeding maximum cyclomatic complexity of 10 for iVB.ew.bagrupp.akl.dkl.stratum.fun.2g by 15.
+Exceeding maximum cyclomatic complexity of 10 for iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12 by 14.
+Exceeding maximum cyclomatic complexity of 10 for Totholz.klass.stratum.fun by 9.
+Exceeding maximum cyclomatic complexity of 10 for Totholz.Tart.stratum.fun by 3.
+Exceeding maximum cyclomatic complexity of 10 for stamm.merkmale.bagr.akl.fun by 2.
+Exceeding maximum cyclomatic complexity of 10 for fvbn.kreis.fun.1 by 1.
+Exceeding maximum cyclomatic complexity of 10 for fvbn.stratum.fun.1 by 1.
+Exceeding maximum cyclomatic complexity of 10 for fvbn.stratum.fun.2 by 1.>

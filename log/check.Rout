@@ -1,0 +1,289 @@
+* using log directory ‘/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck’
+* using R version 3.4.3 (2017-11-30)
+* using platform: x86_64-pc-linux-gnu (64-bit)
+* using session charset: UTF-8
+* using options ‘--run-donttest --as-cran’
+* checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
+* this is package ‘bundeswaldinventur’ version ‘0.10.1’
+* package encoding: UTF-8
+* checking CRAN incoming feasibility ... NOTE
+Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
+
+New submission
+
+Non-FOSS package license (file LICENSE)
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘bundeswaldinventur’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... WARNING
+Conversion of ‘README.md’ failed:
+pandoc: Failed to retrieve https://www.r-pkg.org/badges/version/bundeswaldinventur
+TlsException (HandshakeFailed (Error_Protocol ("expecting server hello, got alert : [(AlertLevel_Fatal,HandshakeFailure)]",True,HandshakeFailure)))
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking use of S3 registration ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+plot_deadwood: no visible binding for global variable 'graphics_height'
+plot_deadwood: no visible binding for global variable
+  'graphics_directory'
+plot_deadwood: no visible binding for global variable
+  'regional_file_name'
+plot_deadwood: no visible binding for global variable 'krs.grupp'
+plot_deadwood: no visible binding for global variable 'i'
+plot_deadwood: no visible binding for global variable 'stratii'
+plot_deadwood: no visible binding for global variable 'stratum_index'
+plot_deadwood: no visible binding for global variable 'prediction'
+plot_deadwood: no visible binding for global variable 'group'
+plot_deadwood: no visible binding for global variable 'bwi'
+plot_deadwood: no visible binding for global variable 'standard_error'
+plot_deadwood: no visible binding for global variable 'plots_directory'
+plot_deadwood: no visible binding for global variable
+  'dot_district_tex'
+plot_group_area_by_age: no visible binding for global variable
+  'graphics_height'
+plot_group_area_by_age: no visible binding for global variable
+  'graphics_directory'
+plot_group_area_by_age: no visible binding for global variable
+  'regional_file_name'
+plot_group_area_by_age: no visible binding for global variable
+  'krs.grupp'
+plot_group_area_by_age: no visible binding for global variable 'i'
+plot_group_area_by_age: no visible binding for global variable
+  'stratii'
+plot_group_area_by_age: no visible binding for global variable
+  'stratum_index'
+plot_group_area_by_age: no visible binding for global variable
+  'prediction'
+plot_group_area_by_age: no visible binding for global variable 'group'
+plot_group_area_by_age: no visible binding for global variable 'bwi'
+plot_group_area_by_age: no visible binding for global variable
+  'standard_error'
+plot_group_area_by_age: no visible binding for global variable
+  'plots_directory'
+plot_group_area_by_age: no visible binding for global variable
+  'dot_district_tex'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'graphics_height'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'graphics_directory'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'regional_file_name'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'krs.grupp'
+plot_group_stocks_by_girth: no visible binding for global variable 'i'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'stratii'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'stratum_index'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'prediction'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'group'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'bwi'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'standard_error'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'plots_directory'
+plot_group_stocks_by_girth: no visible binding for global variable
+  'dot_district_tex'
+plot_groups_areas: no visible binding for global variable
+  'graphics_height'
+plot_groups_areas: no visible binding for global variable
+  'graphics_directory'
+plot_groups_areas: no visible binding for global variable
+  'regional_file_name'
+plot_groups_areas: no visible binding for global variable 'krs.grupp'
+plot_groups_areas: no visible binding for global variable 'i'
+plot_groups_areas: no visible binding for global variable
+  'district_groups'
+plot_groups_areas: no visible binding for global variable 'stratii'
+plot_groups_areas: no visible binding for global variable
+  'stratum_index'
+plot_groups_areas: no visible binding for global variable 'prediction'
+plot_groups_areas: no visible binding for global variable 'species'
+plot_groups_areas: no visible binding for global variable 'bwi'
+plot_groups_areas: no visible binding for global variable
+  'standard_error'
+plot_groups_areas: no visible binding for global variable
+  'plots_directory'
+plot_groups_areas: no visible binding for global variable
+  'dot_district_tex'
+plot_groups_stocks: no visible binding for global variable
+  'graphics_height'
+plot_groups_stocks: no visible binding for global variable
+  'graphics_directory'
+plot_groups_stocks: no visible binding for global variable
+  'regional_file_name'
+plot_groups_stocks: no visible binding for global variable 'krs.grupp'
+plot_groups_stocks: no visible binding for global variable 'i'
+plot_groups_stocks: no visible binding for global variable
+  'district_groups'
+plot_groups_stocks: no visible binding for global variable 'stratii'
+plot_groups_stocks: no visible binding for global variable
+  'stratum_index'
+plot_groups_stocks: no visible binding for global variable 'species'
+plot_groups_stocks: no visible binding for global variable 'prediction'
+plot_groups_stocks: no visible binding for global variable 'bwi'
+plot_groups_stocks: no visible binding for global variable
+  'standard_error'
+plot_groups_stocks: no visible binding for global variable
+  'plots_directory'
+plot_groups_stocks: no visible binding for global variable
+  'dot_district_tex'
+plot_growth_loss: no visible binding for global variable
+  'graphics_height'
+plot_growth_loss: no visible binding for global variable
+  'graphics_directory'
+plot_growth_loss: no visible binding for global variable
+  'regional_file_name'
+plot_growth_loss: no visible binding for global variable 'krs.grupp'
+plot_growth_loss: no visible binding for global variable 'i'
+plot_growth_loss: no visible binding for global variable
+  'district_groups'
+plot_growth_loss: no visible binding for global variable 'stratii'
+plot_growth_loss: no visible binding for global variable
+  'stratum_index'
+plot_growth_loss: no visible binding for global variable 'prediction'
+plot_growth_loss: no visible binding for global variable 'x'
+plot_growth_loss: no visible binding for global variable 'foo'
+plot_growth_loss: no visible binding for global variable
+  'standard_error'
+plot_growth_loss: no visible binding for global variable
+  'plots_directory'
+plot_growth_loss: no visible binding for global variable
+  'dot_district_tex'
+plot_loss: no visible binding for global variable 'graphics_height'
+plot_loss: no visible binding for global variable 'graphics_directory'
+plot_loss: no visible binding for global variable 'regional_file_name'
+plot_loss: no visible binding for global variable 'krs.grupp'
+plot_loss: no visible binding for global variable 'i'
+plot_loss: no visible binding for global variable 'prediction'
+plot_loss: no visible binding for global variable 'x'
+plot_loss: no visible binding for global variable 'period'
+plot_loss: no visible binding for global variable 'bwi'
+plot_loss: no visible binding for global variable 'standard_error'
+plot_loss: no visible binding for global variable 'stratii'
+plot_loss: no visible binding for global variable 'stratum_index'
+plot_loss: no visible binding for global variable 'plots_directory'
+plot_loss: no visible binding for global variable 'dot_district_tex'
+plot_ntns: no visible binding for global variable 'graphics_height'
+plot_ntns: no visible binding for global variable 'graphics_directory'
+plot_ntns: no visible binding for global variable 'regional_file_name'
+plot_ntns: no visible binding for global variable 'krs.grupp'
+plot_ntns: no visible binding for global variable 'i'
+plot_ntns: no visible binding for global variable 'prediction'
+plot_ntns: no visible binding for global variable 'NTNS'
+plot_ntns: no visible binding for global variable 'bwi'
+plot_ntns: no visible binding for global variable 'standard_error'
+plot_ntns: no visible binding for global variable 'stratii'
+plot_ntns: no visible binding for global variable 'stratum_index'
+plot_ntns: no visible binding for global variable 'plots_directory'
+plot_ntns: no visible binding for global variable 'dot_district_tex'
+plot_ownership: no visible binding for global variable
+  'graphics_height'
+plot_ownership: no visible binding for global variable
+  'graphics_directory'
+plot_ownership: no visible binding for global variable
+  'regional_file_name'
+plot_ownership: no visible binding for global variable 'krs.grupp'
+plot_ownership: no visible binding for global variable 'i'
+plot_ownership: no visible binding for global variable 'area'
+plot_ownership: no visible binding for global variable 'ownership'
+plot_ownership: no visible binding for global variable 'radius'
+plot_ownership: no visible binding for global variable 'position'
+plot_ownership: no visible binding for global variable
+  'ownership_realive_area'
+plot_ownership: no visible binding for global variable
+  'plots_directory'
+plot_silviculturally_relevant: no visible binding for global variable
+  'graphics_height'
+plot_silviculturally_relevant: no visible binding for global variable
+  'graphics_directory'
+plot_silviculturally_relevant: no visible binding for global variable
+  'regional_file_name'
+plot_silviculturally_relevant: no visible binding for global variable
+  'krs.grupp'
+plot_silviculturally_relevant: no visible binding for global variable
+  'i'
+plot_silviculturally_relevant: no visible binding for global variable
+  'district_groups'
+plot_silviculturally_relevant: no visible binding for global variable
+  'stratii'
+plot_silviculturally_relevant: no visible binding for global variable
+  'stratum_index'
+plot_silviculturally_relevant: no visible binding for global variable
+  'prediction'
+plot_silviculturally_relevant: no visible binding for global variable
+  'species'
+plot_silviculturally_relevant: no visible binding for global variable
+  'bwi'
+plot_silviculturally_relevant: no visible binding for global variable
+  'standard_error'
+plot_silviculturally_relevant: no visible binding for global variable
+  'plots_directory'
+plot_silviculturally_relevant: no visible binding for global variable
+  'dot_district_tex'
+regeneration: no visible binding for global variable 'graphics_height'
+regeneration: no visible binding for global variable
+  'graphics_directory'
+regeneration: no visible binding for global variable
+  'regional_file_name'
+regeneration: no visible binding for global variable 'krs.grupp'
+regeneration: no visible binding for global variable 'i'
+regeneration: no visible binding for global variable 'stratii'
+regeneration: no visible binding for global variable 'stratum_index'
+regeneration: no visible binding for global variable 'dot_district_tex'
+table_tex_front_matter: no visible binding for global variable
+  'generator_notice'
+tex_table: no visible binding for global variable 'graphics_directory'
+tex_table: no visible binding for global variable 'tables_directory'
+to_tex: no visible binding for global variable 'dot_district_tex'
+Undefined global functions or variables:
+  NTNS area bwi district_groups dot_district_tex foo generator_notice
+  graphics_directory graphics_height group i krs.grupp ownership
+  ownership_realive_area period plots_directory position prediction
+  radius regional_file_name species standard_error stratii
+  stratum_index tables_directory x
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... WARNING
+Files in the 'vignettes' directory but no files in 'inst/doc':
+  ‘An_Introduction_to_bundeswaldinventur.Rmd’
+Package has no Sweave vignette sources and no VignetteBuilder field.
+* checking examples ... OK
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+  Running ‘runit.R’
+  Running ‘testthat.R’ [131s/132s]
+* checking PDF version of manual ... OK
+* DONE
+Status: 2 WARNINGs, 2 NOTEs

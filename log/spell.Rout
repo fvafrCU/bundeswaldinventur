@@ -38,7 +38,7 @@ Als                                biotop.baeume.fun.Rd:43
 Alterklassen                       VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd:61, VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd:59
 Altersklasse                       iVB.bilanz.bagr.akl.dkl.fun.2g.Rd:26, iVB.bilanz.bagr.akl.dkl.fun.Rd:26
 Altersklassen                      akl.lab.fun.Rd:5,12,15,18,19,26, FVBN.bagrupp.akl.dkl.stratum.fun.2e.Rd:84, iVB.ew.bagrupp.akl.dkl.stratum.fun.2g.Rd:48,54, iVB.ew.bagrupp.akl.dkl.stratum.fun.2.Rd:48,54, iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12.Rd:50,56, VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd:57,67, VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd:55,65
-Analysing                          title:1
+Analysing                          bundeswaldinventur-package.Rd:6, title:1
 Angabe                             fba.stratum.fun.Rd:50, ntns.stratum.fun.2.Rd:24,30,35, ntns.stratum.fun.Rd:24, Totholz.bagr.art.zg.stratum.fun.Rd:20, Totholz.klass.stratum.fun.Rd:20,23, Totholz.Tart.stratum.fun.Rd:20,23
 Angaben                            ba.klass.lab.tab.fun.Rd:10, fba.stratum.fun.Rd:50, Totholz.Tart.stratum.fun.Rd:44
 angegeben                          fba.stratum.fun.Rd:53, stamm.merkmale.bagr.akl.fun.Rd:38, stamm.merkmale.bagr.fun.Rd:31
@@ -958,7 +958,7 @@ wobei                              iVB.ew.bagrupp.akl.dkl.stratum.fun.2g.Rd:65,6
 Wobei                              fba.stratum.fun.Rd:28, mbaf.bagr.alt.bhd.pm.fun.Rd:28
 worden                             biotop.baeume.fun.Rd:43, iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12.Rd:73
 Wuerde                             iVB.bilanz.bagr.akl.dkl.fun.Rd:36
-Wuerttemberg                       title:1
+Wuerttemberg                       bundeswaldinventur-package.Rd:6, title:1
 wurde                              ba.klass.fun.Rd:18,20, ntns.stratum.fun.2.Rd:37, Totholz.Tart.stratum.fun.Rd:44, VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd:87
 Wurzelanlauf                       Totholz.bagr.art.zg.stratum.fun.Rd:68, Totholz.klass.stratum.fun.Rd:92, Totholz.Tart.stratum.fun.Rd:84
 WZP                                biotop.baeume.fun.Rd:43, stamm.merkmale.bagr.akl.fun.Rd:59, stamm.merkmale.bagr.fun.Rd:69
