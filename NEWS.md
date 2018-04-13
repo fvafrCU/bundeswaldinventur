@@ -1,3 +1,7 @@
+# bundeswaldinventur 0.10.0
+
+* Purged data files from git's history.
+
 # bundeswaldinventur 0.9.0
 
 * Get rid of data and global variables.
