@@ -22,7 +22,7 @@ data into function arguments. Which I need because Gerald used global
 data.frames in his functions.
 }
 \examples{
-if (require("bwibw", quietly = TRUE)) get_data("bacode")
+if ("bwibw" \%in\% rownames(installed.packages())) get_data("bacode")
 }
 \author{
 Dominik Cullmann, <dominik.cullmann@forst.bwl.de>

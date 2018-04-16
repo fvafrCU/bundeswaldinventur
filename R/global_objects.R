@@ -4,8 +4,8 @@
 #' @return Invisibly a character vector of names of the objects loaded.
 #' @export
 get_package_data <- function(package) {
-    value <- data(list = data(package = package)[["results"]][TRUE, "Item"],
-                  package = package, envir = .GlobalEnv)
+    value <- utils::data(list = data(package = package)[["results"]][TRUE, "Item"],
+                         package = package, envir = .GlobalEnv)
     return(invisible(value))
 }
 
