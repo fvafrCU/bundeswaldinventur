@@ -8,6 +8,7 @@ configure
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^.*\.sh$
+^.*\.cl$
 ^.*\.Rout$
 ^tmp.*$
 ^tests.r$

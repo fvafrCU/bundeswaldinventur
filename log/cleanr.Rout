@@ -1,22 +1,22 @@
-<cleanr in cleanr::check_directory("R/", check_return = FALSE): R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/adapt_script.R  adapt_script  found 10 arguments, max_num_arguments was 5
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 253 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 254 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 259 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 264 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 269 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 274 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 279 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 284 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 498 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 499 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 504 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 509 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 514 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 519 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 524 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 529 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: 565 lines in file.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R  flaechen.kreis.fun.1  found 10 arguments, max_num_arguments was 5
+<cleanr in cleanr::check_directory("R/", check_return = FALSE): R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/adapt_script.R  adapt_script  found 10 arguments, max_num_arguments was 5
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 253 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 254 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 259 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 264 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 269 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 274 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 279 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 284 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 498 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 499 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 504 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 509 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 514 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 519 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 524 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: line 529 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R: 565 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R  flaechen.kreis.fun.1  found 10 arguments, max_num_arguments was 5
 flaechen.kreis.fun.1  line 226: found width 87 max_line_width was 80
 line 227: found width 88 max_line_width was 80
 line 232: found width 84 max_line_width was 80
@@ -27,7 +27,7 @@ line 252: found width 88 max_line_width was 80
 line 257: found width 88 max_line_width was 80
 flaechen.kreis.fun.1  found 292 lines, max_lines was 65
 flaechen.kreis.fun.1  found 270 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R  flaechen.stratum.fun.1  found 9 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Landkreis.R  flaechen.stratum.fun.1  found 9 arguments, max_num_arguments was 5
 flaechen.stratum.fun.1  line 153: found width 87 max_line_width was 80
 line 154: found width 88 max_line_width was 80
 line 159: found width 84 max_line_width was 80
@@ -38,350 +38,487 @@ line 179: found width 88 max_line_width was 80
 line 184: found width 88 max_line_width was 80
 flaechen.stratum.fun.1  found 219 lines, max_lines was 65
 flaechen.stratum.fun.1  found 197 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 21 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 38 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 179 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 279 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 323 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 431 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 507 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 521 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 522 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 530 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 540 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 543 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 555 counts 137 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 575 counts 123 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 580 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 585 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 605 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 625 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 630 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 631 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 635 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 636 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 638 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 639 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 652 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 656 counts 98 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 661 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 675 counts 160 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 689 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 692 counts 156 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 696 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 697 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 730 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 742 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 774 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 787 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 791 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 810 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 813 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 817 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 937 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 951 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 952 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 960 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 970 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 973 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 985 counts 137 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1005 counts 123 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1010 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1015 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1035 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1056 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1061 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1062 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1066 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1067 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1068 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1069 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1084 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1088 counts 98 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1093 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1121 counts 97 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1136 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1163 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1164 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1190 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1196 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1208 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1238 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1239 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1252 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1253 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1254 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1259 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1263 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1283 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1286 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1294 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1368 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1369 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1371 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1394 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1409 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1454 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1476 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1478 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1497 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1530 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1614 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1619 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1620 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1639 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1640 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1644 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1648 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1649 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1661 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1668 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1669 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1707 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1710 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1788 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1789 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1790 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1791 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1813 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1824 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1869 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1891 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1893 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1912 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1934 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2006 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2011 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2012 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2031 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2032 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2036 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2040 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2041 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2053 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2060 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2061 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2099 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2102 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2145 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2176 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2177 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2179 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2202 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2217 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2262 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2284 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2286 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2305 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2337 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2355 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2422 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2428 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2429 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2448 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2449 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2453 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2457 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2458 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2472 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2479 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2480 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2522 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2525 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2550 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2587 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2621 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2624 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2627 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2652 counts 96 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2654 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2657 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2660 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2663 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2691 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2694 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2697 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2716 counts 95 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2794 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2800 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2841 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2844 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2847 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2872 counts 96 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2874 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2877 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2880 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2883 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2911 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2914 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2917 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2936 counts 95 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3012 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3082 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3084 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3138 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3212 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3214 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3265 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3302 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3325 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3332 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3336 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3343 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3397 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3402 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3409 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3447 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3481 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3498 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3506 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3519 counts 106 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3548 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3569 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3630 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3663 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3684 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3705 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3711 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3756 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3769 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3828 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3836 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3842 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3852 counts 139 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3873 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3880 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3908 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3912 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3920 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4029 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4032 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4037 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4102 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4105 counts 105 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4119 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4122 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4128 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4131 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4148 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4152 counts 98 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4166 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4173 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4217 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4223 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4229 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4237 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4247 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4268 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4277 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4340 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4343 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4348 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4356 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4374 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4401 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4413 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4430 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4441 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4448 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4455 counts 103 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4463 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4483 counts 95 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4547 counts 114 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4569 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4580 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4585 counts 116 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4627 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4669 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4683 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4704 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4724 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4729 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4751 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4764 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4850 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4876 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4917 counts 98 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4950 counts 97 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4966 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4974 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5002 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5010 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5022 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5026 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5067 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5074 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5075 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5094 counts 96 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5100 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5118 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5120 counts 101 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5122 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5133 counts 98 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5153 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5190 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5222 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5241 counts 98 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5265 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5277 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5285 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5294 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5299 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5305 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5310 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5314 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5323 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5338 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5352 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5360 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5372 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5376 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5417 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5435 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5442 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5443 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5457 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5462 counts 96 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5468 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5486 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5488 counts 101 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5490 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5504 counts 98 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5560 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5561 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5589 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5595 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5624 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5639 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5659 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5665 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5666 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5668 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5710 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5713 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5719 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5742 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5746 counts 98 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5760 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5767 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5831 counts 100 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5839 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5840 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5847 counts 110 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5856 counts 110 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5865 counts 110 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5873 counts 108 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5879 counts 108 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5887 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5896 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5959 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5962 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5967 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: 5972 lines in file.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  akl.lab.fun  line 4: found width 89 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  ba.klass.lab.tab.fun  line 4: found width 85 max_line_width was 80
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 1 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 82 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 94 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 105 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 116 counts 119 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 146 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 147 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 148 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 152 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 166 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 167 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 174 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 179 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 180 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 187 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 200 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 213 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 214 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 215 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 219 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 220 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 221 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 222 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 224 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 245 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 299 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 340 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 352 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 363 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 379 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 381 counts 136 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 385 counts 103 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 404 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 405 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 406 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 410 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 429 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 441 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 452 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 457 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 460 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 479 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 536 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 557 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 587 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 599 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 610 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 626 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 628 counts 136 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 632 counts 119 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 640 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 646 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 655 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 673 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 674 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 675 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 679 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 692 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 703 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 715 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 727 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 732 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 735 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 762 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 780 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 903 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: 917 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R  Totholz.bagr.art.zg.stratum.fun  found 7 arguments, max_num_arguments was 5
+Totholz.bagr.art.zg.stratum.fun  found nesting depth 5, max_nesting_depth was 3
+Totholz.bagr.art.zg.stratum.fun  line 19: found width 84 max_line_width was 80
+line 31: found width 89 max_line_width was 80
+line 42: found width 86 max_line_width was 80
+line 53: found width 119 max_line_width was 80
+line 83: found width 102 max_line_width was 80
+line 84: found width 86 max_line_width was 80
+line 85: found width 82 max_line_width was 80
+line 89: found width 82 max_line_width was 80
+line 103: found width 89 max_line_width was 80
+line 104: found width 91 max_line_width was 80
+line 111: found width 88 max_line_width was 80
+line 116: found width 85 max_line_width was 80
+line 117: found width 82 max_line_width was 80
+line 124: found width 87 max_line_width was 80
+line 137: found width 87 max_line_width was 80
+line 150: found width 84 max_line_width was 80
+line 151: found width 100 max_line_width was 80
+line 152: found width 82 max_line_width was 80
+line 156: found width 89 max_line_width was 80
+line 157: found width 86 max_line_width was 80
+line 158: found width 95 max_line_width was 80
+line 159: found width 83 max_line_width was 80
+line 161: found width 82 max_line_width was 80
+line 182: found width 81 max_line_width was 80
+Totholz.bagr.art.zg.stratum.fun  found 188 lines, max_lines was 65
+Totholz.bagr.art.zg.stratum.fun  found 139 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R  Totholz.klass.stratum.fun  found 9 arguments, max_num_arguments was 5
+Totholz.klass.stratum.fun  line 30: found width 84 max_line_width was 80
+line 42: found width 89 max_line_width was 80
+line 53: found width 86 max_line_width was 80
+line 69: found width 83 max_line_width was 80
+line 71: found width 136 max_line_width was 80
+line 75: found width 119 max_line_width was 80
+line 83: found width 86 max_line_width was 80
+line 89: found width 81 max_line_width was 80
+line 98: found width 86 max_line_width was 80
+line 116: found width 102 max_line_width was 80
+line 117: found width 86 max_line_width was 80
+line 118: found width 82 max_line_width was 80
+line 122: found width 82 max_line_width was 80
+line 135: found width 85 max_line_width was 80
+line 146: found width 90 max_line_width was 80
+line 158: found width 81 max_line_width was 80
+line 170: found width 94 max_line_width was 80
+line 175: found width 83 max_line_width was 80
+line 178: found width 100 max_line_width was 80
+line 205: found width 81 max_line_width was 80
+Totholz.klass.stratum.fun  found 211 lines, max_lines was 65
+Totholz.klass.stratum.fun  found 157 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R  Totholz.Tart.stratum.fun  found 8 arguments, max_num_arguments was 5
+Totholz.Tart.stratum.fun  line 20: found width 84 max_line_width was 80
+line 32: found width 89 max_line_width was 80
+line 43: found width 86 max_line_width was 80
+line 59: found width 83 max_line_width was 80
+line 61: found width 136 max_line_width was 80
+line 65: found width 103 max_line_width was 80
+line 84: found width 102 max_line_width was 80
+line 85: found width 86 max_line_width was 80
+line 86: found width 82 max_line_width was 80
+line 90: found width 82 max_line_width was 80
+line 109: found width 87 max_line_width was 80
+line 121: found width 81 max_line_width was 80
+line 132: found width 94 max_line_width was 80
+line 137: found width 83 max_line_width was 80
+line 140: found width 100 max_line_width was 80
+line 159: found width 81 max_line_width was 80
+Totholz.Tart.stratum.fun  found 164 lines, max_lines was 65
+Totholz.Tart.stratum.fun  found 123 lines of code, max_lines_of_code was 50
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 21 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 38 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 179 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 279 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 323 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 431 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 507 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 521 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 522 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 530 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 540 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 543 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 555 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 575 counts 123 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 580 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 585 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 605 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 625 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 630 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 631 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 635 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 636 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 638 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 639 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 652 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 656 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 661 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 675 counts 160 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 689 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 692 counts 156 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 696 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 697 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 730 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 742 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 774 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 787 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 791 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 810 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 813 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 817 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 937 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 951 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 952 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 960 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 970 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 973 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 985 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1005 counts 123 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1010 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1015 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1035 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1056 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1061 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1062 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1066 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1067 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1068 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1069 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1084 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1088 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1093 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1121 counts 97 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1136 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1163 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1164 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1190 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1196 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1208 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1238 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1239 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1252 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1253 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1254 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1259 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1263 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1283 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1286 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1294 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1368 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1369 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1371 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1394 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1409 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1454 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1476 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1478 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1497 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1530 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1614 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1619 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1620 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1639 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1640 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1644 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1648 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1649 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1661 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1668 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1669 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1707 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1710 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1788 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1789 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1790 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1791 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1813 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1824 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1869 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1891 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1893 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1912 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 1934 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2006 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2011 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2012 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2031 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2032 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2036 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2040 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2041 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2053 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2060 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2061 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2099 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2102 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2145 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2176 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2177 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2179 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2202 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2217 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2262 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2284 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2286 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2305 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2337 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2355 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2422 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2428 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2429 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2448 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2449 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2453 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2457 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2458 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2472 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2479 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2480 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2522 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2525 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2550 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2587 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2621 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2624 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2627 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2652 counts 96 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2654 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2657 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2660 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2663 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2691 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2694 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2697 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2716 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2794 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2800 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2841 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2844 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2847 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2872 counts 96 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2874 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2877 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2880 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2883 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2911 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2914 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2917 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 2936 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3012 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3082 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3084 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3138 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3212 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3214 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3265 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3302 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3325 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3332 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3336 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3343 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3397 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3402 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3409 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3447 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3481 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3498 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3506 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3519 counts 106 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3548 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3569 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3630 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3663 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3684 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3705 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3711 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3756 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3769 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3828 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3836 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3842 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3852 counts 139 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3873 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3880 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3908 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3912 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 3920 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4029 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4032 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4037 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4102 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4105 counts 105 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4119 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4122 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4128 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4131 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4148 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4152 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4166 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4173 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4217 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4223 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4229 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4237 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4247 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4268 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4277 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4340 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4343 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4348 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4356 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4374 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4401 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4413 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4430 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4441 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4448 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4455 counts 103 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4463 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4483 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4547 counts 114 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4569 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4580 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4585 counts 116 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4627 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4669 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4683 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4704 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4724 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4729 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4751 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4764 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4850 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4876 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4917 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4950 counts 97 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4966 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 4974 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5002 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5010 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5022 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5026 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5067 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5074 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5075 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5094 counts 96 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5100 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5118 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5120 counts 101 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5122 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5133 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5153 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5190 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5222 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5241 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5265 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5277 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5285 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5294 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5299 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5305 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5310 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5314 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5323 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5338 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5352 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5360 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5372 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5376 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5417 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5435 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5442 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5443 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5457 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5462 counts 96 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5468 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5486 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5488 counts 101 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5490 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5504 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5560 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5561 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5589 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5595 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5624 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5639 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5659 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5665 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5666 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5668 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5710 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5713 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5719 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5742 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5746 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5760 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5767 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5831 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5839 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5840 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5847 counts 110 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5856 counts 110 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5865 counts 110 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5873 counts 108 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5879 counts 108 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5887 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5896 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5959 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5962 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 5967 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: 5972 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  akl.lab.fun  line 4: found width 89 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  ba.klass.lab.tab.fun  line 4: found width 85 max_line_width was 80
 line 5: found width 84 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  biotop.baeume.fun  found 6 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  biotop.baeume.fun  found 6 arguments, max_num_arguments was 5
 biotop.baeume.fun  line 8: found width 82 max_line_width was 80
 line 14: found width 81 max_line_width was 80
 line 24: found width 139 max_line_width was 80
@@ -395,9 +532,9 @@ line 204: found width 84 max_line_width was 80
 line 209: found width 87 max_line_width was 80
 biotop.baeume.fun  found 228 lines, max_lines was 65
 biotop.baeume.fun  found 190 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  dkl.lab.fun  line 7: found width 89 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  dkl.lab.fun  line 7: found width 89 max_line_width was 80
 line 13: found width 93 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fba.stratum.fun  found 6 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fba.stratum.fun  found 6 arguments, max_num_arguments was 5
 fba.stratum.fun  line 7: found width 82 max_line_width was 80
 line 19: found width 86 max_line_width was 80
 line 36: found width 90 max_line_width was 80
@@ -408,18 +545,18 @@ line 69: found width 89 max_line_width was 80
 line 89: found width 95 max_line_width was 80
 fba.stratum.fun  found 125 lines, max_lines was 65
 fba.stratum.fun  found 99 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fl.proz.stratum.fun  line 10: found width 82 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fl.proz.stratum.fun  line 10: found width 82 max_line_width was 80
 line 15: found width 116 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fl.stratum.fun  line 7: found width 114 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fvbn.kreis.fun.1  found 16 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fl.stratum.fun  line 7: found width 114 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fvbn.kreis.fun.1  found 16 arguments, max_num_arguments was 5
 fvbn.kreis.fun.1  line 50: found width 85 max_line_width was 80
 fvbn.kreis.fun.1  found 59 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fvbn.stratum.fun.1  found 15 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fvbn.stratum.fun.1  found 15 arguments, max_num_arguments was 5
 fvbn.stratum.fun.1  line 50: found width 85 max_line_width was 80
 fvbn.stratum.fun.1  found 57 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fvbn.stratum.fun.2  found 17 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fvbn.stratum.fun.2  found 17 arguments, max_num_arguments was 5
 fvbn.stratum.fun.2  found 55 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.bilanz.bagr.akl.dkl.fun  line 12: found width 82 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.bilanz.bagr.akl.dkl.fun  line 12: found width 82 max_line_width was 80
 line 53: found width 98 max_line_width was 80
 line 86: found width 97 max_line_width was 80
 line 102: found width 83 max_line_width was 80
@@ -439,7 +576,7 @@ line 258: found width 85 max_line_width was 80
 line 269: found width 98 max_line_width was 80
 iVB.bilanz.bagr.akl.dkl.fun  found 274 lines, max_lines was 65
 iVB.bilanz.bagr.akl.dkl.fun  found 234 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.bilanz.bagr.akl.dkl.fun.2g  line 12: found width 82 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.bilanz.bagr.akl.dkl.fun.2g  line 12: found width 82 max_line_width was 80
 line 44: found width 88 max_line_width was 80
 line 63: found width 98 max_line_width was 80
 line 87: found width 88 max_line_width was 80
@@ -469,7 +606,7 @@ line 312: found width 85 max_line_width was 80
 line 326: found width 98 max_line_width was 80
 iVB.bilanz.bagr.akl.dkl.fun.2g  found 331 lines, max_lines was 65
 iVB.bilanz.bagr.akl.dkl.fun.2g  found 278 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.ew.bagrupp.akl.dkl.stratum.fun.2  found 10 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.ew.bagrupp.akl.dkl.stratum.fun.2  found 10 arguments, max_num_arguments was 5
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2  found nesting depth 4, max_nesting_depth was 3
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2  line 23: found width 82 max_line_width was 80
 line 38: found width 91 max_line_width was 80
@@ -493,7 +630,7 @@ line 336: found width 87 max_line_width was 80
 line 339: found width 88 max_line_width was 80
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2  found 356 lines, max_lines was 65
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2  found 247 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.ew.bagrupp.akl.dkl.stratum.fun.2g  found 10 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.ew.bagrupp.akl.dkl.stratum.fun.2g  found 10 arguments, max_num_arguments was 5
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2g  found nesting depth 4, max_nesting_depth was 3
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2g  line 23: found width 82 max_line_width was 80
 line 38: found width 91 max_line_width was 80
@@ -518,7 +655,7 @@ line 343: found width 87 max_line_width was 80
 line 346: found width 88 max_line_width was 80
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2g  found 363 lines, max_lines was 65
 iVB.ew.bagrupp.akl.dkl.stratum.fun.2g  found 246 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12  found 10 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12  found 10 arguments, max_num_arguments was 5
 iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12  found nesting depth 6, max_nesting_depth was 3
 iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12  line 22: found width 82 max_line_width was 80
 line 33: found width 91 max_line_width was 80
@@ -542,25 +679,25 @@ line 308: found width 87 max_line_width was 80
 line 311: found width 88 max_line_width was 80
 iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12  found 327 lines, max_lines was 65
 iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12  found 227 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  mbaf.bagr.alt.bhd.pm.fun  line 14: found width 91 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  mbaf.bagr.alt.bhd.pm.fun  line 14: found width 91 max_line_width was 80
 line 35: found width 88 max_line_width was 80
 line 55: found width 85 max_line_width was 80
 line 60: found width 89 max_line_width was 80
 mbaf.bagr.alt.bhd.pm.fun  found 75 lines, max_lines was 65
 mbaf.bagr.alt.bhd.pm.fun  found 60 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  ntns.stratum.fun  found 7 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  ntns.stratum.fun  found 7 arguments, max_num_arguments was 5
 ntns.stratum.fun  line 3: found width 82 max_line_width was 80
 line 64: found width 85 max_line_width was 80
 ntns.stratum.fun  found 83 lines, max_lines was 65
 ntns.stratum.fun  found 74 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  ntns.stratum.fun.2  found 8 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  ntns.stratum.fun.2  found 8 arguments, max_num_arguments was 5
 ntns.stratum.fun.2  line 21: found width 82 max_line_width was 80
 line 27: found width 82 max_line_width was 80
 line 72: found width 84 max_line_width was 80
 line 85: found width 85 max_line_width was 80
 ntns.stratum.fun.2  found 105 lines, max_lines was 65
 ntns.stratum.fun.2  found 94 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  stamm.merkmale.bagr.akl.fun  found 10 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  stamm.merkmale.bagr.akl.fun  found 10 arguments, max_num_arguments was 5
 stamm.merkmale.bagr.akl.fun  line 11: found width 82 max_line_width was 80
 line 14: found width 81 max_line_width was 80
 line 20: found width 84 max_line_width was 80
@@ -583,7 +720,7 @@ line 263: found width 84 max_line_width was 80
 line 268: found width 87 max_line_width was 80
 stamm.merkmale.bagr.akl.fun  found 272 lines, max_lines was 65
 stamm.merkmale.bagr.akl.fun  found 223 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  stamm.merkmale.bagr.fun  found 9 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  stamm.merkmale.bagr.fun  found 9 arguments, max_num_arguments was 5
 stamm.merkmale.bagr.fun  line 8: found width 82 max_line_width was 80
 line 11: found width 81 max_line_width was 80
 line 17: found width 84 max_line_width was 80
@@ -604,8 +741,8 @@ line 232: found width 84 max_line_width was 80
 line 237: found width 87 max_line_width was 80
 stamm.merkmale.bagr.fun  found 241 lines, max_lines was 65
 stamm.merkmale.bagr.fun  found 198 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  stratum.fun  line 8: found width 82 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  VB.A.bagrupp.akl.dkl.stratum.fun.2  found 12 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  stratum.fun  line 8: found width 82 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  VB.A.bagrupp.akl.dkl.stratum.fun.2  found 12 arguments, max_num_arguments was 5
 VB.A.bagrupp.akl.dkl.stratum.fun.2  found nesting depth 5, max_nesting_depth was 3
 VB.A.bagrupp.akl.dkl.stratum.fun.2  line 19: found width 84 max_line_width was 80
 line 33: found width 84 max_line_width was 80
@@ -643,7 +780,7 @@ line 325: found width 86 max_line_width was 80
 line 329: found width 81 max_line_width was 80
 VB.A.bagrupp.akl.dkl.stratum.fun.2  found 343 lines, max_lines was 65
 VB.A.bagrupp.akl.dkl.stratum.fun.2  found 222 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  VB.A.bagrupp.akl.dkl.stratum.fun.3  found 11 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  VB.A.bagrupp.akl.dkl.stratum.fun.3  found 11 arguments, max_num_arguments was 5
 VB.A.bagrupp.akl.dkl.stratum.fun.3  found nesting depth 4, max_nesting_depth was 3
 VB.A.bagrupp.akl.dkl.stratum.fun.3  line 16: found width 84 max_line_width was 80
 line 30: found width 84 max_line_width was 80
@@ -685,7 +822,7 @@ line 365: found width 86 max_line_width was 80
 line 373: found width 81 max_line_width was 80
 VB.A.bagrupp.akl.dkl.stratum.fun.3  found 387 lines, max_lines was 65
 VB.A.bagrupp.akl.dkl.stratum.fun.3  found 264 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verbiss.bagr.fun  found 7 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verbiss.bagr.fun  found 7 arguments, max_num_arguments was 5
 verbiss.bagr.fun  line 6: found width 82 max_line_width was 80
 line 40: found width 90 max_line_width was 80
 line 43: found width 90 max_line_width was 80
@@ -701,7 +838,7 @@ line 116: found width 90 max_line_width was 80
 line 135: found width 95 max_line_width was 80
 verbiss.bagr.fun  found 172 lines, max_lines was 65
 verbiss.bagr.fun  found 150 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verbiss.bagrupp.fun  found 7 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verbiss.bagrupp.fun  found 7 arguments, max_num_arguments was 5
 verbiss.bagrupp.fun  line 6: found width 82 max_line_width was 80
 line 47: found width 90 max_line_width was 80
 line 50: found width 90 max_line_width was 80
@@ -717,19 +854,19 @@ line 123: found width 90 max_line_width was 80
 line 142: found width 95 max_line_width was 80
 verbiss.bagrupp.fun  found 179 lines, max_lines was 65
 verbiss.bagrupp.fun  found 153 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verjg.bagr.fun  found 7 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verjg.bagr.fun  found 7 arguments, max_num_arguments was 5
 verjg.bagr.fun  line 6: found width 82 max_line_width was 80
 line 76: found width 81 max_line_width was 80
 line 78: found width 82 max_line_width was 80
 verjg.bagr.fun  found 91 lines, max_lines was 65
 verjg.bagr.fun  found 69 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verjg.bagrupp.fun  found 7 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verjg.bagrupp.fun  found 7 arguments, max_num_arguments was 5
 verjg.bagrupp.fun  line 6: found width 82 max_line_width was 80
 line 80: found width 81 max_line_width was 80
 line 82: found width 82 max_line_width was 80
 verjg.bagrupp.fun  found 95 lines, max_lines was 65
 verjg.bagrupp.fun  found 70 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verjg.kl4.bagr.fun  found 6 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verjg.kl4.bagr.fun  found 6 arguments, max_num_arguments was 5
 verjg.kl4.bagr.fun  line 7: found width 82 max_line_width was 80
 line 44: found width 88 max_line_width was 80
 line 67: found width 84 max_line_width was 80
@@ -738,7 +875,7 @@ line 78: found width 81 max_line_width was 80
 line 85: found width 88 max_line_width was 80
 verjg.kl4.bagr.fun  found 111 lines, max_lines was 65
 verjg.kl4.bagr.fun  found 90 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verjg.kl4.bagrupp.fun  found 6 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  verjg.kl4.bagrupp.fun  found 6 arguments, max_num_arguments was 5
 verjg.kl4.bagrupp.fun  line 7: found width 92 max_line_width was 80
 line 45: found width 88 max_line_width was 80
 line 79: found width 84 max_line_width was 80
@@ -747,205 +884,68 @@ line 104: found width 86 max_line_width was 80
 line 117: found width 106 max_line_width was 80
 verjg.kl4.bagrupp.fun  found 134 lines, max_lines was 65
 verjg.kl4.bagrupp.fun  found 110 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 1 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 82 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 94 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 105 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 116 counts 119 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 146 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 147 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 148 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 152 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 166 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 167 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 174 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 179 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 180 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 187 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 200 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 213 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 214 counts 100 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 215 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 219 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 220 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 221 counts 95 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 222 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 224 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 245 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 299 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 340 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 352 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 363 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 379 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 381 counts 136 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 385 counts 103 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 404 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 405 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 406 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 410 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 429 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 441 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 452 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 457 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 460 counts 100 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 479 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 536 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 557 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 587 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 599 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 610 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 626 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 628 counts 136 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 632 counts 119 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 640 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 646 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 655 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 673 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 674 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 675 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 679 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 692 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 703 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 715 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 727 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 732 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 735 counts 100 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 762 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 780 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 903 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: 917 lines in file.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R  Totholz.bagr.art.zg.stratum.fun  found 7 arguments, max_num_arguments was 5
-Totholz.bagr.art.zg.stratum.fun  found nesting depth 5, max_nesting_depth was 3
-Totholz.bagr.art.zg.stratum.fun  line 19: found width 84 max_line_width was 80
-line 31: found width 89 max_line_width was 80
-line 42: found width 86 max_line_width was 80
-line 53: found width 119 max_line_width was 80
-line 83: found width 102 max_line_width was 80
-line 84: found width 86 max_line_width was 80
-line 85: found width 82 max_line_width was 80
-line 89: found width 82 max_line_width was 80
-line 103: found width 89 max_line_width was 80
-line 104: found width 91 max_line_width was 80
-line 111: found width 88 max_line_width was 80
-line 116: found width 85 max_line_width was 80
-line 117: found width 82 max_line_width was 80
-line 124: found width 87 max_line_width was 80
-line 137: found width 87 max_line_width was 80
-line 150: found width 84 max_line_width was 80
-line 151: found width 100 max_line_width was 80
-line 152: found width 82 max_line_width was 80
-line 156: found width 89 max_line_width was 80
-line 157: found width 86 max_line_width was 80
-line 158: found width 95 max_line_width was 80
-line 159: found width 83 max_line_width was 80
-line 161: found width 82 max_line_width was 80
-line 182: found width 81 max_line_width was 80
-Totholz.bagr.art.zg.stratum.fun  found 188 lines, max_lines was 65
-Totholz.bagr.art.zg.stratum.fun  found 139 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R  Totholz.klass.stratum.fun  found 9 arguments, max_num_arguments was 5
-Totholz.klass.stratum.fun  line 30: found width 84 max_line_width was 80
-line 42: found width 89 max_line_width was 80
-line 53: found width 86 max_line_width was 80
-line 69: found width 83 max_line_width was 80
-line 71: found width 136 max_line_width was 80
-line 75: found width 119 max_line_width was 80
-line 83: found width 86 max_line_width was 80
-line 89: found width 81 max_line_width was 80
-line 98: found width 86 max_line_width was 80
-line 116: found width 102 max_line_width was 80
-line 117: found width 86 max_line_width was 80
-line 118: found width 82 max_line_width was 80
-line 122: found width 82 max_line_width was 80
-line 135: found width 85 max_line_width was 80
-line 146: found width 90 max_line_width was 80
-line 158: found width 81 max_line_width was 80
-line 170: found width 94 max_line_width was 80
-line 175: found width 83 max_line_width was 80
-line 178: found width 100 max_line_width was 80
-line 205: found width 81 max_line_width was 80
-Totholz.klass.stratum.fun  found 211 lines, max_lines was 65
-Totholz.klass.stratum.fun  found 157 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R  Totholz.Tart.stratum.fun  found 8 arguments, max_num_arguments was 5
-Totholz.Tart.stratum.fun  line 20: found width 84 max_line_width was 80
-line 32: found width 89 max_line_width was 80
-line 43: found width 86 max_line_width was 80
-line 59: found width 83 max_line_width was 80
-line 61: found width 136 max_line_width was 80
-line 65: found width 103 max_line_width was 80
-line 84: found width 102 max_line_width was 80
-line 85: found width 86 max_line_width was 80
-line 86: found width 82 max_line_width was 80
-line 90: found width 82 max_line_width was 80
-line 109: found width 87 max_line_width was 80
-line 121: found width 81 max_line_width was 80
-line 132: found width 94 max_line_width was 80
-line 137: found width 83 max_line_width was 80
-line 140: found width 100 max_line_width was 80
-line 159: found width 81 max_line_width was 80
-Totholz.Tart.stratum.fun  found 164 lines, max_lines was 65
-Totholz.Tart.stratum.fun  found 123 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/deadwood.R: line 17 counts 84 characters.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/deadwood.R  harmonize_deadwood  line 7: found width 84 max_line_width was 80
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 45 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 60 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 151 counts 101 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 182 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 190 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 280 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 328 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 336 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 339 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 352 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 369 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 375 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 376 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 377 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 383 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: 387 lines in file.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  melt_species_attribute_group  line 68: found width 101 max_line_width was 80
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/deadwood.R: line 17 counts 84 characters.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/deadwood.R  harmonize_deadwood  line 7: found width 84 max_line_width was 80
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 45 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 60 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 151 counts 101 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 182 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 190 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 280 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 328 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 336 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 339 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 352 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 369 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 375 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 376 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 377 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 383 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: 387 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  melt_species_attribute_group  line 68: found width 101 max_line_width was 80
 melt_species_attribute_group  found 74 lines, max_lines was 65
 melt_species_attribute_group  found 74 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  plot_by_group  line 10: found width 82 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  plot_by_group  line 10: found width 82 max_line_width was 80
 line 18: found width 81 max_line_width was 80
 line 21: found width 90 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  plot_species_attribute_group  line 11: found width 82 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  plot_species_attribute_group  line 11: found width 82 max_line_width was 80
 line 19: found width 81 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  reassemble_by_group  line 62: found width 83 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  reassemble_by_group  line 62: found width 83 max_line_width was 80
 reassemble_by_group  found 63 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  theme_bold_title  line 2: found width 83 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  tplot  line 1: found width 85 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  xtable_by_group  line 11: found width 94 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  theme_bold_title  line 2: found width 83 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  tplot  line 1: found width 85 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  xtable_by_group  line 11: found width 94 max_line_width was 80
 line 17: found width 93 max_line_width was 80
 line 18: found width 93 max_line_width was 80
 line 19: found width 93 max_line_width was 80
 line 25: found width 82 max_line_width was 80
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 14 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 40 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 42 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 45 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 94 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 113 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 116 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 117 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 121 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 132 counts 115 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 139 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 140 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 147 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 149 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 158 counts 97 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 169 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 173 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 187 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 203 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 206 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 209 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 214 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 234 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 237 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 241 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 242 counts 89 characters.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2a.R  FVBN.bagrupp.akl.dkl.stratum.fun.2a  found 9 arguments, max_num_arguments was 5
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 14 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 40 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 42 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 45 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 94 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 113 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 116 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 117 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 121 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 132 counts 115 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 139 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 140 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 147 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 149 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 158 counts 97 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 169 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 173 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 187 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 203 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 206 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 209 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 214 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 234 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 237 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 241 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R: line 242 counts 89 characters.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2a.R  FVBN.bagrupp.akl.dkl.stratum.fun.2a  found 9 arguments, max_num_arguments was 5
 FVBN.bagrupp.akl.dkl.stratum.fun.2a  found nesting depth 4, max_nesting_depth was 3
 FVBN.bagrupp.akl.dkl.stratum.fun.2a  line 10: found width 102 max_line_width was 80
 line 36: found width 85 max_line_width was 80
@@ -975,38 +975,38 @@ line 237: found width 81 max_line_width was 80
 line 238: found width 89 max_line_width was 80
 FVBN.bagrupp.akl.dkl.stratum.fun.2a  found 246 lines, max_lines was 65
 FVBN.bagrupp.akl.dkl.stratum.fun.2a  found 174 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 14 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 40 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 42 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 45 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 54 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 96 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 115 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 118 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 119 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 123 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 139 counts 115 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 146 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 147 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 154 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 156 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 165 counts 97 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 176 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 180 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 193 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 197 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 198 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 203 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 204 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 215 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 224 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 227 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 229 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 259 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 262 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 266 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 267 counts 89 characters.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2b.R  FVBN.bagrupp.akl.dkl.stratum.fun.2b  found 9 arguments, max_num_arguments was 5
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 14 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 40 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 42 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 45 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 54 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 96 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 115 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 118 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 119 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 123 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 139 counts 115 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 146 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 147 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 154 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 156 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 165 counts 97 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 176 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 180 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 193 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 197 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 198 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 203 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 204 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 215 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 224 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 227 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 229 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 259 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 262 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 266 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R: line 267 counts 89 characters.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2b.R  FVBN.bagrupp.akl.dkl.stratum.fun.2b  found 9 arguments, max_num_arguments was 5
 FVBN.bagrupp.akl.dkl.stratum.fun.2b  found nesting depth 4, max_nesting_depth was 3
 FVBN.bagrupp.akl.dkl.stratum.fun.2b  line 10: found width 102 max_line_width was 80
 line 36: found width 85 max_line_width was 80
@@ -1041,38 +1041,38 @@ line 262: found width 81 max_line_width was 80
 line 263: found width 89 max_line_width was 80
 FVBN.bagrupp.akl.dkl.stratum.fun.2b  found 275 lines, max_lines was 65
 FVBN.bagrupp.akl.dkl.stratum.fun.2b  found 184 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 14 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 40 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 42 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 45 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 54 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 96 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 116 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 120 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 121 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 125 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 141 counts 115 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 148 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 149 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 156 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 158 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 167 counts 97 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 178 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 182 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 205 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 209 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 210 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 215 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 216 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 227 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 241 counts 95 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 242 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 272 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 275 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 279 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 280 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 281 counts 82 characters.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2c.R  FVBN.bagrupp.akl.dkl.stratum.fun.2c  found 9 arguments, max_num_arguments was 5
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 14 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 40 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 42 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 45 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 54 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 96 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 116 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 120 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 121 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 125 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 141 counts 115 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 148 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 149 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 156 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 158 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 167 counts 97 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 178 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 182 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 205 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 209 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 210 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 215 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 216 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 227 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 241 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 242 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 272 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 275 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 279 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 280 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R: line 281 counts 82 characters.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2c.R  FVBN.bagrupp.akl.dkl.stratum.fun.2c  found 9 arguments, max_num_arguments was 5
 FVBN.bagrupp.akl.dkl.stratum.fun.2c  found nesting depth 4, max_nesting_depth was 3
 FVBN.bagrupp.akl.dkl.stratum.fun.2c  line 10: found width 102 max_line_width was 80
 line 36: found width 85 max_line_width was 80
@@ -1107,39 +1107,39 @@ line 276: found width 89 max_line_width was 80
 line 277: found width 82 max_line_width was 80
 FVBN.bagrupp.akl.dkl.stratum.fun.2c  found 288 lines, max_lines was 65
 FVBN.bagrupp.akl.dkl.stratum.fun.2c  found 194 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 14 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 40 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 42 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 45 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 54 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 96 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 116 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 120 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 121 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 125 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 141 counts 115 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 148 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 149 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 156 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 158 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 167 counts 97 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 178 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 182 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 205 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 209 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 210 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 215 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 216 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 227 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 241 counts 95 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 242 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 291 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 294 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 298 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 299 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 300 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R: 312 lines in file.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2d.R  FVBN.bagrupp.akl.dkl.stratum.fun.2d  found 9 arguments, max_num_arguments was 5
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 14 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 40 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 42 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 45 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 54 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 96 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 116 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 120 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 121 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 125 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 141 counts 115 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 148 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 149 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 156 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 158 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 167 counts 97 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 178 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 182 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 205 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 209 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 210 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 215 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 216 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 227 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 241 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 242 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 291 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 294 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 298 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 299 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: line 300 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R: 312 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2d.R  FVBN.bagrupp.akl.dkl.stratum.fun.2d  found 9 arguments, max_num_arguments was 5
 FVBN.bagrupp.akl.dkl.stratum.fun.2d  found nesting depth 4, max_nesting_depth was 3
 FVBN.bagrupp.akl.dkl.stratum.fun.2d  line 10: found width 102 max_line_width was 80
 line 36: found width 85 max_line_width was 80
@@ -1174,44 +1174,44 @@ line 295: found width 89 max_line_width was 80
 line 296: found width 82 max_line_width was 80
 FVBN.bagrupp.akl.dkl.stratum.fun.2d  found 307 lines, max_lines was 65
 FVBN.bagrupp.akl.dkl.stratum.fun.2d  found 212 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 93 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 119 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 121 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 124 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 133 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 180 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 205 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 209 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 210 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 214 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 238 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 245 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 250 counts 119 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 259 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 260 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 267 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 269 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 278 counts 97 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 289 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 293 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 316 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 320 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 321 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 326 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 327 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 338 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 352 counts 95 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 353 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 396 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 397 counts 87 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 402 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 410 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 413 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 417 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 418 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 419 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R: 431 lines in file.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/fvbn2e.R  FVBN.bagrupp.akl.dkl.stratum.fun.2e  found 9 arguments, max_num_arguments was 5
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 93 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 119 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 121 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 124 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 133 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 180 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 205 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 209 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 210 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 214 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 238 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 245 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 250 counts 119 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 259 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 260 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 267 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 269 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 278 counts 97 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 289 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 293 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 316 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 320 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 321 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 326 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 327 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 338 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 352 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 353 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 396 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 397 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 402 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 410 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 413 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 417 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 418 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: line 419 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R: 431 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fvbn2e.R  FVBN.bagrupp.akl.dkl.stratum.fun.2e  found 9 arguments, max_num_arguments was 5
 FVBN.bagrupp.akl.dkl.stratum.fun.2e  found nesting depth 5, max_nesting_depth was 3
 FVBN.bagrupp.akl.dkl.stratum.fun.2e  line 10: found width 102 max_line_width was 80
 line 36: found width 85 max_line_width was 80
@@ -1251,98 +1251,102 @@ line 335: found width 89 max_line_width was 80
 line 336: found width 82 max_line_width was 80
 FVBN.bagrupp.akl.dkl.stratum.fun.2e  found 347 lines, max_lines was 65
 FVBN.bagrupp.akl.dkl.stratum.fun.2e  found 240 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/german_things.R: line 71 counts 83 characters.
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/labeling.R: line 334 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/labeling.R: 356 lines in file.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/labeling.R  get_abbreviation_for_label  found 72 lines, max_lines was 65
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/german_things.R: line 71 counts 83 characters.
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R: line 29 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R: line 30 counts 83 characters.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R  get_global_variables  line 11: found width 83 max_line_width was 80
+line 12: found width 83 max_line_width was 80
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R: line 334 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R: 356 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R  get_abbreviation_for_label  found 72 lines, max_lines was 65
 get_abbreviation_for_label  found 67 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/labeling.R  get_color_for_ownership  line 11: found width 102 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/labeling.R  get_text_label_for_abbreviation  found 55 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 3 counts 137 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 33 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 101 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 111 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 121 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 138 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 139 counts 98 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 182 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 211 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 265 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 293 counts 137 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 341 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 375 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 419 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 452 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 494 counts 93 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 527 counts 137 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 557 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 574 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 609 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 654 counts 137 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 659 counts 84 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 661 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 695 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 731 counts 85 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 750 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 751 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 756 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 757 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 762 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 763 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 772 counts 139 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 773 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 791 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 802 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 828 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 874 counts 96 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 911 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 948 counts 139 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 949 counts 95 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 967 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1004 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1037 counts 96 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1101 counts 90 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1109 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1111 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1129 counts 137 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1162 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1173 counts 105 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1187 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1188 counts 91 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1189 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1257 counts 99 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1258 counts 102 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1264 counts 101 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1265 counts 104 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1284 counts 89 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1286 counts 137 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1322 counts 99 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1325 counts 95 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1337 counts 125 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1339 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1360 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1405 counts 123 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1417 counts 86 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1419 counts 104 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1558 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1577 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1666 counts 106 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1741 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1825 counts 100 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1826 counts 100 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1879 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1915 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1917 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1919 counts 81 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1920 counts 82 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1922 counts 104 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1928 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1933 counts 83 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1937 counts 137 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 1989 counts 88 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: line 2021 counts 94 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R: 2038 lines in file.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_deadwood  found 11 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R  get_color_for_ownership  line 11: found width 102 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R  get_text_label_for_abbreviation  found 55 lines of code, max_lines_of_code was 50
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 3 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 33 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 101 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 111 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 121 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 138 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 139 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 182 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 211 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 265 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 293 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 341 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 375 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 419 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 452 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 494 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 527 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 557 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 574 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 609 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 654 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 659 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 661 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 695 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 731 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 750 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 751 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 756 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 757 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 762 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 763 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 772 counts 139 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 773 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 791 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 802 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 828 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 874 counts 96 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 911 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 948 counts 139 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 949 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 967 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1004 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1037 counts 96 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1101 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1109 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1111 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1129 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1162 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1173 counts 105 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1187 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1188 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1189 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1257 counts 99 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1258 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1264 counts 101 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1265 counts 104 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1284 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1286 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1322 counts 99 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1325 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1337 counts 125 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1339 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1360 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1405 counts 123 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1417 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1419 counts 104 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1558 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1577 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1666 counts 106 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1741 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1825 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1826 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1879 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1915 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1917 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1919 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1920 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1922 counts 104 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1928 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1933 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1937 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1989 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 2021 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: 2038 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_deadwood  found 11 arguments, max_num_arguments was 5
 plot_deadwood  line 10: found width 90 max_line_width was 80
 line 18: found width 83 max_line_width was 80
 line 20: found width 82 max_line_width was 80
@@ -1354,7 +1358,7 @@ line 97: found width 91 max_line_width was 80
 line 98: found width 94 max_line_width was 80
 plot_deadwood  found 132 lines, max_lines was 65
 plot_deadwood  found 132 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_group_area_by_age  found 11 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_group_area_by_age  found 11 arguments, max_num_arguments was 5
 plot_group_area_by_age  line 32: found width 139 max_line_width was 80
 line 33: found width 95 max_line_width was 80
 line 51: found width 82 max_line_width was 80
@@ -1362,26 +1366,7 @@ line 88: found width 90 max_line_width was 80
 line 121: found width 96 max_line_width was 80
 plot_group_area_by_age  found 151 lines, max_lines was 65
 plot_group_area_by_age  found 149 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_groups_areas  found 11 arguments, max_num_arguments was 5
-plot_groups_areas  line 27: found width 137 max_line_width was 80
-line 75: found width 88 max_line_width was 80
-line 109: found width 94 max_line_width was 80
-line 153: found width 88 max_line_width was 80
-line 186: found width 94 max_line_width was 80
-plot_groups_areas  found 203 lines, max_lines was 65
-plot_groups_areas  found 201 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_groups_stocks  found 11 arguments, max_num_arguments was 5
-plot_groups_stocks  line 32: found width 137 max_line_width was 80
-line 62: found width 84 max_line_width was 80
-line 79: found width 88 max_line_width was 80
-line 114: found width 94 max_line_width was 80
-line 159: found width 137 max_line_width was 80
-line 164: found width 84 max_line_width was 80
-line 166: found width 88 max_line_width was 80
-line 200: found width 94 max_line_width was 80
-plot_groups_stocks  found 217 lines, max_lines was 65
-plot_groups_stocks  found 215 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_group_stocks_by_girth  found 11 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_group_stocks_by_girth  found 11 arguments, max_num_arguments was 5
 plot_group_stocks_by_girth  line 14: found width 86 max_line_width was 80
 line 15: found width 89 max_line_width was 80
 line 20: found width 86 max_line_width was 80
@@ -1396,7 +1381,26 @@ line 92: found width 90 max_line_width was 80
 line 138: found width 96 max_line_width was 80
 plot_group_stocks_by_girth  found 155 lines, max_lines was 65
 plot_group_stocks_by_girth  found 152 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_growth_loss  found 10 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_groups_areas  found 11 arguments, max_num_arguments was 5
+plot_groups_areas  line 27: found width 137 max_line_width was 80
+line 75: found width 88 max_line_width was 80
+line 109: found width 94 max_line_width was 80
+line 153: found width 88 max_line_width was 80
+line 186: found width 94 max_line_width was 80
+plot_groups_areas  found 203 lines, max_lines was 65
+plot_groups_areas  found 201 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_groups_stocks  found 11 arguments, max_num_arguments was 5
+plot_groups_stocks  line 32: found width 137 max_line_width was 80
+line 62: found width 84 max_line_width was 80
+line 79: found width 88 max_line_width was 80
+line 114: found width 94 max_line_width was 80
+line 159: found width 137 max_line_width was 80
+line 164: found width 84 max_line_width was 80
+line 166: found width 88 max_line_width was 80
+line 200: found width 94 max_line_width was 80
+plot_groups_stocks  found 217 lines, max_lines was 65
+plot_groups_stocks  found 215 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_growth_loss  found 10 arguments, max_num_arguments was 5
 plot_growth_loss  line 10: found width 99 max_line_width was 80
 line 11: found width 102 max_line_width was 80
 line 17: found width 101 max_line_width was 80
@@ -1410,22 +1414,22 @@ line 92: found width 88 max_line_width was 80
 line 113: found width 94 max_line_width was 80
 plot_growth_loss  found 138 lines, max_lines was 65
 plot_growth_loss  found 137 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_loss  found 10 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_loss  found 10 arguments, max_num_arguments was 5
 plot_loss  line 36: found width 106 max_line_width was 80
 line 111: found width 94 max_line_width was 80
 plot_loss  found 140 lines, max_lines was 65
 plot_loss  found 140 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_ntns  found 8 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_ntns  found 8 arguments, max_num_arguments was 5
 plot_ntns  line 56: found width 82 max_line_width was 80
 line 75: found width 94 max_line_width was 80
 plot_ntns  found 104 lines, max_lines was 65
 plot_ntns  found 104 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_ownership  found 6 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_ownership  found 6 arguments, max_num_arguments was 5
 plot_ownership  line 2: found width 123 max_line_width was 80
 line 14: found width 86 max_line_width was 80
 line 16: found width 104 max_line_width was 80
 plot_ownership  found 60 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  plot_silviculturally_relevant  found 10 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_silviculturally_relevant  found 10 arguments, max_num_arguments was 5
 plot_silviculturally_relevant  line 5: found width 83 max_line_width was 80
 line 10: found width 83 max_line_width was 80
 line 14: found width 137 max_line_width was 80
@@ -1433,24 +1437,24 @@ line 66: found width 88 max_line_width was 80
 line 98: found width 94 max_line_width was 80
 plot_silviculturally_relevant  found 114 lines, max_lines was 65
 plot_silviculturally_relevant  found 114 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  ptplot  line 1: found width 85 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  regeneration  found 11 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  ptplot  line 1: found width 85 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  regeneration  found 11 arguments, max_num_arguments was 5
 regeneration  line 31: found width 100 max_line_width was 80
 line 32: found width 100 max_line_width was 80
 line 85: found width 94 max_line_width was 80
 regeneration  found 104 lines, max_lines was 65
 regeneration  found 103 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  tex_table  line 4: found width 90 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  theme_bold_title  line 2: found width 83 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  theme_rotate_xasis_labels  line 2: found width 90 max_line_width was 80
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/regional.R  tplot  line 1: found width 85 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  tex_table  line 4: found width 90 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  theme_bold_title  line 2: found width 83 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  theme_rotate_xasis_labels  line 2: found width 90 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  tplot  line 1: found width 85 max_line_width was 80
 line 2: found width 98 max_line_width was 80
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/statistics.R: line 8 counts 98 characters.
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/tree_species_shares.R  melt_tree_species_percent  found 54 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/utils.R  find_files  found 6 arguments, max_num_arguments was 5
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 179 counts 92 characters.
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 181 counts 93 characters.
- /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/variable_getters.R  get_bwi_species_groups  found 67 lines, max_lines was 65
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/statistics.R: line 8 counts 98 characters.
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/tree_species_shares.R  melt_tree_species_percent  found 54 lines of code, max_lines_of_code was 50
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/utils.R  find_files  found 6 arguments, max_num_arguments was 5
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 179 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 181 counts 93 characters.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R  get_bwi_species_groups  found 67 lines, max_lines was 65
 get_bwi_species_groups  found 67 lines of code, max_lines_of_code was 50
-/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/variable_getters.R  get_design  line 3: found width 92 max_line_width was 80
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R  get_design  line 3: found width 92 max_line_width was 80
 line 5: found width 93 max_line_width was 80>

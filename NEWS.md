@@ -1,4 +1,4 @@
-# bundeswaldinventur 0.10.1.9000
+# bundeswaldinventur 0.11.0
 
 * Added functions to load data and global variables into .GlobalEnv for
   historical analysis scripts.

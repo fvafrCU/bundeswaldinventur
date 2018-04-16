@@ -55,6 +55,12 @@ NO COPY: inst/maintenance/global_variables.R:168:65: style: Trailing whitespace 
 NO COPY: inst/maintenance/global_variables.R:180:1: style: Trailing blank lines are superfluous.
 
 ^
+NO COPY: R/adapt_script.R:41:25: style: Only use double-quotes.
+      dependencies <- c('bundeswaldinventur::get_global_objects()', 
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/adapt_script.R:41:68: style: Trailing whitespace is superfluous.
+      dependencies <- c('bundeswaldinventur::get_global_objects()', 
+                                                                   ^
 NO COPY: R/batch.R:110:3: warning: local variable 'status' assigned but may not be used
   status <- FALSE
   ^~~~~~
@@ -814,6 +820,735 @@ NO COPY: R/BWI3_HR_Landkreis.R:561:9: style: Words within variable and function 
 NO COPY: R/BWI3_HR_Landkreis.R:561:32: style: Words within variable and function names should be separated by '_' rather than '.'.
         bhbf.mpw.3$SE_Flaeche, bhbf.kpw.3$SE_Flaeche
                                ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:81:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.te.s <- length(stratum[, 1])
+    ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:82:1: style: lines should not be more than 80 characters.
+    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:84:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:84:5: warning: local variable 'n.t.s' assigned but may not be used
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:90:5: style: Variable and function names should be all lowercase.
+    nT <- length(trakte[, 1])
+    ^~
+NO COPY: R/BWI3_HR_Totholz.R:92:7: style: Commented code should be removed.
+    # HBFl. [ha]
+      ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:94:1: style: lines should not be more than 80 characters.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:94:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+    ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:94:18: style: Variable and function names should be all lowercase.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                 ^~
+NO COPY: R/BWI3_HR_Totholz.R:94:24: style: Variable and function names should be all lowercase.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                       ^~
+NO COPY: R/BWI3_HR_Totholz.R:94:39: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:94:52: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:94:66: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                ~^~
+NO COPY: R/BWI3_HR_Totholz.R:94:76: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                          ~^~
+NO COPY: R/BWI3_HR_Totholz.R:94:88: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                                      ~^~
+NO COPY: R/BWI3_HR_Totholz.R:96:7: style: Commented code should be removed.
+    # var.T.hbf^0.5
+      ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:97:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+    ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:97:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:97:26: style: Put spaces around all infix operators.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                        ~^~
+NO COPY: R/BWI3_HR_Totholz.R:105:1: style: lines should not be more than 80 characters.
+      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:111:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:116:1: style: lines should not be more than 80 characters.
+    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tvol", "dm", "lge", "anz", "thf")],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:121:7: style: Commented code should be removed.
+    # BA-Gruppen-Bezeichner
+      ^~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:133:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+      max.D.k <- (D.klass[[2]] - D.klass[[1]]) / D.klass[[2]] + 2
+      ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:134:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+      if (D.k < max.D.k) {
+                ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:135:16: style: Words within variable and function names should be separated by '_' rather than '.'.
+        D.k <- max.D.k
+               ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:146:1: style: lines should not be more than 80 characters.
+    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:147:1: style: lines should not be more than 80 characters.
+    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:148:1: style: lines should not be more than 80 characters.
+    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:150:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    Y.bagr.dkl <- array(dim = c(2, 2, tbagr.k, tart.k, tzg.k, D.k))
+    ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:151:5: style: Variable and function names should be all lowercase.
+    nT.bagr.dkl <- array(dim = c(tbagr.k, tart.k, tzg.k, D.k))
+    ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:151:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    nT.bagr.dkl <- array(dim = c(tbagr.k, tart.k, tzg.k, D.k))
+    ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:152:1: style: lines should not be more than 80 characters.
+    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:153:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    Yha.bagr.dkl <- array(dim = c(2, 2, tbagr.k, tart.k, tzg.k, D.k))
+    ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:157:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:159:7: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+      {
+      ^
+NO COPY: R/BWI3_HR_Totholz.R:161:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+        {
+        ^
+NO COPY: R/BWI3_HR_Totholz.R:163:11: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+          {
+          ^
+NO COPY: R/BWI3_HR_Totholz.R:166:1: style: lines should not be more than 80 characters.
+            #                         tbagr==i&tart==tart.code[j]&tzg==k&dkl==dkl.lab[l],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:167:1: style: lines should not be more than 80 characters.
+            #                         select=c(tnr,enr,tbagr,tart,tzg,dm,lge,tvol,anz,thf))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:174:1: style: lines should not be more than 80 characters.
+              c("tnr", "enr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:179:1: style: lines should not be more than 80 characters.
+              Y.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2) # Zielgr\u00f6\u00dfe Total
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:179:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              Y.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2) # Zielgr\u00f6\u00dfe Total
+              ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:180:1: style: lines should not be more than 80 characters.
+              Y.bagr.dkl[1:2, 2, i, j, k, l] <- rep(0, 2) # Stichprobenfehler (SE)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:180:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              Y.bagr.dkl[1:2, 2, i, j, k, l] <- rep(0, 2) # Stichprobenfehler (SE)
+              ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:181:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              Yha.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2)
+              ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:182:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              Yha.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2)
+              ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:183:15: style: Variable and function names should be all lowercase.
+              nT.bagr.dkl[i, j, k, l] <- 0 # n PSU (Trakte)
+              ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:183:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              nT.bagr.dkl[i, j, k, l] <- 0 # n PSU (Trakte)
+              ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:187:1: style: lines should not be more than 80 characters.
+              xy <- stats::aggregate(totholz.ba$tvol * totholz.ba$thf * totholz.ba$anz,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:200:1: style: lines should not be more than 80 characters.
+              # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:205:15: style: Variable and function names should be all lowercase.
+              nT.bagr.dkl[i, j, k, l] <- length(xy[, 1])
+              ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:205:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+              nT.bagr.dkl[i, j, k, l] <- length(xy[, 1])
+              ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:208:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+              {
+              ^
+NO COPY: R/BWI3_HR_Totholz.R:211:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Y.bagr.dkl[m, 1, i, j, k, l] <- sum(xy[, (1 + m)]) / sum(x) * A
+                ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:213:1: style: lines should not be more than 80 characters.
+                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:213:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
+                ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:213:49: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
+                                                ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:214:1: style: lines should not be more than 80 characters.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:214:19: style: Variable and function names should be all lowercase.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                  ^~
+NO COPY: R/BWI3_HR_Totholz.R:214:25: style: Variable and function names should be all lowercase.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                        ^~
+NO COPY: R/BWI3_HR_Totholz.R:214:53: style: Put spaces around all infix operators.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                                                   ~^~
+NO COPY: R/BWI3_HR_Totholz.R:214:77: style: Put spaces around all infix operators.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                                                                           ~^~
+NO COPY: R/BWI3_HR_Totholz.R:214:87: style: Put spaces around all infix operators.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:214:99: style: Put spaces around all infix operators.
+                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
+                                                                                                 ~^~
+NO COPY: R/BWI3_HR_Totholz.R:215:1: style: lines should not be more than 80 characters.
+                    - 2 * sum(xy[, (1 + m)] * xy$m) / sum(xy[, (1 + m)]) / sum(x))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:219:1: style: lines should not be more than 80 characters.
+                # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:220:1: style: lines should not be more than 80 characters.
+                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:220:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
+                ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:220:51: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
+                                                  ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:221:1: style: lines should not be more than 80 characters.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:221:42: style: Put spaces around all infix operators.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                        ~^~
+NO COPY: R/BWI3_HR_Totholz.R:221:66: style: Put spaces around all infix operators.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                ~^~
+NO COPY: R/BWI3_HR_Totholz.R:221:79: style: Put spaces around all infix operators.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:221:94: style: Put spaces around all infix operators.
+                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                            ~^~
+NO COPY: R/BWI3_HR_Totholz.R:222:1: style: lines should not be more than 80 characters.
+                  - 2 * sum(xy[, (1 + m)] * xy$x) / sum(xy[, (1 + m)]) / sum(xy$x))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:224:1: style: lines should not be more than 80 characters.
+                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:224:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
+                ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:224:51: style: Words within variable and function names should be separated by '_' rather than '.'.
+                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
+                                                  ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:225:24: style: Variable and function names should be all lowercase.
+                  sqrt(nT / (nT - 1) * tmp)
+                       ^~
+NO COPY: R/BWI3_HR_Totholz.R:225:30: style: Variable and function names should be all lowercase.
+                  sqrt(nT / (nT - 1) * tmp)
+                             ^~
+NO COPY: R/BWI3_HR_Totholz.R:238:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:238:5: warning: local variable 'version.totholz.b' assigned but may not be used
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:245:1: style: lines should not be more than 80 characters.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:245:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                          ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:245:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                                                        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:248:34: style: Words within variable and function names should be separated by '_' rather than '.'.
+      T.ThVN.Bagr.Tart.Tzg.Dkl = Y.bagr.dkl,
+                                 ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:249:35: style: Words within variable and function names should be separated by '_' rather than '.'.
+      ThVN.ha.Bagr.Tart.Tzg.Dkl = Yha.bagr.dkl,
+                                  ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:250:30: style: Variable and function names should be all lowercase.
+      nT.Bagr.Tart.Tzg.Dkl = nT.bagr.dkl
+                             ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:250:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+      nT.Bagr.Tart.Tzg.Dkl = nT.bagr.dkl
+                             ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:339:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.te.s <- length(stratum[, 1])
+    ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:340:1: style: lines should not be more than 80 characters.
+    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:342:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:342:5: warning: local variable 'n.t.s' assigned but may not be used
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:348:5: style: Variable and function names should be all lowercase.
+    nT <- length(trakte[, 1])
+    ^~
+NO COPY: R/BWI3_HR_Totholz.R:350:7: style: Commented code should be removed.
+    # HBFl. [ha]
+      ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:352:1: style: lines should not be more than 80 characters.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:352:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+    ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:352:18: style: Variable and function names should be all lowercase.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                 ^~
+NO COPY: R/BWI3_HR_Totholz.R:352:24: style: Variable and function names should be all lowercase.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                       ^~
+NO COPY: R/BWI3_HR_Totholz.R:352:39: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:352:52: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:352:66: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                ~^~
+NO COPY: R/BWI3_HR_Totholz.R:352:76: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                          ~^~
+NO COPY: R/BWI3_HR_Totholz.R:352:88: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                                      ~^~
+NO COPY: R/BWI3_HR_Totholz.R:354:7: style: Commented code should be removed.
+    # var.T.hbf^0.5
+      ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:355:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+    ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:355:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:355:26: style: Put spaces around all infix operators.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                        ~^~
+NO COPY: R/BWI3_HR_Totholz.R:363:1: style: lines should not be more than 80 characters.
+      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:369:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:379:1: style: lines should not be more than 80 characters.
+    # Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:380:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:381:1: style: lines should not be more than 80 characters.
+      totholz <- totholz[(totholz$tart != 4 & totholz$tbd >= 20) | (totholz$tart == 4 & (totholz$tbd >= 60 | totholz$lge >= 0.5)), TRUE]
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:385:1: style: lines should not be more than 80 characters.
+    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tart", "tvol", "dm", "lge", "anz", "thf")],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:404:1: style: lines should not be more than 80 characters.
+    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:405:1: style: lines should not be more than 80 characters.
+    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:406:1: style: lines should not be more than 80 characters.
+    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:409:5: style: Variable and function names should be all lowercase.
+    nT.tart <- array(dim = c(tart.k, 1))
+    ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:410:1: style: lines should not be more than 80 characters.
+    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:415:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:425:9: style: Variable and function names should be all lowercase.
+        nT.tart[i, ] <- 0 # n PSU (Trakte)
+        ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:429:1: style: lines should not be more than 80 characters.
+        xy <- stats::aggregate(totholz.tart$tvol * totholz.tart$thf * totholz.tart$anz,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:441:1: style: lines should not be more than 80 characters.
+        # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:444:9: style: Variable and function names should be all lowercase.
+        nT.tart[i, ] <- length(xy[, 1])
+        ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:446:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+        {
+        ^
+NO COPY: R/BWI3_HR_Totholz.R:452:1: style: lines should not be more than 80 characters.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:452:13: style: Variable and function names should be all lowercase.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+            ^~
+NO COPY: R/BWI3_HR_Totholz.R:452:19: style: Variable and function names should be all lowercase.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                  ^~
+NO COPY: R/BWI3_HR_Totholz.R:452:47: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:452:71: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:452:81: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                               ~^~
+NO COPY: R/BWI3_HR_Totholz.R:452:93: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                                           ~^~
+NO COPY: R/BWI3_HR_Totholz.R:457:1: style: lines should not be more than 80 characters.
+          # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:460:1: style: lines should not be more than 80 characters.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:460:13: style: Variable and function names should be all lowercase.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+            ^~
+NO COPY: R/BWI3_HR_Totholz.R:460:19: style: Variable and function names should be all lowercase.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                  ^~
+NO COPY: R/BWI3_HR_Totholz.R:460:47: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:460:71: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:460:84: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:460:99: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                                 ~^~
+NO COPY: R/BWI3_HR_Totholz.R:472:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:472:5: warning: local variable 'version.totholz.b' assigned but may not be used
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:479:1: style: lines should not be more than 80 characters.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:479:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                          ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:479:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                                                        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:483:17: style: Variable and function names should be all lowercase.
+      nT.Tart = nT.tart
+                ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:557:1: style: lines should not be more than 80 characters.
+  function(totholz, ecken, trakte, bwi, krit, klass, A, auswahl, strict = FALSE) {
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:586:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.te.s <- length(stratum[, 1])
+    ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:587:1: style: lines should not be more than 80 characters.
+    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:589:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:589:5: warning: local variable 'n.t.s' assigned but may not be used
+    n.t.s <- length(y[, 1])
+    ^~~~~
+NO COPY: R/BWI3_HR_Totholz.R:595:5: style: Variable and function names should be all lowercase.
+    nT <- length(trakte[, 1])
+    ^~
+NO COPY: R/BWI3_HR_Totholz.R:597:7: style: Commented code should be removed.
+    # HBFl. [ha]
+      ^~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:599:1: style: lines should not be more than 80 characters.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:599:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+    ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:599:18: style: Variable and function names should be all lowercase.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                 ^~
+NO COPY: R/BWI3_HR_Totholz.R:599:24: style: Variable and function names should be all lowercase.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                       ^~
+NO COPY: R/BWI3_HR_Totholz.R:599:39: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:599:52: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:599:66: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                ~^~
+NO COPY: R/BWI3_HR_Totholz.R:599:76: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                          ~^~
+NO COPY: R/BWI3_HR_Totholz.R:599:88: style: Put spaces around all infix operators.
+    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
+                                                                                      ~^~
+NO COPY: R/BWI3_HR_Totholz.R:601:7: style: Commented code should be removed.
+    # var.T.hbf^0.5
+      ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:602:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+    ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:602:17: style: Words within variable and function names should be separated by '_' rather than '.'.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                ^~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:602:26: style: Put spaces around all infix operators.
+    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
+                        ~^~
+NO COPY: R/BWI3_HR_Totholz.R:610:1: style: lines should not be more than 80 characters.
+      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:616:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:626:1: style: lines should not be more than 80 characters.
+    # Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:627:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:628:1: style: lines should not be more than 80 characters.
+      totholz <- totholz[(totholz$tart != 4 & totholz$tbd >= 20) | (totholz$tart == 4 & (totholz$tbd >= 60 | totholz$lge >= 0.5)), TRUE]
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:632:1: style: lines should not be more than 80 characters.
+    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:640:1: style: lines should not be more than 80 characters.
+      # Position der m\u00f6glichen Klassifizierungsattribute im Datensatz <totholz.s>
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:642:7: style: Words within variable and function names should be separated by '_' rather than '.'.
+      klass.attr.list <- c("tbagr", "tart", "tzg", "dm", "lge")
+      ^~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:643:35: style: Words within variable and function names should be separated by '_' rather than '.'.
+      pos <- 3 + grep(klass$attr, klass.attr.list)
+                                  ^~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:646:1: style: lines should not be more than 80 characters.
+      # bei dm und lge  werden die Klassen aufgrund von Klassifikationsparametern
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:655:1: style: lines should not be more than 80 characters.
+        # Hinweis: die Klassifizierungskategorien k\u00f6nnten auch dem Attribut <pos>
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:663:11: style: Commented code should be removed.
+        # kat <- unique(totholz.s$kl)
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:673:1: style: lines should not be more than 80 characters.
+    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:674:1: style: lines should not be more than 80 characters.
+    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:675:1: style: lines should not be more than 80 characters.
+    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:678:5: style: Variable and function names should be all lowercase.
+    nT.klass <- array(dim = c(klass.k, 1))
+    ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:679:1: style: lines should not be more than 80 characters.
+    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:685:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+    {
+    ^
+NO COPY: R/BWI3_HR_Totholz.R:692:1: style: lines should not be more than 80 characters.
+        totholz.klass <- totholz.s[TRUE, c(1, 2, 9, 10, 11)] # TODO: Use named index.
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:699:9: style: Variable and function names should be all lowercase.
+        nT.klass[i, ] <- 0 # n PSU (Trakte)
+        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:703:1: style: lines should not be more than 80 characters.
+        xy <- stats::aggregate(totholz.klass$tvol * totholz.klass$thf * totholz.klass$anz,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:715:1: style: lines should not be more than 80 characters.
+        # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:719:9: style: Variable and function names should be all lowercase.
+        nT.klass[i, ] <- length(xy[, 1])
+        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:721:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+        {
+        ^
+NO COPY: R/BWI3_HR_Totholz.R:727:1: style: lines should not be more than 80 characters.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:727:13: style: Variable and function names should be all lowercase.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+            ^~
+NO COPY: R/BWI3_HR_Totholz.R:727:19: style: Variable and function names should be all lowercase.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                  ^~
+NO COPY: R/BWI3_HR_Totholz.R:727:47: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:727:71: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:727:81: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                               ~^~
+NO COPY: R/BWI3_HR_Totholz.R:727:93: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
+                                                                                           ~^~
+NO COPY: R/BWI3_HR_Totholz.R:732:1: style: lines should not be more than 80 characters.
+          # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:735:1: style: lines should not be more than 80 characters.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:735:13: style: Variable and function names should be all lowercase.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+            ^~
+NO COPY: R/BWI3_HR_Totholz.R:735:19: style: Variable and function names should be all lowercase.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                  ^~
+NO COPY: R/BWI3_HR_Totholz.R:735:47: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                             ~^~
+NO COPY: R/BWI3_HR_Totholz.R:735:71: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                     ~^~
+NO COPY: R/BWI3_HR_Totholz.R:735:84: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                  ~^~
+NO COPY: R/BWI3_HR_Totholz.R:735:99: style: Put spaces around all infix operators.
+            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
+                                                                                                 ~^~
+NO COPY: R/BWI3_HR_Totholz.R:747:5: style: Words within variable and function names should be separated by '_' rather than '.'.
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:747:5: warning: local variable 'version.totholz.b' assigned but may not be used
+    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
+    ^~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:757:7: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+      {
+      ^
+NO COPY: R/BWI3_HR_Totholz.R:762:1: style: lines should not be more than 80 characters.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:762:43: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                          ^~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:762:73: style: Words within variable and function names should be separated by '_' rather than '.'.
+      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
+                                                                        ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:767:18: style: Variable and function names should be all lowercase.
+      nT.klass = nT.klass
+                 ^~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:779:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.3 <-
+  ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:780:1: style: lines should not be more than 80 characters.
+    Totholz.bagr.art.zg.stratum.fun(totholz.3, ecken.3, trakte.3, 3, A, D.klass, auswahl)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:782:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.2 <-
+  ^~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:789:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3 <- Totholz.Tart.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:794:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.lg.st.so.3 <- Totholz.Tart.stratum.fun(
+  ^~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:799:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tart.3 <- Totholz.Tart.stratum.fun(
+  ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:804:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tzg.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:809:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tbagr.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:814:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tartgrp.ges.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:819:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:824:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:829:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.stw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:834:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.stw.ges.3.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:839:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.kw.ges.3.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:844:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.kw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:849:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.pw.ges.3.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:854:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.pw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:859:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.2 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:864:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.stw.ges.2 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:869:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.kw.ges.2 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:874:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.pw.ges.2 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:879:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.tbagr.3.bwi2krit <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:884:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.dkl.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:890:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.dkl.stth.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:895:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.dkl.lgth.3 <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:903:1: style: lines should not be more than 80 characters.
+    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:903:11: style: Place a space before left parenthesis, except in a function call.
+    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
+          ^
+NO COPY: R/BWI3_HR_Totholz.R:903:49: style: Put spaces around all infix operators.
+    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
+                                               ~^~
+NO COPY: R/BWI3_HR_Totholz.R:909:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3.tvol.ti <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/BWI3_HR_Totholz.R:913:3: style: Words within variable and function names should be separated by '_' rather than '.'.
+  th.gw.ges.3.tvol.ti.n <- Totholz.klass.stratum.fun(
+  ^~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/BWI3_HR.R:14:5: style: Commented code should be removed.
 # 		"BWI3/Programme/HR/BWI3_HR_Funktionen_v3_xxx.r"
     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -8209,735 +8944,6 @@ NO COPY: R/BWI3_HR.R:5967:55: style: Words within variable and function names sh
 NO COPY: R/BWI3_HR.R:5970:29: style: Words within variable and function names should be separated by '_' rather than '.'.
     Kennwert_Tabelle_BAGR = attr.bagr.akl.tab
                             ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:81:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.te.s <- length(stratum[, 1])
-    ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:82:1: style: lines should not be more than 80 characters.
-    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:84:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:84:5: warning: local variable 'n.t.s' assigned but may not be used
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:90:5: style: Variable and function names should be all lowercase.
-    nT <- length(trakte[, 1])
-    ^~
-NO COPY: R/BWI3_HR_Totholz.R:92:7: style: Commented code should be removed.
-    # HBFl. [ha]
-      ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:94:1: style: lines should not be more than 80 characters.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:94:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:94:18: style: Variable and function names should be all lowercase.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                 ^~
-NO COPY: R/BWI3_HR_Totholz.R:94:24: style: Variable and function names should be all lowercase.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                       ^~
-NO COPY: R/BWI3_HR_Totholz.R:94:39: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:94:52: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:94:66: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                ~^~
-NO COPY: R/BWI3_HR_Totholz.R:94:76: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                          ~^~
-NO COPY: R/BWI3_HR_Totholz.R:94:88: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                                      ~^~
-NO COPY: R/BWI3_HR_Totholz.R:96:7: style: Commented code should be removed.
-    # var.T.hbf^0.5
-      ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:97:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-    ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:97:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:97:26: style: Put spaces around all infix operators.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                        ~^~
-NO COPY: R/BWI3_HR_Totholz.R:105:1: style: lines should not be more than 80 characters.
-      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:111:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:116:1: style: lines should not be more than 80 characters.
-    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tvol", "dm", "lge", "anz", "thf")],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:121:7: style: Commented code should be removed.
-    # BA-Gruppen-Bezeichner
-      ^~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:133:7: style: Words within variable and function names should be separated by '_' rather than '.'.
-      max.D.k <- (D.klass[[2]] - D.klass[[1]]) / D.klass[[2]] + 2
-      ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:134:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-      if (D.k < max.D.k) {
-                ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:135:16: style: Words within variable and function names should be separated by '_' rather than '.'.
-        D.k <- max.D.k
-               ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:146:1: style: lines should not be more than 80 characters.
-    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:147:1: style: lines should not be more than 80 characters.
-    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:148:1: style: lines should not be more than 80 characters.
-    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:150:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    Y.bagr.dkl <- array(dim = c(2, 2, tbagr.k, tart.k, tzg.k, D.k))
-    ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:151:5: style: Variable and function names should be all lowercase.
-    nT.bagr.dkl <- array(dim = c(tbagr.k, tart.k, tzg.k, D.k))
-    ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:151:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    nT.bagr.dkl <- array(dim = c(tbagr.k, tart.k, tzg.k, D.k))
-    ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:152:1: style: lines should not be more than 80 characters.
-    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:153:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    Yha.bagr.dkl <- array(dim = c(2, 2, tbagr.k, tart.k, tzg.k, D.k))
-    ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:157:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:159:7: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-      {
-      ^
-NO COPY: R/BWI3_HR_Totholz.R:161:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-        {
-        ^
-NO COPY: R/BWI3_HR_Totholz.R:163:11: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-          {
-          ^
-NO COPY: R/BWI3_HR_Totholz.R:166:1: style: lines should not be more than 80 characters.
-            #                         tbagr==i&tart==tart.code[j]&tzg==k&dkl==dkl.lab[l],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:167:1: style: lines should not be more than 80 characters.
-            #                         select=c(tnr,enr,tbagr,tart,tzg,dm,lge,tvol,anz,thf))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:174:1: style: lines should not be more than 80 characters.
-              c("tnr", "enr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:179:1: style: lines should not be more than 80 characters.
-              Y.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2) # Zielgr\u00f6\u00dfe Total
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:179:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              Y.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2) # Zielgr\u00f6\u00dfe Total
-              ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:180:1: style: lines should not be more than 80 characters.
-              Y.bagr.dkl[1:2, 2, i, j, k, l] <- rep(0, 2) # Stichprobenfehler (SE)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:180:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              Y.bagr.dkl[1:2, 2, i, j, k, l] <- rep(0, 2) # Stichprobenfehler (SE)
-              ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:181:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              Yha.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2)
-              ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:182:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              Yha.bagr.dkl[1:2, 1, i, j, k, l] <- rep(0, 2)
-              ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:183:15: style: Variable and function names should be all lowercase.
-              nT.bagr.dkl[i, j, k, l] <- 0 # n PSU (Trakte)
-              ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:183:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              nT.bagr.dkl[i, j, k, l] <- 0 # n PSU (Trakte)
-              ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:187:1: style: lines should not be more than 80 characters.
-              xy <- stats::aggregate(totholz.ba$tvol * totholz.ba$thf * totholz.ba$anz,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:200:1: style: lines should not be more than 80 characters.
-              # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:205:15: style: Variable and function names should be all lowercase.
-              nT.bagr.dkl[i, j, k, l] <- length(xy[, 1])
-              ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:205:15: style: Words within variable and function names should be separated by '_' rather than '.'.
-              nT.bagr.dkl[i, j, k, l] <- length(xy[, 1])
-              ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:208:15: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-              {
-              ^
-NO COPY: R/BWI3_HR_Totholz.R:211:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Y.bagr.dkl[m, 1, i, j, k, l] <- sum(xy[, (1 + m)]) / sum(x) * A
-                ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:213:1: style: lines should not be more than 80 characters.
-                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:213:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
-                ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:213:49: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Y.bagr.dkl[m, 2, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] * sqrt(
-                                                ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:214:1: style: lines should not be more than 80 characters.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:214:19: style: Variable and function names should be all lowercase.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                  ^~
-NO COPY: R/BWI3_HR_Totholz.R:214:25: style: Variable and function names should be all lowercase.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                        ^~
-NO COPY: R/BWI3_HR_Totholz.R:214:53: style: Put spaces around all infix operators.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                                                   ~^~
-NO COPY: R/BWI3_HR_Totholz.R:214:77: style: Put spaces around all infix operators.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                                                                           ~^~
-NO COPY: R/BWI3_HR_Totholz.R:214:87: style: Put spaces around all infix operators.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:214:99: style: Put spaces around all infix operators.
-                  nT / (nT - 1) * (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(x^2) / sum(x)^2
-                                                                                                 ~^~
-NO COPY: R/BWI3_HR_Totholz.R:215:1: style: lines should not be more than 80 characters.
-                    - 2 * sum(xy[, (1 + m)] * xy$m) / sum(xy[, (1 + m)]) / sum(x))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:219:1: style: lines should not be more than 80 characters.
-                # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:220:1: style: lines should not be more than 80 characters.
-                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:220:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
-                ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:220:51: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Yha.bagr.dkl[m, 1, i, j, k, l] <- Y.bagr.dkl[m, 1, i, j, k, l] / T.hbf
-                                                  ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:221:1: style: lines should not be more than 80 characters.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:221:42: style: Put spaces around all infix operators.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                        ~^~
-NO COPY: R/BWI3_HR_Totholz.R:221:66: style: Put spaces around all infix operators.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                ~^~
-NO COPY: R/BWI3_HR_Totholz.R:221:79: style: Put spaces around all infix operators.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:221:94: style: Put spaces around all infix operators.
-                tmp <- (sum(xy[, (1 + m)]^2) / sum(xy[, (1 + m)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                            ~^~
-NO COPY: R/BWI3_HR_Totholz.R:222:1: style: lines should not be more than 80 characters.
-                  - 2 * sum(xy[, (1 + m)] * xy$x) / sum(xy[, (1 + m)]) / sum(xy$x))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:224:1: style: lines should not be more than 80 characters.
-                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:224:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
-                ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:224:51: style: Words within variable and function names should be separated by '_' rather than '.'.
-                Yha.bagr.dkl[m, 2, i, j, k, l] <- Yha.bagr.dkl[m, 1, i, j, k, l] *
-                                                  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:225:24: style: Variable and function names should be all lowercase.
-                  sqrt(nT / (nT - 1) * tmp)
-                       ^~
-NO COPY: R/BWI3_HR_Totholz.R:225:30: style: Variable and function names should be all lowercase.
-                  sqrt(nT / (nT - 1) * tmp)
-                             ^~
-NO COPY: R/BWI3_HR_Totholz.R:238:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:238:5: warning: local variable 'version.totholz.b' assigned but may not be used
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:245:1: style: lines should not be more than 80 characters.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:245:43: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                          ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:245:73: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                                                        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:248:34: style: Words within variable and function names should be separated by '_' rather than '.'.
-      T.ThVN.Bagr.Tart.Tzg.Dkl = Y.bagr.dkl,
-                                 ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:249:35: style: Words within variable and function names should be separated by '_' rather than '.'.
-      ThVN.ha.Bagr.Tart.Tzg.Dkl = Yha.bagr.dkl,
-                                  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:250:30: style: Variable and function names should be all lowercase.
-      nT.Bagr.Tart.Tzg.Dkl = nT.bagr.dkl
-                             ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:250:30: style: Words within variable and function names should be separated by '_' rather than '.'.
-      nT.Bagr.Tart.Tzg.Dkl = nT.bagr.dkl
-                             ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:339:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.te.s <- length(stratum[, 1])
-    ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:340:1: style: lines should not be more than 80 characters.
-    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:342:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:342:5: warning: local variable 'n.t.s' assigned but may not be used
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:348:5: style: Variable and function names should be all lowercase.
-    nT <- length(trakte[, 1])
-    ^~
-NO COPY: R/BWI3_HR_Totholz.R:350:7: style: Commented code should be removed.
-    # HBFl. [ha]
-      ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:352:1: style: lines should not be more than 80 characters.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:352:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:352:18: style: Variable and function names should be all lowercase.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                 ^~
-NO COPY: R/BWI3_HR_Totholz.R:352:24: style: Variable and function names should be all lowercase.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                       ^~
-NO COPY: R/BWI3_HR_Totholz.R:352:39: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:352:52: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:352:66: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                ~^~
-NO COPY: R/BWI3_HR_Totholz.R:352:76: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                          ~^~
-NO COPY: R/BWI3_HR_Totholz.R:352:88: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                                      ~^~
-NO COPY: R/BWI3_HR_Totholz.R:354:7: style: Commented code should be removed.
-    # var.T.hbf^0.5
-      ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:355:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-    ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:355:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:355:26: style: Put spaces around all infix operators.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                        ~^~
-NO COPY: R/BWI3_HR_Totholz.R:363:1: style: lines should not be more than 80 characters.
-      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:369:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:379:1: style: lines should not be more than 80 characters.
-    # Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:380:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:381:1: style: lines should not be more than 80 characters.
-      totholz <- totholz[(totholz$tart != 4 & totholz$tbd >= 20) | (totholz$tart == 4 & (totholz$tbd >= 60 | totholz$lge >= 0.5)), TRUE]
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:385:1: style: lines should not be more than 80 characters.
-    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tart", "tvol", "dm", "lge", "anz", "thf")],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:404:1: style: lines should not be more than 80 characters.
-    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:405:1: style: lines should not be more than 80 characters.
-    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:406:1: style: lines should not be more than 80 characters.
-    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:409:5: style: Variable and function names should be all lowercase.
-    nT.tart <- array(dim = c(tart.k, 1))
-    ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:410:1: style: lines should not be more than 80 characters.
-    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:415:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:425:9: style: Variable and function names should be all lowercase.
-        nT.tart[i, ] <- 0 # n PSU (Trakte)
-        ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:429:1: style: lines should not be more than 80 characters.
-        xy <- stats::aggregate(totholz.tart$tvol * totholz.tart$thf * totholz.tart$anz,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:441:1: style: lines should not be more than 80 characters.
-        # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:444:9: style: Variable and function names should be all lowercase.
-        nT.tart[i, ] <- length(xy[, 1])
-        ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:446:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-        {
-        ^
-NO COPY: R/BWI3_HR_Totholz.R:452:1: style: lines should not be more than 80 characters.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:452:13: style: Variable and function names should be all lowercase.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-            ^~
-NO COPY: R/BWI3_HR_Totholz.R:452:19: style: Variable and function names should be all lowercase.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                  ^~
-NO COPY: R/BWI3_HR_Totholz.R:452:47: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:452:71: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:452:81: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                               ~^~
-NO COPY: R/BWI3_HR_Totholz.R:452:93: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                                           ~^~
-NO COPY: R/BWI3_HR_Totholz.R:457:1: style: lines should not be more than 80 characters.
-          # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:460:1: style: lines should not be more than 80 characters.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:460:13: style: Variable and function names should be all lowercase.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-            ^~
-NO COPY: R/BWI3_HR_Totholz.R:460:19: style: Variable and function names should be all lowercase.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                  ^~
-NO COPY: R/BWI3_HR_Totholz.R:460:47: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:460:71: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:460:84: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:460:99: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                                 ~^~
-NO COPY: R/BWI3_HR_Totholz.R:472:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:472:5: warning: local variable 'version.totholz.b' assigned but may not be used
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:479:1: style: lines should not be more than 80 characters.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:479:43: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                          ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:479:73: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                                                        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:483:17: style: Variable and function names should be all lowercase.
-      nT.Tart = nT.tart
-                ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:557:1: style: lines should not be more than 80 characters.
-  function(totholz, ecken, trakte, bwi, krit, klass, A, auswahl, strict = FALSE) {
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:586:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.te.s <- length(stratum[, 1])
-    ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:587:1: style: lines should not be more than 80 characters.
-    y <- stats::aggregate(rep(1, length(stratum[, 1])), by = list(stratum$tnr), sum)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:589:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:589:5: warning: local variable 'n.t.s' assigned but may not be used
-    n.t.s <- length(y[, 1])
-    ^~~~~
-NO COPY: R/BWI3_HR_Totholz.R:595:5: style: Variable and function names should be all lowercase.
-    nT <- length(trakte[, 1])
-    ^~
-NO COPY: R/BWI3_HR_Totholz.R:597:7: style: Commented code should be removed.
-    # HBFl. [ha]
-      ^~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:599:1: style: lines should not be more than 80 characters.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:599:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-    ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:599:18: style: Variable and function names should be all lowercase.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                 ^~
-NO COPY: R/BWI3_HR_Totholz.R:599:24: style: Variable and function names should be all lowercase.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                       ^~
-NO COPY: R/BWI3_HR_Totholz.R:599:39: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:599:52: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:599:66: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                ~^~
-NO COPY: R/BWI3_HR_Totholz.R:599:76: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                          ~^~
-NO COPY: R/BWI3_HR_Totholz.R:599:88: style: Put spaces around all infix operators.
-    var.T.hbf <- nT / (nT - 1) * T.hbf^2 * (sum(y$y^2) / sum(y$y)^2 + sum(x^2) / sum(x)^2
-                                                                                      ~^~
-NO COPY: R/BWI3_HR_Totholz.R:601:7: style: Commented code should be removed.
-    # var.T.hbf^0.5
-      ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:602:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-    ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:602:17: style: Words within variable and function names should be separated by '_' rather than '.'.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                ^~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:602:26: style: Put spaces around all infix operators.
-    se.T.hbf <- var.T.hbf^0.5 # Standardfehler
-                        ~^~
-NO COPY: R/BWI3_HR_Totholz.R:610:1: style: lines should not be more than 80 characters.
-      # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:616:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:626:1: style: lines should not be more than 80 characters.
-    # Wenn(([Tart]=4 Und ([Tbd]>=60 Oder [Tl]>=0,5)) Oder ([Tart]<>4 Und [Tbd]>=20)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:627:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:628:1: style: lines should not be more than 80 characters.
-      totholz <- totholz[(totholz$tart != 4 & totholz$tbd >= 20) | (totholz$tart == 4 & (totholz$tbd >= 60 | totholz$lge >= 0.5)), TRUE]
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:632:1: style: lines should not be more than 80 characters.
-    totholz.s <- merge(totholz[TRUE, c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "dm", "lge", "tvol", "anz", "thf")],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:640:1: style: lines should not be more than 80 characters.
-      # Position der m\u00f6glichen Klassifizierungsattribute im Datensatz <totholz.s>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:642:7: style: Words within variable and function names should be separated by '_' rather than '.'.
-      klass.attr.list <- c("tbagr", "tart", "tzg", "dm", "lge")
-      ^~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:643:35: style: Words within variable and function names should be separated by '_' rather than '.'.
-      pos <- 3 + grep(klass$attr, klass.attr.list)
-                                  ^~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:646:1: style: lines should not be more than 80 characters.
-      # bei dm und lge  werden die Klassen aufgrund von Klassifikationsparametern
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:655:1: style: lines should not be more than 80 characters.
-        # Hinweis: die Klassifizierungskategorien k\u00f6nnten auch dem Attribut <pos>
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:663:11: style: Commented code should be removed.
-        # kat <- unique(totholz.s$kl)
-          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:673:1: style: lines should not be more than 80 characters.
-    # F\u00fcr diese 2 "Gr\u00f6\u00dfen" werden jeweils der Gesamtwert ("Total") und der Stichproben-
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:674:1: style: lines should not be more than 80 characters.
-    # fehler (SE) berechnet, und zwar jeweils f\u00fcr die 3 Baumartengruppen <tbagr>,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:675:1: style: lines should not be more than 80 characters.
-    # 7 Totholzarten <tart>, 4 Zersetzungsgrade <tzg> sowie D.k Durchmesserklassen
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:678:5: style: Variable and function names should be all lowercase.
-    nT.klass <- array(dim = c(klass.k, 1))
-    ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:679:1: style: lines should not be more than 80 characters.
-    # Hektarbezogene Kennwerte. 2 Zielgr\u00f6\u00dfen:  Th-Vol je ha, N Th je ha,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:685:5: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-    {
-    ^
-NO COPY: R/BWI3_HR_Totholz.R:692:1: style: lines should not be more than 80 characters.
-        totholz.klass <- totholz.s[TRUE, c(1, 2, 9, 10, 11)] # TODO: Use named index.
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:699:9: style: Variable and function names should be all lowercase.
-        nT.klass[i, ] <- 0 # n PSU (Trakte)
-        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:703:1: style: lines should not be more than 80 characters.
-        xy <- stats::aggregate(totholz.klass$tvol * totholz.klass$thf * totholz.klass$anz,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:715:1: style: lines should not be more than 80 characters.
-        # Umbennen von xy$y in xy$x (Symbol f\u00fcr Bezugsfl\u00e4che Holzboden)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:719:9: style: Variable and function names should be all lowercase.
-        nT.klass[i, ] <- length(xy[, 1])
-        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:721:9: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-        {
-        ^
-NO COPY: R/BWI3_HR_Totholz.R:727:1: style: lines should not be more than 80 characters.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:727:13: style: Variable and function names should be all lowercase.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-            ^~
-NO COPY: R/BWI3_HR_Totholz.R:727:19: style: Variable and function names should be all lowercase.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                  ^~
-NO COPY: R/BWI3_HR_Totholz.R:727:47: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:727:71: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:727:81: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                               ~^~
-NO COPY: R/BWI3_HR_Totholz.R:727:93: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(x^2) / sum(x)^2
-                                                                                           ~^~
-NO COPY: R/BWI3_HR_Totholz.R:732:1: style: lines should not be more than 80 characters.
-          # Bezugsfl\u00e4che ist die HBF des Stratums (also keine BA-Fl\u00e4che!)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:735:1: style: lines should not be more than 80 characters.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:735:13: style: Variable and function names should be all lowercase.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-            ^~
-NO COPY: R/BWI3_HR_Totholz.R:735:19: style: Variable and function names should be all lowercase.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                  ^~
-NO COPY: R/BWI3_HR_Totholz.R:735:47: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                             ~^~
-NO COPY: R/BWI3_HR_Totholz.R:735:71: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                     ~^~
-NO COPY: R/BWI3_HR_Totholz.R:735:84: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                  ~^~
-NO COPY: R/BWI3_HR_Totholz.R:735:99: style: Put spaces around all infix operators.
-            nT / (nT - 1) * (sum(xy[, (1 + j)]^2) / sum(xy[, (1 + j)])^2 + sum(xy$x^2) / sum(xy$x)^2
-                                                                                                 ~^~
-NO COPY: R/BWI3_HR_Totholz.R:747:5: style: Words within variable and function names should be separated by '_' rather than '.'.
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:747:5: warning: local variable 'version.totholz.b' assigned but may not be used
-    version.totholz.b <- substr(as.character(totholz$bemerk[1]), a, b)
-    ^~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:757:7: style: Opening curly braces should never go on their own line and should always be followed by a new line.
-      {
-      ^
-NO COPY: R/BWI3_HR_Totholz.R:762:1: style: lines should not be more than 80 characters.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:762:43: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                          ^~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:762:73: style: Words within variable and function names should be separated by '_' rather than '.'.
-      Log = Log, Stratum = auswahl, nTE = n.te.s, HBF = T.hbf, se.HBF = se.T.hbf,
-                                                                        ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:767:18: style: Variable and function names should be all lowercase.
-      nT.klass = nT.klass
-                 ^~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:779:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.3 <-
-  ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:780:1: style: lines should not be more than 80 characters.
-    Totholz.bagr.art.zg.stratum.fun(totholz.3, ecken.3, trakte.3, 3, A, D.klass, auswahl)
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:782:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.2 <-
-  ^~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:789:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3 <- Totholz.Tart.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:794:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.lg.st.so.3 <- Totholz.Tart.stratum.fun(
-  ^~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:799:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tart.3 <- Totholz.Tart.stratum.fun(
-  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:804:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tzg.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:809:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tbagr.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:814:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tartgrp.ges.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:819:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:824:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:829:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.stw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:834:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.stw.ges.3.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:839:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.kw.ges.3.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:844:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.kw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:849:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.pw.ges.3.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:854:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.pw.ges.3.n.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:859:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.2 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:864:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.stw.ges.2 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:869:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.kw.ges.2 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:874:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.pw.ges.2 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:879:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.tbagr.3.bwi2krit <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:884:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.dkl.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:890:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.dkl.stth.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:895:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.dkl.lgth.3 <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:903:1: style: lines should not be more than 80 characters.
-    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:903:11: style: Place a space before left parenthesis, except in a function call.
-    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
-          ^
-NO COPY: R/BWI3_HR_Totholz.R:903:49: style: Put spaces around all infix operators.
-    pi * ((totholz.3$Tbd + totholz.3$Tsd) / 400)^2 * totholz.3$Tl, totholz.3$Tvol
-                                               ~^~
-NO COPY: R/BWI3_HR_Totholz.R:909:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3.tvol.ti <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/BWI3_HR_Totholz.R:913:3: style: Words within variable and function names should be separated by '_' rather than '.'.
-  th.gw.ges.3.tvol.ti.n <- Totholz.klass.stratum.fun(
-  ^~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/deadwood.R:17:1: style: lines should not be more than 80 characters.
     # Mittendurchmesser wird bei Bruchst\u00fccken (mit 2 Durchmessern als mittlerer
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -10656,6 +10662,12 @@ NO COPY: R/fvbn2e.R:429:25: style: Words within variable and function names shou
                         ^~~~~~~~~~~~~~~
 NO COPY: R/german_things.R:71:1: style: lines should not be more than 80 characters.
 round_and_prettify <- function(x, digits = 0, big_mark = ",", decimal_mark = ".") {
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/global_objects.R:29:1: style: lines should not be more than 80 characters.
+    assign("bagr.list", get_bwi_species_groups()[["bagr.lab"]], envir = .GlobalEnv)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/global_objects.R:30:1: style: lines should not be more than 80 characters.
+    assign("BAGR.LIST", get_bwi_species_groups()[["bagr.lab"]], envir = .GlobalEnv)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/labeling.R:16:37: style: Commas should never have a space before.
     "Baumartengruppenfl\u00e4che" = ,
