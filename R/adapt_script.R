@@ -38,7 +38,8 @@ adapt_script <- function(file_names = NA, path = ".",
     if (length(i) == 0) {
       warning("script ", file_name, " doesn't seem to need adaption.")
     } else {
-      dependencies <- c('library("bundeswaldinventur")')
+      dependencies <- c('bundeswaldinventur::get_global_objects()', 
+                        'library("bundeswaldinventur")')
       header <- s[seq_len(i - 1)]
       bottom <- s[seq.int(from = (i + 1), to = length(s), by = 1)]
 
