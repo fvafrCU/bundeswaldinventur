@@ -81,18 +81,20 @@ NaNs produced
 test_BWI3_HR_Funktionen_v3.R:224: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
 NaNs produced
 ────────────────────────────────────────────────────────────────────────────────
-⠏ |  0       | made up examples⠋ |  1       | made up examples⠙ |  2       | made up examples⠹ |  3       | made up examples⠸ |  4       | made up examples⠼ |  5       | made up examples⠴ |  6       | made up examples⠦ |  7       | made up examples⠧ |  8       | made up examples✔ |  8       | made up examples [59.3 s]
-⠏ |  0       | BWI3_HR_Landkreis_Funktionen_v1.R⠋ |  1       | BWI3_HR_Landkreis_Funktionen_v1.R⠙ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R✔ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R [2.9 s]
-⠏ |  0       | BWI3_HR_Totholz_Funktionen_v1.R⠋ |  1       | BWI3_HR_Totholz_Funktionen_v1.R⠙ |  2       | BWI3_HR_Totholz_Funktionen_v1.R⠹ |  3       | BWI3_HR_Totholz_Funktionen_v1.R✔ |  3       | BWI3_HR_Totholz_Funktionen_v1.R [6.9 s]
+⠏ |  0       | made up examples⠋ |  1       | made up examples⠙ |  2       | made up examples⠹ |  3       | made up examples⠸ |  4       | made up examples⠼ |  5       | made up examples⠴ |  6       | made up examples⠦ |  7       | made up examples⠧ |  8       | made up examples✔ |  8       | made up examples [58.4 s]
+⠏ |  0       | BWI3_HR_Landkreis_Funktionen_v1.R⠋ |  1       | BWI3_HR_Landkreis_Funktionen_v1.R⠙ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R✔ |  2       | BWI3_HR_Landkreis_Funktionen_v1.R [2.8 s]
+⠏ |  0       | BWI3_HR_Totholz_Funktionen_v1.R⠋ |  1       | BWI3_HR_Totholz_Funktionen_v1.R⠙ |  2       | BWI3_HR_Totholz_Funktionen_v1.R⠹ |  3       | BWI3_HR_Totholz_Funktionen_v1.R✔ |  3       | BWI3_HR_Totholz_Funktionen_v1.R [6.7 s]
 ⠏ |  0       | deadwood.R⠋ |  1       | deadwood.R⠙ |  2       | deadwood.R⠹ |  3       | deadwood.R⠸ |  4       | deadwood.R✔ |  4       | deadwood.R [0.1 s]
 ⠏ |  0       | statistics.R⠋ |  1       | statistics.R⠙ |  2       | statistics.R⠹ |  3       | statistics.R⠸ |  4       | statistics.R⠼ |  5       | statistics.R⠴ |  6       | statistics.R✔ |  6       | statistics.R
 ⠏ |  0       | variable_getters.R⠋ |  1       | variable_getters.R✔ |  1       | variable_getters.R
 ⠏ |  0       | Testing bundeswaldinventur:::throw()⠋ |  1       | Testing bundeswaldinventur:::throw()✔ |  1       | Testing bundeswaldinventur:::throw()
 
 ══ Results ═════════════════════════════════════════════════════════════════════
-Duration: 176.1 s
+Duration: 175.0 s
 
 OK:       135
 Failed:   0
 Warnings: 22
 Skipped:  0
+
+You rock!
