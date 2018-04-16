@@ -1,8 +1,7 @@
 Installing bundeswaldinventur
-'/home/qwer/svn/R/R-3.4.3/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD INSTALL  \
-  '/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur'  \
-  --library='/home/qwer/svn/R/R-3.4.3/library' --install-tests 
+'/usr/lib/R/bin/R' --no-site-file --no-environ --no-save --no-restore --quiet  \
+  CMD INSTALL '/home/nik/git/cs/fvafrcu/bundeswaldinventur'  \
+  --library='/home/nik/R/x86_64-pc-linux-gnu-library/3.3' --install-tests 
 
 * installing *source* package ‘bundeswaldinventur’ ...
 ** R
@@ -10,6 +9,9 @@ Installing bundeswaldinventur
 ** tests
 ** preparing package for lazy loading
 ** help
+Warning: /home/nik/git/cs/fvafrcu/bundeswaldinventur/man/get_global_objects.Rd:17: unknown macro '\ink'
+Warning: /home/nik/git/cs/fvafrcu/bundeswaldinventur/man/get_global_objects.Rd:17: unknown macro '\ink'
+Warning: /home/nik/git/cs/fvafrcu/bundeswaldinventur/man/get_global_objects.Rd:18: unknown macro '\ink'
 *** installing help indices
 ** building package indices
 ** installing vignettes

@@ -1,3 +1,8 @@
+# bundeswaldinventur 0.10.1.9000
+
+* Added functions to load data and global variables into .GlobalEnv for
+  historical analysis scripts.
+
 # bundeswaldinventur 0.10.1
 
 * Added man files to git.

@@ -1,6 +1,6 @@
 Package: bundeswaldinventur
 Title: Analysing the Bundeswaldinventur in the State of Baden-Wuerttemberg
-Version: 0.10.1
+Version: 0.10.1.9000
 Authors@R: c(person(given = c("Andreas", "Dominik"), family = "Cullmann",
             email = "dominik.cullmann@forst.bwl.de", role = c("aut","cre")),
         person(given = c("Gerald"), family = "Kändler",
@@ -49,6 +49,7 @@ Collate:
     'fvbn2e.R'
     'german_things.R'
     'get_data.R'
+    'global_objects.R'
     'labeling.R'
     'options.R'
     'regional.R'
