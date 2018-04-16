@@ -1,4 +1,4 @@
-# bundeswaldinventur 0.11.0.9000
+# bundeswaldinventur 0.11.1
 
 * Exclude testthat runs by R CMD check on external machines and disable data
   getter if the bwibw data package is not installed.

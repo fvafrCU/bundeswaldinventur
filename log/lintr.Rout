@@ -11842,6 +11842,9 @@ NO COPY: R/variable_getters.R:179:1: style: lines should not be more than 80 cha
 NO COPY: R/variable_getters.R:181:1: style: lines should not be more than 80 characters.
     bwi3 <- c(a = 3575148, nte = 35731, nt = nt) # nte _is_ sum(get_data("trakte.3")[["m"]]))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat.R:10:1: style: Trailing blank lines are superfluous.
+
+^
 NO COPY: tests/testthat/test_abbreviations_and_labels.R:115:1: style: lines should not be more than 80 characters.
   expect_is(get_label_for_abbreviation("Baumartenfläche", "text_label"), "character")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
