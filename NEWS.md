@@ -1,6 +1,6 @@
 # bundeswaldinventur 0.11.2
 
-* 0.11.1
+* Fix 0.11.1
 
 # bundeswaldinventur 0.11.1
 

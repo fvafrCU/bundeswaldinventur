@@ -23,11 +23,5 @@ help("bundeswaldinventur-package", package = "bundeswaldinventur")
 #> 
 #>      A collection of design-based estimators and reporting functions
 #>      for substrata of the area of interest.
-#> 
-#> Details:
-#> 
-#>      You will find the details in
-#>      'vignette("An_Introduction_to_bundeswaldinventur", package =
-#>      "bundeswaldinventur")'.
 ```
 

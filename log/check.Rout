@@ -38,7 +38,6 @@ Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
 * checking replacement functions ... OK
 * checking foreign function calls ... OK
 * checking R code for possible problems ... NOTE
-get_package_data: no visible global function definition for 'data'
 plot_deadwood: no visible binding for global variable 'graphics_height'
 plot_deadwood: no visible binding for global variable
   'graphics_directory'
@@ -256,14 +255,11 @@ tex_table: no visible binding for global variable 'graphics_directory'
 tex_table: no visible binding for global variable 'tables_directory'
 to_tex: no visible binding for global variable 'dot_district_tex'
 Undefined global functions or variables:
-  area bwi data district_groups dot_district_tex foo generator_notice
+  area bwi district_groups dot_district_tex foo generator_notice
   graphics_directory graphics_height group i krs.grupp NTNS ownership
   ownership_realive_area period plots_directory position prediction
   radius regional_file_name species standard_error stratii
   stratum_index tables_directory x
-Consider adding
-  importFrom("utils", "data")
-to your NAMESPACE file.
 
 Found the following assignments to the global environment:
 File ‘bundeswaldinventur/R/global_objects.R’:
@@ -288,12 +284,11 @@ File ‘bundeswaldinventur/R/global_objects.R’:
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
-* checking files in ‘vignettes’ ... OK
 * checking examples ... OK
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [171s/178s]
+  Running ‘testthat.R’ [176s/177s]
 * checking PDF version of manual ... OK
 * DONE
 Status: 1 NOTE

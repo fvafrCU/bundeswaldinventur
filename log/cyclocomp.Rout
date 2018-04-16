@@ -5,7 +5,6 @@
 ** help
 *** installing help indices
 ** building package indices
-** installing vignettes
 ** testing if installed package can be loaded
 * DONE (bundeswaldinventur)
 <error in packager::check_cyclomatic_complexity(): Exceeding maximum cyclomatic complexity of 10 for FVBN.bagrupp.akl.dkl.stratum.fun.2e by 26.

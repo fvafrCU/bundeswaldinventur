@@ -1252,12 +1252,10 @@ line 336: found width 82 max_line_width was 80
 FVBN.bagrupp.akl.dkl.stratum.fun.2e  found 347 lines, max_lines was 65
 FVBN.bagrupp.akl.dkl.stratum.fun.2e  found 240 lines of code, max_lines_of_code was 50
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/german_things.R: line 71 counts 83 characters.
-R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R: line 7 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R: line 29 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R: line 30 counts 83 characters.
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R: line 30 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R: line 31 counts 83 characters.
  /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R  get_global_variables  line 11: found width 83 max_line_width was 80
 line 12: found width 83 max_line_width was 80
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/global_objects.R  get_package_data  line 1: found width 83 max_line_width was 80
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R: line 334 counts 102 characters.
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R: 356 lines in file.
  /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R  get_abbreviation_for_label  found 72 lines, max_lines was 65
