@@ -1,3 +1,8 @@
+# bundeswaldinventur 0.11.0.9000
+
+* Exclude testthat runs by R CMD check on external machines and disable data
+  getter if the bwibw data package is not installed.
+
 # bundeswaldinventur 0.11.0
 
 * Added functions to load data and global variables into .GlobalEnv for

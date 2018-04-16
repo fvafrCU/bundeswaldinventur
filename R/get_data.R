@@ -15,7 +15,7 @@ NULL
 #' @return the data requested.
 #' @export
 #' @examples
-#' get_data("bacode")
+#' if (require("bwibw", quietly = TRUE)) get_data("bacode")
 get_data <- function(name) {
   checkmate::qassert(name, "S1")
   if (isTRUE(as.logical(get_options("fake_data")))) {
