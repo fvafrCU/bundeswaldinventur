@@ -20,9 +20,7 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Updating collate directive in  /home/nik/git/cs/fvafrcu/bundeswaldinventur/DESCRIPTION 
-Writing get_package_data.Rd
+Writing NAMESPACE
 Writing get_global_variables.Rd
-Writing get_global_objects.Rd
 > 
 > 

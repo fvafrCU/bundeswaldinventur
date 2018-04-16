@@ -2,6 +2,7 @@
 #'
 #' @param package Name of the package from which to load the data.
 #' @return Invisibly a character vector of names of the objects loaded.
+#' @export
 get_package_data <- function(package) {
     value <- data(list = data(package = package)[["results"]][TRUE, "Item"],
                   package = package, envir = .GlobalEnv)
@@ -12,6 +13,8 @@ get_package_data <- function(package) {
 #' 
 #' See \code{\link{get_global_objects}}.
 #' @return See \code{link{assign}}.
+#' @keywords internal
+#' @export
 get_global_variables <- function() {
     assign("COLORS_BWI", get_bwi_colors(), envir = .GlobalEnv)
     assign("A", get_design("a", 3), envir = .GlobalEnv)
@@ -38,6 +41,7 @@ get_global_variables <- function() {
 #' To stay compatible with the historical analysis scripts, this is is a wrapper
 #' to provide those global variables and data frames to the global environment.
 #' @return Invisibly NULL.
+#' @export
 get_global_objects <- function() {
     get_package_data(package = "bwibw")
     get_global_variables()

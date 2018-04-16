@@ -12,3 +12,4 @@ See \code{link{assign}}.
 \description{
 See \code{\link{get_global_objects}}.
 }
+\keyword{internal}
