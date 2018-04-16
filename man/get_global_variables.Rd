@@ -7,7 +7,7 @@
 get_global_variables()
 }
 \value{
-See \code{link{assign}}.
+See \code{\link{assign}}.
 }
 \description{
 See \code{\link{get_global_objects}}.

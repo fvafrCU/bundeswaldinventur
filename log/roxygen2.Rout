@@ -20,7 +20,7 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing NAMESPACE
 Writing get_global_variables.Rd
+Writing get_global_objects.Rd
 > 
 > 

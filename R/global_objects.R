@@ -12,7 +12,7 @@ get_package_data <- function(package) {
 #' Define Global Variables Needed by Historical Analysis Scripts
 #' 
 #' See \code{\link{get_global_objects}}.
-#' @return See \code{link{assign}}.
+#' @return See \code{\link{assign}}.
 #' @keywords internal
 #' @export
 get_global_variables <- function() {
@@ -36,8 +36,8 @@ get_global_variables <- function() {
 #' describing details of the sampling design or listing tree species groups or
 #' data frames containing sampling data.
 #' We replaced the global variables by getter functions (cf
-#' \code{\ink{get_design}}, \code{\ink{get_bwi_species_groups}} and the
-#' data frames by \pkg{bwibw} and \code{\ink{get_data}}.
+#' \code{\link{get_design}}, \code{\link{get_bwi_species_groups}} and the
+#' data frames by \pkg{bwibw} and \code{\link{get_data}}.
 #' To stay compatible with the historical analysis scripts, this is is a wrapper
 #' to provide those global variables and data frames to the global environment.
 #' @return Invisibly NULL.
