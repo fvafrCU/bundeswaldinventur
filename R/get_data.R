@@ -22,7 +22,7 @@ NULL
 #' }
 get_data <- function(name, package = get_options("data_source")) {
   checkmate::qassert(name, "S1")
-  checkmate::qassert(package, "S1")
+  checkmate::assert(checkmate::checkNull(package),checkmate::checkString(package))
   if (is.null(package)) package <- "bundeswaldinventur"
   utils::data(list = name, package = package, envir = environment())
   return(get(name))

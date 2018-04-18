@@ -40,7 +40,7 @@ set_options <- function(...,
   checkmate::qassert(reset, "B1")
   checkmate::qassert(overwrite, "B1")
   defaults <- list(
-    data_source = "bwibw",
+    data_source = NULL,
     graphics_width = 10,
     graphics_height = golden_ratio(10)[["a"]]
   )
