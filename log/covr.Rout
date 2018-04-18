@@ -79,6 +79,35 @@
 1047               R/batch.R                 provide_output_directory  117
 1052               R/batch.R                 provide_output_directory  118
 1060               R/batch.R                 provide_output_directory  119
+23       R/bits_and_pieces.R                add_colSums_to_data_frame   12
+31       R/bits_and_pieces.R                add_colSums_to_data_frame   13
+37       R/bits_and_pieces.R                add_colSums_to_data_frame   14
+48       R/bits_and_pieces.R                add_colSums_to_data_frame   15
+59       R/bits_and_pieces.R                add_colSums_to_data_frame   16
+70       R/bits_and_pieces.R                add_colSums_to_data_frame   17
+80       R/bits_and_pieces.R                add_colSums_to_data_frame   18
+86       R/bits_and_pieces.R                add_colSums_to_data_frame   19
+236      R/bits_and_pieces.R                     as_percent_and_round   36
+244      R/bits_and_pieces.R                     as_percent_and_round   37
+252      R/bits_and_pieces.R                     as_percent_and_round   38
+489      R/bits_and_pieces.R                             set_to_limit   58
+501      R/bits_and_pieces.R                             set_to_limit   59
+514      R/bits_and_pieces.R                             set_to_limit   60
+523      R/bits_and_pieces.R                             set_to_limit   61
+536      R/bits_and_pieces.R                             set_to_limit   62
+547      R/bits_and_pieces.R                             set_to_limit   63
+559      R/bits_and_pieces.R                             set_to_limit   64
+568      R/bits_and_pieces.R                             set_to_limit   65
+580      R/bits_and_pieces.R                             set_to_limit   66
+591      R/bits_and_pieces.R                             set_to_limit   67
+603      R/bits_and_pieces.R                             set_to_limit   68
+743      R/bits_and_pieces.R                               get_period   82
+753      R/bits_and_pieces.R                               get_period   83
+760      R/bits_and_pieces.R                               get_period   84
+771      R/bits_and_pieces.R                               get_period   85
+782      R/bits_and_pieces.R                               get_period   86
+794      R/bits_and_pieces.R                               get_period   87
+805      R/bits_and_pieces.R                               get_period   88
 176    R/BWI3_HR_Landkreis.R                     flaechen.kreis.fun.1   29
 194    R/BWI3_HR_Landkreis.R                     flaechen.kreis.fun.1   31
 200    R/BWI3_HR_Landkreis.R                     flaechen.kreis.fun.1   32
@@ -4549,55 +4578,7 @@
 8177             R/BWI3_HR.R              stamm.merkmale.bagr.akl.fun 5969
 8178             R/BWI3_HR.R              stamm.merkmale.bagr.akl.fun 5970
 8179             R/BWI3_HR.R              stamm.merkmale.bagr.akl.fun 5971
-21              R/deadwood.R                       harmonize_deadwood   11
-29              R/deadwood.R                       harmonize_deadwood   12
-34              R/deadwood.R                       harmonize_deadwood   13
-45              R/deadwood.R                       harmonize_deadwood   14
-56              R/deadwood.R                       harmonize_deadwood   15
-67              R/deadwood.R                       harmonize_deadwood   16
-77              R/deadwood.R                       harmonize_deadwood   17
-83              R/deadwood.R                       harmonize_deadwood   18
-89              R/deadwood.R                       harmonize_deadwood   19
-95              R/deadwood.R                       harmonize_deadwood   20
-101             R/deadwood.R                       harmonize_deadwood   21
-112             R/deadwood.R                       harmonize_deadwood   22
-119             R/deadwood.R                       harmonize_deadwood   23
-130             R/deadwood.R                       harmonize_deadwood   24
-141             R/deadwood.R                       harmonize_deadwood   25
-152             R/deadwood.R                       harmonize_deadwood   26
-163             R/deadwood.R                       harmonize_deadwood   27
 173             R/deadwood.R                       harmonize_deadwood   28
-184             R/deadwood.R                       harmonize_deadwood   29
-190             R/deadwood.R                       harmonize_deadwood   30
-295             R/deadwood.R                      purge_deadwood_to_2   42
-307             R/deadwood.R                      purge_deadwood_to_2   43
-319             R/deadwood.R                      purge_deadwood_to_2   44
-331             R/deadwood.R                      purge_deadwood_to_2   45
-344             R/deadwood.R                      purge_deadwood_to_2   46
-359             R/deadwood.R                      purge_deadwood_to_2   47
-491             R/deadwood.R                           drop_variables   59
-503             R/deadwood.R                           drop_variables   60
-516             R/deadwood.R                           drop_variables   61
-526             R/deadwood.R                           drop_variables   62
-705             R/deadwood.R                                 deadwood   79
-716             R/deadwood.R                                 deadwood   80
-726             R/deadwood.R                                 deadwood   81
-736             R/deadwood.R                                 deadwood   82
-774             R/deadwood.R                                 deadwood   86
-786             R/deadwood.R                                 deadwood   87
-798             R/deadwood.R                                 deadwood   88
-809             R/deadwood.R                                 deadwood   89
-817             R/deadwood.R                                 deadwood   90
-826             R/deadwood.R                                 deadwood   91
-832             R/deadwood.R                                 deadwood   92
-838             R/deadwood.R                                 deadwood   93
-846             R/deadwood.R                                 deadwood   94
-856             R/deadwood.R                                 deadwood   95
-866             R/deadwood.R                                 deadwood   96
-875             R/deadwood.R                                 deadwood   97
-884             R/deadwood.R                                 deadwood   98
-892             R/deadwood.R                                 deadwood   99
-900             R/deadwood.R                                 deadwood  100
 761   R/figures_and_tables.R             melt_species_attribute_group   84
 772   R/figures_and_tables.R             melt_species_attribute_group   85
 784   R/figures_and_tables.R             melt_species_attribute_group   86
@@ -7875,6 +7856,35 @@
 1047     0
 1052     0
 1060     0
+23       0
+31       0
+37       0
+48       0
+59       0
+70       0
+80       0
+86       0
+236      0
+244      0
+252      0
+489      0
+501      0
+514      0
+523      0
+536      0
+547      0
+559      0
+568      0
+580      0
+591      0
+603      0
+743      0
+753      0
+760      0
+771      0
+782      0
+794      0
+805      0
 176      0
 194      0
 200      0
@@ -12345,55 +12355,7 @@
 8177     0
 8178     0
 8179     0
-21       0
-29       0
-34       0
-45       0
-56       0
-67       0
-77       0
-83       0
-89       0
-95       0
-101      0
-112      0
-119      0
-130      0
-141      0
-152      0
-163      0
 173      0
-184      0
-190      0
-295      0
-307      0
-319      0
-331      0
-344      0
-359      0
-491      0
-503      0
-516      0
-526      0
-705      0
-716      0
-726      0
-736      0
-774      0
-786      0
-798      0
-809      0
-817      0
-826      0
-832      0
-838      0
-846      0
-856      0
-866      0
-875      0
-884      0
-892      0
-900      0
 761      0
 772      0
 784      0
@@ -15590,13 +15552,13 @@
 1888     0
 1896     0
 1904     0
-bundeswaldinventur Coverage: 4.69%
+bundeswaldinventur Coverage: 4.93%
 R/adapt_script.R: 0.00%
 R/batch.R: 0.00%
+R/bits_and_pieces.R: 0.00%
 R/BWI3_HR_Landkreis.R: 0.00%
 R/BWI3_HR_Totholz.R: 0.00%
 R/BWI3_HR.R: 0.00%
-R/deadwood.R: 0.00%
 R/figures_and_tables.R: 0.00%
 R/fvbn2a.R: 0.00%
 R/fvbn2b.R: 0.00%
@@ -15610,7 +15572,7 @@ R/tree_species_shares.R: 0.00%
 R/utils.R: 0.00%
 R/options.R: 26.67%
 R/variable_getters.R: 72.46%
-R/bits_and_pieces.R: 100.00%
+R/deadwood.R: 97.96%
 R/get_data.R: 100.00%
 R/labeling.R: 100.00%
 R/statistics.R: 100.00%

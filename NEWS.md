@@ -1,3 +1,7 @@
+# bundeswaldinventur 0.12.1.9000
+
+* improve on testing with local data
+
 # bundeswaldinventur 0.12.1
 
 * fix get\_data()

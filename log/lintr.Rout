@@ -10663,6 +10663,12 @@ NO COPY: R/fvbn2e.R:429:25: style: Words within variable and function names shou
 NO COPY: R/german_things.R:71:1: style: lines should not be more than 80 characters.
 round_and_prettify <- function(x, digits = 0, big_mark = ",", decimal_mark = ".") {
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/get_data.R:25:1: style: lines should not be more than 80 characters.
+  checkmate::assert(checkmate::checkNull(package),checkmate::checkString(package))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/get_data.R:25:51: style: Commas should always have a space after.
+  checkmate::assert(checkmate::checkNull(package),checkmate::checkString(package))
+                                                  ^
 NO COPY: R/global_objects.R:8:64: style: Trailing whitespace is superfluous.
     value <- utils::data(list = data_frames, package = package, 
                                                                ^
@@ -11845,732 +11851,741 @@ NO COPY: R/variable_getters.R:179:1: style: lines should not be more than 80 cha
 NO COPY: R/variable_getters.R:181:1: style: lines should not be more than 80 characters.
     bwi3 <- c(a = 3575148, nte = 35731, nt = nt) # nte _is_ sum(get_data("trakte.3")[["m"]]))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat.R:10:1: style: Trailing blank lines are superfluous.
+NO COPY: tests/testthat.R:5:1: style: Trailing blank lines are superfluous.
 
 ^
-NO COPY: tests/testthat/t_BWI3_HR_Landkreis.R:97:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:97:1: style: lines should not be more than 80 characters.
       Waldfl_StW = c(316376, 326979, 327388), SE_Waldfl_StW = c(9781, 9994, 9967),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Landkreis.R:98:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:98:1: style: lines should not be more than 80 characters.
       Waldfl_KW = c(519525, 537930, 545613), SE_Waldfl_KW = c(11558, 11801, 11806),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Landkreis.R:112:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:112:1: style: lines should not be more than 80 characters.
       "SE_Waldfl_StW", "Waldfl_KW", "SE_Waldfl_KW", "Waldfl_OEW", "SE_Waldfl_OEW",
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Landkreis.R:130:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:130:1: style: lines should not be more than 80 characters.
     )), .Names = c("Eigentum", "Waldfl_Proz", "SE_Waldfl_Proz"), row.names = c(NA, -7L), class = "data.frame"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:15:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:15:1: style: lines should not be more than 80 characters.
     get_data("totholz.3"), get_data("ecken.3"), get_data("trakte.3"), 3, get_design("a", 3),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:16:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:16:1: style: lines should not be more than 80 characters.
     list(D.unt = 0, D.ob = 70, D.b = 10, Ndh = T), list(Wa = c(3, 5), Begehbar = 1)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:400:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:400:1: style: lines should not be more than 80 characters.
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 29139.876067467, 12739.6922488515,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:492:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:492:1: style: lines should not be more than 80 characters.
         NA, 0, 0, NA, NA, 0, 0, NA, NA, 0.000681910133399188, 0.00962242623941959,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:513:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:513:1: style: lines should not be more than 80 characters.
         0, 0, NA, NA, 0, 0, NA, NA, 0, 0, NA, NA, 0, 0, NA, NA, 0.153428762823326,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:514:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:514:1: style: lines should not be more than 80 characters.
         1.7821513811971, 0.0151690308697574, 0.123424094751065, 0.0302252976360131,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:526:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:526:1: style: lines should not be more than 80 characters.
         0, 0, NA, NA, 0.0338306794145005, 0.635080131801693, 0.00369407626574004,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:530:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:530:1: style: lines should not be more than 80 characters.
         0.17984099046026, 7.98975015931076, 0.0127310837403717, 0.387815443354092,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:532:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:532:1: style: lines should not be more than 80 characters.
         0.349420961554325, 0.0187601541986197, 0.6323355297763, 0.00514621625832457,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:533:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:533:1: style: lines should not be more than 80 characters.
         0.110182076622643, 0.245312556435414, 3.37705042162938, 0.0165003321893196,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:537:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:537:1: style: lines should not be more than 80 characters.
         0.192124846201886, 2.4810174466445, 0.0132108145947973, 0.110827457040925,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:541:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:541:1: style: lines should not be more than 80 characters.
         0.00962242623941959, 0, 0, 0, 0, NA, NA, 0, 0, NA, NA, 0.0111076904617355,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:564:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:564:1: style: lines should not be more than 80 characters.
         0.00962242623941959, 0, 0, 0, 0, NA, NA, 0, 0, NA, NA, 0.0433546932003243,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:565:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:565:1: style: lines should not be more than 80 characters.
         1.57981614661427, 0.0232754675637515, 1.01674813980093, 0.00949153579730821,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:576:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:576:1: style: lines should not be more than 80 characters.
         45.2557925671856, 0.044750391785502, 1.00888865624781, 0.732510826225565,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:577:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:577:1: style: lines should not be more than 80 characters.
         22.931958599607, 0.032356970290892, 0.676674078801456, 0.112314504678556,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:586:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:586:1: style: lines should not be more than 80 characters.
         0.0204133864377219, 0, 0, NA, NA, 0.00937980054148165, 0.192448524788392,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:634:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:634:1: style: lines should not be more than 80 characters.
         0, 0, 0, NA, NA, 0.035808722725992, 0.0962242623941959, 0.00566485836027159,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:640:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:640:1: style: lines should not be more than 80 characters.
         0.00842694242256322, 0.00980655872807192, 0, 0, NA, NA, 0.428904627094884,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:672:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:672:1: style: lines should not be more than 80 characters.
         0.551056797424667, 0.0370949057368564, 4.9112153151451, 0.00197767172269257,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:675:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:675:1: style: lines should not be more than 80 characters.
         0.00962242623941959, 0, 0, 0, 0, NA, NA, 0, 0, NA, NA, 0.00480719890328822,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:677:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:677:1: style: lines should not be more than 80 characters.
         0.00196808672079681, 0.00216182810744878, 0, 0, NA, NA, 0.0383885614598452,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:698:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:698:1: style: lines should not be more than 80 characters.
         0, 0, 0.00834277416439056, 0.00962242623941959, 0, 0, 0.0479556395093091,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:722:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:722:1: style: lines should not be more than 80 characters.
         0.0064153084342643, 0.27793780725461, 2.96432139275998, 0.0302344244275546,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:728:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:728:1: style: lines should not be more than 80 characters.
         0, 0, 0, NA, NA, 0.159447373662067, 0.500366164449819, 0.0162815468551288,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:730:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:730:1: style: lines should not be more than 80 characters.
         0.00814266502491255, 0.0109954237799569, 0, 0, NA, NA, 0.500900142495845,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:731:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:731:1: style: lines should not be more than 80 characters.
         21.9527622524184, 0.0122067006690143, 0.39013884979027, 0.0828241232574965,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:735:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:735:1: style: lines should not be more than 80 characters.
         0, 0, 0, 0, NA, NA, 0, 0, NA, NA, 0.0639466033104275, 0.0673569836759371,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:736:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:736:1: style: lines should not be more than 80 characters.
         0.00492780983716084, 0.00540920265461551, 0, 0, NA, NA, 0.0123290513517708,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:742:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:742:1: style: lines should not be more than 80 characters.
         0.04458013626014, 0.074739150405577, 0.025407063699484, 0.163581246070133,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:747:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:747:1: style: lines should not be more than 80 characters.
         0.29864859021315, 0.040392401929004, 2.71435100060459, 0.00203943955162039,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:757:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:757:1: style: lines should not be more than 80 characters.
         0, 0, NA, NA, 0.0759370043017781, 0.0481121311970979, 0.00794454118817003,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:768:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:768:1: style: lines should not be more than 80 characters.
         0.00272178485836292, 0, 0, NA, NA, 0.00341007409330487, 0.00962242623941959,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:775:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:775:1: style: lines should not be more than 80 characters.
         0.00945687115783693, 0.00194413204168779, 0, 0, NA, NA, 0.137626259335798,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:796:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:796:1: style: lines should not be more than 80 characters.
         0.0149628316572294, 0.00907261619454307, 0, 0, NA, NA, 0.582108181442574,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:805:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:805:1: style: lines should not be more than 80 characters.
         0.00408620708867367, 0.00272178485836292, 0, 0, NA, NA, 0.43880775728024,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:812:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:812:1: style: lines should not be more than 80 characters.
         0.00520118489398381, 0.00294641853872265, 0, 0, NA, NA, 0.374659206730803,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:813:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:813:1: style: lines should not be more than 80 characters.
         11.169053894347, 0.0117283413517254, 0.241305031450087, 0.0574859776916067,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:820:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:820:1: style: lines should not be more than 80 characters.
         0.00353736850090237, 0.0068044621459073, 0, 0, NA, NA, 0.180137100257763,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:821:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:821:1: style: lines should not be more than 80 characters.
         1.0203168923821, 0.040042920301921, 0.0430692920142788, 0.029516872734681,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:824:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:824:1: style: lines should not be more than 80 characters.
         0.00962242623941959, 0, 0, 0, 0, NA, NA, 0, 0, NA, NA, 0.0294967133340961,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:832:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:832:1: style: lines should not be more than 80 characters.
         NA, NA, 0.00530640982811101, 0.00962242623941959, 0, 0, 0.00412590697324745,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:849:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:849:1: style: lines should not be more than 80 characters.
         0, 0, NA, NA, 0.0214134901265061, 0.0288672787182588, 0.00208306928231655,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:872:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:872:1: style: lines should not be more than 80 characters.
         6.42205314336457, 0.0118569819402662, 0.14383849814924, 0.037163775217352,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:877:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:877:1: style: lines should not be more than 80 characters.
         0.00962242623941959, 0, 0, 0, 0, NA, NA, 0, 0, NA, NA, 0.0232803815729548,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:880:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:880:1: style: lines should not be more than 80 characters.
         0.00890913224202339, 0, 0, NA, NA, 0.0472074592606736, 0.00962242623941959,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:881:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:881:1: style: lines should not be more than 80 characters.
         0, 0, 0, 0, NA, NA, 0, 0, NA, NA, 0.0198182882689747, 0.00962242623941959,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:889:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:889:1: style: lines should not be more than 80 characters.
         0, 0, 0, 0, NA, NA, 0, 0, NA, NA, 0.0432397804209338, 0.0866018361547763,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:902:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:902:1: style: lines should not be more than 80 characters.
         0, 0, 0, 0, NA, NA, 0, 0, NA, NA, 0.0452718399996124, 0.00962242623941959,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:963:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:963:1: style: lines should not be more than 80 characters.
         0, 0, NA, NA, 0, 0, NA, NA, 0, 0, NA, NA, 0, 0, NA, NA, 0.0173005572245161,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:966:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:966:1: style: lines should not be more than 80 characters.
         0.11932723950847, 0.100960848354949, 0.905728578824063, 0.00782708688924316,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:1080:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:1080:1: style: lines should not be more than 80 characters.
     ), .Dim = c(2L, 2L, 3L)), nT.Tart = structure(c(3845L, 1223L, 4128L), .Dim = c(3L, 1L))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR_Totholz.R:1094:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:1094:1: style: lines should not be more than 80 characters.
     list(attr = "tart", kat = list(c(11, 12, 13), c(2, 3), c(4, 5))), get_design("a", 3),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:14:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:14:1: style: lines should not be more than 80 characters.
     get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:16:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:16:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:65:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:65:1: style: lines should not be more than 80 characters.
     get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:67:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:67:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:117:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:117:1: style: lines should not be more than 80 characters.
     get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:119:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:119:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:170:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:170:1: style: lines should not be more than 80 characters.
     get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:172:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:172:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:225:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:225:1: style: lines should not be more than 80 characters.
     get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:234:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:234:1: style: lines should not be more than 80 characters.
   reference <- list(Log = list(Datum = structure(1523138485.322, class = c("POSIXct", 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:234:86: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:234:86: style: Trailing whitespace is superfluous.
   reference <- list(Log = list(Datum = structure(1523138485.322, class = c("POSIXct", 
                                                                                      ^
-NO COPY: tests/testthat/t_BWI3_HR.R:235:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:235:1: style: lines should not be more than 80 characters.
 "POSIXt")), Version.baeume.b = "/ EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614"), 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:235:117: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:235:117: style: Trailing whitespace is superfluous.
 "POSIXt")), Version.baeume.b = "/ EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614"), 
                                                                                                                     ^
-NO COPY: tests/testthat/t_BWI3_HR.R:236:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:236:62: style: Trailing whitespace is superfluous.
     Stratum = list(Wa = c(3, 5), Begehbar = 1), nTE = 13232L, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:237:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:237:63: style: Trailing whitespace is superfluous.
     HBF = 1323958.42086703, se.HBF = 15760.6334334331, BL = 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:238:77: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:238:77: style: Trailing whitespace is superfluous.
     se.BL = 0, iBL = 0, se.iBL = 0, LK = 1, se.LK = 0, Attribute1 = c("BAF", 
                                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:239:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:239:1: style: lines should not be more than 80 characters.
     "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), Attribute2 = c("BA_Proz", 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:239:85: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:239:85: style: Trailing whitespace is superfluous.
     "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), Attribute2 = c("BA_Proz", 
                                                                                     ^
-NO COPY: tests/testthat/t_BWI3_HR.R:240:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:240:62: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:241:74: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:241:74: style: Trailing whitespace is superfluous.
     "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
                                                                          ^
-NO COPY: tests/testthat/t_BWI3_HR.R:242:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:242:62: style: Trailing whitespace is superfluous.
     "Nadel", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:244:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:244:63: style: Trailing whitespace is superfluous.
     ), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 0, 0, 0, 0, 0, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:245:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:245:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:246:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:246:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:247:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:247:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:248:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:248:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:249:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:249:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:250:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:250:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:251:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:251:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:252:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:252:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:253:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:253:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:254:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:254:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:255:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:255:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:256:78: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:256:78: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 24.6741344154936, 28063.8661918537, 
                                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:257:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:257:76: style: Trailing whitespace is superfluous.
     28063.8661918537, 19116.7710432273, 10771.2123280855, 10771.2123280855, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:258:74: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:258:74: style: Trailing whitespace is superfluous.
     10771.2123280855, 24.6741262537569, 28063.856908858, 28063.856908858, 
                                                                          ^
-NO COPY: tests/testthat/t_BWI3_HR.R:259:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:259:76: style: Trailing whitespace is superfluous.
     19116.7647197613, 10771.2087651723, 10771.2087651723, 10771.2087651723, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:260:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:260:76: style: Trailing whitespace is superfluous.
     24.6741344154936, 28063.8661918537, 28063.8661918537, 19116.7710432273, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:261:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:261:76: style: Trailing whitespace is superfluous.
     10771.2123280855, 10771.2123280855, 10771.2123280855, 24.6741262537569, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:262:74: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:262:74: style: Trailing whitespace is superfluous.
     28063.856908858, 28063.856908858, 19116.7647197613, 10771.2087651723, 
                                                                          ^
-NO COPY: tests/testthat/t_BWI3_HR.R:263:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:263:62: style: Trailing whitespace is superfluous.
     10771.2087651723, 10771.2087651723, 0, 0, 0, 0, 0, 0, NA, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:264:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:264:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:265:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:265:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:266:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:266:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:267:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:267:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:268:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:268:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:269:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:269:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:270:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:270:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:271:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:271:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:272:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:272:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:273:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:273:62: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 42.6744457753771, 51996.8174347863, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:274:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:274:76: style: Trailing whitespace is superfluous.
     51996.8174347863, 32809.6830199119, 10649.0494378779, 10649.0494378779, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:275:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:275:76: style: Trailing whitespace is superfluous.
     10649.0494378779, 42.6744316594782, 51996.8002352233, 51996.8002352233, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:276:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:276:76: style: Trailing whitespace is superfluous.
     32809.6721670898, 10649.0459153739, 10649.0459153739, 10649.0459153739, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:277:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:277:76: style: Trailing whitespace is superfluous.
     42.6744457753771, 51996.8174347863, 51996.8174347863, 32809.6830199119, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:278:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:278:76: style: Trailing whitespace is superfluous.
     10649.0494378779, 10649.0494378779, 10649.0494378779, 42.6744316594782, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:279:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:279:76: style: Trailing whitespace is superfluous.
     51996.8002352233, 51996.8002352233, 32809.6721670898, 10649.0459153739, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:280:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:280:62: style: Trailing whitespace is superfluous.
     10649.0459153739, 10649.0459153739, 0, 0, 0, 0, 0, 0, NA, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:281:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:281:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:282:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:282:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:283:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:283:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:284:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:284:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:285:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:285:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:286:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:286:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:287:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:287:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:288:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:288:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:289:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:289:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:290:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:290:76: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 67.3485801908707, 80060.68362664, 80060.68362664, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:291:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:291:76: style: Trailing whitespace is superfluous.
     51926.4540631392, 21420.2617659634, 21420.2617659634, 21420.2617659634, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:292:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:292:76: style: Trailing whitespace is superfluous.
     67.3485579132352, 80060.6571440813, 80060.6571440813, 51926.4368868511, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:293:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:293:76: style: Trailing whitespace is superfluous.
     21420.2546805463, 21420.2546805463, 21420.2546805463, 67.3485801908707, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:294:72: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:294:72: style: Trailing whitespace is superfluous.
     80060.68362664, 80060.68362664, 51926.4540631392, 21420.2617659634, 
                                                                        ^
-NO COPY: tests/testthat/t_BWI3_HR.R:295:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:295:76: style: Trailing whitespace is superfluous.
     21420.2617659634, 21420.2617659634, 67.3485579132352, 80060.6571440813, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:296:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:296:76: style: Trailing whitespace is superfluous.
     80060.6571440813, 51926.4368868511, 21420.2546805463, 21420.2546805463, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:297:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:297:62: style: Trailing whitespace is superfluous.
     21420.2546805463, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:298:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:298:61: style: Trailing whitespace is superfluous.
     NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:299:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:299:61: style: Trailing whitespace is superfluous.
     0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:300:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:300:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:301:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:301:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:302:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:302:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:303:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:303:63: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:304:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:304:61: style: Trailing whitespace is superfluous.
     0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:305:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:305:64: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:306:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:306:1: style: lines should not be more than 80 characters.
     0, 0, 0, 0, 0, 0, NA), .Dim = c(7L, 2L, 3L, 5L, 4L)), FVBN.ha.Bagr.Akl.Dkl = structure(c(0, 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:306:96: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:306:96: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, NA), .Dim = c(7L, 2L, 3L, 5L, 4L)), FVBN.ha.Bagr.Akl.Dkl = structure(c(0, 
                                                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:307:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:307:61: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:308:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:308:61: style: Trailing whitespace is superfluous.
     0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:309:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:309:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:310:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:310:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:311:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:311:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:312:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:312:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:313:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:313:62: style: Trailing whitespace is superfluous.
     NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:314:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:314:61: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:315:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:315:61: style: Trailing whitespace is superfluous.
     0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:316:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:316:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:317:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:317:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:318:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:318:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:319:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:319:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:320:79: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:320:79: style: Trailing whitespace is superfluous.
     NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0.0018636638452237, 
                                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:321:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:321:76: style: Trailing whitespace is superfluous.
     1137.37996718668, 1137.37996718668, 774.769672618113, 436.538609489051, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:322:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:322:61: style: Trailing whitespace is superfluous.
     436.538609489051, 436.538609489051, 0.00186372232545288, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:323:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:323:61: style: Trailing whitespace is superfluous.
     0, 0, 1.13678880869466e-05, 0, 0, 0, 0.0018636638452237, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:324:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:324:76: style: Trailing whitespace is superfluous.
     1137.37996718668, 1137.37996718668, 774.769672618113, 436.538609489051, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:325:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:325:61: style: Trailing whitespace is superfluous.
     436.538609489051, 436.538609489051, 0.00186372232545288, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:326:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:326:64: style: Trailing whitespace is superfluous.
     0, 0, 1.13678880869466e-05, 0, 0, 0, 0, 0, 0, 0, 0, NA, NA, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:327:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:327:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:328:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:328:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:329:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:329:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:330:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:330:62: style: Trailing whitespace is superfluous.
     NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:331:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:331:61: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:332:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:332:61: style: Trailing whitespace is superfluous.
     0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:333:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:333:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:334:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:334:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:335:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:335:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:336:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:336:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:337:80: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:337:80: style: Trailing whitespace is superfluous.
     NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0.00322324667472793, 
                                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:338:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:338:76: style: Trailing whitespace is superfluous.
     1218.45325674477, 1218.45325674477, 768.836769260232, 249.541599062134, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:339:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:339:61: style: Trailing whitespace is superfluous.
     249.541599062134, 249.541599062134, 0.00322334781754117, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:340:71: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:340:71: style: Trailing whitespace is superfluous.
     NaN, NaN, 0, NaN, NaN, NaN, 0.00322324667472793, 1218.45325674477, 
                                                                       ^
-NO COPY: tests/testthat/t_BWI3_HR.R:341:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:341:76: style: Trailing whitespace is superfluous.
     1218.45325674477, 768.836769260232, 249.541599062134, 249.541599062134, 
                                                                            ^
-NO COPY: tests/testthat/t_BWI3_HR.R:342:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:342:61: style: Trailing whitespace is superfluous.
     249.541599062134, 0.00322334781754117, NaN, NaN, 0, NaN, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:343:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:343:61: style: Trailing whitespace is superfluous.
     NaN, NaN, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:344:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:344:62: style: Trailing whitespace is superfluous.
     NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:345:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:345:61: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:346:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:346:61: style: Trailing whitespace is superfluous.
     0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:347:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:347:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:348:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:348:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:349:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:349:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:350:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:350:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:351:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:351:62: style: Trailing whitespace is superfluous.
     NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:352:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:352:61: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:353:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:353:61: style: Trailing whitespace is superfluous.
     0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:354:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:354:61: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, NA, NA, 0.00508691051995163, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:355:75: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:355:75: style: Trailing whitespace is superfluous.
     1188.75087492182, 1188.75087492182, 771.010374917718, 318.05068058238, 
                                                                           ^
-NO COPY: tests/testthat/t_BWI3_HR.R:356:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:356:64: style: Trailing whitespace is superfluous.
     318.05068058238, 318.05068058238, 0.00508707014299405, NaN, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:357:68: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:357:68: style: Trailing whitespace is superfluous.
     NaN, NaN, NaN, NaN, NaN, 0.00508691051995163, 1188.75087492182, 
                                                                    ^
-NO COPY: tests/testthat/t_BWI3_HR.R:358:74: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:358:74: style: Trailing whitespace is superfluous.
     1188.75087492182, 771.010374917718, 318.05068058238, 318.05068058238, 
                                                                          ^
-NO COPY: tests/testthat/t_BWI3_HR.R:359:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:359:62: style: Trailing whitespace is superfluous.
     318.05068058238, 0.00508707014299405, NaN, NaN, NaN, NaN, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:360:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:360:61: style: Trailing whitespace is superfluous.
     NaN, NaN, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:361:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:361:62: style: Trailing whitespace is superfluous.
     NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:362:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:362:61: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:363:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:363:61: style: Trailing whitespace is superfluous.
     0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:364:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:364:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:365:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:365:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:366:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:366:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:367:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:367:63: style: Trailing whitespace is superfluous.
     NA, NA, NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:368:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:368:62: style: Trailing whitespace is superfluous.
     NA, 0, 0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 
                                                              ^
-NO COPY: tests/testthat/t_BWI3_HR.R:369:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:369:61: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:370:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:370:64: style: Trailing whitespace is superfluous.
     0, 0, NA, NA, NA, NA, NA, NA, NA, NA, NA), .Dim = c(7L, 2L, 
                                                                ^
-NO COPY: tests/testthat/t_BWI3_HR.R:371:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:371:63: style: Trailing whitespace is superfluous.
     3L, 5L, 4L)), nT.Bagr.Akl.Dkl = structure(c(0, 0, 0, 0, 0, 
                                                               ^
-NO COPY: tests/testthat/t_BWI3_HR.R:372:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:372:61: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:373:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:373:61: style: Trailing whitespace is superfluous.
     0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
                                                             ^
-NO COPY: tests/testthat/t_BWI3_HR.R:374:69: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:374:69: style: Trailing whitespace is superfluous.
     0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), .Dim = c(3L, 
                                                                     ^
-NO COPY: tests/testthat/t_BWI3_HR.R:384:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:384:1: style: lines should not be more than 80 characters.
     get_data("baeume.3")[1:10, ], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:403:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:403:1: style: lines should not be more than 80 characters.
     )), Version.baeume.b = "/ EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:419:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:419:1: style: lines should not be more than 80 characters.
     ), AKL = c("1-50", "51-100", ">100", "Alle AKl"), DKL = c("0-6.9", ">=50", "25-49.9", "Alle DKl"), T.FVBN.Bagr.Akl.Dkl = structure(c(
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:496:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:496:1: style: lines should not be more than 80 characters.
     get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:515:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:515:1: style: lines should not be more than 80 characters.
     )), Version.baeume.b = "/ EHK/A/Z-Gebiet =  0(BWI 23)/BWI3-Formigkeit/Zuwachskorr.//04.07.2014/1.4/060614"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:521:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:521:1: style: lines should not be more than 80 characters.
     se.iBL = 654.98387831204, LK = 1.01105797967723, se.LK = 0.00196277383161635,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:1272:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:1272:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:1340:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:1340:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, d.B = 500, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:1565:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:1565:1: style: lines should not be more than 80 characters.
       0.0889940917260452, 3734.08206390978, 3642.12803385201, 0.0164101091579517,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:1677:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:1677:1: style: lines should not be more than 80 characters.
       0.0935705218729192, 2686.80944055257, 2619.05481354466, 0.0186142528112237,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:1725:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:1725:1: style: lines should not be more than 80 characters.
       0.0749879786014173, 4757.75439532006, 4640.42558670565, 0.0132997618057585,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:1781:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:1781:1: style: lines should not be more than 80 characters.
       0.0796338235010496, 4277.02593268138, 4171.09899970208, 0.0147658260535502,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:1837:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:1837:1: style: lines should not be more than 80 characters.
       0.0987445365613301, 3201.98016251359, 3121.96078502582, 0.0169584124877272,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:1995:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:1995:1: style: lines should not be more than 80 characters.
       4733.88731915039, 4205.66257665902, 0.0341840976281223, 0.0340069537947664,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:2117:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:2117:1: style: lines should not be more than 80 characters.
       1.01767713447205, 0.758391498984259, 0.464156327274419, 0.0340137263242301,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:2377:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:2377:1: style: lines should not be more than 80 characters.
     list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 400, D.b = 400, Ndh = F),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:2403:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:2403:1: style: lines should not be more than 80 characters.
       192943.566261479, 119282.887141281, 0.0763263544656992, 0.0778150959120681,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:2596:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:2596:1: style: lines should not be more than 80 characters.
     BAGR = c("Fi", "Ta", "Dgl/Ki/La/sNB", "Bu", "Ei", "Es", "Ah", "sBLb", "WLb"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:2698:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:2698:1: style: lines should not be more than 80 characters.
     get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), list(
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:2726:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:2726:1: style: lines should not be more than 80 characters.
   result <- ntns.stratum.fun.2(get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:2994:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:2994:1: style: lines should not be more than 80 characters.
       0.0175096690672845, 4545.32046856041, 4436.75166375037, 0.0133289014583507,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:3022:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:3022:1: style: lines should not be more than 80 characters.
       0.156181862049714, 0.15836549115004, 0.125439031520233, 0.0710564631396485,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:3072:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:3072:1: style: lines should not be more than 80 characters.
       0.0239635823719636, 989.521563252434, 965.783547534023, 0.0267550721683242,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:3101:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:3101:1: style: lines should not be more than 80 characters.
       0.0239447987557637, 1088.83090101928, 1061.86742013887, 0.0284633859870514,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:3440:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:3440:1: style: lines should not be more than 80 characters.
     get_data("wzp4.merkmale.3"), get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:3452:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:3452:1: style: lines should not be more than 80 characters.
     LK = 1.01598524438979, se.LK = 0.00113354916119642, Biotopbaumkennwerte = structure(list(
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_BWI3_HR.R:3494:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:3494:1: style: lines should not be more than 80 characters.
     get_data("trakte.3"), get_design("a", 3), list(Wa = c(3, 5), Begehbar = 1), c(
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/t_deadwood.R:64:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_deadwood.R:64:1: style: lines should not be more than 80 characters.
     lge = c(0.600000024, 12, 0.800000012, 0.899999976, 0.600000024, 0.300000012),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_abbreviations_and_labels.R:115:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_abbreviations_and_labels.R:115:1: style: lines should not be more than 80 characters.
   expect_is(get_label_for_abbreviation("Baumartenfläche", "text_label"), "character")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_abbreviations_and_labels.R:116:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_abbreviations_and_labels.R:116:1: style: lines should not be more than 80 characters.
   expect_is(get_label_for_abbreviation("Baumartenfläche", "axis_label"), "character")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_abbreviations_and_labels.R:124:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_abbreviations_and_labels.R:124:1: style: lines should not be more than 80 characters.
   expect_gt(nchar(get_label_for_abbreviation("Baumartenfläche", "text_label")), 0)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test_abbreviations_and_labels.R:125:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_abbreviations_and_labels.R:125:1: style: lines should not be more than 80 characters.
   expect_gt(nchar(get_label_for_abbreviation("Baumartenfläche", "axis_label")), 0)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_deadwood.R:49:71: style: Trailing whitespace is superfluous.
+NA, NA, NA, NA, NA), raumkat = c(NA, NA, NA, NA, NA, NA), dm = c(41.5, 
+                                                                      ^
+NO COPY: tests/testthat/test-local_deadwood.R:52:1: style: lines should not be more than 80 characters.
+"raumkat", "dm"), row.names = c(13L, 14L, 15L, 16L, 27L, 31L), class = "data.frame")
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_deadwood.R:67:1: style: lines should not be more than 80 characters.
+"tvol", "thf", "anz", "tart", "tbagr", "tzg"), class = "data.frame", row.names = c(NA,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

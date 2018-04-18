@@ -1,3 +1,4 @@
+* add exclusions coverage
 * sample and anonymize bwibw, adapt get\_data() and add tests
 * Fix global bindings in log/check.Rout
 * clean, lint, spell!
