@@ -20,6 +20,6 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing bwi_data.Rd
+Writing get_data.Rd
 > 
 > 

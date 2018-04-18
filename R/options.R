@@ -19,7 +19,6 @@ NULL
 #'   return(invisible(NULL))
 #' }
 #' in your zzz.R to bundle a package's options into the list named "foo".
-#' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param name [character(1)]\cr Name of the list.
 #' @param overwrite [boolean(1)]\cr Overwrite options already set? Is set to
 #' FALSE on package loading to ensure your previously set list options
@@ -41,7 +40,7 @@ set_options <- function(...,
   checkmate::qassert(reset, "B1")
   checkmate::qassert(overwrite, "B1")
   defaults <- list(
-    fake_data = TRUE,
+    data_source = "bwibw",
     graphics_width = 10,
     graphics_height = golden_ratio(10)[["a"]]
   )
@@ -75,7 +74,6 @@ set_options <- function(...,
 #'
 #' a convenience function for \code{\link{getOption}}.
 #'
-#' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
 #' @param ... see \code{\link{getOption}}/
 #' @param name [character(1)]\cr Name of the list.
 #' @param remove_names [boolean(1)]\cr Remove the names?

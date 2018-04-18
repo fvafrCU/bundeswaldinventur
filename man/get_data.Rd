@@ -4,26 +4,29 @@
 \alias{get_data}
 \title{Load Data from \pkg{bwibw}}
 \usage{
-get_data(name)
+get_data(name, package = get_options("data_source"))
 }
 \arguments{
 \item{name}{a string of length one giving the name of the data.frame.}
+
+\item{package}{The package to load data from.}
 }
 \value{
 the data requested.
 }
 \description{
-Get data if we want to use example data provided with the package.
+Get data if we want to use example data provided with the this of the
+\pkg{bwibw} package.
 }
 \details{
-this is a wrapper reading get_options("fake_data") and returning an error if
-this is not set to TRUE, hence globally en/dis-abling the reading of example
-data into function arguments. Which I need because Gerald used global
+Allows to globally en/dis-abling the reading of example
+data into function arguments, Which we need because Gerald used global
 data.frames in his functions.
 }
 \examples{
-if ("bwibw" \%in\% rownames(installed.packages())) get_data("bacode")
+if ("bwibw" \%in\% rownames(installed.packages())) {
+   get_data("bacode", package = "bwibw") 
+} else {
+   get_data("bacode") 
 }
-\author{
-Dominik Cullmann, <dominik.cullmann@forst.bwl.de>
 }

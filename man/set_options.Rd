@@ -45,6 +45,3 @@ in your zzz.R to bundle a package's options into the list named "foo".
 set_options(my_value = 3, name = "my_list")
 get_options(name = "my_list")
 }
-\author{
-Dominik Cullmann, <dominik.cullmann@forst.bwl.de>
-}

@@ -25,6 +25,3 @@ a convenience function for \code{\link{getOption}}.
 \examples{
 message('See help("set_options")')
 }
-\author{
-Dominik Cullmann, <dominik.cullmann@forst.bwl.de>
-}
