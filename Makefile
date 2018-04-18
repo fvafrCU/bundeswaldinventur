@@ -148,7 +148,7 @@ $(LOG_DIR)/testthat.Rout: .log.Rout $(R_FILES) $(TESTTHAT_FILES) $(INST_FILES) $
 .PHONY: testthat_bwibw
 testthat: $(LOG_DIR)/testthat_bwibw.Rout 
 $(LOG_DIR)/testthat_bwibw.Rout: .log.Rout $(R_FILES) $(TESTTHAT_FILES) $(INST_FILES) $(LOG_DIR)/dependencies.Rout
-	$(Rscript) --vanilla -e 'devtools::test(filter = "^bwibw")' >  $(LOG_DIR)/testthat_bwibw.Rout 2>&1
+	$(Rscript) --vanilla -e 'bundeswaldinventur::set_options(data_source = "bwibw", name = "bundeswaldinventur");devtools::test(filter = "^bwibw")' >  $(LOG_DIR)/testthat_bwibw.Rout 2>&1
 
 .PHONY: runit
 runit: $(LOG_DIR)/runit.Rout
