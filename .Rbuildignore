@@ -32,3 +32,4 @@ configure
 ^log$
 ^maintenance$
 ^\.log\.Rout$
+^data-raw$

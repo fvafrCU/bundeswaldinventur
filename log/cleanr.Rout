@@ -884,6 +884,7 @@ line 104: found width 86 max_line_width was 80
 line 117: found width 106 max_line_width was 80
 verjg.kl4.bagrupp.fun  found 134 lines, max_lines was 65
 verjg.kl4.bagrupp.fun  found 110 lines of code, max_lines_of_code was 50
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/data_documentation.R: 908 lines in file.
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/deadwood.R: line 17 counts 84 characters.
  /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/deadwood.R  harmonize_deadwood  line 7: found width 84 max_line_width was 80
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 45 counts 83 characters.

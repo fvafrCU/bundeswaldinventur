@@ -1,3 +1,6 @@
+# bundeswaldinventur 0.12.0
+
+* Added resampled data, disabled tests an on data from the bwibw data package.
 # bundeswaldinventur 0.11.2
 
 * Fix 0.11.1
