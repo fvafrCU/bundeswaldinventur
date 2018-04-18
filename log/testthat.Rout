@@ -11,14 +11,60 @@ Testing bundeswaldinventur
 ⠏ |  0       | revalue_data⠋ |  1       | revalue_data⠙ |  2       | revalue_data✔ |  2       | revalue_data
 ⠏ |  0       | get_color_for_ownership⠋ |  1       | get_color_for_ownership⠙ |  2       | get_color_for_ownership⠹ |  3       | get_color_for_ownership⠸ |  4       | get_color_for_ownership⠼ |  5       | get_color_for_ownership⠴ |  6       | get_color_for_ownership⠦ |  7       | get_color_for_ownership⠧ |  8       | get_color_for_ownership✔ |  8       | get_color_for_ownership
 ⠏ |  0       | get_colors_for_ownership⠋ |  1       | get_colors_for_ownership⠙ |  2       | get_colors_for_ownership⠹ |  3       | get_colors_for_ownership⠸ |  4       | get_colors_for_ownership⠼ |  5       | get_colors_for_ownership⠴ |  6       | get_colors_for_ownership⠦ |  7       | get_colors_for_ownership⠧ |  8       | get_colors_for_ownership⠇ |  9       | get_colors_for_ownership⠏ | 10       | get_colors_for_ownership✔ | 10       | get_colors_for_ownership
+⠏ |  0       | Examples of existing scripts⠋ |  0   1   | Examples of existing scripts⠙ |  0   2   | Examples of existing scripts⠹ |  0   3   | Examples of existing scripts⠸ |  0   4   | Examples of existing scripts⠼ |  0   5   | Examples of existing scripts⠴ |  0   6   | Examples of existing scripts⠦ |  0   7   | Examples of existing scripts⠧ |  0   8   | Examples of existing scripts⠇ |  0   9   | Examples of existing scripts⠏ |  0   10   | Examples of existing scripts⠋ |  0   11   | Examples of existing scripts⠙ |  0   12   | Examples of existing scripts⠹ |  0   13   | Examples of existing scripts⠸ |  0   14   | Examples of existing scripts⠼ |  1   14   | Examples of existing scripts⠴ |  2   14   | Examples of existing scripts⠦ |  3   14   | Examples of existing scripts✔ |  3   14   | Examples of existing scripts [0.6 s]
+────────────────────────────────────────────────────────────────────────────────
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+
+test-local_BWI3_HR.R:16: warning: FVBN.bagrupp.akl.dkl.stratum.fun.2e
+NaNs produced
+────────────────────────────────────────────────────────────────────────────────
 ⠏ |  0       | deadwood.R⠋ |  1       | deadwood.R⠙ |  2       | deadwood.R⠹ |  3       | deadwood.R⠸ |  4       | deadwood.R✔ |  4       | deadwood.R [0.5 s]
 ⠏ |  0       | statistics.R⠋ |  1       | statistics.R⠙ |  2       | statistics.R⠹ |  3       | statistics.R⠸ |  4       | statistics.R⠼ |  5       | statistics.R⠴ |  6       | statistics.R✔ |  6       | statistics.R
 ⠏ |  0       | variable_getters.R⠋ |  1       | variable_getters.R✔ |  1       | variable_getters.R
 
 ══ Results ═════════════════════════════════════════════════════════════════════
-Duration: 0.7 s
+Duration: 1.2 s
 
-OK:       89
+OK:       92
 Failed:   0
-Warnings: 0
+Warnings: 14
 Skipped:  0
+
+:)
