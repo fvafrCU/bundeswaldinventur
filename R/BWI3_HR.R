@@ -3329,9 +3329,10 @@ verjg.kl4.bagr.fun <- function(verj.kl4, ecken, trakte, auswahl, A,
       vj.kl4.baf.bagr.vart[2, j, i] <- sqrt(r.list$V.R.xy) * A
 
       # \u00dcber alle Baumartengruppen einer Verj\u00fcngungsart
-      vj.kl4.t.a <- stats::aggregate(vj.kl4.t$baf[vj.kl4.t$vart == vart.list[j]],
+      vj.kl4.t.a <- tryCatch(
+                             stats::aggregate(vj.kl4.t$baf[vj.kl4.t$vart == vart.list[j]],
         by = list(vj.kl4.t$tnr[vj.kl4.t$vart == vart.list[j]]), sum
-      )
+      ), error = function(e) data.frame(a = 1, b =  0))
       names(vj.kl4.t.a) <- c("tnr", "baf")
       xy <- merge(trakte[TRUE, c("tnr", "m")], vj.kl4.t.a, by = "tnr", all.x = T)
       xy[is.na(xy)] <- 0
