@@ -4020,6 +4020,41 @@ test_that("ntns.stratum.fun", {
   reference[["Datum"]] <- NULL
   testthat::expect_equal(result, reference)
 
+  result <- ntns.stratum.fun(
+    get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), list(
+      Wa = c(3, 5), Begehbar = 1,
+      WLT = c(9410)
+    ), bwi = 2, 3
+  )
+  reference <- list(Datum = structure(1524137112.90263, class = c("POSIXct", 
+"POSIXt")), HBF = 8937.87, se.HBF = 8937.87, NTNS = c("sehr naturnah", 
+"naturnah", "bedingt naturnah", "kulturbetont", "kulturbestimmt", 
+"keine Angabe"), NTNS.Flaeche.Anteil = structure(c(0, 0, 0, 0, 
+8937.87, 100, 8937.87, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0), .Dim = c(2L, 2L, 6L)))
+  # clean Log items
+  result[["Datum"]] <- NULL
+  reference[["Datum"]] <- NULL
+  testthat::expect_equal(result, reference)
+
+
+  result <- ntns.stratum.fun(
+    get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), list(
+      Wa = c(3, 5), Begehbar = 1,
+      WLT = c(9410)
+    ), bwi = 2, natwg = 2
+  )
+  reference <- list(Datum = structure(1524137410.62393, class = c("POSIXct", 
+"POSIXt")), HBF = 8937.87, se.HBF = 8937.87, NTNS = c("sehr naturnah", 
+"naturnah", "bedingt naturnah", "kulturbetont", "kulturbestimmt", 
+"keine Angabe"), NTNS.Flaeche.Anteil = structure(c(0, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8937.87, 100, 8937.87, 0, 
+0, 0, 0, 0), .Dim = c(2L, 2L, 6L)))
+  # clean Log items
+  result[["Datum"]] <- NULL
+  reference[["Datum"]] <- NULL
+  testthat::expect_equal(result, reference)
+
 })
 
 test_that("ntns.stratum.fun.2", {
@@ -4044,6 +4079,106 @@ test_that("ntns.stratum.fun.2", {
   reference[["Datum"]] <- NULL
   testthat::expect_equal(result, reference)
 
+  result <- ntns.stratum.fun.2(get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
+    list(Wa = c(3, 5), Begehbar = 1), 3, 3,
+    schicht = 2
+  )
+  reference <- list(Datum = structure(1524137217.90121, class = c("POSIXct", 
+"POSIXt")), HBF = 902724.87, se.HBF = 23749.5302613181, NTNS_Kollektiv = "BWI 3 Schicht > 4m", 
+    NTNS = c("sehr naturnah", "naturnah", "bedingt naturnah", 
+    "kulturbetont", "kulturbestimmt", "keine Angabe"), NTNS.Flaeche.Anteil = structure(c(178757.4, 
+    19.5876288659794, 35931.5893514834, 4.01823718784089, 268136.1, 
+    28.8659793814433, 41164.8070108105, 4.52776595359339, 259198.23, 
+    29.8969072164948, 40760.9793056835, 4.71263611404902, 26813.61, 
+    3.09278350515464, 15323.6749422499, 1.76780741132599, 125130.18, 
+    13.4020618556701, 31169.4888115932, 3.44602483647758, 44689.35, 
+    5.15463917525773, 19577.7708579898, 2.25886268710105), .Dim = c(2L, 
+    2L, 6L)))
+  # clean Log items
+  result[["Datum"]] <- NULL
+  reference[["Datum"]] <- NULL
+  testthat::expect_equal(result, reference)
+
+
+  result <- ntns.stratum.fun.2(get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
+    list(Wa = c(3, 5), Begehbar = 1), bwi = 2, natwg = 3,
+    schicht = 1
+  )
+  reference <- list(Datum = structure(1524137545.44201, class = c("POSIXct", 
+"POSIXt")), HBF = 902724.87, se.HBF = 23749.5302613181, NTNS_Kollektiv = "BWI 2 Schicht < 4 m mit nat. WG der BWI 3", 
+    NTNS = c("sehr naturnah", "naturnah", "bedingt naturnah", 
+    "kulturbetont", "kulturbestimmt", "keine Angabe"), NTNS.Flaeche.Anteil = structure(c(134068.05, 
+    13.4020618556701, 36764.0918119934, 3.70599885073797, 160881.66, 
+    18.5567010309278, 34511.1645998951, 3.98570678296389, 205571.01, 
+    23.7113402061856, 37802.9521804859, 4.36787355562883, 8937.87, 
+    1.03092783505155, 8937.87, 1.03098815117209, 35751.48, 3.09278350515464, 
+    17602.8119116712, 1.7489248218655, 357514.8, 40.2061855670103, 
+    44007.029779178, 4.98654148436969), .Dim = c(2L, 2L, 6L)))
+  # clean Log items
+  result[["Datum"]] <- NULL
+  reference[["Datum"]] <- NULL
+  testthat::expect_equal(result, reference)
+
+  result <- ntns.stratum.fun.2(get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
+    list(Wa = c(3, 5), Begehbar = 1), bwi = 2, natwg = 3,
+    schicht = 2
+  )
+  reference <- list(Datum = structure(1524137893.62529, class = c("POSIXct", 
+"POSIXt")), HBF = 902724.87, se.HBF = 23749.5302613181, NTNS_Kollektiv = "BWI 2 Schicht > 4 m mit nat. WG der BWI 3", 
+    NTNS = c("sehr naturnah", "naturnah", "bedingt naturnah", 
+    "kulturbetont", "kulturbestimmt", "keine Angabe"), NTNS.Flaeche.Anteil = structure(c(134068.05, 
+    14.4329896907216, 32075.3592096764, 3.55527774972206, 259198.23, 
+    27.8350515463918, 40760.9793056835, 4.47828068685861, 250260.36, 
+    28.8659793814433, 40333.1090146517, 4.66264139044455, 71502.96, 
+    8.24742268041237, 24369.9895799911, 2.81234250804433, 134068.05, 
+    14.4329896907216, 32075.3592096764, 3.55527774972206, 53627.22, 
+    6.18556701030928, 21333.1991845241, 2.46156172113968), .Dim = c(2L, 
+    2L, 6L)))
+      # clean Log items
+  result[["Datum"]] <- NULL
+  reference[["Datum"]] <- NULL
+  testthat::expect_equal(result, reference)
+
+
+
+
+  ##########
+  result <- ntns.stratum.fun.2(get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
+    list(Wa = c(3, 5), Begehbar = 1), bwi = 2, natwg = 2, schicht = 1)
+  reference <- list(Datum = structure(1524138075.95694, class = c("POSIXct", 
+"POSIXt")), HBF = 902724.87, se.HBF = 23749.5302613181, NTNS_Kollektiv = "BWI 2 Schicht < 4 m mit nat. WG der BWI 2", 
+    NTNS = c("sehr naturnah", "naturnah", "bedingt naturnah", 
+    "kulturbetont", "kulturbestimmt", "keine Angabe"), NTNS.Flaeche.Anteil = structure(c(134068.05, 
+    13.4020618556701, 36764.0918119934, 3.70599885073797, 169819.53, 
+    19.5876288659794, 35239.9875443816, 4.07023281489224, 187695.27, 
+    21.6494845360825, 36588.0807863359, 4.22670104487121, 8937.87, 
+    1.03092783505155, 8937.87, 1.03098815117209, 44689.35, 4.12371134020619, 
+    19577.7708579898, 2.00894821652888, 357514.8, 40.2061855670103, 
+    44007.029779178, 4.98654148436969), .Dim = c(2L, 2L, 6L)))
+      # clean Log items
+  result[["Datum"]] <- NULL
+  reference[["Datum"]] <- NULL
+  testthat::expect_equal(result, reference)
+
+  result <- ntns.stratum.fun.2(get_data("ntns.te"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
+    list(Wa = c(3, 5), Begehbar = 1), bwi = 2, natwg = 2, schicht = 2)
+  reference <-
+result <-
+list(Datum = structure(1524138176.72712, class = c("POSIXct", 
+"POSIXt")), HBF = 902724.87, se.HBF = 23749.5302613181, NTNS_Kollektiv = "BWI 2 Schicht > 4 m mit nat. WG der BWI 2", 
+    NTNS = c("sehr naturnah", "naturnah", "bedingt naturnah", 
+    "kulturbetont", "kulturbestimmt", "keine Angabe"), NTNS.Flaeche.Anteil = structure(c(151943.79, 
+    16.4948453608247, 33742.7087392563, 3.7558166389925, 250260.36, 
+    26.8041237113402, 40333.1090146517, 4.42584557684192, 232384.62, 
+    26.8041237113402, 39402.0638262981, 4.55402341460267, 80440.83, 
+    9.27835051546392, 25707.4137386968, 2.96688880653172, 134068.05, 
+    14.4329896907216, 32075.3592096764, 3.55527774972206, 53627.22, 
+    6.18556701030928, 21333.1991845241, 2.46156172113968), .Dim = c(2L, 
+    2L, 6L)))
+      # clean Log items
+  result[["Datum"]] <- NULL
+  reference[["Datum"]] <- NULL
+  testthat::expect_equal(result, reference)
 })
 
 test_that("fba.stratum.fun", {
@@ -4079,6 +4214,35 @@ test_that("fba.stratum.fun", {
     5e-04), .Dim = c(2L, 13L, 2L)))
 
   testthat::expect_equal(result, reference)
+})
+test_that("biotop.baeume.fun", {
+  result <- biotop.baeume.fun(
+    get_data("wzp4.merkmale.3"), get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
+    list(Wa = c(5), Begehbar = 1)
+  )
+  reference <- list(Log = list(Datum = structure(1524138926.72354, class = c("POSIXct", 
+"POSIXt")), Version.baeume.b = NA_character_), Stratum = list(
+    Wa = 5, Begehbar = 1), nTE = 97L, HBF = 902724.87, se.HBF = 23749.5302613181, 
+    BL = 0, se.BL = 0, iBL = 0, se.iBL = 0, LK = 1, se.LK = 0, 
+    Biotopbaumkennwerte = structure(list(Attribute = structure(c(1L, 
+    11L, 8L, 7L, 4L, 5L, 6L, 9L, 10L, 2L, 3L), .Label = c("Gesamtzahl", 
+    "oi_Biom_t", "oi_Biom_t_je_ha", "Stueckvolumen_m3", "Vorrat_LB_m3", 
+    "Vorrat_LB_m3_je_ha", "Vorrat_m3_je_ha", "Vorrat_m3_mR", 
+    "Vorrat_NB_m3", "Vorrat_NB_m3_je_ha", "Zahl_je_ha"), class = "factor"), 
+        Wert = c(4183653.4376956, 4.63447233673267, 12570792.9057349, 
+        13.9253867080618, 3.00474049606245, 11447741.2267996, 
+        12.6813180928533, 1123051.67893524, 1.24406861520858, 
+        7483862.81468777, 8.29030312933305), SE = c(1198004.54850135, 
+        1.31275682428163, 3661124.58475695, 3.94330443460432, 
+        0.670200517435292, 3610453.77274485, 3.89406034062188, 
+        792579.417860472, 0.878771581458272, 2189670.61088702, 
+        2.35617553805427)), class = "data.frame", row.names = c(NA, 
+    -11L)))
+      # clean Log items
+  result[["Log"]] <- NULL
+  reference[["Log"]] <- NULL
+  testthat::expect_equal(result, reference)
+
 })
 #  
 #  test_that("fl.stratum.fun", {
@@ -4166,58 +4330,6 @@ test_that("fba.stratum.fun", {
 #  context("made up examples")
 #  
 #  
-#  test_that("biotop.baeume.fun", {
-#    result <- biotop.baeume.fun(
-#      get_data("wzp4.merkmale.3"), get_data("baeume.3"), get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3),
-#      list(Wa = c(5), Begehbar = 1)
-#    )
-#  
-#    result[["Log"]] <- NULL
-#  
-#    reference <- structure(list(
-#      Stratum = structure(list(Wa = 5, Begehbar = 1), .Names = c(
-#        "Wa",
-#        "Begehbar"
-#      )), nTE = 13220L, HBF = 1322757.73306093, se.HBF = 15749.6881095356,
-#      BL = 0, se.BL = 0, iBL = 20811.9219725169, se.iBL = 1467.71561573875,
-#      LK = 1.01598524438979, se.LK = 0.00113354916119642, Biotopbaumkennwerte = structure(list(
-#        Attribute = structure(c(
-#          1L, 11L, 8L, 7L, 4L, 5L, 6L,
-#          9L, 10L, 2L, 3L
-#        ), .Label = c(
-#          "Gesamtzahl", "oi_Biom_t",
-#          "oi_Biom_t_je_ha", "Stueckvolumen_m3", "Vorrat_LB_m3",
-#          "Vorrat_LB_m3_je_ha", "Vorrat_m3_je_ha", "Vorrat_m3_mR",
-#          "Vorrat_NB_m3", "Vorrat_NB_m3_je_ha", "Zahl_je_ha"
-#        ), class = "factor"),
-#        Wert = c(
-#          6709550.79578377, 5.07239581979803, 12942265.8364758,
-#          9.78430555573225, 1.92893179147084, 10805951.7042934,
-#          8.16925989862702, 2136314.13218241, 1.61504565710523,
-#          7873024.0402428, 5.95197732998637
-#        ), SE = c(
-#          327674.341242166,
-#          0.241549365104805, 491955.737254008, 0.355967465425346,
-#          0.0843224821838681, 464516.334767252, 0.340271554893727,
-#          149666.617905277, 0.111248414389223, 301207.82430717,
-#          0.218160149483105
-#        )
-#      ), .Names = c(
-#        "Attribute", "Wert",
-#        "SE"
-#      ), row.names = c(NA, -11L), class = "data.frame")
-#    ), .Names = c(
-#      "Stratum",
-#      "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", "se.iBL", "LK",
-#      "se.LK", "Biotopbaumkennwerte"
-#    ))
-#  
-#    if (Sys.info()[["nodename"]] == "h6") {
-#      reference$Biotopbaumkennwerte$Attribute <- NULL
-#      result$Biotopbaumkennwerte$Attribute <- NULL
-#    }
-#    testthat::expect_equal(result, reference)
-#  })
 #  
 #  test_that("stamm.merkmale.bagr.fun", {
 #    result <- stamm.merkmale.bagr.fun(
