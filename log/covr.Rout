@@ -557,643 +557,6 @@
 3417   R/BWI3_HR_Landkreis.R                   flaechen.stratum.fun.1  562
 3420   R/BWI3_HR_Landkreis.R                   flaechen.stratum.fun.1  563
 3424   R/BWI3_HR_Landkreis.R                   flaechen.stratum.fun.1  564
-560      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   64
-569      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   65
-581      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   66
-593      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   67
-604      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   68
-612      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   69
-624      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   70
-634      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   71
-645      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   72
-654      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   73
-663      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   74
-676      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   75
-685      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   76
-695      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   77
-715      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   79
-725      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   80
-735      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   81
-745      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   82
-755      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   83
-763      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   84
-785      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   86
-808      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   88
-825      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   90
-845      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   93
-855      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   94
-865      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   95
-883      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   97
-908      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  100
-926      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  102
-934      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  103
-941      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  104
-948      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  105
-957      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  106
-967      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  107
-978      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  108
-988      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  109
-999      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  110
-1010     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  111
-1019     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  112
-1025     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  113
-1032     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  114
-1043     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  116
-1048     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  117
-1053     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  118
-1061     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  119
-1082     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  122
-1108     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  125
-1118     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  126
-1127     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  127
-1139     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  128
-1147     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  129
-1158     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  130
-1173     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  132
-1180     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  133
-1189     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  134
-1198     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  135
-1207     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  136
-1216     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  137
-1236     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  139
-1246     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  140
-1256     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  141
-1265     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  142
-1275     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  143
-1342     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  150
-1352     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  151
-1371     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  153
-1402     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  156
-1413     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  157
-1423     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  158
-1433     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  159
-1443     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  160
-1452     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  161
-1461     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  162
-1469     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  163
-1478     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  164
-1487     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  165
-1496     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  166
-1505     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  167
-1513     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  168
-1521     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  169
-1528     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  170
-1536     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  171
-1545     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  172
-1555     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  173
-1565     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  174
-1575     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  175
-1583     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  176
-1593     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  177
-1604     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  178
-1615     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  179
-1625     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  180
-1636     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  181
-1647     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  182
-1659     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  183
-1670     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  184
-1682     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  185
-1693     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  186
-1704     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  187
-1714     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  188
-1725     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  189
-1735     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  190
-1746     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  191
-1756     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  192
-1767     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  193
-1777     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  194
-1788     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  195
-1797     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  196
-1807     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  197
-1816     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  198
-1827     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  199
-1838     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  200
-1848     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  201
-1856     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  202
-1864     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  203
-1873     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  204
-1882     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  205
-1890     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  206
-1898     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  207
-1905     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  208
-1911     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  209
-1917     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  210
-1923     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  211
-1930     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  212
-1937     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  213
-1943     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  214
-1949     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  215
-1956     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  216
-1964     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  217
-1971     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  218
-1980     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  219
-1988     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  220
-1996     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  221
-2003     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  222
-2011     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  223
-2019     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  224
-2026     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  225
-2034     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  226
-2041     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  227
-2048     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  228
-2056     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  229
-2064     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  230
-2072     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  231
-2116     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  236
-2127     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  237
-2138     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  238
-2148     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  239
-2158     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  240
-2167     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  241
-2176     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  242
-2192     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  244
-2200     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  245
-2208     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  246
-2216     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  247
-2224     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  248
-2232     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  249
-2240     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  250
-2248     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  251
-2644     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  321
-2648     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  322
-2652     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  323
-2657     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  324
-2662     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  325
-2667     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  326
-2672     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  327
-2677     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  328
-2682     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  329
-2687     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  330
-2692     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  331
-2696     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  332
-2701     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  333
-2706     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  334
-2712     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  335
-2720     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  337
-2724     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  338
-2729     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  339
-2734     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  340
-2738     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  341
-2742     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  342
-2749     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  344
-2756     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  346
-2764     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  348
-2777     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  351
-2783     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  352
-2789     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  353
-2800     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  355
-2813     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  358
-2822     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  360
-2827     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  361
-2831     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  362
-2837     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  363
-2843     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  364
-2849     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  365
-2855     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  366
-2861     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  367
-2866     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  368
-2870     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  369
-2876     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  370
-2882     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  371
-2887     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  372
-2906     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  376
-2916     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  378
-2922     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  379
-2928     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  380
-2934     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  381
-2940     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  382
-2956     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  385
-2961     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  386
-2966     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  387
-2971     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  388
-2976     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  389
-2980     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  390
-2985     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  391
-2987     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  392
-2990     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  393
-2993     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  394
-2996     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  395
-2999     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  396
-3002     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  397
-3004     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  398
-3008     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  399
-3011     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  400
-3030     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  408
-3033     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  409
-3040     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  411
-3050     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  414
-3053     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  415
-3057     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  416
-3061     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  417
-3065     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  418
-3069     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  419
-3072     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  420
-3076     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  421
-3080     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  422
-3084     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  423
-3088     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  424
-3092     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  425
-3096     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  426
-3100     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  427
-3104     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  428
-3108     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  429
-3111     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  430
-3113     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  431
-3116     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  432
-3119     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  433
-3122     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  434
-3125     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  435
-3128     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  436
-3131     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  437
-3134     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  438
-3137     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  439
-3140     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  440
-3142     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  441
-3144     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  442
-3146     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  443
-3148     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  444
-3150     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  445
-3153     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  446
-3156     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  447
-3159     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  448
-3162     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  449
-3165     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  450
-3168     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  451
-3170     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  452
-3173     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  453
-3176     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  454
-3178     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  455
-3181     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  456
-3184     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  457
-3186     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  458
-3189     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  459
-3192     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  460
-3194     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  461
-3197     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  462
-3200     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  463
-3202     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  464
-3205     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  465
-3213     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  470
-3214     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  471
-3215     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  472
-3217     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  473
-3219     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  474
-3221     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  475
-3223     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  476
-3226     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  478
-3228     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  479
-3230     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  480
-3232     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  481
-3234     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  482
-3236     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  483
-3238     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  484
-3406     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  558
-3410     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  559
-3413     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  560
-3416     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  561
-3419     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  562
-3422     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  563
-3426     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  564
-3429     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  565
-3431     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  566
-3434     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  567
-3437     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  568
-3439     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  569
-3442     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  570
-3445     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  571
-3448     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  572
-3451     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  573
-3453     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  574
-3455     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  575
-3458     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  576
-3461     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  577
-3464     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  578
-3467     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  579
-3470     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  580
-3473     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  581
-3476     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  582
-3480     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  584
-3482     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  585
-3484     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  586
-3487     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  587
-3490     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  588
-3493     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  589
-3496     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  591
-3499     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  593
-3503     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  595
-3510     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  598
-3513     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  599
-3516     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  600
-3521     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  602
-3527     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  605
-3532     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  607
-3535     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  608
-3538     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  609
-3540     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  610
-3543     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  611
-3546     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  612
-3549     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  613
-3552     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  614
-3554     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  615
-3556     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  616
-3559     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  617
-3561     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  618
-3564     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  619
-3573     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  623
-3578     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  625
-3579     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  626
-3580     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  627
-3582     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  628
-3584     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  629
-3588     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  632
-3590     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  633
-3592     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  634
-3594     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  635
-3597     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  637
-3599     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  638
-3601     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  639
-3603     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  640
-3605     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  641
-3607     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  642
-3609     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  643
-3611     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  644
-3613     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  645
-3615     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  646
-3618     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  647
-3620     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  648
-3623     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  649
-3625     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  650
-3628     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  651
-3630     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  652
-3633     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  653
-3636     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  654
-3638     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  655
-3640     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  656
-3643     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  657
-3645     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  658
-3648     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  659
-3650     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  660
-3653     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  661
-3656     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  662
-3659     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  663
-3661     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  664
-3663     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  665
-3665     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  666
-3667     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  667
-3670     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  668
-3673     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  669
-3690     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  677
-3693     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  678
-3698     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  680
-3707     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  684
-3710     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  685
-3713     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  686
-3716     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  687
-3719     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  688
-3722     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  689
-3725     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  690
-3728     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  691
-3731     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  692
-3734     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  693
-3737     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  694
-3740     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  695
-3743     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  696
-3746     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  697
-3749     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  698
-3752     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  699
-3755     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  700
-3758     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  701
-3761     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  702
-3764     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  703
-3767     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  704
-3770     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  705
-3773     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  706
-3776     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  707
-3779     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  708
-3782     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  709
-3785     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  710
-3788     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  711
-3791     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  712
-3793     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  713
-3795     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  714
-3797     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  715
-3799     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  716
-3801     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  717
-3803     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  718
-3805     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  719
-3807     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  720
-3809     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  721
-3811     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  722
-3813     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  723
-3815     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  724
-3817     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  725
-3819     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  726
-3821     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  727
-3823     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  728
-3825     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  729
-3827     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  730
-3829     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  731
-3831     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  732
-3833     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  733
-3835     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  734
-3837     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  735
-3839     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  736
-3841     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  737
-3844     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  738
-3846     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  739
-3849     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  740
-3859     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  745
-3862     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  746
-3865     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  747
-3868     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  748
-3871     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  749
-3874     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  750
-3877     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  751
-3880     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  752
-3883     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  753
-3886     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  754
-3889     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  755
-3892     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  756
-3895     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  757
-3898     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  758
-3901     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  759
-3904     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  760
-3907     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  761
-3910     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  762
-3913     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  763
-3916     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  764
-3919     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  765
-3922     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  766
-3925     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  767
-3928     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  768
-1153             R/BWI3_HR.R                         fvbn.kreis.fun.1  130
-1161             R/BWI3_HR.R                         fvbn.kreis.fun.1  131
-1170             R/BWI3_HR.R                         fvbn.kreis.fun.1  132
-1177             R/BWI3_HR.R                         fvbn.kreis.fun.1  133
-1186             R/BWI3_HR.R                         fvbn.kreis.fun.1  134
-1195             R/BWI3_HR.R                         fvbn.kreis.fun.1  135
-1204             R/BWI3_HR.R                         fvbn.kreis.fun.1  136
-1223             R/BWI3_HR.R                         fvbn.kreis.fun.1  138
-1233             R/BWI3_HR.R                         fvbn.kreis.fun.1  139
-1243             R/BWI3_HR.R                         fvbn.kreis.fun.1  140
-1253             R/BWI3_HR.R                         fvbn.kreis.fun.1  141
-1263             R/BWI3_HR.R                         fvbn.kreis.fun.1  142
-1273             R/BWI3_HR.R                         fvbn.kreis.fun.1  143
-1282             R/BWI3_HR.R                         fvbn.kreis.fun.1  144
-1291             R/BWI3_HR.R                         fvbn.kreis.fun.1  145
-1300             R/BWI3_HR.R                         fvbn.kreis.fun.1  146
-1309             R/BWI3_HR.R                         fvbn.kreis.fun.1  147
-1318             R/BWI3_HR.R                         fvbn.kreis.fun.1  148
-1329             R/BWI3_HR.R                         fvbn.kreis.fun.1  149
-1339             R/BWI3_HR.R                         fvbn.kreis.fun.1  150
-1349             R/BWI3_HR.R                         fvbn.kreis.fun.1  151
-1359             R/BWI3_HR.R                         fvbn.kreis.fun.1  152
-1368             R/BWI3_HR.R                         fvbn.kreis.fun.1  153
-1379             R/BWI3_HR.R                         fvbn.kreis.fun.1  154
-1388             R/BWI3_HR.R                         fvbn.kreis.fun.1  155
-1398             R/BWI3_HR.R                         fvbn.kreis.fun.1  156
-1409             R/BWI3_HR.R                         fvbn.kreis.fun.1  157
-1420             R/BWI3_HR.R                         fvbn.kreis.fun.1  158
-1430             R/BWI3_HR.R                         fvbn.kreis.fun.1  159
-1440             R/BWI3_HR.R                         fvbn.kreis.fun.1  160
-1450             R/BWI3_HR.R                         fvbn.kreis.fun.1  161
-1459             R/BWI3_HR.R                         fvbn.kreis.fun.1  162
-1467             R/BWI3_HR.R                         fvbn.kreis.fun.1  163
-1476             R/BWI3_HR.R                         fvbn.kreis.fun.1  164
-1485             R/BWI3_HR.R                         fvbn.kreis.fun.1  165
-1494             R/BWI3_HR.R                         fvbn.kreis.fun.1  166
-1502             R/BWI3_HR.R                         fvbn.kreis.fun.1  167
-1511             R/BWI3_HR.R                         fvbn.kreis.fun.1  168
-1519             R/BWI3_HR.R                         fvbn.kreis.fun.1  169
-1526             R/BWI3_HR.R                         fvbn.kreis.fun.1  170
-1534             R/BWI3_HR.R                         fvbn.kreis.fun.1  171
-1542             R/BWI3_HR.R                         fvbn.kreis.fun.1  172
-1552             R/BWI3_HR.R                         fvbn.kreis.fun.1  173
-1562             R/BWI3_HR.R                         fvbn.kreis.fun.1  174
-1572             R/BWI3_HR.R                         fvbn.kreis.fun.1  175
-1580             R/BWI3_HR.R                         fvbn.kreis.fun.1  176
-1589             R/BWI3_HR.R                         fvbn.kreis.fun.1  177
-1600             R/BWI3_HR.R                         fvbn.kreis.fun.1  178
-1611             R/BWI3_HR.R                         fvbn.kreis.fun.1  179
-1621             R/BWI3_HR.R                         fvbn.kreis.fun.1  180
-1632             R/BWI3_HR.R                         fvbn.kreis.fun.1  181
-1643             R/BWI3_HR.R                         fvbn.kreis.fun.1  182
-1654             R/BWI3_HR.R                         fvbn.kreis.fun.1  183
-1666             R/BWI3_HR.R                         fvbn.kreis.fun.1  184
-1677             R/BWI3_HR.R                         fvbn.kreis.fun.1  185
-1688             R/BWI3_HR.R                         fvbn.kreis.fun.1  186
-1700             R/BWI3_HR.R                         fvbn.kreis.fun.1  187
-1720             R/BWI3_HR.R                         fvbn.kreis.fun.1  189
-2062             R/BWI3_HR.R                       fvbn.stratum.fun.1  230
-2070             R/BWI3_HR.R                       fvbn.stratum.fun.1  231
-2079             R/BWI3_HR.R                       fvbn.stratum.fun.1  232
-2095             R/BWI3_HR.R                       fvbn.stratum.fun.1  234
-2105             R/BWI3_HR.R                       fvbn.stratum.fun.1  235
-2124             R/BWI3_HR.R                       fvbn.stratum.fun.1  237
-2135             R/BWI3_HR.R                       fvbn.stratum.fun.1  238
-2145             R/BWI3_HR.R                       fvbn.stratum.fun.1  239
-2155             R/BWI3_HR.R                       fvbn.stratum.fun.1  240
-2165             R/BWI3_HR.R                       fvbn.stratum.fun.1  241
-2174             R/BWI3_HR.R                       fvbn.stratum.fun.1  242
-2183             R/BWI3_HR.R                       fvbn.stratum.fun.1  243
-2190             R/BWI3_HR.R                       fvbn.stratum.fun.1  244
-2198             R/BWI3_HR.R                       fvbn.stratum.fun.1  245
-2206             R/BWI3_HR.R                       fvbn.stratum.fun.1  246
-2214             R/BWI3_HR.R                       fvbn.stratum.fun.1  247
-2222             R/BWI3_HR.R                       fvbn.stratum.fun.1  248
-2230             R/BWI3_HR.R                       fvbn.stratum.fun.1  249
-2238             R/BWI3_HR.R                       fvbn.stratum.fun.1  250
-2246             R/BWI3_HR.R                       fvbn.stratum.fun.1  251
-2253             R/BWI3_HR.R                       fvbn.stratum.fun.1  252
-2259             R/BWI3_HR.R                       fvbn.stratum.fun.1  253
-2266             R/BWI3_HR.R                       fvbn.stratum.fun.1  254
-2272             R/BWI3_HR.R                       fvbn.stratum.fun.1  255
-2279             R/BWI3_HR.R                       fvbn.stratum.fun.1  256
-2285             R/BWI3_HR.R                       fvbn.stratum.fun.1  257
-2291             R/BWI3_HR.R                       fvbn.stratum.fun.1  258
-2298             R/BWI3_HR.R                       fvbn.stratum.fun.1  259
-2305             R/BWI3_HR.R                       fvbn.stratum.fun.1  260
-2312             R/BWI3_HR.R                       fvbn.stratum.fun.1  261
-2319             R/BWI3_HR.R                       fvbn.stratum.fun.1  262
-2326             R/BWI3_HR.R                       fvbn.stratum.fun.1  263
-2333             R/BWI3_HR.R                       fvbn.stratum.fun.1  264
-2340             R/BWI3_HR.R                       fvbn.stratum.fun.1  265
-2347             R/BWI3_HR.R                       fvbn.stratum.fun.1  266
-2355             R/BWI3_HR.R                       fvbn.stratum.fun.1  267
-2361             R/BWI3_HR.R                       fvbn.stratum.fun.1  268
-2368             R/BWI3_HR.R                       fvbn.stratum.fun.1  269
-2376             R/BWI3_HR.R                       fvbn.stratum.fun.1  270
-2384             R/BWI3_HR.R                       fvbn.stratum.fun.1  271
-2392             R/BWI3_HR.R                       fvbn.stratum.fun.1  272
-2400             R/BWI3_HR.R                       fvbn.stratum.fun.1  273
-2408             R/BWI3_HR.R                       fvbn.stratum.fun.1  274
-2416             R/BWI3_HR.R                       fvbn.stratum.fun.1  275
-2424             R/BWI3_HR.R                       fvbn.stratum.fun.1  276
-2431             R/BWI3_HR.R                       fvbn.stratum.fun.1  277
-2439             R/BWI3_HR.R                       fvbn.stratum.fun.1  278
-2446             R/BWI3_HR.R                       fvbn.stratum.fun.1  279
-2452             R/BWI3_HR.R                       fvbn.stratum.fun.1  280
-2458             R/BWI3_HR.R                       fvbn.stratum.fun.1  281
-2465             R/BWI3_HR.R                       fvbn.stratum.fun.1  282
-2472             R/BWI3_HR.R                       fvbn.stratum.fun.1  283
-2478             R/BWI3_HR.R                       fvbn.stratum.fun.1  284
-2484             R/BWI3_HR.R                       fvbn.stratum.fun.1  285
-2491             R/BWI3_HR.R                       fvbn.stratum.fun.1  286
-2502             R/BWI3_HR.R                       fvbn.stratum.fun.1  288
-2708             R/BWI3_HR.R                       fvbn.stratum.fun.2  335
-2714             R/BWI3_HR.R                       fvbn.stratum.fun.2  336
-2718             R/BWI3_HR.R                       fvbn.stratum.fun.2  337
-2726             R/BWI3_HR.R                       fvbn.stratum.fun.2  339
-2731             R/BWI3_HR.R                       fvbn.stratum.fun.2  340
-2740             R/BWI3_HR.R                       fvbn.stratum.fun.2  342
-2744             R/BWI3_HR.R                       fvbn.stratum.fun.2  343
-2747             R/BWI3_HR.R                       fvbn.stratum.fun.2  344
-2751             R/BWI3_HR.R                       fvbn.stratum.fun.2  345
-2754             R/BWI3_HR.R                       fvbn.stratum.fun.2  346
-2759             R/BWI3_HR.R                       fvbn.stratum.fun.2  347
-2762             R/BWI3_HR.R                       fvbn.stratum.fun.2  348
-2767             R/BWI3_HR.R                       fvbn.stratum.fun.2  349
-2771             R/BWI3_HR.R                       fvbn.stratum.fun.2  350
-2774             R/BWI3_HR.R                       fvbn.stratum.fun.2  351
-2780             R/BWI3_HR.R                       fvbn.stratum.fun.2  352
-2786             R/BWI3_HR.R                       fvbn.stratum.fun.2  353
-2792             R/BWI3_HR.R                       fvbn.stratum.fun.2  354
-2797             R/BWI3_HR.R                       fvbn.stratum.fun.2  355
-2803             R/BWI3_HR.R                       fvbn.stratum.fun.2  356
-2807             R/BWI3_HR.R                       fvbn.stratum.fun.2  357
-2811             R/BWI3_HR.R                       fvbn.stratum.fun.2  358
-2816             R/BWI3_HR.R                       fvbn.stratum.fun.2  359
-2820             R/BWI3_HR.R                       fvbn.stratum.fun.2  360
-2825             R/BWI3_HR.R                       fvbn.stratum.fun.2  361
-2829             R/BWI3_HR.R                       fvbn.stratum.fun.2  362
-2835             R/BWI3_HR.R                       fvbn.stratum.fun.2  363
-2841             R/BWI3_HR.R                       fvbn.stratum.fun.2  364
-2847             R/BWI3_HR.R                       fvbn.stratum.fun.2  365
-2853             R/BWI3_HR.R                       fvbn.stratum.fun.2  366
-2859             R/BWI3_HR.R                       fvbn.stratum.fun.2  367
-2864             R/BWI3_HR.R                       fvbn.stratum.fun.2  368
-2868             R/BWI3_HR.R                       fvbn.stratum.fun.2  369
-2874             R/BWI3_HR.R                       fvbn.stratum.fun.2  370
-2880             R/BWI3_HR.R                       fvbn.stratum.fun.2  371
-2885             R/BWI3_HR.R                       fvbn.stratum.fun.2  372
-2890             R/BWI3_HR.R                       fvbn.stratum.fun.2  373
-2894             R/BWI3_HR.R                       fvbn.stratum.fun.2  374
-2899             R/BWI3_HR.R                       fvbn.stratum.fun.2  375
-2904             R/BWI3_HR.R                       fvbn.stratum.fun.2  376
-2909             R/BWI3_HR.R                       fvbn.stratum.fun.2  377
-2914             R/BWI3_HR.R                       fvbn.stratum.fun.2  378
-2920             R/BWI3_HR.R                       fvbn.stratum.fun.2  379
-2926             R/BWI3_HR.R                       fvbn.stratum.fun.2  380
-2932             R/BWI3_HR.R                       fvbn.stratum.fun.2  381
-2938             R/BWI3_HR.R                       fvbn.stratum.fun.2  382
-2944             R/BWI3_HR.R                       fvbn.stratum.fun.2  383
-2949             R/BWI3_HR.R                       fvbn.stratum.fun.2  384
-2954             R/BWI3_HR.R                       fvbn.stratum.fun.2  385
-2959             R/BWI3_HR.R                       fvbn.stratum.fun.2  386
-2964             R/BWI3_HR.R                       fvbn.stratum.fun.2  387
-2969             R/BWI3_HR.R                       fvbn.stratum.fun.2  388
-2974             R/BWI3_HR.R                       fvbn.stratum.fun.2  389
-2983             R/BWI3_HR.R                       fvbn.stratum.fun.2  391
 3254             R/BWI3_HR.R       VB.A.bagrupp.akl.dkl.stratum.fun.2  498
 3259             R/BWI3_HR.R       VB.A.bagrupp.akl.dkl.stratum.fun.2  500
 3262             R/BWI3_HR.R       VB.A.bagrupp.akl.dkl.stratum.fun.2  501
@@ -4277,7 +3640,6 @@
 7928             R/BWI3_HR.R                              dkl.lab.fun 5595
 7929             R/BWI3_HR.R                              dkl.lab.fun 5596
 7930             R/BWI3_HR.R                              dkl.lab.fun 5597
-7934             R/BWI3_HR.R                              dkl.lab.fun 5601
 7947             R/BWI3_HR.R                            verjg.tab.fun 5649
 7948             R/BWI3_HR.R                            verjg.tab.fun 5650
 7949             R/BWI3_HR.R                            verjg.tab.fun 5651
@@ -4511,6 +3873,475 @@
 8177             R/BWI3_HR.R              stamm.merkmale.bagr.akl.fun 5969
 8178             R/BWI3_HR.R              stamm.merkmale.bagr.akl.fun 5970
 8179             R/BWI3_HR.R              stamm.merkmale.bagr.akl.fun 5971
+560      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   64
+569      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   65
+581      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   66
+593      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   67
+604      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   68
+612      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   69
+624      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   70
+634      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   71
+645      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   72
+654      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   73
+663      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   74
+676      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   75
+685      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   76
+695      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   77
+715      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   79
+725      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   80
+735      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   81
+745      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   82
+755      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   83
+763      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   84
+785      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   86
+808      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   88
+825      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   90
+845      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   93
+855      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   94
+865      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   95
+883      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun   97
+908      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  100
+926      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  102
+934      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  103
+941      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  104
+948      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  105
+957      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  106
+967      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  107
+978      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  108
+988      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  109
+999      R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  110
+1010     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  111
+1019     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  112
+1025     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  113
+1032     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  114
+1043     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  116
+1048     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  117
+1053     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  118
+1061     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  119
+1082     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  122
+1108     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  125
+1118     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  126
+1127     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  127
+1139     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  128
+1147     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  129
+1158     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  130
+1173     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  132
+1180     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  133
+1189     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  134
+1198     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  135
+1207     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  136
+1216     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  137
+1236     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  139
+1246     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  140
+1256     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  141
+1265     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  142
+1275     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  143
+1342     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  150
+1352     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  151
+1371     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  153
+1402     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  156
+1413     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  157
+1423     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  158
+1433     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  159
+1443     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  160
+1452     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  161
+1461     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  162
+1469     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  163
+1478     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  164
+1487     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  165
+1496     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  166
+1505     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  167
+1513     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  168
+1521     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  169
+1528     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  170
+1536     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  171
+1545     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  172
+1555     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  173
+1565     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  174
+1575     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  175
+1583     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  176
+1593     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  177
+1604     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  178
+1615     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  179
+1625     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  180
+1636     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  181
+1647     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  182
+1659     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  183
+1670     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  184
+1682     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  185
+1693     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  186
+1704     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  187
+1714     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  188
+1725     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  189
+1735     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  190
+1746     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  191
+1756     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  192
+1767     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  193
+1777     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  194
+1788     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  195
+1797     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  196
+1807     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  197
+1816     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  198
+1827     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  199
+1838     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  200
+1848     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  201
+1856     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  202
+1864     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  203
+1873     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  204
+1882     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  205
+1890     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  206
+1898     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  207
+1905     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  208
+1911     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  209
+1917     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  210
+1923     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  211
+1930     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  212
+1937     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  213
+1943     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  214
+1949     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  215
+1956     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  216
+1964     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  217
+1971     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  218
+1980     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  219
+1988     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  220
+1996     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  221
+2003     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  222
+2011     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  223
+2019     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  224
+2026     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  225
+2034     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  226
+2041     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  227
+2048     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  228
+2056     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  229
+2064     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  230
+2072     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  231
+2116     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  236
+2127     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  237
+2138     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  238
+2148     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  239
+2158     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  240
+2167     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  241
+2176     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  242
+2192     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  244
+2200     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  245
+2208     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  246
+2216     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  247
+2224     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  248
+2232     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  249
+2240     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  250
+2248     R/BWI3_HR_Totholz.R          Totholz.bagr.art.zg.stratum.fun  251
+2644     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  321
+2648     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  322
+2652     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  323
+2657     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  324
+2662     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  325
+2667     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  326
+2672     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  327
+2677     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  328
+2682     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  329
+2687     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  330
+2692     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  331
+2696     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  332
+2701     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  333
+2706     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  334
+2712     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  335
+2720     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  337
+2724     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  338
+2729     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  339
+2734     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  340
+2738     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  341
+2742     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  342
+2749     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  344
+2756     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  346
+2764     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  348
+2777     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  351
+2783     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  352
+2789     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  353
+2800     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  355
+2813     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  358
+2822     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  360
+2827     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  361
+2831     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  362
+2837     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  363
+2843     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  364
+2849     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  365
+2855     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  366
+2861     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  367
+2866     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  368
+2870     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  369
+2876     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  370
+2882     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  371
+2887     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  372
+2906     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  376
+2916     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  378
+2922     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  379
+2928     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  380
+2934     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  381
+2940     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  382
+2956     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  385
+2961     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  386
+2966     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  387
+2971     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  388
+2976     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  389
+2980     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  390
+2985     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  391
+2987     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  392
+2990     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  393
+2993     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  394
+2996     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  395
+2999     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  396
+3002     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  397
+3004     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  398
+3008     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  399
+3011     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  400
+3030     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  408
+3033     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  409
+3040     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  411
+3050     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  414
+3053     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  415
+3057     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  416
+3061     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  417
+3065     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  418
+3069     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  419
+3072     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  420
+3076     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  421
+3080     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  422
+3084     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  423
+3088     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  424
+3092     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  425
+3096     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  426
+3100     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  427
+3104     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  428
+3108     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  429
+3111     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  430
+3113     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  431
+3116     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  432
+3119     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  433
+3122     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  434
+3125     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  435
+3128     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  436
+3131     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  437
+3134     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  438
+3137     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  439
+3140     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  440
+3142     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  441
+3144     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  442
+3146     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  443
+3148     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  444
+3150     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  445
+3153     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  446
+3156     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  447
+3159     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  448
+3162     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  449
+3165     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  450
+3168     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  451
+3170     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  452
+3173     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  453
+3176     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  454
+3178     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  455
+3181     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  456
+3184     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  457
+3186     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  458
+3189     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  459
+3192     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  460
+3194     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  461
+3197     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  462
+3200     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  463
+3202     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  464
+3205     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  465
+3213     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  470
+3214     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  471
+3215     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  472
+3217     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  473
+3219     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  474
+3221     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  475
+3223     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  476
+3226     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  478
+3228     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  479
+3230     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  480
+3232     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  481
+3234     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  482
+3236     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  483
+3238     R/BWI3_HR_Totholz.R                 Totholz.Tart.stratum.fun  484
+3406     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  558
+3410     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  559
+3413     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  560
+3416     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  561
+3419     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  562
+3422     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  563
+3426     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  564
+3429     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  565
+3431     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  566
+3434     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  567
+3437     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  568
+3439     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  569
+3442     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  570
+3445     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  571
+3448     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  572
+3451     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  573
+3453     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  574
+3455     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  575
+3458     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  576
+3461     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  577
+3464     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  578
+3467     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  579
+3470     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  580
+3473     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  581
+3476     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  582
+3480     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  584
+3482     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  585
+3484     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  586
+3487     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  587
+3490     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  588
+3493     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  589
+3496     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  591
+3499     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  593
+3503     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  595
+3510     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  598
+3513     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  599
+3516     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  600
+3521     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  602
+3527     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  605
+3532     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  607
+3535     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  608
+3538     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  609
+3540     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  610
+3543     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  611
+3546     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  612
+3549     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  613
+3552     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  614
+3554     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  615
+3556     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  616
+3559     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  617
+3561     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  618
+3564     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  619
+3573     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  623
+3578     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  625
+3579     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  626
+3580     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  627
+3582     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  628
+3584     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  629
+3588     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  632
+3590     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  633
+3592     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  634
+3594     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  635
+3597     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  637
+3599     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  638
+3601     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  639
+3603     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  640
+3605     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  641
+3607     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  642
+3609     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  643
+3611     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  644
+3613     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  645
+3615     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  646
+3618     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  647
+3620     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  648
+3623     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  649
+3625     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  650
+3628     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  651
+3630     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  652
+3633     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  653
+3636     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  654
+3638     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  655
+3640     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  656
+3643     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  657
+3645     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  658
+3648     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  659
+3650     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  660
+3653     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  661
+3656     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  662
+3659     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  663
+3661     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  664
+3663     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  665
+3665     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  666
+3667     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  667
+3670     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  668
+3673     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  669
+3690     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  677
+3693     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  678
+3698     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  680
+3707     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  684
+3710     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  685
+3713     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  686
+3716     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  687
+3719     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  688
+3722     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  689
+3725     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  690
+3728     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  691
+3731     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  692
+3734     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  693
+3737     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  694
+3740     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  695
+3743     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  696
+3746     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  697
+3749     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  698
+3752     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  699
+3755     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  700
+3758     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  701
+3761     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  702
+3764     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  703
+3767     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  704
+3770     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  705
+3773     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  706
+3776     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  707
+3779     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  708
+3782     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  709
+3785     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  710
+3788     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  711
+3791     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  712
+3793     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  713
+3795     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  714
+3797     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  715
+3799     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  716
+3801     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  717
+3803     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  718
+3805     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  719
+3807     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  720
+3809     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  721
+3811     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  722
+3813     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  723
+3815     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  724
+3817     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  725
+3819     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  726
+3821     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  727
+3823     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  728
+3825     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  729
+3827     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  730
+3829     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  731
+3831     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  732
+3833     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  733
+3835     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  734
+3837     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  735
+3839     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  736
+3841     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  737
+3844     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  738
+3846     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  739
+3849     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  740
+3859     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  745
+3862     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  746
+3865     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  747
+3868     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  748
+3871     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  749
+3874     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  750
+3877     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  751
+3880     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  752
+3883     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  753
+3886     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  754
+3889     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  755
+3892     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  756
+3895     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  757
+3898     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  758
+3901     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  759
+3904     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  760
+3907     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  761
+3910     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  762
+3913     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  763
+3916     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  764
+3919     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  765
+3922     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  766
+3925     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  767
+3928     R/BWI3_HR_Totholz.R                Totholz.klass.stratum.fun  768
 173             R/deadwood.R                       harmonize_deadwood   28
 761   R/figures_and_tables.R             melt_species_attribute_group   84
 772   R/figures_and_tables.R             melt_species_attribute_group   85
@@ -5139,474 +4970,33 @@
 2428              R/fvbn2b.R      FVBN.bagrupp.akl.dkl.stratum.fun.2b  277
 2435              R/fvbn2b.R      FVBN.bagrupp.akl.dkl.stratum.fun.2b  278
 2443              R/fvbn2b.R      FVBN.bagrupp.akl.dkl.stratum.fun.2b  279
-3                 R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c    5
-7                 R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c    7
-12                R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c    8
-18                R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   10
-26                R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   12
-40                R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   14
-51                R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   15
-62                R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   16
-73                R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   17
-106               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   22
-124               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   24
-135               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   25
-146               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   26
-157               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   27
-167               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   28
-179               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   29
-208               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   33
-227               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   35
-270               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   40
-290               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   42
-302               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   43
-314               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   44
-326               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   45
-339               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   46
-353               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   47
-368               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   48
-382               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   49
-396               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   50
-410               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   51
-434               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   53
-456               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   55
-483               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   58
-495               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   59
-508               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   60
-530               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   62
-541               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   63
-553               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   64
-574               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   66
-585               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   67
-597               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   68
-617               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   70
-628               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   71
-638               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   72
-668               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   75
-689               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   77
-699               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   78
-709               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   79
-720               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   80
-730               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   81
-739               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   82
-749               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   83
-767               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   85
 778               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   86
 790               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   87
 802               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   88
 812               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   89
-820               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   90
-850               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   94
-860               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   95
 870               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   96
-879               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   97
-888               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   98
-896               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c   99
-903               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  100
-912               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  101
-921               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  102
-930               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  103
-952               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  106
 961               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  107
 971               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  108
 982               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  109
 991               R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  110
-1002              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  111
-1084              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  123
-1092              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  124
-1131              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  128
-1150              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  130
-1183              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  134
-1193              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  135
-1202              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  136
-1211              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  137
-1220              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  138
-1230              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  139
-1241              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  140
-1250              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  141
-1260              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  142
-1270              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  143
-1280              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  144
-1288              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  145
-1297              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  146
-1306              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  147
 1316              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  148
 1326              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  149
 1336              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  150
 1346              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  151
 1357              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  152
-1366              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  153
-1376              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  154
-1386              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  155
-1395              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  156
-1406              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  157
-1417              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  158
-1427              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  159
-1437              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  160
-1447              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  161
-1456              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  162
-1465              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  163
-1473              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  164
-1482              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  165
-1491              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  166
-1499              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  167
-1508              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  168
-1516              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  169
-1524              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  170
-1532              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  171
-1540              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  172
-1549              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  173
-1559              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  174
-1569              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  175
-1578              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  176
-1587              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  177
-1597              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  178
-1608              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  179
-1618              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  180
-1629              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  181
-1640              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  182
-1651              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  183
-1663              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  184
-1674              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  185
 1685              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  186
-1697              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  187
-1708              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  188
-1718              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  189
-1728              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  190
-1739              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  191
-1750              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  192
-1760              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  193
-1770              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  194
-1781              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  195
 1792              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  196
-1801              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  197
-1810              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  198
-1820              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  199
-1831              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  200
-1842              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  201
-1851              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  202
-1859              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  203
-1868              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  204
-1877              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  205
-1886              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  206
-1894              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  207
-1902              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  208
-1909              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  209
-1915              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  210
-1921              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  211
-1927              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  212
-1934              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  213
-1941              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  214
-1947              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  215
-1953              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  216
-1960              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  217
-1968              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  218
-1975              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  219
-1984              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  220
-1992              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  221
-1999              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  222
-2006              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  223
-2014              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  224
-2022              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  225
-2030              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  226
-2037              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  227
-2044              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  228
-2052              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  229
-2059              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  230
-2067              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  231
-2076              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  232
-2084              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  233
-2092              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  234
-2102              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  235
-2111              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  236
-2121              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  237
-2132              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  238
-2142              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  239
-2152              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  240
-2162              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  241
-2171              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  242
-2180              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  243
-2187              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  244
-2195              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  245
-2203              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  246
-2211              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  247
-2219              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  248
-2227              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  249
-2235              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  250
-2243              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  251
-2250              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  252
-2256              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  253
-2263              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  254
-2269              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  255
-2276              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  256
-2330              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  264
-2352              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  267
-2373              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  270
-2381              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  271
-2389              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  272
-2397              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  273
-2405              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  274
-2413              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  275
-2421              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  276
-2436              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  278
-2444              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  279
-2450              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  280
-2456              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  281
-2463              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  282
-2469              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  283
-2476              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  284
-2482              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  285
-2488              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  286
-2495              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  287
-2500              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  288
-2506              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  289
-2512              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  290
-2518              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  291
-2524              R/fvbn2c.R      FVBN.bagrupp.akl.dkl.stratum.fun.2c  292
-4                 R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d    5
-8                 R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d    7
-13                R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d    8
-19                R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   10
-27                R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   12
-41                R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   14
-52                R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   15
-63                R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   16
-74                R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   17
-107               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   22
-125               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   24
-136               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   25
-147               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   26
-158               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   27
-168               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   28
-180               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   29
-209               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   33
-228               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   35
-271               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   40
-291               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   42
-303               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   43
-315               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   44
-327               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   45
-340               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   46
-354               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   47
-369               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   48
-383               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   49
-397               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   50
-411               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   51
-435               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   53
-457               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   55
-484               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   58
-496               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   59
-509               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   60
-531               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   62
-542               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   63
-554               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   64
-575               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   66
-586               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   67
-598               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   68
-618               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   70
-629               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   71
-639               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   72
-669               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   75
-690               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   77
-700               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   78
-710               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   79
-721               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   80
-731               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   81
-740               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   82
-750               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   83
-768               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   85
 779               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   86
 791               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   87
 803               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   88
 813               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   89
-821               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   90
-851               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   94
-861               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   95
 871               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   96
-880               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   97
-889               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   98
-897               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d   99
-904               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  100
-913               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  101
-922               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  102
-931               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  103
-953               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  106
 962               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  107
 972               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  108
 983               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  109
 992               R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  110
-1003              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  111
-1085              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  123
-1093              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  124
-1132              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  128
-1151              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  130
-1184              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  134
-1194              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  135
-1203              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  136
-1212              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  137
-1221              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  138
-1231              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  139
-1242              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  140
-1251              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  141
-1261              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  142
-1271              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  143
-1281              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  144
-1289              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  145
-1298              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  146
-1307              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  147
-1317              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  148
-1327              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  149
-1337              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  150
-1347              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  151
-1358              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  152
-1367              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  153
-1377              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  154
-1387              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  155
-1396              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  156
-1407              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  157
-1418              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  158
-1428              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  159
-1438              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  160
-1448              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  161
-1457              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  162
-1466              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  163
-1474              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  164
-1483              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  165
-1492              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  166
-1500              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  167
-1509              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  168
-1517              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  169
-1525              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  170
-1533              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  171
-1541              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  172
-1550              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  173
-1560              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  174
-1570              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  175
-1579              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  176
-1588              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  177
-1598              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  178
-1609              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  179
-1619              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  180
-1630              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  181
-1641              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  182
-1652              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  183
-1664              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  184
-1675              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  185
 1686              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  186
-1698              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  187
-1709              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  188
-1719              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  189
-1729              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  190
-1740              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  191
-1751              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  192
-1761              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  193
-1771              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  194
-1782              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  195
 1793              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  196
-1802              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  197
-1811              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  198
-1821              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  199
-1832              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  200
-1843              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  201
-1852              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  202
-1860              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  203
-1869              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  204
-1878              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  205
-1887              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  206
-1895              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  207
-1903              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  208
-1910              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  209
-1916              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  210
-1922              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  211
-1928              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  212
-1935              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  213
-1942              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  214
-1948              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  215
-1954              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  216
-1961              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  217
-1969              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  218
-1976              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  219
-1985              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  220
-1993              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  221
-2000              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  222
-2007              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  223
-2015              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  224
-2023              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  225
-2031              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  226
-2038              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  227
-2045              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  228
-2053              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  229
-2060              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  230
-2068              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  231
-2077              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  232
-2085              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  233
-2093              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  234
-2103              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  235
-2112              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  236
-2122              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  237
-2133              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  238
-2143              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  239
-2153              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  240
-2163              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  241
-2172              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  242
-2181              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  243
-2188              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  244
-2196              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  245
-2204              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  246
-2212              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  247
-2220              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  248
-2228              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  249
-2236              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  250
-2244              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  251
-2251              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  252
-2257              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  253
-2264              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  254
-2270              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  255
-2277              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  256
-2296              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  259
-2303              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  260
-2310              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  261
-2317              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  262
-2324              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  263
-2331              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  264
-2338              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  265
-2345              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  266
-2353              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  267
-2359              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  268
-2366              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  269
-2374              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  270
-2382              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  271
-2390              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  272
-2398              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  273
-2406              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  274
-2414              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  275
-2422              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  276
-2429              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  277
-2437              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  278
-2470              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  283
-2489              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  286
-2507              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  289
-2513              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  290
-2519              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  291
-2525              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  292
-2530              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  293
-2534              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  294
-2538              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  295
-2547              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  297
-2552              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  298
-2557              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  299
-2562              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  300
-2566              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  301
-2570              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  302
-2574              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  303
-2578              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  304
-2582              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  305
-2587              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  306
-2592              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  307
-2597              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  308
-2602              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  309
-2606              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  310
-2610              R/fvbn2d.R      FVBN.bagrupp.akl.dkl.stratum.fun.2d  311
 35         R/german_things.R                      prettify_data_frame   13
 46         R/german_things.R                      prettify_data_frame   14
 57         R/german_things.R                      prettify_data_frame   15
@@ -7968,643 +7358,6 @@
 3417     0
 3420     0
 3424     0
-560      0
-569      0
-581      0
-593      0
-604      0
-612      0
-624      0
-634      0
-645      0
-654      0
-663      0
-676      0
-685      0
-695      0
-715      0
-725      0
-735      0
-745      0
-755      0
-763      0
-785      0
-808      0
-825      0
-845      0
-855      0
-865      0
-883      0
-908      0
-926      0
-934      0
-941      0
-948      0
-957      0
-967      0
-978      0
-988      0
-999      0
-1010     0
-1019     0
-1025     0
-1032     0
-1043     0
-1048     0
-1053     0
-1061     0
-1082     0
-1108     0
-1118     0
-1127     0
-1139     0
-1147     0
-1158     0
-1173     0
-1180     0
-1189     0
-1198     0
-1207     0
-1216     0
-1236     0
-1246     0
-1256     0
-1265     0
-1275     0
-1342     0
-1352     0
-1371     0
-1402     0
-1413     0
-1423     0
-1433     0
-1443     0
-1452     0
-1461     0
-1469     0
-1478     0
-1487     0
-1496     0
-1505     0
-1513     0
-1521     0
-1528     0
-1536     0
-1545     0
-1555     0
-1565     0
-1575     0
-1583     0
-1593     0
-1604     0
-1615     0
-1625     0
-1636     0
-1647     0
-1659     0
-1670     0
-1682     0
-1693     0
-1704     0
-1714     0
-1725     0
-1735     0
-1746     0
-1756     0
-1767     0
-1777     0
-1788     0
-1797     0
-1807     0
-1816     0
-1827     0
-1838     0
-1848     0
-1856     0
-1864     0
-1873     0
-1882     0
-1890     0
-1898     0
-1905     0
-1911     0
-1917     0
-1923     0
-1930     0
-1937     0
-1943     0
-1949     0
-1956     0
-1964     0
-1971     0
-1980     0
-1988     0
-1996     0
-2003     0
-2011     0
-2019     0
-2026     0
-2034     0
-2041     0
-2048     0
-2056     0
-2064     0
-2072     0
-2116     0
-2127     0
-2138     0
-2148     0
-2158     0
-2167     0
-2176     0
-2192     0
-2200     0
-2208     0
-2216     0
-2224     0
-2232     0
-2240     0
-2248     0
-2644     0
-2648     0
-2652     0
-2657     0
-2662     0
-2667     0
-2672     0
-2677     0
-2682     0
-2687     0
-2692     0
-2696     0
-2701     0
-2706     0
-2712     0
-2720     0
-2724     0
-2729     0
-2734     0
-2738     0
-2742     0
-2749     0
-2756     0
-2764     0
-2777     0
-2783     0
-2789     0
-2800     0
-2813     0
-2822     0
-2827     0
-2831     0
-2837     0
-2843     0
-2849     0
-2855     0
-2861     0
-2866     0
-2870     0
-2876     0
-2882     0
-2887     0
-2906     0
-2916     0
-2922     0
-2928     0
-2934     0
-2940     0
-2956     0
-2961     0
-2966     0
-2971     0
-2976     0
-2980     0
-2985     0
-2987     0
-2990     0
-2993     0
-2996     0
-2999     0
-3002     0
-3004     0
-3008     0
-3011     0
-3030     0
-3033     0
-3040     0
-3050     0
-3053     0
-3057     0
-3061     0
-3065     0
-3069     0
-3072     0
-3076     0
-3080     0
-3084     0
-3088     0
-3092     0
-3096     0
-3100     0
-3104     0
-3108     0
-3111     0
-3113     0
-3116     0
-3119     0
-3122     0
-3125     0
-3128     0
-3131     0
-3134     0
-3137     0
-3140     0
-3142     0
-3144     0
-3146     0
-3148     0
-3150     0
-3153     0
-3156     0
-3159     0
-3162     0
-3165     0
-3168     0
-3170     0
-3173     0
-3176     0
-3178     0
-3181     0
-3184     0
-3186     0
-3189     0
-3192     0
-3194     0
-3197     0
-3200     0
-3202     0
-3205     0
-3213     0
-3214     0
-3215     0
-3217     0
-3219     0
-3221     0
-3223     0
-3226     0
-3228     0
-3230     0
-3232     0
-3234     0
-3236     0
-3238     0
-3406     0
-3410     0
-3413     0
-3416     0
-3419     0
-3422     0
-3426     0
-3429     0
-3431     0
-3434     0
-3437     0
-3439     0
-3442     0
-3445     0
-3448     0
-3451     0
-3453     0
-3455     0
-3458     0
-3461     0
-3464     0
-3467     0
-3470     0
-3473     0
-3476     0
-3480     0
-3482     0
-3484     0
-3487     0
-3490     0
-3493     0
-3496     0
-3499     0
-3503     0
-3510     0
-3513     0
-3516     0
-3521     0
-3527     0
-3532     0
-3535     0
-3538     0
-3540     0
-3543     0
-3546     0
-3549     0
-3552     0
-3554     0
-3556     0
-3559     0
-3561     0
-3564     0
-3573     0
-3578     0
-3579     0
-3580     0
-3582     0
-3584     0
-3588     0
-3590     0
-3592     0
-3594     0
-3597     0
-3599     0
-3601     0
-3603     0
-3605     0
-3607     0
-3609     0
-3611     0
-3613     0
-3615     0
-3618     0
-3620     0
-3623     0
-3625     0
-3628     0
-3630     0
-3633     0
-3636     0
-3638     0
-3640     0
-3643     0
-3645     0
-3648     0
-3650     0
-3653     0
-3656     0
-3659     0
-3661     0
-3663     0
-3665     0
-3667     0
-3670     0
-3673     0
-3690     0
-3693     0
-3698     0
-3707     0
-3710     0
-3713     0
-3716     0
-3719     0
-3722     0
-3725     0
-3728     0
-3731     0
-3734     0
-3737     0
-3740     0
-3743     0
-3746     0
-3749     0
-3752     0
-3755     0
-3758     0
-3761     0
-3764     0
-3767     0
-3770     0
-3773     0
-3776     0
-3779     0
-3782     0
-3785     0
-3788     0
-3791     0
-3793     0
-3795     0
-3797     0
-3799     0
-3801     0
-3803     0
-3805     0
-3807     0
-3809     0
-3811     0
-3813     0
-3815     0
-3817     0
-3819     0
-3821     0
-3823     0
-3825     0
-3827     0
-3829     0
-3831     0
-3833     0
-3835     0
-3837     0
-3839     0
-3841     0
-3844     0
-3846     0
-3849     0
-3859     0
-3862     0
-3865     0
-3868     0
-3871     0
-3874     0
-3877     0
-3880     0
-3883     0
-3886     0
-3889     0
-3892     0
-3895     0
-3898     0
-3901     0
-3904     0
-3907     0
-3910     0
-3913     0
-3916     0
-3919     0
-3922     0
-3925     0
-3928     0
-1153     0
-1161     0
-1170     0
-1177     0
-1186     0
-1195     0
-1204     0
-1223     0
-1233     0
-1243     0
-1253     0
-1263     0
-1273     0
-1282     0
-1291     0
-1300     0
-1309     0
-1318     0
-1329     0
-1339     0
-1349     0
-1359     0
-1368     0
-1379     0
-1388     0
-1398     0
-1409     0
-1420     0
-1430     0
-1440     0
-1450     0
-1459     0
-1467     0
-1476     0
-1485     0
-1494     0
-1502     0
-1511     0
-1519     0
-1526     0
-1534     0
-1542     0
-1552     0
-1562     0
-1572     0
-1580     0
-1589     0
-1600     0
-1611     0
-1621     0
-1632     0
-1643     0
-1654     0
-1666     0
-1677     0
-1688     0
-1700     0
-1720     0
-2062     0
-2070     0
-2079     0
-2095     0
-2105     0
-2124     0
-2135     0
-2145     0
-2155     0
-2165     0
-2174     0
-2183     0
-2190     0
-2198     0
-2206     0
-2214     0
-2222     0
-2230     0
-2238     0
-2246     0
-2253     0
-2259     0
-2266     0
-2272     0
-2279     0
-2285     0
-2291     0
-2298     0
-2305     0
-2312     0
-2319     0
-2326     0
-2333     0
-2340     0
-2347     0
-2355     0
-2361     0
-2368     0
-2376     0
-2384     0
-2392     0
-2400     0
-2408     0
-2416     0
-2424     0
-2431     0
-2439     0
-2446     0
-2452     0
-2458     0
-2465     0
-2472     0
-2478     0
-2484     0
-2491     0
-2502     0
-2708     0
-2714     0
-2718     0
-2726     0
-2731     0
-2740     0
-2744     0
-2747     0
-2751     0
-2754     0
-2759     0
-2762     0
-2767     0
-2771     0
-2774     0
-2780     0
-2786     0
-2792     0
-2797     0
-2803     0
-2807     0
-2811     0
-2816     0
-2820     0
-2825     0
-2829     0
-2835     0
-2841     0
-2847     0
-2853     0
-2859     0
-2864     0
-2868     0
-2874     0
-2880     0
-2885     0
-2890     0
-2894     0
-2899     0
-2904     0
-2909     0
-2914     0
-2920     0
-2926     0
-2932     0
-2938     0
-2944     0
-2949     0
-2954     0
-2959     0
-2964     0
-2969     0
-2974     0
-2983     0
 3254     0
 3259     0
 3262     0
@@ -11688,7 +10441,6 @@
 7928     0
 7929     0
 7930     0
-7934     0
 7947     0
 7948     0
 7949     0
@@ -11922,6 +10674,475 @@
 8177     0
 8178     0
 8179     0
+560      0
+569      0
+581      0
+593      0
+604      0
+612      0
+624      0
+634      0
+645      0
+654      0
+663      0
+676      0
+685      0
+695      0
+715      0
+725      0
+735      0
+745      0
+755      0
+763      0
+785      0
+808      0
+825      0
+845      0
+855      0
+865      0
+883      0
+908      0
+926      0
+934      0
+941      0
+948      0
+957      0
+967      0
+978      0
+988      0
+999      0
+1010     0
+1019     0
+1025     0
+1032     0
+1043     0
+1048     0
+1053     0
+1061     0
+1082     0
+1108     0
+1118     0
+1127     0
+1139     0
+1147     0
+1158     0
+1173     0
+1180     0
+1189     0
+1198     0
+1207     0
+1216     0
+1236     0
+1246     0
+1256     0
+1265     0
+1275     0
+1342     0
+1352     0
+1371     0
+1402     0
+1413     0
+1423     0
+1433     0
+1443     0
+1452     0
+1461     0
+1469     0
+1478     0
+1487     0
+1496     0
+1505     0
+1513     0
+1521     0
+1528     0
+1536     0
+1545     0
+1555     0
+1565     0
+1575     0
+1583     0
+1593     0
+1604     0
+1615     0
+1625     0
+1636     0
+1647     0
+1659     0
+1670     0
+1682     0
+1693     0
+1704     0
+1714     0
+1725     0
+1735     0
+1746     0
+1756     0
+1767     0
+1777     0
+1788     0
+1797     0
+1807     0
+1816     0
+1827     0
+1838     0
+1848     0
+1856     0
+1864     0
+1873     0
+1882     0
+1890     0
+1898     0
+1905     0
+1911     0
+1917     0
+1923     0
+1930     0
+1937     0
+1943     0
+1949     0
+1956     0
+1964     0
+1971     0
+1980     0
+1988     0
+1996     0
+2003     0
+2011     0
+2019     0
+2026     0
+2034     0
+2041     0
+2048     0
+2056     0
+2064     0
+2072     0
+2116     0
+2127     0
+2138     0
+2148     0
+2158     0
+2167     0
+2176     0
+2192     0
+2200     0
+2208     0
+2216     0
+2224     0
+2232     0
+2240     0
+2248     0
+2644     0
+2648     0
+2652     0
+2657     0
+2662     0
+2667     0
+2672     0
+2677     0
+2682     0
+2687     0
+2692     0
+2696     0
+2701     0
+2706     0
+2712     0
+2720     0
+2724     0
+2729     0
+2734     0
+2738     0
+2742     0
+2749     0
+2756     0
+2764     0
+2777     0
+2783     0
+2789     0
+2800     0
+2813     0
+2822     0
+2827     0
+2831     0
+2837     0
+2843     0
+2849     0
+2855     0
+2861     0
+2866     0
+2870     0
+2876     0
+2882     0
+2887     0
+2906     0
+2916     0
+2922     0
+2928     0
+2934     0
+2940     0
+2956     0
+2961     0
+2966     0
+2971     0
+2976     0
+2980     0
+2985     0
+2987     0
+2990     0
+2993     0
+2996     0
+2999     0
+3002     0
+3004     0
+3008     0
+3011     0
+3030     0
+3033     0
+3040     0
+3050     0
+3053     0
+3057     0
+3061     0
+3065     0
+3069     0
+3072     0
+3076     0
+3080     0
+3084     0
+3088     0
+3092     0
+3096     0
+3100     0
+3104     0
+3108     0
+3111     0
+3113     0
+3116     0
+3119     0
+3122     0
+3125     0
+3128     0
+3131     0
+3134     0
+3137     0
+3140     0
+3142     0
+3144     0
+3146     0
+3148     0
+3150     0
+3153     0
+3156     0
+3159     0
+3162     0
+3165     0
+3168     0
+3170     0
+3173     0
+3176     0
+3178     0
+3181     0
+3184     0
+3186     0
+3189     0
+3192     0
+3194     0
+3197     0
+3200     0
+3202     0
+3205     0
+3213     0
+3214     0
+3215     0
+3217     0
+3219     0
+3221     0
+3223     0
+3226     0
+3228     0
+3230     0
+3232     0
+3234     0
+3236     0
+3238     0
+3406     0
+3410     0
+3413     0
+3416     0
+3419     0
+3422     0
+3426     0
+3429     0
+3431     0
+3434     0
+3437     0
+3439     0
+3442     0
+3445     0
+3448     0
+3451     0
+3453     0
+3455     0
+3458     0
+3461     0
+3464     0
+3467     0
+3470     0
+3473     0
+3476     0
+3480     0
+3482     0
+3484     0
+3487     0
+3490     0
+3493     0
+3496     0
+3499     0
+3503     0
+3510     0
+3513     0
+3516     0
+3521     0
+3527     0
+3532     0
+3535     0
+3538     0
+3540     0
+3543     0
+3546     0
+3549     0
+3552     0
+3554     0
+3556     0
+3559     0
+3561     0
+3564     0
+3573     0
+3578     0
+3579     0
+3580     0
+3582     0
+3584     0
+3588     0
+3590     0
+3592     0
+3594     0
+3597     0
+3599     0
+3601     0
+3603     0
+3605     0
+3607     0
+3609     0
+3611     0
+3613     0
+3615     0
+3618     0
+3620     0
+3623     0
+3625     0
+3628     0
+3630     0
+3633     0
+3636     0
+3638     0
+3640     0
+3643     0
+3645     0
+3648     0
+3650     0
+3653     0
+3656     0
+3659     0
+3661     0
+3663     0
+3665     0
+3667     0
+3670     0
+3673     0
+3690     0
+3693     0
+3698     0
+3707     0
+3710     0
+3713     0
+3716     0
+3719     0
+3722     0
+3725     0
+3728     0
+3731     0
+3734     0
+3737     0
+3740     0
+3743     0
+3746     0
+3749     0
+3752     0
+3755     0
+3758     0
+3761     0
+3764     0
+3767     0
+3770     0
+3773     0
+3776     0
+3779     0
+3782     0
+3785     0
+3788     0
+3791     0
+3793     0
+3795     0
+3797     0
+3799     0
+3801     0
+3803     0
+3805     0
+3807     0
+3809     0
+3811     0
+3813     0
+3815     0
+3817     0
+3819     0
+3821     0
+3823     0
+3825     0
+3827     0
+3829     0
+3831     0
+3833     0
+3835     0
+3837     0
+3839     0
+3841     0
+3844     0
+3846     0
+3849     0
+3859     0
+3862     0
+3865     0
+3868     0
+3871     0
+3874     0
+3877     0
+3880     0
+3883     0
+3886     0
+3889     0
+3892     0
+3895     0
+3898     0
+3901     0
+3904     0
+3907     0
+3910     0
+3913     0
+3916     0
+3919     0
+3922     0
+3925     0
+3928     0
 173      0
 761      0
 772      0
@@ -12550,474 +11771,33 @@
 2428     0
 2435     0
 2443     0
-3        0
-7        0
-12       0
-18       0
-26       0
-40       0
-51       0
-62       0
-73       0
-106      0
-124      0
-135      0
-146      0
-157      0
-167      0
-179      0
-208      0
-227      0
-270      0
-290      0
-302      0
-314      0
-326      0
-339      0
-353      0
-368      0
-382      0
-396      0
-410      0
-434      0
-456      0
-483      0
-495      0
-508      0
-530      0
-541      0
-553      0
-574      0
-585      0
-597      0
-617      0
-628      0
-638      0
-668      0
-689      0
-699      0
-709      0
-720      0
-730      0
-739      0
-749      0
-767      0
 778      0
 790      0
 802      0
 812      0
-820      0
-850      0
-860      0
 870      0
-879      0
-888      0
-896      0
-903      0
-912      0
-921      0
-930      0
-952      0
 961      0
 971      0
 982      0
 991      0
-1002     0
-1084     0
-1092     0
-1131     0
-1150     0
-1183     0
-1193     0
-1202     0
-1211     0
-1220     0
-1230     0
-1241     0
-1250     0
-1260     0
-1270     0
-1280     0
-1288     0
-1297     0
-1306     0
 1316     0
 1326     0
 1336     0
 1346     0
 1357     0
-1366     0
-1376     0
-1386     0
-1395     0
-1406     0
-1417     0
-1427     0
-1437     0
-1447     0
-1456     0
-1465     0
-1473     0
-1482     0
-1491     0
-1499     0
-1508     0
-1516     0
-1524     0
-1532     0
-1540     0
-1549     0
-1559     0
-1569     0
-1578     0
-1587     0
-1597     0
-1608     0
-1618     0
-1629     0
-1640     0
-1651     0
-1663     0
-1674     0
 1685     0
-1697     0
-1708     0
-1718     0
-1728     0
-1739     0
-1750     0
-1760     0
-1770     0
-1781     0
 1792     0
-1801     0
-1810     0
-1820     0
-1831     0
-1842     0
-1851     0
-1859     0
-1868     0
-1877     0
-1886     0
-1894     0
-1902     0
-1909     0
-1915     0
-1921     0
-1927     0
-1934     0
-1941     0
-1947     0
-1953     0
-1960     0
-1968     0
-1975     0
-1984     0
-1992     0
-1999     0
-2006     0
-2014     0
-2022     0
-2030     0
-2037     0
-2044     0
-2052     0
-2059     0
-2067     0
-2076     0
-2084     0
-2092     0
-2102     0
-2111     0
-2121     0
-2132     0
-2142     0
-2152     0
-2162     0
-2171     0
-2180     0
-2187     0
-2195     0
-2203     0
-2211     0
-2219     0
-2227     0
-2235     0
-2243     0
-2250     0
-2256     0
-2263     0
-2269     0
-2276     0
-2330     0
-2352     0
-2373     0
-2381     0
-2389     0
-2397     0
-2405     0
-2413     0
-2421     0
-2436     0
-2444     0
-2450     0
-2456     0
-2463     0
-2469     0
-2476     0
-2482     0
-2488     0
-2495     0
-2500     0
-2506     0
-2512     0
-2518     0
-2524     0
-4        0
-8        0
-13       0
-19       0
-27       0
-41       0
-52       0
-63       0
-74       0
-107      0
-125      0
-136      0
-147      0
-158      0
-168      0
-180      0
-209      0
-228      0
-271      0
-291      0
-303      0
-315      0
-327      0
-340      0
-354      0
-369      0
-383      0
-397      0
-411      0
-435      0
-457      0
-484      0
-496      0
-509      0
-531      0
-542      0
-554      0
-575      0
-586      0
-598      0
-618      0
-629      0
-639      0
-669      0
-690      0
-700      0
-710      0
-721      0
-731      0
-740      0
-750      0
-768      0
 779      0
 791      0
 803      0
 813      0
-821      0
-851      0
-861      0
 871      0
-880      0
-889      0
-897      0
-904      0
-913      0
-922      0
-931      0
-953      0
 962      0
 972      0
 983      0
 992      0
-1003     0
-1085     0
-1093     0
-1132     0
-1151     0
-1184     0
-1194     0
-1203     0
-1212     0
-1221     0
-1231     0
-1242     0
-1251     0
-1261     0
-1271     0
-1281     0
-1289     0
-1298     0
-1307     0
-1317     0
-1327     0
-1337     0
-1347     0
-1358     0
-1367     0
-1377     0
-1387     0
-1396     0
-1407     0
-1418     0
-1428     0
-1438     0
-1448     0
-1457     0
-1466     0
-1474     0
-1483     0
-1492     0
-1500     0
-1509     0
-1517     0
-1525     0
-1533     0
-1541     0
-1550     0
-1560     0
-1570     0
-1579     0
-1588     0
-1598     0
-1609     0
-1619     0
-1630     0
-1641     0
-1652     0
-1664     0
-1675     0
 1686     0
-1698     0
-1709     0
-1719     0
-1729     0
-1740     0
-1751     0
-1761     0
-1771     0
-1782     0
 1793     0
-1802     0
-1811     0
-1821     0
-1832     0
-1843     0
-1852     0
-1860     0
-1869     0
-1878     0
-1887     0
-1895     0
-1903     0
-1910     0
-1916     0
-1922     0
-1928     0
-1935     0
-1942     0
-1948     0
-1954     0
-1961     0
-1969     0
-1976     0
-1985     0
-1993     0
-2000     0
-2007     0
-2015     0
-2023     0
-2031     0
-2038     0
-2045     0
-2053     0
-2060     0
-2068     0
-2077     0
-2085     0
-2093     0
-2103     0
-2112     0
-2122     0
-2133     0
-2143     0
-2153     0
-2163     0
-2172     0
-2181     0
-2188     0
-2196     0
-2204     0
-2212     0
-2220     0
-2228     0
-2236     0
-2244     0
-2251     0
-2257     0
-2264     0
-2270     0
-2277     0
-2296     0
-2303     0
-2310     0
-2317     0
-2324     0
-2331     0
-2338     0
-2345     0
-2353     0
-2359     0
-2366     0
-2374     0
-2382     0
-2390     0
-2398     0
-2406     0
-2414     0
-2422     0
-2429     0
-2437     0
-2470     0
-2489     0
-2507     0
-2513     0
-2519     0
-2525     0
-2530     0
-2534     0
-2538     0
-2547     0
-2552     0
-2557     0
-2562     0
-2566     0
-2570     0
-2574     0
-2578     0
-2582     0
-2587     0
-2592     0
-2597     0
-2602     0
-2606     0
-2610     0
 35       0
 46       0
 57       0
@@ -14820,7 +13600,7 @@
 1823     0
 1834     0
 1845     0
-bundeswaldinventur Coverage: 9.40%
+bundeswaldinventur Coverage: 16.86%
 R/adapt_script.R: 0.00%
 R/batch.R: 0.00%
 R/bits_and_pieces.R: 0.00%
@@ -14829,16 +13609,16 @@ R/BWI3_HR_Totholz.R: 0.00%
 R/figures_and_tables.R: 0.00%
 R/fvbn2a.R: 0.00%
 R/fvbn2b.R: 0.00%
-R/fvbn2c.R: 0.00%
-R/fvbn2d.R: 0.00%
 R/german_things.R: 0.00%
 R/global_objects.R: 0.00%
 R/regional.R: 0.00%
 R/tree_species_shares.R: 0.00%
 R/utils.R: 0.00%
-R/BWI3_HR.R: 1.89%
+R/BWI3_HR.R: 6.64%
 R/options.R: 26.67%
 R/variable_getters.R: 89.13%
+R/fvbn2c.R: 92.86%
+R/fvbn2d.R: 95.49%
 R/deadwood.R: 97.96%
 R/fvbn2e.R: 100.00%
 R/get_data.R: 100.00%
