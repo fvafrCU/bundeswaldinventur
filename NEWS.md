@@ -1,10 +1,11 @@
 # bundeswaldinventur 0.12.1.9000
 
-* improve on testing with local data
+* Fix data aquistion for historical analysis scripts.
+* Improved on testing with local data.
 
 # bundeswaldinventur 0.12.1
 
-* fix get\_data()
+* Fixed get\_data()
 
 # bundeswaldinventur 0.12.0
 
