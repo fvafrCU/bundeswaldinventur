@@ -1027,7 +1027,6 @@
 3924     R/BWI3_HR_Totholz.R             Totholz.klass.stratum.fun  766     0
 3927     R/BWI3_HR_Totholz.R             Totholz.klass.stratum.fun  767     0
 3930     R/BWI3_HR_Totholz.R             Totholz.klass.stratum.fun  768     0
-7015             R/BWI3_HR.R               stamm.merkmale.bagr.fun 4127     0
 7315             R/BWI3_HR.R                   fl.proz.stratum.fun 4572     0
 7316             R/BWI3_HR.R                   fl.proz.stratum.fun 4573     0
 7317             R/BWI3_HR.R                   fl.proz.stratum.fun 4574     0
@@ -3753,7 +3752,7 @@
 1825    R/variable_getters.R                            get_design  199     0
 1836    R/variable_getters.R                            get_design  200     0
 1847    R/variable_getters.R                            get_design  201     0
-bundeswaldinventur Coverage: 54.12%
+bundeswaldinventur Coverage: 54.13%
 R/adapt_script.R: 0.00%
 R/batch.R: 0.00%
 R/bits_and_pieces.R: 0.00%
@@ -3769,7 +3768,7 @@ R/tree_species_shares.R: 0.00%
 R/utils.R: 0.00%
 R/options.R: 26.67%
 R/variable_getters.R: 89.13%
-R/BWI3_HR.R: 92.43%
+R/BWI3_HR.R: 92.46%
 R/fvbn2c.R: 92.86%
 R/fvbn2d.R: 95.49%
 R/deadwood.R: 97.96%

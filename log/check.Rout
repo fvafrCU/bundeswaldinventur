@@ -4,7 +4,7 @@
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.12.2’
+* this is package ‘bundeswaldinventur’ version ‘0.13.0’
 * package encoding: UTF-8
 * checking CRAN incoming feasibility ... Note_to_CRAN_maintainers
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
@@ -280,15 +280,7 @@ File ‘bundeswaldinventur/R/global_objects.R’:
 * checking Rd line widths ... OK
 * checking Rd cross-references ... OK
 * checking for missing documentation entries ... OK
-* checking for code/documentation mismatches ... WARNING
-Codoc mismatches from documentation object 'get_data':
-get_data
-  Code: function(name, package = get_options("data_source", name =
-                 "bundeswaldinventur"))
-  Docs: function(name, package = get_options("data_source"))
-  Mismatches in argument default values:
-    Name: 'package' Code: get_options("data_source", name = "bundeswaldinventur") Docs: get_options("data_source")
-
+* checking for code/documentation mismatches ... OK
 * checking Rd \usage sections ... OK
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
@@ -340,7 +332,7 @@ get_data
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [10s/10s]
+  Running ‘testthat.R’
 * checking PDF version of manual ... OK
 * DONE
-Status: 2 WARNINGs, 1 NOTE
+Status: 1 WARNING, 1 NOTE

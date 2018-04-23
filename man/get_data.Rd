@@ -4,7 +4,8 @@
 \alias{get_data}
 \title{Load Data from \pkg{bwibw}}
 \usage{
-get_data(name, package = get_options("data_source"))
+get_data(name, package = get_options("data_source", name =
+  "bundeswaldinventur"))
 }
 \arguments{
 \item{name}{a string of length one giving the name of the data.frame.}

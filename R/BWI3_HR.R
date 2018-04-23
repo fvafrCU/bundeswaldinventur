@@ -4122,7 +4122,7 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale, baeume, ecken, trakte, A,
 
   # Aus Kompatibilt\u00e4ts-Gr\u00fcnden werden die nur in der BWI 3 vorkommenden
   # Attribute <Ast> und <Ast_Hoe> im DS der BWI 3 entfernt
-  ast.pos <- grep("Ast", names(wzp4.merkmale))
+  ast.pos <- which(tolower(names(wzp4.merkmale)) %in% c("ast", "ast_hoe"))
   if (length(ast.pos) > 0) {
     wzp4.merkmale <- wzp4.merkmale[TRUE, -c(ast.pos)]
   }
@@ -4138,7 +4138,7 @@ stamm.merkmale.bagr.fun <- function(wzp4.merkmale, baeume, ecken, trakte, A,
 
   # Probeb\u00e4ume im Stratum mit den Merkmalen in  <merkmale> ausw\u00e4hlen
   # Anzahl zu ber\u00fccksichtigender Merkmale
-  k <- length(merkmale)
+  k <- length(merkmale) - length(ast.pos)
   mm.pos <- rep(0, k)
   # Wenn mehrere Merkmale als Kriterium angegeben sind, wird ein Attribut
   # gebildet, welches die Vereinigungsmenge der betrachteten Merkmale darstellt

@@ -1,3 +1,7 @@
+# bundeswaldinventur 0.13.0
+
+* Fixed Astmerkmale in stamm.merkmale.bagr.fun().
+
 # bundeswaldinventur 0.12.2
 
 * Fix data aquistion for historical analysis scripts.

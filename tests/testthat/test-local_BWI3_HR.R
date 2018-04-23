@@ -4247,13 +4247,17 @@ test_that("biotop.baeume.fun", {
 
 test_that("stamm.merkmale.bagr.fun", {
   result <- stamm.merkmale.bagr.fun(
-    get_data("wzp4.merkmale.3"), get_data("baeume.3"), get_data("ecken.3"),
-    get_data("trakte.3"), get_design("a", 3), list(Wa = c(3, 5), Begehbar = 1), c(
-      "tot", "jschael",
-      "aeschael", "ruecke", "pilz", "harz", "kaefer", "sstamm", "faulkon",
-      "hoehle", "bizarr", "uralt", "horst", "mbiotop"
-    ),
-    list(
+    wzp4.merkmale = get_data("wzp4.merkmale.3"), 
+    baeume = get_data("baeume.3"), 
+    ecken = get_data("ecken.3"),
+    trakte = get_data("trakte.3"), 
+    trakte.3 = get_data("trakte.3"), 
+    A = get_design("a", 3), 
+    auswahl = list(Wa = c(3, 5), Begehbar = 1), 
+    merkmale = c("tot", "jschael", "aeschael", "ruecke", "pilz", "harz", 
+                 "kaefer", "sstamm", "faulkon", "hoehle", "bizarr", "uralt", 
+                 "horst", "mbiotop", "Ast"),
+    ba.grupp = list(
       bagr.lab = c("FiTa", "DglKiLae", "Bu", "Ei", "BLb", "WLb"),
       ba.grupp = list(
         c(10:19, 30:39, 90:99), c(20:29, 40, 50, 51), c(100),
@@ -4262,18 +4266,14 @@ test_that("stamm.merkmale.bagr.fun", {
     )
   )
 
-  reference  <- 
-structure(list(Log = structure(list(Datum = structure(1524159292.04997, class = c("POSIXct", 
-"POSIXt")), Version.baeume.b = NA_character_), .Names = c("Datum", 
-"Version.baeume.b")), Stratum = structure(list(Wa = c(3, 5), 
-    Begehbar = 1), .Names = c("Wa", "Begehbar")), nTE = 97L, 
-    HBF = 902724.87, se.HBF = 23749.5302613181, BL = 0, se.BL = 0, 
-    iBL = 0, se.iBL = 0, LK = 1, se.LK = 0, Merkmale = c("tot", 
-    "jschael", "aeschael", "ruecke", "pilz", "harz", "kaefer", 
-    "sstamm", "faulkon", "hoehle", "bizarr", "uralt", "horst", 
-    "mbiotop"), BAGR = c("FiTa", "DglKiLae", "Bu", "Ei", "BLb", 
-    "WLb", "Alle BA"), Kennwerte = c("Gesamtzahl", "Zahl_je_ha", 
-    "Vorrat_m3_mR", "Vorrat_m3_mR_je_ha", "Stueckvolumen_m3_mR", 
+  reference  <- structure(list(Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), .Names = c("Wa", 
+"Begehbar")), nTE = 97L, HBF = 902724.87, se.HBF = 23749.5302613181, 
+    BL = 0, se.BL = 0, iBL = 0, se.iBL = 0, LK = 1, se.LK = 0, 
+    Merkmale = c("tot", "jschael", "aeschael", "ruecke", "pilz", 
+    "harz", "kaefer", "sstamm", "faulkon", "hoehle", "bizarr", 
+    "uralt", "horst", "mbiotop", "Ast"), BAGR = c("FiTa", "DglKiLae", 
+    "Bu", "Ei", "BLb", "WLb", "Alle BA"), Kennwerte = c("Gesamtzahl", 
+    "Zahl_je_ha", "Vorrat_m3_mR", "Vorrat_m3_mR_je_ha", "Stueckvolumen_m3_mR", 
     "oi_Biom_t", "oi_Biom_t_je_ha", "Anteil_Gesamtzahl_Proz", 
     "Anteil_Gesamtvorrat_Proz"), Kennwert_Tabelle_BAGR = structure(c(90066395.8185684, 
     99.7717010040594, 56330529.5536398, 62.4005512927098, 0.625433371033445, 
@@ -4307,10 +4307,11 @@ structure(list(Log = structure(list(Datum = structure(1524159292.04997, class = 
     67301522.8555187, 74.553748425607, 23.8290253838451, 34.2608210690134, 
     23743317.0368748, 24.3843221002909, 12751051.8645837, 12.8312177992552, 
     0.119800440523324, 7437441.4861657, 7.51291384889697, 3.46048304964746, 
-    2.59134914732459), .Dim = c(9L, 2L, 7L))), .Names = c("Log", 
-"Stratum", "nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", "se.iBL", 
-"LK", "se.LK", "Merkmale", "BAGR", "Kennwerte", "Kennwert_Tabelle_BAGR"
+    2.59134914732459), .Dim = c(9L, 2L, 7L))), .Names = c("Stratum", 
+"nTE", "HBF", "se.HBF", "BL", "se.BL", "iBL", "se.iBL", "LK", 
+"se.LK", "Merkmale", "BAGR", "Kennwerte", "Kennwert_Tabelle_BAGR"
 ))
+
       # clean Log items
   result[["Log"]] <- NULL
   reference[["Log"]] <- NULL
