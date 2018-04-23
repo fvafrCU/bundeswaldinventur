@@ -1,4 +1,4 @@
-# bundeswaldinventur 0.12.1.9000
+# bundeswaldinventur 0.12.2
 
 * Fix data aquistion for historical analysis scripts.
 * Improved on testing with local data.
