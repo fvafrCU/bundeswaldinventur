@@ -138,6 +138,7 @@ $(LOG_DIR)/lintr.Rout: .log.Rout $(R_FILES) $(VIGNETTES_FILES) $(LOG_DIR)/depend
 .PHONY: coverage
 coverage: $(LOG_DIR)/covr.Rout 
 $(LOG_DIR)/covr.Rout: .log.Rout $(R_FILES) $(TESTTHAT_FILES) $(RUNIT_FILES) $(INST_FILES) $(LOG_DIR)/dependencies.Rout
+	export _R_COVR_RUN_=TRUE && \
 	$(Rscript) --vanilla -e 'co <- covr::package_coverage(path = ".", function_exclusions = "\\.onLoad");  covr::zero_coverage(co); options(width = 120); print(co)' > $(LOG_DIR)/covr.Rout 2>&1 
 
 .PHONY: testthat

@@ -1,6 +1,8 @@
-# bundeswaldinventur 0.13.0.9000
+# bundeswaldinventur 0.13.1
 
-* FIXME
+* Improved on testing.
+* Added workaround for evaluating tests/testthat.R via R CMD check and covr.
+* Fixed Astmerkmale in stamm.merkmale.bagr.akl.t fun().
 
 # bundeswaldinventur 0.13.0
 

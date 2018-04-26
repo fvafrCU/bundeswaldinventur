@@ -4764,10 +4764,10 @@ mbaf.bagr.alt.bhd.pm.fun <- function(baeume.vor, baeume.folg, A.klass, D.klass) 
 #'  \code{x}: sind (1) bei Totalen die  Traktecken (Wald/Nichtwald), (2) bei
 #'  Ratio zwischen beob. Groessen die jeweilige Groesse im Stratum (als Untermnege
 #'  der Trakte im Inventurgebiet).
-#' @param xy Matrix mit  x1, x2 und y als Spalten.
+#' @param xy Matrix mit  x und y als Spalten.
 #' @param n Anzahl der Spalten der Matrix, Anzahl der Trakte im Inventurgebiet.
 #' @export
-#' @return Liste mit Ratio-Schaetzer(\code{R.xy}) und Varianz des Ratio-
+#' @return Liste mit Ratio-Schaetzer (\code{R.xy}) und Varianz des Ratio-
 #'  Schaetzers (\code{V.R.xy}).
 r.variance.fun <- function(xy, n) {
   # Ratio-Sch\u00e4tzer
@@ -4805,7 +4805,7 @@ r.variance.fun <- function(xy, n) {
 #' @param xy Matrix mit  x1, x2 und y als Spalten.
 #' @param n Anzahl der Spalten der Matrix, Anzahl der Trakte im Inventurgebiet.
 #' @export
-#' @return Liste mit Ratio-Schaetzer(\code{R.xxy}) und Varianz des Ratio-
+#' @return Liste mit Ratio-Schaetzer (\code{R.xxy}) und Varianz des Ratio-
 #'  Schaetzers (\code{V.R.xxy}).
 r.xxy.variance.fun <- function(xy, n) {
   # n <- length(trakte[,1])
@@ -5713,7 +5713,7 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale, baeume, ecken, trakte, A,
 
   # Aus Kompatibilt\u00e4ts-Gr\u00fcnden werden die nur in der BWI 3 vorkommenden
   # Attribute <Ast> und <Ast_Hoe> im DS der BWI 3 entfernt
-  ast.pos <- grep("Ast", names(wzp4.merkmale))
+  ast.pos <- which(tolower(names(wzp4.merkmale)) %in% c("ast", "ast_hoe"))
   if (length(ast.pos) > 0) {
     wzp4.merkmale <- wzp4.merkmale[TRUE, -c(ast.pos)]
   }
@@ -5732,7 +5732,7 @@ stamm.merkmale.bagr.akl.fun <- function(wzp4.merkmale, baeume, ecken, trakte, A,
 
   # Probeb\u00e4ume im Stratum mit den Merkmalen in  <merkmale> ausw\u00e4hlen
   # Anzahl zu ber\u00fccksichtigender Merkmale
-  k <- length(merkmale)
+  k <- length(merkmale) - length(ast.pos)
   mm.pos <- rep(0, k)
   # Wenn mehrere Merkmale als Kriterium angegeben sind, wird ein Attribut
   # gebildet, welches die Vereinigungsmenge der betrachteten Merkmale darstellt

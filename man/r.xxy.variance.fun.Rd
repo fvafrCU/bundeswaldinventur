@@ -12,7 +12,7 @@ r.xxy.variance.fun(xy, n)
 \item{n}{Anzahl der Spalten der Matrix, Anzahl der Trakte im Inventurgebiet.}
 }
 \value{
-Liste mit Ratio-Schaetzer(\code{R.xxy}) und Varianz des Ratio-
+Liste mit Ratio-Schaetzer (\code{R.xxy}) und Varianz des Ratio-
  Schaetzers (\code{V.R.xxy}).
 }
 \description{

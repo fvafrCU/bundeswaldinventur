@@ -7,12 +7,12 @@
 r.variance.fun(xy, n)
 }
 \arguments{
-\item{xy}{Matrix mit  x1, x2 und y als Spalten.}
+\item{xy}{Matrix mit  x und y als Spalten.}
 
 \item{n}{Anzahl der Spalten der Matrix, Anzahl der Trakte im Inventurgebiet.}
 }
 \value{
-Liste mit Ratio-Schaetzer(\code{R.xy}) und Varianz des Ratio-
+Liste mit Ratio-Schaetzer (\code{R.xy}) und Varianz des Ratio-
  Schaetzers (\code{V.R.xy}).
 }
 \description{
