@@ -7,9 +7,9 @@
 #' @name get_design("a", 3) Header for
 NULL
 
-context("variable_getters.R")
+testthat::context("variable_getters.R")
 
-test_that("get_species_groups", {
+testthat::test_that("get_species_groups", {
   output <- get_species_groups()
 
   reference <-
@@ -36,5 +36,32 @@ test_that("get_species_groups", {
       )
     ), .Names = c("bagr.lab", "ba.grupp", "colors"))
 
-  expect_equal(output, reference)
+  testthat::expect_equal(output, reference)
+})
+
+testthat::test_that("get_design", {
+
+  output <- get_design(TRUE, 3)
+  reference <- structure(c(3575163, 3575163, 3575148, 35743, 35743, 35731, 8970,
+                           8970, 8970, 100.024144587751, 100.024144587751, 
+                           100.057317175562), 
+                         .Dim = 3:4, 
+                         .Dimnames = list(c("bwi1", "bwi2", "bwi3"), 
+                                          c("a", "nte", "nt", "rf")))
+  testthat::expect_equal(output, reference)
+  output <- get_design(TRUE, 3, hard_coded = FALSE)
+  reference <- structure(c(3575163, 3575263, 3575148, 400, 400, 400, 100, 100,
+                           100, 8937.9075, 8938.1575, 8937.87), .Dim = 3:4, .Dimnames = list(
+                           c("bwi1", "bwi2", "bwi3"), c("a", "nte", "nt", "rf")))
+  testthat::expect_equal(output, reference)
+  output <- get_design("nte", 3, hard_coded = FALSE)
+  reference <- 400
+  testthat::expect_equal(output, reference)
+})
+
+testthat::test_that("get_bwi_colors", {
+
+  output <- get_bwi_colors()
+  reference <- c("#9ACD32", "#7CFC00", "#006400")
+  testthat::expect_equal(output, reference)
 })

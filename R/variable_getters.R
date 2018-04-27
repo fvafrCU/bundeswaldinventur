@@ -164,12 +164,13 @@ get_bwi_colors <- function() {
 #'
 #'
 #' @author Dominik Cullmann, <dominik.cullmann@@forst.bwl.de>
-#' @param attribute The attribute of interest.
+#' @param attribute The attribute of interest. Set to \code{TRUE} to get all
+#' attributes.
 #' @param bwi The BWI to use.
 #' @param hard_coded use hardcoded values or try to retrieve them from the
 #' respective trakte data.frame?
 #' @export
-#' @return an integer
+#' @return an integer or matrix.
 #' @examples
 #' get_design("nte", "3")
 #' get_design("nTE", "bwi3")
@@ -203,7 +204,11 @@ get_design <- function(attribute, bwi, hard_coded = TRUE) {
   values <- rbind(bwi1, bwi2, bwi3)
   values <- cbind(values, rf = values[TRUE, "a"] / values[TRUE, "nte"])
   row <- paste0("bwi", sub("bwi", "", bwi, ignore.case = TRUE))
-  column <- tolower(attribute)
-  value <- values[row, column]
+  if (isTRUE(attribute)) {
+      value <- values
+  } else {
+      column <- tolower(attribute)
+      value <- values[row, column]
+  }
   return(value)
 }

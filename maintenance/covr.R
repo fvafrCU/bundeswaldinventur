@@ -1,4 +1,4 @@
-name <- "fvbn2b.R"
+name <- "variable_getters.R"
 root <- rprojroot::find_root(rprojroot::is_r_package)
 source_file <- file.path(root, "R", name)
 test_file <- file.path(root, "tests", "testthat", paste0("test-local_", name))

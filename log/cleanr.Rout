@@ -1453,8 +1453,8 @@ line 2: found width 98 max_line_width was 80
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/statistics.R: line 8 counts 98 characters.
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/tree_species_shares.R  melt_tree_species_percent  found 54 lines of code, max_lines_of_code was 50
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/utils.R  find_files  found 6 arguments, max_num_arguments was 5
-R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 179 counts 92 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 181 counts 93 characters.
+R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 180 counts 92 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 182 counts 93 characters.
  /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R  get_bwi_species_groups  found 67 lines, max_lines was 65
 get_bwi_species_groups  found 67 lines of code, max_lines_of_code was 50
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/variable_getters.R  get_design  line 3: found width 92 max_line_width was 80

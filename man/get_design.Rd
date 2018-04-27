@@ -7,7 +7,8 @@
 get_design(attribute, bwi, hard_coded = TRUE)
 }
 \arguments{
-\item{attribute}{The attribute of interest.}
+\item{attribute}{The attribute of interest. Set to \code{TRUE} to get all
+attributes.}
 
 \item{bwi}{The BWI to use.}
 
@@ -15,7 +16,7 @@ get_design(attribute, bwi, hard_coded = TRUE)
 respective trakte data.frame?}
 }
 \value{
-an integer
+an integer or matrix.
 }
 \description{
 get attributes from the underlying sampling design

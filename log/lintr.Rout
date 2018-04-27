@@ -11842,10 +11842,10 @@ NO COPY: R/tree_species_shares.R:15:11: style: Commas should never have a space 
 NO COPY: R/tree_species_shares.R:15:13: style: Commas should never have a space before.
   )[1, 1, , , ]
            ~^
-NO COPY: R/variable_getters.R:179:1: style: lines should not be more than 80 characters.
+NO COPY: R/variable_getters.R:180:1: style: lines should not be more than 80 characters.
     bwi1 <- c(a = 3575163, nte = 35743, nt = nt) # nte _is_ sum(get_data("trakte.1")[["m"]])
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/variable_getters.R:181:1: style: lines should not be more than 80 characters.
+NO COPY: R/variable_getters.R:182:1: style: lines should not be more than 80 characters.
     bwi3 <- c(a = 3575148, nte = 35731, nt = nt) # nte _is_ sum(get_data("trakte.3")[["m"]]))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:97:1: style: lines should not be more than 80 characters.
@@ -26830,3 +26830,21 @@ NO COPY: tests/testthat/test-local_fvbn2e.R:416:61: style: Trailing whitespace i
 NO COPY: tests/testthat/test-local_fvbn2e.R:417:69: style: Trailing whitespace is superfluous.
 "Attribute2", "Größen", "BAGR", "AKL", "DKL", "T.FVBN.Bagr.Akl.Dkl", 
                                                                     ^
+NO COPY: tests/testthat/test-local_variable_getters.R:46:75: style: Trailing whitespace is superfluous.
+                           8970, 8970, 100.024144587751, 100.024144587751, 
+                                                                          ^
+NO COPY: tests/testthat/test-local_variable_getters.R:47:46: style: Trailing whitespace is superfluous.
+                           100.057317175562), 
+                                             ^
+NO COPY: tests/testthat/test-local_variable_getters.R:48:37: style: Trailing whitespace is superfluous.
+                         .Dim = 3:4, 
+                                    ^
+NO COPY: tests/testthat/test-local_variable_getters.R:49:69: style: Trailing whitespace is superfluous.
+                         .Dimnames = list(c("bwi1", "bwi2", "bwi3"), 
+                                                                    ^
+NO COPY: tests/testthat/test-local_variable_getters.R:54:1: style: lines should not be more than 80 characters.
+                           100, 8937.9075, 8938.1575, 8937.87), .Dim = 3:4, .Dimnames = list(
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_variable_getters.R:55:1: style: lines should not be more than 80 characters.
+                           c("bwi1", "bwi2", "bwi3"), c("a", "nte", "nt", "rf")))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
