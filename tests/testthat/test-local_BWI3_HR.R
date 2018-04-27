@@ -13,7 +13,6 @@ if (FALSE) {
 }
 context("Examples of existing scripts")
 
-
 test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
   FVBN <- FVBN.bagrupp.akl.dkl.stratum.fun.2e
   result <- FVBN(

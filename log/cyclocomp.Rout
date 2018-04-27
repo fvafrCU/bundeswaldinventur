@@ -1,3 +1,22 @@
+Installing 1 packages: pillar
+trying URL 'http://cloud.r-project.org/src/contrib/pillar_1.2.2.tar.gz'
+Content type 'application/x-gzip' length 64185 bytes (62 KB)
+==================================================
+downloaded 62 KB
+
+* installing *source* package ‘pillar’ ...
+** package ‘pillar’ successfully unpacked and MD5 sums checked
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded
+* DONE (pillar)
+
+The downloaded source packages are in
+	‘/tmp/RtmpiX9eeC/downloaded_packages’
 * installing *source* package ‘bundeswaldinventur’ ...
 ** R
 ** data

@@ -1027,7 +1027,6 @@
 3924     R/BWI3_HR_Totholz.R             Totholz.klass.stratum.fun  766     0
 3927     R/BWI3_HR_Totholz.R             Totholz.klass.stratum.fun  767     0
 3930     R/BWI3_HR_Totholz.R             Totholz.klass.stratum.fun  768     0
-172             R/deadwood.R                    harmonize_deadwood   28     0
 763   R/figures_and_tables.R          melt_species_attribute_group   84     0
 774   R/figures_and_tables.R          melt_species_attribute_group   85     0
 786   R/figures_and_tables.R          melt_species_attribute_group   86     0
@@ -3484,7 +3483,7 @@
 1825    R/variable_getters.R                            get_design  199     0
 1836    R/variable_getters.R                            get_design  200     0
 1847    R/variable_getters.R                            get_design  201     0
-bundeswaldinventur Coverage: 57.41%
+bundeswaldinventur Coverage: 57.42%
 R/adapt_script.R: 0.00%
 R/batch.R: 0.00%
 R/bits_and_pieces.R: 0.00%
@@ -3502,8 +3501,8 @@ R/options.R: 26.67%
 R/variable_getters.R: 89.13%
 R/fvbn2c.R: 92.86%
 R/fvbn2d.R: 95.49%
-R/deadwood.R: 97.96%
 R/BWI3_HR.R: 100.00%
+R/deadwood.R: 100.00%
 R/fvbn2e.R: 100.00%
 R/get_data.R: 100.00%
 R/labeling.R: 100.00%

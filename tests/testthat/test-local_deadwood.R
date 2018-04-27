@@ -5,28 +5,47 @@
 #' @name get_design("a", 3) Header for
 NULL
 
-context("deadwood.R")
-
 if (interactive()) devtools::load_all()
+
+context("deadwood.R")
 testthat::test_that("harmonize_deadwood", {
   output <- head(harmonize_deadwood(get_data("totholz.3")))
 
-  output <- output[-13]
 
   reference <- structure(list(tnr = c(2062L, 2062L, 2062L, 2062L, 2062L, 2062L
-), enr = c(4L, 4L, 4L, 4L, 1L, 1L), nr = c(1L, 2L, 3L, 4L, 1L,
-2L), tbagr = c(1L, 1L, 1L, 1L, 1L, 1L), tart = c(4, 4, 4, 4,
-4, 4), tzg = c(3L, 1L, 1L, 2L, 1L, 4L), tbd = c(24L, 25L, 24L,
-30L, 21L, 42L), tsd = c(0L, 0L, 0L, 0L, 0L, 0L), lge = c(0.400000006,
+), enr = c(4L, 4L, 4L, 4L, 1L, 1L), nr = c(1L, 2L, 3L, 4L, 1L, 
+2L), tbagr = c(1L, 1L, 1L, 1L, 1L, 1L), tart = c(4, 4, 4, 4, 
+4, 4), tzg = c(3L, 1L, 1L, 2L, 1L, 4L), tbd = c(24L, 25L, 24L, 
+30L, 21L, 42L), tsd = c(0L, 0L, 0L, 0L, 0L, 0L), lge = c(0.400000006, 
 0.200000003, 0.200000003, 0.200000003, 0.100000001, 0.100000001
-), tvol = c(0.0180955753, 0.00981747825, 0.00904778764, 0.0141371684,
-0.00346360635, 0.0138544254), anz = c(1L, 1L, 1L, 1L, 1L, 1L),
-    thf = c(127.323944, 127.323944, 127.323944, 127.323944, 127.323944,
-    127.323944), bemerk = c(NA, NA, NA, NA, NA, NA), raumkat = c(NA,
-    NA, NA, NA, NA, NA), dm = c(24, 25, 24, 30, 21, 42)), .Names = c("tnr",
-"enr", "nr", "tbagr", "tart", "tzg", "tbd", "tsd", "lge", "tvol",
-"anz", "thf", "bemerk", "raumkat", "dm"), row.names = c(NA, 6L
-), class = "data.frame")
+), tvol = c(0.0180955753, 0.00981747825, 0.00904778764, 0.0141371684, 
+0.00346360635, 0.0138544254), anz = c(1L, 1L, 1L, 1L, 1L, 1L), 
+    thf = c(127.323944, 127.323944, 127.323944, 127.323944, 127.323944, 
+    127.323944), bemerkung = c(NA, NA, NA, NA, NA, NA), bemerk = c(NA, 
+    NA, NA, NA, NA, NA), raumkat = c(NA, NA, NA, NA, NA, NA), 
+    dm = c(24, 25, 24, 30, 21, 42)), .Names = c("tnr", "enr", 
+"nr", "tbagr", "tart", "tzg", "tbd", "tsd", "lge", "tvol", "anz", 
+"thf", "bemerkung", "bemerk", "raumkat", "dm"), row.names = c(NA, 
+6L), class = "data.frame")
+      
+      testthat::expect_equal(output, reference)
+      
+
+  output <- head(harmonize_deadwood(get_data("totholz.3"), to_bwi_2 = FALSE ))
+  reference <- structure(list(tnr = c(2062L, 2062L, 2062L, 2062L, 2062L, 2062L
+), enr = c(4L, 4L, 4L, 4L, 1L, 1L), nr = c(1L, 2L, 3L, 4L, 1L, 
+2L), tbagr = c(1L, 1L, 1L, 1L, 1L, 1L), tart = c(4L, 4L, 4L, 
+4L, 4L, 4L), tzg = c(3L, 1L, 1L, 2L, 1L, 4L), tbd = c(24L, 25L, 
+24L, 30L, 21L, 42L), tsd = c(0L, 0L, 0L, 0L, 0L, 0L), tl = c(0.400000006, 
+0.200000003, 0.200000003, 0.200000003, 0.100000001, 0.100000001
+), tvol = c(0.0180955753, 0.00981747825, 0.00904778764, 0.0141371684, 
+0.00346360635, 0.0138544254), anz = c(1, 1, 1, 1, 1, 1), thf = c(127.323944, 
+127.323944, 127.323944, 127.323944, 127.323944, 127.323944), 
+    bemerkung = c(NA, NA, NA, NA, NA, NA), bemerk = c(NA, NA, 
+    NA, NA, NA, NA), raumkat = c(NA, NA, NA, NA, NA, NA)), .Names = c("tnr", 
+"enr", "nr", "tbagr", "tart", "tzg", "tbd", "tsd", "tl", "tvol", 
+"anz", "thf", "bemerkung", "bemerk", "raumkat"), row.names = c(NA, 
+6L), class = "data.frame")
       testthat::expect_equal(output, reference)
 })
 
