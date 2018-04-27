@@ -1,6 +1,6 @@
-testthat::context("fvbn2e")
-testthat::test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
-  FVBN <- FVBN.bagrupp.akl.dkl.stratum.fun.2e
+testthat::context("fvbn2d")
+testthat::test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2d", {
+  FVBN <- FVBN.bagrupp.akl.dkl.stratum.fun.2d
   result <- FVBN(
     get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
     get_bwi_species_groups("bc"),
