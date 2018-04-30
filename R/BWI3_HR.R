@@ -4542,26 +4542,31 @@ fba.stratum.fun <- function(fba, fba.tab, auswahl, ecken, trakte, A) {
 #'  Standardfehler.
 fl.proz.stratum.fun <- function(stratum, substratum, ecken,
                                 trakte.3 = get_data("trakte.3") # TODO: see below.
-) {
-  te <- stratum.fun(stratum, ecken)
-  nte.t <- stats::aggregate(rep(1, length(te[, 1])), by = list(te$TNr), sum)
-  names(nte.t) <- c("TNr", "nte")
-  substratum.1 <- stratum
-  k <- length(names(substratum))
-  for (i in 1:k) {
-    substratum.1[[names(substratum)[i]]] <- substratum[[i]]
-  }
-  te.s <- stratum.fun(substratum.1, ecken)
-  nte.s.t <- stats::aggregate(rep(1, length(te.s[, 1])), by = list(te.s$TNr), sum)
-  names(nte.s.t) <- c("TNr", "nte.s")
-  utils::head(nte.s.t)
-  nte.s.t <- merge(nte.t, nte.s.t, by = "TNr", all.x = T)
-  nte.s.t[is.na(nte.s.t)] <- 0
-  r.list <- r.variance.fun(nte.s.t[, 2:3], length(trakte.3[, 1])) # TODO: is trakte.3 really the one? Is this a bug?
-  return(list(
-    Fl_Proz = r.list$R.xy * 100,
-    SE_Fl_Proz = r.list$V.R.xy^0.5 * 100
-  ))
+                                ) {
+    te <- stratum.fun(stratum, ecken)
+    if (nrow(te) == 0) {
+        value <- list(Fl_Proz = NA, SE_Fl_Proz = NA)
+    } else {
+        nte.t <- stats::aggregate(rep(1, length(te[, 1])), 
+                                  by = list(te$TNr), sum)
+        names(nte.t) <- c("TNr", "nte")
+        substratum.1 <- stratum
+        k <- length(names(substratum))
+        for (i in 1:k) {
+            substratum.1[[names(substratum)[i]]] <- substratum[[i]]
+        }
+        te.s <- stratum.fun(substratum.1, ecken)
+        nte.s.t <- stats::aggregate(rep(1, length(te.s[, 1])), 
+                                    by = list(te.s$TNr), sum)
+        names(nte.s.t) <- c("TNr", "nte.s")
+        utils::head(nte.s.t)
+        nte.s.t <- merge(nte.t, nte.s.t, by = "TNr", all.x = T)
+        nte.s.t[is.na(nte.s.t)] <- 0
+        r.list <- r.variance.fun(nte.s.t[, 2:3], length(trakte.3[, 1])) # TODO: is trakte.3 really the one? Is this a bug?
+        value <- list(Fl_Proz = r.list$R.xy * 100, 
+                      SE_Fl_Proz = r.list$V.R.xy^0.5 * 100)
+    }
+    return(value)
 }
 
 #-------------------------------------------------------------------------------
