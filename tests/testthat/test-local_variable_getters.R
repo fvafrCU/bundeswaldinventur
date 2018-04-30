@@ -4,7 +4,7 @@
 #'
 #' @author Franziska Berg
 #' @section Version: 25.09.2015
-#' @name get_design("a", 3) Header for
+#' @name A Header for
 NULL
 
 testthat::context("variable_getters.R")
