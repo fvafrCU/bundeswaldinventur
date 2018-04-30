@@ -33,3 +33,4 @@ configure
 ^maintenance$
 ^\.log\.Rout$
 ^data-raw$
+^dumpdata.R$

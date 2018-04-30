@@ -25,7 +25,8 @@ sollen fuer die Berechnung.}
 
 \item{tart.grupp}{Liste, mit der Totholz-Arten-Gruppen definiert werden
 koennen. z.B. tart.grupp = list(g1=c(11,12,13),g2=c(2,3),g3=c(4,5)). Wird
-fuer tart.grupp NA uebergeben, werden die Original-tart-Kategorien verwendet,
+fuer tart.grupp \code{list(NA)} uebergeben, werden die 
+Original-tart-Kategorien verwendet,
 also bei BWI 3: 11,12,13,2,3,4,5; BWI 2: 1,2,3,4,5.}
 
 \item{A}{Flaeche in ha des Inventurgebietes zum jeweiligen Inventurzeitpunkt

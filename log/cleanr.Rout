@@ -39,142 +39,141 @@ line 184: found width 88 max_line_width was 80
 flaechen.stratum.fun.1  found 219 lines, max_lines was 65
 flaechen.stratum.fun.1  found 197 lines of code, max_lines_of_code was 50
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 1 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 82 counts 84 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 94 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 105 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 116 counts 119 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 146 counts 102 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 147 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 148 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 152 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 166 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 167 counts 91 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 174 counts 88 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 179 counts 85 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 180 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 187 counts 87 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 200 counts 87 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 213 counts 84 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 214 counts 100 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 215 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 219 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 220 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 221 counts 95 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 222 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 224 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 245 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 299 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 340 counts 84 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 352 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 363 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 379 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 381 counts 136 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 385 counts 103 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 404 counts 102 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 405 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 406 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 410 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 429 counts 87 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 441 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 452 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 457 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 460 counts 100 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 479 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 536 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 557 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 587 counts 84 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 599 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 610 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 626 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 628 counts 136 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 632 counts 119 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 640 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 646 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 655 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 673 counts 102 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 674 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 675 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 679 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 692 counts 85 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 703 counts 90 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 715 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 727 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 732 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 735 counts 100 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 762 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 780 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 903 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: 917 lines in file.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 85 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 97 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 108 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 119 counts 119 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 149 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 150 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 151 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 155 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 169 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 170 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 177 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 182 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 183 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 190 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 203 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 216 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 217 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 218 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 222 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 223 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 224 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 225 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 227 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 248 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 347 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 359 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 370 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 386 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 388 counts 136 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 392 counts 103 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 411 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 412 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 413 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 417 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 436 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 448 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 459 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 464 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 467 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 486 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 543 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 564 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 592 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 604 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 615 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 631 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 633 counts 136 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 637 counts 119 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 645 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 651 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 660 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 678 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 679 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 680 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 684 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 697 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 708 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 720 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 732 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 737 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 740 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 767 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 785 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: line 908 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R: 922 lines in file.
  /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R  Totholz.bagr.art.zg.stratum.fun  found 7 arguments, max_num_arguments was 5
 Totholz.bagr.art.zg.stratum.fun  found nesting depth 5, max_nesting_depth was 3
-Totholz.bagr.art.zg.stratum.fun  line 19: found width 84 max_line_width was 80
-line 31: found width 89 max_line_width was 80
-line 42: found width 86 max_line_width was 80
-line 53: found width 119 max_line_width was 80
-line 83: found width 102 max_line_width was 80
-line 84: found width 86 max_line_width was 80
-line 85: found width 82 max_line_width was 80
-line 89: found width 82 max_line_width was 80
-line 103: found width 89 max_line_width was 80
-line 104: found width 91 max_line_width was 80
-line 111: found width 88 max_line_width was 80
-line 116: found width 85 max_line_width was 80
-line 117: found width 82 max_line_width was 80
-line 124: found width 87 max_line_width was 80
-line 137: found width 87 max_line_width was 80
-line 150: found width 84 max_line_width was 80
-line 151: found width 100 max_line_width was 80
-line 152: found width 82 max_line_width was 80
-line 156: found width 89 max_line_width was 80
-line 157: found width 86 max_line_width was 80
-line 158: found width 95 max_line_width was 80
-line 159: found width 83 max_line_width was 80
-line 161: found width 82 max_line_width was 80
-line 182: found width 81 max_line_width was 80
-Totholz.bagr.art.zg.stratum.fun  found 188 lines, max_lines was 65
-Totholz.bagr.art.zg.stratum.fun  found 139 lines of code, max_lines_of_code was 50
+Totholz.bagr.art.zg.stratum.fun  line 22: found width 84 max_line_width was 80
+line 34: found width 89 max_line_width was 80
+line 45: found width 86 max_line_width was 80
+line 56: found width 119 max_line_width was 80
+line 86: found width 102 max_line_width was 80
+line 87: found width 86 max_line_width was 80
+line 88: found width 82 max_line_width was 80
+line 92: found width 82 max_line_width was 80
+line 106: found width 89 max_line_width was 80
+line 107: found width 91 max_line_width was 80
+line 114: found width 88 max_line_width was 80
+line 119: found width 85 max_line_width was 80
+line 120: found width 82 max_line_width was 80
+line 127: found width 87 max_line_width was 80
+line 140: found width 87 max_line_width was 80
+line 153: found width 84 max_line_width was 80
+line 154: found width 100 max_line_width was 80
+line 155: found width 82 max_line_width was 80
+line 159: found width 89 max_line_width was 80
+line 160: found width 86 max_line_width was 80
+line 161: found width 95 max_line_width was 80
+line 162: found width 83 max_line_width was 80
+line 164: found width 82 max_line_width was 80
+line 185: found width 81 max_line_width was 80
+Totholz.bagr.art.zg.stratum.fun  found 191 lines, max_lines was 65
+Totholz.bagr.art.zg.stratum.fun  found 142 lines of code, max_lines_of_code was 50
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R  Totholz.klass.stratum.fun  found 9 arguments, max_num_arguments was 5
-Totholz.klass.stratum.fun  line 30: found width 84 max_line_width was 80
-line 42: found width 89 max_line_width was 80
-line 53: found width 86 max_line_width was 80
-line 69: found width 83 max_line_width was 80
-line 71: found width 136 max_line_width was 80
-line 75: found width 119 max_line_width was 80
-line 83: found width 86 max_line_width was 80
-line 89: found width 81 max_line_width was 80
-line 98: found width 86 max_line_width was 80
-line 116: found width 102 max_line_width was 80
-line 117: found width 86 max_line_width was 80
-line 118: found width 82 max_line_width was 80
-line 122: found width 82 max_line_width was 80
-line 135: found width 85 max_line_width was 80
-line 146: found width 90 max_line_width was 80
-line 158: found width 81 max_line_width was 80
-line 170: found width 94 max_line_width was 80
-line 175: found width 83 max_line_width was 80
-line 178: found width 100 max_line_width was 80
-line 205: found width 81 max_line_width was 80
-Totholz.klass.stratum.fun  found 211 lines, max_lines was 65
-Totholz.klass.stratum.fun  found 157 lines of code, max_lines_of_code was 50
+Totholz.klass.stratum.fun  line 28: found width 84 max_line_width was 80
+line 40: found width 89 max_line_width was 80
+line 51: found width 86 max_line_width was 80
+line 67: found width 83 max_line_width was 80
+line 69: found width 136 max_line_width was 80
+line 73: found width 119 max_line_width was 80
+line 81: found width 86 max_line_width was 80
+line 87: found width 81 max_line_width was 80
+line 96: found width 86 max_line_width was 80
+line 114: found width 102 max_line_width was 80
+line 115: found width 86 max_line_width was 80
+line 116: found width 82 max_line_width was 80
+line 120: found width 82 max_line_width was 80
+line 133: found width 85 max_line_width was 80
+line 144: found width 90 max_line_width was 80
+line 156: found width 81 max_line_width was 80
+line 168: found width 94 max_line_width was 80
+line 173: found width 83 max_line_width was 80
+line 176: found width 100 max_line_width was 80
+line 203: found width 81 max_line_width was 80
+Totholz.klass.stratum.fun  found 209 lines, max_lines was 65
+Totholz.klass.stratum.fun  found 155 lines of code, max_lines_of_code was 50
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR_Totholz.R  Totholz.Tart.stratum.fun  found 8 arguments, max_num_arguments was 5
-Totholz.Tart.stratum.fun  line 20: found width 84 max_line_width was 80
-line 32: found width 89 max_line_width was 80
-line 43: found width 86 max_line_width was 80
-line 59: found width 83 max_line_width was 80
-line 61: found width 136 max_line_width was 80
-line 65: found width 103 max_line_width was 80
-line 84: found width 102 max_line_width was 80
-line 85: found width 86 max_line_width was 80
-line 86: found width 82 max_line_width was 80
-line 90: found width 82 max_line_width was 80
-line 109: found width 87 max_line_width was 80
-line 121: found width 81 max_line_width was 80
-line 132: found width 94 max_line_width was 80
-line 137: found width 83 max_line_width was 80
-line 140: found width 100 max_line_width was 80
-line 159: found width 81 max_line_width was 80
-Totholz.Tart.stratum.fun  found 164 lines, max_lines was 65
-Totholz.Tart.stratum.fun  found 123 lines of code, max_lines_of_code was 50
+Totholz.Tart.stratum.fun  line 23: found width 84 max_line_width was 80
+line 35: found width 89 max_line_width was 80
+line 46: found width 86 max_line_width was 80
+line 62: found width 83 max_line_width was 80
+line 64: found width 136 max_line_width was 80
+line 68: found width 103 max_line_width was 80
+line 87: found width 102 max_line_width was 80
+line 88: found width 86 max_line_width was 80
+line 89: found width 82 max_line_width was 80
+line 93: found width 82 max_line_width was 80
+line 112: found width 87 max_line_width was 80
+line 124: found width 81 max_line_width was 80
+line 135: found width 94 max_line_width was 80
+line 140: found width 83 max_line_width was 80
+line 143: found width 100 max_line_width was 80
+line 162: found width 81 max_line_width was 80
+Totholz.Tart.stratum.fun  found 167 lines, max_lines was 65
+Totholz.Tart.stratum.fun  found 126 lines of code, max_lines_of_code was 50
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 21 counts 82 characters.
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 38 counts 87 characters.
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 179 counts 85 characters.
