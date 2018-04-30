@@ -1318,39 +1318,6 @@
 358       R/global_objects.R                    get_global_objects   47     0
 373       R/global_objects.R                    get_global_objects   48     0
 387       R/global_objects.R                    get_global_objects   49     0
-265              R/options.R                           set_options   39     0
-276              R/options.R                           set_options   40     0
-284              R/options.R                           set_options   41     0
-297              R/options.R                           set_options   42     0
-309              R/options.R                           set_options   43     0
-321              R/options.R                           set_options   44     0
-333              R/options.R                           set_options   45     0
-346              R/options.R                           set_options   46     0
-361              R/options.R                           set_options   47     0
-375              R/options.R                           set_options   48     0
-389              R/options.R                           set_options   49     0
-403              R/options.R                           set_options   50     0
-417              R/options.R                           set_options   51     0
-427              R/options.R                           set_options   52     0
-441              R/options.R                           set_options   53     0
-451              R/options.R                           set_options   54     0
-462              R/options.R                           set_options   55     0
-470              R/options.R                           set_options   56     0
-478              R/options.R                           set_options   57     0
-489              R/options.R                           set_options   58     0
-501              R/options.R                           set_options   59     0
-514              R/options.R                           set_options   60     0
-523              R/options.R                           set_options   61     0
-536              R/options.R                           set_options   62     0
-547              R/options.R                           set_options   63     0
-559              R/options.R                           set_options   64     0
-568              R/options.R                           set_options   65     0
-580              R/options.R                           set_options   66     0
-591              R/options.R                           set_options   67     0
-603              R/options.R                           set_options   68     0
-612              R/options.R                           set_options   69     0
-624              R/options.R                           set_options   70     0
-855              R/options.R                           get_options   94     0
 28              R/regional.R                  get_label_for_NatHoe   12     0
 32              R/regional.R                  get_label_for_NatHoe   13     0
 43              R/regional.R                  get_label_for_NatHoe   14     0
@@ -3008,10 +2975,6 @@
 929  R/tree_species_shares.R             cast_tree_species_percent  103     0
 937  R/tree_species_shares.R             cast_tree_species_percent  104     0
 944  R/tree_species_shares.R             cast_tree_species_percent  105     0
-33                 R/utils.R                          golden_ratio   13     0
-44                 R/utils.R                          golden_ratio   14     0
-55                 R/utils.R                          golden_ratio   15     0
-66                 R/utils.R                          golden_ratio   16     0
 279                R/utils.R                            find_files   41     0
 287                R/utils.R                            find_files   42     0
 300                R/utils.R                            find_files   43     0
@@ -3036,7 +2999,7 @@
 528                R/utils.R                            find_files   62     0
 539                R/utils.R                            find_files   63     0
 550                R/utils.R                            find_files   64     0
-bundeswaldinventur Coverage: 62.90%
+bundeswaldinventur Coverage: 63.35%
 R/adapt_script.R: 0.00%
 R/batch.R: 0.00%
 R/bits_and_pieces.R: 0.00%
@@ -3047,8 +3010,7 @@ R/german_things.R: 0.00%
 R/global_objects.R: 0.00%
 R/regional.R: 0.00%
 R/tree_species_shares.R: 0.00%
-R/utils.R: 0.00%
-R/options.R: 26.67%
+R/utils.R: 14.29%
 R/BWI3_HR.R: 100.00%
 R/deadwood.R: 100.00%
 R/fvbn2a.R: 100.00%
@@ -3058,6 +3020,7 @@ R/fvbn2d.R: 100.00%
 R/fvbn2e.R: 100.00%
 R/get_data.R: 100.00%
 R/labeling.R: 100.00%
+R/options.R: 100.00%
 R/statistics.R: 100.00%
 R/throw.R: 100.00%
 R/variable_getters.R: 100.00%
