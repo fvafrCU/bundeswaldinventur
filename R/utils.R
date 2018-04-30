@@ -50,13 +50,12 @@ find_files <- function(file_names = NA, path = ".",
   } else {
     file_exists <- file.exists(file_names)
     if (!all(file_exists)) {
-      warning(
-        "file(s) ",
-        paste(file_names[!file_exists],
-          collapse = ", "
-        ),
-        " not found."
-      )
+        if (path != ".") { 
+            warning("You specified both arguments `file_names`", 
+                    "and `path`, we're ignoring the latter.")
+      }
+      warning("file(s) ", paste(file_names[!file_exists], collapse = ", "), 
+              " not found.")
     }
     file_names <- file_names[file_exists]
   }

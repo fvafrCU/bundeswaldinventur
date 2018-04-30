@@ -63,10 +63,13 @@ Totholz.bagr.art.zg.stratum.fun <-
   function(totholz, ecken, trakte, bwi, A, D.klass, auswahl) {
     checkmate::assertDataFrame(totholz, col.names = "named")
     columns <- tolower(names(totholz))
-    attributes <- c(
-      "tnr", "enr", "nr", "tbagr", "tart", "tzg", "tbd", "tsd",
-      "tl", "tvol", "thf"
-    )
+    if (bwi == 3) {
+        attributes <- c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tbd", 
+                        "tsd", "tl", "tvol", "thf")
+    } else {
+        attributes <- c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "dm", 
+                        "lge", "tvol", "thf")
+    }
     checkmate::assertSubset(attributes, columns)
     checkmate::assertDataFrame(ecken, col.names = "named")
     checkmate::assertDataFrame(trakte, col.names = "named")
@@ -296,7 +299,8 @@ Totholz.bagr.art.zg.stratum.fun <-
 #'  sollen fuer die Berechnung.
 #' @param tart.grupp Liste, mit der Totholz-Arten-Gruppen definiert werden
 #'  koennen. z.B. tart.grupp = list(g1=c(11,12,13),g2=c(2,3),g3=c(4,5)). Wird
-#'  fuer tart.grupp NA uebergeben, werden die Original-tart-Kategorien verwendet,
+#'  fuer tart.grupp \code{list(NA)} uebergeben, werden die 
+#'  Original-tart-Kategorien verwendet,
 #'  also bei BWI 3: 11,12,13,2,3,4,5; BWI 2: 1,2,3,4,5.
 #' @param A Flaeche in ha des Inventurgebietes zum jeweiligen Inventurzeitpunkt
 #'  (sollte konstant sein).
@@ -320,10 +324,13 @@ Totholz.Tart.stratum.fun <-
   function(totholz, ecken, trakte, bwi, krit, tart.grupp, A, auswahl) {
     checkmate::assertDataFrame(totholz, col.names = "named")
     columns <- tolower(names(totholz))
-    attributes <- c(
-      "tnr", "enr", "nr", "tbagr", "tart", "tzg", "tbd", "tsd",
-      "tl", "tvol", "thf"
-    )
+    if (bwi == 3) {
+        attributes <- c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "tbd", 
+                        "tsd", "tl", "tvol", "thf")
+    } else {
+        attributes <- c("tnr", "enr", "nr", "tbagr", "tart", "tzg", "lge", 
+                        "dm", "tvol", "thf")
+    }
     checkmate::assertSubset(attributes, columns)
     checkmate::assertDataFrame(ecken, col.names = "named")
     checkmate::assertDataFrame(trakte, col.names = "named")
@@ -558,12 +565,10 @@ Totholz.klass.stratum.fun <-
     checkmate::assertDataFrame(totholz, col.names = "named")
     if (strict) {
       columns <- tolower(names(totholz))
-      print(columns)
       attributes <- c(
         "tnr", "enr", "nr", "tbagr", "tart", "tzg", "tbd", "tsd",
         "tl", "tvol", "thf"
       )
-      print(attributes)
       checkmate::assertSubset(attributes, columns)
     }
     checkmate::assertDataFrame(ecken, col.names = "named")
