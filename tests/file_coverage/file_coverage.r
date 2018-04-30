@@ -1,4 +1,4 @@
-name <- "stratum.fun.R"
+name <- "fl.stratum.fun.R"
 root <- rprojroot::find_root(rprojroot::is_r_package)
 source_file <- file.path(root, "R", name)
 test_file <- file.path(root, "tests", "testthat", paste0("test-local_", name))

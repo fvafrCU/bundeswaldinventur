@@ -16,12 +16,17 @@ fl.stratum.fun <- function(auswahl, ecken, trakte, A,
                            trakte.3 = get_data("trakte.3") # TODO: see below.
 ) {
   te <- stratum.fun(auswahl, ecken)
-  nte.t <- stats::aggregate(rep(1, length(te[, 1])), by = list(te$TNr), sum)
-  names(nte.t) <- c("TNr", "nte")
-  utils::head(nte.t)
-  nte.t <- merge(trakte[TRUE, c("TNr", "m")], nte.t, by = "TNr", all.x = T)
-  nte.t[is.na(nte.t)] <- 0
-  r.list <- r.variance.fun(nte.t[, 2:3], length(trakte.3[, 1])) # TODO: is trakte.3 really the one? Is this a bug?
-  return(list(Flaeche = r.list$R.xy * A, SE_Flaeche = sqrt(r.list$V.R.xy) * A))
+  if (nrow(te) == 0) {
+      value <- list(Flaeche = NA, SE_Flaeche = NA)
+  } else {
+      nte.t <- stats::aggregate(rep(1, length(te[, 1])), by = list(te$TNr), sum)
+      names(nte.t) <- c("TNr", "nte")
+      utils::head(nte.t)
+      nte.t <- merge(trakte[TRUE, c("TNr", "m")], nte.t, by = "TNr", all.x = T)
+      nte.t[is.na(nte.t)] <- 0
+      r.list <- r.variance.fun(nte.t[, 2:3], length(trakte.3[, 1])) # TODO: is trakte.3 really the one? Is this a bug?
+      value <- list(Flaeche = r.list$R.xy * A, SE_Flaeche = sqrt(r.list$V.R.xy) * A)
+  }
+  return(value)
 }
 

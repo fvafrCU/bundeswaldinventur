@@ -32,3 +32,15 @@ test_that("stratum.fun", {
 
   testthat::expect_equal(result, reference)
 })
+test_that("no match found", {
+  result <- stratum.fun(list(Kreis = "kreis_is_a_numeric_id"), get_data("ecken.3"))
+
+  reference <- structure(list(TNr = integer(0), 
+                              ENr = integer(0), 
+                              Kreis = integer(0)), 
+                         .Names = c("TNr", "ENr", "Kreis"), 
+                         row.names = integer(0), 
+                         class = "data.frame")
+
+  testthat::expect_equal(result, reference)
+})
