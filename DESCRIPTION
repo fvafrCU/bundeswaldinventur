@@ -30,7 +30,7 @@ Suggests:
     testthat,
     RUnit
 RoxygenNote: 6.0.1
-Collate:
+Collate: 
     'BWI3_HR.R'
     'BWI3_HR_Landkreis.R'
     'BWI3_HR_Totholz.R'
@@ -43,6 +43,7 @@ Collate:
     'data_documentation.R'
     'deadwood.R'
     'figures_and_tables.R'
+    'fl.stratum.fun.R'
     'fvbn2a.R'
     'fvbn2b.R'
     'fvbn2c.R'

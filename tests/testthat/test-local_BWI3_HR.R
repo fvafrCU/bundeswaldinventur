@@ -3916,17 +3916,6 @@ test_that("stamm.merkmale.bagr.fun", {
   testthat::expect_equal(result, reference)
 })
 
-test_that("fl.stratum.fun", {
-  result <- fl.stratum.fun(
-    list(Wa = c(3, 4, 5), Kreis = 317), get_data("ecken.3"),
-    get_data("trakte.3"), get_design("a", 3)
-  )
-
-  reference <- 
-structure(list(Flaeche = 80440.83, SE_Flaeche = 25707.4137386968), .Names = c("Flaeche", 
-"SE_Flaeche"))
-      testthat::expect_equal(result, reference)
-})
 
 test_that("fl.proz.stratum.fun", {
   stratum <- list(Wa = c(3:5), Kreis = 317)
