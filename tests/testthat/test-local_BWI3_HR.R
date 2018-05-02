@@ -3931,6 +3931,13 @@ test_that("fl.proz.stratum.fun", {
   reference <- structure(list(Fl_Proz = NA, SE_Fl_Proz = NA), 
                          .Names = c("Fl_Proz", "SE_Fl_Proz"))
   testthat::expect_equal(result, reference)
+  result <- fl.proz.stratum.fun(
+                                stratum = list(Kreis = 317), 
+                                substratum = list(TNr = -1), 
+                                ecken = get_data("ecken.3"))
+  reference <- structure(list(Fl_Proz = NA, SE_Fl_Proz = NA), 
+                         .Names = c("Fl_Proz", "SE_Fl_Proz"))
+  testthat::expect_equal(result, reference)
 })
 
 

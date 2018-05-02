@@ -14,7 +14,7 @@
 #'  vollstaendige Tabelle \code{ecken} uebergeben, die dann entsprechend der in
 #'  der Liste \code{auswahl} uebergebenen Attribute und den zulaessigen
 #'  Werte-Mengen als Untermenge heraus gefiltert wird.
-#' @section Refactored 
+#' @section Refactored: 
 #' The whole thing Fri Aug 12 15:33:04 CEST 2016 by
 #' \email{dominik.cullmann@@forst.bwl.de}.
 #'  See commit 57504d4e9570bb560c38195d3f308617c72c1d06.

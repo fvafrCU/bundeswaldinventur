@@ -20,6 +20,6 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing Totholz.Tart.stratum.fun.Rd
+Writing stratum.fun.Rd
 > 
 > 
