@@ -1,6 +1,7 @@
-# bundeswaldinventur 0.13.1.9000
+# bundeswaldinventur 0.14.0
 
-* FIXME
+* Fixed argument tests functions for deadwood for BWI 2 (former tests forced BWI 3)
+* Added handling of empty selections from stratification for stats::aggregate().
 
 # bundeswaldinventur 0.13.1
 
