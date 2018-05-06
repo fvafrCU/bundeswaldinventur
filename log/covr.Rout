@@ -2067,8 +2067,8 @@ R/global_objects.R: 0.00%
 R/regional.R: 0.00%
 R/tree_species_shares.R: 0.00%
 R/BWI3_HR_Landkreis.R: 100.00%
-R/BWI3_HR_Totholz.R: 100.00%
 R/BWI3_HR.R: 100.00%
+R/BWI3_HR_Totholz.R: 100.00%
 R/deadwood.R: 100.00%
 R/fl.stratum.fun.R: 100.00%
 R/fvbn2a.R: 100.00%
