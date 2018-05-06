@@ -381,9 +381,6 @@
 1346       R/german_things.R                         ascii_umlauts  148     0
 1356       R/german_things.R                         ascii_umlauts  149     0
 1367       R/german_things.R                         ascii_umlauts  150     0
-385       R/global_objects.R                    get_global_objects   47     0
-401       R/global_objects.R                    get_global_objects   48     0
-416       R/global_objects.R                    get_global_objects   49     0
 28              R/regional.R                  get_label_for_NatHoe   12     0
 32              R/regional.R                  get_label_for_NatHoe   13     0
 43              R/regional.R                  get_label_for_NatHoe   14     0
@@ -2041,7 +2038,7 @@
 959  R/tree_species_shares.R             cast_tree_species_percent  103     0
 967  R/tree_species_shares.R             cast_tree_species_percent  104     0
 973  R/tree_species_shares.R             cast_tree_species_percent  105     0
-bundeswaldinventur Coverage: 75.11%
+bundeswaldinventur Coverage: 75.14%
 R/adapt_script.R: 0.00%
 R/batch.R: 0.00%
 R/bits_and_pieces.R: 0.00%
@@ -2049,7 +2046,6 @@ R/figures_and_tables.R: 0.00%
 R/german_things.R: 0.00%
 R/regional.R: 0.00%
 R/tree_species_shares.R: 0.00%
-R/global_objects.R: 84.21%
 R/BWI3_HR_Landkreis.R: 100.00%
 R/BWI3_HR.R: 100.00%
 R/BWI3_HR_Totholz.R: 100.00%
@@ -2061,6 +2057,7 @@ R/fvbn2c.R: 100.00%
 R/fvbn2d.R: 100.00%
 R/fvbn2e.R: 100.00%
 R/get_data.R: 100.00%
+R/global_objects.R: 100.00%
 R/labeling.R: 100.00%
 R/options.R: 100.00%
 R/statistics.R: 100.00%

@@ -340,7 +340,7 @@ File ‘bundeswaldinventur/R/global_objects.R’:
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [23s/23s]
+  Running ‘testthat.R’ [25s/25s]
 * checking PDF version of manual ... OK
 * DONE
 Status: 2 WARNINGs, 2 NOTEs

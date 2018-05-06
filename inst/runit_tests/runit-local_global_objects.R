@@ -211,3 +211,10 @@ test_get_global_variables <- function() {
   RUnit::checkIdentical(BAGR.BWI, reference)
 }
 if (interactive()) test_get_global_variables()
+
+test_get_global_objects <- function() {
+    result <- get_global_objects()
+    reference <- NULL
+    RUnit::checkIdentical(result, reference)
+
+}
