@@ -381,22 +381,6 @@
 1346       R/german_things.R                         ascii_umlauts  148     0
 1356       R/german_things.R                         ascii_umlauts  149     0
 1367       R/german_things.R                         ascii_umlauts  150     0
-9         R/global_objects.R                      get_package_data    7     0
-14        R/global_objects.R                      get_package_data    8     0
-15        R/global_objects.R                      get_package_data    9     0
-20        R/global_objects.R                      get_package_data   10     0
-96        R/global_objects.R                  get_global_variables   20     0
-103       R/global_objects.R                  get_global_variables   21     0
-115       R/global_objects.R                  get_global_variables   22     0
-123       R/global_objects.R                  get_global_variables   23     0
-135       R/global_objects.R                  get_global_variables   24     0
-147       R/global_objects.R                  get_global_variables   25     0
-159       R/global_objects.R                  get_global_variables   26     0
-171       R/global_objects.R                  get_global_variables   27     0
-182       R/global_objects.R                  get_global_variables   28     0
-195       R/global_objects.R                  get_global_variables   29     0
-203       R/global_objects.R                  get_global_variables   30     0
-212       R/global_objects.R                  get_global_variables   31     0
 385       R/global_objects.R                    get_global_objects   47     0
 401       R/global_objects.R                    get_global_objects   48     0
 416       R/global_objects.R                    get_global_objects   49     0
@@ -2057,15 +2041,15 @@
 959  R/tree_species_shares.R             cast_tree_species_percent  103     0
 967  R/tree_species_shares.R             cast_tree_species_percent  104     0
 973  R/tree_species_shares.R             cast_tree_species_percent  105     0
-bundeswaldinventur Coverage: 74.91%
+bundeswaldinventur Coverage: 75.11%
 R/adapt_script.R: 0.00%
 R/batch.R: 0.00%
 R/bits_and_pieces.R: 0.00%
 R/figures_and_tables.R: 0.00%
 R/german_things.R: 0.00%
-R/global_objects.R: 0.00%
 R/regional.R: 0.00%
 R/tree_species_shares.R: 0.00%
+R/global_objects.R: 84.21%
 R/BWI3_HR_Landkreis.R: 100.00%
 R/BWI3_HR.R: 100.00%
 R/BWI3_HR_Totholz.R: 100.00%

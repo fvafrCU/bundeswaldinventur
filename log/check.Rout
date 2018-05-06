@@ -9,7 +9,11 @@
 * checking CRAN incoming feasibility ... NOTE
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
 
+New submission
+
 Version contains large components (0.14.0.9000)
+
+Non-FOSS package license (file LICENSE)
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -24,8 +28,8 @@ Version contains large components (0.14.0.9000)
 * checking DESCRIPTION meta-information ... OK
 * checking top-level files ... WARNING
 Conversion of ‘README.md’ failed:
-pandoc: Failed to retrieve https://travis-ci.org/fvafrCU/bundeswaldinventur.svg?branch=master
-FailedConnectionException2 "travis-ci.org" 443 True getAddrInfo: does not exist (Name or service not known)
+pandoc: Failed to retrieve https://www.r-pkg.org/badges/version/bundeswaldinventur
+TlsException (HandshakeFailed (Error_Protocol ("expecting server hello, got alert : [(AlertLevel_Fatal,HandshakeFailure)]",True,HandshakeFailure)))
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK

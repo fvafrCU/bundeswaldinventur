@@ -1,5 +1,13 @@
 
 
+Executing test function test_get_global_variables  ...  done successfully.
+
+
+
+Executing test function test_get_package_data  ...  done successfully.
+
+
+
 Executing test function test_exception  ... Error in eval(expr, envir = parent.frame()) : Hello, error!
  done successfully.
 
