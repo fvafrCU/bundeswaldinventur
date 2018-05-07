@@ -1,6 +1,7 @@
 # bundeswaldinventur 0.14.0.9000
 
-* FIXME
+* Passed package argument through get\_global\_objects() to get\_package\_data()
+  to enable testing (without package bwibw).
 
 # bundeswaldinventur 0.14.0
 

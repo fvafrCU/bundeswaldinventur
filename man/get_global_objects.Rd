@@ -4,7 +4,11 @@
 \alias{get_global_objects}
 \title{Define Global Variables and Data Needed by Historical Analysis Scripts}
 \usage{
-get_global_objects()
+get_global_objects(package = "bwibw")
+}
+\arguments{
+\item{package}{The package to be passed to \code{\link{get_package_data}}.
+Stick with the default execpt for testing.}
 }
 \value{
 Invisibly NULL.

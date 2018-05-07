@@ -213,7 +213,7 @@ test_get_global_variables <- function() {
 if (interactive()) test_get_global_variables()
 
 test_get_global_objects <- function() {
-    result <- get_global_objects()
+    result <- get_global_objects(package = "bundeswaldinventur")
     reference <- NULL
     RUnit::checkIdentical(result, reference)
 

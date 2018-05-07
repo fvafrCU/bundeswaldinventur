@@ -41,10 +41,12 @@ get_global_variables <- function() {
 #' data frames by \pkg{bwibw} and \code{\link{get_data}}.
 #' To stay compatible with the historical analysis scripts, this is is a wrapper
 #' to provide those global variables and data frames to the global environment.
+#' @param package The package to be passed to \code{\link{get_package_data}}.
+#' Stick with the default execpt for testing.
 #' @return Invisibly NULL.
 #' @export
-get_global_objects <- function() {
-    get_package_data(package = "bwibw")
+get_global_objects <- function(package = "bwibw") {
+    get_package_data(package = package)
     get_global_variables()
     return(invisible(NULL))
 }
