@@ -20,6 +20,6 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
-Writing get_global_objects.Rd
+Writing tree_species_percent.Rd
 > 
 > 

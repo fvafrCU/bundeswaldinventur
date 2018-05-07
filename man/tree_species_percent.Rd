@@ -2,7 +2,7 @@
 % Please edit documentation in R/tree_species_shares.R
 \name{tree_species_percent}
 \alias{tree_species_percent}
-\title{Creates vektor with percentage values for tree species}
+\title{Creates vector with percentage values for tree species}
 \usage{
 tree_species_percent(statistics_list)
 }

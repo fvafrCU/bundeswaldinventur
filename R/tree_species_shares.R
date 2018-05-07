@@ -1,4 +1,4 @@
-#' Creates vektor with percentage values for tree species
+#' Creates vector with percentage values for tree species
 #'
 #' Function selects area for each tree from the statistical list and calculates
 #' the percentages.

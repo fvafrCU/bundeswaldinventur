@@ -36,7 +36,8 @@ adapt_script <- function(file_names = NA, path = ".",
     s <- readLines(file_name)
     i <- grep("source\\(.*customization.R[\"\'])", s)
     if (length(i) == 0) {
-      warning("script ", file_name, " doesn't seem to need adaption.")
+      if (isTRUE(verbose)) warning("script ", file_name, 
+                                   " doesn't seem to need adaption.")
     } else {
       inserts <- c('bundeswaldinventur::get_global_objects()', 
                    'library("bundeswaldinventur")',
