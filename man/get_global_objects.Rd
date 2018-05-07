@@ -8,7 +8,7 @@ get_global_objects(package = "bwibw")
 }
 \arguments{
 \item{package}{The package to be passed to \code{\link{get_package_data}}.
-Stick with the default execpt for testing.}
+Stick with the default except for testing.}
 }
 \value{
 Invisibly NULL.

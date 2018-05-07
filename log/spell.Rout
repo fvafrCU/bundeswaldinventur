@@ -358,6 +358,7 @@ erzeugt                            ba.klass.lab.tab.fun.Rd:22, stamm.merkmale.ba
 Erzeugt                            akl.lab.fun.Rd:5,18, ba.klass.lab.tab.fun.Rd:5, dkl.lab.fun.Rd:5,18
 erzielen                           FVBN.bagrupp.akl.dkl.stratum.fun.2e.Rd:123
 ethz                               modal_value.Rd:21
+execpt                             get_global_objects.Rd:11
 explizit                           iVB.bilanz.bagr.akl.dkl.fun.Rd:35
 Falle                              FVBN.bagrupp.akl.dkl.stratum.fun.2e.Rd:48
 faulkon                            stamm.merkmale.bagr.akl.fun.Rd:15, stamm.merkmale.bagr.fun.Rd:14
@@ -440,7 +441,7 @@ Gesamtwert                         ntns.stratum.fun.2.Rd:11, ntns.stratum.fun.Rd
 Gesamtwerte                        FVBN.bagrupp.akl.dkl.stratum.fun.2e.Rd:86, stamm.merkmale.bagr.fun.Rd:58
 Gesamtzuwachs                      iVB.ew.bagrupp.akl.dkl.stratum.fun.2g.Rd:65, iVB.ew.bagrupp.akl.dkl.stratum.fun.2.Rd:65, iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12.Rd:63
 getrennt                           iVB.ew.bagrupp.akl.dkl.stratum.fun.2g.Rd:80, iVB.ew.bagrupp.akl.dkl.stratum.fun.2.Rd:80, iVB.ew.bagrupp.akl.dkl.stratum.fun.bwi12.Rd:83
-getter                             get_global_objects.Rd:16
+getter                             get_global_objects.Rd:20
 gewogenes                          VB.A.bagrupp.akl.dkl.stratum.fun.2.Rd:64, VB.A.bagrupp.akl.dkl.stratum.fun.3.Rd:62
 ggplot                             tplot.Rd:13
 gibt                               Totholz.klass.stratum.fun.Rd:58, Totholz.Tart.stratum.fun.Rd:55
