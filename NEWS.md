@@ -1,6 +1,8 @@
 # bundeswaldinventur 0.14.0.9000
 
-* Fix bug in  get\_bwi\_species\_groups("bc").
+* Changed return value of add\_colSums\_prettify\_and\_print\_xtable() from TRUE
+  to a string of html code.
+* Fixed bug in  get\_bwi\_species\_groups("bc").
 * Passed package argument through get\_global\_objects() to get\_package\_data()
   to enable testing (without package bwibw).
 

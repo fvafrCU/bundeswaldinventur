@@ -25,7 +25,7 @@ prettify_data_frame <- function(data_frame, digits = 0) {
 #' @note The LaTeX table will have a latex label tab:data_frame. So you really
 #' should avoid data_frame specifications that are not valid LaTeX names, like
 #' in the examples.
-#' @return TRUE on success, FALSE otherwise.
+#' @return The latex code created.
 #' @export
 #' @examples
 #' add_colSums_prettify_and_print_xtable(utils::head(airquality * 10^4))
@@ -50,8 +50,6 @@ add_colSums_prettify_and_print_xtable <- function(data_frame,
     type = "latex",
     sanitize.colnames.function = identity
   )
-  status <- TRUE
-  return(invisible(status))
 }
 
 #' round() and prettyNum() numbers
