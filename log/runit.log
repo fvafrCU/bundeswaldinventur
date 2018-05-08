@@ -1,12 +1,12 @@
-RUNIT TEST PROTOCOL -- Mon May  7 11:28:54 2018 
+RUNIT TEST PROTOCOL -- Tue May  8 12:50:07 2018 
 *********************************************** 
-Number of test functions: 4 
+Number of test functions: 5 
 Number of errors: 0 
 Number of failures: 0 
 
  
 1 Test Suite : 
-bundeswaldinventur_unit_test - 4 test functions, 0 errors, 0 failures
+bundeswaldinventur_unit_test - 5 test functions, 0 errors, 0 failures
 
 
 
@@ -18,8 +18,11 @@ Test file regexp: ^.*\.[rR]
 Involved directory: 
 /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests 
 --------------------------- 
+Test file: /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-adapt_script.R 
+test_adapt_script: (3 checks) ... OK (0.03 seconds)
+--------------------------- 
 Test file: /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-local_global_objects.R 
-test_get_global_objects: (1 checks) ... OK (0.07 seconds)
+test_get_global_objects: (1 checks) ... OK (0.06 seconds)
 test_get_global_variables: (2 checks) ... OK (0.01 seconds)
 test_get_package_data: (3 checks) ... OK (0.01 seconds)
 --------------------------- 

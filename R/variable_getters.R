@@ -72,7 +72,7 @@ get_bwi_species_groups <- function(type = "default") {
       )
     ),
     "bc" = list(
-      bagr.lab = c("Laub", "Nadel"),
+      bagr.lab = c("Nadel", "Laub"),
       ba.grupp = list(
         c(10:99),
         c(100:299)

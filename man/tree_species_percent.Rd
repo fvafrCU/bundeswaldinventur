@@ -7,10 +7,11 @@
 tree_species_percent(statistics_list)
 }
 \arguments{
-\item{statistics_list}{Name of the list holding the statistical data.}
+\item{statistics_list}{A list holding the statistical data, create with one
+of the FVBN.bagrupp.akl.dkl.stratum.fun.2[abcde] functions.}
 }
 \value{
-vektor with tree species areas in percent.
+Named array with tree species areas in percent.
 }
 \description{
 Function selects area for each tree from the statistical list and calculates

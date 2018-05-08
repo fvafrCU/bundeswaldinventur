@@ -1450,7 +1450,6 @@ line 2: found width 98 max_line_width was 80
 R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/statistics.R: line 8 counts 98 characters.
 R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/stratum.fun.R: line 34 counts 82 characters.
  /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/stratum.fun.R  stratum.fun  line 8: found width 82 max_line_width was 80
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/tree_species_shares.R  melt_tree_species_percent  found 54 lines of code, max_lines_of_code was 50
 R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/utils.R  find_files  found 6 arguments, max_num_arguments was 5
 R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 180 counts 92 characters.
 /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/variable_getters.R: line 182 counts 93 characters.

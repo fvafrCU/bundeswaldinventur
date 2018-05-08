@@ -1,5 +1,11 @@
 
 
+Executing test function test_adapt_script  ... backed up /tmp/RtmpjhQYgn/file257e3e33dd6c.R to /tmp/RtmpjhQYgn/file257e3e33dd6c.R_adapted.
+adapted /tmp/RtmpjhQYgn/file257e3e33dd6c.R.
+ done successfully.
+
+
+
 Executing test function test_get_global_objects  ...  done successfully.
 
 

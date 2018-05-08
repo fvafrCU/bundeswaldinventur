@@ -1,7 +1,7 @@
-name <- "adapt_script.R"
+name <- "tree_species_shares.R"
 root <- rprojroot::find_root(rprojroot::is_r_package)
 source_file <- file.path(root, "R", name)
-is_runit <- TRUE
+is_runit <- FALSE
 
 if (isTRUE(is_runit)) {
     test_file <- file.path(root, "inst", "runit_tests", paste0("runit-", name))

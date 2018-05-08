@@ -55,6 +55,60 @@ NO COPY: inst/maintenance/global_variables.R:168:65: style: Trailing whitespace 
 NO COPY: inst/maintenance/global_variables.R:180:1: style: Trailing blank lines are superfluous.
 
 ^
+NO COPY: inst/runit_tests/dumpdata.R:2:61: style: Trailing whitespace is superfluous.
+structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+                                                            ^
+NO COPY: inst/runit_tests/dumpdata.R:3:64: style: Trailing whitespace is superfluous.
+1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 
+                                                               ^
+NO COPY: inst/runit_tests/dumpdata.R:4:72: style: Trailing whitespace is superfluous.
+3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+                                                                       ^
+NO COPY: inst/runit_tests/dumpdata.R:5:64: style: Trailing whitespace is superfluous.
+    group = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 
+                                                               ^
+NO COPY: inst/runit_tests/dumpdata.R:6:64: style: Trailing whitespace is superfluous.
+    2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 
+                                                               ^
+NO COPY: inst/runit_tests/dumpdata.R:7:62: style: Trailing whitespace is superfluous.
+    8L, 9L), .Label = c("FI", "TA", "DGL", "KI", "LAE", "BU", 
+                                                             ^
+NO COPY: inst/runit_tests/dumpdata.R:8:63: style: Trailing whitespace is superfluous.
+    "EI", "ALH", "ALN"), class = "factor"), value = c(0, 0, 0, 
+                                                              ^
+NO COPY: inst/runit_tests/dumpdata.R:9:62: style: Trailing whitespace is superfluous.
+    0, 0, 26.78, 0, 73.22, 0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 
+                                                             ^
+NO COPY: inst/runit_tests/dumpdata.R:10:62: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 0)), row.names = c(NA, 
+                                                             ^
+NO COPY: inst/runit_tests/runit-adapt_script.R:10:50: style: Trailing whitespace is superfluous.
+                    "#% load data and functions", 
+                                                 ^
+NO COPY: inst/runit_tests/runit-adapt_script.R:11:70: style: Trailing whitespace is superfluous.
+                    paste0("source(file.path('..', 'customization',", 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-adapt_script.R:12:52: style: Trailing whitespace is superfluous.
+                           " 'customization.R'))"), 
+                                                   ^
+NO COPY: inst/runit_tests/runit-adapt_script.R:21:49: style: Trailing whitespace is superfluous.
+    reference <- c("#% load data and functions", 
+                                                ^
+NO COPY: inst/runit_tests/runit-adapt_script.R:22:63: style: Trailing whitespace is superfluous.
+                   "bundeswaldinventur::get_global_objects()", 
+                                                              ^
+NO COPY: inst/runit_tests/runit-adapt_script.R:23:54: style: Trailing whitespace is superfluous.
+                   "library(\"bundeswaldinventur\")", 
+                                                     ^
+NO COPY: inst/runit_tests/runit-adapt_script.R:24:79: style: Trailing whitespace is superfluous.
+                   "bundeswaldinventur::set_options(data_source = \"bwibw\")", 
+                                                                              ^
+NO COPY: inst/runit_tests/runit-adapt_script.R:31:44: style: Trailing whitespace is superfluous.
+    code <- c("#% load data and functions", 
+                                           ^
+NO COPY: inst/runit_tests/runit-adapt_script.R:44:1: style: Trailing blank lines are superfluous.
+
+^
 NO COPY: inst/runit_tests/runit-local_global_objects.R:17:80: style: Trailing whitespace is superfluous.
   reference <- structure(list(ICode = structure(c(10L, 11L, 12L, 13L, 14L, 15L, 
                                                                                ^
@@ -559,10 +613,52 @@ NO COPY: inst/runit_tests/runit-local_global_objects.R:177:25: warning: no visib
 NO COPY: inst/runit_tests/runit-local_global_objects.R:211:25: warning: no visible binding for global variable 'BAGR.BWI'
   RUnit::checkIdentical(BAGR.BWI, reference)
                         ^~~~~~~~
-NO COPY: R/adapt_script.R:41:20: style: Only use double-quotes.
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:12:1: style: lines should not be more than 80 characters.
+    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:19:1: style: lines should not be more than 80 characters.
+    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:26:1: style: lines should not be more than 80 characters.
+    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:32:1: style: lines should not be more than 80 characters.
+  result <- melt_tree_species_percent(statistics_list = "fvbn", bagr =  get_bwi_species_groups())
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:34:61: style: Trailing whitespace is superfluous.
+structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:35:64: style: Trailing whitespace is superfluous.
+1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:36:72: style: Trailing whitespace is superfluous.
+3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:37:64: style: Trailing whitespace is superfluous.
+    group = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:38:64: style: Trailing whitespace is superfluous.
+    2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:39:62: style: Trailing whitespace is superfluous.
+    8L, 9L), .Label = c("FI", "TA", "DGL", "KI", "LAE", "BU", 
+                                                             ^
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:40:63: style: Trailing whitespace is superfluous.
+    "EI", "ALH", "ALN"), class = "factor"), value = c(0, 0, 0, 
+                                                              ^
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:41:62: style: Trailing whitespace is superfluous.
+    0, 0, 26.78, 0, 73.22, 0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 
+                                                             ^
+NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:42:62: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 0)), row.names = c(NA, 
+                                                             ^
+NO COPY: R/adapt_script.R:39:57: style: Trailing whitespace is superfluous.
+      if (isTRUE(verbose)) warning("script ", file_name, 
+                                                        ^
+NO COPY: R/adapt_script.R:42:20: style: Only use double-quotes.
       inserts <- c('bundeswaldinventur::get_global_objects()', 
                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/adapt_script.R:41:63: style: Trailing whitespace is superfluous.
+NO COPY: R/adapt_script.R:42:63: style: Trailing whitespace is superfluous.
       inserts <- c('bundeswaldinventur::get_global_objects()', 
                                                               ^
 NO COPY: R/batch.R:110:3: warning: local variable 'status' assigned but may not be used
@@ -12367,12 +12463,18 @@ NO COPY: R/stratum.fun.R:34:1: style: lines should not be more than 80 character
 NO COPY: R/stratum.fun.R:51:1: style: Trailing blank lines are superfluous.
 
 ^
-NO COPY: R/tree_species_shares.R:15:11: style: Commas should never have a space before.
+NO COPY: R/tree_species_shares.R:16:11: style: Commas should never have a space before.
   )[1, 1, , , ]
          ~^
-NO COPY: R/tree_species_shares.R:15:13: style: Commas should never have a space before.
+NO COPY: R/tree_species_shares.R:16:13: style: Commas should never have a space before.
   )[1, 1, , , ]
            ~^
+NO COPY: R/tree_species_shares.R:19:74: style: Trailing whitespace is superfluous.
+      if (length(statistics_list[[attribute]]) > 1) ## catch both 0 and 1 
+                                                                         ^
+NO COPY: R/tree_species_shares.R:44:55: style: Trailing whitespace is superfluous.
+melt_tree_species_percent <- function(statistics_list, 
+                                                      ^
 NO COPY: R/utils.R:53:26: style: Opening curly braces should never go on their own line and should always be followed by a new line.
         if (path != ".") { 
                          ^
@@ -12391,6 +12493,9 @@ NO COPY: R/variable_getters.R:180:1: style: lines should not be more than 80 cha
 NO COPY: R/variable_getters.R:182:1: style: lines should not be more than 80 characters.
     bwi3 <- c(a = 3575148, nte = 35731, nt = nt) # nte _is_ sum(get_data("trakte.3")[["m"]]))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/file_coverage/file_coverage.r:9:1: style: lines should not be more than 80 characters.
+    test_file <- file.path(root, "tests", "testthat", paste0("test-local_", name))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:97:1: style: lines should not be more than 80 characters.
       Waldfl_StW = c(316376, 326979, 327388), SE_Waldfl_StW = c(9781, 9994, 9967),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -12460,12 +12565,12 @@ NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:239:85: style: Trailing whitespace 
 NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:240:62: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
                                                              ^
-NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:241:74: style: Trailing whitespace is superfluous.
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-                                                                         ^
-NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:242:62: style: Trailing whitespace is superfluous.
-    "Nadel", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
-                                                             ^
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:241:75: style: Trailing whitespace is superfluous.
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+                                                                          ^
+NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:242:61: style: Trailing whitespace is superfluous.
+    "Laub", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
+                                                            ^
 NO COPY: tests/testthat/test-bwibw_BWI3_HR.R:244:63: style: Trailing whitespace is superfluous.
     ), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 0, 0, 0, 0, 0, NA, 
                                                               ^
@@ -27299,7 +27404,7 @@ NO COPY: tests/testthat/test-local_fvbn2a.R:21:69: style: Trailing whitespace is
     "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha"), Größen = c("Wert", 
                                                                     ^
 NO COPY: tests/testthat/test-local_fvbn2a.R:22:66: style: Trailing whitespace is superfluous.
-    "Standardfehler"), BAGR = c("Laub", "Nadel"), AKL = c("1-60", 
+    "Standardfehler"), BAGR = c("Nadel", "Laub"), AKL = c("1-60", 
                                                                  ^
 NO COPY: tests/testthat/test-local_fvbn2a.R:23:61: style: Trailing whitespace is superfluous.
     "61-120", "121-180", ">200"), DKL = c("0-6.9", "0-24.9", 
@@ -27479,7 +27584,7 @@ NO COPY: tests/testthat/test-local_fvbn2a.R:105:69: style: Trailing whitespace i
     "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha"), Größen = c("Wert", 
                                                                     ^
 NO COPY: tests/testthat/test-local_fvbn2a.R:106:66: style: Trailing whitespace is superfluous.
-    "Standardfehler"), BAGR = c("Laub", "Nadel"), AKL = c("1-50", 
+    "Standardfehler"), BAGR = c("Nadel", "Laub"), AKL = c("1-50", 
                                                                  ^
 NO COPY: tests/testthat/test-local_fvbn2a.R:107:1: style: lines should not be more than 80 characters.
     "51-100", ">100"), DKL = c("0-6.9", ">=50", "25-49.9"), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 
@@ -27580,12 +27685,12 @@ NO COPY: tests/testthat/test-local_fvbn2b.R:21:74: style: Trailing whitespace is
 NO COPY: tests/testthat/test-local_fvbn2b.R:22:63: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha"), 
                                                               ^
-NO COPY: tests/testthat/test-local_fvbn2b.R:23:59: style: Trailing whitespace is superfluous.
-    Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-                                                          ^
-NO COPY: tests/testthat/test-local_fvbn2b.R:24:77: style: Trailing whitespace is superfluous.
-    "Nadel"), AKL = c("1-60", "61-120", "121-180", ">200"), DKL = c("0-6.9", 
-                                                                            ^
+NO COPY: tests/testthat/test-local_fvbn2b.R:23:60: style: Trailing whitespace is superfluous.
+    Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+                                                           ^
+NO COPY: tests/testthat/test-local_fvbn2b.R:24:76: style: Trailing whitespace is superfluous.
+    "Laub"), AKL = c("1-60", "61-120", "121-180", ">200"), DKL = c("0-6.9", 
+                                                                           ^
 NO COPY: tests/testthat/test-local_fvbn2b.R:25:63: style: Trailing whitespace is superfluous.
     "0-24.9", ">=50"), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 0, 
                                                               ^
@@ -27778,12 +27883,12 @@ NO COPY: tests/testthat/test-local_fvbn2b.R:110:74: style: Trailing whitespace i
 NO COPY: tests/testthat/test-local_fvbn2b.R:111:63: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha"), 
                                                               ^
-NO COPY: tests/testthat/test-local_fvbn2b.R:112:59: style: Trailing whitespace is superfluous.
-    Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-                                                          ^
-NO COPY: tests/testthat/test-local_fvbn2b.R:113:66: style: Trailing whitespace is superfluous.
-    "Nadel"), AKL = c("1-50", "51-100", ">100"), DKL = c("0-6.9", 
-                                                                 ^
+NO COPY: tests/testthat/test-local_fvbn2b.R:112:60: style: Trailing whitespace is superfluous.
+    Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+                                                           ^
+NO COPY: tests/testthat/test-local_fvbn2b.R:113:65: style: Trailing whitespace is superfluous.
+    "Laub"), AKL = c("1-50", "51-100", ">100"), DKL = c("0-6.9", 
+                                                                ^
 NO COPY: tests/testthat/test-local_fvbn2b.R:114:61: style: Trailing whitespace is superfluous.
     ">=50", "25-49.9"), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 
                                                             ^
@@ -27886,12 +27991,12 @@ NO COPY: tests/testthat/test-local_fvbn2d.R:21:85: style: Trailing whitespace is
 NO COPY: tests/testthat/test-local_fvbn2d.R:22:62: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
                                                              ^
-NO COPY: tests/testthat/test-local_fvbn2d.R:23:74: style: Trailing whitespace is superfluous.
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-                                                                         ^
-NO COPY: tests/testthat/test-local_fvbn2d.R:24:62: style: Trailing whitespace is superfluous.
-    "Nadel", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
-                                                             ^
+NO COPY: tests/testthat/test-local_fvbn2d.R:23:75: style: Trailing whitespace is superfluous.
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+                                                                          ^
+NO COPY: tests/testthat/test-local_fvbn2d.R:24:61: style: Trailing whitespace is superfluous.
+    "Laub", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
+                                                            ^
 NO COPY: tests/testthat/test-local_fvbn2d.R:25:1: style: lines should not be more than 80 characters.
     ">200"), DKL = c("0-6.9", "0-24.9", ">=50"), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -28204,12 +28309,12 @@ NO COPY: tests/testthat/test-local_fvbn2d.R:148:85: style: Trailing whitespace i
 NO COPY: tests/testthat/test-local_fvbn2d.R:149:62: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
                                                              ^
-NO COPY: tests/testthat/test-local_fvbn2d.R:150:74: style: Trailing whitespace is superfluous.
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-                                                                         ^
-NO COPY: tests/testthat/test-local_fvbn2d.R:151:77: style: Trailing whitespace is superfluous.
-    "Nadel", "Alle BA"), AKL = c("1-50", "51-100", ">100"), DKL = c("0-6.9", 
-                                                                            ^
+NO COPY: tests/testthat/test-local_fvbn2d.R:150:75: style: Trailing whitespace is superfluous.
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+                                                                          ^
+NO COPY: tests/testthat/test-local_fvbn2d.R:151:76: style: Trailing whitespace is superfluous.
+    "Laub", "Alle BA"), AKL = c("1-50", "51-100", ">100"), DKL = c("0-6.9", 
+                                                                           ^
 NO COPY: tests/testthat/test-local_fvbn2d.R:152:61: style: Trailing whitespace is superfluous.
     ">=50", "25-49.9"), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 
                                                             ^
@@ -28354,12 +28459,12 @@ NO COPY: tests/testthat/test-local_fvbn2d.R:218:85: style: Trailing whitespace i
 NO COPY: tests/testthat/test-local_fvbn2d.R:219:62: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
                                                              ^
-NO COPY: tests/testthat/test-local_fvbn2d.R:220:74: style: Trailing whitespace is superfluous.
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-                                                                         ^
-NO COPY: tests/testthat/test-local_fvbn2d.R:221:67: style: Trailing whitespace is superfluous.
-    "Nadel", "Alle BA"), AKL = "0-100", DKL = c("0-6.9", "7-24.9", 
-                                                                  ^
+NO COPY: tests/testthat/test-local_fvbn2d.R:220:75: style: Trailing whitespace is superfluous.
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+                                                                          ^
+NO COPY: tests/testthat/test-local_fvbn2d.R:221:66: style: Trailing whitespace is superfluous.
+    "Laub", "Alle BA"), AKL = "0-100", DKL = c("0-6.9", "7-24.9", 
+                                                                 ^
 NO COPY: tests/testthat/test-local_fvbn2d.R:222:72: style: Trailing whitespace is superfluous.
     "25-49.9", ">=50"), T.FVBN.Bagr.Akl.Dkl = structure(c(25001.009964, 
                                                                        ^
@@ -28642,12 +28747,12 @@ NO COPY: tests/testthat/test-local_fvbn2e.R:20:85: style: Trailing whitespace is
 NO COPY: tests/testthat/test-local_fvbn2e.R:21:62: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
                                                              ^
-NO COPY: tests/testthat/test-local_fvbn2e.R:22:74: style: Trailing whitespace is superfluous.
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-                                                                         ^
-NO COPY: tests/testthat/test-local_fvbn2e.R:23:62: style: Trailing whitespace is superfluous.
-    "Nadel", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
-                                                             ^
+NO COPY: tests/testthat/test-local_fvbn2e.R:22:75: style: Trailing whitespace is superfluous.
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+                                                                          ^
+NO COPY: tests/testthat/test-local_fvbn2e.R:23:61: style: Trailing whitespace is superfluous.
+    "Laub", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
+                                                            ^
 NO COPY: tests/testthat/test-local_fvbn2e.R:25:63: style: Trailing whitespace is superfluous.
     ), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 0, 0, 0, 0, 0, NA, 
                                                               ^
@@ -29152,9 +29257,9 @@ NO COPY: tests/testthat/test-local_fvbn2e.R:210:85: style: Trailing whitespace i
 NO COPY: tests/testthat/test-local_fvbn2e.R:211:62: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
                                                              ^
-NO COPY: tests/testthat/test-local_fvbn2e.R:212:74: style: Trailing whitespace is superfluous.
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-                                                                         ^
+NO COPY: tests/testthat/test-local_fvbn2e.R:212:75: style: Trailing whitespace is superfluous.
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+                                                                          ^
 NO COPY: tests/testthat/test-local_fvbn2e.R:214:1: style: lines should not be more than 80 characters.
     ), DKL = c("0-6.9", ">=50", "25-49.9", "Alle DKl"), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29392,12 +29497,12 @@ NO COPY: tests/testthat/test-local_fvbn2e.R:311:85: style: Trailing whitespace i
 NO COPY: tests/testthat/test-local_fvbn2e.R:312:62: style: Trailing whitespace is superfluous.
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
                                                              ^
-NO COPY: tests/testthat/test-local_fvbn2e.R:313:74: style: Trailing whitespace is superfluous.
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-                                                                         ^
-NO COPY: tests/testthat/test-local_fvbn2e.R:314:67: style: Trailing whitespace is superfluous.
-    "Nadel", "Alle BA"), AKL = "0-100", DKL = c("0-6.9", "7-24.9", 
-                                                                  ^
+NO COPY: tests/testthat/test-local_fvbn2e.R:313:75: style: Trailing whitespace is superfluous.
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+                                                                          ^
+NO COPY: tests/testthat/test-local_fvbn2e.R:314:66: style: Trailing whitespace is superfluous.
+    "Laub", "Alle BA"), AKL = "0-100", DKL = c("0-6.9", "7-24.9", 
+                                                                 ^
 NO COPY: tests/testthat/test-local_fvbn2e.R:315:1: style: lines should not be more than 80 characters.
     "25-49.9", ">=50", "Alle DKl"), T.FVBN.Bagr.Akl.Dkl = structure(c(25001.009964, 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29824,6 +29929,69 @@ NO COPY: tests/testthat/test-local_stratum.fun.R:41:60: style: Trailing whitespa
 NO COPY: tests/testthat/test-local_stratum.fun.R:42:49: style: Trailing whitespace is superfluous.
                          row.names = integer(0), 
                                                 ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:11:1: style: lines should not be more than 80 characters.
+    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_tree_species_shares.R:19:61: style: Trailing whitespace is superfluous.
+structure(c(0, 0, 0, 0, 0, 0, 0, 20.19, 0, 0, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:20:64: style: Trailing whitespace is superfluous.
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 53.03, 
+                                                               ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:21:63: style: Trailing whitespace is superfluous.
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:22:61: style: Trailing whitespace is superfluous.
+0, 0, 0, 26.78, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                            ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:23:73: style: Trailing whitespace is superfluous.
+0, 0, 0, 0, 0, 0), .Dim = c(9L, 3L, 3L), .Dimnames = list(BAGR = c("FI", 
+                                                                        ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:24:70: style: Trailing whitespace is superfluous.
+"TA", "DGL", "KI", "LAE", "BU", "EI", "ALH", "ALN"), AKL = c("1-100", 
+                                                                     ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:29:1: style: lines should not be more than 80 characters.
+    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_tree_species_shares.R:45:1: style: lines should not be more than 80 characters.
+    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_tree_species_shares.R:52:1: style: lines should not be more than 80 characters.
+    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_tree_species_shares.R:59:1: style: lines should not be more than 80 characters.
+    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_tree_species_shares.R:65:1: style: lines should not be more than 80 characters.
+  result <- melt_tree_species_percent(statistics_list = "fvbn", bagr =  get_bwi_species_groups())
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_tree_species_shares.R:67:61: style: Trailing whitespace is superfluous.
+structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+                                                            ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:68:64: style: Trailing whitespace is superfluous.
+1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 
+                                                               ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:69:72: style: Trailing whitespace is superfluous.
+3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+                                                                       ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:70:64: style: Trailing whitespace is superfluous.
+    group = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 
+                                                               ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:71:64: style: Trailing whitespace is superfluous.
+    2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 
+                                                               ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:72:62: style: Trailing whitespace is superfluous.
+    8L, 9L), .Label = c("FI", "TA", "DGL", "KI", "LAE", "BU", 
+                                                             ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:73:63: style: Trailing whitespace is superfluous.
+    "EI", "ALH", "ALN"), class = "factor"), value = c(0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:74:62: style: Trailing whitespace is superfluous.
+    0, 0, 26.78, 0, 73.22, 0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 
+                                                             ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:75:62: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 0)), row.names = c(NA, 
+                                                             ^
 NO COPY: tests/testthat/test-local_utils.R:6:28: style: Trailing whitespace is superfluous.
   result <- golden_ratio(1)  
                            ^~

@@ -19,8 +19,8 @@ testthat::test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
     iBL = 0, se.iBL = 0, LK = 1, se.LK = 0, Attribute1 = c("BAF", 
     "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), Attribute2 = c("BA_Proz", 
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-    "Nadel", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+    "Laub", "Alle BA"), AKL = c("1-60", "61-120", "121-180", 
     ">200", "Alle AKl"), DKL = c("0-6.9", "0-24.9", ">=50", "Alle DKl"
     ), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 0, 0, 0, 0, 0, NA, 
     0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 94340.6067294845, 28450121.8057453, 
@@ -209,8 +209,8 @@ testthat::test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
     iBL = 0, se.iBL = 0, LK = 1, se.LK = 0, Attribute1 = c("BAF", 
     "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), Attribute2 = c("BA_Proz", 
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-    "Nadel", "Alle BA"), AKL = c("1-50", "51-100", ">100", "Alle AKl"
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+    "Laub", "Alle BA"), AKL = c("1-50", "51-100", ">100", "Alle AKl"
     ), DKL = c("0-6.9", ">=50", "25-49.9", "Alle DKl"), T.FVBN.Bagr.Akl.Dkl = structure(c(0, 
     0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, 
     NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 0, 0, 0, NA, 0, 0, 0, 
@@ -310,8 +310,8 @@ testthat::test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
     iBL = 0, se.iBL = 0, LK = 1, se.LK = 0, Attribute1 = c("BAF", 
     "V_DhmR", "V_DhmR_HB", "oiB", "N", "N_Dh", "N_Dh_HB"), Attribute2 = c("BA_Proz", 
     "V_DhmR/ha", "V_DhmR_HB/ha", "oiB/ha", "N/ha", "N_Dh/ha", 
-    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Laub", 
-    "Nadel", "Alle BA"), AKL = "0-100", DKL = c("0-6.9", "7-24.9", 
+    "N_Dh_HB/ha"), Größen = c("Wert", "Standardfehler"), BAGR = c("Nadel", 
+    "Laub", "Alle BA"), AKL = "0-100", DKL = c("0-6.9", "7-24.9", 
     "25-49.9", ">=50", "Alle DKl"), T.FVBN.Bagr.Akl.Dkl = structure(c(25001.009964, 
     0, 0, 715989.970671322, 839278583.491457, 0, 0, 12501.0781241518, 
     0, 0, 351532.984159414, 327950143.98932, 0, 0, 3512.58291, 

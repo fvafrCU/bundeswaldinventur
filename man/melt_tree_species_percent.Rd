@@ -4,11 +4,13 @@
 \alias{melt_tree_species_percent}
 \title{Calculates relative tree species area}
 \usage{
-melt_tree_species_percent(statistics_list)
+melt_tree_species_percent(statistics_list, bagr = get_bwi_species_groups())
 }
 \arguments{
 \item{statistics_list}{String which defines the list holding the statistical
 data.}
+
+\item{bagr}{A list setting up tree species groups. Stick with the default.}
 }
 \value{
 Data Frame with information about relative tree species area for each
