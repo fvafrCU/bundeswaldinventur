@@ -613,45 +613,63 @@ NO COPY: inst/runit_tests/runit-local_global_objects.R:177:25: warning: no visib
 NO COPY: inst/runit_tests/runit-local_global_objects.R:211:25: warning: no visible binding for global variable 'BAGR.BWI'
   RUnit::checkIdentical(BAGR.BWI, reference)
                         ^~~~~~~~
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:12:1: style: lines should not be more than 80 characters.
-    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:19:1: style: lines should not be more than 80 characters.
-    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:26:1: style: lines should not be more than 80 characters.
-    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:32:1: style: lines should not be more than 80 characters.
-  result <- melt_tree_species_percent(statistics_list = "fvbn", bagr =  get_bwi_species_groups())
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:34:61: style: Trailing whitespace is superfluous.
-structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
-                                                            ^
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:35:64: style: Trailing whitespace is superfluous.
-1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 
-                                                               ^
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:36:72: style: Trailing whitespace is superfluous.
-3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:7:77: style: Trailing whitespace is superfluous.
+assign("fvbn.3", FVBN(get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), 
+                                                                            ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:21:17: style: Trailing whitespace is superfluous.
+    reference <- 
+                ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:22:69: style: Trailing whitespace is superfluous.
+        structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+                                                                    ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:23:78: style: Trailing whitespace is superfluous.
+                                          1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 
+                                                                             ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:24:70: style: Trailing whitespace is superfluous.
+                                          2L, 2L, 3L, 3L, 3L, 3L, 3L, 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:25:59: style: Trailing whitespace is superfluous.
+                                          3L, 3L, 3L, 3L), 
+                                                          ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:27:59: style: Trailing whitespace is superfluous.
+                                        class = "factor"), 
+                                                          ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:28:80: style: Trailing whitespace is superfluous.
+                        group = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 
+                                                                               ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:30:72: style: Trailing whitespace is superfluous.
+                                            1L, 2L, 3L, 4L, 5L, 6L, 7L, 
                                                                        ^
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:37:64: style: Trailing whitespace is superfluous.
-    group = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 
-                                                               ^
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:38:64: style: Trailing whitespace is superfluous.
-    2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 
-                                                               ^
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:39:62: style: Trailing whitespace is superfluous.
-    8L, 9L), .Label = c("FI", "TA", "DGL", "KI", "LAE", "BU", 
-                                                             ^
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:40:63: style: Trailing whitespace is superfluous.
-    "EI", "ALH", "ALN"), class = "factor"), value = c(0, 0, 0, 
-                                                              ^
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:41:62: style: Trailing whitespace is superfluous.
-    0, 0, 26.78, 0, 73.22, 0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 
-                                                             ^
-NO COPY: inst/runit_tests/runit-local_tree_species_shares.R:42:62: style: Trailing whitespace is superfluous.
-    0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 0)), row.names = c(NA, 
-                                                             ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:34:61: style: Trailing whitespace is superfluous.
+                                                     "ALN"), 
+                                                            ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:35:61: style: Trailing whitespace is superfluous.
+                                          class = "factor"), 
+                                                            ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:38:49: style: Trailing whitespace is superfluous.
+                                  0, 73.22, 0)), 
+                                                ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:48:56: style: Trailing whitespace is superfluous.
+        structure(list(Baumartengruppe = structure(1:9, 
+                                                       ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:51:75: style: Trailing whitespace is superfluous.
+                                                              "EI", "ALH", 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:52:70: style: Trailing whitespace is superfluous.
+                                                              "ALN"), 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:53:70: style: Trailing whitespace is superfluous.
+                                                   class = "factor"), 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:54:70: style: Trailing whitespace is superfluous.
+                       `1987` = c(0, 0, 0, 0, 0, 26.78, 0, 73.22, 0), 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:55:70: style: Trailing whitespace is superfluous.
+                       `2002` = c(0, 0, 0, 0, 0, 26.78, 0, 73.22, 0), 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-tree_species_shares.R:56:71: style: Trailing whitespace is superfluous.
+                       `2012` = c(0, 0, 0, 0, 0, 26.78, 0, 73.22, 0)), 
+                                                                      ^
 NO COPY: R/adapt_script.R:39:57: style: Trailing whitespace is superfluous.
       if (isTRUE(verbose)) warning("script ", file_name, 
                                                         ^
@@ -661,9 +679,6 @@ NO COPY: R/adapt_script.R:42:20: style: Only use double-quotes.
 NO COPY: R/adapt_script.R:42:63: style: Trailing whitespace is superfluous.
       inserts <- c('bundeswaldinventur::get_global_objects()', 
                                                               ^
-NO COPY: R/batch.R:110:3: warning: local variable 'status' assigned but may not be used
-  status <- FALSE
-  ^~~~~~
 NO COPY: R/BWI3_HR_Landkreis.R:31:29: style: Variable and function names should be all lowercase.
   krs.list <- unique(kreise$codeKreis)
                             ^~~~~~~~~
@@ -11281,7 +11296,10 @@ NO COPY: R/fvbn2e.R:429:25: style: Variable and function names should be all low
 NO COPY: R/fvbn2e.R:429:25: style: Words within variable and function names should be separated by '_' rather than '.'.
       nT.Bagr.Akl.Dkl = nT.bagr.akl.dkl
                         ^~~~~~~~~~~~~~~
-NO COPY: R/german_things.R:71:1: style: lines should not be more than 80 characters.
+NO COPY: R/german_things.R:34:3: warning: local variable 'status' assigned but may not be used
+  status <- FALSE
+  ^~~~~~
+NO COPY: R/german_things.R:69:1: style: lines should not be more than 80 characters.
 round_and_prettify <- function(x, digits = 0, big_mark = ",", decimal_mark = ".") {
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/get_data.R:23:64: style: Trailing whitespace is superfluous.
@@ -13222,6 +13240,63 @@ NO COPY: tests/testthat/test-local_abbreviations_and_labels.R:124:1: style: line
 NO COPY: tests/testthat/test-local_abbreviations_and_labels.R:125:1: style: lines should not be more than 80 characters.
   expect_gt(nchar(get_label_for_abbreviation("Baumartenfläche", "axis_label")), 0)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:11:4: style: Commented code should be removed.
+#  result <- get_R_CMD_BATCH_script_path()
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:12:4: style: Commented code should be removed.
+#  print(get_Rscript_script_path())
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:13:4: style: Commented code should be removed.
+#  print(get_R_CMD_BATCH_script_path())
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:14:4: style: Commented code should be removed.
+#  stop(get_script_path())
+   ^~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:15:4: style: Commented code should be removed.
+#  reference <- character(0)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:16:4: style: Commented code should be removed.
+#  testthat::expect_identical(result, reference)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:17:4: style: Commented code should be removed.
+#  result <- get_Rscript_script_path()
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:18:4: style: Commented code should be removed.
+#  testthat::expect_identical(result, reference)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:19:4: style: Commented code should be removed.
+#  result <- get_script_path()
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:20:4: style: Commented code should be removed.
+#  testthat::expect_identical(result, reference)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:21:4: style: Commented code should be removed.
+#  result <- get_script_name()
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:22:4: style: Commented code should be removed.
+#  reference <- "interactive_R_session"
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:23:4: style: Commented code should be removed.
+#  testthat::expect_identical(result, reference)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:24:4: style: Commented code should be removed.
+#  result <- is_batch()
+   ^~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:25:4: style: Commented code should be removed.
+#  reference <- ! interactive()
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:26:4: style: Commented code should be removed.
+#  testthat::expect_identical(result, reference)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:28:4: style: Commented code should be removed.
+#  result <- provide_output_directory("graphics", path = tempdir())
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:29:4: style: Commented code should be removed.
+#  testthat::expect_identical(graphics_directory, result)
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:30:4: style: Commented code should be removed.
+#  testthat::expect_true(dir.exists(result))
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:13:15: style: Trailing whitespace is superfluous.
   reference <- 
               ^
@@ -29815,6 +29890,198 @@ NO COPY: tests/testthat/test-local_fvbn2e.R:416:61: style: Trailing whitespace i
 NO COPY: tests/testthat/test-local_fvbn2e.R:417:69: style: Trailing whitespace is superfluous.
 "Attribute2", "Größen", "BAGR", "AKL", "DKL", "T.FVBN.Bagr.Akl.Dkl", 
                                                                     ^
+NO COPY: tests/testthat/test-local_german_things.R:11:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: tests/testthat/test-local_german_things.R:13:64: style: Trailing whitespace is superfluous.
+structure(c("21", "21", "22.8", "21.4", "18.7", "18.1", "14.3", 
+                                                               ^
+NO COPY: tests/testthat/test-local_german_things.R:14:64: style: Trailing whitespace is superfluous.
+"24.4", "22.8", "19.2", "17.8", "16.4", "17.3", "15.2", "10.4", 
+                                                               ^
+NO COPY: tests/testthat/test-local_german_things.R:15:64: style: Trailing whitespace is superfluous.
+"10.4", "14.7", "32.4", "30.4", "33.9", "21.5", "15.5", "15.2", 
+                                                               ^
+NO COPY: tests/testthat/test-local_german_things.R:16:68: style: Trailing whitespace is superfluous.
+"13.3", "19.2", "27.3", "26", "30.4", "15.8", "19.7", "15", "21.4", 
+                                                                   ^
+NO COPY: tests/testthat/test-local_german_things.R:17:65: style: Trailing whitespace is superfluous.
+"6", "6", "4", "6", "8", "6", "8", "4", "4", "6", "6", "8", "8", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:18:65: style: Trailing whitespace is superfluous.
+"8", "8", "8", "8", "4", "4", "4", "4", "8", "8", "8", "8", "4", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:19:65: style: Trailing whitespace is superfluous.
+"4", "4", "8", "6", "8", "4", "160", "160", "108", "258", "360", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:20:68: style: Trailing whitespace is superfluous.
+"225", "360", "146.7", "140.8", "167.6", "167.6", "275.8", "275.8", 
+                                                                   ^
+NO COPY: tests/testthat/test-local_german_things.R:21:63: style: Trailing whitespace is superfluous.
+"275.8", "472", "460", "440", "78.7", "75.7", "71.1", "120.1", 
+                                                              ^
+NO COPY: tests/testthat/test-local_german_things.R:22:65: style: Trailing whitespace is superfluous.
+"318", "304", "350", "400", "79", "120.3", "95.1", "351", "145", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:23:62: style: Trailing whitespace is superfluous.
+"301", "121", "110", "110", "93", "110", "175", "105", "245", 
+                                                             ^
+NO COPY: tests/testthat/test-local_german_things.R:24:61: style: Trailing whitespace is superfluous.
+"62", "95", "123", "123", "180", "180", "180", "205", "215", 
+                                                            ^
+NO COPY: tests/testthat/test-local_german_things.R:25:65: style: Trailing whitespace is superfluous.
+"230", "66", "52", "65", "97", "150", "150", "245", "175", "66", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:26:62: style: Trailing whitespace is superfluous.
+"91", "113", "264", "175", "335", "109", "3.9", "3.9", "3.8", 
+                                                             ^
+NO COPY: tests/testthat/test-local_german_things.R:27:63: style: Trailing whitespace is superfluous.
+"3.1", "3.1", "2.8", "3.2", "3.7", "3.9", "3.9", "3.9", "3.1", 
+                                                              ^
+NO COPY: tests/testthat/test-local_german_things.R:28:61: style: Trailing whitespace is superfluous.
+"3.1", "3.1", "2.9", "3", "3.2", "4.1", "4.9", "4.2", "3.7", 
+                                                            ^
+NO COPY: tests/testthat/test-local_german_things.R:29:63: style: Trailing whitespace is superfluous.
+"2.8", "3.1", "3.7", "3.1", "4.1", "4.4", "3.8", "4.2", "3.6", 
+                                                              ^
+NO COPY: tests/testthat/test-local_german_things.R:30:63: style: Trailing whitespace is superfluous.
+"3.5", "4.1", "2.6", "2.9", "2.3", "3.2", "3.4", "3.5", "3.6", 
+                                                              ^
+NO COPY: tests/testthat/test-local_german_things.R:31:63: style: Trailing whitespace is superfluous.
+"3.2", "3.1", "3.4", "3.4", "4.1", "3.7", "3.8", "5.2", "5.4", 
+                                                              ^
+NO COPY: tests/testthat/test-local_german_things.R:32:63: style: Trailing whitespace is superfluous.
+"5.3", "2.2", "1.6", "1.8", "2.5", "3.5", "3.4", "3.8", "3.8", 
+                                                              ^
+NO COPY: tests/testthat/test-local_german_things.R:33:63: style: Trailing whitespace is superfluous.
+"1.9", "2.1", "1.5", "3.2", "2.8", "3.6", "2.8", "16.5", "17", 
+                                                              ^
+NO COPY: tests/testthat/test-local_german_things.R:34:68: style: Trailing whitespace is superfluous.
+"18.6", "19.4", "17", "20.2", "15.8", "20", "22.9", "18.3", "18.9", 
+                                                                   ^
+NO COPY: tests/testthat/test-local_german_things.R:35:68: style: Trailing whitespace is superfluous.
+"17.4", "17.6", "18", "18", "17.8", "17.4", "19.5", "18.5", "19.9", 
+                                                                   ^
+NO COPY: tests/testthat/test-local_german_things.R:36:62: style: Trailing whitespace is superfluous.
+"20", "16.9", "17.3", "15.4", "17.1", "18.9", "16.7", "16.9", 
+                                                             ^
+NO COPY: tests/testthat/test-local_german_things.R:37:62: style: Trailing whitespace is superfluous.
+"14.5", "15.5", "14.6", "18.6", "0", "0", "1", "1", "0", "1", 
+                                                             ^
+NO COPY: tests/testthat/test-local_german_things.R:38:65: style: Trailing whitespace is superfluous.
+"0", "1", "1", "1", "1", "0", "0", "0", "0", "0", "0", "1", "1", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:39:65: style: Trailing whitespace is superfluous.
+"1", "1", "0", "0", "0", "0", "1", "0", "1", "0", "0", "0", "1", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:40:65: style: Trailing whitespace is superfluous.
+"1", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:41:65: style: Trailing whitespace is superfluous.
+"0", "0", "0", "0", "1", "1", "1", "0", "0", "0", "0", "0", "1", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:42:65: style: Trailing whitespace is superfluous.
+"1", "1", "1", "1", "1", "1", "4", "4", "4", "3", "3", "3", "3", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:43:65: style: Trailing whitespace is superfluous.
+"4", "4", "4", "4", "3", "3", "3", "3", "3", "3", "4", "4", "4", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:44:65: style: Trailing whitespace is superfluous.
+"3", "3", "3", "3", "3", "4", "5", "5", "5", "5", "5", "4", "4", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:45:65: style: Trailing whitespace is superfluous.
+"4", "1", "1", "2", "1", "4", "2", "2", "4", "4", "3", "3", "3", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:46:65: style: Trailing whitespace is superfluous.
+"4", "4", "4", "1", "2", "1", "1", "2", "2", "4", "2", "1", "2", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:48:68: style: Trailing whitespace is superfluous.
+    c("Mazda RX4", "Mazda RX4 Wag", "Datsun 710", "Hornet 4 Drive", 
+                                                                   ^
+NO COPY: tests/testthat/test-local_german_things.R:49:63: style: Trailing whitespace is superfluous.
+    "Hornet Sportabout", "Valiant", "Duster 360", "Merc 240D", 
+                                                              ^
+NO COPY: tests/testthat/test-local_german_things.R:50:69: style: Trailing whitespace is superfluous.
+    "Merc 230", "Merc 280", "Merc 280C", "Merc 450SE", "Merc 450SL", 
+                                                                    ^
+NO COPY: tests/testthat/test-local_german_things.R:51:64: style: Trailing whitespace is superfluous.
+    "Merc 450SLC", "Cadillac Fleetwood", "Lincoln Continental", 
+                                                               ^
+NO COPY: tests/testthat/test-local_german_things.R:52:70: style: Trailing whitespace is superfluous.
+    "Chrysler Imperial", "Fiat 128", "Honda Civic", "Toyota Corolla", 
+                                                                     ^
+NO COPY: tests/testthat/test-local_german_things.R:53:70: style: Trailing whitespace is superfluous.
+    "Toyota Corona", "Dodge Challenger", "AMC Javelin", "Camaro Z28", 
+                                                                     ^
+NO COPY: tests/testthat/test-local_german_things.R:54:70: style: Trailing whitespace is superfluous.
+    "Pontiac Firebird", "Fiat X1-9", "Porsche 914-2", "Lotus Europa", 
+                                                                     ^
+NO COPY: tests/testthat/test-local_german_things.R:56:65: style: Trailing whitespace is superfluous.
+    ), c("mpg", "cyl", "disp", "hp", "drat", "wt", "qsec", "vs", 
+                                                                ^
+NO COPY: tests/testthat/test-local_german_things.R:64:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: tests/testthat/test-local_german_things.R:65:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: tests/testthat/test-local_german_things.R:67:1: style: lines should not be more than 80 characters.
+"% latex table generated in R 3.5.0 by xtable 1.8-2 package\n% Tue May  8 18:03:32 2018\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{lrrrrrrrrrrr}\n  \\hline\n & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ mpg } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ cyl } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ disp } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ hp } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ drat } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ wt } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ qsec } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ vs } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ am } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ gear } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ carb } \\\\ \n  \\hline\nMazda RX4 & 21 & 6 & 160 & 110 & 4 & 3 & 16 & 0 & 1 & 4 & 4 \\\\ \n  Mazda RX4 Wag & 21 & 6 & 160 & 110 & 4 & 3 & 17 & 0 & 1 & 4 & 4 \\\\ \n  Datsun 710 & 23 & 4 & 108 & 93 & 4 & 2 & 19 & 1 & 1 & 4 & 1 \\\\ \n  Hornet 4 Drive & 21 & 6 & 258 & 110 & 3 & 3 & 19 & 1 & 0 & 3 & 1 \\\\ \n  Hornet Sportabout & 19 & 8 & 360 & 175 & 3 & 3 & 17 & 0 & 0 & 3 & 2 \\\\ \n  Valiant & 18 & 6 & 225 & 105 & 3 & 3 & 20 & 1 & 0 & 3 & 1 \\\\ \n  Duster 360 & 14 & 8 & 360 & 245 & 3 & 4 & 16 & 0 & 0 & 3 & 4 \\\\ \n  Merc 240D & 24 & 4 & 147 & 62 & 4 & 3 & 20 & 1 & 0 & 4 & 2 \\\\ \n  Merc 230 & 23 & 4 & 141 & 95 & 4 & 3 & 23 & 1 & 0 & 4 & 2 \\\\ \n  Merc 280 & 19 & 6 & 168 & 123 & 4 & 3 & 18 & 1 & 0 & 4 & 4 \\\\ \n  Merc 280C & 18 & 6 & 168 & 123 & 4 & 3 & 19 & 1 & 0 & 4 & 4 \\\\ \n  Merc 450SE & 16 & 8 & 276 & 180 & 3 & 4 & 17 & 0 & 0 & 3 & 3 \\\\ \n  Merc 450SL & 17 & 8 & 276 & 180 & 3 & 4 & 18 & 0 & 0 & 3 & 3 \\\\ \n  Merc 450SLC & 15 & 8 & 276 & 180 & 3 & 4 & 18 & 0 & 0 & 3 & 3 \\\\ \n  Cadillac Fleetwood & 10 & 8 & 472 & 205 & 3 & 5 & 18 & 0 & 0 & 3 & 4 \\\\ \n  Lincoln Continental & 10 & 8 & 460 & 215 & 3 & 5 & 18 & 0 & 0 & 3 & 4 \\\\ \n  Chrysler Imperial & 15 & 8 & 440 & 230 & 3 & 5 & 17 & 0 & 0 & 3 & 4 \\\\ \n  Fiat 128 & 32 & 4 & 79 & 66 & 4 & 2 & 19 & 1 & 1 & 4 & 1 \\\\ \n  Honda Civic & 30 & 4 & 76 & 52 & 5 & 2 & 19 & 1 & 1 & 4 & 2 \\\\ \n  Toyota Corolla & 34 & 4 & 71 & 65 & 4 & 2 & 20 & 1 & 1 & 4 & 1 \\\\ \n  Toyota Corona & 22 & 4 & 120 & 97 & 4 & 2 & 20 & 1 & 0 & 3 & 1 \\\\ \n  Dodge Challenger & 16 & 8 & 318 & 150 & 3 & 4 & 17 & 0 & 0 & 3 & 2 \\\\ \n  AMC Javelin & 15 & 8 & 304 & 150 & 3 & 3 & 17 & 0 & 0 & 3 & 2 \\\\ \n  Camaro Z28 & 13 & 8 & 350 & 245 & 4 & 4 & 15 & 0 & 0 & 3 & 4 \\\\ \n  Pontiac Firebird & 19 & 8 & 400 & 175 & 3 & 4 & 17 & 0 & 0 & 3 & 2 \\\\ \n  Fiat X1-9 & 27 & 4 & 79 & 66 & 4 & 2 & 19 & 1 & 1 & 4 & 1 \\\\ \n  Porsche 914-2 & 26 & 4 & 120 & 91 & 4 & 2 & 17 & 0 & 1 & 5 & 2 \\\\ \n  Lotus Europa & 30 & 4 & 95 & 113 & 4 & 2 & 17 & 1 & 1 & 5 & 2 \\\\ \n  Ford Pantera L & 16 & 8 & 351 & 264 & 4 & 3 & 14 & 0 & 1 & 5 & 4 \\\\ \n  Ferrari Dino & 20 & 6 & 145 & 175 & 4 & 3 & 16 & 0 & 1 & 5 & 6 \\\\ \n  Maserati Bora & 15 & 8 & 301 & 335 & 4 & 4 & 15 & 0 & 1 & 5 & 8 \\\\ \n  Volvo 142E & 21 & 4 & 121 & 109 & 4 & 3 & 19 & 1 & 1 & 4 & 2 \\\\ \n   \\hline\nSumme & 643 & 198 & 7,383 & 4,694 & 115 & 103 & 571 & 14 & 13 & 118 & 90 \\\\ \n   \\hline\n\\end{tabular}\n\\caption{XXX} \n\\label{tab:mtcars}\n\\end{table}\n"
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_german_things.R:77:69: style: Put spaces around all infix operators.
+              result <- round_and_prettify(airquality[1:10, "Ozone"]*10^4+0.1)
+                                                                   ~^~
+NO COPY: tests/testthat/test-local_german_things.R:77:72: style: Put spaces around all infix operators.
+              result <- round_and_prettify(airquality[1:10, "Ozone"]*10^4+0.1)
+                                                                      ~^~
+NO COPY: tests/testthat/test-local_german_things.R:77:74: style: Put spaces around all infix operators.
+              result <- round_and_prettify(airquality[1:10, "Ozone"]*10^4+0.1)
+                                                                        ~^~
+NO COPY: tests/testthat/test-local_german_things.R:78:78: style: Trailing whitespace is superfluous.
+  reference <- c("410,000", "360,000", "120,000", "180,000", "NA", "280,000", 
+                                                                             ^
+NO COPY: tests/testthat/test-local_german_things.R:84:1: style: lines should not be more than 80 characters.
+              result <- round_and_prettify_german(airquality[1:10, "Ozone"]*10^4+0.1)
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_german_things.R:84:76: style: Put spaces around all infix operators.
+              result <- round_and_prettify_german(airquality[1:10, "Ozone"]*10^4+0.1)
+                                                                          ~^~
+NO COPY: tests/testthat/test-local_german_things.R:84:79: style: Put spaces around all infix operators.
+              result <- round_and_prettify_german(airquality[1:10, "Ozone"]*10^4+0.1)
+                                                                             ~^~
+NO COPY: tests/testthat/test-local_german_things.R:84:81: style: Put spaces around all infix operators.
+              result <- round_and_prettify_german(airquality[1:10, "Ozone"]*10^4+0.1)
+                                                                               ~^~
+NO COPY: tests/testthat/test-local_german_things.R:85:78: style: Trailing whitespace is superfluous.
+  reference <- c("410.000", "360.000", "120.000", "180.000", "NA", "280.000", 
+                                                                             ^
+NO COPY: tests/testthat/test-local_german_things.R:92:64: style: Put spaces around all infix operators.
+              result <- german_number(airquality[1:10, "Ozone"]*10^4+0.1)
+                                                              ~^~
+NO COPY: tests/testthat/test-local_german_things.R:92:67: style: Put spaces around all infix operators.
+              result <- german_number(airquality[1:10, "Ozone"]*10^4+0.1)
+                                                                 ~^~
+NO COPY: tests/testthat/test-local_german_things.R:92:69: style: Put spaces around all infix operators.
+              result <- german_number(airquality[1:10, "Ozone"]*10^4+0.1)
+                                                                   ~^~
+NO COPY: tests/testthat/test-local_german_things.R:93:69: style: Trailing whitespace is superfluous.
+  reference <- c("410.000,1", "360.000,1", "120.000,1", "180.000,1", 
+                                                                    ^
+NO COPY: tests/testthat/test-local_german_things.R:94:30: style: Trailing whitespace is superfluous.
+                 "       NA", 
+                             ^
+NO COPY: tests/testthat/test-local_german_things.R:95:69: style: Trailing whitespace is superfluous.
+                 "280.000,1", "230.000,1", "190.000,1", " 80.000,1", 
+                                                                    ^
+NO COPY: tests/testthat/test-local_german_things.R:103:27: style: Trailing whitespace is superfluous.
+              reference <- 
+                          ^
+NO COPY: tests/testthat/test-local_german_things.R:104:1: style: lines should not be more than 80 characters.
+                  c("\\\"A{}", "\\\"O{}", "\\\"U{}", "\\\"a{}", "\\\"o{}", "\\\"u{}", "\\\"s{}")
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_german_things.R:110:27: style: Trailing whitespace is superfluous.
+              reference <- 
+                          ^
 NO COPY: tests/testthat/test-local_options.R:7:50: style: Trailing whitespace is superfluous.
   reference <- structure(c(10, 6.18033988749895), 
                                                  ^
@@ -29953,45 +30220,9 @@ NO COPY: tests/testthat/test-local_tree_species_shares.R:24:70: style: Trailing 
 NO COPY: tests/testthat/test-local_tree_species_shares.R:29:1: style: lines should not be more than 80 characters.
     get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_tree_species_shares.R:45:1: style: lines should not be more than 80 characters.
-    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_tree_species_shares.R:52:1: style: lines should not be more than 80 characters.
-    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_tree_species_shares.R:59:1: style: lines should not be more than 80 characters.
-    get_data("baeume.3")[1:10, TRUE], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_tree_species_shares.R:65:1: style: lines should not be more than 80 characters.
-  result <- melt_tree_species_percent(statistics_list = "fvbn", bagr =  get_bwi_species_groups())
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_tree_species_shares.R:67:61: style: Trailing whitespace is superfluous.
-structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
-                                                            ^
-NO COPY: tests/testthat/test-local_tree_species_shares.R:68:64: style: Trailing whitespace is superfluous.
-1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 
-                                                               ^
-NO COPY: tests/testthat/test-local_tree_species_shares.R:69:72: style: Trailing whitespace is superfluous.
-3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
-                                                                       ^
-NO COPY: tests/testthat/test-local_tree_species_shares.R:70:64: style: Trailing whitespace is superfluous.
-    group = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 
-                                                               ^
-NO COPY: tests/testthat/test-local_tree_species_shares.R:71:64: style: Trailing whitespace is superfluous.
-    2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 
-                                                               ^
-NO COPY: tests/testthat/test-local_tree_species_shares.R:72:62: style: Trailing whitespace is superfluous.
-    8L, 9L), .Label = c("FI", "TA", "DGL", "KI", "LAE", "BU", 
-                                                             ^
-NO COPY: tests/testthat/test-local_tree_species_shares.R:73:63: style: Trailing whitespace is superfluous.
-    "EI", "ALH", "ALN"), class = "factor"), value = c(0, 0, 0, 
-                                                              ^
-NO COPY: tests/testthat/test-local_tree_species_shares.R:74:62: style: Trailing whitespace is superfluous.
-    0, 0, 26.78, 0, 73.22, 0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 
-                                                             ^
-NO COPY: tests/testthat/test-local_tree_species_shares.R:75:62: style: Trailing whitespace is superfluous.
-    0, 0, 0, 0, 0, 0, 26.78, 0, 73.22, 0)), row.names = c(NA, 
-                                                             ^
+NO COPY: tests/testthat/test-local_tree_species_shares.R:40:1: style: Trailing blank lines are superfluous.
+
+^
 NO COPY: tests/testthat/test-local_utils.R:6:28: style: Trailing whitespace is superfluous.
   result <- golden_ratio(1)  
                            ^~

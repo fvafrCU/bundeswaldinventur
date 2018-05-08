@@ -99,7 +99,7 @@ is_batch <- function() {
 #' @param type a character vector of length 1 giving the a name postfix.
 #' Defaults to 'graphics'.
 #' @export
-#' @return TRUE on success, FALSE otherwise.
+#' @return A string holding the path to the directory.
 #' @examples
 #' provide_output_directory()
 provide_output_directory <- function(type = "graphics", path  = ".") {
@@ -107,7 +107,6 @@ provide_output_directory <- function(type = "graphics", path  = ".") {
   checkmate::assertString(type)
   checkmate::assertString(path)
   # End Input Check
-  status <- FALSE
   directory <- file.path(
     path,
     paste(get_script_name(), type, sep = "_")
@@ -115,6 +114,5 @@ provide_output_directory <- function(type = "graphics", path  = ".") {
   directory_name <- paste(type, "directory", sep = "_")
   assign(directory_name, directory, envir = parent.frame())
   if (!file.exists(directory)) dir.create(directory)
-  status <- TRUE
-  return(invisible(NULL))
+  return(invisible(directory))
 }

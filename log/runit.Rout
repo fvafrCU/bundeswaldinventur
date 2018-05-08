@@ -1,7 +1,7 @@
 
 
-Executing test function test_adapt_script  ... backed up /tmp/Rtmpc50b6i/file2a9243c4a68.R to /tmp/Rtmpc50b6i/file2a9243c4a68.R_adapted.
-adapted /tmp/Rtmpc50b6i/file2a9243c4a68.R.
+Executing test function test_adapt_script  ... backed up /tmp/RtmpNaNcmo/file3e42385840bb.R to /tmp/RtmpNaNcmo/file3e42385840bb.R_adapted.
+adapted /tmp/RtmpNaNcmo/file3e42385840bb.R.
  done successfully.
 
 
@@ -18,17 +18,17 @@ Executing test function test_get_package_data  ...  done successfully.
 
 
 
+Executing test function test_exception  ... Error in eval(expr, envir = parent.frame()) : Hello, error!
+ done successfully.
+
+
+
 Executing test function test_cast_tree_species_percent  ...  done successfully.
 
 
 
 Executing test function test_tree_species_precent  ...  done successfully.
 
-
-
-Executing test function test_exception  ... Error in eval(expr, envir = parent.frame()) : Hello, error!
-In addition: Warning messages:
+Warning messages:
 1: In sqrt(R.list$V.R.xy) : NaNs produced
 2: In sqrt(R.list$V.R.xy) : NaNs produced
- done successfully.
-

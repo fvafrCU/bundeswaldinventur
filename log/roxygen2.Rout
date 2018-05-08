@@ -20,5 +20,7 @@ Type 'q()' to quit R.
 > devtools::document(".")
 Updating bundeswaldinventur documentation
 Loading bundeswaldinventur
+Writing provide_output_directory.Rd
+Writing add_colSums_prettify_and_print_xtable.Rd
 > 
 > 

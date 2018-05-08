@@ -13,7 +13,7 @@ Defaults to 'graphics'.}
 \item{path}{a \code{\link{file.path}}, defaults to '.'.}
 }
 \value{
-TRUE on success, FALSE otherwise.
+A string holding the path to the directory.
 }
 \description{
 create directories of path '\code{path}/\code{scriptName}_type' and store

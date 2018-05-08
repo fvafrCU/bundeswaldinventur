@@ -1249,7 +1249,7 @@ line 335: found width 89 max_line_width was 80
 line 336: found width 82 max_line_width was 80
 FVBN.bagrupp.akl.dkl.stratum.fun.2e  found 347 lines, max_lines was 65
 FVBN.bagrupp.akl.dkl.stratum.fun.2e  found 240 lines of code, max_lines_of_code was 50
-R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/german_things.R: line 71 counts 83 characters.
+R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/german_things.R: line 69 counts 83 characters.
 R/   /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/global_objects.R: line 30 counts 83 characters.
 /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/global_objects.R: line 31 counts 83 characters.
  /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/R/global_objects.R  get_global_variables  line 11: found width 83 max_line_width was 80

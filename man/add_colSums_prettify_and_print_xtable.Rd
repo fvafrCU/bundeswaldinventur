@@ -12,7 +12,7 @@ add_colSums_prettify_and_print_xtable(data_frame, caption = "XXX")
 \item{caption}{A caption for the LaTeX table.}
 }
 \value{
-TRUE on success, FALSE otherwise.
+The latex code created.
 }
 \description{
 'Enhanced' means: add colSums(), use prettyNum()s.

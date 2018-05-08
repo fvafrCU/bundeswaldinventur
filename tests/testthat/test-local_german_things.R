@@ -1,6 +1,7 @@
 if (interactive()) devtools::load_all()
 if (FALSE) {
     dump("result")
+    dput(result)
 }
 context("german_things.R")
 
@@ -66,7 +67,47 @@ test_that("add_colSums_prettify_and_print_xtable", {
 "% latex table generated in R 3.5.0 by xtable 1.8-2 package\n% Tue May  8 18:03:32 2018\n\\begin{table}[ht]\n\\centering\n\\begin{tabular}{lrrrrrrrrrrr}\n  \\hline\n & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ mpg } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ cyl } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ disp } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ hp } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ drat } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ wt } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ qsec } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ vs } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ am } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ gear } & \\multicolumn{1}{>{\\centering}p{ 0.0833333333333333 \\textwidth}}{ carb } \\\\ \n  \\hline\nMazda RX4 & 21 & 6 & 160 & 110 & 4 & 3 & 16 & 0 & 1 & 4 & 4 \\\\ \n  Mazda RX4 Wag & 21 & 6 & 160 & 110 & 4 & 3 & 17 & 0 & 1 & 4 & 4 \\\\ \n  Datsun 710 & 23 & 4 & 108 & 93 & 4 & 2 & 19 & 1 & 1 & 4 & 1 \\\\ \n  Hornet 4 Drive & 21 & 6 & 258 & 110 & 3 & 3 & 19 & 1 & 0 & 3 & 1 \\\\ \n  Hornet Sportabout & 19 & 8 & 360 & 175 & 3 & 3 & 17 & 0 & 0 & 3 & 2 \\\\ \n  Valiant & 18 & 6 & 225 & 105 & 3 & 3 & 20 & 1 & 0 & 3 & 1 \\\\ \n  Duster 360 & 14 & 8 & 360 & 245 & 3 & 4 & 16 & 0 & 0 & 3 & 4 \\\\ \n  Merc 240D & 24 & 4 & 147 & 62 & 4 & 3 & 20 & 1 & 0 & 4 & 2 \\\\ \n  Merc 230 & 23 & 4 & 141 & 95 & 4 & 3 & 23 & 1 & 0 & 4 & 2 \\\\ \n  Merc 280 & 19 & 6 & 168 & 123 & 4 & 3 & 18 & 1 & 0 & 4 & 4 \\\\ \n  Merc 280C & 18 & 6 & 168 & 123 & 4 & 3 & 19 & 1 & 0 & 4 & 4 \\\\ \n  Merc 450SE & 16 & 8 & 276 & 180 & 3 & 4 & 17 & 0 & 0 & 3 & 3 \\\\ \n  Merc 450SL & 17 & 8 & 276 & 180 & 3 & 4 & 18 & 0 & 0 & 3 & 3 \\\\ \n  Merc 450SLC & 15 & 8 & 276 & 180 & 3 & 4 & 18 & 0 & 0 & 3 & 3 \\\\ \n  Cadillac Fleetwood & 10 & 8 & 472 & 205 & 3 & 5 & 18 & 0 & 0 & 3 & 4 \\\\ \n  Lincoln Continental & 10 & 8 & 460 & 215 & 3 & 5 & 18 & 0 & 0 & 3 & 4 \\\\ \n  Chrysler Imperial & 15 & 8 & 440 & 230 & 3 & 5 & 17 & 0 & 0 & 3 & 4 \\\\ \n  Fiat 128 & 32 & 4 & 79 & 66 & 4 & 2 & 19 & 1 & 1 & 4 & 1 \\\\ \n  Honda Civic & 30 & 4 & 76 & 52 & 5 & 2 & 19 & 1 & 1 & 4 & 2 \\\\ \n  Toyota Corolla & 34 & 4 & 71 & 65 & 4 & 2 & 20 & 1 & 1 & 4 & 1 \\\\ \n  Toyota Corona & 22 & 4 & 120 & 97 & 4 & 2 & 20 & 1 & 0 & 3 & 1 \\\\ \n  Dodge Challenger & 16 & 8 & 318 & 150 & 3 & 4 & 17 & 0 & 0 & 3 & 2 \\\\ \n  AMC Javelin & 15 & 8 & 304 & 150 & 3 & 3 & 17 & 0 & 0 & 3 & 2 \\\\ \n  Camaro Z28 & 13 & 8 & 350 & 245 & 4 & 4 & 15 & 0 & 0 & 3 & 4 \\\\ \n  Pontiac Firebird & 19 & 8 & 400 & 175 & 3 & 4 & 17 & 0 & 0 & 3 & 2 \\\\ \n  Fiat X1-9 & 27 & 4 & 79 & 66 & 4 & 2 & 19 & 1 & 1 & 4 & 1 \\\\ \n  Porsche 914-2 & 26 & 4 & 120 & 91 & 4 & 2 & 17 & 0 & 1 & 5 & 2 \\\\ \n  Lotus Europa & 30 & 4 & 95 & 113 & 4 & 2 & 17 & 1 & 1 & 5 & 2 \\\\ \n  Ford Pantera L & 16 & 8 & 351 & 264 & 4 & 3 & 14 & 0 & 1 & 5 & 4 \\\\ \n  Ferrari Dino & 20 & 6 & 145 & 175 & 4 & 3 & 16 & 0 & 1 & 5 & 6 \\\\ \n  Maserati Bora & 15 & 8 & 301 & 335 & 4 & 4 & 15 & 0 & 1 & 5 & 8 \\\\ \n  Volvo 142E & 21 & 4 & 121 & 109 & 4 & 3 & 19 & 1 & 1 & 4 & 2 \\\\ \n   \\hline\nSumme & 643 & 198 & 7,383 & 4,694 & 115 & 103 & 571 & 14 & 13 & 118 & 90 \\\\ \n   \\hline\n\\end{tabular}\n\\caption{XXX} \n\\label{tab:mtcars}\n\\end{table}\n"
   result <- unlist(strsplit(result, split = "\n"))
   reference <- unlist(strsplit(reference, split = "\n"))
-  result[2] <- NA
-  reference[2] <- NA
+  result[1:2] <- NA
+  reference[1:2] <- NA
+  testthat::expect_identical(result, reference)
+})
+
+test_that("round_and_prettify", {
+              data(airquality)
+              result <- round_and_prettify(airquality[1:10, "Ozone"]*10^4+0.1)
+  reference <- c("410,000", "360,000", "120,000", "180,000", "NA", "280,000", 
+"230,000", "190,000", "80,000", "NA")
+  testthat::expect_identical(result, reference)
+})
+test_that("round_and_prettify_german", {
+              data(airquality)
+              result <- round_and_prettify_german(airquality[1:10, "Ozone"]*10^4+0.1)
+  reference <- c("410.000", "360.000", "120.000", "180.000", "NA", "280.000", 
+                 "230.000", "190.000", "80.000", "NA")
+  testthat::expect_identical(result, reference)
+})
+
+test_that("german_number", {
+              data(airquality)
+              result <- german_number(airquality[1:10, "Ozone"]*10^4+0.1)
+  reference <- c("410.000,1", "360.000,1", "120.000,1", "180.000,1", 
+                 "       NA", 
+                 "280.000,1", "230.000,1", "190.000,1", " 80.000,1", 
+                 "       NA")
+  testthat::expect_identical(result, reference)
+})
+
+test_that("tex_umlauts", {
+              umlauts <- c("Ä", "Ö", "Ü", "ä", "ö", "ü", "ß")
+              result <- tex_umlauts(umlauts)
+              reference <- 
+                  c("\\\"A{}", "\\\"O{}", "\\\"U{}", "\\\"a{}", "\\\"o{}", "\\\"u{}", "\\\"s{}")
+  testthat::expect_identical(result, reference)
+})
+test_that("ascii_umlauts", {
+              umlauts <- c("Ä", "Ö", "Ü", "ä", "ö", "ü", "ß")
+              result <- ascii_umlauts(umlauts)
+              reference <- 
+                  c("Ae", "Oe", "Ue", "ae", "oe", "ue", "ss")
   testthat::expect_identical(result, reference)
 })
