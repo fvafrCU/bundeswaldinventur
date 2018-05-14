@@ -1,4 +1,4 @@
-name <- "batch.R"
+name <- "figures_and_tables.R"
 root <- rprojroot::find_root(rprojroot::is_r_package)
 source_file <- file.path(root, "R", name)
 is_runit <- FALSE

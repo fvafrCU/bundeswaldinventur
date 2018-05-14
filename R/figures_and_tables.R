@@ -88,9 +88,9 @@ melt_species_attribute_group <- function(list, species, abbreviation, group) {
   if (species %in% bwi1$BAGR) {
     species_index <- which(species == bwi1$BAGR)
   } else {
-    throw(cat(
+    throw(paste0(
       "got unkown species", species, ". Should be one of",
-      bwi1$BAGR, "."
+      paste(bwi1$BAGR, collapse=", "), "."
     ))
   }
   if (abbreviation %in% bwi1$Attribute1) { ## Totals
@@ -148,7 +148,8 @@ melt_species_attribute_group <- function(list, species, abbreviation, group) {
   )
   data_frame <- rbind(bwi1_statistics, bwi2_statistics, bwi3_statistics)
   data_frame$group <- factor(get(group, bwi3), levels = get(group, bwi3))
-  data_frame$species <- get_data("bagr.bwi")$ba.text[which(get_data("bagr.bwi")$bagr.lab == species)]
+  bagr.bwi <- get_bwi_species_groups()
+  data_frame$species <- bagr.bwi$ba.text[which(bagr.bwi$bagr.lab == species)]
   data_frame$grouping_variable <- group
   data_frame$ownership <- get_label_for_abbreviation(
     owner_postfix,
