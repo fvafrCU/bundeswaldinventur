@@ -208,17 +208,44 @@ plot_species_attribute_group <- function(data) {
 
 #' Reassembles by ownership and a variable abbreviation
 #'
-#' Fix me! What do I do?
+#' Gather a variable for all three BWI from statistics list that are compiled
+#' for and named after a special ownership.
 #'
 #' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
 #' @param owner String which defines the owner.
 #' @param abbreviation String which defines the variable which shall be
 #'  predicted.
+#' @param data_prefix The prefix from which the lists names are to be
+#' established.
 #' @export
 #' @return Dataframe.
-reassemble_by_group <- function(owner, abbreviation) {
+#' @examples 
+#' assign('fvbn.bagr.gw.3', envir = .GlobalEnv, 
+#' FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+#'         get_data("baeume.3"), get_data("ecken.3"), 
+#'                   get_data("trakte.3"), get_design("a", 3), 2, get_bwi_species_groups(),
+#'  			       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+#'  			       list(Wa = c(3, 5), Begehbar = 1))
+#' )
+#' assign('fvbn.bagr.gw.2', envir = .GlobalEnv, 
+#' FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+#'         get_data("baeume.2"), get_data("ecken.2"), 
+#'                   get_data("trakte.2"), get_design("a", 2), 2, get_bwi_species_groups(),
+#' 
+#'  			       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+#'  			       list(Wa = c(1, 2, 3), Begehbar = 1))
+#' )
+#' assign('fvbn.bagr.gw.1', envir = .GlobalEnv, 
+#' FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+#'         get_data("baeume.1"), get_data("ecken.1"), 
+#'                   get_data("trakte.1"), get_design("a", 1), 1, get_bwi_species_groups(),
+#'  			       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+#'  			       list(Wa = c(1, 2, 3), Begehbar = 1))
+#' )
+#' reassemble_by_group("gw", "BAF", data_prefix = "fvbn.bagr")
+reassemble_by_group <- function(owner, abbreviation, data_prefix = "FVBN.bagr") {
   ownership <- get_abbreviation_for_label(owner)
-  data_list <- paste("FVBN.bagr", ownership, sep = ".")
+  data_list <- paste(data_prefix, ownership, sep = ".")
   bwi1 <- eval(parse(text = paste(data_list, 1, sep = ".")))
   bwi2 <- eval(parse(text = paste(data_list, 2, sep = ".")))
   bwi3 <- eval(parse(text = paste(data_list, 3, sep = ".")))
@@ -293,10 +320,10 @@ reassemble_by_group <- function(owner, abbreviation) {
 #' @export
 #' @return Data frame with prediction for the given \code{abbreviation}, grouped
 #'  by tree species group, BWI and owner.
-all_data_by_group <- function(abbreviation) {
-  attribute_name <- get_abbreviation_for_label(abbreviation)
+all_data_by_group <- function(abbreviation, data_prefix = "FVBN.bagr") {
   owners <- c("gw", "stw", "kw", "pw")
-  data_list <- lapply(owners, reassemble_by_group, attribute_name)
+  data_list <- lapply(owners, reassemble_by_group, abbreviation = abbreviation,
+                      data_prefix = data_prefix)
   data_frame <- do.call("rbind", data_list)
   return(data_frame)
 }
@@ -328,8 +355,8 @@ plot_by_group <- function(data, subs, x = "Baumartengruppe") {
     ) +
       ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
       ggplot2::geom_errorbar(ggplot2::aes_string(
-        ymin = "prediction" - "standard_error",
-        ymax = "prediction" + "standard_error"
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
       ),
       width = .3,
       position = ggplot2::position_dodge(width = 0.9)
@@ -376,7 +403,8 @@ xtable_by_group <- function(data, subs, group = "Baumartengruppe",
   data_casted$"1987 - 2002" <- (data_casted[, 3] - data_casted[, 2]) / data_casted[, 2] * 100
   data_casted$"2002 - 2012" <- (data_casted[, 4] - data_casted[, 3]) / data_casted[, 3] * 100
   data_casted$"1987 - 2012" <- (data_casted[, 4] - data_casted[, 2]) / data_casted[, 2] * 100
-  latex_table <- xtable::xtable(prettyNum(data_casted, big.mark = ","),
+  data_bigmark <-  cbind(as.character(data_casted[, 1]), apply(data_casted[, 2:7], 2, prettyNum, big.mark = ","))
+  latex_table <- xtable::xtable(data_bigmark,
     label = paste("tab", label_prefix,
       unique(data_received$abbreviation),
       sep = ":"
