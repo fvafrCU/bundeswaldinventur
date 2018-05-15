@@ -1,6 +1,6 @@
-# bundeswaldinventur 0.15.0.9000
+# bundeswaldinventur 0.15.1
 
-* FIXME
+* Fixed failing test.
 
 # bundeswaldinventur 0.15.0
 
