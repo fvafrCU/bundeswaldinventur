@@ -224,7 +224,8 @@ plot_species_attribute_group <- function(data) {
 #' FVBN.bagrupp.akl.dkl.stratum.fun.2a(
 #'         get_data("baeume.3"), get_data("ecken.3"), 
 #'                   get_data("trakte.3"), get_design("a", 3), 2, get_bwi_species_groups(),
-#'  			       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+#'  			       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500,
+#'  			       D.b = 500, Ndh = FALSE),
 #'  			       list(Wa = c(3, 5), Begehbar = 1))
 #' )
 #' assign('fvbn.bagr.gw.2', envir = .GlobalEnv, 
@@ -232,14 +233,16 @@ plot_species_attribute_group <- function(data) {
 #'         get_data("baeume.2"), get_data("ecken.2"), 
 #'                   get_data("trakte.2"), get_design("a", 2), 2, get_bwi_species_groups(),
 #' 
-#'  			       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+#'  			       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500,
+#'  			       D.b = 500, Ndh = FALSE),
 #'  			       list(Wa = c(1, 2, 3), Begehbar = 1))
 #' )
 #' assign('fvbn.bagr.gw.1', envir = .GlobalEnv, 
 #' FVBN.bagrupp.akl.dkl.stratum.fun.2a(
 #'         get_data("baeume.1"), get_data("ecken.1"), 
 #'                   get_data("trakte.1"), get_design("a", 1), 1, get_bwi_species_groups(),
-#'  			       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+#'  			       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500,
+#'  			       D.b = 500, Ndh = FALSE),
 #'  			       list(Wa = c(1, 2, 3), Begehbar = 1))
 #' )
 #' reassemble_by_group("gw", "BAF", data_prefix = "fvbn.bagr")
@@ -317,6 +320,8 @@ reassemble_by_group <- function(owner, abbreviation, data_prefix = "FVBN.bagr") 
 #' @author Dominik Cullmann <dominik.cullmann@@forst.bwl.de>
 #' @param abbreviation String which defines the variable which shall be
 #'  predicted.
+#' @param data_prefix The prefix from which the lists names are to be
+#' established.
 #' @export
 #' @return Data frame with prediction for the given \code{abbreviation}, grouped
 #'  by tree species group, BWI and owner.

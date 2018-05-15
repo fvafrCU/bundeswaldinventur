@@ -176,8 +176,8 @@ Totholz.Tart.stratum.fun  found 167 lines, max_lines was 65
 Totholz.Tart.stratum.fun  found 126 lines of code, max_lines_of_code was 50
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 21 counts 82 characters.
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 38 counts 87 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 179 counts 85 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 279 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 179 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 279 counts 89 characters.
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 323 counts 83 characters.
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 431 counts 88 characters.
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R: line 507 counts 84 characters.
@@ -543,10 +543,10 @@ fba.stratum.fun  found 125 lines, max_lines was 65
 fba.stratum.fun  found 99 lines of code, max_lines_of_code was 50
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fl.proz.stratum.fun  line 23: found width 126 max_line_width was 80
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fvbn.kreis.fun.1  found 16 arguments, max_num_arguments was 5
-fvbn.kreis.fun.1  line 50: found width 85 max_line_width was 80
+fvbn.kreis.fun.1  line 50: found width 89 max_line_width was 80
 fvbn.kreis.fun.1  found 59 lines of code, max_lines_of_code was 50
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fvbn.stratum.fun.1  found 15 arguments, max_num_arguments was 5
-fvbn.stratum.fun.1  line 50: found width 85 max_line_width was 80
+fvbn.stratum.fun.1  line 50: found width 89 max_line_width was 80
 fvbn.stratum.fun.1  found 57 lines of code, max_lines_of_code was 50
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/BWI3_HR.R  fvbn.stratum.fun.2  found 17 arguments, max_num_arguments was 5
 fvbn.stratum.fun.2  found 55 lines of code, max_lines_of_code was 50
@@ -882,23 +882,26 @@ R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/deadwood.R: line 17 counts 84
  /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/deadwood.R  harmonize_deadwood  line 7: found width 84 max_line_width was 80
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 45 counts 83 characters.
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 60 counts 85 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 151 counts 101 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 182 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 190 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 280 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 328 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 336 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 339 counts 90 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 352 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 369 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 375 counts 93 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 376 counts 93 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 377 counts 93 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 383 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: 387 lines in file.
- /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  melt_species_attribute_group  line 68: found width 101 max_line_width was 80
-melt_species_attribute_group  found 74 lines, max_lines was 65
-melt_species_attribute_group  found 74 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 183 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 191 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 226 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 234 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 243 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 249 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 311 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 361 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 369 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 372 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 385 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 402 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 408 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 409 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 410 counts 93 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 411 counts 113 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: line 417 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R: 421 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  melt_species_attribute_group  found 75 lines, max_lines was 65
+melt_species_attribute_group  found 75 lines of code, max_lines_of_code was 50
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/figures_and_tables.R  plot_by_group  line 10: found width 82 max_line_width was 80
 line 18: found width 81 max_line_width was 80
 line 21: found width 90 max_line_width was 80
@@ -912,7 +915,8 @@ reassemble_by_group  found 63 lines of code, max_lines_of_code was 50
 line 17: found width 93 max_line_width was 80
 line 18: found width 93 max_line_width was 80
 line 19: found width 93 max_line_width was 80
-line 25: found width 82 max_line_width was 80
+line 20: found width 113 max_line_width was 80
+line 26: found width 82 max_line_width was 80
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fl.stratum.fun.R: line 27 counts 118 characters.
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fl.stratum.fun.R: line 28 counts 84 characters.
  /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/fl.stratum.fun.R  fl.stratum.fun  line 10: found width 118 max_line_width was 80

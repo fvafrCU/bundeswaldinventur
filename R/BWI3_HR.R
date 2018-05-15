@@ -176,7 +176,7 @@ fvbn.kreis.fun.1 <- function(kreiscode, eig.list, bwi.list, bagr,
 
       fvbn.bagr.krs[[index]] <- FVBN.bagrupp.akl.dkl.stratum.fun.2d(
         baeume, ecken, trakte, A.i, inv, bagr,
-        list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+        list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = FALSE),
         auswahl.i
       )
       fvbn.bagr.krs[[index]]$Kreis <-
@@ -276,7 +276,7 @@ fvbn.stratum.fun.1 <- function(auswahl, eig.list, bwi.list, bagr,
 
       fvbn.bagr.stratum[[index]] <- FVBN.bagrupp.akl.dkl.stratum.fun.2d(
         baeume, ecken, trakte, A.i, inv, bagr,
-        list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+        list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = FALSE),
         auswahl.i
       )
 

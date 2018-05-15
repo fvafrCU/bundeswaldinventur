@@ -4,11 +4,14 @@
 \alias{all_data_by_group}
 \title{Predicts value of a variable grouped by a tree species, BWI and owner}
 \usage{
-all_data_by_group(abbreviation)
+all_data_by_group(abbreviation, data_prefix = "FVBN.bagr")
 }
 \arguments{
 \item{abbreviation}{String which defines the variable which shall be
 predicted.}
+
+\item{data_prefix}{The prefix from which the lists names are to be
+established.}
 }
 \value{
 Data frame with prediction for the given \code{abbreviation}, grouped

@@ -1,5 +1,7 @@
-# bundeswaldinventur 0.14.0.9000
+# bundeswaldinventur 0.15.0
 
+* Finished test cases for all functions except the ones in R/batch.R and
+  R/regional.R
 * Changed return value of add\_colSums\_prettify\_and\_print\_xtable() from TRUE
   to a string of html code.
 * Fixed bug in  get\_bwi\_species\_groups("bc").

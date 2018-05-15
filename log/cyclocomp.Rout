@@ -98,7 +98,7 @@ config.status: creating src/install.libs.R
     LIBS=  
 
 ** libs
-make[1]: Entering directory '/tmp/RtmpQGCbOH/R.INSTALLb074c958113/stringi/src'
+make[1]: Entering directory '/tmp/RtmpKWPsez/R.INSTALL17e16c5f1165/stringi/src'
 g++  -I/usr/share/R/include -DNDEBUG -I.    -DU_CHARSET_IS_UTF8=0 -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -DU_CHARSET_IS_UTF8=0 -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_brkiter.cpp -o stri_brkiter.o
 g++  -I/usr/share/R/include -DNDEBUG -I.    -DU_CHARSET_IS_UTF8=0 -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -DU_CHARSET_IS_UTF8=0 -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_collator.cpp -o stri_collator.o
 g++  -I/usr/share/R/include -DNDEBUG -I.    -DU_CHARSET_IS_UTF8=0 -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -DU_CHARSET_IS_UTF8=0 -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_common.cpp -o stri_common.o
@@ -184,8 +184,8 @@ g++  -I/usr/share/R/include -DNDEBUG -I.    -DU_CHARSET_IS_UTF8=0 -UDEBUG -DNDEB
 g++  -I/usr/share/R/include -DNDEBUG -I.    -DU_CHARSET_IS_UTF8=0 -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -DU_CHARSET_IS_UTF8=0 -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_utils.cpp -o stri_utils.o
 g++  -I/usr/share/R/include -DNDEBUG -I.    -DU_CHARSET_IS_UTF8=0 -UDEBUG -DNDEBUG -DU_HAVE_ELF_H    -DU_CHARSET_IS_UTF8=0 -fpic -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-3.3.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g -c stri_wrap.cpp -o stri_wrap.o
 g++ -shared -L/usr/lib/R/lib -Wl,-z,relro -o stringi.so stri_brkiter.o stri_collator.o stri_common.o stri_compare.o stri_container_base.o stri_container_bytesearch.o stri_container_listint.o stri_container_listraw.o stri_container_listutf8.o stri_container_regex.o stri_container_usearch.o stri_container_utf16.o stri_container_utf8.o stri_container_utf8_indexable.o stri_encoding_conversion.o stri_encoding_detection.o stri_encoding_management.o stri_escape.o stri_exception.o stri_ICU_settings.o stri_join.o stri_length.o stri_pad.o stri_prepare_arg.o stri_random.o stri_reverse.o stri_search_class_count.o stri_search_class_detect.o stri_search_class_extract.o stri_search_class_locate.o stri_search_class_replace.o stri_search_class_split.o stri_search_class_startsendswith.o stri_search_class_subset.o stri_search_class_trim.o stri_search_common.o stri_search_coll_count.o stri_search_coll_detect.o stri_search_coll_extract.o stri_search_coll_locate.o stri_search_coll_replace.o stri_search_coll_split.o stri_search_coll_startsendswith.o stri_search_coll_subset.o stri_search_boundaries_count.o stri_search_boundaries_extract.o stri_search_boundaries_locate.o stri_search_boundaries_split.o stri_search_fixed_count.o stri_search_fixed_detect.o stri_search_fixed_extract.o stri_search_fixed_locate.o stri_search_fixed_replace.o stri_search_fixed_split.o stri_search_fixed_subset.o stri_search_fixed_startsendswith.o stri_search_in.o stri_search_other_replace.o stri_search_other_split.o stri_search_regex_count.o stri_search_regex_detect.o stri_search_regex_extract.o stri_search_regex_locate.o stri_search_regex_match.o stri_search_regex_replace.o stri_search_regex_split.o stri_search_regex_subset.o stri_sort.o stri_stats.o stri_stringi.o stri_sub.o stri_test.o stri_time_zone.o stri_time_calendar.o stri_time_symbols.o stri_time_format.o stri_trans_casemap.o stri_trans_other.o stri_trans_normalization.o stri_trans_transliterate.o stri_ucnv.o stri_uloc.o stri_utils.o stri_wrap.o -L/usr/lib/x86_64-linux-gnu -licui18n -licuuc -licudata -L/usr/lib/R/lib -lR
-make[1]: Leaving directory '/tmp/RtmpQGCbOH/R.INSTALLb074c958113/stringi/src'
-installing via 'install.libs.R' to /tmp/Rtmpv84DyJ/filead71a74b490/stringi
+make[1]: Leaving directory '/tmp/RtmpKWPsez/R.INSTALL17e16c5f1165/stringi/src'
+installing via 'install.libs.R' to /tmp/RtmptXU94v/file17b05b028ee1/stringi
 ** R
 ** inst
 ** preparing package for lazy loading
@@ -210,7 +210,7 @@ installing via 'install.libs.R' to /tmp/Rtmpv84DyJ/filead71a74b490/stringi
 * DONE (stringr)
 
 The downloaded source packages are in
-	‘/tmp/Rtmpv84DyJ/downloaded_packages’
+	‘/tmp/RtmptXU94v/downloaded_packages’
 * installing *source* package ‘bundeswaldinventur’ ...
 ** R
 ** data

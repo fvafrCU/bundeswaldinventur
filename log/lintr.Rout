@@ -82,6 +82,1659 @@ NO COPY: inst/runit_tests/runit-adapt_script.R:31:44: style: Trailing whitespace
 NO COPY: inst/runit_tests/runit-adapt_script.R:44:1: style: Trailing blank lines are superfluous.
 
 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:5:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:8:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:9:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(3, 5), Begehbar = 1))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:9:8: style: Only use double-quotes.
+assign('fvbn.3', 
+       ^~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:9:17: style: Trailing whitespace is superfluous.
+assign('fvbn.3', 
+                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:10:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:11:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.3"), get_data("ecken.3"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:12:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.3"), get_design("a", 3), 2, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:12:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:13:1: style: lines should not be more than 80 characters.
+            list(A.ob = 160, A.b = 40), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:16:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:17:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(1, 2, 3), Begehbar = 1))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:17:18: warning: no visible binding for global variable 'fvbn.3'
+assign("fvbn.2", fvbn.3, envir = .GlobalEnv)
+                 ^~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:18:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:18:18: warning: no visible binding for global variable 'fvbn.3'
+assign("fvbn.1", fvbn.3, envir = .GlobalEnv)
+                 ^~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:20:1: style: lines should not be more than 80 characters.
+    RUnit::checkException(melt_species_attribute_group("fvbn", "MEEEBOOB", "BAF", "AKL"))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:20:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:23:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:23:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:24:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(1, 2, 3), Begehbar = 1))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:25:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:25:76: style: Trailing whitespace is superfluous.
+  structure(list(prediction = c(133125.998502, 101198.139288, 66412.843035, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:26:73: style: Trailing whitespace is superfluous.
+  27828.952032, 1337.105352, 133125.998502, 101198.139288, 66412.843035, 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:27:73: style: Trailing whitespace is superfluous.
+  27828.952032, 1337.105352, 133125.998502, 101198.139288, 66412.843035, 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:28:67: style: Trailing whitespace is superfluous.
+  27828.952032, 1337.105352), standard_error = c(34240.4144726496, 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:29:69: style: Trailing whitespace is superfluous.
+  25152.0745008729, 22137.9649948745, 13102.7582575256, 1337.105352, 
+                                                                    ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:30:74: style: Trailing whitespace is superfluous.
+  34240.4144726496, 25152.0745008729, 22137.9649948745, 13102.7582575256, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:31:69: style: Trailing whitespace is superfluous.
+  1337.105352, 34240.4144726496, 25152.0745008729, 22137.9649948745, 
+                                                                    ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:32:65: style: Trailing whitespace is superfluous.
+  13102.7582575256, 1337.105352), abbreviation = structure(c(1L, 
+                                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:33:1: style: lines should not be more than 80 characters.
+  1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = "BAF", class = "factor"), 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:33:94: style: Trailing whitespace is superfluous.
+  1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = "BAF", class = "factor"), 
+                                                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:34:64: style: Trailing whitespace is superfluous.
+      bwi = structure(c(1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:35:1: style: lines should not be more than 80 characters.
+      3L, 3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:35:82: style: Trailing whitespace is superfluous.
+      3L, 3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:36:66: style: Trailing whitespace is superfluous.
+      group = structure(c(1L, 2L, 3L, 4L, 5L, 1L, 2L, 3L, 4L, 5L, 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:37:64: style: Trailing whitespace is superfluous.
+      1L, 2L, 3L, 4L, 5L), class = "factor", .Label = c("1-40", 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:38:68: style: Trailing whitespace is superfluous.
+      "41-80", "81-120", "121-160", ">160")), species = c("Fichte", 
+                                                                   ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:39:66: style: Trailing whitespace is superfluous.
+      "Fichte", "Fichte", "Fichte", "Fichte", "Fichte", "Fichte", 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:40:66: style: Trailing whitespace is superfluous.
+      "Fichte", "Fichte", "Fichte", "Fichte", "Fichte", "Fichte", 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:41:63: style: Trailing whitespace is superfluous.
+      "Fichte", "Fichte"), grouping_variable = c("AKL", "AKL", 
+                                                              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:42:69: style: Trailing whitespace is superfluous.
+      "AKL", "AKL", "AKL", "AKL", "AKL", "AKL", "AKL", "AKL", "AKL", 
+                                                                    ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:43:65: style: Trailing whitespace is superfluous.
+      "AKL", "AKL", "AKL", "AKL"), ownership = c("fvbn", "fvbn", 
+                                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:44:70: style: Trailing whitespace is superfluous.
+      "fvbn", "fvbn", "fvbn", "fvbn", "fvbn", "fvbn", "fvbn", "fvbn", 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:45:73: style: Trailing whitespace is superfluous.
+      "fvbn", "fvbn", "fvbn", "fvbn", "fvbn")), .Names = c("prediction", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:46:63: style: Trailing whitespace is superfluous.
+  "standard_error", "abbreviation", "bwi", "group", "species", 
+                                                              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:47:1: style: lines should not be more than 80 characters.
+  "grouping_variable", "ownership"), row.names = c(NA, 15L), class = "data.frame")
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:48:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:49:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:51:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:53:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:55:66: style: Trailing whitespace is superfluous.
+structure(list(prediction = c(15498.5390923623, 574.801225994489, 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:56:72: style: Trailing whitespace is superfluous.
+282.646128591616, 248.693916122816, 95.6629686497326, 15498.5390923623, 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:57:72: style: Trailing whitespace is superfluous.
+574.801225994489, 282.646128591616, 248.693916122816, 95.6629686497326, 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:58:72: style: Trailing whitespace is superfluous.
+15498.5390923623, 574.801225994489, 282.646128591616, 248.693916122816, 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:59:74: style: Trailing whitespace is superfluous.
+95.6629686497326), standard_error = c(5177.12796759455, 89.0636806836254, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:60:77: style: Trailing whitespace is superfluous.
+45.1744743217733, 46.6621558642141, NaN, 5177.12796759455, 89.0636806836254, 
+                                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:61:77: style: Trailing whitespace is superfluous.
+45.1744743217733, 46.6621558642141, NaN, 5177.12796759455, 89.0636806836254, 
+                                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:62:73: style: Trailing whitespace is superfluous.
+45.1744743217733, 46.6621558642141, NaN), abbreviation = structure(c(1L, 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:63:1: style: lines should not be more than 80 characters.
+1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = "N/ha", class = "factor"), 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:63:93: style: Trailing whitespace is superfluous.
+1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = "N/ha", class = "factor"), 
+                                                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:64:62: style: Trailing whitespace is superfluous.
+    bwi = structure(c(1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:65:80: style: Trailing whitespace is superfluous.
+    3L, 3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+                                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:66:64: style: Trailing whitespace is superfluous.
+    group = structure(c(1L, 2L, 3L, 4L, 5L, 1L, 2L, 3L, 4L, 5L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:67:62: style: Trailing whitespace is superfluous.
+    1L, 2L, 3L, 4L, 5L), class = "factor", .Label = c("1-40", 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:68:66: style: Trailing whitespace is superfluous.
+    "41-80", "81-120", "121-160", ">160")), species = c("Fichte", 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:69:64: style: Trailing whitespace is superfluous.
+    "Fichte", "Fichte", "Fichte", "Fichte", "Fichte", "Fichte", 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:70:64: style: Trailing whitespace is superfluous.
+    "Fichte", "Fichte", "Fichte", "Fichte", "Fichte", "Fichte", 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:71:61: style: Trailing whitespace is superfluous.
+    "Fichte", "Fichte"), grouping_variable = c("AKL", "AKL", 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:72:67: style: Trailing whitespace is superfluous.
+    "AKL", "AKL", "AKL", "AKL", "AKL", "AKL", "AKL", "AKL", "AKL", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:73:63: style: Trailing whitespace is superfluous.
+    "AKL", "AKL", "AKL", "AKL"), ownership = c("fvbn", "fvbn", 
+                                                              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:74:68: style: Trailing whitespace is superfluous.
+    "fvbn", "fvbn", "fvbn", "fvbn", "fvbn", "fvbn", "fvbn", "fvbn", 
+                                                                   ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:75:71: style: Trailing whitespace is superfluous.
+    "fvbn", "fvbn", "fvbn", "fvbn", "fvbn")), .Names = c("prediction", 
+                                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:76:61: style: Trailing whitespace is superfluous.
+"standard_error", "abbreviation", "bwi", "group", "species", 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:78:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:79:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:91:1: style: lines should not be more than 80 characters.
+1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L), .Label = "N/ha", class = "factor"),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:112:14: style: Only use double-quotes.
+      assign('fvbn.bagr.gw.3', envir = .GlobalEnv, 
+             ^~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:112:51: style: Trailing whitespace is superfluous.
+      assign('fvbn.bagr.gw.3', envir = .GlobalEnv, 
+                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:113:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:114:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.3"), get_data("ecken.3"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:115:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.3"), get_design("a", 3), 2, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:116:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:116:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:116:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:116:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:116:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:117:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:118:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:119:12: style: Only use double-quotes.
+    assign('fvbn.bagr.gw.2', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:119:49: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.gw.2', envir = .GlobalEnv, 
+                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:120:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:121:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.2"), get_data("ecken.2"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:122:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.2"), get_design("a", 2), 2, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:124:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:124:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:124:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:124:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:124:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:125:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(1, 2, 3), Begehbar = 1, EigArt = "StW"))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:126:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:127:12: style: Only use double-quotes.
+    assign('fvbn.bagr.gw.1', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:127:49: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.gw.1', envir = .GlobalEnv, 
+                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:128:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:129:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.1"), get_data("ecken.1"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:130:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.1"), get_design("a", 1), 1, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:131:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:131:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:131:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:131:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:131:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:132:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(1, 2, 3), Begehbar = 1, EigArt = "StW"))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:133:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:135:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:136:61: style: Trailing whitespace is superfluous.
+structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:137:64: style: Trailing whitespace is superfluous.
+1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:138:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:138:72: style: Trailing whitespace is superfluous.
+3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:139:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(3, 5), Begehbar = 1, EigArt = "KW"))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:139:62: style: Trailing whitespace is superfluous.
+    Baumartengruppe = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:140:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:140:64: style: Trailing whitespace is superfluous.
+    8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:141:61: style: Trailing whitespace is superfluous.
+    5L, 6L, 7L, 8L, 9L), .Label = c("FI", "TA", "DGL", "KI", 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:142:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:142:1: style: lines should not be more than 80 characters.
+    "LAE", "BU", "EI", "ALH", "ALN"), class = "factor"), prediction = c(401259.103910681, 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:142:90: style: Trailing whitespace is superfluous.
+    "LAE", "BU", "EI", "ALH", "ALN"), class = "factor"), prediction = c(401259.103910681, 
+                                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:143:74: style: Trailing whitespace is superfluous.
+    60966.931352984, 9223.15986702128, 44679.7533438112, 29988.181991633, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:144:74: style: Trailing whitespace is superfluous.
+    166402.405688824, 78250.2106277952, 59152.735807141, 17054.544910109, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:145:76: style: Trailing whitespace is superfluous.
+    376222.326820361, 88341.5405829897, 9214.33762886598, 25091.5627971649, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:146:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:146:75: style: Trailing whitespace is superfluous.
+    47369.9883162371, 187791.88661134, 80933.2131293814, 57783.1112706185, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:147:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(1, 2, 3), Begehbar = 1, EigArt = "KW"))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:147:64: style: Trailing whitespace is superfluous.
+    21042.7828430412, 329903.038209, 73741.896435, 26295.21354, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:148:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:148:61: style: Trailing whitespace is superfluous.
+    26857.405563, 24734.661438, 190524.999642, 77120.411295, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:149:70: style: Trailing whitespace is superfluous.
+    105738.577248, 47808.66663), standard_error = c(44767.1164429632, 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:150:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:150:75: style: Trailing whitespace is superfluous.
+    18786.423689262, 9223.15986702128, 15781.2996788884, 12155.3505360441, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:151:76: style: Trailing whitespace is superfluous.
+    31424.1393637099, 20762.3913432623, 19171.2636114755, 9254.65285554584, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:152:76: style: Trailing whitespace is superfluous.
+    44974.0383091226, 23482.7084861681, 9214.33762886598, 11343.6670859968, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:153:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:153:76: style: Trailing whitespace is superfluous.
+    17482.8499642516, 31388.1799403295, 21434.4890768358, 16675.8007261038, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:154:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(1, 2, 3), Begehbar = 1, EigArt = "KW"))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:154:76: style: Trailing whitespace is superfluous.
+    9497.12951457268, 41954.8149210379, 20128.4249748835, 14103.3263030828, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:155:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:155:74: style: Trailing whitespace is superfluous.
+    11641.4403122435, 9550.961803339, 29479.9064238981, 19222.3241459563, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:156:72: style: Trailing whitespace is superfluous.
+    22734.1155245227, 15814.1714066418), Eigentumsart = c("Gesamtwald", 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:157:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:158:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:158:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:159:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:160:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:161:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:161:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:162:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(3, 5), Begehbar = 1, EigArt = "PW"))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:162:62: style: Trailing whitespace is superfluous.
+    "Gesamtwald"), abbreviation = c("Baumartengruppenfläche", 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:163:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:163:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:163:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:164:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:164:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:165:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:165:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:165:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:166:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:166:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:167:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:167:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:168:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:168:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:169:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:169:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:169:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:170:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(1, 2, 3), Begehbar = 1, EigArt = "PW"))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:170:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:170:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:171:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:171:76: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche")), .Names = c("bwi", 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:172:67: style: Trailing whitespace is superfluous.
+"Baumartengruppe", "prediction", "standard_error", "Eigentumsart", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:173:1: style: Use two spaces to indent, never tabs.
+	   FVBN.bagrupp.akl.dkl.stratum.fun.2a(
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:176:1: style: Use two spaces to indent, never tabs.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:177:1: style: Use two spaces to indent, never tabs.
+					       list(Wa = c(1, 2, 3), Begehbar = 1, EigArt = "PW"))
+^~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:178:1: style: Use two spaces to indent, never tabs.
+	   )
+^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:178:61: style: Trailing whitespace is superfluous.
+structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:179:64: style: Trailing whitespace is superfluous.
+1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:180:72: style: Trailing whitespace is superfluous.
+3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:181:62: style: Trailing whitespace is superfluous.
+    Baumartengruppe = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:182:64: style: Trailing whitespace is superfluous.
+    8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:183:61: style: Trailing whitespace is superfluous.
+    5L, 6L, 7L, 8L, 9L), .Label = c("FI", "TA", "DGL", "KI", 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:184:1: style: lines should not be more than 80 characters.
+    "LAE", "BU", "EI", "ALH", "ALN"), class = "factor"), prediction = c(7931.47076871609, 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:184:90: style: Trailing whitespace is superfluous.
+    "LAE", "BU", "EI", "ALH", "ALN"), class = "factor"), prediction = c(7931.47076871609, 
+                                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:185:76: style: Trailing whitespace is superfluous.
+    3115.21733556322, 92.9304927694845, 888.095234709471, 368.549251433641, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:186:75: style: Trailing whitespace is superfluous.
+    7187.5661724001, 1836.49652972868, 47800.3278471131, 17684.3510876721, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:187:73: style: Trailing whitespace is superfluous.
+    8279.9711963411, 3341.82825037951, 3056.144409606, 745.378542692887, 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:188:75: style: Trailing whitespace is superfluous.
+    152.38797883036, 8352.93039510643, 1184.21337967457, 75187.2940755012, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:189:76: style: Trailing whitespace is superfluous.
+    19406.2708243732, 6508.72284682084, 4996.42983018363, 2186.31753290619, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:190:76: style: Trailing whitespace is superfluous.
+    1101.42360308163, 1030.35325182482, 12922.0023398628, 6243.25900055282, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:191:78: style: Trailing whitespace is superfluous.
+    35386.5662397738, 15297.1341704431), standard_error = c(3564.22852575939, 
+                                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:192:63: style: Trailing whitespace is superfluous.
+    1328.55813337385, NaN, 600.889447484873, 71.1716577863641, 
+                                                              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:193:75: style: Trailing whitespace is superfluous.
+    1958.05606844104, 928.099760239073, 12146.4377552185, 4562.3051316613, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:194:76: style: Trailing whitespace is superfluous.
+    3503.28574613098, 1825.67413576913, 4298.96975929466, 421.688181555584, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:195:75: style: Trailing whitespace is superfluous.
+    32.273848961113, 1874.63088036363, 537.882412993721, 24285.6109046948, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:196:74: style: Trailing whitespace is superfluous.
+    10869.48993408, 1720.50543798547, 1784.08662855439, 1218.00420532482, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:197:76: style: Trailing whitespace is superfluous.
+    563.055639349537, 740.271795525581, 4087.66079643678, 3680.62085674142, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:198:72: style: Trailing whitespace is superfluous.
+    12125.6105418612, 6815.46857857688), Eigentumsart = c("Gesamtwald", 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:199:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:200:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:201:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:202:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:203:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:204:1: style: lines should not be more than 80 characters.
+    "Gesamtwald"), abbreviation = c("Stammzahl je Hektar", "Stammzahl je Hektar", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:204:82: style: Trailing whitespace is superfluous.
+    "Gesamtwald"), abbreviation = c("Stammzahl je Hektar", "Stammzahl je Hektar", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:205:73: style: Trailing whitespace is superfluous.
+    "Stammzahl je Hektar", "Stammzahl je Hektar", "Stammzahl je Hektar", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:206:73: style: Trailing whitespace is superfluous.
+    "Stammzahl je Hektar", "Stammzahl je Hektar", "Stammzahl je Hektar", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:207:73: style: Trailing whitespace is superfluous.
+    "Stammzahl je Hektar", "Stammzahl je Hektar", "Stammzahl je Hektar", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:208:73: style: Trailing whitespace is superfluous.
+    "Stammzahl je Hektar", "Stammzahl je Hektar", "Stammzahl je Hektar", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:209:73: style: Trailing whitespace is superfluous.
+    "Stammzahl je Hektar", "Stammzahl je Hektar", "Stammzahl je Hektar", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:210:73: style: Trailing whitespace is superfluous.
+    "Stammzahl je Hektar", "Stammzahl je Hektar", "Stammzahl je Hektar", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:211:73: style: Trailing whitespace is superfluous.
+    "Stammzahl je Hektar", "Stammzahl je Hektar", "Stammzahl je Hektar", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:212:73: style: Trailing whitespace is superfluous.
+    "Stammzahl je Hektar", "Stammzahl je Hektar", "Stammzahl je Hektar", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:213:66: style: Trailing whitespace is superfluous.
+    "Stammzahl je Hektar")), .Names = c("bwi", "Baumartengruppe", 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:220:12: style: Only use double-quotes.
+    assign('fvbn.bagr.stw.3', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:220:50: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.stw.3', envir = .GlobalEnv, 
+                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:222:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.3"), get_data("ecken.3"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:223:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.3"), get_design("a", 3), 2, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:224:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:224:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:224:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:224:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:225:56: style: Put spaces around all infix operators.
+					       list(Wa = c(3, 5), Begehbar = 1, EigArt = "StW"))
+                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:227:12: style: Only use double-quotes.
+    assign('fvbn.bagr.stw.2', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:227:50: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.stw.2', envir = .GlobalEnv, 
+                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:229:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.2"), get_data("ecken.2"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:230:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.2"), get_design("a", 2), 2, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:232:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:232:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:232:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:232:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:235:12: style: Only use double-quotes.
+    assign('fvbn.bagr.stw.1', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:235:50: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.stw.1', envir = .GlobalEnv, 
+                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:237:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.1"), get_data("ecken.1"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:238:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.1"), get_design("a", 1), 1, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:239:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:239:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:239:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:239:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:242:12: style: Only use double-quotes.
+    assign('fvbn.bagr.kw.3', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:242:49: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.kw.3', envir = .GlobalEnv, 
+                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:244:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.3"), get_data("ecken.3"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:245:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.3"), get_design("a", 3), 2, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:246:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:246:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:246:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:246:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:247:56: style: Put spaces around all infix operators.
+					       list(Wa = c(3, 5), Begehbar = 1, EigArt = "KW"))
+                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:249:12: style: Only use double-quotes.
+    assign('fvbn.bagr.kw.2', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:249:49: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.kw.2', envir = .GlobalEnv, 
+                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:251:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.2"), get_data("ecken.2"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:252:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.2"), get_design("a", 2), 2, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:254:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:254:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:254:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:254:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:257:12: style: Only use double-quotes.
+    assign('fvbn.bagr.kw.1', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:257:49: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.kw.1', envir = .GlobalEnv, 
+                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:259:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.1"), get_data("ecken.1"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:260:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.1"), get_design("a", 1), 1, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:261:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:261:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:261:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:261:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:265:12: style: Only use double-quotes.
+    assign('fvbn.bagr.pw.3', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:265:49: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.pw.3', envir = .GlobalEnv, 
+                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:267:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.3"), get_data("ecken.3"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:268:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.3"), get_design("a", 3), 2, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:269:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:269:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:269:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:269:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:270:56: style: Put spaces around all infix operators.
+					       list(Wa = c(3, 5), Begehbar = 1, EigArt = "PW"))
+                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:272:12: style: Only use double-quotes.
+    assign('fvbn.bagr.pw.2', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:272:49: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.pw.2', envir = .GlobalEnv, 
+                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:274:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.2"), get_data("ecken.2"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:275:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.2"), get_design("a", 2), 2, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:277:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:277:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:277:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:277:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:280:12: style: Only use double-quotes.
+    assign('fvbn.bagr.pw.1', envir = .GlobalEnv, 
+           ^~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:280:49: style: Trailing whitespace is superfluous.
+    assign('fvbn.bagr.pw.1', envir = .GlobalEnv, 
+                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:282:55: style: Trailing whitespace is superfluous.
+            get_data("baeume.1"), get_data("ecken.1"), 
+                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:283:1: style: lines should not be more than 80 characters.
+                      get_data("trakte.1"), get_design("a", 1), 1, get_bwi_species_groups(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:284:1: style: lines should not be more than 80 characters.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:284:58: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                         ^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:284:69: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                   ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:284:88: style: Put spaces around all infix operators.
+					       list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
+                                                                                      ~^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:290:16: style: Trailing whitespace is superfluous.
+   reference <- 
+               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:291:61: style: Trailing whitespace is superfluous.
+structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:292:64: style: Trailing whitespace is superfluous.
+1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:293:64: style: Trailing whitespace is superfluous.
+3L, 3L, 3L, 3L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:294:64: style: Trailing whitespace is superfluous.
+2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 1L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:295:64: style: Trailing whitespace is superfluous.
+1L, 1L, 1L, 1L, 1L, 1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:296:64: style: Trailing whitespace is superfluous.
+2L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 3L, 1L, 1L, 1L, 1L, 1L, 1L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:297:64: style: Trailing whitespace is superfluous.
+1L, 1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:298:76: style: Trailing whitespace is superfluous.
+3L, 3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:299:62: style: Trailing whitespace is superfluous.
+    Baumartengruppe = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:300:64: style: Trailing whitespace is superfluous.
+    8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:301:64: style: Trailing whitespace is superfluous.
+    5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:302:64: style: Trailing whitespace is superfluous.
+    2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:303:64: style: Trailing whitespace is superfluous.
+    8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:304:64: style: Trailing whitespace is superfluous.
+    5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:305:64: style: Trailing whitespace is superfluous.
+    2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:306:66: style: Trailing whitespace is superfluous.
+    8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L), .Label = c("FI", 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:307:76: style: Trailing whitespace is superfluous.
+    "TA", "DGL", "KI", "LAE", "BU", "EI", "ALH", "ALN"), class = "factor"), 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:308:72: style: Trailing whitespace is superfluous.
+    prediction = c(401259.103910681, 60966.931352984, 9223.15986702128, 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:309:75: style: Trailing whitespace is superfluous.
+    44679.7533438112, 29988.181991633, 166402.405688824, 78250.2106277952, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:310:74: style: Trailing whitespace is superfluous.
+    59152.735807141, 17054.544910109, 376222.326820361, 88341.5405829897, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:311:75: style: Trailing whitespace is superfluous.
+    9214.33762886598, 25091.5627971649, 47369.9883162371, 187791.88661134, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:312:73: style: Trailing whitespace is superfluous.
+    80933.2131293814, 57783.1112706185, 21042.7828430412, 329903.038209, 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:313:74: style: Trailing whitespace is superfluous.
+    73741.896435, 26295.21354, 26857.405563, 24734.661438, 190524.999642, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:314:64: style: Trailing whitespace is superfluous.
+    77120.411295, 105738.577248, 47808.66663, 119142.631989818, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:315:76: style: Trailing whitespace is superfluous.
+    2049.54344345455, 9750.44454545454, 12743.8310209091, 9997.13079245455, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:316:72: style: Trailing whitespace is superfluous.
+    41014.269936, 13475.1143618182, 6336.81391009091, 0, 103865.635476, 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:317:76: style: Trailing whitespace is superfluous.
+    2331.62804347826, 9326.51217391304, 5379.53222191304, 10032.5291454783, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:318:75: style: Trailing whitespace is superfluous.
+    45574.0017378261, 14784.387098087, 14197.7494823478, 9017.80462095652, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:319:70: style: Trailing whitespace is superfluous.
+    93526.765467, 1123.490259, 6285.110184, 3951.432327, 5820.340944, 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:320:74: style: Trailing whitespace is superfluous.
+    44424.789048, 20321.141232, 39970.15464, 8023.525899, 97933.54626825, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:321:70: style: Trailing whitespace is superfluous.
+    12868.7992185, 0, 13413.11778525, 19896.67588575, 98695.05598725, 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:322:62: style: Trailing whitespace is superfluous.
+    52461.941862, 19979.7984255, 6515.7345675, 91560.5202905, 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:323:61: style: Trailing whitespace is superfluous.
+    22525.4386191042, 0, 10051.5211194583, 28157.4872375833, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:324:75: style: Trailing whitespace is superfluous.
+    110686.15268925, 44616.3707961042, 18664.4860267917, 4440.60072120833, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:325:69: style: Trailing whitespace is superfluous.
+    85693.616199, 17461.022832, 8937.87, 13968.103236, 13607.907075, 
+                                                                    ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:326:78: style: Trailing whitespace is superfluous.
+    118183.667436, 41999.05113, 29632.614198, 19093.077894, 186748.664132521, 
+                                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:327:63: style: Trailing whitespace is superfluous.
+    45565.303469875, 0, 18708.5797037917, 0, 25657.9269226458, 
+                                                              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:328:76: style: Trailing whitespace is superfluous.
+    11321.9701880208, 32410.6898315417, 10289.4432516042, 180951.630104546, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:329:61: style: Trailing whitespace is superfluous.
+    63159.6527863224, 0, 9651.03491445395, 9173.11559210526, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:330:75: style: Trailing whitespace is superfluous.
+    31598.631280125, 21477.0155357961, 24922.4377521908, 7644.87453446053, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:331:69: style: Trailing whitespace is superfluous.
+    150682.656543, 55157.383344, 11072.233356, 8937.87, 5306.413419, 
+                                                                    ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:332:1: style: lines should not be more than 80 characters.
+    27916.543158, 14800.218933, 36135.80841, 20692.062837), standard_error = c(44767.1164429632, 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:332:97: style: Trailing whitespace is superfluous.
+    27916.543158, 14800.218933, 36135.80841, 20692.062837), standard_error = c(44767.1164429632, 
+                                                                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:333:75: style: Trailing whitespace is superfluous.
+    18786.423689262, 9223.15986702128, 15781.2996788884, 12155.3505360441, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:334:76: style: Trailing whitespace is superfluous.
+    31424.1393637099, 20762.3913432623, 19171.2636114755, 9254.65285554584, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:335:76: style: Trailing whitespace is superfluous.
+    44974.0383091226, 23482.7084861681, 9214.33762886598, 11343.6670859968, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:336:76: style: Trailing whitespace is superfluous.
+    17482.8499642516, 31388.1799403295, 21434.4890768358, 16675.8007261038, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:337:76: style: Trailing whitespace is superfluous.
+    9497.12951457268, 41954.8149210379, 20128.4249748835, 14103.3263030828, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:338:74: style: Trailing whitespace is superfluous.
+    11641.4403122435, 9550.961803339, 29479.9064238981, 19222.3241459563, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:339:76: style: Trailing whitespace is superfluous.
+    22734.1155245227, 15814.1714066418, 30741.6061200135, 2049.54344345455, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:340:75: style: Trailing whitespace is superfluous.
+    9750.44454545454, 7714.33216420427, 7186.0173541382, 20594.6964349207, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:341:78: style: Trailing whitespace is superfluous.
+    9480.09964899884, 5222.25299081639, 0, 28274.573771926, 2331.62804347826, 
+                                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:342:76: style: Trailing whitespace is superfluous.
+    9326.51217391304, 3803.71764116812, 7134.93152763837, 19919.8607645116, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:343:76: style: Trailing whitespace is superfluous.
+    9270.88523498641, 7966.73500683345, 7288.46955398108, 25909.3109510919, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:344:66: style: Trailing whitespace is superfluous.
+    1123.490259, 6285.110184, 2357.08189434446, 4097.50690212164, 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:345:76: style: Trailing whitespace is superfluous.
+    16053.8794627622, 10090.1674213453, 15254.1753378617, 6860.66746250023, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:346:61: style: Trailing whitespace is superfluous.
+    24618.9545323967, 6958.42117259285, 0, 6174.39910524619, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:347:75: style: Trailing whitespace is superfluous.
+    9952.24004520023, 24046.760630201, 17127.8704994839, 11169.6394985728, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:348:61: style: Trailing whitespace is superfluous.
+    3934.13595429295, 24367.7260559393, 11706.9503136354, 0, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:349:76: style: Trailing whitespace is superfluous.
+    5779.64390720266, 13516.3799429772, 25012.8396984796, 16134.0505761624, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:350:76: style: Trailing whitespace is superfluous.
+    9828.30016531563, 3017.63018707227, 22847.3905876092, 8947.21255112159, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:351:66: style: Trailing whitespace is superfluous.
+    8937.87, 7377.8325809364, 7067.95956046367, 26137.0012877963, 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:352:76: style: Trailing whitespace is superfluous.
+    14911.0960587445, 12503.1471380179, 10418.0625575776, 35619.9799912466, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:353:64: style: Trailing whitespace is superfluous.
+    17598.2475944483, 0, 12924.9909053091, 0, 12003.2008162162, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:354:76: style: Trailing whitespace is superfluous.
+    8187.35853035716, 15113.9739002398, 8366.96030066912, 34576.3499556291, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:355:61: style: Trailing whitespace is superfluous.
+    20910.7927213909, 0, 9180.73475832001, 9173.11559210526, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:356:75: style: Trailing whitespace is superfluous.
+    12960.041052075, 12302.4626390285, 11813.2638205792, 5636.53510321049, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:357:67: style: Trailing whitespace is superfluous.
+    30848.2871952263, 18572.6547853626, 9168.18629593708, 8937.87, 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:358:71: style: Trailing whitespace is superfluous.
+    5306.413419, 11223.5349944232, 9012.25032189145, 14232.3678036943, 
+                                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:359:68: style: Trailing whitespace is superfluous.
+    10436.1572791593), Eigentumsart = c("Gesamtwald", "Gesamtwald", 
+                                                                   ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:360:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:361:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:362:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:363:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:364:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:365:74: style: Trailing whitespace is superfluous.
+    "Staatswald", "Staatswald", "Staatswald", "Staatswald", "Staatswald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:366:74: style: Trailing whitespace is superfluous.
+    "Staatswald", "Staatswald", "Staatswald", "Staatswald", "Staatswald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:367:74: style: Trailing whitespace is superfluous.
+    "Staatswald", "Staatswald", "Staatswald", "Staatswald", "Staatswald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:368:74: style: Trailing whitespace is superfluous.
+    "Staatswald", "Staatswald", "Staatswald", "Staatswald", "Staatswald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:369:74: style: Trailing whitespace is superfluous.
+    "Staatswald", "Staatswald", "Staatswald", "Staatswald", "Staatswald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:370:74: style: Trailing whitespace is superfluous.
+    "Staatswald", "Staatswald", "Körperschaftswald", "Körperschaftswald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:371:67: style: Trailing whitespace is superfluous.
+    "Körperschaftswald", "Körperschaftswald", "Körperschaftswald", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:372:67: style: Trailing whitespace is superfluous.
+    "Körperschaftswald", "Körperschaftswald", "Körperschaftswald", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:373:67: style: Trailing whitespace is superfluous.
+    "Körperschaftswald", "Körperschaftswald", "Körperschaftswald", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:374:67: style: Trailing whitespace is superfluous.
+    "Körperschaftswald", "Körperschaftswald", "Körperschaftswald", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:375:67: style: Trailing whitespace is superfluous.
+    "Körperschaftswald", "Körperschaftswald", "Körperschaftswald", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:376:67: style: Trailing whitespace is superfluous.
+    "Körperschaftswald", "Körperschaftswald", "Körperschaftswald", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:377:67: style: Trailing whitespace is superfluous.
+    "Körperschaftswald", "Körperschaftswald", "Körperschaftswald", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:378:67: style: Trailing whitespace is superfluous.
+    "Körperschaftswald", "Körperschaftswald", "Körperschaftswald", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:379:67: style: Trailing whitespace is superfluous.
+    "Körperschaftswald", "Privatwald", "Privatwald", "Privatwald", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:380:74: style: Trailing whitespace is superfluous.
+    "Privatwald", "Privatwald", "Privatwald", "Privatwald", "Privatwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:381:74: style: Trailing whitespace is superfluous.
+    "Privatwald", "Privatwald", "Privatwald", "Privatwald", "Privatwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:382:74: style: Trailing whitespace is superfluous.
+    "Privatwald", "Privatwald", "Privatwald", "Privatwald", "Privatwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:383:74: style: Trailing whitespace is superfluous.
+    "Privatwald", "Privatwald", "Privatwald", "Privatwald", "Privatwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:384:61: style: Trailing whitespace is superfluous.
+    "Privatwald", "Privatwald", "Privatwald", "Privatwald"), 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:385:73: style: Trailing whitespace is superfluous.
+    abbreviation = c("Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:386:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:386:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:387:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:387:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:388:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:388:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:389:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:389:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:390:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:390:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:391:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:391:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:392:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:392:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:393:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:393:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:394:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:394:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:395:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:395:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:396:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:396:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:397:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:397:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:398:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:398:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:399:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:399:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:400:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:400:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:401:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:401:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:402:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:402:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:403:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:403:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:404:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:404:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:405:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:405:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:406:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:406:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:407:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:407:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:408:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:408:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:409:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:409:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:410:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:410:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:411:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:411:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:412:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:412:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:413:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:413:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:414:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:414:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:415:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:415:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:416:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:416:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:417:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:417:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:418:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:418:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:419:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:419:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:420:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:420:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:421:69: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche")), .Names = c("bwi", "Baumartengruppe", 
+                                                                    ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:425:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:427:1: style: lines should not be more than 80 characters.
+  result <- plot_by_group(by_group, subs = "Eigentumsart == 'Gesamtwald'")[["data"]]
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:429:61: style: Trailing whitespace is superfluous.
+structure(list(bwi = structure(c(1L, 1L, 1L, 1L, 1L, 1L, 1L, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:430:64: style: Trailing whitespace is superfluous.
+1L, 1L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 2L, 3L, 3L, 3L, 3L, 3L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:431:72: style: Trailing whitespace is superfluous.
+3L, 3L, 3L, 3L), .Label = c("1987", "2002", "2012"), class = "factor"), 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:432:62: style: Trailing whitespace is superfluous.
+    Baumartengruppe = structure(c(1L, 2L, 3L, 4L, 5L, 6L, 7L, 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:433:64: style: Trailing whitespace is superfluous.
+    8L, 9L, 1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L, 9L, 1L, 2L, 3L, 4L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:434:61: style: Trailing whitespace is superfluous.
+    5L, 6L, 7L, 8L, 9L), .Label = c("FI", "TA", "DGL", "KI", 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:435:1: style: lines should not be more than 80 characters.
+    "LAE", "BU", "EI", "ALH", "ALN"), class = "factor"), prediction = c(401259.103910681, 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:435:90: style: Trailing whitespace is superfluous.
+    "LAE", "BU", "EI", "ALH", "ALN"), class = "factor"), prediction = c(401259.103910681, 
+                                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:436:74: style: Trailing whitespace is superfluous.
+    60966.931352984, 9223.15986702128, 44679.7533438112, 29988.181991633, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:437:74: style: Trailing whitespace is superfluous.
+    166402.405688824, 78250.2106277952, 59152.735807141, 17054.544910109, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:438:76: style: Trailing whitespace is superfluous.
+    376222.326820361, 88341.5405829897, 9214.33762886598, 25091.5627971649, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:439:75: style: Trailing whitespace is superfluous.
+    47369.9883162371, 187791.88661134, 80933.2131293814, 57783.1112706185, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:440:64: style: Trailing whitespace is superfluous.
+    21042.7828430412, 329903.038209, 73741.896435, 26295.21354, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:441:61: style: Trailing whitespace is superfluous.
+    26857.405563, 24734.661438, 190524.999642, 77120.411295, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:442:70: style: Trailing whitespace is superfluous.
+    105738.577248, 47808.66663), standard_error = c(44767.1164429632, 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:443:75: style: Trailing whitespace is superfluous.
+    18786.423689262, 9223.15986702128, 15781.2996788884, 12155.3505360441, 
+                                                                          ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:444:76: style: Trailing whitespace is superfluous.
+    31424.1393637099, 20762.3913432623, 19171.2636114755, 9254.65285554584, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:445:76: style: Trailing whitespace is superfluous.
+    44974.0383091226, 23482.7084861681, 9214.33762886598, 11343.6670859968, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:446:76: style: Trailing whitespace is superfluous.
+    17482.8499642516, 31388.1799403295, 21434.4890768358, 16675.8007261038, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:447:76: style: Trailing whitespace is superfluous.
+    9497.12951457268, 41954.8149210379, 20128.4249748835, 14103.3263030828, 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:448:74: style: Trailing whitespace is superfluous.
+    11641.4403122435, 9550.961803339, 29479.9064238981, 19222.3241459563, 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:449:72: style: Trailing whitespace is superfluous.
+    22734.1155245227, 15814.1714066418), Eigentumsart = c("Gesamtwald", 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:450:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:451:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:452:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:453:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:454:74: style: Trailing whitespace is superfluous.
+    "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", "Gesamtwald", 
+                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:455:62: style: Trailing whitespace is superfluous.
+    "Gesamtwald"), abbreviation = c("Baumartengruppenfläche", 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:456:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:456:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:457:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:457:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:458:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:458:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:459:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:459:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:460:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:460:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:461:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:461:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:462:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:462:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:463:1: style: lines should not be more than 80 characters.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:463:82: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche", "Baumartengruppenfläche", 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:464:76: style: Trailing whitespace is superfluous.
+    "Baumartengruppenfläche", "Baumartengruppenfläche")), .Names = c("bwi", 
+                                                                           ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:465:67: style: Trailing whitespace is superfluous.
+"Baumartengruppe", "prediction", "standard_error", "Eigentumsart", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:469:77: style: Trailing whitespace is superfluous.
+  result <- xtable_by_group(by_group, subs = "Eigentumsart == 'Gesamtwald'", 
+                                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:471:40: style: Trailing whitespace is superfluous.
+                label_prefix = "total") 
+                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:472:15: style: Trailing whitespace is superfluous.
+  reference <- 
+              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:473:64: style: Trailing whitespace is superfluous.
+structure(list(V1 = structure(c(6L, 9L, 4L, 7L, 8L, 3L, 5L, 1L, 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:474:65: style: Trailing whitespace is superfluous.
+2L, NA), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", 
+                                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:475:63: style: Trailing whitespace is superfluous.
+"10"), .Label = c("ALH", "ALN", "BU", "DGL", "EI", "FI", "KI", 
+                                                              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:476:62: style: Trailing whitespace is superfluous.
+"LAE", "TA"), class = "factor"), `1987` = structure(c(4L, 7L, 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:477:65: style: Trailing whitespace is superfluous.
+10L, 5L, 3L, 1L, 8L, 6L, 2L, 9L), .Names = c("1", "2", "3", "4", 
+                                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:478:69: style: Trailing whitespace is superfluous.
+"5", "6", "7", "8", "9", "10"), .Label = c("166,402.4", "17,054.54", 
+                                                                    ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:479:65: style: Trailing whitespace is superfluous.
+"29,988.18", "401,259.1", "44,679.75", "59,152.74", "60,966.93", 
+                                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:480:1: style: lines should not be more than 80 characters.
+"78,250.21", "866,977", "9,223.16"), class = "factor"), `2002` = structure(c(4L, 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:480:81: style: Trailing whitespace is superfluous.
+"78,250.21", "866,977", "9,223.16"), class = "factor"), `2002` = structure(c(4L, 
+                                                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:481:64: style: Trailing whitespace is superfluous.
+8L, 10L, 3L, 5L, 1L, 7L, 6L, 2L, 9L), .Names = c("1", "2", "3", 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:482:61: style: Trailing whitespace is superfluous.
+"4", "5", "6", "7", "8", "9", "10"), .Label = c("187,791.9", 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:483:65: style: Trailing whitespace is superfluous.
+"21,042.78", "25,091.56", "376,222.3", "47,369.99", "57,783.11", 
+                                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:484:72: style: Trailing whitespace is superfluous.
+"80,933.21", "88,341.54", "893,790.7", "9,214.338"), class = "factor"), 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:485:61: style: Trailing whitespace is superfluous.
+    `2012` = structure(c(6L, 8L, 4L, 5L, 3L, 2L, 9L, 1L, 7L, 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:486:61: style: Trailing whitespace is superfluous.
+    10L), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", 
+                                                            ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:487:64: style: Trailing whitespace is superfluous.
+    "9", "10"), .Label = c("105,738.6", "190,525", "24,734.66", 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:488:66: style: Trailing whitespace is superfluous.
+    "26,295.21", "26,857.41", "329,903", "47,808.67", "73,741.9", 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:489:1: style: lines should not be more than 80 characters.
+    "77,120.41", "902,724.9"), class = "factor"), `1987 - 2002` = structure(c(4L, 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:489:82: style: Trailing whitespace is superfluous.
+    "77,120.41", "902,724.9"), class = "factor"), `1987 - 2002` = structure(c(4L, 
+                                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:490:63: style: Trailing whitespace is superfluous.
+    9L, 1L, 3L, 10L, 5L, 8L, 2L, 6L, 7L), .Names = c("1", "2", 
+                                                              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:491:71: style: Trailing whitespace is superfluous.
+    "3", "4", "5", "6", "7", "8", "9", "10"), .Label = c("-0.0956531", 
+                                                                      ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:492:67: style: Trailing whitespace is superfluous.
+    "-2.315404", "-43.84131", "-6.239554", "12.85407", "23.38519", 
+                                                                  ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:493:72: style: Trailing whitespace is superfluous.
+    "3.092784", "3.428748", "44.90075", "57.96219"), class = "factor"), 
+                                                                       ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:494:65: style: Trailing whitespace is superfluous.
+    `2002 - 2012` = structure(c(1L, 2L, 8L, 9L, 4L, 6L, 3L, 10L, 
+                                                                ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:495:64: style: Trailing whitespace is superfluous.
+    7L, 5L), .Names = c("1", "2", "3", "4", "5", "6", "7", "8", 
+                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:496:66: style: Trailing whitespace is superfluous.
+    "9", "10"), .Label = c("-12.31168", "-16.52636", "-4.711047", 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:497:66: style: Trailing whitespace is superfluous.
+    "-47.78411", "0.9995762", "1.455395", "127.1975", "185.3728", 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:498:80: style: Trailing whitespace is superfluous.
+    "7.037596", "82.99218"), class = "factor"), `1987 - 2012` = structure(c(3L, 
+                                                                               ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:499:63: style: Trailing whitespace is superfluous.
+    8L, 7L, 4L, 2L, 5L, 1L, 10L, 6L, 9L), .Names = c("1", "2", 
+                                                              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:500:70: style: Trailing whitespace is superfluous.
+    "3", "4", "5", "6", "7", "8", "9", "10"), .Label = c("-1.443829", 
+                                                                     ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:501:66: style: Trailing whitespace is superfluous.
+    "-17.51864", "-17.78304", "-39.88909", "14.49654", "180.328", 
+                                                                 ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:502:1: style: lines should not be more than 80 characters.
+    "185.0998", "20.95393", "4.123274", "78.75518"), class = "factor")), .Names = c("V1", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:502:90: style: Trailing whitespace is superfluous.
+    "185.0998", "20.95393", "4.123274", "78.75518"), class = "factor")), .Names = c("V1", 
+                                                                                         ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:504:62: style: Trailing whitespace is superfluous.
+), row.names = c("1", "2", "3", "4", "5", "6", "7", "8", "9", 
+                                                             ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:505:1: style: lines should not be more than 80 characters.
+"10"), class = c("xtable", "data.frame"), caption = "Baumartengruppenfläche", label = "tab:total:Baumartengruppenfläche", align = c("r", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:505:137: style: Trailing whitespace is superfluous.
+"10"), class = c("xtable", "data.frame"), caption = "Baumartengruppenfläche", label = "tab:total:Baumartengruppenfläche", align = c("r", 
+                                                                                                                                        ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:506:62: style: Trailing whitespace is superfluous.
+"l", "l", "l", "l", "l", "l", "l"), digits = c(0, 2, 2, 2, 2, 
+                                                             ^
 NO COPY: inst/runit_tests/runit-local_global_objects.R:17:80: style: Trailing whitespace is superfluous.
   reference <- structure(list(ICode = structure(c(10L, 11L, 12L, 13L, 14L, 15L, 
                                                                                ^
@@ -2174,8 +3827,8 @@ NO COPY: R/BWI3_HR.R:177:7: style: Words within variable and function names shou
       fvbn.bagr.krs[[index]] <- FVBN.bagrupp.akl.dkl.stratum.fun.2d(
       ^~~~~~~~~~~~~
 NO COPY: R/BWI3_HR.R:179:1: style: lines should not be more than 80 characters.
-        list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = FALSE),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/BWI3_HR.R:182:7: style: Words within variable and function names should be separated by '_' rather than '.'.
       fvbn.bagr.krs[[index]]$Kreis <-
       ^~~~~~~~~~~~~
@@ -2213,8 +3866,8 @@ NO COPY: R/BWI3_HR.R:277:7: style: Words within variable and function names shou
       fvbn.bagr.stratum[[index]] <- FVBN.bagrupp.akl.dkl.stratum.fun.2d(
       ^~~~~~~~~~~~~~~~~
 NO COPY: R/BWI3_HR.R:279:1: style: lines should not be more than 80 characters.
-        list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F),
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        list(A.ob = 500, A.b = 500), list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = FALSE),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/BWI3_HR.R:283:7: style: Words within variable and function names should be separated by '_' rather than '.'.
       fvbn.bagr.stratum[[index]]$Eigentumsart <- eig.list[i]
       ^~~~~~~~~~~~~~~~~
@@ -9550,88 +11203,94 @@ NO COPY: R/figures_and_tables.R:45:1: style: lines should not be more than 80 ch
 NO COPY: R/figures_and_tables.R:60:1: style: lines should not be more than 80 characters.
   graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/figures_and_tables.R:93:32: style: Put spaces around all infix operators.
+      paste(bwi1$BAGR, collapse=", "), "."
+                              ~^~
 NO COPY: R/figures_and_tables.R:96:42: style: Opening curly braces should never go on their own line and should always be followed by a new line.
   if (abbreviation %in% bwi1$Attribute1) { ## Totals
                                          ^
 NO COPY: R/figures_and_tables.R:99:10: style: Opening curly braces should never go on their own line and should always be followed by a new line.
   } else { ## per hectar
          ^
-NO COPY: R/figures_and_tables.R:151:1: style: lines should not be more than 80 characters.
-  data_frame$species <- get_data("bagr.bwi")$ba.text[which(get_data("bagr.bwi")$bagr.lab == species)]
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:182:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:183:1: style: lines should not be more than 80 characters.
       ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:190:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:191:1: style: lines should not be more than 80 characters.
       ggplot2::scale_fill_manual(values = get_data("colors_bwi"), name = "BWI") +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:224:42: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/figures_and_tables.R:249:1: style: lines should not be more than 80 characters.
+reassemble_by_group <- function(owner, abbreviation, data_prefix = "FVBN.bagr") {
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/figures_and_tables.R:255:42: style: Opening curly braces should never go on their own line and should always be followed by a new line.
   if (abbreviation %in% bwi1$Attribute1) { ## Totals
                                          ^
-NO COPY: R/figures_and_tables.R:227:10: style: Opening curly braces should never go on their own line and should always be followed by a new line.
+NO COPY: R/figures_and_tables.R:258:10: style: Opening curly braces should never go on their own line and should always be followed by a new line.
   } else { ## per hectar
          ^
-NO COPY: R/figures_and_tables.R:243:23: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:274:23: style: Commas should never have a space before.
           )[index, 1, , , ],
                      ~^
-NO COPY: R/figures_and_tables.R:243:25: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:274:25: style: Commas should never have a space before.
           )[index, 1, , , ],
                        ~^
-NO COPY: R/figures_and_tables.R:247:23: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:278:23: style: Commas should never have a space before.
           )[index, 2, , , ]
                      ~^
-NO COPY: R/figures_and_tables.R:247:25: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:278:25: style: Commas should never have a space before.
           )[index, 2, , , ]
                        ~^
-NO COPY: R/figures_and_tables.R:257:23: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:288:23: style: Commas should never have a space before.
           )[index, 1, , , ],
                      ~^
-NO COPY: R/figures_and_tables.R:257:25: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:288:25: style: Commas should never have a space before.
           )[index, 1, , , ],
                        ~^
-NO COPY: R/figures_and_tables.R:261:23: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:292:23: style: Commas should never have a space before.
           )[index, 2, , , ]
                      ~^
-NO COPY: R/figures_and_tables.R:261:25: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:292:25: style: Commas should never have a space before.
           )[index, 2, , , ]
                        ~^
-NO COPY: R/figures_and_tables.R:271:23: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:302:23: style: Commas should never have a space before.
           )[index, 1, , , ],
                      ~^
-NO COPY: R/figures_and_tables.R:271:25: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:302:25: style: Commas should never have a space before.
           )[index, 1, , , ],
                        ~^
-NO COPY: R/figures_and_tables.R:275:23: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:306:23: style: Commas should never have a space before.
           )[index, 2, , , ]
                      ~^
-NO COPY: R/figures_and_tables.R:275:25: style: Commas should never have a space before.
+NO COPY: R/figures_and_tables.R:306:25: style: Commas should never have a space before.
           )[index, 2, , , ]
                        ~^
-NO COPY: R/figures_and_tables.R:280:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:311:1: style: lines should not be more than 80 characters.
   data_frame$abbreviation <- get_label_for_abbreviation(abbreviation, "text_label")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:328:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:361:1: style: lines should not be more than 80 characters.
       ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:336:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:369:1: style: lines should not be more than 80 characters.
       ggplot2::scale_fill_manual(values = get_data("colors_bwi"), name = "BWI") +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:339:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:372:1: style: lines should not be more than 80 characters.
       ggplot2::ylab(get_label_for_abbreviation(unique(data$abbreviation), "axis_label")) +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:369:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:402:1: style: lines should not be more than 80 characters.
   data_casted <- reshape2::dcast(data_molten[data_molten[["variable"]] == "prediction", TRUE],
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:375:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:408:1: style: lines should not be more than 80 characters.
   data_casted$"1987 - 2002" <- (data_casted[, 3] - data_casted[, 2]) / data_casted[, 2] * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:376:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:409:1: style: lines should not be more than 80 characters.
   data_casted$"2002 - 2012" <- (data_casted[, 4] - data_casted[, 3]) / data_casted[, 3] * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:377:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:410:1: style: lines should not be more than 80 characters.
   data_casted$"1987 - 2012" <- (data_casted[, 4] - data_casted[, 2]) / data_casted[, 2] * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/figures_and_tables.R:383:1: style: lines should not be more than 80 characters.
+NO COPY: R/figures_and_tables.R:411:1: style: lines should not be more than 80 characters.
+  data_bigmark <-  cbind(as.character(data_casted[, 1]), apply(data_casted[, 2:7], 2, prettyNum, big.mark = ","))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/figures_and_tables.R:417:1: style: lines should not be more than 80 characters.
     caption = get_text_label_for_abbreviation(unique(data_received$abbreviation)),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/fl.stratum.fun.R:27:1: style: lines should not be more than 80 characters.
@@ -12487,6 +14146,42 @@ NO COPY: R/variable_getters.R:182:1: style: lines should not be more than 80 cha
 NO COPY: tests/file_coverage/file_coverage.r:9:1: style: lines should not be more than 80 characters.
     test_file <- file.path(root, "tests", "testthat", paste0("test-local_", name))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/dumpdata.R:2:71: style: Trailing whitespace is superfluous.
+structure(list(axis.title = structure(list(family = NULL, face = NULL, 
+                                                                      ^
+NO COPY: tests/testthat/dumpdata.R:3:61: style: Trailing whitespace is superfluous.
+    colour = "black", size = 20, hjust = NULL, vjust = NULL, 
+                                                            ^
+NO COPY: tests/testthat/dumpdata.R:4:66: style: Trailing whitespace is superfluous.
+    angle = NULL, lineheight = NULL, margin = NULL, debug = NULL, 
+                                                                 ^
+NO COPY: tests/testthat/dumpdata.R:5:67: style: Trailing whitespace is superfluous.
+    inherit.blank = FALSE), .Names = c("family", "face", "colour", 
+                                                                  ^
+NO COPY: tests/testthat/dumpdata.R:6:68: style: Trailing whitespace is superfluous.
+"size", "hjust", "vjust", "angle", "lineheight", "margin", "debug", 
+                                                                   ^
+NO COPY: tests/testthat/dumpdata.R:7:1: style: lines should not be more than 80 characters.
+"inherit.blank"), class = c("element_text", "element")), axis.text = structure(list(
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/dumpdata.R:8:61: style: Trailing whitespace is superfluous.
+    family = NULL, face = NULL, colour = "black", size = 15, 
+                                                            ^
+NO COPY: tests/testthat/dumpdata.R:9:65: style: Trailing whitespace is superfluous.
+    hjust = NULL, vjust = NULL, angle = NULL, lineheight = NULL, 
+                                                                ^
+NO COPY: tests/testthat/dumpdata.R:10:78: style: Trailing whitespace is superfluous.
+    margin = NULL, debug = NULL, inherit.blank = FALSE), .Names = c("family", 
+                                                                             ^
+NO COPY: tests/testthat/dumpdata.R:11:67: style: Trailing whitespace is superfluous.
+"face", "colour", "size", "hjust", "vjust", "angle", "lineheight", 
+                                                                  ^
+NO COPY: tests/testthat/dumpdata.R:12:63: style: Trailing whitespace is superfluous.
+"margin", "debug", "inherit.blank"), class = c("element_text", 
+                                                              ^
+NO COPY: tests/testthat/dumpdata.R:13:72: style: Trailing whitespace is superfluous.
+"element"))), .Names = c("axis.title", "axis.text"), class = c("theme", 
+                                                                       ^
 NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:97:1: style: lines should not be more than 80 characters.
       Waldfl_StW = c(316376, 326979, 327388), SE_Waldfl_StW = c(9781, 9994, 9967),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -13213,63 +14908,198 @@ NO COPY: tests/testthat/test-local_abbreviations_and_labels.R:124:1: style: line
 NO COPY: tests/testthat/test-local_abbreviations_and_labels.R:125:1: style: lines should not be more than 80 characters.
   expect_gt(nchar(get_label_for_abbreviation("Baumartenfläche", "axis_label")), 0)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:11:4: style: Commented code should be removed.
-#  result <- get_R_CMD_BATCH_script_path()
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:12:4: style: Commented code should be removed.
-#  print(get_Rscript_script_path())
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:13:4: style: Commented code should be removed.
-#  print(get_R_CMD_BATCH_script_path())
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:14:4: style: Commented code should be removed.
-#  stop(get_script_path())
-   ^~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:15:4: style: Commented code should be removed.
-#  reference <- character(0)
-   ^~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:16:4: style: Commented code should be removed.
-#  testthat::expect_identical(result, reference)
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:17:4: style: Commented code should be removed.
-#  result <- get_Rscript_script_path()
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:18:4: style: Commented code should be removed.
-#  testthat::expect_identical(result, reference)
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:19:4: style: Commented code should be removed.
-#  result <- get_script_path()
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:20:4: style: Commented code should be removed.
-#  testthat::expect_identical(result, reference)
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:21:4: style: Commented code should be removed.
-#  result <- get_script_name()
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:22:4: style: Commented code should be removed.
-#  reference <- "interactive_R_session"
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:23:4: style: Commented code should be removed.
-#  testthat::expect_identical(result, reference)
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:24:4: style: Commented code should be removed.
-#  result <- is_batch()
-   ^~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:25:4: style: Commented code should be removed.
-#  reference <- ! interactive()
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:26:4: style: Commented code should be removed.
-#  testthat::expect_identical(result, reference)
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:28:4: style: Commented code should be removed.
-#  result <- provide_output_directory("graphics", path = tempdir())
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:29:4: style: Commented code should be removed.
-#  testthat::expect_identical(graphics_directory, result)
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_batch.R:30:4: style: Commented code should be removed.
-#  testthat::expect_true(dir.exists(result))
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:11:3: style: Commented code should be removed.
+# #  result <- get_R_CMD_BATCH_script_path()
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:12:3: style: Commented code should be removed.
+# #  print(get_Rscript_script_path())
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:13:3: style: Commented code should be removed.
+# #  print(get_R_CMD_BATCH_script_path())
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:14:3: style: Commented code should be removed.
+# #  stop(get_script_path())
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:15:3: style: Commented code should be removed.
+# #  reference <- character(0)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:16:3: style: Commented code should be removed.
+# #  testthat::expect_identical(result, reference)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:17:3: style: Commented code should be removed.
+# #  result <- get_Rscript_script_path()
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:18:3: style: Commented code should be removed.
+# #  testthat::expect_identical(result, reference)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:19:3: style: Commented code should be removed.
+# #  result <- get_script_path()
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:20:3: style: Commented code should be removed.
+# #  testthat::expect_identical(result, reference)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:21:3: style: Commented code should be removed.
+# #  result <- get_script_name()
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:22:3: style: Commented code should be removed.
+# #  reference <- "interactive_R_session"
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:23:3: style: Commented code should be removed.
+# #  testthat::expect_identical(result, reference)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:24:3: style: Commented code should be removed.
+# #  result <- is_batch()
+  ^~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:25:3: style: Commented code should be removed.
+# #  reference <- ! interactive()
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:26:3: style: Commented code should be removed.
+# #  testthat::expect_identical(result, reference)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:28:3: style: Commented code should be removed.
+# #  result <- provide_output_directory("graphics", path = tempdir())
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:29:3: style: Commented code should be removed.
+# #  testthat::expect_identical(graphics_directory, result)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_batch.R:30:3: style: Commented code should be removed.
+# #  testthat::expect_true(dir.exists(result))
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:12:71: style: Trailing whitespace is superfluous.
+structure(list(Ozone = c(41, 36, 12, 18, NA, 28, NA), Solar.R = c(190, 
+                                                                      ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:13:63: style: Trailing whitespace is superfluous.
+118, 149, 313, NA, NA, NA), Wind = c(7.4, 8, 12.6, 11.5, 14.3, 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:14:65: style: Trailing whitespace is superfluous.
+14.9, 68.7), Temp = c(67, 72, 74, 62, 56, 66, 397), Month = c(5, 
+                                                                ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:15:72: style: Trailing whitespace is superfluous.
+5, 5, 5, 5, 5, 30), Day = c(1, 2, 3, 4, 5, 6, 21)), .Names = c("Ozone", 
+                                                                       ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:16:63: style: Trailing whitespace is superfluous.
+"Solar.R", "Wind", "Temp", "Month", "Day"), row.names = c("1", 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:24:71: style: Trailing whitespace is superfluous.
+structure(list(Ozone = c(41, 36, 12, 18, NA, 28, NA), Solar.R = c(190, 
+                                                                      ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:25:63: style: Trailing whitespace is superfluous.
+118, 149, 313, NA, NA, NA), Wind = c(7.4, 8, 12.6, 11.5, 14.3, 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:26:65: style: Trailing whitespace is superfluous.
+14.9, 68.7), Temp = c(67, 72, 74, 62, 56, 66, 397), Month = c(5, 
+                                                                ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:27:72: style: Trailing whitespace is superfluous.
+5, 5, 5, 5, 5, 30), Day = c(1, 2, 3, 4, 5, 6, 21)), .Names = c("Ozone", 
+                                                                       ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:28:63: style: Trailing whitespace is superfluous.
+"Solar.R", "Wind", "Temp", "Month", "Day"), row.names = c("1", 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:60:61: style: Trailing whitespace is superfluous.
+structure(list(mpg = c(21, 21, 22.8, 21.4, 20, 20, 20, 24.4, 
+                                                            ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:61:62: style: Trailing whitespace is superfluous.
+22.8, 20, 20, 20, 20, 20, 20, 20, 20, 32.4, 30.4, 33.9, 21.5, 
+                                                             ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:62:62: style: Trailing whitespace is superfluous.
+20, 20, 20, 20, 27.3, 26, 30.4, 20, 20, 20, 21.4), cyl = c(6, 
+                                                             ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:63:63: style: Trailing whitespace is superfluous.
+6, 4, 6, 8, 6, 8, 4, 4, 6, 6, 8, 8, 8, 8, 8, 8, 4, 4, 4, 4, 8, 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:64:65: style: Trailing whitespace is superfluous.
+8, 8, 8, 4, 4, 4, 8, 6, 8, 4), disp = c(160, 160, 108, 258, 360, 
+                                                                ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:65:64: style: Trailing whitespace is superfluous.
+225, 360, 146.7, 140.8, 167.6, 167.6, 275.8, 275.8, 275.8, 472, 
+                                                               ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:66:66: style: Trailing whitespace is superfluous.
+460, 440, 78.7, 75.7, 71.1, 120.1, 318, 304, 350, 400, 79, 120.3, 
+                                                                 ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:67:63: style: Trailing whitespace is superfluous.
+95.1, 351, 145, 301, 121), hp = c(110, 110, 93, 110, 175, 105, 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:68:61: style: Trailing whitespace is superfluous.
+245, 62, 95, 123, 123, 180, 180, 180, 205, 215, 230, 66, 52, 
+                                                            ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:69:62: style: Trailing whitespace is superfluous.
+65, 97, 150, 150, 245, 175, 66, 91, 113, 264, 175, 335, 109), 
+                                                             ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:70:65: style: Trailing whitespace is superfluous.
+    drat = c(3.9, 3.9, 3.85, 3.08, 3.15, 2.76, 3.21, 3.69, 3.92, 
+                                                                ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:71:61: style: Trailing whitespace is superfluous.
+    3.92, 3.92, 3.07, 3.07, 3.07, 2.93, 3, 3.23, 4.08, 4.93, 
+                                                            ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:72:63: style: Trailing whitespace is superfluous.
+    4.22, 3.7, 2.76, 3.15, 3.73, 3.08, 4.08, 4.43, 3.77, 4.22, 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:73:62: style: Trailing whitespace is superfluous.
+    3.62, 3.54, 4.11), wt = c(2.62, 2.875, 2.32, 3.215, 3.44, 
+                                                             ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:74:64: style: Trailing whitespace is superfluous.
+    3.46, 3.57, 3.19, 3.15, 3.44, 3.44, 4.07, 3.73, 3.78, 5.25, 
+                                                               ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:75:63: style: Trailing whitespace is superfluous.
+    5.424, 5.345, 2.2, 1.615, 1.835, 2.465, 3.52, 3.435, 3.84, 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:76:72: style: Trailing whitespace is superfluous.
+    3.845, 1.935, 2.14, 1.513, 3.17, 2.77, 3.57, 2.78), qsec = c(16.46, 
+                                                                       ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:77:62: style: Trailing whitespace is superfluous.
+    17.02, 18.61, 19.44, 17.02, 20.22, 15.84, 20, 22.9, 18.3, 
+                                                             ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:78:61: style: Trailing whitespace is superfluous.
+    18.9, 17.4, 17.6, 18, 17.98, 17.82, 17.42, 19.47, 18.52, 
+                                                            ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:79:62: style: Trailing whitespace is superfluous.
+    19.9, 20.01, 16.87, 17.3, 15.41, 17.05, 18.9, 16.7, 16.9, 
+                                                             ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:80:63: style: Trailing whitespace is superfluous.
+    14.5, 15.5, 14.6, 18.6), vs = c(0, 0, 1, 1, 0, 1, 0, 1, 1, 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:81:61: style: Trailing whitespace is superfluous.
+    1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 
+                                                            ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:82:63: style: Trailing whitespace is superfluous.
+    0, 0, 0, 1), am = c(1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                              ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:83:62: style: Trailing whitespace is superfluous.
+    0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1), 
+                                                             ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:84:61: style: Trailing whitespace is superfluous.
+    gear = c(4, 4, 4, 3, 3, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3, 3, 
+                                                            ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:85:65: style: Trailing whitespace is superfluous.
+    3, 4, 4, 4, 3, 3, 3, 3, 3, 4, 5, 5, 5, 5, 5, 4), carb = c(4, 
+                                                                ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:86:61: style: Trailing whitespace is superfluous.
+    4, 1, 1, 2, 1, 4, 2, 2, 4, 4, 3, 3, 3, 4, 4, 4, 1, 2, 1, 
+                                                            ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:87:67: style: Trailing whitespace is superfluous.
+    1, 2, 2, 4, 2, 1, 2, 2, 4, 6, 8, 2)), .Names = c("mpg", "cyl", 
+                                                                  ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:89:61: style: Trailing whitespace is superfluous.
+), row.names = c("Mazda RX4", "Mazda RX4 Wag", "Datsun 710", 
+                                                            ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:90:64: style: Trailing whitespace is superfluous.
+"Hornet 4 Drive", "Hornet Sportabout", "Valiant", "Duster 360", 
+                                                               ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:91:64: style: Trailing whitespace is superfluous.
+"Merc 240D", "Merc 230", "Merc 280", "Merc 280C", "Merc 450SE", 
+                                                               ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:92:74: style: Trailing whitespace is superfluous.
+"Merc 450SL", "Merc 450SLC", "Cadillac Fleetwood", "Lincoln Continental", 
+                                                                         ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:93:66: style: Trailing whitespace is superfluous.
+"Chrysler Imperial", "Fiat 128", "Honda Civic", "Toyota Corolla", 
+                                                                 ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:94:66: style: Trailing whitespace is superfluous.
+"Toyota Corona", "Dodge Challenger", "AMC Javelin", "Camaro Z28", 
+                                                                 ^
+NO COPY: tests/testthat/test-local_bits_and_pieces.R:95:66: style: Trailing whitespace is superfluous.
+"Pontiac Firebird", "Fiat X1-9", "Porsche 914-2", "Lotus Europa", 
+                                                                 ^
 NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:13:15: style: Trailing whitespace is superfluous.
   reference <- 
               ^
@@ -27403,6 +29233,105 @@ NO COPY: tests/testthat/test-local_deadwood.R:71:1: style: lines should not be m
 NO COPY: tests/testthat/test-local_deadwood.R:86:1: style: lines should not be more than 80 characters.
 "tvol", "thf", "anz", "tart", "tbagr", "tzg"), class = "data.frame", row.names = c(NA,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_figures_and_tables.R:12:71: style: Trailing whitespace is superfluous.
+structure(list(axis.title = structure(list(family = NULL, face = NULL, 
+                                                                      ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:13:61: style: Trailing whitespace is superfluous.
+    colour = "black", size = 20, hjust = NULL, vjust = NULL, 
+                                                            ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:14:66: style: Trailing whitespace is superfluous.
+    angle = NULL, lineheight = NULL, margin = NULL, debug = NULL, 
+                                                                 ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:15:67: style: Trailing whitespace is superfluous.
+    inherit.blank = FALSE), .Names = c("family", "face", "colour", 
+                                                                  ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:16:68: style: Trailing whitespace is superfluous.
+"size", "hjust", "vjust", "angle", "lineheight", "margin", "debug", 
+                                                                   ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:17:1: style: lines should not be more than 80 characters.
+"inherit.blank"), class = c("element_text", "element")), axis.text = structure(list(
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_figures_and_tables.R:18:61: style: Trailing whitespace is superfluous.
+    family = NULL, face = NULL, colour = "black", size = 15, 
+                                                            ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:19:65: style: Trailing whitespace is superfluous.
+    hjust = NULL, vjust = NULL, angle = NULL, lineheight = NULL, 
+                                                                ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:20:78: style: Trailing whitespace is superfluous.
+    margin = NULL, debug = NULL, inherit.blank = FALSE), .Names = c("family", 
+                                                                             ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:21:67: style: Trailing whitespace is superfluous.
+"face", "colour", "size", "hjust", "vjust", "angle", "lineheight", 
+                                                                  ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:22:63: style: Trailing whitespace is superfluous.
+"margin", "debug", "inherit.blank"), class = c("element_text", 
+                                                              ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:23:72: style: Trailing whitespace is superfluous.
+"element"))), .Names = c("axis.title", "axis.text"), class = c("theme", 
+                                                                       ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:25:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: tests/testthat/test-local_figures_and_tables.R:31:71: style: Trailing whitespace is superfluous.
+structure(list(plot.title = structure(list(family = NULL, face = NULL, 
+                                                                      ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:32:61: style: Trailing whitespace is superfluous.
+    colour = "black", size = 14, hjust = NULL, vjust = NULL, 
+                                                            ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:33:66: style: Trailing whitespace is superfluous.
+    angle = NULL, lineheight = NULL, margin = NULL, debug = NULL, 
+                                                                 ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:34:67: style: Trailing whitespace is superfluous.
+    inherit.blank = FALSE), .Names = c("family", "face", "colour", 
+                                                                  ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:35:68: style: Trailing whitespace is superfluous.
+"size", "hjust", "vjust", "angle", "lineheight", "margin", "debug", 
+                                                                   ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:36:1: style: lines should not be more than 80 characters.
+"inherit.blank"), class = c("element_text", "element"))), .Names = "plot.title", class = c("theme", 
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_figures_and_tables.R:36:100: style: Trailing whitespace is superfluous.
+"inherit.blank"), class = c("element_text", "element"))), .Names = "plot.title", class = c("theme", 
+                                                                                                   ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:38:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: tests/testthat/test-local_figures_and_tables.R:44:72: style: Trailing whitespace is superfluous.
+structure(list(legend.text = structure(list(family = NULL, face = NULL, 
+                                                                       ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:45:61: style: Trailing whitespace is superfluous.
+    colour = "black", size = 20, hjust = NULL, vjust = NULL, 
+                                                            ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:46:66: style: Trailing whitespace is superfluous.
+    angle = NULL, lineheight = NULL, margin = NULL, debug = NULL, 
+                                                                 ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:47:67: style: Trailing whitespace is superfluous.
+    inherit.blank = FALSE), .Names = c("family", "face", "colour", 
+                                                                  ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:48:68: style: Trailing whitespace is superfluous.
+"size", "hjust", "vjust", "angle", "lineheight", "margin", "debug", 
+                                                                   ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:49:1: style: lines should not be more than 80 characters.
+"inherit.blank"), class = c("element_text", "element")), legend.title = structure(list(
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: tests/testthat/test-local_figures_and_tables.R:50:61: style: Trailing whitespace is superfluous.
+    family = NULL, face = NULL, colour = "black", size = 20, 
+                                                            ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:51:65: style: Trailing whitespace is superfluous.
+    hjust = NULL, vjust = NULL, angle = NULL, lineheight = NULL, 
+                                                                ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:52:78: style: Trailing whitespace is superfluous.
+    margin = NULL, debug = NULL, inherit.blank = FALSE), .Names = c("family", 
+                                                                             ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:53:67: style: Trailing whitespace is superfluous.
+"face", "colour", "size", "hjust", "vjust", "angle", "lineheight", 
+                                                                  ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:54:63: style: Trailing whitespace is superfluous.
+"margin", "debug", "inherit.blank"), class = c("element_text", 
+                                                              ^
+NO COPY: tests/testthat/test-local_figures_and_tables.R:55:76: style: Trailing whitespace is superfluous.
+"element"))), .Names = c("legend.text", "legend.title"), class = c("theme", 
+                                                                           ^
 NO COPY: tests/testthat/test-local_fl.stratum.fun.R:12:15: style: Trailing whitespace is superfluous.
   reference <- 
               ^
