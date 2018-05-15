@@ -1,7 +1,7 @@
 
 
-Executing test function test_adapt_script  ... backed up /tmp/RtmpB9LHMS/file2c9d2d083960.R to /tmp/RtmpB9LHMS/file2c9d2d083960.R_adapted.
-adapted /tmp/RtmpB9LHMS/file2c9d2d083960.R.
+Executing test function test_adapt_script  ... backed up /tmp/RtmpRQ5ccM/file52d777bdddc.R to /tmp/RtmpRQ5ccM/file52d777bdddc.R_adapted.
+adapted /tmp/RtmpRQ5ccM/file52d777bdddc.R.
  done successfully.
 
 
@@ -13,7 +13,8 @@ In addition: There were 11 warnings (use warnings() to see them)
 
 
 
-Executing test function test_ownership_groups  ...  done successfully.
+Executing test function test_ownership_groups  ... [1] TRUE
+ done successfully.
 
 
 

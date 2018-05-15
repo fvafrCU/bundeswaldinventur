@@ -1735,6 +1735,15 @@ NO COPY: inst/runit_tests/runit-figures_and_tables.R:496:137: style: Trailing wh
 NO COPY: inst/runit_tests/runit-figures_and_tables.R:497:62: style: Trailing whitespace is superfluous.
 "l", "l", "l", "l", "l", "l", "l"), digits = c(0, 2, 2, 2, 2, 
                                                              ^
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:499:1: style: lines should not be more than 80 characters.
+print(all.equal(capture.output(print(reference)), capture.output(print(result))))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:500:1: style: Trailing whitespace is superfluous.
+  
+^~
+NO COPY: inst/runit_tests/runit-figures_and_tables.R:501:1: style: lines should not be more than 80 characters.
+  RUnit::checkEquals(capture.output(print(reference)), capture.output(print(result)))
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: inst/runit_tests/runit-local_global_objects.R:17:80: style: Trailing whitespace is superfluous.
   reference <- structure(list(ICode = structure(c(10L, 11L, 12L, 13L, 14L, 15L, 
                                                                                ^

@@ -496,8 +496,9 @@ structure(list(V1 = structure(c(6L, 9L, 4L, 7L, 8L, 3L, 5L, 1L,
 -10L), class = c("xtable", "data.frame"), caption = "Baumartengruppenfläche", label = "tab:total:Baumartengruppenfläche", align = c("r", 
 "l", "l", "l", "l", "l", "l", "l"), digits = c(0, 2, 2, 2, 2, 
 2, 2, 2), display = c("s", "s", "s", "s", "s", "s", "s", "s"))
-
-  RUnit::checkEquals(reference, result)
+print(all.equal(capture.output(print(reference)), capture.output(print(result))))
+  
+  RUnit::checkEquals(capture.output(print(reference)), capture.output(print(result)))
 }
 
 if (FALSE) {
