@@ -1,12 +1,17 @@
-RUNIT TEST PROTOCOL -- Tue May 15 09:41:42 2018 
+RUNIT TEST PROTOCOL -- Tue May 15 15:53:47 2018 
 *********************************************** 
 Number of test functions: 9 
 Number of errors: 0 
-Number of failures: 0 
+Number of failures: 1 
 
  
 1 Test Suite : 
-bundeswaldinventur_unit_test - 9 test functions, 0 errors, 0 failures
+bundeswaldinventur_unit_test - 9 test functions, 0 errors, 1 failure
+FAILURE in test_ownership_groups: Error in RUnit::checkEquals(reference, result) : 
+  Component "1987 - 2002": Attributes: < Component "levels": 9 string mismatches >
+Component "2002 - 2012": Attributes: < Component "levels": 8 string mismatches >
+Component "1987 - 2012": Attributes: < Component "levels": 7 string mismatches >
+
 
 
 
@@ -16,23 +21,28 @@ Test Suite: bundeswaldinventur_unit_test
 Test function regexp: ^test_+ 
 Test file regexp: ^.*\.[rR] 
 Involved directory: 
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests 
+/home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests 
 --------------------------- 
-Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-adapt_script.R 
-test_adapt_script: (3 checks) ... OK (0 seconds)
+Test file: /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-adapt_script.R 
+test_adapt_script: (3 checks) ... OK (0.03 seconds)
 --------------------------- 
-Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-figures_and_tables.R 
-test_melt: (4 checks) ... OK (0.65 seconds)
-test_ownership_groups: (5 checks) ... OK (1.44 seconds)
+Test file: /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-figures_and_tables.R 
+test_melt: (4 checks) ... OK (0.94 seconds)
+test_ownership_groups: FAILURE !! (check number 5)
+Error in RUnit::checkEquals(reference, result) : 
+  Component "1987 - 2002": Attributes: < Component "levels": 9 string mismatches >
+Component "2002 - 2012": Attributes: < Component "levels": 8 string mismatches >
+Component "1987 - 2012": Attributes: < Component "levels": 7 string mismatches >
+
 --------------------------- 
-Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-local_global_objects.R 
+Test file: /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-local_global_objects.R 
 test_get_global_objects: (1 checks) ... OK (0.01 seconds)
-test_get_global_variables: (2 checks) ... OK (0 seconds)
+test_get_global_variables: (2 checks) ... OK (0.01 seconds)
 test_get_package_data: (3 checks) ... OK (0.01 seconds)
 --------------------------- 
-Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-throw.R 
+Test file: /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-throw.R 
 test_exception: (1 checks) ... OK (0 seconds)
 --------------------------- 
-Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-tree_species_shares.R 
-test_cast_tree_species_percent: (1 checks) ... OK (0.01 seconds)
-test_tree_species_precent: (1 checks) ... OK (0 seconds)
+Test file: /home/qwer/git/cyclops/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-tree_species_shares.R 
+test_cast_tree_species_percent: (1 checks) ... OK (0.07 seconds)
+test_tree_species_precent: (1 checks) ... OK (0.02 seconds)
