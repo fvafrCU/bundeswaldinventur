@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 devtools::load_all()
-source("regional.R")
+#source("regional.R")
 
 
 bundeswaldinventur::get_global_objects()
