@@ -8,9 +8,6 @@
 #' @name get_design("a", 3) Header for
 NULL
 
-# FIXME: flaechen.kreis.fun.1 assumes krs.list to be in the parent environment.
-# We should fix that function.
-
 context("BWI3_HR_Landkreis_Funktionen_v1.R")
 
 test_that("flaechen.kreis.fun.1", {

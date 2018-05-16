@@ -21,7 +21,7 @@ refactored.stratum.fun <- function(auswahl, ecken) {
     dim(values) <- dim(stratum)
     colnames(values) <- names(stratum)
     stratum <- as.data.frame(values)
-    stratum[is.na(stratum)] <- 0 #TODO: Why that?
+    stratum[is.na(stratum)] <- 0 
     return(stratum)
 }
 

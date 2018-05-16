@@ -1,6 +1,3 @@
-# FIXME: flaechen.kreis.fun.1 assumes krs.list to be in the parent environment.
-# We should fix that function.
-
 if (interactive()) devtools::load_all()
 if (FALSE) {
     dump("result")

@@ -3798,7 +3798,7 @@ test_that("biotop.baeume.fun", {
   )
   if (paste(R.version$major, R.version$minor, sep = ".") == "3.4.3" && 
       exists("IS_R_CMD_CHECK") && isTRUE(IS_R_CMD_CHECK)) {
-      # FIXME: This is a bit spooky, R CMD check seems to change the ordering of
+      # NOTE: This is a bit spooky, R CMD check seems to change the ordering of
       # a factor ...?
   reference <- 
 list(Stratum = list(Wa = 5, Begehbar = 1), nTE = 97L, HBF = 902724.87, 

@@ -80,7 +80,7 @@ structure(list(Log = structure(list(Datum = structure(1524828672.60354, class = 
   reference[["Log"]] <- NULL
   testthat::expect_equal(result, reference)
 
-  # FIXME: Es geht um unbesetzte
+  # NOTE: Es geht um unbesetzte
   # Klassen.
   A.klass <- list(A.ob = 100, A.b = 50)
   result <- FVBN(

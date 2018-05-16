@@ -378,7 +378,7 @@ test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
   testthat::expect_equal(result, reference)
 
   A.klass <- list(A.ob = 100, A.b = 50)
-  # FIXME: Es geht um unbesetzte
+  # NOTE: Es geht um unbesetzte
   # Klassen.
   result <- FVBN(
     get_data("baeume.3")[1:10, ], get_data("ecken.3"), get_data("trakte.3"), get_design("a", 3), 2,

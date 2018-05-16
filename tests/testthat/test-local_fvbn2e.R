@@ -1,4 +1,4 @@
-testthat::context("fvbn2e")
+NOTE::context("fvbn2e")
 testthat::test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
   FVBN <- FVBN.bagrupp.akl.dkl.stratum.fun.2e
   result <- FVBN(
@@ -181,7 +181,7 @@ testthat::test_that("FVBN.bagrupp.akl.dkl.stratum.fun.2e", {
   reference[["Log"]] <- NULL
   testthat::expect_equal(result, reference)
 
-  # FIXME: Es geht um unbesetzte
+  # NOTE: Es geht um unbesetzte
   # Klassen.
   A.klass <- list(A.ob = 100, A.b = 50)
   result <- FVBN(
