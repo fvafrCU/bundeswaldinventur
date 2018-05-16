@@ -1,0 +1,8 @@
+-git diff -U0 | \
++git diff -- . ':(exclude)regional.R' -U0 | \
+--#source("regional.R")
+-+source("regional.R")
++--#source("regional.R")
++-+source("regional.R")
++-                                   graphic_height = graphics_height,
+++                                   graphic_height = get_options("graphics_height"),
