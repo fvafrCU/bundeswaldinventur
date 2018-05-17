@@ -135,7 +135,6 @@
                               )
 
         for (stratum_index in 1:length(stratii)) {
-            stratum_index <- stratum_index
             to_tex('\\newpage') 
                    to_tex('\\section{',names(stratii[stratum_index]),'}')
 
@@ -271,11 +270,15 @@
         ###% plot deadwood
         to_tex('\\clearpage') 
         to_tex("\\subsection{Totholz}") 
-        plot_deadwood(d_2, d_3_2, d_3, d_2a, d_3_2a, d_3a,
+        plot_deadwood(deadwood_2 = d_2, deadwood_3_2 = d_3_2, deadwood_3 = d_3, 
+                      deadwood_2a = d_2a, deadwood_3_2a = d_3_2a, 
+                      deadwood_3a = d_3a,
                       graphic_directory = graphics_directory, 
                       plots_directory = plots_directory,
                       file_name_district = regional_file_name,
-                      title_district = tree_species_groups$string[i]
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index
                       )
 
         ###% growth and loss

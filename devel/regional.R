@@ -1083,6 +1083,8 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
 #' @param file_name_district FIXME
 #' @param title_district FIXME
 #' @param plots_directory FIXME
+#' @param stratum_index FIXME
+#' @param stratii FIXME
 plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
                           deadwood_2a, deadwood_3_2a, deadwood_3a,
                           graphic_width = get_options("graphics_width"),
@@ -1090,7 +1092,9 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
                           graphic_directory,
                           file_name_district,
                           plots_directory,
-                          title_district) {
+                          title_district,
+                          stratum_index,
+                          stratii) {
   deadwood_class <- c(
     "Liegend", "Stehend (Baum)", "Stehend (Bruchst\u00fcck)",
     "Wurzelstock", "Abfuhrrest", "Gesamtvorrat"
@@ -1143,10 +1147,9 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
     ggplot2::aes(
       y = prediction,
       x = group,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
+      fill = bwi,
+      group = bwi)  
+    ) +
     ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
     ggplot2::geom_errorbar(ggplot2::aes(
       ymin = prediction - standard_error,

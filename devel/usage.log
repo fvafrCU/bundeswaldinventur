@@ -1,5 +1,3 @@
-plot_deadwood: no visible binding for global variable 'stratii'
-plot_deadwood: no visible binding for global variable 'stratum_index'
 plot_deadwood: no visible binding for global variable 'prediction'
 plot_deadwood: no visible binding for global variable 'group'
 plot_deadwood: no visible binding for global variable 'bwi'
