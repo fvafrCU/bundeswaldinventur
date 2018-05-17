@@ -8,12 +8,12 @@
     } else {
         tmp_regional_name <- regional_name
     }
-    regional_file_name <<- gsub("/", "_",gsub(" ", "_", tmp_regional_name))
+    regional_file_name <- gsub("/", "_",gsub(" ", "_", tmp_regional_name))
     district_file_name <- gsub(" ", "", gsub("/", "_",
                                               ascii_umlauts(regional_file_name)))
     district_tex_name <- tex_umlauts(district_name)
     district_tex <- paste0("Auswertung_", district_file_name, ".tex")
-    dot_district_tex <<- paste0(".", district_file_name, ".tex")
+    dot_district_tex <- paste0(".", district_file_name, ".tex")
     abstracts_directory <- "district_abstracts"
     district_abstract <- file.path(abstracts_directory,
                                    paste0(district_file_name, ".latex"))
@@ -84,7 +84,7 @@
             # get_species_groups() # returns ba.text as first list element.
             # Instead of refactoring get_species_groups() and the calls to
             # district_groups, I swap ba.text and bagr.lab from bagr.bwi it here. 
-            district_groups <<- append(
+            district_groups <- append(
                                        append(bagr.bwi["ba.text"], 
                                               bagr.bwi[
                                                 setdiff(names(bagr.bwi), 
@@ -94,21 +94,21 @@
                                                 , bagr.bwi["ba.lab"])
         } else {
             ###% calculate species' area shares without grouping
-            fvbn.krs <<- FVBN(baeume.3, ecken.3, trakte.3, A, 2, bagr.xx, 
+            fvbn.krs <- FVBN(baeume.3, ecken.3, trakte.3, A, 2, bagr.xx, 
                               list(A.ob = 500, A.b = 500), 
                               list(D.unt = 0, D.ob = 500, D.b = 500, Ndh = F), 
                               append(list(Wa = c(3, 5), Begehbar = 1), regional))
-            baf_prozente <<- round(fvbn.krs$FVBN.ha.Bagr.Akl.Dkl[1, 1, 1:n.bagr.xx, , ], 
+            baf_prozente <- round(fvbn.krs$FVBN.ha.Bagr.Akl.Dkl[1, 1, 1:n.bagr.xx, , ], 
                                    2)
             names(baf_prozente) <- bagr.xx$ba.text
             ###% calculate species' groups specific for district
-            district_groups <<- group_district_species(shares = baf_prozente)
+            district_groups <- group_district_species(shares = baf_prozente)
         }
         # now that we've got the new groups per district, we use them to 
         # calculate statistics for the districts
         ###% define different stratii
         if (is_big_stratum) {
-            stratii <<- list(
+            stratii <- list(
                              "Gesamtwald" = NULL,
                              # TODO: shouldn't this be StW plus BW, to make the
                              # following three sum up to the previous?
@@ -118,14 +118,14 @@
                              )
         } else {
             public_codes <- setdiff(levels(ecken.3$EigArt), "PW")
-            stratii <<- list(
+            stratii <- list(
                              "Gesamtwald" = NULL,
                              "Privatwald" = list(EigArt = c("PW")),
                              "Öffentlicher Wald" = list(EigArt = public_codes)
                              )
         }
         if (district_code == 437)
-            stratii <<- append(stratii, 
+            stratii <- append(stratii, 
                               c(
                               list("Gesamtwald, Wuchsgebiet 6" = 
                                    list(WGNr_BW = 6)),
@@ -135,7 +135,7 @@
                               )
 
         for (stratum_index in 1:length(stratii)) {
-            stratum_index <<- stratum_index
+            stratum_index <- stratum_index
             to_tex('\\newpage') 
                    to_tex('\\section{',names(stratii[stratum_index]),'}')
 
