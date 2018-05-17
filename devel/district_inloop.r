@@ -271,9 +271,12 @@
         ###% plot deadwood
         to_tex('\\clearpage') 
         to_tex("\\subsection{Totholz}") 
-        plot_deadwood(d_2, d_3_2, d_3, d_2a, d_3_2a, d_3a, tree_species_groups = krs.grupp, 
-                      graphics_directory = graphics_directory, 
-                      plots_directory = plots_directory)
+        plot_deadwood(d_2, d_3_2, d_3, d_2a, d_3_2a, d_3a,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      title_district = tree_species_groups$string[i]
+                      )
 
         ###% growth and loss
         za_23 <- iVB.ew.bagrupp.akl.dkl.stratum.fun.2(baeume.23, baeume.3,

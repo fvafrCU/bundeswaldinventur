@@ -1082,19 +1082,15 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
 #' @param graphic_directory FIXME
 #' @param file_name_district FIXME
 #' @param title_district FIXME
-#' @param tree_species_groups FIXME
 #' @param plots_directory FIXME
-#' @param graphic_directory FIXME
 plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
                           deadwood_2a, deadwood_3_2a, deadwood_3a,
                           graphic_width = get_options("graphics_width"),
                           graphic_height = get_options("graphics_height"),
-                          graphic_directory = graphics_directory,
-                          file_name_district = regional_file_name,
-                          graphics_directory,
+                          graphic_directory,
+                          file_name_district,
                           plots_directory,
-                          tree_species_groups) {
-    title_district  <- tree_species_groups$string[i]
+                          title_district) {
   deadwood_class <- c(
     "Liegend", "Stehend (Baum)", "Stehend (Bruchst\u00fcck)",
     "Wurzelstock", "Abfuhrrest", "Gesamtvorrat"
