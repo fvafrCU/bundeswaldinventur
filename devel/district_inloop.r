@@ -271,7 +271,7 @@
         ###% plot deadwood
         to_tex('\\clearpage') 
         to_tex("\\subsection{Totholz}") 
-        plot_deadwood(d_2, d_3_2, d_3, d_2a, d_3_2a, d_3a)
+        plot_deadwood(d_2, d_3_2, d_3, d_2a, d_3_2a, d_3a, tree_species_groups = krs.grupp)
 
         ###% growth and loss
         za_23 <- iVB.ew.bagrupp.akl.dkl.stratum.fun.2(baeume.23, baeume.3,
