@@ -257,7 +257,6 @@ copyright <- function() {
 #' @param title_district FIXME
 #' @param species_groups_labels FIXME
 #' @param have_title FIXME
-
 plot_groups_areas <- function(b1, b2, b3,
                               do_errors_relative = FALSE,
                           graphic_width = get_options("graphics_width"),
@@ -479,6 +478,7 @@ plot_groups_areas <- function(b1, b2, b3,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param b1 FIXME
 #' @param b2 FIXME
 #' @param b3 FIXME
@@ -725,6 +725,7 @@ plot_groups_stocks <- function(b1, b2, b3,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param b1 FIXME
 #' @param b2 FIXME
 #' @param b3 FIXME
@@ -909,6 +910,7 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param b1 FIXME
 #' @param b2 FIXME
 #' @param b3 FIXME
@@ -1253,6 +1255,7 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param g_l_12 FIXME
 #' @param g_l_23 FIXME
 #' @param g_l_12_all FIXME
@@ -1416,6 +1419,7 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param ownerships FIXME
 #' @param graphic_width FIXME
 #' @param graphic_height FIXME
@@ -1516,6 +1520,7 @@ ntns_output <- function(ntns.list) {
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param ntns1 FIXME
 #' @param ntns2 FIXME
 #' @param graphic_width FIXME
@@ -1645,6 +1650,7 @@ plot_ntns <- function(ntns2, ntns3,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param loss1 FIXME
 #' @param loss2 FIXME
 #' @param loss1_all FIXME
@@ -1810,6 +1816,7 @@ plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param r2_a FIXME
 #' @param r2_bs1 FIXME
 #' @param r2_bs2 FIXME
@@ -1942,6 +1949,7 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param relevant_species_2 FIXME
 #' @param relevant_species_3 FIXME
 #' @param do_errors_relative FIXME

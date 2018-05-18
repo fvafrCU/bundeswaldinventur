@@ -10,6 +10,7 @@ configure
 ^.*\.sh$
 ^.*\.cl$
 ^.*\.Rout$
+^devel$
 ^tmp.*$
 ^tests.r$
 ^devtools.r$
