@@ -1142,13 +1142,14 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
     horizontal = FALSE, onefile = FALSE, paper = "special",
     family = "Courier"
   )
-  tplot(ggplot2::ggplot(
+  tplot(
+        ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = group,
-      fill = bwi,
-      group = bwi)  
+    ggplot2::aes_string(
+      y = "prediction",
+      x = "group",
+      fill = "bwi",
+      group = "bwi")  
     ) +
     ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
     ggplot2::geom_errorbar(ggplot2::aes(
@@ -1164,7 +1165,8 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
     ggplot2::ylab(expression(paste("Vorrat [", m^3,
       ha^-1, "]",
       sep = ""
-    ))) + copyright() + ggplot2::ggtitle("2012*: Berechnung nach Kriterien von 2002"))
+    ))) + copyright() + ggplot2::ggtitle("2012*: Berechnung nach Kriterien von 2002")
+    )
   grDevices::dev.off()
   file.link(
     to = file.path(plots_directory, out_file),
