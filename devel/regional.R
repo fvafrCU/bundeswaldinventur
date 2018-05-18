@@ -1262,12 +1262,16 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
 #' @param species_groups_labels FIXME
 plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
                              do_errors_relative = FALSE,
-                             graphic_width = get_options("graphics_width"),
-                             graphic_height = graphics_height,
-                             graphic_directory = graphics_directory,
-                             file_name_district = regional_file_name,
-                             title_district = krs.grupp$string[i],
-                             species_groups_labels = district_groups$ba.text) {
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
+                          species_groups_labels) {
   species_label <- factor(c(species_groups_labels, "Alle BA"),
     levels = c(species_groups_labels, "Alle BA")
   )
@@ -1324,20 +1328,17 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
     )
   tplot1(ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = x,
-      fill = foo
-    )
-  ) +
-    ggplot2::geom_bar(
-      stat = "identity", position = ggplot2::position_dodge()
-      , size = 1
-    ) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "x",
+        fill = "foo")  
+      ) +
+         ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge(),
+                           size = 1) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .6,
     position = ggplot2::position_dodge(width = 0.9)
     , size = 1

@@ -334,7 +334,16 @@
         to_tex("\\subsection{Zuwachs und ausgeschiedener Vorrat}") 
         to_tex("Ausgeschiedener Vorrat umfasst genutzte und ungenutzt im Wald
                verbliebene Mengen.")
-        plot_growth_loss(za_12, za_23, za_12_all)
+        plot_growth_loss(za_12, za_23, za_12_all,
+                        species_groups_labels = district_groups$ba.text,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index
+                        )
         ###% Nutzungen
         za_23_d <- iVB.ew.bagrupp.akl.dkl.stratum.fun.2(baeume.23, baeume.3,
                                                         list(bagr.lab = c("Alle Baumarten"), ba.grupp = list(c(10:299))),
