@@ -72,7 +72,15 @@
         to_tex('Diese Auswertung bezieht sich auf die gesamte Waldfl\\"a{}che,
                einschlie\\ss{}lich Nichtholzboden. Alle folgenden Auswertungen
                betrachten nur den begehbaren, bestockten Holzboden.') 
-        plot_ownership(owners)
+        plot_ownership(owners,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index
+                       )
         # FIXME: this is crap, we check on the internal names of global
         # lists! If we change those lists' names, we'll for sure forget this
         # peace of bullshit (the is.null(...) catches the whole country):
@@ -258,7 +266,15 @@
         to_tex("Bei der Bestimmung der Naturn\"a{}he wurde der Vergleichbarkeit
                wegen f\"u{}r BWI 2 und BWI 3 die Zuordnung der
                nat\"u{}rlichen Waldgesellschaft der BWI 3 zugrundegelegt.") 
-        plot_ntns(n2, n3)
+        plot_ntns(n2, n3,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index
+                  )
         ##% silviculturally relevant species
         to_tex("\\subsection{Forstlich bedeutsame Arten}") 
         silviculturally_relevant_3 <- fba.stratum.fun(c(11:18), fba.3, 
@@ -273,7 +289,16 @@
                                                    regional), stratii[[stratum_index]]),
                                               ecken.2, trakte.2, A.12)
         plot_silviculturally_relevant(silviculturally_relevant_2,
-                                      silviculturally_relevant_3)
+                                      silviculturally_relevant_3,
+                                      graphic_directory = graphics_directory, 
+                                      plots_directory = plots_directory,
+                                      file_name_district = regional_file_name,
+                                      dot_district_tex = dot_district_tex,
+                                      title_district = krs.grupp$string[i],
+                                      stratii = stratii,
+                                      stratum_index = stratum_index,
+                                      species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                                      )
         ###% calculate deadwood
         ####% over all deadwood classes
         d_3a <- dead(totholz.3, ecken.3, trakte.3, 3, 3, NA, A,
@@ -405,7 +430,15 @@
                                           append(append(list(Wa=c(3,5),Begehbar=1), regional), stratii[[stratum_index]]),
                                           A)
 
-        regeneration(reg2_a, reg2_bs1, reg2_bs2, reg3_a, reg3_bs1, reg3_bs2)
+        regeneration(reg2_a, reg2_bs1, reg2_bs2, reg3_a, reg3_bs1, reg3_bs2,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index
+                     )
         }
     }
     to_tex(tex_back_matter, file_name = district_tex)

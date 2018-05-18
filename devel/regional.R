@@ -26,12 +26,13 @@ get_label_for_NatHoe <- function(height_class) {
 #' @keywords internal
 #' @param file_name FIXME
 #' @param out FIXME
-tex_table <- function(file_name, out) {
+tex_table <- function(file_name, out, graphics = get("graphics_directory"),
+                      tables = get("tables_directory")) {
   tools::texi2dvi(file_name, pdf = TRUE, clean = TRUE)
   pdf_name <- sub("\\.tex$", "\\.pdf", basename(file_name))
-  file.rename(pdf_name, file.path(graphics_directory, pdf_name))
-  table_pdf <- ascii_umlauts(file.path(graphics_directory, paste0("table_", out, ".pdf")))
-  table_pdf_out <- file.path(tables_directory, paste0(out, ".pdf"))
+  file.rename(pdf_name, file.path(graphics, pdf_name))
+  table_pdf <- ascii_umlauts(file.path(graphics, paste0("table_", out, ".pdf")))
+  table_pdf_out <- file.path(tables, paste0(out, ".pdf"))
   file.link(
     to = table_pdf_out,
     from = file.path(table_pdf)
@@ -42,9 +43,9 @@ tex_table <- function(file_name, out) {
 #'
 #' @export
 #' @keywords internal
-table_tex_front_matter <- function() {
+table_tex_front_matter <- function(comment = get("generator_notice")) {
   return(c(
-    generator_notice,
+    comment,
     "\\documentclass{standalone}\n",
     "\\input{.tex/preamble.latex}\n",
     "\\usepackage{caption}\n",
@@ -163,7 +164,7 @@ tplot1 <- function(obj) {
 #' @param ... FIXME
 #' @param file_name FIXME
 #' @param append FIXME
-to_tex <- function(..., file_name = dot_district_tex, append = TRUE) {
+to_tex <- function(..., file_name = get("dot_district_tex"), append = TRUE) {
   cat(..., "\n", file = file_name, append = append, sep = "")
 }
 
@@ -243,6 +244,7 @@ copyright <- function() {
 #' FIXME
 #'
 #' @export
+#' @inheritParams plot_deadwood
 #' @keywords internal
 #' @param b1 FIXME
 #' @param b2 FIXME
@@ -255,6 +257,7 @@ copyright <- function() {
 #' @param title_district FIXME
 #' @param species_groups_labels FIXME
 #' @param have_title FIXME
+
 plot_groups_areas <- function(b1, b2, b3,
                               do_errors_relative = FALSE,
                           graphic_width = get_options("graphics_width"),
@@ -1420,11 +1423,15 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
 #' @param file_name_district FIXME
 #' @param title_district FIXME
 plot_ownership <- function(ownerships,
-                           graphic_width = get_options("graphics_width"),
-                           graphic_height = graphics_height,
-                           graphic_directory = graphics_directory,
-                           file_name_district = regional_file_name,
-                           title_district = krs.grupp$string[i]) {
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii) {
   ownerships$labels <- map_abbreviations_to_labels(ownerships$ownership)
   ownerships$ownership_realive_area <- paste0(round_and_prettify_german(ownerships$area / sum(ownerships$area) * 100), "%")
 
@@ -1432,10 +1439,10 @@ plot_ownership <- function(ownerships,
   ownerships$radius <- c(rep(c(1.6, 1.8), length.out = nrow(ownerships)))
   tmp <- ggplot2::ggplot(
     data = ownerships,
-    ggplot2::aes(
-      x = factor(1),
-      weight = area,
-      fill = ownership
+    ggplot2::aes_string(
+      x = "factor(1)",
+      weight = "area",
+      fill = "ownership"
     )
   ) + ggplot2::geom_bar() + ggplot2::coord_polar(theta = "y") +
     ggplot2::xlab("") + ggplot2::ylab("") + ggplot2::scale_x_discrete(breaks = NULL) +
@@ -1444,9 +1451,9 @@ plot_ownership <- function(ownerships,
       , name = "Eigentumsart",
       labels = ownerships$ownership
     ) +
-    ggplot2::geom_text(ggplot2::aes(
-      x = radius, y = position,
-      label = ownership_realive_area
+    ggplot2::geom_text(ggplot2::aes_string(
+      x = "radius", y = "position",
+      label = "ownership_realive_area"
     )
     ,
     size = 6, color = "black"
@@ -1518,11 +1525,15 @@ ntns_output <- function(ntns.list) {
 #' @param title_district FIXME
 #' @param have_title FIXME
 plot_ntns <- function(ntns2, ntns3,
-                      graphic_width = get_options("graphics_width"),
-                      graphic_height = graphics_height,
-                      graphic_directory = graphics_directory,
-                      file_name_district = regional_file_name,
-                      title_district = krs.grupp$string[i],
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
                               have_title = FALSE) {
   data_frame <- rbind(
     cbind(ntns_output(ntns2), bwi = "2002"),
@@ -1532,18 +1543,17 @@ plot_ntns <- function(ntns2, ntns3,
   names(data_frame) <- sub("Anteil", "prediction", names(data_frame))
   tmp <- ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = NTNS,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "NTNS",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +
@@ -1813,11 +1823,15 @@ plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
 #' @param title_district FIXME
 regeneration <- function(r2_a, r2_bs1, r2_bs2,
                          r3_a, r3_bs1, r3_bs2,
-                         graphic_width = get_options("graphics_width"),
-                         graphic_height = graphics_height,
-                         graphic_directory = graphics_directory,
-                         file_name_district = regional_file_name,
-                         title_district = krs.grupp$string[i]) {
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii) {
   regeneration3 <- data.frame(
     group = c(r3_a$BAGR, "Alle Arten"),
     prediction = r3_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ],
@@ -1940,12 +1954,16 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
 #' @param have_title FIXME
 plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3,
                                           do_errors_relative = FALSE,
-                                          graphic_width = get_options("graphics_width"),
-                                          graphic_height = graphics_height,
-                                          graphic_directory = graphics_directory,
-                                          file_name_district = regional_file_name,
-                                          title_district = krs.grupp$string[i],
-                                          species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
+                          species_groups_labels,
                               have_title = FALSE) {
   data_frame <- rbind(
     data.frame(
@@ -1972,18 +1990,17 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
   )
   tplot1(ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = species,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "species",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +
