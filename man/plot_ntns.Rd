@@ -5,9 +5,9 @@
 \title{FIXME}
 \usage{
 plot_ntns(ntns2, ntns3, graphic_width = get_options("graphics_width"),
-  graphic_height = graphics_height, graphic_directory = graphics_directory,
-  file_name_district = regional_file_name,
-  title_district = krs.grupp$string[i], have_title = FALSE)
+  graphic_height = get_options("graphics_height"), graphic_directory,
+  file_name_district, dot_district_tex, plots_directory, title_district,
+  stratum_index, stratii, have_title = FALSE)
 }
 \arguments{
 \item{ntns2}{FIXME}
@@ -20,7 +20,13 @@ plot_ntns(ntns2, ntns3, graphic_width = get_options("graphics_width"),
 
 \item{file_name_district}{FIXME}
 
+\item{plots_directory}{FIXME}
+
 \item{title_district}{FIXME}
+
+\item{stratum_index}{FIXME}
+
+\item{stratii}{FIXME}
 
 \item{have_title}{FIXME}
 

@@ -4,7 +4,7 @@
 \alias{to_tex}
 \title{FIXME}
 \usage{
-to_tex(..., file_name = dot_district_tex, append = TRUE)
+to_tex(..., file_name = get("dot_district_tex"), append = TRUE)
 }
 \arguments{
 \item{...}{FIXME}

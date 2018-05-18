@@ -6,9 +6,9 @@
 \usage{
 regeneration(r2_a, r2_bs1, r2_bs2, r3_a, r3_bs1, r3_bs2,
   graphic_width = get_options("graphics_width"),
-  graphic_height = graphics_height, graphic_directory = graphics_directory,
-  file_name_district = regional_file_name,
-  title_district = krs.grupp$string[i])
+  graphic_height = get_options("graphics_height"), graphic_directory,
+  file_name_district, dot_district_tex, plots_directory, title_district,
+  stratum_index, stratii)
 }
 \arguments{
 \item{r2_a}{FIXME}
@@ -31,7 +31,13 @@ regeneration(r2_a, r2_bs1, r2_bs2, r3_a, r3_bs1, r3_bs2,
 
 \item{file_name_district}{FIXME}
 
+\item{plots_directory}{FIXME}
+
 \item{title_district}{FIXME}
+
+\item{stratum_index}{FIXME}
+
+\item{stratii}{FIXME}
 }
 \description{
 FIXME

@@ -4,7 +4,7 @@
 \alias{table_tex_front_matter}
 \title{FIXME}
 \usage{
-table_tex_front_matter()
+table_tex_front_matter(comment = get("generator_notice"))
 }
 \description{
 FIXME

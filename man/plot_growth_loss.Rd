@@ -6,10 +6,9 @@
 \usage{
 plot_growth_loss(g_l_12, g_l_23, g_l_12_all, do_errors_relative = FALSE,
   graphic_width = get_options("graphics_width"),
-  graphic_height = graphics_height, graphic_directory = graphics_directory,
-  file_name_district = regional_file_name,
-  title_district = krs.grupp$string[i],
-  species_groups_labels = district_groups$ba.text)
+  graphic_height = get_options("graphics_height"), graphic_directory,
+  file_name_district, dot_district_tex, plots_directory, title_district,
+  stratum_index, stratii, species_groups_labels)
 }
 \arguments{
 \item{g_l_12}{FIXME}
@@ -28,7 +27,13 @@ plot_growth_loss(g_l_12, g_l_23, g_l_12_all, do_errors_relative = FALSE,
 
 \item{file_name_district}{FIXME}
 
+\item{plots_directory}{FIXME}
+
 \item{title_district}{FIXME}
+
+\item{stratum_index}{FIXME}
+
+\item{stratii}{FIXME}
 
 \item{species_groups_labels}{FIXME}
 }

@@ -1,6 +1,6 @@
-# bundeswaldinventur 0.15.1.9000
+# bundeswaldinventur 0.16.0
 
-* FIXME
+* Internalized undeclared global objects from regional.R
 
 # bundeswaldinventur 0.15.1
 

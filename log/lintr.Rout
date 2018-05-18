@@ -13141,952 +13141,928 @@ NO COPY: R/labeling.R:334:1: style: lines should not be more than 80 characters.
 NO COPY: R/regional.R:3:3: style: Commented code should be removed.
 # d_name <- paste0(gsub(' ', '_', gsub('/', '_', file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:32:35: warning: no visible binding for global variable 'graphics_directory'
-  file.rename(pdf_name, file.path(graphics_directory, pdf_name))
-                                  ^~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:33:1: style: lines should not be more than 80 characters.
-  table_pdf <- ascii_umlauts(file.path(graphics_directory, paste0("table_", out, ".pdf")))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:33:40: warning: no visible binding for global variable 'graphics_directory'
-  table_pdf <- ascii_umlauts(file.path(graphics_directory, paste0("table_", out, ".pdf")))
-                                       ^~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:34:30: warning: no visible binding for global variable 'tables_directory'
-  table_pdf_out <- file.path(tables_directory, paste0(out, ".pdf"))
-                             ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:101:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:102:1: style: lines should not be more than 80 characters.
     ggplot2::theme(plot.title = ggplot2::element_text(colour = "black", size = 14))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:111:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:112:1: style: lines should not be more than 80 characters.
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = -70, hjust = 0, vjust = 1))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:121:1: style: lines should not be more than 80 characters.
-  graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:138:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:122:1: style: lines should not be more than 80 characters.
   graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/regional.R:139:1: style: lines should not be more than 80 characters.
+  graphics::plot(obj + theme_bold_axes() + theme_bold_title() + theme_bold_legend() +
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:140:1: style: lines should not be more than 80 characters.
     ggplot2::theme(strip.text.y = ggplot2::element_text(size = 12)) + theme_rotate_xasis_labels())
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:182:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:183:1: style: lines should not be more than 80 characters.
                              species_list = get_bwi_species_groups("regional")) {
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:211:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:212:1: style: lines should not be more than 80 characters.
                c("Fichte", "Wei\u00dftanne", "Douglasie", "Kiefer", "L\u00e4rchen/sNB"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:265:1: style: lines should not be more than 80 characters.
-                              species_groups_labels = c(district_groups$ba.text, "Alle BA"),
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:275:23: style: Words within variable and function names should be separated by '_' rather than '.'.
-      prediction = b1$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
-                      ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:275:49: style: Commas should never have a space before.
-      prediction = b1$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
-                                               ~^
-NO COPY: R/regional.R:275:51: style: Commas should never have a space before.
-      prediction = b1$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
-                                                 ~^
-NO COPY: R/regional.R:276:27: style: Words within variable and function names should be separated by '_' rather than '.'.
-      standard_error = b1$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
-                          ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:276:53: style: Commas should never have a space before.
-      standard_error = b1$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
-                                                   ~^
-NO COPY: R/regional.R:276:55: style: Commas should never have a space before.
-      standard_error = b1$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
-                                                     ~^
 NO COPY: R/regional.R:281:23: style: Words within variable and function names should be separated by '_' rather than '.'.
-      prediction = b2$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
+      prediction = b1$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~
 NO COPY: R/regional.R:281:49: style: Commas should never have a space before.
-      prediction = b2$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
+      prediction = b1$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
                                                ~^
 NO COPY: R/regional.R:281:51: style: Commas should never have a space before.
-      prediction = b2$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
+      prediction = b1$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
                                                  ~^
 NO COPY: R/regional.R:282:27: style: Words within variable and function names should be separated by '_' rather than '.'.
-      standard_error = b2$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
+      standard_error = b1$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~
 NO COPY: R/regional.R:282:53: style: Commas should never have a space before.
-      standard_error = b2$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
+      standard_error = b1$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
                                                    ~^
 NO COPY: R/regional.R:282:55: style: Commas should never have a space before.
-      standard_error = b2$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
+      standard_error = b1$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
                                                      ~^
 NO COPY: R/regional.R:287:23: style: Words within variable and function names should be separated by '_' rather than '.'.
-      prediction = b3$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
+      prediction = b2$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~
 NO COPY: R/regional.R:287:49: style: Commas should never have a space before.
-      prediction = b3$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
+      prediction = b2$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
                                                ~^
 NO COPY: R/regional.R:287:51: style: Commas should never have a space before.
-      prediction = b3$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
+      prediction = b2$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
                                                  ~^
 NO COPY: R/regional.R:288:27: style: Words within variable and function names should be separated by '_' rather than '.'.
-      standard_error = b3$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
+      standard_error = b2$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~
 NO COPY: R/regional.R:288:53: style: Commas should never have a space before.
-      standard_error = b3$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
+      standard_error = b2$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
                                                    ~^
 NO COPY: R/regional.R:288:55: style: Commas should never have a space before.
+      standard_error = b2$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
+                                                     ~^
+NO COPY: R/regional.R:293:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+      prediction = b3$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
+                      ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:293:49: style: Commas should never have a space before.
+      prediction = b3$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
+                                               ~^
+NO COPY: R/regional.R:293:51: style: Commas should never have a space before.
+      prediction = b3$T.FVBN.Bagr.Akl.Dkl[1, 1, , , ],
+                                                 ~^
+NO COPY: R/regional.R:294:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+      standard_error = b3$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
+                          ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:294:53: style: Commas should never have a space before.
+      standard_error = b3$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
+                                                   ~^
+NO COPY: R/regional.R:294:55: style: Commas should never have a space before.
       standard_error = b3$T.FVBN.Bagr.Akl.Dkl[1, 2, , , ]
                                                      ~^
-NO COPY: R/regional.R:293:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:299:1: style: lines should not be more than 80 characters.
   d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:293:112: warning: no visible binding for global variable 'stratii', Did you mean 'strtoi'?
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                               ^~~~~~~
-NO COPY: R/regional.R:293:120: warning: no visible binding for global variable 'stratum_index'
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                       ^~~~~~~~~~~~~
-NO COPY: R/regional.R:341:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:315:23: style: Trailing whitespace is superfluous.
+        group = "bwi")  
+                      ^~
+NO COPY: R/regional.R:317:1: style: lines should not be more than 80 characters.
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:346:1: style: lines should not be more than 80 characters.
     table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:375:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:380:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:397:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:402:23: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = b1$FVBN.ha.Bagr.Akl.Dkl[1, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:397:50: style: Commas should never have a space before.
+NO COPY: R/regional.R:402:50: style: Commas should never have a space before.
       prediction = b1$FVBN.ha.Bagr.Akl.Dkl[1, 1, , , ],
                                                 ~^
-NO COPY: R/regional.R:397:52: style: Commas should never have a space before.
+NO COPY: R/regional.R:402:52: style: Commas should never have a space before.
       prediction = b1$FVBN.ha.Bagr.Akl.Dkl[1, 1, , , ],
                                                   ~^
-NO COPY: R/regional.R:398:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:403:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = b1$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:398:54: style: Commas should never have a space before.
+NO COPY: R/regional.R:403:54: style: Commas should never have a space before.
       standard_error = b1$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                                                     ~^
-NO COPY: R/regional.R:398:56: style: Commas should never have a space before.
+NO COPY: R/regional.R:403:56: style: Commas should never have a space before.
       standard_error = b1$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                                                       ~^
-NO COPY: R/regional.R:403:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:408:23: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = b2$FVBN.ha.Bagr.Akl.Dkl[1, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:403:50: style: Commas should never have a space before.
+NO COPY: R/regional.R:408:50: style: Commas should never have a space before.
       prediction = b2$FVBN.ha.Bagr.Akl.Dkl[1, 1, , , ],
                                                 ~^
-NO COPY: R/regional.R:403:52: style: Commas should never have a space before.
+NO COPY: R/regional.R:408:52: style: Commas should never have a space before.
       prediction = b2$FVBN.ha.Bagr.Akl.Dkl[1, 1, , , ],
                                                   ~^
-NO COPY: R/regional.R:404:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:409:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = b2$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:404:54: style: Commas should never have a space before.
+NO COPY: R/regional.R:409:54: style: Commas should never have a space before.
       standard_error = b2$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                                                     ~^
-NO COPY: R/regional.R:404:56: style: Commas should never have a space before.
+NO COPY: R/regional.R:409:56: style: Commas should never have a space before.
       standard_error = b2$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                                                       ~^
-NO COPY: R/regional.R:409:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:414:23: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = b3$FVBN.ha.Bagr.Akl.Dkl[1, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:409:50: style: Commas should never have a space before.
+NO COPY: R/regional.R:414:50: style: Commas should never have a space before.
       prediction = b3$FVBN.ha.Bagr.Akl.Dkl[1, 1, , , ],
                                                 ~^
-NO COPY: R/regional.R:409:52: style: Commas should never have a space before.
+NO COPY: R/regional.R:414:52: style: Commas should never have a space before.
       prediction = b3$FVBN.ha.Bagr.Akl.Dkl[1, 1, , , ],
                                                   ~^
-NO COPY: R/regional.R:410:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:415:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = b3$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:410:54: style: Commas should never have a space before.
+NO COPY: R/regional.R:415:54: style: Commas should never have a space before.
       standard_error = b3$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                                                     ~^
-NO COPY: R/regional.R:410:56: style: Commas should never have a space before.
+NO COPY: R/regional.R:415:56: style: Commas should never have a space before.
       standard_error = b3$FVBN.ha.Bagr.Akl.Dkl[1, 2, , , ]
                                                       ~^
-NO COPY: R/regional.R:419:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:424:1: style: lines should not be more than 80 characters.
     table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:452:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:457:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:494:1: style: lines should not be more than 80 characters.
-                               species_groups_labels = c(district_groups$ba.text, "Alle BA"),
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:504:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:514:23: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = b1$T.FVBN.Bagr.Akl.Dkl[2, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:504:49: style: Commas should never have a space before.
+NO COPY: R/regional.R:514:49: style: Commas should never have a space before.
       prediction = b1$T.FVBN.Bagr.Akl.Dkl[2, 1, , , ],
                                                ~^
-NO COPY: R/regional.R:504:51: style: Commas should never have a space before.
+NO COPY: R/regional.R:514:51: style: Commas should never have a space before.
       prediction = b1$T.FVBN.Bagr.Akl.Dkl[2, 1, , , ],
                                                  ~^
-NO COPY: R/regional.R:505:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:515:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = b1$T.FVBN.Bagr.Akl.Dkl[2, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:505:53: style: Commas should never have a space before.
+NO COPY: R/regional.R:515:53: style: Commas should never have a space before.
       standard_error = b1$T.FVBN.Bagr.Akl.Dkl[2, 2, , , ]
                                                    ~^
-NO COPY: R/regional.R:505:55: style: Commas should never have a space before.
+NO COPY: R/regional.R:515:55: style: Commas should never have a space before.
       standard_error = b1$T.FVBN.Bagr.Akl.Dkl[2, 2, , , ]
                                                      ~^
-NO COPY: R/regional.R:510:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:520:23: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = b2$T.FVBN.Bagr.Akl.Dkl[2, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:510:49: style: Commas should never have a space before.
+NO COPY: R/regional.R:520:49: style: Commas should never have a space before.
       prediction = b2$T.FVBN.Bagr.Akl.Dkl[2, 1, , , ],
                                                ~^
-NO COPY: R/regional.R:510:51: style: Commas should never have a space before.
+NO COPY: R/regional.R:520:51: style: Commas should never have a space before.
       prediction = b2$T.FVBN.Bagr.Akl.Dkl[2, 1, , , ],
                                                  ~^
-NO COPY: R/regional.R:511:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:521:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = b2$T.FVBN.Bagr.Akl.Dkl[2, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:511:53: style: Commas should never have a space before.
+NO COPY: R/regional.R:521:53: style: Commas should never have a space before.
       standard_error = b2$T.FVBN.Bagr.Akl.Dkl[2, 2, , , ]
                                                    ~^
-NO COPY: R/regional.R:511:55: style: Commas should never have a space before.
+NO COPY: R/regional.R:521:55: style: Commas should never have a space before.
       standard_error = b2$T.FVBN.Bagr.Akl.Dkl[2, 2, , , ]
                                                      ~^
-NO COPY: R/regional.R:516:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:526:23: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = b3$T.FVBN.Bagr.Akl.Dkl[2, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:516:49: style: Commas should never have a space before.
+NO COPY: R/regional.R:526:49: style: Commas should never have a space before.
       prediction = b3$T.FVBN.Bagr.Akl.Dkl[2, 1, , , ],
                                                ~^
-NO COPY: R/regional.R:516:51: style: Commas should never have a space before.
+NO COPY: R/regional.R:526:51: style: Commas should never have a space before.
       prediction = b3$T.FVBN.Bagr.Akl.Dkl[2, 1, , , ],
                                                  ~^
-NO COPY: R/regional.R:517:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:527:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = b3$T.FVBN.Bagr.Akl.Dkl[2, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:517:53: style: Commas should never have a space before.
+NO COPY: R/regional.R:527:53: style: Commas should never have a space before.
       standard_error = b3$T.FVBN.Bagr.Akl.Dkl[2, 2, , , ]
                                                    ~^
-NO COPY: R/regional.R:517:55: style: Commas should never have a space before.
+NO COPY: R/regional.R:527:55: style: Commas should never have a space before.
       standard_error = b3$T.FVBN.Bagr.Akl.Dkl[2, 2, , , ]
                                                      ~^
-NO COPY: R/regional.R:527:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:537:1: style: lines should not be more than 80 characters.
   d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:527:112: warning: no visible binding for global variable 'stratii', Did you mean 'strtoi'?
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                               ^~~~~~~
-NO COPY: R/regional.R:527:120: warning: no visible binding for global variable 'stratum_index'
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                       ^~~~~~~~~~~~~
-NO COPY: R/regional.R:557:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:548:46: style: Put spaces around all infix operators.
+    data = data_frame[data_frame[["species"]]!= "Alle BA", TRUE],
+                                            ~^
+NO COPY: R/regional.R:553:23: style: Trailing whitespace is superfluous.
+        group = "bwi")  
+                      ^~
+NO COPY: R/regional.R:555:1: style: lines should not be more than 80 characters.
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:566:1: style: lines should not be more than 80 characters.
     ggplot2::ylab(expression(paste("Vorrat [", m^3, "]", sep = ""))) + copyright() +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:557:49: style: Put spaces around all infix operators.
+NO COPY: R/regional.R:566:49: style: Put spaces around all infix operators.
     ggplot2::ylab(expression(paste("Vorrat [", m^3, "]", sep = ""))) + copyright() +
                                                ~^~
-NO COPY: R/regional.R:574:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:583:1: style: lines should not be more than 80 characters.
     table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:609:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:618:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:632:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:641:23: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = b1$FVBN.ha.Bagr.Akl.Dkl[2, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:632:50: style: Commas should never have a space before.
+NO COPY: R/regional.R:641:50: style: Commas should never have a space before.
       prediction = b1$FVBN.ha.Bagr.Akl.Dkl[2, 1, , , ],
                                                 ~^
-NO COPY: R/regional.R:632:52: style: Commas should never have a space before.
+NO COPY: R/regional.R:641:52: style: Commas should never have a space before.
       prediction = b1$FVBN.ha.Bagr.Akl.Dkl[2, 1, , , ],
                                                   ~^
-NO COPY: R/regional.R:633:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:642:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = b1$FVBN.ha.Bagr.Akl.Dkl[2, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:633:54: style: Commas should never have a space before.
+NO COPY: R/regional.R:642:54: style: Commas should never have a space before.
       standard_error = b1$FVBN.ha.Bagr.Akl.Dkl[2, 2, , , ]
                                                     ~^
-NO COPY: R/regional.R:633:56: style: Commas should never have a space before.
+NO COPY: R/regional.R:642:56: style: Commas should never have a space before.
       standard_error = b1$FVBN.ha.Bagr.Akl.Dkl[2, 2, , , ]
                                                       ~^
-NO COPY: R/regional.R:638:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:647:23: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = b2$FVBN.ha.Bagr.Akl.Dkl[2, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:638:50: style: Commas should never have a space before.
+NO COPY: R/regional.R:647:50: style: Commas should never have a space before.
       prediction = b2$FVBN.ha.Bagr.Akl.Dkl[2, 1, , , ],
                                                 ~^
-NO COPY: R/regional.R:638:52: style: Commas should never have a space before.
+NO COPY: R/regional.R:647:52: style: Commas should never have a space before.
       prediction = b2$FVBN.ha.Bagr.Akl.Dkl[2, 1, , , ],
                                                   ~^
-NO COPY: R/regional.R:639:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:648:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = b2$FVBN.ha.Bagr.Akl.Dkl[2, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:639:54: style: Commas should never have a space before.
+NO COPY: R/regional.R:648:54: style: Commas should never have a space before.
       standard_error = b2$FVBN.ha.Bagr.Akl.Dkl[2, 2, , , ]
                                                     ~^
-NO COPY: R/regional.R:639:56: style: Commas should never have a space before.
+NO COPY: R/regional.R:648:56: style: Commas should never have a space before.
       standard_error = b2$FVBN.ha.Bagr.Akl.Dkl[2, 2, , , ]
                                                       ~^
-NO COPY: R/regional.R:644:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:653:23: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = b3$FVBN.ha.Bagr.Akl.Dkl[2, 1, , , ],
                       ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:644:50: style: Commas should never have a space before.
+NO COPY: R/regional.R:653:50: style: Commas should never have a space before.
       prediction = b3$FVBN.ha.Bagr.Akl.Dkl[2, 1, , , ],
                                                 ~^
-NO COPY: R/regional.R:644:52: style: Commas should never have a space before.
+NO COPY: R/regional.R:653:52: style: Commas should never have a space before.
       prediction = b3$FVBN.ha.Bagr.Akl.Dkl[2, 1, , , ],
                                                   ~^
-NO COPY: R/regional.R:645:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:654:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = b3$FVBN.ha.Bagr.Akl.Dkl[2, 2, , , ]
                           ^~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:645:54: style: Commas should never have a space before.
+NO COPY: R/regional.R:654:54: style: Commas should never have a space before.
       standard_error = b3$FVBN.ha.Bagr.Akl.Dkl[2, 2, , , ]
                                                     ~^
-NO COPY: R/regional.R:645:56: style: Commas should never have a space before.
+NO COPY: R/regional.R:654:56: style: Commas should never have a space before.
       standard_error = b3$FVBN.ha.Bagr.Akl.Dkl[2, 2, , , ]
                                                       ~^
-NO COPY: R/regional.R:654:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:663:1: style: lines should not be more than 80 characters.
   d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:654:112: warning: no visible binding for global variable 'stratii', Did you mean 'strtoi'?
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                               ^~~~~~~
-NO COPY: R/regional.R:654:120: warning: no visible binding for global variable 'stratum_index'
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                       ^~~~~~~~~~~~~
-NO COPY: R/regional.R:659:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:668:1: style: lines should not be more than 80 characters.
   caption <- c('Vorr\\"ate und Fehler in Kubikmetern Derbholz mit Rinde je Hektar.')
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:661:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:670:1: style: lines should not be more than 80 characters.
     table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:695:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:704:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:731:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:742:1: style: lines should not be more than 80 characters.
                                        graphic_width = get_options("graphics_width"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:750:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:743:1: style: lines should not be more than 80 characters.
+                                       graphic_height = get_options("graphics_height"),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:766:1: style: lines should not be more than 80 characters.
         prediction = b1$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:750:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:766:25: style: Words within variable and function names should be separated by '_' rather than '.'.
         prediction = b1$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
                         ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:750:64: style: Commas should never have a space before.
+NO COPY: R/regional.R:766:64: style: Commas should never have a space before.
         prediction = b1$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
                                                               ~^
-NO COPY: R/regional.R:751:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:767:1: style: lines should not be more than 80 characters.
         standard_error = b1$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:751:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:767:29: style: Words within variable and function names should be separated by '_' rather than '.'.
         standard_error = b1$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
                             ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:751:68: style: Commas should never have a space before.
+NO COPY: R/regional.R:767:68: style: Commas should never have a space before.
         standard_error = b1$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
-                                                                  ~^
-NO COPY: R/regional.R:756:1: style: lines should not be more than 80 characters.
-        prediction = b2$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:756:25: style: Words within variable and function names should be separated by '_' rather than '.'.
-        prediction = b2$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
-                        ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:756:64: style: Commas should never have a space before.
-        prediction = b2$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
-                                                              ~^
-NO COPY: R/regional.R:757:1: style: lines should not be more than 80 characters.
-        standard_error = b2$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:757:29: style: Words within variable and function names should be separated by '_' rather than '.'.
-        standard_error = b2$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
-                            ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:757:68: style: Commas should never have a space before.
-        standard_error = b2$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
-                                                                  ~^
-NO COPY: R/regional.R:762:1: style: lines should not be more than 80 characters.
-        prediction = b3$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:762:25: style: Words within variable and function names should be separated by '_' rather than '.'.
-        prediction = b3$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
-                        ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:762:64: style: Commas should never have a space before.
-        prediction = b3$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
-                                                              ~^
-NO COPY: R/regional.R:763:1: style: lines should not be more than 80 characters.
-        standard_error = b3$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:763:29: style: Words within variable and function names should be separated by '_' rather than '.'.
-        standard_error = b3$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
-                            ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:763:68: style: Commas should never have a space before.
-        standard_error = b3$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
                                                                   ~^
 NO COPY: R/regional.R:772:1: style: lines should not be more than 80 characters.
+        prediction = b2$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:772:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+        prediction = b2$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
+                        ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:772:64: style: Commas should never have a space before.
+        prediction = b2$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
+                                                              ~^
+NO COPY: R/regional.R:773:1: style: lines should not be more than 80 characters.
+        standard_error = b2$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:773:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+        standard_error = b2$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
+                            ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:773:68: style: Commas should never have a space before.
+        standard_error = b2$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
+                                                                  ~^
+NO COPY: R/regional.R:778:1: style: lines should not be more than 80 characters.
+        prediction = b3$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:778:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+        prediction = b3$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
+                        ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:778:64: style: Commas should never have a space before.
+        prediction = b3$T.FVBN.Bagr.Akl.Dkl[2, 1, group_index, , 2:num_girth_classes],
+                                                              ~^
+NO COPY: R/regional.R:779:1: style: lines should not be more than 80 characters.
+        standard_error = b3$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:779:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+        standard_error = b3$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
+                            ^~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:779:68: style: Commas should never have a space before.
+        standard_error = b3$T.FVBN.Bagr.Akl.Dkl[2, 2, group_index, , 2:num_girth_classes]
+                                                                  ~^
+NO COPY: R/regional.R:788:1: style: lines should not be more than 80 characters.
     d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:772:114: warning: no visible binding for global variable 'stratii', Did you mean 'strtoi'?
-    d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                 ^~~~~~~
-NO COPY: R/regional.R:772:122: warning: no visible binding for global variable 'stratum_index'
-    d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                         ^~~~~~~~~~~~~
-NO COPY: R/regional.R:773:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:789:1: style: lines should not be more than 80 characters.
     type_name <- paste("Vorrat", gsub(" ", "_", gsub("/", "_", species_group)), sep = "_")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:791:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:804:23: style: Trailing whitespace is superfluous.
+        group = "bwi")  
+                      ^~
+NO COPY: R/regional.R:806:1: style: lines should not be more than 80 characters.
       ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:802:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:817:1: style: lines should not be more than 80 characters.
       ggplot2::ylab(expression(paste("Vorrat [", m^3, "]", sep = ""))) + copyright() +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:802:51: style: Put spaces around all infix operators.
+NO COPY: R/regional.R:817:51: style: Put spaces around all infix operators.
       ggplot2::ylab(expression(paste("Vorrat [", m^3, "]", sep = ""))) + copyright() +
                                                  ~^~
-NO COPY: R/regional.R:828:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:843:1: style: lines should not be more than 80 characters.
       table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:874:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:889:1: style: lines should not be more than 80 characters.
     table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:911:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:927:1: style: lines should not be more than 80 characters.
                                    graphic_width = get_options("graphics_width"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:926:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:928:1: style: lines should not be more than 80 characters.
+                                   graphic_height = get_options("graphics_height"),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:947:25: style: Words within variable and function names should be separated by '_' rather than '.'.
         prediction = b1$T.FVBN.Bagr.Akl.Dkl[1, 1, group_index, , ],
                         ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:926:64: style: Commas should never have a space before.
+NO COPY: R/regional.R:947:64: style: Commas should never have a space before.
         prediction = b1$T.FVBN.Bagr.Akl.Dkl[1, 1, group_index, , ],
                                                               ~^
-NO COPY: R/regional.R:927:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:948:29: style: Words within variable and function names should be separated by '_' rather than '.'.
         standard_error = b1$T.FVBN.Bagr.Akl.Dkl[1, 2, group_index, , ]
                             ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:927:68: style: Commas should never have a space before.
+NO COPY: R/regional.R:948:68: style: Commas should never have a space before.
         standard_error = b1$T.FVBN.Bagr.Akl.Dkl[1, 2, group_index, , ]
                                                                   ~^
-NO COPY: R/regional.R:932:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:953:25: style: Words within variable and function names should be separated by '_' rather than '.'.
         prediction = b2$T.FVBN.Bagr.Akl.Dkl[1, 1, group_index, , ],
                         ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:932:64: style: Commas should never have a space before.
+NO COPY: R/regional.R:953:64: style: Commas should never have a space before.
         prediction = b2$T.FVBN.Bagr.Akl.Dkl[1, 1, group_index, , ],
                                                               ~^
-NO COPY: R/regional.R:933:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:954:29: style: Words within variable and function names should be separated by '_' rather than '.'.
         standard_error = b2$T.FVBN.Bagr.Akl.Dkl[1, 2, group_index, , ]
                             ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:933:68: style: Commas should never have a space before.
+NO COPY: R/regional.R:954:68: style: Commas should never have a space before.
         standard_error = b2$T.FVBN.Bagr.Akl.Dkl[1, 2, group_index, , ]
                                                                   ~^
-NO COPY: R/regional.R:938:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:959:25: style: Words within variable and function names should be separated by '_' rather than '.'.
         prediction = b3$T.FVBN.Bagr.Akl.Dkl[1, 1, group_index, , ],
                         ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:938:64: style: Commas should never have a space before.
+NO COPY: R/regional.R:959:64: style: Commas should never have a space before.
         prediction = b3$T.FVBN.Bagr.Akl.Dkl[1, 1, group_index, , ],
                                                               ~^
-NO COPY: R/regional.R:939:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:960:29: style: Words within variable and function names should be separated by '_' rather than '.'.
         standard_error = b3$T.FVBN.Bagr.Akl.Dkl[1, 2, group_index, , ]
                             ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:939:68: style: Commas should never have a space before.
+NO COPY: R/regional.R:960:68: style: Commas should never have a space before.
         standard_error = b3$T.FVBN.Bagr.Akl.Dkl[1, 2, group_index, , ]
                                                                   ~^
-NO COPY: R/regional.R:948:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:969:1: style: lines should not be more than 80 characters.
     d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:948:114: warning: no visible binding for global variable 'stratii', Did you mean 'strtoi'?
-    d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                 ^~~~~~~
-NO COPY: R/regional.R:948:122: warning: no visible binding for global variable 'stratum_index'
-    d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                         ^~~~~~~~~~~~~
-NO COPY: R/regional.R:949:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:970:1: style: lines should not be more than 80 characters.
     type_name <- paste("Fl\u00e4che", gsub(" ", "_", gsub("/", "_", species_group)), sep = "_")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:967:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:985:23: style: Trailing whitespace is superfluous.
+        group = "bwi")  
+                      ^~
+NO COPY: R/regional.R:987:1: style: lines should not be more than 80 characters.
       ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1004:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1024:1: style: lines should not be more than 80 characters.
       table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1037:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1057:1: style: lines should not be more than 80 characters.
     table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1101:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1128:1: style: lines should not be more than 80 characters.
       prediction = c(deadwood_2$ThVN.ha.klass[1, 1, ], deadwood_2a$ThVN.ha.klass[1, 1, ]),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1101:33: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1128:33: style: Variable and function names should be all lowercase.
       prediction = c(deadwood_2$ThVN.ha.klass[1, 1, ], deadwood_2a$ThVN.ha.klass[1, 1, ]),
                                 ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1101:33: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1128:33: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = c(deadwood_2$ThVN.ha.klass[1, 1, ], deadwood_2a$ThVN.ha.klass[1, 1, ]),
                                 ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1101:68: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1128:68: style: Variable and function names should be all lowercase.
       prediction = c(deadwood_2$ThVN.ha.klass[1, 1, ], deadwood_2a$ThVN.ha.klass[1, 1, ]),
                                                                    ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1101:68: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1128:68: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = c(deadwood_2$ThVN.ha.klass[1, 1, ], deadwood_2a$ThVN.ha.klass[1, 1, ]),
                                                                    ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1103:22: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1130:22: style: Variable and function names should be all lowercase.
         c(deadwood_2$ThVN.ha.klass[1, 2, ], deadwood_2a$ThVN.ha.klass[1, 2, ])
                      ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1103:22: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1130:22: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_2$ThVN.ha.klass[1, 2, ], deadwood_2a$ThVN.ha.klass[1, 2, ])
                      ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1103:57: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1130:57: style: Variable and function names should be all lowercase.
         c(deadwood_2$ThVN.ha.klass[1, 2, ], deadwood_2a$ThVN.ha.klass[1, 2, ])
                                                         ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1103:57: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1130:57: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_2$ThVN.ha.klass[1, 2, ], deadwood_2a$ThVN.ha.klass[1, 2, ])
                                                         ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1109:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1136:1: style: lines should not be more than 80 characters.
         c(deadwood_3_2$ThVN.ha.klass[1, 1, ], deadwood_3_2a$ThVN.ha.klass[1, 1, ]),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1109:24: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1136:24: style: Variable and function names should be all lowercase.
         c(deadwood_3_2$ThVN.ha.klass[1, 1, ], deadwood_3_2a$ThVN.ha.klass[1, 1, ]),
                        ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1109:24: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1136:24: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_3_2$ThVN.ha.klass[1, 1, ], deadwood_3_2a$ThVN.ha.klass[1, 1, ]),
                        ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1109:61: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1136:61: style: Variable and function names should be all lowercase.
         c(deadwood_3_2$ThVN.ha.klass[1, 1, ], deadwood_3_2a$ThVN.ha.klass[1, 1, ]),
                                                             ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1109:61: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1136:61: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_3_2$ThVN.ha.klass[1, 1, ], deadwood_3_2a$ThVN.ha.klass[1, 1, ]),
                                                             ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1111:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1138:1: style: lines should not be more than 80 characters.
         c(deadwood_3_2$ThVN.ha.klass[1, 2, ], deadwood_3_2a$ThVN.ha.klass[1, 2, ])
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1111:24: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1138:24: style: Variable and function names should be all lowercase.
         c(deadwood_3_2$ThVN.ha.klass[1, 2, ], deadwood_3_2a$ThVN.ha.klass[1, 2, ])
                        ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1111:24: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1138:24: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_3_2$ThVN.ha.klass[1, 2, ], deadwood_3_2a$ThVN.ha.klass[1, 2, ])
                        ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1111:61: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1138:61: style: Variable and function names should be all lowercase.
         c(deadwood_3_2$ThVN.ha.klass[1, 2, ], deadwood_3_2a$ThVN.ha.klass[1, 2, ])
                                                             ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1111:61: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1138:61: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_3_2$ThVN.ha.klass[1, 2, ], deadwood_3_2a$ThVN.ha.klass[1, 2, ])
                                                             ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1117:22: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1144:22: style: Variable and function names should be all lowercase.
         c(deadwood_3$ThVN.ha.klass[1, 1, ], deadwood_3a$ThVN.ha.klass[1, 1, ]),
                      ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1117:22: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1144:22: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_3$ThVN.ha.klass[1, 1, ], deadwood_3a$ThVN.ha.klass[1, 1, ]),
                      ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1117:57: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1144:57: style: Variable and function names should be all lowercase.
         c(deadwood_3$ThVN.ha.klass[1, 1, ], deadwood_3a$ThVN.ha.klass[1, 1, ]),
                                                         ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1117:57: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1144:57: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_3$ThVN.ha.klass[1, 1, ], deadwood_3a$ThVN.ha.klass[1, 1, ]),
                                                         ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1119:22: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1146:22: style: Variable and function names should be all lowercase.
         c(deadwood_3$ThVN.ha.klass[1, 2, ], deadwood_3a$ThVN.ha.klass[1, 2, ])
                      ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1119:22: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1146:22: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_3$ThVN.ha.klass[1, 2, ], deadwood_3a$ThVN.ha.klass[1, 2, ])
                      ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1119:57: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1146:57: style: Variable and function names should be all lowercase.
         c(deadwood_3$ThVN.ha.klass[1, 2, ], deadwood_3a$ThVN.ha.klass[1, 2, ])
                                                         ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1119:57: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1146:57: style: Words within variable and function names should be separated by '_' rather than '.'.
         c(deadwood_3$ThVN.ha.klass[1, 2, ], deadwood_3a$ThVN.ha.klass[1, 2, ])
                                                         ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1129:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1156:1: style: lines should not be more than 80 characters.
   d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1129:112: warning: no visible binding for global variable 'stratii', Did you mean 'strtoi'?
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                               ^~~~~~~
-NO COPY: R/regional.R:1129:120: warning: no visible binding for global variable 'stratum_index'
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                       ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1159:49: style: Put spaces around all infix operators.
+NO COPY: R/regional.R:1173:21: style: Trailing whitespace is superfluous.
+      group = "bwi")  
+                    ^~
+NO COPY: R/regional.R:1186:49: style: Put spaces around all infix operators.
     ggplot2::ylab(expression(paste("Vorrat [", m^3,
                                                ~^~
-NO COPY: R/regional.R:1160:9: style: Put spaces around all infix operators.
+NO COPY: R/regional.R:1187:9: style: Put spaces around all infix operators.
       ha^-1, "]",
        ~^~
-NO COPY: R/regional.R:1162:1: style: lines should not be more than 80 characters.
-    ))) + copyright() + ggplot2::ggtitle("2012*: Berechnung nach Kriterien von 2002"))
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1173:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1189:1: style: lines should not be more than 80 characters.
+    ))) + copyright() + ggplot2::ggtitle("2012*: Berechnung nach Kriterien von 2002")
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:1201:1: style: lines should not be more than 80 characters.
   df_cast <- reshape2::dcast(reshape2::melt(table_data), value.var = "value", formula = Totholzart ~ ...)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1187:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1215:1: style: lines should not be more than 80 characters.
   caption <- c('Totholz: Vorr\\"ate und Fehler in Kubikmetern Derbholz mit Rinde je Hektar,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1188:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1216:1: style: lines should not be more than 80 characters.
                    2012*:  Berechnung des Totholzes 2012 nach Aufnahmekriterien von 2002.')
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1189:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1217:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1257:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1290:1: style: lines should not be more than 80 characters.
       prediction = c(g_l_12$iVB.bagr.akl.dkl[9, 1, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 1, , , ]),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1257:29: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1290:29: style: Variable and function names should be all lowercase.
       prediction = c(g_l_12$iVB.bagr.akl.dkl[9, 1, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 1, , , ]),
                             ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1257:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1290:29: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = c(g_l_12$iVB.bagr.akl.dkl[9, 1, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 1, , , ]),
                             ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1257:52: style: Commas should never have a space before.
+NO COPY: R/regional.R:1290:52: style: Commas should never have a space before.
       prediction = c(g_l_12$iVB.bagr.akl.dkl[9, 1, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 1, , , ]),
                                                   ~^
-NO COPY: R/regional.R:1257:54: style: Commas should never have a space before.
+NO COPY: R/regional.R:1290:54: style: Commas should never have a space before.
       prediction = c(g_l_12$iVB.bagr.akl.dkl[9, 1, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 1, , , ]),
                                                     ~^
-NO COPY: R/regional.R:1257:70: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1290:70: style: Variable and function names should be all lowercase.
       prediction = c(g_l_12$iVB.bagr.akl.dkl[9, 1, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 1, , , ]),
                                                                      ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1257:70: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1290:70: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = c(g_l_12$iVB.bagr.akl.dkl[9, 1, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 1, , , ]),
                                                                      ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1257:93: style: Commas should never have a space before.
+NO COPY: R/regional.R:1290:93: style: Commas should never have a space before.
       prediction = c(g_l_12$iVB.bagr.akl.dkl[9, 1, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 1, , , ]),
                                                                                            ~^
-NO COPY: R/regional.R:1257:95: style: Commas should never have a space before.
+NO COPY: R/regional.R:1290:95: style: Commas should never have a space before.
       prediction = c(g_l_12$iVB.bagr.akl.dkl[9, 1, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 1, , , ]),
                                                                                              ~^
-NO COPY: R/regional.R:1258:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1291:1: style: lines should not be more than 80 characters.
       standard_error = c(g_l_12$iVB.bagr.akl.dkl[9, 2, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 2, , , ])
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1258:33: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1291:33: style: Variable and function names should be all lowercase.
       standard_error = c(g_l_12$iVB.bagr.akl.dkl[9, 2, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 2, , , ])
                                 ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1258:33: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1291:33: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = c(g_l_12$iVB.bagr.akl.dkl[9, 2, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 2, , , ])
                                 ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1258:56: style: Commas should never have a space before.
+NO COPY: R/regional.R:1291:56: style: Commas should never have a space before.
       standard_error = c(g_l_12$iVB.bagr.akl.dkl[9, 2, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 2, , , ])
                                                       ~^
-NO COPY: R/regional.R:1258:58: style: Commas should never have a space before.
+NO COPY: R/regional.R:1291:58: style: Commas should never have a space before.
       standard_error = c(g_l_12$iVB.bagr.akl.dkl[9, 2, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 2, , , ])
                                                         ~^
-NO COPY: R/regional.R:1258:74: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1291:74: style: Variable and function names should be all lowercase.
       standard_error = c(g_l_12$iVB.bagr.akl.dkl[9, 2, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 2, , , ])
                                                                          ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1258:74: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1291:74: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = c(g_l_12$iVB.bagr.akl.dkl[9, 2, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 2, , , ])
                                                                          ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1258:97: style: Commas should never have a space before.
+NO COPY: R/regional.R:1291:97: style: Commas should never have a space before.
       standard_error = c(g_l_12$iVB.bagr.akl.dkl[9, 2, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 2, , , ])
                                                                                                ~^
-NO COPY: R/regional.R:1258:99: style: Commas should never have a space before.
+NO COPY: R/regional.R:1291:99: style: Commas should never have a space before.
       standard_error = c(g_l_12$iVB.bagr.akl.dkl[9, 2, , , ], g_l_12_all$iVB.bagr.akl.dkl[9, 2, , , ])
                                                                                                  ~^
-NO COPY: R/regional.R:1264:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1297:1: style: lines should not be more than 80 characters.
       prediction = c(g_l_12$VB.A.bagr.akl.dkl[9, 1, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 1, , , ]),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1264:29: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1297:29: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = c(g_l_12$VB.A.bagr.akl.dkl[9, 1, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 1, , , ]),
                             ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1264:53: style: Commas should never have a space before.
+NO COPY: R/regional.R:1297:53: style: Commas should never have a space before.
       prediction = c(g_l_12$VB.A.bagr.akl.dkl[9, 1, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 1, , , ]),
                                                    ~^
-NO COPY: R/regional.R:1264:55: style: Commas should never have a space before.
+NO COPY: R/regional.R:1297:55: style: Commas should never have a space before.
       prediction = c(g_l_12$VB.A.bagr.akl.dkl[9, 1, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 1, , , ]),
                                                      ~^
-NO COPY: R/regional.R:1264:71: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1297:71: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = c(g_l_12$VB.A.bagr.akl.dkl[9, 1, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 1, , , ]),
                                                                       ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1264:95: style: Commas should never have a space before.
+NO COPY: R/regional.R:1297:95: style: Commas should never have a space before.
       prediction = c(g_l_12$VB.A.bagr.akl.dkl[9, 1, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 1, , , ]),
                                                                                              ~^
-NO COPY: R/regional.R:1264:97: style: Commas should never have a space before.
+NO COPY: R/regional.R:1297:97: style: Commas should never have a space before.
       prediction = c(g_l_12$VB.A.bagr.akl.dkl[9, 1, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 1, , , ]),
                                                                                                ~^
-NO COPY: R/regional.R:1265:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1298:1: style: lines should not be more than 80 characters.
       standard_error = c(g_l_12$VB.A.bagr.akl.dkl[9, 2, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 2, , , ])
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1265:33: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1298:33: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = c(g_l_12$VB.A.bagr.akl.dkl[9, 2, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 2, , , ])
                                 ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1265:57: style: Commas should never have a space before.
+NO COPY: R/regional.R:1298:57: style: Commas should never have a space before.
       standard_error = c(g_l_12$VB.A.bagr.akl.dkl[9, 2, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 2, , , ])
                                                        ~^
-NO COPY: R/regional.R:1265:59: style: Commas should never have a space before.
+NO COPY: R/regional.R:1298:59: style: Commas should never have a space before.
       standard_error = c(g_l_12$VB.A.bagr.akl.dkl[9, 2, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 2, , , ])
                                                          ~^
-NO COPY: R/regional.R:1265:75: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1298:75: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = c(g_l_12$VB.A.bagr.akl.dkl[9, 2, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 2, , , ])
                                                                           ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1265:99: style: Commas should never have a space before.
+NO COPY: R/regional.R:1298:99: style: Commas should never have a space before.
       standard_error = c(g_l_12$VB.A.bagr.akl.dkl[9, 2, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 2, , , ])
                                                                                                  ~^
-NO COPY: R/regional.R:1265:101: style: Commas should never have a space before.
+NO COPY: R/regional.R:1298:101: style: Commas should never have a space before.
       standard_error = c(g_l_12$VB.A.bagr.akl.dkl[9, 2, , , ], g_l_12_all$VB.A.bagr.akl.dkl[9, 2, , , ])
                                                                                                    ~^
-NO COPY: R/regional.R:1271:27: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1304:27: style: Variable and function names should be all lowercase.
       prediction = g_l_23$iVB.bagr.akl.dkl[9, 1, , , ],
                           ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1271:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1304:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = g_l_23$iVB.bagr.akl.dkl[9, 1, , , ],
                           ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1271:50: style: Commas should never have a space before.
+NO COPY: R/regional.R:1304:50: style: Commas should never have a space before.
       prediction = g_l_23$iVB.bagr.akl.dkl[9, 1, , , ],
                                                 ~^
-NO COPY: R/regional.R:1271:52: style: Commas should never have a space before.
+NO COPY: R/regional.R:1304:52: style: Commas should never have a space before.
       prediction = g_l_23$iVB.bagr.akl.dkl[9, 1, , , ],
                                                   ~^
-NO COPY: R/regional.R:1272:31: style: Variable and function names should be all lowercase.
+NO COPY: R/regional.R:1305:31: style: Variable and function names should be all lowercase.
       standard_error = g_l_23$iVB.bagr.akl.dkl[9, 2, , , ]
                               ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1272:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1305:31: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = g_l_23$iVB.bagr.akl.dkl[9, 2, , , ]
                               ^~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1272:54: style: Commas should never have a space before.
+NO COPY: R/regional.R:1305:54: style: Commas should never have a space before.
       standard_error = g_l_23$iVB.bagr.akl.dkl[9, 2, , , ]
                                                     ~^
-NO COPY: R/regional.R:1272:56: style: Commas should never have a space before.
+NO COPY: R/regional.R:1305:56: style: Commas should never have a space before.
       standard_error = g_l_23$iVB.bagr.akl.dkl[9, 2, , , ]
                                                       ~^
-NO COPY: R/regional.R:1278:27: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1311:27: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = g_l_23$VB.A.bagr.akl.dkl[9, 1, , , ],
                           ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1278:51: style: Commas should never have a space before.
+NO COPY: R/regional.R:1311:51: style: Commas should never have a space before.
       prediction = g_l_23$VB.A.bagr.akl.dkl[9, 1, , , ],
                                                  ~^
-NO COPY: R/regional.R:1278:53: style: Commas should never have a space before.
+NO COPY: R/regional.R:1311:53: style: Commas should never have a space before.
       prediction = g_l_23$VB.A.bagr.akl.dkl[9, 1, , , ],
                                                    ~^
-NO COPY: R/regional.R:1279:31: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1312:31: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = g_l_23$VB.A.bagr.akl.dkl[9, 2, , , ]
                               ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1279:55: style: Commas should never have a space before.
+NO COPY: R/regional.R:1312:55: style: Commas should never have a space before.
       standard_error = g_l_23$VB.A.bagr.akl.dkl[9, 2, , , ]
                                                      ~^
-NO COPY: R/regional.R:1279:57: style: Commas should never have a space before.
+NO COPY: R/regional.R:1312:57: style: Commas should never have a space before.
       standard_error = g_l_23$VB.A.bagr.akl.dkl[9, 2, , , ]
                                                        ~^
-NO COPY: R/regional.R:1284:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1317:1: style: lines should not be more than 80 characters.
   names(table_data) <- c("Periode", "Art", "Artengruppe", "Vorhersage", "Standardfehler")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1286:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1319:1: style: lines should not be more than 80 characters.
   d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1286:112: warning: no visible binding for global variable 'stratii', Did you mean 'strtoi'?
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                               ^~~~~~~
-NO COPY: R/regional.R:1286:120: warning: no visible binding for global variable 'stratum_index'
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                       ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1322:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1340:22: style: Trailing whitespace is superfluous.
+        fill = "foo")  
+                     ^~
+NO COPY: R/regional.R:1342:1: style: lines should not be more than 80 characters.
+         ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge(),
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:1352:1: style: lines should not be more than 80 characters.
     ggplot2::scale_fill_manual(values = c("#33FF33", "#FF6666", "#006600", "#990000"), name = "") +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1325:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1355:1: style: lines should not be more than 80 characters.
     ggplot2::ylab(expression(paste("Derbholz mit Rinde [", m^3, ha^-1, a^-1, "]", sep = ""))) +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1325:61: style: Put spaces around all infix operators.
+NO COPY: R/regional.R:1355:61: style: Put spaces around all infix operators.
     ggplot2::ylab(expression(paste("Derbholz mit Rinde [", m^3, ha^-1, a^-1, "]", sep = ""))) +
                                                            ~^~
-NO COPY: R/regional.R:1325:67: style: Put spaces around all infix operators.
+NO COPY: R/regional.R:1355:67: style: Put spaces around all infix operators.
     ggplot2::ylab(expression(paste("Derbholz mit Rinde [", m^3, ha^-1, a^-1, "]", sep = ""))) +
                                                                  ~^~
-NO COPY: R/regional.R:1325:73: style: Put spaces around all infix operators.
+NO COPY: R/regional.R:1355:73: style: Put spaces around all infix operators.
     ggplot2::ylab(expression(paste("Derbholz mit Rinde [", m^3, ha^-1, a^-1, "]", sep = ""))) +
                                                                        ~^~
-NO COPY: R/regional.R:1337:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1367:1: style: lines should not be more than 80 characters.
   caption <- c("Zuwachs, ausgeschiedener Vorrat (Abgang) und Fehler in Kubikmeternn Derbholz mit Rinde pro Hektar und Jahr.")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1339:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1369:1: style: lines should not be more than 80 characters.
     table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1360:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1390:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1405:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1440:1: style: lines should not be more than 80 characters.
   ownerships$ownership_realive_area <- paste0(round_and_prettify_german(ownerships$area / sum(ownerships$area) * 100), "%")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1417:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1452:1: style: lines should not be more than 80 characters.
     ggplot2::xlab("") + ggplot2::ylab("") + ggplot2::scale_x_discrete(breaks = NULL) +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1419:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1454:1: style: lines should not be more than 80 characters.
       values = as.character(get_colors_for_ownership(map_labels_to_abbreviations(ownerships$ownership)))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1477:34: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1512:34: style: Words within variable and function names should be separated by '_' rather than '.'.
     Flaeche_ha = round(ntns.list$NTNS.Flaeche.Anteil[1, 1, ], 0),
                                  ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1478:37: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1513:37: style: Words within variable and function names should be separated by '_' rather than '.'.
     SE_Flaeche_ha = round(ntns.list$NTNS.Flaeche.Anteil[1, 2, ], 0),
                                     ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1479:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1514:30: style: Words within variable and function names should be separated by '_' rather than '.'.
     Anteil = round(ntns.list$NTNS.Flaeche.Anteil[2, 1, ], 1),
                              ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1480:33: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1515:33: style: Words within variable and function names should be separated by '_' rather than '.'.
     SE_Anteil = round(ntns.list$NTNS.Flaeche.Anteil[2, 2, ], 1)
                                 ^~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1558:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1555:23: style: Trailing whitespace is superfluous.
+        group = "bwi")  
+                      ^~
+NO COPY: R/regional.R:1557:1: style: lines should not be more than 80 characters.
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:1597:1: style: lines should not be more than 80 characters.
   names(table_data) <- c("Naturnaehestufe", "Vorhersage", "Standardfehler", "BWI")
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1577:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1616:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1635:26: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1679:26: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = loss1$VB.A.bagr.akl.dkl[7, 1, 1, , ],
                          ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1635:53: style: Commas should never have a space before.
+NO COPY: R/regional.R:1679:53: style: Commas should never have a space before.
       prediction = loss1$VB.A.bagr.akl.dkl[7, 1, 1, , ],
                                                    ~^
-NO COPY: R/regional.R:1637:15: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1681:15: style: Words within variable and function names should be separated by '_' rather than '.'.
         loss1$VB.A.bagr.akl.dkl[7, 2, 1, , ]
               ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1637:42: style: Commas should never have a space before.
+NO COPY: R/regional.R:1681:42: style: Commas should never have a space before.
         loss1$VB.A.bagr.akl.dkl[7, 2, 1, , ]
                                         ~^
-NO COPY: R/regional.R:1642:26: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1686:26: style: Words within variable and function names should be separated by '_' rather than '.'.
       prediction = loss2$VB.A.bagr.akl.dkl[7, 1, 1, , ],
                          ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1642:53: style: Commas should never have a space before.
+NO COPY: R/regional.R:1686:53: style: Commas should never have a space before.
       prediction = loss2$VB.A.bagr.akl.dkl[7, 1, 1, , ],
                                                    ~^
-NO COPY: R/regional.R:1643:30: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1687:30: style: Words within variable and function names should be separated by '_' rather than '.'.
       standard_error = loss2$VB.A.bagr.akl.dkl[7, 2, 1, , ]
                              ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1643:57: style: Commas should never have a space before.
+NO COPY: R/regional.R:1687:57: style: Commas should never have a space before.
       standard_error = loss2$VB.A.bagr.akl.dkl[7, 2, 1, , ]
                                                        ~^
-NO COPY: R/regional.R:1666:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1695:25: style: Trailing whitespace is superfluous.
+        fill = "period")  
+                        ^~
+NO COPY: R/regional.R:1697:1: style: lines should not be more than 80 characters.
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:1708:1: style: lines should not be more than 80 characters.
     ggplot2::ylab(expression(paste("J\u00e4hrl. Ernte ohne Rinde [", m^3, "]", sep = ""))) + copyright() +
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1666:71: style: Put spaces around all infix operators.
+NO COPY: R/regional.R:1708:71: style: Put spaces around all infix operators.
     ggplot2::ylab(expression(paste("J\u00e4hrl. Ernte ohne Rinde [", m^3, "]", sep = ""))) + copyright() +
                                                                      ~^~
-NO COPY: R/regional.R:1701:32: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1743:32: style: Words within variable and function names should be separated by '_' rather than '.'.
         prediction = loss1_all$VB.A.bagr.akl.dkl[7, 1, 1, , ],
                                ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1701:59: style: Commas should never have a space before.
+NO COPY: R/regional.R:1743:59: style: Commas should never have a space before.
         prediction = loss1_all$VB.A.bagr.akl.dkl[7, 1, 1, , ],
                                                          ~^
-NO COPY: R/regional.R:1702:36: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1744:36: style: Words within variable and function names should be separated by '_' rather than '.'.
         standard_error = loss1_all$VB.A.bagr.akl.dkl[7, 2, 1, , ]
                                    ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1702:63: style: Commas should never have a space before.
+NO COPY: R/regional.R:1744:63: style: Commas should never have a space before.
         standard_error = loss1_all$VB.A.bagr.akl.dkl[7, 2, 1, , ]
                                                              ~^
-NO COPY: R/regional.R:1707:32: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1749:32: style: Words within variable and function names should be separated by '_' rather than '.'.
         prediction = loss2_all$VB.A.bagr.akl.dkl[7, 1, 1, , ],
                                ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1707:59: style: Commas should never have a space before.
+NO COPY: R/regional.R:1749:59: style: Commas should never have a space before.
         prediction = loss2_all$VB.A.bagr.akl.dkl[7, 1, 1, , ],
                                                          ~^
-NO COPY: R/regional.R:1708:36: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1750:36: style: Words within variable and function names should be separated by '_' rather than '.'.
         standard_error = loss2_all$VB.A.bagr.akl.dkl[7, 2, 1, , ]
                                    ^~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1708:63: style: Commas should never have a space before.
+NO COPY: R/regional.R:1750:63: style: Commas should never have a space before.
         standard_error = loss2_all$VB.A.bagr.akl.dkl[7, 2, 1, , ]
                                                              ~^
-NO COPY: R/regional.R:1711:76: style: Trailing whitespace is superfluous.
+NO COPY: R/regional.R:1753:76: style: Trailing whitespace is superfluous.
   caption <- c('J\\"a{}hrliche Ernte in Kubikmetern Erntevolumen ohne Rinde 
                                                                            ^
-NO COPY: R/regional.R:1741:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1783:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1797:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1844:23: style: Words within variable and function names should be separated by '_' rather than '.'.
     prediction = r3_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ],
                       ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1798:18: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1845:18: style: Words within variable and function names should be separated by '_' rather than '.'.
     error = r3_a$Verjg.kl4m.BAF.VArt.BAGR[2, 6, ]
                  ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1802:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1849:25: style: Words within variable and function names should be separated by '_' rather than '.'.
     prediction = r3_bs2$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ],
                         ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1803:20: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1850:20: style: Words within variable and function names should be separated by '_' rather than '.'.
     error = r3_bs2$Verjg.kl4m.BAF.VArt.BAGR[2, 6, ]
                    ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1807:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1854:25: style: Words within variable and function names should be separated by '_' rather than '.'.
     prediction = r3_bs1$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ],
                         ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1808:20: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1855:20: style: Words within variable and function names should be separated by '_' rather than '.'.
     error = r3_bs1$Verjg.kl4m.BAF.VArt.BAGR[2, 6, ]
                    ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1812:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1859:23: style: Words within variable and function names should be separated by '_' rather than '.'.
     prediction = r2_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ],
                       ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1813:18: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1860:18: style: Words within variable and function names should be separated by '_' rather than '.'.
     error = r2_a$Verjg.kl4m.BAF.VArt.BAGR[2, 6, ]
                  ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1817:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1864:25: style: Words within variable and function names should be separated by '_' rather than '.'.
     prediction = r2_bs2$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ],
                         ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1818:20: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1865:20: style: Words within variable and function names should be separated by '_' rather than '.'.
     error = r2_bs2$Verjg.kl4m.BAF.VArt.BAGR[2, 6, ]
                    ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1822:25: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1869:25: style: Words within variable and function names should be separated by '_' rather than '.'.
     prediction = r2_bs1$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ],
                         ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1823:20: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1870:20: style: Words within variable and function names should be separated by '_' rather than '.'.
     error = r2_bs1$Verjg.kl4m.BAF.VArt.BAGR[2, 6, ]
                    ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1825:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1872:1: style: lines should not be more than 80 characters.
   nv_prozent2 <- r2_a$Verjg.kl4m.BAF.VArt.BAGR[1, 1, ] / r2_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ] * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1825:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1872:23: style: Words within variable and function names should be separated by '_' rather than '.'.
   nv_prozent2 <- r2_a$Verjg.kl4m.BAF.VArt.BAGR[1, 1, ] / r2_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ] * 100
                       ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1825:63: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1872:63: style: Words within variable and function names should be separated by '_' rather than '.'.
   nv_prozent2 <- r2_a$Verjg.kl4m.BAF.VArt.BAGR[1, 1, ] / r2_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ] * 100
                                                               ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1826:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1873:1: style: lines should not be more than 80 characters.
   nv_prozent3 <- r3_a$Verjg.kl4m.BAF.VArt.BAGR[1, 1, ] / r3_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ] * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1826:23: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1873:23: style: Words within variable and function names should be separated by '_' rather than '.'.
   nv_prozent3 <- r3_a$Verjg.kl4m.BAF.VArt.BAGR[1, 1, ] / r3_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ] * 100
                       ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1826:63: style: Words within variable and function names should be separated by '_' rather than '.'.
+NO COPY: R/regional.R:1873:63: style: Words within variable and function names should be separated by '_' rather than '.'.
   nv_prozent3 <- r3_a$Verjg.kl4m.BAF.VArt.BAGR[1, 1, ] / r3_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ] * 100
                                                               ^~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1850:5: style: Commented code should be removed.
+NO COPY: R/regional.R:1897:5: style: Commented code should be removed.
   # data_frame <- reshape2::melt(df_cast, id.vars = c("BWI", "Artengruppe"))
     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1860:71: style: Trailing whitespace is superfluous.
+NO COPY: R/regional.R:1907:71: style: Trailing whitespace is superfluous.
   caption <- c('Verj\\"ungung in Hektar, Anteil der Naturverj\\"ungung 
                                                                       ^
-NO COPY: R/regional.R:1870:17: style: Place a space before left parenthesis, except in a function call.
+NO COPY: R/regional.R:1917:17: style: Place a space before left parenthesis, except in a function call.
         ceiling((ncol(df_cast) - 1)
                 ^
-NO COPY: R/regional.R:1879:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1926:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1887:17: style: Place a space before left parenthesis, except in a function call.
+NO COPY: R/regional.R:1934:17: style: Place a space before left parenthesis, except in a function call.
         ceiling((ncol(df_cast) - 1)
                 ^
-NO COPY: R/regional.R:1915:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1963:1: style: lines should not be more than 80 characters.
 plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3,
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1917:1: style: lines should not be more than 80 characters.
-                                          graphic_width = get_options("graphics_width"),
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1919:1: style: lines should not be more than 80 characters.
-                                          graphic_directory = graphics_directory,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1920:1: style: lines should not be more than 80 characters.
-                                          file_name_district = regional_file_name,
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1922:1: style: lines should not be more than 80 characters.
-                                          species_groups_labels = c(district_groups$ba.text, "Alle BA"),
-^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1927:66: style: Commas should never have a space before.
+NO COPY: R/regional.R:1979:66: style: Commas should never have a space before.
       prediction = round(relevant_species_2$"FBA.Fl\u00e4che"[1, , 2] * 100, 1),
                                                                 ~^
-NO COPY: R/regional.R:1928:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1980:1: style: lines should not be more than 80 characters.
       standard_error = round(relevant_species_2$"FBA.Fl\u00e4che"[2, , 2] * 100, 2)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1928:70: style: Commas should never have a space before.
+NO COPY: R/regional.R:1980:70: style: Commas should never have a space before.
       standard_error = round(relevant_species_2$"FBA.Fl\u00e4che"[2, , 2] * 100, 2)
                                                                     ~^
-NO COPY: R/regional.R:1932:66: style: Commas should never have a space before.
+NO COPY: R/regional.R:1984:66: style: Commas should never have a space before.
       prediction = round(relevant_species_3$"FBA.Fl\u00e4che"[1, , 2] * 100, 1),
                                                                 ~^
-NO COPY: R/regional.R:1933:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1985:1: style: lines should not be more than 80 characters.
       standard_error = round(relevant_species_3$"FBA.Fl\u00e4che"[2, , 2] * 100, 2)
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1933:70: style: Commas should never have a space before.
+NO COPY: R/regional.R:1985:70: style: Commas should never have a space before.
       standard_error = round(relevant_species_3$"FBA.Fl\u00e4che"[2, , 2] * 100, 2)
                                                                     ~^
-NO COPY: R/regional.R:1937:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:1989:1: style: lines should not be more than 80 characters.
   d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:1937:112: warning: no visible binding for global variable 'stratii', Did you mean 'strtoi'?
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                               ^~~~~~~
-NO COPY: R/regional.R:1937:120: warning: no visible binding for global variable 'stratum_index'
-  d_name <- paste0(gsub(" ", "_", gsub("/", "_", file_name_district)), "_", gsub(",", "", gsub(" ", "_", names(stratii[stratum_index]))))
-                                                                                                                       ^~~~~~~~~~~~~
-NO COPY: R/regional.R:1989:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:2005:23: style: Trailing whitespace is superfluous.
+        group = "bwi")  
+                      ^~
+NO COPY: R/regional.R:2007:1: style: lines should not be more than 80 characters.
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NO COPY: R/regional.R:2040:1: style: lines should not be more than 80 characters.
     table_data$Standardfehler <- table_data$Standardfehler / table_data$Vorhersage * 100
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: R/regional.R:2021:1: style: lines should not be more than 80 characters.
+NO COPY: R/regional.R:2072:1: style: lines should not be more than 80 characters.
   table_tex <- ascii_umlauts(file.path(graphic_directory, paste0("table_", out_name, ".tex")))
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: R/stratum.fun.R:34:1: style: lines should not be more than 80 characters.
@@ -14164,16 +14140,16 @@ NO COPY: tests/testthat/dumpdata.R:12:63: style: Trailing whitespace is superflu
 NO COPY: tests/testthat/dumpdata.R:13:72: style: Trailing whitespace is superfluous.
 "element"))), .Names = c("axis.title", "axis.text"), class = c("theme", 
                                                                        ^
-NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:97:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:94:1: style: lines should not be more than 80 characters.
       Waldfl_StW = c(316376, 326979, 327388), SE_Waldfl_StW = c(9781, 9994, 9967),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:98:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:95:1: style: lines should not be more than 80 characters.
       Waldfl_KW = c(519525, 537930, 545613), SE_Waldfl_KW = c(11558, 11801, 11806),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:112:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:109:1: style: lines should not be more than 80 characters.
       "SE_Waldfl_StW", "Waldfl_KW", "SE_Waldfl_KW", "Waldfl_OEW", "SE_Waldfl_OEW",
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:130:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-bwibw_BWI3_HR_Landkreis.R:127:1: style: lines should not be more than 80 characters.
     )), .Names = c("Eigentum", "Waldfl_Proz", "SE_Waldfl_Proz"), row.names = c(NA, -7L), class = "data.frame"),
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 NO COPY: tests/testthat/test-bwibw_BWI3_HR_Totholz.R:15:1: style: lines should not be more than 80 characters.
@@ -15082,184 +15058,184 @@ NO COPY: tests/testthat/test-local_bits_and_pieces.R:94:66: style: Trailing whit
 NO COPY: tests/testthat/test-local_bits_and_pieces.R:95:66: style: Trailing whitespace is superfluous.
 "Pontiac Firebird", "Fiat X1-9", "Porsche 914-2", "Lotus Europa", 
                                                                  ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:13:15: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:10:15: style: Trailing whitespace is superfluous.
   reference <- 
               ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:14:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:11:1: style: lines should not be more than 80 characters.
 structure(list(Kreis = "Schwäbisch Hall", KreisCode = 127, Kreisfläche_gesamt_ha = 148406.006, 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:14:95: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:11:95: style: Trailing whitespace is superfluous.
 structure(list(Kreis = "Schwäbisch Hall", KreisCode = 127, Kreisfläche_gesamt_ha = 148406.006, 
                                                                                               ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:15:80: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:12:80: style: Trailing whitespace is superfluous.
     Waldanteil = structure(list(BWI = c(1987, 2002, 2012), Waldanteil = c(18.1, 
                                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:16:69: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:13:69: style: Trailing whitespace is superfluous.
     18.1, 18.1)), .Names = c("BWI", "Waldanteil"), row.names = c(NA, 
                                                                     ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:18:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:15:63: style: Trailing whitespace is superfluous.
         BWI = c(1987, 2002, 2012), Waldfl_GW = c(26814, 26814, 
                                                               ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:19:77: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:16:77: style: Trailing whitespace is superfluous.
         26814), SE_Waldfl_GW = c(15324, 15324, 15324), Waldfl_StW = c(17876, 
                                                                             ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:20:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:17:63: style: Trailing whitespace is superfluous.
         17876, 17876), SE_Waldfl_StW = c(12576, 12576, 12576), 
                                                               ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:21:80: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:18:80: style: Trailing whitespace is superfluous.
         Waldfl_KW = c(NA_real_, NA_real_, NA_real_), SE_Waldfl_KW = c(NA_real_, 
                                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:23:71: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:20:71: style: Trailing whitespace is superfluous.
         ), SE_Waldfl_OEW = c(12576, 12576, 12576), Waldfl_PW = c(8938, 
                                                                       ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:24:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:21:1: style: lines should not be more than 80 characters.
         8938, 8938), SE_Waldfl_PW = c(8938, 8938, 8938), Waldfl_GPW = c(NA_real_, 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:24:82: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:21:82: style: Trailing whitespace is superfluous.
         8938, 8938), SE_Waldfl_PW = c(8938, 8938, 8938), Waldfl_GPW = c(NA_real_, 
                                                                                  ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:25:67: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:22:67: style: Trailing whitespace is superfluous.
         NA_real_, NA_real_), SE_Waldfl_GPW = c(NA_real_, NA_real_, 
                                                                   ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:26:77: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:23:77: style: Trailing whitespace is superfluous.
         NA_real_), Waldfl_MPW = c(8938, 8938, 8938), SE_Waldfl_MPW = c(8938, 
                                                                             ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:28:79: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:25:79: style: Trailing whitespace is superfluous.
         ), SE_Waldfl_KPW = c(NA_real_, NA_real_, NA_real_)), .Names = c("BWI", 
                                                                               ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:29:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:26:64: style: Trailing whitespace is superfluous.
     "Waldfl_GW", "SE_Waldfl_GW", "Waldfl_StW", "SE_Waldfl_StW", 
                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:30:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:27:64: style: Trailing whitespace is superfluous.
     "Waldfl_KW", "SE_Waldfl_KW", "Waldfl_OEW", "SE_Waldfl_OEW", 
                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:31:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:28:64: style: Trailing whitespace is superfluous.
     "Waldfl_PW", "SE_Waldfl_PW", "Waldfl_GPW", "SE_Waldfl_GPW", 
                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:33:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:30:1: style: lines should not be more than 80 characters.
     ), row.names = c(NA, -3L), class = "data.frame"), Waldfl_Proz = structure(list(
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:34:78: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:31:78: style: Trailing whitespace is superfluous.
         Eigentum = structure(c(7L, 3L, 5L, 6L, 1L, 4L, 2L), .Label = c("GPW", 
                                                                              ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:35:72: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:32:72: style: Trailing whitespace is superfluous.
         "KPW", "KW", "MPW", "OEW", "PW", "StW(BW)"), class = "factor"), 
                                                                        ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:36:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:33:61: style: Trailing whitespace is superfluous.
         Waldfl_Proz = c(66.7, NA, 66.7, 33.3, NA, 33.3, NA), 
                                                             ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:39:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:36:1: style: lines should not be more than 80 characters.
     ), row.names = c(NA, -7L), class = "data.frame"), begehb_Holzbfl = structure(list(
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:41:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:38:62: style: Trailing whitespace is superfluous.
         ), .Label = c("GPW", "GW", "KPW", "KW", "MPW", "OEW", 
                                                              ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:42:62: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:39:62: style: Trailing whitespace is superfluous.
         "PW", "StW(BW)"), class = "factor"), b_HBF = c(26814, 
                                                              ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:43:76: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:40:76: style: Trailing whitespace is superfluous.
         17876, NA, 17876, 8938, NA, 8938, NA), SE_begehb_Holzbfl = c(15324, 
                                                                            ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:44:71: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:41:71: style: Trailing whitespace is superfluous.
         12576, NA, 12576, 8938, NA, 8938, NA)), .Names = c("Eigentum", 
                                                                       ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:45:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:42:1: style: lines should not be more than 80 characters.
     "b_HBF", "SE_begehb_Holzbfl"), row.names = c(NA, -8L), class = "data.frame")), .Names = c("Kreis", 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:45:103: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:42:103: style: Trailing whitespace is superfluous.
     "b_HBF", "SE_begehb_Holzbfl"), row.names = c(NA, -8L), class = "data.frame")), .Names = c("Kreis", 
                                                                                                       ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:46:67: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:43:67: style: Trailing whitespace is superfluous.
 "KreisCode", "Kreisfläche_gesamt_ha", "Waldanteil", "Waldflaeche", 
                                                                   ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:54:15: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:51:15: style: Trailing whitespace is superfluous.
   reference <- 
               ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:55:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:52:1: style: lines should not be more than 80 characters.
 structure(list(Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), .Names = c("Wa", 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:55:86: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:52:86: style: Trailing whitespace is superfluous.
 structure(list(Stratum = structure(list(Wa = c(3, 5), Begehbar = 1), .Names = c("Wa", 
                                                                                      ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:56:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:53:63: style: Trailing whitespace is superfluous.
 "Begehbar")), Waldflaeche = structure(list(BWI = c(1987, 2002, 
                                                               ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:57:70: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:54:70: style: Trailing whitespace is superfluous.
 2012), Waldfl_GW = c(866977, 911667, 929538), SE_Waldfl_GW = c(29671, 
                                                                      ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:58:80: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:55:80: style: Trailing whitespace is superfluous.
 21930, 17603), Waldfl_StW = c(214510, 214510, 223447), SE_Waldfl_StW = c(42363, 
                                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:59:78: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:56:78: style: Trailing whitespace is superfluous.
 42363, 42846), Waldfl_KW = c(321765, 339640, 357515), SE_Waldfl_KW = c(43118, 
                                                                              ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:60:80: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:57:80: style: Trailing whitespace is superfluous.
 43602, 44007), Waldfl_OEW = c(536274, 554150, 580962), SE_Waldfl_OEW = c(47533, 
                                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:61:78: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:58:78: style: Trailing whitespace is superfluous.
 47158, 46460), Waldfl_PW = c(330703, 357516, 348577), SE_Waldfl_PW = c(43370, 
                                                                              ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:62:77: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:59:77: style: Trailing whitespace is superfluous.
 44007, 43814), Waldfl_GPW = c(53627, 62565, 53627), SE_Waldfl_GPW = c(21333, 
                                                                             ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:63:80: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:60:80: style: Trailing whitespace is superfluous.
 22920, 21333), Waldfl_MPW = c(143007, 143007, 169820), SE_Waldfl_MPW = c(32932, 
                                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:64:80: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:61:80: style: Trailing whitespace is superfluous.
 32932, 35240), Waldfl_KPW = c(134069, 151944, 125130), SE_Waldfl_KPW = c(32075, 
                                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:65:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:62:63: style: Trailing whitespace is superfluous.
 33743, 31169)), .Names = c("BWI", "Waldfl_GW", "SE_Waldfl_GW", 
                                                               ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:66:74: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:63:74: style: Trailing whitespace is superfluous.
 "Waldfl_StW", "SE_Waldfl_StW", "Waldfl_KW", "SE_Waldfl_KW", "Waldfl_OEW", 
                                                                          ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:67:77: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:64:77: style: Trailing whitespace is superfluous.
 "SE_Waldfl_OEW", "Waldfl_PW", "SE_Waldfl_PW", "Waldfl_GPW", "SE_Waldfl_GPW", 
                                                                             ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:68:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:65:1: style: lines should not be more than 80 characters.
 "Waldfl_MPW", "SE_Waldfl_MPW", "Waldfl_KPW", "SE_Waldfl_KPW"), row.names = c(NA, 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:68:81: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:65:81: style: Trailing whitespace is superfluous.
 "Waldfl_MPW", "SE_Waldfl_MPW", "Waldfl_KPW", "SE_Waldfl_KPW"), row.names = c(NA, 
                                                                                 ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:69:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:66:1: style: lines should not be more than 80 characters.
 -3L), class = "data.frame"), Waldfl_Proz = structure(list(Eigentum = structure(c(7L, 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:69:85: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:66:85: style: Trailing whitespace is superfluous.
 -3L), class = "data.frame"), Waldfl_Proz = structure(list(Eigentum = structure(c(7L, 
                                                                                     ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:70:63: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:67:63: style: Trailing whitespace is superfluous.
 3L, 5L, 6L, 1L, 4L, 2L), .Label = c("GPW", "KPW", "KW", "MPW", 
                                                               ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:71:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:68:64: style: Trailing whitespace is superfluous.
 "OEW", "PW", "StW(BW)"), class = "factor"), Waldfl_Proz = c(22, 
                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:72:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:69:61: style: Trailing whitespace is superfluous.
 40, 62, 38, 6, 18, 14), SE_Waldfl_Proz = c(4.3, 5, 4.9, 4.9, 
                                                             ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:74:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:71:1: style: lines should not be more than 80 characters.
 ), row.names = c(NA, -7L), class = "data.frame"), begehb_Holzbfl = structure(list(
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:75:78: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:72:78: style: Trailing whitespace is superfluous.
     Eigentum = structure(c(2L, 8L, 4L, 6L, 7L, 1L, 5L, 3L), .Label = c("GPW", 
                                                                              ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:76:74: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:73:74: style: Trailing whitespace is superfluous.
     "GW", "KPW", "KW", "MPW", "OEW", "PW", "StW(BW)"), class = "factor"), 
                                                                          ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:77:61: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:74:61: style: Trailing whitespace is superfluous.
     b_HBF = c(902725, 223447, 348577, 572024, 330701, 53627, 
                                                             ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:78:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:75:64: style: Trailing whitespace is superfluous.
     160882, 116192), SE_begehb_Holzbfl = c(23750, 42846, 43814, 
                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:79:64: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:76:64: style: Trailing whitespace is superfluous.
     46711, 43370, 21333, 34511, 30210)), .Names = c("Eigentum", 
                                                                ^
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:80:1: style: lines should not be more than 80 characters.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:77:1: style: lines should not be more than 80 characters.
 "b_HBF", "SE_begehb_Holzbfl"), row.names = c(NA, -8L), class = "data.frame")), .Names = c("Stratum", 
 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:80:101: style: Trailing whitespace is superfluous.
+NO COPY: tests/testthat/test-local_BWI3_HR_Landkreis.R:77:101: style: Trailing whitespace is superfluous.
 "b_HBF", "SE_begehb_Holzbfl"), row.names = c(NA, -8L), class = "data.frame")), .Names = c("Stratum", 
                                                                                                     ^
 NO COPY: tests/testthat/test-local_BWI3_HR_Totholz.R:19:37: style: Trailing whitespace is superfluous.

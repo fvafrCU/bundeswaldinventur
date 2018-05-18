@@ -82,7 +82,7 @@ $(PKGNAME)_$(PKGVERS).tar.gz: NEWS.md README.md DESCRIPTION LICENSE \
 	$(RUNIT_FILES) $(VIGNETTES_FILES) $(INST_FILES) $(LOG_DIR)/spell.Rout \
 	$(LOG_DIR)/check_codetags.Rout $(LOG_DIR)/news.Rout $(LOG_DIR)/runit.Rout \
 	$(LOG_DIR)/testthat.Rout $(LOG_DIR)/covr.Rout $(LOG_DIR)/cleanr.Rout \
-	$(LOG_DIR)/lintr.Rout $(LOG_DIR)/cyclocomp.Rout $(LOG_DIR)/vignettes.Rout \
+	$(LOG_DIR)/lintr.Rout $(LOG_DIR)/cyclocomp.Rout\
 	$(LOG_DIR)/usage.Rout 
 	$(R_release) --vanilla CMD build $(PKGSRC)
 

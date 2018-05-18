@@ -26,12 +26,13 @@ get_label_for_NatHoe <- function(height_class) {
 #' @keywords internal
 #' @param file_name FIXME
 #' @param out FIXME
-tex_table <- function(file_name, out) {
+tex_table <- function(file_name, out, graphics = get("graphics_directory"),
+                      tables = get("tables_directory")) {
   tools::texi2dvi(file_name, pdf = TRUE, clean = TRUE)
   pdf_name <- sub("\\.tex$", "\\.pdf", basename(file_name))
-  file.rename(pdf_name, file.path(graphics_directory, pdf_name))
-  table_pdf <- ascii_umlauts(file.path(graphics_directory, paste0("table_", out, ".pdf")))
-  table_pdf_out <- file.path(tables_directory, paste0(out, ".pdf"))
+  file.rename(pdf_name, file.path(graphics, pdf_name))
+  table_pdf <- ascii_umlauts(file.path(graphics, paste0("table_", out, ".pdf")))
+  table_pdf_out <- file.path(tables, paste0(out, ".pdf"))
   file.link(
     to = table_pdf_out,
     from = file.path(table_pdf)
@@ -42,9 +43,9 @@ tex_table <- function(file_name, out) {
 #'
 #' @export
 #' @keywords internal
-table_tex_front_matter <- function() {
+table_tex_front_matter <- function(comment = get("generator_notice")) {
   return(c(
-    generator_notice,
+    comment,
     "\\documentclass{standalone}\n",
     "\\input{.tex/preamble.latex}\n",
     "\\usepackage{caption}\n",
@@ -163,7 +164,7 @@ tplot1 <- function(obj) {
 #' @param ... FIXME
 #' @param file_name FIXME
 #' @param append FIXME
-to_tex <- function(..., file_name = dot_district_tex, append = TRUE) {
+to_tex <- function(..., file_name = get("dot_district_tex"), append = TRUE) {
   cat(..., "\n", file = file_name, append = append, sep = "")
 }
 
@@ -243,6 +244,7 @@ copyright <- function() {
 #' FIXME
 #'
 #' @export
+#' @inheritParams plot_deadwood
 #' @keywords internal
 #' @param b1 FIXME
 #' @param b2 FIXME
@@ -257,12 +259,16 @@ copyright <- function() {
 #' @param have_title FIXME
 plot_groups_areas <- function(b1, b2, b3,
                               do_errors_relative = FALSE,
-                              graphic_width = get_options("graphics_width"),
-                              graphic_height = graphics_height,
-                              graphic_directory = graphics_directory,
-                              file_name_district = regional_file_name,
-                              title_district = krs.grupp$string[i],
-                              species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
+                              species_groups_labels,
                               have_title = FALSE) {
   # reformat species labels as factor
   species_label <- factor(species_groups_labels,
@@ -302,18 +308,17 @@ plot_groups_areas <- function(b1, b2, b3,
   )
   tplot(ggplot2::ggplot(
     data = data_frame[ data_frame$species != "Alle BA", ],
-    ggplot2::aes(
-      y = prediction,
-      x = species,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "species",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +
@@ -473,6 +478,7 @@ plot_groups_areas <- function(b1, b2, b3,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param b1 FIXME
 #' @param b2 FIXME
 #' @param b3 FIXME
@@ -486,12 +492,16 @@ plot_groups_areas <- function(b1, b2, b3,
 #' @param have_title FIXME
 plot_groups_stocks <- function(b1, b2, b3,
                                do_errors_relative = FALSE,
-                               graphic_width = get_options("graphics_width"),
-                               graphic_height = graphics_height,
-                               graphic_directory = graphics_directory,
-                               file_name_district = regional_file_name,
-                               title_district = krs.grupp$string[i],
-                               species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
+                               species_groups_labels,
                               have_title = FALSE) {
   # reformat species labels as factor
   species_label <- factor(species_groups_labels,
@@ -535,19 +545,18 @@ plot_groups_stocks <- function(b1, b2, b3,
     family = "Courier"
   )
   tplot(ggplot2::ggplot(
-    data = subset(data_frame, species != "Alle BA"),
-    ggplot2::aes(
-      y = prediction,
-      x = species,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+    data = data_frame[data_frame[["species"]]!= "Alle BA", TRUE],
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "species",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +
@@ -716,6 +725,7 @@ plot_groups_stocks <- function(b1, b2, b3,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param b1 FIXME
 #' @param b2 FIXME
 #' @param b3 FIXME
@@ -728,11 +738,17 @@ plot_groups_stocks <- function(b1, b2, b3,
 #' @param have_title FIXME
 plot_group_stocks_by_girth <- function(b1, b2, b3, v,
                                        do_errors_relative = FALSE,
+
                                        graphic_width = get_options("graphics_width"),
-                                       graphic_height = graphics_height,
-                                       graphic_directory = graphics_directory,
-                                       file_name_district = regional_file_name,
-                                       title_district = krs.grupp$string[i],
+                                       graphic_height = get_options("graphics_height"),
+
+                                       graphic_directory,
+                                       file_name_district,
+                                       dot_district_tex,
+                                       plots_directory,
+                                       title_district,
+                                       stratum_index,
+                                       stratii,
                               have_title = FALSE) {
   # to skip the first girth class, we need their number
   num_girth_classes <- length(b1$DKL)
@@ -781,17 +797,16 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
     )
     tplot(ggplot2::ggplot(
       data = data_frame,
-      ggplot2::aes(
-        y = prediction,
-        x = group,
-        fill = bwi
-      ),
-      group = bwi
-    ) +
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "group",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
       ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-      ggplot2::geom_errorbar(ggplot2::aes(
-        ymin = prediction - standard_error,
-        ymax = prediction + standard_error
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
       ),
       width = .3,
       position = ggplot2::position_dodge(width = 0.9)
@@ -895,6 +910,7 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param b1 FIXME
 #' @param b2 FIXME
 #' @param b3 FIXME
@@ -909,10 +925,15 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
 plot_group_area_by_age <- function(b1, b2, b3, a,
                                    do_errors_relative = FALSE,
                                    graphic_width = get_options("graphics_width"),
-                                   graphic_height = graphics_height,
-                                   graphic_directory = graphics_directory,
-                                   file_name_district = regional_file_name,
-                                   title_district = krs.grupp$string[i],
+                                   graphic_height = get_options("graphics_height"),
+
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
                               have_title = FALSE) {
   # get an ordered factor
   age_classes <- factor(b1$AKL, levels = b1$AKL)
@@ -957,17 +978,16 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
     )
     tplot(ggplot2::ggplot(
       data = data_frame,
-      ggplot2::aes(
-        y = prediction,
-        x = group,
-        fill = bwi
-      ),
-      group = bwi
-    ) +
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "group",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
       ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-      ggplot2::geom_errorbar(ggplot2::aes(
-        ymin = prediction - standard_error,
-        ymax = prediction + standard_error
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
       ),
       width = .3,
       position = ggplot2::position_dodge(width = 0.9)
@@ -1082,13 +1102,20 @@ plot_group_area_by_age <- function(b1, b2, b3, a,
 #' @param graphic_directory FIXME
 #' @param file_name_district FIXME
 #' @param title_district FIXME
+#' @param plots_directory FIXME
+#' @param stratum_index FIXME
+#' @param stratii FIXME
 plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
                           deadwood_2a, deadwood_3_2a, deadwood_3a,
                           graphic_width = get_options("graphics_width"),
-                          graphic_height = graphics_height,
-                          graphic_directory = graphics_directory,
-                          file_name_district = regional_file_name,
-                          title_district = krs.grupp$string[i]) {
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii) {
   deadwood_class <- c(
     "Liegend", "Stehend (Baum)", "Stehend (Bruchst\u00fcck)",
     "Wurzelstock", "Abfuhrrest", "Gesamtvorrat"
@@ -1136,19 +1163,19 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
     horizontal = FALSE, onefile = FALSE, paper = "special",
     family = "Courier"
   )
-  tplot(ggplot2::ggplot(
+  tplot(
+        ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = group,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
+    ggplot2::aes_string(
+      y = "prediction",
+      x = "group",
+      fill = "bwi",
+      group = "bwi")  
+    ) +
     ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
+    ggplot2::geom_errorbar(ggplot2::aes_string(
+      ymin = "prediction - standard_error",
+      ymax = "prediction + standard_error"
     ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
@@ -1159,7 +1186,8 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
     ggplot2::ylab(expression(paste("Vorrat [", m^3,
       ha^-1, "]",
       sep = ""
-    ))) + copyright() + ggplot2::ggtitle("2012*: Berechnung nach Kriterien von 2002"))
+    ))) + copyright() + ggplot2::ggtitle("2012*: Berechnung nach Kriterien von 2002")
+    )
   grDevices::dev.off()
   file.link(
     to = file.path(plots_directory, out_file),
@@ -1227,6 +1255,7 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param g_l_12 FIXME
 #' @param g_l_23 FIXME
 #' @param g_l_12_all FIXME
@@ -1239,12 +1268,16 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
 #' @param species_groups_labels FIXME
 plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
                              do_errors_relative = FALSE,
-                             graphic_width = get_options("graphics_width"),
-                             graphic_height = graphics_height,
-                             graphic_directory = graphics_directory,
-                             file_name_district = regional_file_name,
-                             title_district = krs.grupp$string[i],
-                             species_groups_labels = district_groups$ba.text) {
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
+                          species_groups_labels) {
   species_label <- factor(c(species_groups_labels, "Alle BA"),
     levels = c(species_groups_labels, "Alle BA")
   )
@@ -1301,20 +1334,17 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
     )
   tplot1(ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = x,
-      fill = foo
-    )
-  ) +
-    ggplot2::geom_bar(
-      stat = "identity", position = ggplot2::position_dodge()
-      , size = 1
-    ) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "x",
+        fill = "foo")  
+      ) +
+         ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge(),
+                           size = 1) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .6,
     position = ggplot2::position_dodge(width = 0.9)
     , size = 1
@@ -1389,6 +1419,7 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param ownerships FIXME
 #' @param graphic_width FIXME
 #' @param graphic_height FIXME
@@ -1396,11 +1427,15 @@ plot_growth_loss <- function(g_l_12, g_l_23, g_l_12_all,
 #' @param file_name_district FIXME
 #' @param title_district FIXME
 plot_ownership <- function(ownerships,
-                           graphic_width = get_options("graphics_width"),
-                           graphic_height = graphics_height,
-                           graphic_directory = graphics_directory,
-                           file_name_district = regional_file_name,
-                           title_district = krs.grupp$string[i]) {
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii) {
   ownerships$labels <- map_abbreviations_to_labels(ownerships$ownership)
   ownerships$ownership_realive_area <- paste0(round_and_prettify_german(ownerships$area / sum(ownerships$area) * 100), "%")
 
@@ -1408,10 +1443,10 @@ plot_ownership <- function(ownerships,
   ownerships$radius <- c(rep(c(1.6, 1.8), length.out = nrow(ownerships)))
   tmp <- ggplot2::ggplot(
     data = ownerships,
-    ggplot2::aes(
-      x = factor(1),
-      weight = area,
-      fill = ownership
+    ggplot2::aes_string(
+      x = "factor(1)",
+      weight = "area",
+      fill = "ownership"
     )
   ) + ggplot2::geom_bar() + ggplot2::coord_polar(theta = "y") +
     ggplot2::xlab("") + ggplot2::ylab("") + ggplot2::scale_x_discrete(breaks = NULL) +
@@ -1420,9 +1455,9 @@ plot_ownership <- function(ownerships,
       , name = "Eigentumsart",
       labels = ownerships$ownership
     ) +
-    ggplot2::geom_text(ggplot2::aes(
-      x = radius, y = position,
-      label = ownership_realive_area
+    ggplot2::geom_text(ggplot2::aes_string(
+      x = "radius", y = "position",
+      label = "ownership_realive_area"
     )
     ,
     size = 6, color = "black"
@@ -1485,6 +1520,7 @@ ntns_output <- function(ntns.list) {
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param ntns1 FIXME
 #' @param ntns2 FIXME
 #' @param graphic_width FIXME
@@ -1494,11 +1530,15 @@ ntns_output <- function(ntns.list) {
 #' @param title_district FIXME
 #' @param have_title FIXME
 plot_ntns <- function(ntns2, ntns3,
-                      graphic_width = get_options("graphics_width"),
-                      graphic_height = graphics_height,
-                      graphic_directory = graphics_directory,
-                      file_name_district = regional_file_name,
-                      title_district = krs.grupp$string[i],
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
                               have_title = FALSE) {
   data_frame <- rbind(
     cbind(ntns_output(ntns2), bwi = "2002"),
@@ -1508,18 +1548,17 @@ plot_ntns <- function(ntns2, ntns3,
   names(data_frame) <- sub("Anteil", "prediction", names(data_frame))
   tmp <- ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = NTNS,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "NTNS",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +
@@ -1611,6 +1650,7 @@ plot_ntns <- function(ntns2, ntns3,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param loss1 FIXME
 #' @param loss2 FIXME
 #' @param loss1_all FIXME
@@ -1622,11 +1662,15 @@ plot_ntns <- function(ntns2, ntns3,
 #' @param title_district FIXME
 #' @param have_title FIXME
 plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
-                      graphic_width = get_options("graphics_width"),
-                      graphic_height = graphics_height,
-                      graphic_directory = graphics_directory,
-                      file_name_district = regional_file_name,
-                      title_district = krs.grupp$string[i],
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
                               have_title = FALSE) {
   data_frame <- rbind(
     data.frame(
@@ -1645,18 +1689,16 @@ plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
   )
   tmp <- ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = x,
-      fill = period
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "x",
+        fill = "period")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +
@@ -1774,6 +1816,7 @@ plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param r2_a FIXME
 #' @param r2_bs1 FIXME
 #' @param r2_bs2 FIXME
@@ -1787,11 +1830,15 @@ plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
 #' @param title_district FIXME
 regeneration <- function(r2_a, r2_bs1, r2_bs2,
                          r3_a, r3_bs1, r3_bs2,
-                         graphic_width = get_options("graphics_width"),
-                         graphic_height = graphics_height,
-                         graphic_directory = graphics_directory,
-                         file_name_district = regional_file_name,
-                         title_district = krs.grupp$string[i]) {
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii) {
   regeneration3 <- data.frame(
     group = c(r3_a$BAGR, "Alle Arten"),
     prediction = r3_a$Verjg.kl4m.BAF.VArt.BAGR[1, 6, ],
@@ -1902,6 +1949,7 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
 #'
 #' @export
 #' @keywords internal
+#' @inheritParams plot_deadwood
 #' @param relevant_species_2 FIXME
 #' @param relevant_species_3 FIXME
 #' @param do_errors_relative FIXME
@@ -1914,12 +1962,16 @@ regeneration <- function(r2_a, r2_bs1, r2_bs2,
 #' @param have_title FIXME
 plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3,
                                           do_errors_relative = FALSE,
-                                          graphic_width = get_options("graphics_width"),
-                                          graphic_height = graphics_height,
-                                          graphic_directory = graphics_directory,
-                                          file_name_district = regional_file_name,
-                                          title_district = krs.grupp$string[i],
-                                          species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
+                          species_groups_labels,
                               have_title = FALSE) {
   data_frame <- rbind(
     data.frame(
@@ -1946,18 +1998,17 @@ plot_silviculturally_relevant <- function(relevant_species_2, relevant_species_3
   )
   tplot1(ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = species,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "species",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +

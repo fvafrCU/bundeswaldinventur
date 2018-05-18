@@ -6,11 +6,9 @@
 \usage{
 plot_silviculturally_relevant(relevant_species_2, relevant_species_3,
   do_errors_relative = FALSE, graphic_width = get_options("graphics_width"),
-  graphic_height = graphics_height, graphic_directory = graphics_directory,
-  file_name_district = regional_file_name,
-  title_district = krs.grupp$string[i],
-  species_groups_labels = c(district_groups$ba.text, "Alle BA"),
-  have_title = FALSE)
+  graphic_height = get_options("graphics_height"), graphic_directory,
+  file_name_district, dot_district_tex, plots_directory, title_district,
+  stratum_index, stratii, species_groups_labels, have_title = FALSE)
 }
 \arguments{
 \item{relevant_species_2}{FIXME}
@@ -27,7 +25,13 @@ plot_silviculturally_relevant(relevant_species_2, relevant_species_3,
 
 \item{file_name_district}{FIXME}
 
+\item{plots_directory}{FIXME}
+
 \item{title_district}{FIXME}
+
+\item{stratum_index}{FIXME}
+
+\item{stratii}{FIXME}
 
 \item{species_groups_labels}{FIXME}
 

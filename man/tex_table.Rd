@@ -4,7 +4,8 @@
 \alias{tex_table}
 \title{FIXME}
 \usage{
-tex_table(file_name, out)
+tex_table(file_name, out, graphics = get("graphics_directory"),
+  tables = get("tables_directory"))
 }
 \arguments{
 \item{file_name}{FIXME}

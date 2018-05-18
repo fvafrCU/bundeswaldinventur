@@ -6,9 +6,9 @@
 \usage{
 plot_deadwood(deadwood_2, deadwood_3_2, deadwood_3, deadwood_2a, deadwood_3_2a,
   deadwood_3a, graphic_width = get_options("graphics_width"),
-  graphic_height = graphics_height, graphic_directory = graphics_directory,
-  file_name_district = regional_file_name,
-  title_district = krs.grupp$string[i])
+  graphic_height = get_options("graphics_height"), graphic_directory,
+  file_name_district, dot_district_tex, plots_directory, title_district,
+  stratum_index, stratii)
 }
 \arguments{
 \item{deadwood_2}{FIXME}
@@ -31,7 +31,13 @@ plot_deadwood(deadwood_2, deadwood_3_2, deadwood_3, deadwood_2a, deadwood_3_2a,
 
 \item{file_name_district}{FIXME}
 
+\item{plots_directory}{FIXME}
+
 \item{title_district}{FIXME}
+
+\item{stratum_index}{FIXME}
+
+\item{stratii}{FIXME}
 }
 \description{
 FIXME

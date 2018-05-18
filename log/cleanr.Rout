@@ -1265,110 +1265,111 @@ get_abbreviation_for_label  found 67 lines of code, max_lines_of_code was 50
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R  get_color_for_ownership  line 11: found width 102 max_line_width was 80
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/labeling.R  get_text_label_for_abbreviation  found 55 lines of code, max_lines_of_code was 50
 R/   /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 3 counts 137 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 33 counts 90 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 101 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 111 counts 90 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 121 counts 85 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 138 counts 85 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 139 counts 98 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 182 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 211 counts 88 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 265 counts 92 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 293 counts 137 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 341 counts 88 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 375 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 419 counts 88 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 452 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 494 counts 93 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 527 counts 137 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 557 counts 84 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 574 counts 88 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 609 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 654 counts 137 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 659 counts 84 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 661 counts 88 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 695 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 731 counts 85 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 750 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 751 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 756 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 757 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 762 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 763 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 772 counts 139 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 773 counts 90 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 791 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 802 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 828 counts 90 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 874 counts 96 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 911 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 948 counts 139 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 949 counts 95 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 967 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1004 counts 90 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1037 counts 96 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1101 counts 90 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1109 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1111 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1129 counts 137 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1162 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1173 counts 105 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1187 counts 91 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1188 counts 91 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1189 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1257 counts 99 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1258 counts 102 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1264 counts 101 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1265 counts 104 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1284 counts 89 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1286 counts 137 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1322 counts 99 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1325 counts 95 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1337 counts 125 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1339 counts 88 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1360 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1405 counts 123 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1417 counts 86 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1419 counts 104 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1558 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1577 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1666 counts 106 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1741 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1825 counts 100 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1826 counts 100 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1879 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1915 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1917 counts 88 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1919 counts 81 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1920 counts 82 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1922 counts 104 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1928 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1933 counts 83 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1937 counts 137 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1989 counts 88 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 2021 counts 94 characters.
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: 2038 lines in file.
- /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_deadwood  found 11 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 102 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 112 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 122 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 139 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 140 counts 98 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 183 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 212 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 299 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 317 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 346 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 380 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 424 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 457 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 537 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 555 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 566 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 583 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 618 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 663 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 668 counts 84 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 670 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 704 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 742 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 743 counts 87 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 766 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 767 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 772 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 773 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 778 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 779 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 788 counts 139 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 789 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 806 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 817 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 843 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 889 counts 96 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 927 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 928 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 969 counts 139 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 970 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 987 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1024 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1057 counts 96 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1128 counts 90 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1136 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1138 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1156 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1189 counts 85 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1201 counts 105 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1215 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1216 counts 91 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1217 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1290 counts 99 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1291 counts 102 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1297 counts 101 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1298 counts 104 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1317 counts 89 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1319 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1342 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1352 counts 99 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1355 counts 95 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1367 counts 125 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1369 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1390 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1440 counts 123 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1452 counts 86 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1454 counts 104 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1557 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1597 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1616 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1697 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1708 counts 106 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1783 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1872 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1873 counts 100 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1926 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1963 counts 81 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1980 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1985 counts 83 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 1989 counts 137 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 2007 counts 82 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 2040 counts 88 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: line 2072 counts 94 characters.
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R: 2089 lines in file.
+ /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_deadwood  found 15 arguments, max_num_arguments was 5
 plot_deadwood  line 10: found width 90 max_line_width was 80
 line 18: found width 83 max_line_width was 80
 line 20: found width 82 max_line_width was 80
 line 38: found width 137 max_line_width was 80
-line 71: found width 86 max_line_width was 80
-line 82: found width 105 max_line_width was 80
-line 96: found width 91 max_line_width was 80
+line 71: found width 85 max_line_width was 80
+line 83: found width 105 max_line_width was 80
 line 97: found width 91 max_line_width was 80
-line 98: found width 94 max_line_width was 80
-plot_deadwood  found 132 lines, max_lines was 65
-plot_deadwood  found 132 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_group_area_by_age  found 11 arguments, max_num_arguments was 5
+line 98: found width 91 max_line_width was 80
+line 99: found width 94 max_line_width was 80
+plot_deadwood  found 133 lines, max_lines was 65
+plot_deadwood  found 133 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_group_area_by_age  found 15 arguments, max_num_arguments was 5
 plot_group_area_by_age  line 32: found width 139 max_line_width was 80
 line 33: found width 95 max_line_width was 80
-line 51: found width 82 max_line_width was 80
-line 88: found width 90 max_line_width was 80
-line 121: found width 96 max_line_width was 80
-plot_group_area_by_age  found 151 lines, max_lines was 65
-plot_group_area_by_age  found 149 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_group_stocks_by_girth  found 11 arguments, max_num_arguments was 5
+line 50: found width 82 max_line_width was 80
+line 87: found width 90 max_line_width was 80
+line 120: found width 96 max_line_width was 80
+plot_group_area_by_age  found 150 lines, max_lines was 65
+plot_group_area_by_age  found 148 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_group_stocks_by_girth  found 15 arguments, max_num_arguments was 5
 plot_group_stocks_by_girth  line 14: found width 86 max_line_width was 80
 line 15: found width 89 max_line_width was 80
 line 20: found width 86 max_line_width was 80
@@ -1377,76 +1378,81 @@ line 26: found width 86 max_line_width was 80
 line 27: found width 89 max_line_width was 80
 line 36: found width 139 max_line_width was 80
 line 37: found width 90 max_line_width was 80
-line 55: found width 82 max_line_width was 80
-line 66: found width 86 max_line_width was 80
-line 92: found width 90 max_line_width was 80
-line 138: found width 96 max_line_width was 80
-plot_group_stocks_by_girth  found 155 lines, max_lines was 65
-plot_group_stocks_by_girth  found 152 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_groups_areas  found 11 arguments, max_num_arguments was 5
+line 54: found width 82 max_line_width was 80
+line 65: found width 86 max_line_width was 80
+line 91: found width 90 max_line_width was 80
+line 137: found width 96 max_line_width was 80
+plot_group_stocks_by_girth  found 154 lines, max_lines was 65
+plot_group_stocks_by_girth  found 151 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_groups_areas  found 15 arguments, max_num_arguments was 5
 plot_groups_areas  line 27: found width 137 max_line_width was 80
-line 75: found width 88 max_line_width was 80
-line 109: found width 94 max_line_width was 80
-line 153: found width 88 max_line_width was 80
-line 186: found width 94 max_line_width was 80
-plot_groups_areas  found 203 lines, max_lines was 65
-plot_groups_areas  found 201 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_groups_stocks  found 11 arguments, max_num_arguments was 5
+line 45: found width 82 max_line_width was 80
+line 74: found width 88 max_line_width was 80
+line 108: found width 94 max_line_width was 80
+line 152: found width 88 max_line_width was 80
+line 185: found width 94 max_line_width was 80
+plot_groups_areas  found 202 lines, max_lines was 65
+plot_groups_areas  found 200 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_groups_stocks  found 15 arguments, max_num_arguments was 5
 plot_groups_stocks  line 32: found width 137 max_line_width was 80
-line 62: found width 84 max_line_width was 80
-line 79: found width 88 max_line_width was 80
-line 114: found width 94 max_line_width was 80
-line 159: found width 137 max_line_width was 80
-line 164: found width 84 max_line_width was 80
-line 166: found width 88 max_line_width was 80
-line 200: found width 94 max_line_width was 80
-plot_groups_stocks  found 217 lines, max_lines was 65
-plot_groups_stocks  found 215 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_growth_loss  found 10 arguments, max_num_arguments was 5
+line 50: found width 82 max_line_width was 80
+line 61: found width 84 max_line_width was 80
+line 78: found width 88 max_line_width was 80
+line 113: found width 94 max_line_width was 80
+line 158: found width 137 max_line_width was 80
+line 163: found width 84 max_line_width was 80
+line 165: found width 88 max_line_width was 80
+line 199: found width 94 max_line_width was 80
+plot_groups_stocks  found 216 lines, max_lines was 65
+plot_groups_stocks  found 214 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_growth_loss  found 14 arguments, max_num_arguments was 5
 plot_growth_loss  line 10: found width 99 max_line_width was 80
 line 11: found width 102 max_line_width was 80
 line 17: found width 101 max_line_width was 80
 line 18: found width 104 max_line_width was 80
 line 37: found width 89 max_line_width was 80
 line 39: found width 137 max_line_width was 80
-line 75: found width 99 max_line_width was 80
-line 78: found width 95 max_line_width was 80
-line 90: found width 125 max_line_width was 80
-line 92: found width 88 max_line_width was 80
-line 113: found width 94 max_line_width was 80
-plot_growth_loss  found 138 lines, max_lines was 65
-plot_growth_loss  found 137 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_loss  found 10 arguments, max_num_arguments was 5
-plot_loss  line 36: found width 106 max_line_width was 80
-line 111: found width 94 max_line_width was 80
-plot_loss  found 140 lines, max_lines was 65
-plot_loss  found 140 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_ntns  found 8 arguments, max_num_arguments was 5
-plot_ntns  line 56: found width 82 max_line_width was 80
-line 75: found width 94 max_line_width was 80
-plot_ntns  found 104 lines, max_lines was 65
-plot_ntns  found 104 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_ownership  found 6 arguments, max_num_arguments was 5
+line 62: found width 83 max_line_width was 80
+line 72: found width 99 max_line_width was 80
+line 75: found width 95 max_line_width was 80
+line 87: found width 125 max_line_width was 80
+line 89: found width 88 max_line_width was 80
+line 110: found width 94 max_line_width was 80
+plot_growth_loss  found 135 lines, max_lines was 65
+plot_growth_loss  found 134 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_loss  found 14 arguments, max_num_arguments was 5
+plot_loss  line 23: found width 82 max_line_width was 80
+line 34: found width 106 max_line_width was 80
+line 109: found width 94 max_line_width was 80
+plot_loss  found 138 lines, max_lines was 65
+plot_loss  found 138 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_ntns  found 12 arguments, max_num_arguments was 5
+plot_ntns  line 15: found width 82 max_line_width was 80
+line 55: found width 82 max_line_width was 80
+line 74: found width 94 max_line_width was 80
+plot_ntns  found 103 lines, max_lines was 65
+plot_ntns  found 103 lines of code, max_lines_of_code was 50
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_ownership  found 10 arguments, max_num_arguments was 5
 plot_ownership  line 2: found width 123 max_line_width was 80
 line 14: found width 86 max_line_width was 80
 line 16: found width 104 max_line_width was 80
 plot_ownership  found 60 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_silviculturally_relevant  found 10 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  plot_silviculturally_relevant  found 14 arguments, max_num_arguments was 5
 plot_silviculturally_relevant  line 5: found width 83 max_line_width was 80
 line 10: found width 83 max_line_width was 80
 line 14: found width 137 max_line_width was 80
-line 66: found width 88 max_line_width was 80
-line 98: found width 94 max_line_width was 80
-plot_silviculturally_relevant  found 114 lines, max_lines was 65
-plot_silviculturally_relevant  found 114 lines of code, max_lines_of_code was 50
+line 32: found width 82 max_line_width was 80
+line 65: found width 88 max_line_width was 80
+line 97: found width 94 max_line_width was 80
+plot_silviculturally_relevant  found 113 lines, max_lines was 65
+plot_silviculturally_relevant  found 113 lines of code, max_lines_of_code was 50
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  ptplot  line 1: found width 85 max_line_width was 80
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  regeneration  found 11 arguments, max_num_arguments was 5
+/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  regeneration  found 15 arguments, max_num_arguments was 5
 regeneration  line 31: found width 100 max_line_width was 80
 line 32: found width 100 max_line_width was 80
 line 85: found width 94 max_line_width was 80
 regeneration  found 104 lines, max_lines was 65
 regeneration  found 103 lines of code, max_lines_of_code was 50
-/home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  tex_table  line 4: found width 90 max_line_width was 80
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  theme_bold_title  line 2: found width 83 max_line_width was 80
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  theme_rotate_xasis_labels  line 2: found width 90 max_line_width was 80
 /home/nik/git/cs/fvafrcu/bundeswaldinventur/R/regional.R  tplot  line 1: found width 85 max_line_width was 80

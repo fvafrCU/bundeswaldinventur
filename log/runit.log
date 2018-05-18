@@ -1,4 +1,4 @@
-RUNIT TEST PROTOCOL -- Wed May 16 07:16:16 2018 
+RUNIT TEST PROTOCOL -- Fri May 18 17:53:15 2018 
 *********************************************** 
 Number of test functions: 9 
 Number of errors: 0 
@@ -22,8 +22,8 @@ Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck
 test_adapt_script: (3 checks) ... OK (0 seconds)
 --------------------------- 
 Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-figures_and_tables.R 
-test_melt: (4 checks) ... OK (0.62 seconds)
-test_ownership_groups: (5 checks) ... OK (1.3 seconds)
+test_melt: (4 checks) ... OK (0.58 seconds)
+test_ownership_groups: (5 checks) ... OK (1.25 seconds)
 --------------------------- 
 Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-local_global_objects.R 
 test_get_global_objects: (1 checks) ... OK (0.01 seconds)
@@ -35,4 +35,4 @@ test_exception: (1 checks) ... OK (0 seconds)
 --------------------------- 
 Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-tree_species_shares.R 
 test_cast_tree_species_percent: (1 checks) ... OK (0.01 seconds)
-test_tree_species_precent: (1 checks) ... OK (0 seconds)
+test_tree_species_precent: (1 checks) ... OK (0.01 seconds)
