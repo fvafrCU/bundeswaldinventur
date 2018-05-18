@@ -1425,10 +1425,10 @@ plot_ownership <- function(ownerships,
   ownerships$radius <- c(rep(c(1.6, 1.8), length.out = nrow(ownerships)))
   tmp <- ggplot2::ggplot(
     data = ownerships,
-    ggplot2::aes_(
-      x = "factor(1)",
-      weight = "area",
-      fill = "ownership"
+    ggplot2::aes(
+      x = factor(1),
+      weight = area,
+      fill = ownership
     )
   ) + ggplot2::geom_bar() + ggplot2::coord_polar(theta = "y") +
     ggplot2::xlab("") + ggplot2::ylab("") + ggplot2::scale_x_discrete(breaks = NULL) +
