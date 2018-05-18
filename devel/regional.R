@@ -1646,11 +1646,15 @@ plot_ntns <- function(ntns2, ntns3,
 #' @param title_district FIXME
 #' @param have_title FIXME
 plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
-                      graphic_width = get_options("graphics_width"),
-                      graphic_height = graphics_height,
-                      graphic_directory = graphics_directory,
-                      file_name_district = regional_file_name,
-                      title_district = krs.grupp$string[i],
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
                               have_title = FALSE) {
   data_frame <- rbind(
     data.frame(
@@ -1669,18 +1673,16 @@ plot_loss <- function(loss1, loss2, loss1_all, loss2_all,
   )
   tmp <- ggplot2::ggplot(
     data = data_frame,
-    ggplot2::aes(
-      y = prediction,
-      x = x,
-      fill = period
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "x",
+        fill = "period")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +

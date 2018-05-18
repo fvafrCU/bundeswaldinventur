@@ -367,7 +367,15 @@
                                                           list(D.unt=0,D.ob=400,D.b=400,Ndh=F),
                                                           append(append(list(Wa = c(1, 2, 3), Begehbar = 1), regional), stratii[[stratum_index]]),A.12)
 
-        plot_loss(za_12_d, za_23_d, za_12_all_dbh, za_23_all_dbh)
+        plot_loss(za_12_d, za_23_d, za_12_all_dbh, za_23_all_dbh,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index
+                  )
         ###% regeneration
         to_tex('\\subsection{Verj\"ungung}') 
         to_tex('Als Verj\"u{}ngung wird die Baumschicht bis zu einer H\"o{}he
