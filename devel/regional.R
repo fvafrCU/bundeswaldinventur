@@ -1091,6 +1091,7 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
                           graphic_height = get_options("graphics_height"),
                           graphic_directory,
                           file_name_district,
+                          dot_district_tex,
                           plots_directory,
                           title_district,
                           stratum_index,
@@ -1152,9 +1153,9 @@ plot_deadwood <- function(deadwood_2, deadwood_3_2, deadwood_3,
       group = "bwi")  
     ) +
     ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
+    ggplot2::geom_errorbar(ggplot2::aes_string(
+      ymin = "prediction - standard_error",
+      ymax = "prediction + standard_error"
     ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)

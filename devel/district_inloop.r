@@ -276,6 +276,7 @@
                       graphic_directory = graphics_directory, 
                       plots_directory = plots_directory,
                       file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
                       title_district = krs.grupp$string[i],
                       stratii = stratii,
                       stratum_index = stratum_index

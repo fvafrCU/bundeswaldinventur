@@ -1,8 +1,3 @@
-plot_deadwood: no visible binding for global variable 'prediction'
-plot_deadwood: no visible binding for global variable 'standard_error'
-plot_deadwood: no visible binding for global variable 'prediction'
-plot_deadwood: no visible binding for global variable 'standard_error'
-plot_deadwood: no visible binding for global variable 'dot_district_tex'
 plot_group_area_by_age: no visible binding for global variable 'graphics_directory'
 plot_group_area_by_age: no visible binding for global variable 'regional_file_name'
 plot_group_area_by_age: no visible binding for global variable 'krs.grupp'
