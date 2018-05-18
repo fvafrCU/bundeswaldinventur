@@ -1,3 +1,4 @@
+* xtable's column ordering in R changes with different versions of R!
 * add exclusions coverage
 * sample and anonymize bwibw, adapt get\_data() and add tests
 * Fix global bindings in log/check.Rout
