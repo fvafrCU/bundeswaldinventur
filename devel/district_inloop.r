@@ -198,7 +198,15 @@
         ###% plot area by age for species' group
         to_tex('\\newpage') 
         to_tex('\\subsubsection{Entwicklung der Altersstruktur von 1987 bis 2012}') 
-        plot_group_area_by_age(b_1a, b_2a, b_3a, aa)
+        plot_group_area_by_age(b_1a, b_2a, b_3a, aa,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index
+                      )
         ###% plot stock for species' groups
         to_tex('\\newpage') 
         to_tex('\\subsection{Vorr\\"ate}') 
