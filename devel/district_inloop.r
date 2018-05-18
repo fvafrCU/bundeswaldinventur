@@ -194,7 +194,16 @@
         to_tex('Alle Baumartenfl\\"a{}chen enthalten anteilig Bl\\"o{}\\ss{}en
                und L\\"u{}cken.') 
         to_tex('\\subsubsection{Entwicklung von 1987 bis 2012}') 
-        aa <- plot_groups_areas(b_1, b_2, b_3)
+        aa <- plot_groups_areas(b_1, b_2, b_3,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index,
+                      species_groups_labels = c(district_groups$ba.text, "Alle BA")
+                                )
         ###% plot area by age for species' group
         to_tex('\\newpage') 
         to_tex('\\subsubsection{Entwicklung der Altersstruktur von 1987 bis 2012}') 
@@ -213,7 +222,16 @@
         to_tex('Alle Vorratsangaben umfassen Haupt- und
                Nebenbestandsvorr\"a{}te.')
         to_tex('\\subsubsection{Entwicklung von 1987 bis 2012}') 
-        va <- plot_groups_stocks(b_1, b_2, b_3)
+        va <- plot_groups_stocks(b_1, b_2, b_3,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index,
+                      species_groups_labels = c(district_groups$ba.text, "Alle BA")
+                                 )
         ###% plot stock by girth for species' group
         to_tex('\\newpage') 
         to_tex('\\subsubsection{Entwicklung der Dimensionsstruktur von 1987 bis 2012}') 

@@ -1,5 +1,5 @@
 all: usage.log diff_git.log
-	cat diff_git.log
+	cat diff_git.log || echo "no changes"
 
 usage.log: usage.R regional.R
 	./usage.R

@@ -257,12 +257,16 @@ copyright <- function() {
 #' @param have_title FIXME
 plot_groups_areas <- function(b1, b2, b3,
                               do_errors_relative = FALSE,
-                              graphic_width = get_options("graphics_width"),
-                              graphic_height = graphics_height,
-                              graphic_directory = graphics_directory,
-                              file_name_district = regional_file_name,
-                              title_district = krs.grupp$string[i],
-                              species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
+                              species_groups_labels,
                               have_title = FALSE) {
   # reformat species labels as factor
   species_label <- factor(species_groups_labels,
@@ -302,18 +306,17 @@ plot_groups_areas <- function(b1, b2, b3,
   )
   tplot(ggplot2::ggplot(
     data = data_frame[ data_frame$species != "Alle BA", ],
-    ggplot2::aes(
-      y = prediction,
-      x = species,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "species",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +
@@ -486,12 +489,16 @@ plot_groups_areas <- function(b1, b2, b3,
 #' @param have_title FIXME
 plot_groups_stocks <- function(b1, b2, b3,
                                do_errors_relative = FALSE,
-                               graphic_width = get_options("graphics_width"),
-                               graphic_height = graphics_height,
-                               graphic_directory = graphics_directory,
-                               file_name_district = regional_file_name,
-                               title_district = krs.grupp$string[i],
-                               species_groups_labels = c(district_groups$ba.text, "Alle BA"),
+                          graphic_width = get_options("graphics_width"),
+                          graphic_height = get_options("graphics_height"),
+                          graphic_directory,
+                          file_name_district,
+                          dot_district_tex,
+                          plots_directory,
+                          title_district,
+                          stratum_index,
+                          stratii,
+                               species_groups_labels,
                               have_title = FALSE) {
   # reformat species labels as factor
   species_label <- factor(species_groups_labels,
@@ -535,19 +542,18 @@ plot_groups_stocks <- function(b1, b2, b3,
     family = "Courier"
   )
   tplot(ggplot2::ggplot(
-    data = subset(data_frame, species != "Alle BA"),
-    ggplot2::aes(
-      y = prediction,
-      x = species,
-      fill = bwi
-    ),
-    group = bwi
-  ) +
-    ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-    ggplot2::geom_errorbar(ggplot2::aes(
-      ymin = prediction - standard_error,
-      ymax = prediction + standard_error
-    ),
+    data = data_frame[data_frame[["species"]]!= "Alle BA", TRUE],
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "species",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
+      ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
+      ),
     width = .3,
     position = ggplot2::position_dodge(width = 0.9)
     ) +
