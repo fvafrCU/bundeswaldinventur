@@ -217,7 +217,15 @@
         ###% plot stock by girth for species' group
         to_tex('\\newpage') 
         to_tex('\\subsubsection{Entwicklung der Dimensionsstruktur von 1987 bis 2012}') 
-        plot_group_stocks_by_girth(b_1g, b_2g, b_3g, va)
+        plot_group_stocks_by_girth(b_1g, b_2g, b_3g, va,
+                      graphic_directory = graphics_directory, 
+                      plots_directory = plots_directory,
+                      file_name_district = regional_file_name,
+                      dot_district_tex = dot_district_tex,
+                      title_district = krs.grupp$string[i],
+                      stratii = stratii,
+                      stratum_index = stratum_index
+                                   )
         ##% analyses over all species
         ###% calculate closeness_to_nature
         n3 <- ntns.stratum.fun(ntns.te, ecken.3, trakte.3, A, 

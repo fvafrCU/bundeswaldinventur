@@ -728,11 +728,17 @@ plot_groups_stocks <- function(b1, b2, b3,
 #' @param have_title FIXME
 plot_group_stocks_by_girth <- function(b1, b2, b3, v,
                                        do_errors_relative = FALSE,
+
                                        graphic_width = get_options("graphics_width"),
-                                       graphic_height = graphics_height,
-                                       graphic_directory = graphics_directory,
-                                       file_name_district = regional_file_name,
-                                       title_district = krs.grupp$string[i],
+                                       graphic_height = get_options("graphics_height"),
+
+                                       graphic_directory,
+                                       file_name_district,
+                                       dot_district_tex,
+                                       plots_directory,
+                                       title_district,
+                                       stratum_index,
+                                       stratii,
                               have_title = FALSE) {
   # to skip the first girth class, we need their number
   num_girth_classes <- length(b1$DKL)
@@ -781,17 +787,16 @@ plot_group_stocks_by_girth <- function(b1, b2, b3, v,
     )
     tplot(ggplot2::ggplot(
       data = data_frame,
-      ggplot2::aes(
-        y = prediction,
-        x = group,
-        fill = bwi
-      ),
-      group = bwi
-    ) +
+      ggplot2::aes_string(
+        y = "prediction",
+        x = "group",
+        fill = "bwi",
+        group = "bwi")  
+      ) +
       ggplot2::geom_bar(stat = "identity", position = ggplot2::position_dodge()) +
-      ggplot2::geom_errorbar(ggplot2::aes(
-        ymin = prediction - standard_error,
-        ymax = prediction + standard_error
+      ggplot2::geom_errorbar(ggplot2::aes_string(
+        ymin = "prediction - standard_error",
+        ymax = "prediction + standard_error"
       ),
       width = .3,
       position = ggplot2::position_dodge(width = 0.9)
