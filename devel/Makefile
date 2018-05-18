@@ -1,5 +1,5 @@
 all: usage.log diff_git.log
-	cat diff_git.log
+	cat diff_git.log; echo "FIXME: plot_ownership ist zerschossen!"
 
 usage.log: usage.R regional.R
 	./usage.R
