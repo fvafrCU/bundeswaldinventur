@@ -4,12 +4,10 @@
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.16.0.9000’
+* this is package ‘bundeswaldinventur’ version ‘0.17.0’
 * package encoding: UTF-8
-* checking CRAN incoming feasibility ... NOTE
+* checking CRAN incoming feasibility ... Note_to_CRAN_maintainers
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
-
-Version contains large components (0.16.0.9000)
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -73,4 +71,4 @@ File ‘bundeswaldinventur/R/global_objects.R’:
   Running ‘testthat.R’ [16s/16s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 2 NOTEs
+Status: 1 NOTE

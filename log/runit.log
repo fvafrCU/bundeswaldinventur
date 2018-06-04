@@ -1,4 +1,4 @@
-RUNIT TEST PROTOCOL -- Mon Jun  4 08:42:34 2018 
+RUNIT TEST PROTOCOL -- Mon Jun  4 08:57:55 2018 
 *********************************************** 
 Number of test functions: 9 
 Number of errors: 0 
@@ -23,7 +23,7 @@ test_adapt_script: (3 checks) ... OK (0 seconds)
 --------------------------- 
 Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-figures_and_tables.R 
 test_melt: (4 checks) ... OK (0.52 seconds)
-test_ownership_groups: (5 checks) ... OK (1.25 seconds)
+test_ownership_groups: (5 checks) ... OK (1.26 seconds)
 --------------------------- 
 Test file: /home/nik/git/cs/fvafrcu/bundeswaldinventur/bundeswaldinventur.Rcheck/bundeswaldinventur/runit_tests/runit-local_global_objects.R 
 test_get_global_objects: (1 checks) ... OK (0.01 seconds)
