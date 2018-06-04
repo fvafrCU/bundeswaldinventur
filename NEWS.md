@@ -1,6 +1,7 @@
-# bundeswaldinventur 0.16.0.9000
+# bundeswaldinventur 0.17.0
 
-* FIXME
+* Fixed encoding issues for the data provided with the package.
+* Used resave option to R CMD build to have smaller data files.
 
 # bundeswaldinventur 0.16.0
 

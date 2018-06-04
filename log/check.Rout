@@ -4,10 +4,12 @@
 * using session charset: UTF-8
 * using options ‘--run-donttest --as-cran’
 * checking for file ‘bundeswaldinventur/DESCRIPTION’ ... OK
-* this is package ‘bundeswaldinventur’ version ‘0.16.0’
+* this is package ‘bundeswaldinventur’ version ‘0.16.0.9000’
 * package encoding: UTF-8
-* checking CRAN incoming feasibility ... Note_to_CRAN_maintainers
+* checking CRAN incoming feasibility ... NOTE
 Maintainer: ‘Andreas Dominik Cullmann <dominik.cullmann@forst.bwl.de>’
+
+Version contains large components (0.16.0.9000)
 * checking package namespace information ... OK
 * checking package dependencies ... OK
 * checking if this is a source package ... OK
@@ -62,54 +64,13 @@ File ‘bundeswaldinventur/R/global_objects.R’:
 * checking Rd contents ... OK
 * checking for unstated dependencies in examples ... OK
 * checking contents of ‘data’ directory ... OK
-* checking data for non-ASCII characters ... WARNING
-  Warning: found non-ASCII strings
-  'Ostw<c3><bc>rttemberg' in object 'ecken.1'
-  'S<c3><bc>dlicher Oberrhein' in object 'ecken.1'
-  'Ostw<c3><bc>rttemberg' in object 'ecken.2'
-  'S<c3><bc>dlicher Oberrhein' in object 'ecken.2'
-  'Ostw<c3><bc>rttemberg' in object 'ecken.3'
-  'S<c3><bc>dlicher Oberrhein' in object 'ecken.3'
-  'Vorg<c3><a4>nger' in object 'gk_coord'
-  'B<c3><b6>blingen' in object 'kreise'
-  'G<c3><b6>ppingen' in object 'kreise'
-  'L<c3><b6>rrach' in object 'kreise'
-  'Mannheim, Universit<c3><a4>tsstadt' in object 'kreise'
-  'Schw<c3><a4>bisch Hall' in object 'kreise'
-  'T<c3><bc>bingen' in object 'kreise'
-  'Ulm, Universit<c3><a4>tsstadt' in object 'kreise'
-  'Biberach an der Ri<c3><9f>, Stadt' in object 'kreise'
-  'B<c3><b6>blingen, Stadt' in object 'kreise'
-  'G<c3><b6>ppingen, Stadt' in object 'kreise'
-  'Konstanz, Universit<c3><a4>tsstadt' in object 'kreise'
-  'K<c3><bc>nzelsau, Stadt' in object 'kreise'
-  'L<c3><b6>rrach, Stadt' in object 'kreise'
-  'Schw<c3><a4>bisch Hall, Stadt' in object 'kreise'
-  'T<c3><bc>bingen, Universit<c3><a4>tsstadt' in object 'kreise'
-  'Block-,Hangschuttw<c3><a4>lder' in object 'schutzgebiete.3'
-  'Bruch-, Sumpf-, Auw<c3><a4>lder' in object 'schutzgebiete.3'
-  'Gel<c3><a4>ndeformationen' in object 'schutzgebiete.3'
-  'nat<c3><bc>rliche  Waldr<c3><a4>nder' in object 'schutzgebiete.3'
-  'Schluchtw<c3><a4>lder' in object 'schutzgebiete.3'
-  'W<c3><a4>ld. trockenw. Standorte' in object 'schutzgebiete.3'
-  'Naturverj<c3><bc>ngung' in object 'verj.kl4m.2'
-  'Naturverj<c3><bc>ngung' in object 'verj.kl4m.3'
-  'fl<c3><a4>chig, > 50 %' in object 'x_dichte'
-  'h<c3><a4>ufig, > 10 - 50 %' in object 'x_dichte'
-  'Dr<c3><bc>siges Springkraut' in object 'x_fba.3'
-  'Kleinbl<c3><bc>tiges Springkraut' in object 'x_fba.3'
-  'Riesenb<c3><a4>renklau' in object 'x_fba.3'
-  'Riesenkn<c3><b6>terich' in object 'x_fba.3'
-  'Dr<c3><bc>siges Springkraut (Impatiens glandulifera)' in object 'x_fba.3'
-  'Kleinbl<c3><bc>tiges Springkraut (Impatiens parviflora)' in object 'x_fba.3'
-  'Riesen-B<c3><a4>renklau (Heracleum mantegazzianum)' in object 'x_fba.3'
-  'Riesenkn<c3><b6>terich (Fallopia japanica, F. sachaliniensis)' in object 'x_fba.3'
+* checking data for non-ASCII characters ... OK
 * checking data for ASCII and uncompressed saves ... OK
 * checking examples ... OK
 * checking for unstated dependencies in ‘tests’ ... OK
 * checking tests ... OK
   Running ‘runit.R’
-  Running ‘testthat.R’ [17s/17s]
+  Running ‘testthat.R’ [16s/16s]
 * checking PDF version of manual ... OK
 * DONE
-Status: 1 WARNING, 1 NOTE
+Status: 2 NOTEs

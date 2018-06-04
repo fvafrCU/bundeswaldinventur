@@ -1,7 +1,5 @@
 * xtable's column ordering in R changes with different versions of R!
 * add exclusions coverage
-* sample and anonymize bwibw, adapt get\_data() and add tests
-* Fix global bindings in log/check.Rout
 * clean, lint, spell!
 * pull documentation from deleted files 
   R/data\_documentation.R and
